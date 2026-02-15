@@ -1,0 +1,77 @@
+############################################
+# Unity Generated Folders
+############################################
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+UserSettings/
+MemoryCaptures/
+
+############################################
+# Unity Cloud & Cache
+############################################
+/Assets/AssetStoreTools*
+/Assets/Plugins/Editor/JetBrains*
+
+############################################
+# IDE / Editor Files
+############################################
+
+# Visual Studio
+.vs/
+*.csproj
+*.unityproj
+*.sln
+*.slnx
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+
+# VS Code
+.vscode/
+
+# Rider
+.idea/
+
+############################################
+# OS Generated Files
+############################################
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+############################################
+# Build Files
+############################################
+*.apk
+*.aab
+*.unitypackage
+*.app
+*.exe
+*.xcodeproj
+*.xcworkspace
+
+############################################
+# Addressables
+############################################
+/ServerData
+/StreamingAssets/aa.meta
+/StreamingAssets/aa
+
+############################################
+# Crash Reports
+############################################
+sysinfo.txt
+
+############################################
+# Gradle
+############################################
+.gradle/
+.gradle-cache/

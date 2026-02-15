@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python:*)",
+      "Bash(curl -v http://localhost:8080/mcp)",
+      "Bash(curl -H \"Accept: text/event-stream\" http://localhost:8080/mcp)",
+      "Bash(curl -H \"Accept: text/event-stream\" -H \"mcp-session-id: e9df84f5297941109f59849e45f742ee\" http://localhost:8080/mcp)",
+      "Bash(curl:*)",
+      "Bash(claude mcp add:*)",
+      "Bash(npx react-native@latest init:*)",
+      "Bash(npx @react-native-community/cli@latest init:*)",
+      "Bash(npm install)",
+      "Bash(npm install:*)",
+      "Bash(npm uninstall @viro-community/react-viro)",
+      "Bash(dir /b)",
+      "Bash(npx react-native run-android:*)",
+      "Bash(./gradlew.bat:*)",
+      "Bash(taskkill:*)"
+    ]
+  }
+}
