@@ -10,8 +10,8 @@ public class ProfessionalNecklaceAR : MonoBehaviour
     public GameObject necklacePrefab;
     
     [Header("Positioning")]
-    [SerializeField] private float neckDropDistance = 0.12f;
-    [SerializeField] private float forwardDepth = 0.02f;
+    [SerializeField] private float neckDropDistance = 0.20f; //0.12
+    [SerializeField] private float forwardDepth = 0.07f; //0.02
     [SerializeField] private Vector3 manualOffset = Vector3.zero;
     
     [Header("Stabilization")]

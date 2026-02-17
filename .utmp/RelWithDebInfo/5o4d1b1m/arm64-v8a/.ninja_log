@@ -21,3 +21,5 @@
 89	5462	7928697571567644	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	451d3431fd1ed979
 62	5623	7928697573042360	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	5bdb0df1f2c619f9
 5624	5794	7928697574990704	C:/Unity Projects/Jewellery AR project/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/5o4d1b1m/obj/arm64-v8a/libgame.so	2d26ef700c863051
+17	518	7929680490728815	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	ceb527c7c5c1d7f0
+518	789	7929680493186336	C:/Unity Projects/Jewellery AR project/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/5o4d1b1m/obj/arm64-v8a/libswappywrapper.so	4132904380a4553b
