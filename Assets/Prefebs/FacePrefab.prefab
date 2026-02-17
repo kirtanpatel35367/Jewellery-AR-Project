@@ -167,8 +167,8 @@ GameObject:
   - component: {fileID: 6762774322756275266}
   - component: {fileID: 5727629131238706964}
   - component: {fileID: 3523128311462860682}
-  - component: {fileID: 5464888078153588549}
   - component: {fileID: 5958698696350794373}
+  - component: {fileID: 4867578517955240944}
   m_Layer: 0
   m_Name: FacePrefab
   m_TagString: Untagged
@@ -274,20 +274,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1086164948141365038}
   m_Mesh: {fileID: 0}
---- !u!114 &5464888078153588549
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1086164948141365038}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4043173a295228489657e8ffe1c6b79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EarAnchorController
-  leftEarringPrefab: {fileID: 712837861599813127, guid: f38eebe72a3997f47b44eba6d794a6a9, type: 3}
-  rightEarringPrefab: {fileID: 712837861599813127, guid: f38eebe72a3997f47b44eba6d794a6a9, type: 3}
 --- !u!114 &5958698696350794373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -300,11 +286,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a0f5cb7ada16464dbd272caa5edd794, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NecklaceAttachARCore
-  necklacePrefab: {fileID: 804426986579811739, guid: 0cc442a5c1b83a94b9aeb7983e1c69b4, type: 3}
-  downwardOffset: -0.15
-  depthOffset: 0.03
-  positionSmooth: 20
-  rotationSmooth: 15
+  neckDrop: 0.12
+  forward: 0.02
+  extraOffset: {x: 0, y: 0, z: 0}
+  posSmooth: 12
+  rotSmooth: 10
+  lockPitch: 1
+  lockRoll: 1
+  yawFollow: 0.3
+--- !u!114 &4867578517955240944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086164948141365038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d16e1116f1063304fa91589fdf1b6897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EarAttachARCore
+  outward: -0.01
+  downward: -0.035
+  depth: 0.05
 --- !u!1 &1576383704744356627
 GameObject:
   m_ObjectHideFlags: 0
