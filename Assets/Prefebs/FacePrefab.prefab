@@ -167,7 +167,6 @@ GameObject:
   - component: {fileID: 6762774322756275266}
   - component: {fileID: 5727629131238706964}
   - component: {fileID: 3523128311462860682}
-  - component: {fileID: 5464888078153588549}
   - component: {fileID: 5958698696350794373}
   m_Layer: 0
   m_Name: FacePrefab
@@ -274,20 +273,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1086164948141365038}
   m_Mesh: {fileID: 0}
---- !u!114 &5464888078153588549
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1086164948141365038}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4043173a295228489657e8ffe1c6b79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EarAnchorController
-  leftEarringPrefab: {fileID: 712837861599813127, guid: f38eebe72a3997f47b44eba6d794a6a9, type: 3}
-  rightEarringPrefab: {fileID: 712837861599813127, guid: f38eebe72a3997f47b44eba6d794a6a9, type: 3}
 --- !u!114 &5958698696350794373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -300,22 +285,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a0f5cb7ada16464dbd272caa5edd794, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NecklaceAttachARCore
-  necklacePrefab: {fileID: 804426986579811739, guid: 0cc442a5c1b83a94b9aeb7983e1c69b4, type: 3}
-  neckDropDistance: 0.14
+  necklacePrefab: {fileID: 0}
+  neckDropDistance: 0.2
   forwardDepth: 0.07
-  manualOffset: {x: -0.02, y: 0, z: 0}
-  positionDamping: 25
+  manualOffset: {x: 0, y: 0, z: 0}
+  positionDamping: 15
   rotationDamping: 12
   useKalmanFilter: 1
   kalmanQ: 0.001
-  kalmanR: 0.05
+  kalmanR: 0.01
   lockPitch: 1
   lockRoll: 1
-  yawFollowStrength: 0.05
+  yawFollowStrength: 0.3
   enableDepthOcclusion: 1
   enableSoftShadows: 1
   shadowIntensity: 0.6
-  enableEnvironmentReflections: 1
+  enableEnvironmentReflections: 0
 --- !u!1 &1576383704744356627
 GameObject:
   m_ObjectHideFlags: 0

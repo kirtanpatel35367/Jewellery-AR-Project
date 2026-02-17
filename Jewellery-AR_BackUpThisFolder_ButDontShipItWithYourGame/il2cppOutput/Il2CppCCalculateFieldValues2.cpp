@@ -289,7 +289,6 @@ struct List_1_tA5BDE435C735A082941CD33D212F97F4AE9FA55F;
 struct List_1_t02E640552264E3DEAE676267B620815D33BCD0DF;
 struct List_1_t903D292E8D18EC8ED8116528664B3713ECF95FD3;
 struct List_1_t596D4CD2694BB25A0F2CF9214F89DB3D60310B00;
-struct List_1_tCB5B3B0C70F6DFB6B059BB2C65DC77B101849444;
 struct List_1_tFED1C27AA4B8AC9813FF4858B3ABB1B3F74558EF;
 struct List_1_t2CDCA768E7F493F5EDEBC75AEB200FD621354E35;
 struct List_1_tFED0F30EE65D995591571D3CD2C10F22439CB317;
@@ -2472,17 +2471,17 @@ struct U3CWaitAndSpawnNecklaceU3Ed__13_t17D9C151EE558E6815872C6335558C5C1F2F9B1D
 	float ___U3CtimeoutU3E5__2;
 	float ___U3CelapsedU3E5__3;
 };
-struct U3CU3Ec__DisplayClass22_0_t7AC5C146C812DBB1E82CAD04ED4AABAD151A1013  : public RuntimeObject
+struct U3CU3Ec__DisplayClass10_0_t791C0B5D0D1032396DC8BC8C3DE6831CC50C3729  : public RuntimeObject
 {
 	int32_t ___ci;
 	JewelryUI_t4A1EF7F36628948EEDC27D7FBEF69CDCDB331E82* ___U3CU3E4__this;
 };
-struct U3CU3Ec__DisplayClass25_0_tF705B3C3EFCC328ACE2AC3F2BE2E8E6ACCA4039B  : public RuntimeObject
+struct U3CU3Ec__DisplayClass11_0_tB9FC51DFDCB1E7CB6ADC514D883D8E7AC18DE011  : public RuntimeObject
 {
 	int32_t ___ci;
 	JewelryUI_t4A1EF7F36628948EEDC27D7FBEF69CDCDB331E82* ___U3CU3E4__this;
 };
-struct U3CBuildU3Ed__21_t58C27899B3ED30B5315CD8CEC335C6BB5DD8DDF7  : public RuntimeObject
+struct U3CInitU3Ed__9_tCD46A16DD9720A98B90AB6C429FF330219A305BC  : public RuntimeObject
 {
 	int32_t ___U3CU3E1__state;
 	RuntimeObject* ___U3CU3E2__current;
@@ -17317,25 +17316,13 @@ struct JewelryManager_t4D46089BC77D683C7E4DABBD20CA3CBC36FF6A6F  : public MonoBe
 struct JewelryUI_t4A1EF7F36628948EEDC27D7FBEF69CDCDB331E82  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
 	JewelryManager_t4D46089BC77D683C7E4DABBD20CA3CBC36FF6A6F* ___jewelryManager;
-	Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26* ___mainCanvas;
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___barColor;
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___catNormal;
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___catSelected;
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___itemBg;
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___itemHighlight;
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___removeColor;
-	float ___topH;
-	float ___botH;
-	float ___cellW;
-	float ___cellH;
-	float ___gap;
-	float ___pad;
-	int32_t ___cols;
-	int32_t ___activeCat;
-	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ___contentRT;
-	List_1_tCB5B3B0C70F6DFB6B059BB2C65DC77B101849444* ___catBtns;
-	List_1_tCB5B3B0C70F6DFB6B059BB2C65DC77B101849444* ___itemBtns;
 	Font_tC95270EA3198038970422D78B74A7F2E218A96B6* ___font;
+	int32_t ___activeCat;
+	List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* ___itemObjects;
+	List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* ___catObjects;
+	Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26* ___uiCanvas;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___bottomPanel;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___itemGrid;
 };
 struct MessageListener_t50FA00662CCB169F065100293E953B3024E0BCAE  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -24927,16 +24914,16 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8327[9] =
 	static_cast<int32_t>(offsetof(JewelryManager_t4D46089BC77D683C7E4DABBD20CA3CBC36FF6A6F, ___categories)),static_cast<int32_t>(offsetof(JewelryManager_t4D46089BC77D683C7E4DABBD20CA3CBC36FF6A6F, ___leftEarAnchor)),static_cast<int32_t>(offsetof(JewelryManager_t4D46089BC77D683C7E4DABBD20CA3CBC36FF6A6F, ___rightEarAnchor)),static_cast<int32_t>(offsetof(JewelryManager_t4D46089BC77D683C7E4DABBD20CA3CBC36FF6A6F, ___necklaceAnchor)),static_cast<int32_t>(offsetof(JewelryManager_t4D46089BC77D683C7E4DABBD20CA3CBC36FF6A6F, ___activeLeftEarring)),static_cast<int32_t>(offsetof(JewelryManager_t4D46089BC77D683C7E4DABBD20CA3CBC36FF6A6F, ___activeRightEarring)),static_cast<int32_t>(offsetof(JewelryManager_t4D46089BC77D683C7E4DABBD20CA3CBC36FF6A6F, ___activeNecklace)),static_cast<int32_t>(offsetof(JewelryManager_t4D46089BC77D683C7E4DABBD20CA3CBC36FF6A6F, ___pendingEarPrefab)),static_cast<int32_t>(offsetof(JewelryManager_t4D46089BC77D683C7E4DABBD20CA3CBC36FF6A6F, ___pendingNecklacePrefab)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8328[2] = 
 {
-	static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass22_0_t7AC5C146C812DBB1E82CAD04ED4AABAD151A1013, ___ci)),static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass22_0_t7AC5C146C812DBB1E82CAD04ED4AABAD151A1013, ___U3CU3E4__this)),};
+	static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass10_0_t791C0B5D0D1032396DC8BC8C3DE6831CC50C3729, ___ci)),static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass10_0_t791C0B5D0D1032396DC8BC8C3DE6831CC50C3729, ___U3CU3E4__this)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8329[2] = 
 {
-	static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass25_0_tF705B3C3EFCC328ACE2AC3F2BE2E8E6ACCA4039B, ___ci)),static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass25_0_tF705B3C3EFCC328ACE2AC3F2BE2E8E6ACCA4039B, ___U3CU3E4__this)),};
+	static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass11_0_tB9FC51DFDCB1E7CB6ADC514D883D8E7AC18DE011, ___ci)),static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass11_0_tB9FC51DFDCB1E7CB6ADC514D883D8E7AC18DE011, ___U3CU3E4__this)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8330[3] = 
 {
-	static_cast<int32_t>(offsetof(U3CBuildU3Ed__21_t58C27899B3ED30B5315CD8CEC335C6BB5DD8DDF7, ___U3CU3E1__state)),static_cast<int32_t>(offsetof(U3CBuildU3Ed__21_t58C27899B3ED30B5315CD8CEC335C6BB5DD8DDF7, ___U3CU3E2__current)),static_cast<int32_t>(offsetof(U3CBuildU3Ed__21_t58C27899B3ED30B5315CD8CEC335C6BB5DD8DDF7, ___U3CU3E4__this)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8331[20] = 
+	static_cast<int32_t>(offsetof(U3CInitU3Ed__9_tCD46A16DD9720A98B90AB6C429FF330219A305BC, ___U3CU3E1__state)),static_cast<int32_t>(offsetof(U3CInitU3Ed__9_tCD46A16DD9720A98B90AB6C429FF330219A305BC, ___U3CU3E2__current)),static_cast<int32_t>(offsetof(U3CInitU3Ed__9_tCD46A16DD9720A98B90AB6C429FF330219A305BC, ___U3CU3E4__this)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8331[8] = 
 {
-	static_cast<int32_t>(offsetof(JewelryUI_t4A1EF7F36628948EEDC27D7FBEF69CDCDB331E82, ___jewelryManager)),static_cast<int32_t>(offsetof(JewelryUI_t4A1EF7F36628948EEDC27D7FBEF69CDCDB331E82, ___mainCanvas)),static_cast<int32_t>(offsetof(JewelryUI_t4A1EF7F36628948EEDC27D7FBEF69CDCDB331E82, ___barColor)),static_cast<int32_t>(offsetof(JewelryUI_t4A1EF7F36628948EEDC27D7FBEF69CDCDB331E82, ___catNormal)),static_cast<int32_t>(offsetof(JewelryUI_t4A1EF7F36628948EEDC27D7FBEF69CDCDB331E82, ___catSelected)),static_cast<int32_t>(offsetof(JewelryUI_t4A1EF7F36628948EEDC27D7FBEF69CDCDB331E82, ___itemBg)),static_cast<int32_t>(offsetof(JewelryUI_t4A1EF7F36628948EEDC27D7FBEF69CDCDB331E82, ___itemHighlight)),static_cast<int32_t>(offsetof(JewelryUI_t4A1EF7F36628948EEDC27D7FBEF69CDCDB331E82, ___removeColor)),static_cast<int32_t>(offsetof(JewelryUI_t4A1EF7F36628948EEDC27D7FBEF69CDCDB331E82, ___topH)),static_cast<int32_t>(offsetof(JewelryUI_t4A1EF7F36628948EEDC27D7FBEF69CDCDB331E82, ___botH)),static_cast<int32_t>(offsetof(JewelryUI_t4A1EF7F36628948EEDC27D7FBEF69CDCDB331E82, ___cellW)),static_cast<int32_t>(offsetof(JewelryUI_t4A1EF7F36628948EEDC27D7FBEF69CDCDB331E82, ___cellH)),static_cast<int32_t>(offsetof(JewelryUI_t4A1EF7F36628948EEDC27D7FBEF69CDCDB331E82, ___gap)),static_cast<int32_t>(offsetof(JewelryUI_t4A1EF7F36628948EEDC27D7FBEF69CDCDB331E82, ___pad)),static_cast<int32_t>(offsetof(JewelryUI_t4A1EF7F36628948EEDC27D7FBEF69CDCDB331E82, ___cols)),static_cast<int32_t>(offsetof(JewelryUI_t4A1EF7F36628948EEDC27D7FBEF69CDCDB331E82, ___activeCat)),static_cast<int32_t>(offsetof(JewelryUI_t4A1EF7F36628948EEDC27D7FBEF69CDCDB331E82, ___contentRT)),static_cast<int32_t>(offsetof(JewelryUI_t4A1EF7F36628948EEDC27D7FBEF69CDCDB331E82, ___catBtns)),static_cast<int32_t>(offsetof(JewelryUI_t4A1EF7F36628948EEDC27D7FBEF69CDCDB331E82, ___itemBtns)),static_cast<int32_t>(offsetof(JewelryUI_t4A1EF7F36628948EEDC27D7FBEF69CDCDB331E82, ___font)),};
+	static_cast<int32_t>(offsetof(JewelryUI_t4A1EF7F36628948EEDC27D7FBEF69CDCDB331E82, ___jewelryManager)),static_cast<int32_t>(offsetof(JewelryUI_t4A1EF7F36628948EEDC27D7FBEF69CDCDB331E82, ___font)),static_cast<int32_t>(offsetof(JewelryUI_t4A1EF7F36628948EEDC27D7FBEF69CDCDB331E82, ___activeCat)),static_cast<int32_t>(offsetof(JewelryUI_t4A1EF7F36628948EEDC27D7FBEF69CDCDB331E82, ___itemObjects)),static_cast<int32_t>(offsetof(JewelryUI_t4A1EF7F36628948EEDC27D7FBEF69CDCDB331E82, ___catObjects)),static_cast<int32_t>(offsetof(JewelryUI_t4A1EF7F36628948EEDC27D7FBEF69CDCDB331E82, ___uiCanvas)),static_cast<int32_t>(offsetof(JewelryUI_t4A1EF7F36628948EEDC27D7FBEF69CDCDB331E82, ___bottomPanel)),static_cast<int32_t>(offsetof(JewelryUI_t4A1EF7F36628948EEDC27D7FBEF69CDCDB331E82, ___itemGrid)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8332[13] = 
 {
 	static_cast<int32_t>(offsetof(NecklaceAttachARCore_t36CBB8B527BEC275D156FB5CB3D77E3292BD848E_StaticFields, ___NECK_VERTS)),static_cast<int32_t>(offsetof(NecklaceAttachARCore_t36CBB8B527BEC275D156FB5CB3D77E3292BD848E, ___neckDrop)),static_cast<int32_t>(offsetof(NecklaceAttachARCore_t36CBB8B527BEC275D156FB5CB3D77E3292BD848E, ___forward)),static_cast<int32_t>(offsetof(NecklaceAttachARCore_t36CBB8B527BEC275D156FB5CB3D77E3292BD848E, ___extraOffset)),static_cast<int32_t>(offsetof(NecklaceAttachARCore_t36CBB8B527BEC275D156FB5CB3D77E3292BD848E, ___posSmooth)),static_cast<int32_t>(offsetof(NecklaceAttachARCore_t36CBB8B527BEC275D156FB5CB3D77E3292BD848E, ___rotSmooth)),static_cast<int32_t>(offsetof(NecklaceAttachARCore_t36CBB8B527BEC275D156FB5CB3D77E3292BD848E, ___lockPitch)),static_cast<int32_t>(offsetof(NecklaceAttachARCore_t36CBB8B527BEC275D156FB5CB3D77E3292BD848E, ___lockRoll)),static_cast<int32_t>(offsetof(NecklaceAttachARCore_t36CBB8B527BEC275D156FB5CB3D77E3292BD848E, ___yawFollow)),static_cast<int32_t>(offsetof(NecklaceAttachARCore_t36CBB8B527BEC275D156FB5CB3D77E3292BD848E, ___face)),static_cast<int32_t>(offsetof(NecklaceAttachARCore_t36CBB8B527BEC275D156FB5CB3D77E3292BD848E, ___neckAnchor)),static_cast<int32_t>(offsetof(NecklaceAttachARCore_t36CBB8B527BEC275D156FB5CB3D77E3292BD848E, ___vel)),static_cast<int32_t>(offsetof(NecklaceAttachARCore_t36CBB8B527BEC275D156FB5CB3D77E3292BD848E, ___anchorRegistered)),};

@@ -3,382 +3,304 @@ using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 
-/// <summary>
-/// JewelryUI — Standard Unity stretch-anchor approach.
-///
-/// Uses the correct Unity pattern:
-///   • Every panel stretches to fill its parent via anchorMin=0,0 anchorMax=1,1
-///   • Then offsetMin/offsetMax crop it to the desired region
-///   • This is how Unity's own UI samples work and is reliable everywhere
-///
-/// Layout:
-///   Top bar    = full width, top N pixels    → offsetMin.y = SH - topH
-///   Bottom panel = full width, bottom N px  → offsetMax.y = panelH  
-///   Items      = placed manually inside content
-/// </summary>
 public class JewelryUI : MonoBehaviour
 {
     [Header("Required")]
     public JewelryManager jewelryManager;
-    public Canvas mainCanvas;
 
-    [Header("Colors")]
-    public Color barColor = new Color(0.08f, 0.08f, 0.12f, 1f);
-    public Color catNormal = new Color(0.20f, 0.20f, 0.28f, 1f);
-    public Color catSelected = new Color(0.82f, 0.62f, 0.10f, 1f);
-    public Color itemBg = new Color(0.22f, 0.22f, 0.30f, 1f);
-    public Color itemHighlight = new Color(0.82f, 0.62f, 0.10f, 1f);
-    public Color removeColor = new Color(0.72f, 0.13f, 0.13f, 1f);
-
-    // These are set from screen size at runtime
-    private float topH;      // top bar height
-    private float botH;      // bottom panel height
-    private float cellW;     // item cell width
-    private float cellH;     // item cell height
-    private float gap;       // cell gap
-    private float pad;       // panel padding
-    private int cols = 3;
-
-    private int activeCat;
-    private RectTransform contentRT;
-    private List<Button> catBtns = new List<Button>();
-    private List<Button> itemBtns = new List<Button>();
     private Font font;
+    private int activeCat = 0;
+    private List<GameObject> itemObjects = new List<GameObject>();
+    private List<GameObject> catObjects = new List<GameObject>();
 
-    // ── Entry point ───────────────────────────────────────────────────────
+    // We build everything on ONE new canvas we create ourselves
+    private Canvas uiCanvas;
+    private GameObject bottomPanel;
+    private GameObject itemGrid;
+
     void Start()
     {
-        if (jewelryManager == null || mainCanvas == null)
+        if (jewelryManager == null)
         {
-            Debug.LogError("[JewelryUI] Assign JewelryManager + Canvas in Inspector!");
+            Debug.LogError("[JewelryUI] Assign JewelryManager!");
             return;
         }
-        StartCoroutine(Build());
+        StartCoroutine(Init());
     }
 
-    IEnumerator Build()
+    IEnumerator Init()
     {
-        // Step 1: lock orientation and wait for it to settle
-        Screen.orientation = ScreenOrientation.Portrait;
-        yield return new WaitForSeconds(0.1f);
-
+        yield return new WaitForSeconds(0.5f); // let AR scene finish loading
         font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
-
-        // Step 2: configure canvas FIRST, before reading any sizes
-        mainCanvas.renderMode = RenderMode.ScreenSpaceOverlay;
-        mainCanvas.sortingOrder = 999;
-        mainCanvas.worldCamera = null;
-
-        // Disable CanvasScaler — we work in raw pixels
-        CanvasScaler cs = mainCanvas.GetComponent<CanvasScaler>();
-        if (cs != null) { cs.enabled = false; }
-
-        // Ensure GraphicRaycaster
-        if (mainCanvas.GetComponent<GraphicRaycaster>() == null)
-            mainCanvas.gameObject.AddComponent<GraphicRaycaster>();
-
-        // Step 3: wait TWO frames for canvas to resolve its rect
-        yield return null;
-        yield return null;
-
-        // Step 4: read the CANVAS rect (not Screen directly - scaler may affect it)
-        RectTransform canvasRT = mainCanvas.GetComponent<RectTransform>();
-        float CW = canvasRT.rect.width;
-        float CH = canvasRT.rect.height;
-
-        // If canvas rect is still zero, fall back to Screen size
-        if (CW < 1f || CH < 1f)
-        {
-            CW = Screen.width;
-            CH = Screen.height;
-        }
-
-        Debug.Log($"[JewelryUI] Canvas: {CW}x{CH}  Screen: {Screen.width}x{Screen.height}");
-
-        // Step 5: calculate layout proportions
-        topH = Mathf.Round(CH * 0.07f);
-        botH = Mathf.Round(CH * 0.22f);
-        pad = Mathf.Round(CW * 0.03f);
-        gap = Mathf.Round(CW * 0.02f);
-        cellW = Mathf.Round((CW - pad * 2f - gap * (cols - 1)) / cols);
-        cellH = Mathf.Round(cellW * 1.15f);
-
-        Debug.Log($"[JewelryUI] topH={topH} botH={botH} cellW={cellW} cellH={cellH}");
-
-        // Step 6: build UI
-        BuildTopBar(canvasRT, CW, CH);
-        BuildBottomPanel(canvasRT, CW, CH);
-        BuildRemoveButton(canvasRT, CW, CH);
-        SelectCategory(0);
+        BuildEverything();
     }
 
-    // ─────────────────────────────────────────────────────────────────────
-    // TOP BAR  — sits at the top of the canvas
-    // ─────────────────────────────────────────────────────────────────────
-    void BuildTopBar(RectTransform canvasRT, float CW, float CH)
+    void BuildEverything()
     {
-        // Stretch to full canvas, then crop to top topH pixels
-        GameObject bar = Make("TopBar", canvasRT);
-        RectTransform rt = RT(bar);
-        rt.anchorMin = Vector2.zero;
-        rt.anchorMax = Vector2.one;
-        rt.offsetMin = new Vector2(0, CH - topH);  // bottom of bar
-        rt.offsetMax = new Vector2(0, 0);           // top of bar = canvas top
-        BG(bar, barColor);
+        // ── Create a brand-new canvas ────────────────────────────────────
+        GameObject canvasGO = new GameObject("JEWELRY_UI_CANVAS");
+        DontDestroyOnLoad(canvasGO);
 
-        // Category buttons inside the bar
-        float btnW = Mathf.Round((CW - pad * 2f - gap * (jewelryManager.CategoryCount - 1))
-                                  / jewelryManager.CategoryCount);
-        float btnH = topH - pad;
-        float btnY = pad * 0.5f;  // from bottom of bar
+        uiCanvas = canvasGO.AddComponent<Canvas>();
+        uiCanvas.renderMode = RenderMode.ScreenSpaceOverlay;
+        uiCanvas.sortingOrder = 32767; // maximum possible — on top of everything
 
-        for (int i = 0; i < jewelryManager.CategoryCount; i++)
+        CanvasScaler scaler = canvasGO.AddComponent<CanvasScaler>();
+        scaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
+        scaler.referenceResolution = new Vector2(1080, 1920);
+        scaler.matchWidthOrHeight = 0.5f;
+
+        canvasGO.AddComponent<GraphicRaycaster>();
+
+        RectTransform canvasRT = canvasGO.GetComponent<RectTransform>();
+
+        // ── TOP BAR ──────────────────────────────────────────────────────
+        GameObject topBar = MakeBox("TopBar", canvasRT,
+            new Vector2(0, 1), new Vector2(1, 1),
+            new Vector2(0.5f, 1), new Vector2(0, 130));
+        SetColor(topBar, new Color(0.1f, 0.1f, 0.15f, 1));
+
+        // Category buttons in top bar
+        float catW = 540f - 20f; // half width minus gap
+        Color[] catColors = new Color[]
+        {
+            new Color(0.82f,0.62f,0.10f,1),  // gold (selected)
+            new Color(0.25f,0.25f,0.35f,1)   // dark (unselected)
+        };
+
+        for (int i = 0; i < Mathf.Min(jewelryManager.CategoryCount, 2); i++)
         {
             int ci = i;
             string nm = jewelryManager.categories[i].categoryName;
+            float xPos = 20f + i * (catW + 20f);
 
-            GameObject obj = Make("Cat_" + nm, rt);
-            RectTransform brt = RT(obj);
-            brt.anchorMin = Vector2.zero;
-            brt.anchorMax = Vector2.zero;
-            brt.pivot = new Vector2(0f, 0f);
-            float bx = pad + i * (btnW + gap);
-            brt.anchoredPosition = new Vector2(bx, btnY);
-            brt.sizeDelta = new Vector2(btnW, btnH);
-            BG(obj, catNormal);
+            GameObject catBtn = MakeBox("CatBtn_" + i, topBar.GetComponent<RectTransform>(),
+                new Vector2(0, 0), new Vector2(0, 1),
+                new Vector2(0, 0.5f), new Vector2(catW, -20));
+            catBtn.GetComponent<RectTransform>().anchoredPosition = new Vector2(xPos, 0);
+            SetColor(catBtn, catColors[i]);
+            AddText(catBtn, nm, 36, Color.white);
 
-            Button btn = obj.AddComponent<Button>();
-            btn.transition = Selectable.Transition.None;
-            Label(obj.transform, nm, Mathf.RoundToInt(btnH * 0.35f),
-                  FontStyle.Bold, Color.white, TextAnchor.MiddleCenter);
-            btn.onClick.AddListener(() => SelectCategory(ci));
-            catBtns.Add(btn);
+            Button b = catBtn.AddComponent<Button>();
+            b.transition = Selectable.Transition.None;
+            b.onClick.AddListener(() => SelectCat(ci));
+            catObjects.Add(catBtn);
         }
-    }
 
-    // ─────────────────────────────────────────────────────────────────────
-    // BOTTOM PANEL  — sits at the bottom of the canvas
-    // ─────────────────────────────────────────────────────────────────────
-    void BuildBottomPanel(RectTransform canvasRT, float CW, float CH)
-    {
-        // Stretch to full canvas, then crop to bottom botH pixels
-        GameObject panel = Make("BottomPanel", canvasRT);
-        RectTransform prt = RT(panel);
-        prt.anchorMin = Vector2.zero;
-        prt.anchorMax = Vector2.one;
-        prt.offsetMin = new Vector2(0, 0);     // bottom of panel = canvas bottom
-        prt.offsetMax = new Vector2(0, -(CH - botH)); // top of panel = botH above bottom
-        BG(panel, barColor);
+        // ── BOTTOM PANEL ─────────────────────────────────────────────────
+        bottomPanel = MakeBox("BottomPanel", canvasRT,
+            new Vector2(0, 0), new Vector2(1, 0),
+            new Vector2(0.5f, 0), new Vector2(0, 450));
+        SetColor(bottomPanel, new Color(0.12f, 0.12f, 0.18f, 1));
 
-        // ScrollRect
-        ScrollRect sr = panel.AddComponent<ScrollRect>();
+        // Item grid inside bottom panel (vertical scroll via manual layout)
+        itemGrid = MakeBox("ItemGrid", bottomPanel.GetComponent<RectTransform>(),
+            new Vector2(0, 0), new Vector2(1, 1),
+            new Vector2(0, 1), new Vector2(0, 0));
+        itemGrid.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
+        // No Image on itemGrid so it's transparent
+        Object.Destroy(itemGrid.GetComponent<Image>());
+
+        // Add GridLayoutGroup
+        GridLayoutGroup g = itemGrid.AddComponent<GridLayoutGroup>();
+        g.cellSize = new Vector2(320, 300);
+        g.spacing = new Vector2(15, 15);
+        g.padding = new RectOffset(20, 20, 20, 20);
+        g.constraint = GridLayoutGroup.Constraint.FixedColumnCount;
+        g.constraintCount = 3;
+        g.childAlignment = TextAnchor.UpperCenter;
+
+        ContentSizeFitter cf = itemGrid.AddComponent<ContentSizeFitter>();
+        cf.verticalFit = ContentSizeFitter.FitMode.PreferredSize;
+
+        // Wrap in ScrollRect
+        ScrollRect sr = bottomPanel.AddComponent<ScrollRect>();
+        sr.content = itemGrid.GetComponent<RectTransform>();
+        sr.viewport = bottomPanel.GetComponent<RectTransform>();
         sr.horizontal = false;
         sr.vertical = true;
-        sr.movementType = ScrollRect.MovementType.Clamped;
-        sr.inertia = true;
-        sr.decelerationRate = 0.15f;
-        sr.scrollSensitivity = 20f;
 
-        // Viewport fills the panel
-        GameObject vp = Make("Viewport", prt);
-        RectTransform vrt = RT(vp);
-        vrt.anchorMin = Vector2.zero;
-        vrt.anchorMax = Vector2.one;
-        vrt.offsetMin = Vector2.zero;
-        vrt.offsetMax = Vector2.zero;
-        Image vi = vp.AddComponent<Image>();
-        vi.color = Color.clear;
-        Mask msk = vp.AddComponent<Mask>();
-        msk.showMaskGraphic = false;
+        // ── REMOVE BUTTON ─────────────────────────────────────────────────
+        GameObject remBtn = MakeBox("RemoveBtn", canvasRT,
+            new Vector2(1, 0), new Vector2(1, 0),
+            new Vector2(1, 0), new Vector2(300, 75));
+        remBtn.GetComponent<RectTransform>().anchoredPosition = new Vector2(-20, 470);
+        SetColor(remBtn, new Color(0.8f, 0.15f, 0.15f, 1));
+        AddText(remBtn, "X Remove All", 26, Color.white);
+        Button rb = remBtn.AddComponent<Button>();
+        rb.transition = Selectable.Transition.None;
+        rb.onClick.AddListener(() => jewelryManager.RemoveAll());
 
-        // Content — top-anchored, height set when items are spawned
-        GameObject ct = Make("Content", RT(vp));
-        contentRT = RT(ct);
-        contentRT.anchorMin = new Vector2(0f, 1f);
-        contentRT.anchorMax = new Vector2(1f, 1f);
-        contentRT.pivot = new Vector2(0.5f, 1f);
-        contentRT.sizeDelta = new Vector2(0f, botH);
-        contentRT.anchoredPosition = Vector2.zero;
-
-        sr.viewport = vrt;
-        sr.content = contentRT;
+        // ── Show first category ───────────────────────────────────────────
+        SelectCat(0);
     }
 
-    // ─────────────────────────────────────────────────────────────────────
-    // REMOVE BUTTON  — just above the bottom panel
-    // ─────────────────────────────────────────────────────────────────────
-    void BuildRemoveButton(RectTransform canvasRT, float CW, float CH)
-    {
-        float btnW = CW * 0.38f;
-        float btnH = CH * 0.042f;
-
-        GameObject obj = Make("RemoveBtn", canvasRT);
-        RectTransform rt = RT(obj);
-        rt.anchorMin = Vector2.zero;
-        rt.anchorMax = Vector2.zero;
-        rt.pivot = new Vector2(1f, 0f);
-        rt.sizeDelta = new Vector2(btnW, btnH);
-        rt.anchoredPosition = new Vector2(CW - pad, botH + pad);
-        BG(obj, removeColor);
-
-        Button btn = obj.AddComponent<Button>();
-        btn.transition = Selectable.Transition.None;
-        btn.onClick.AddListener(() => jewelryManager.RemoveAll());
-        Label(obj.transform, "✕  Remove All",
-              Mathf.RoundToInt(btnH * 0.4f),
-              FontStyle.Bold, Color.white, TextAnchor.MiddleCenter);
-    }
-
-    // ─────────────────────────────────────────────────────────────────────
-    // SELECT CATEGORY
-    // ─────────────────────────────────────────────────────────────────────
-    void SelectCategory(int idx)
+    void SelectCat(int idx)
     {
         activeCat = idx;
 
-        // Update tab highlight
-        for (int i = 0; i < catBtns.Count; i++)
+        // Update category button colors
+        for (int i = 0; i < catObjects.Count; i++)
         {
-            Image bg = catBtns[i].GetComponent<Image>();
-            if (bg) bg.color = (i == idx) ? catSelected : catNormal;
+            Image img = catObjects[i].GetComponent<Image>();
+            if (img != null)
+                img.color = (i == idx)
+                    ? new Color(0.82f, 0.62f, 0.10f, 1)
+                    : new Color(0.25f, 0.25f, 0.35f, 1);
         }
 
         // Clear old items
-        for (int c = contentRT.childCount - 1; c >= 0; c--)
-            DestroyImmediate(contentRT.GetChild(c).gameObject);
-        itemBtns.Clear();
+        foreach (var ob in itemObjects)
+            if (ob != null) Destroy(ob);
+        itemObjects.Clear();
 
-        JewelryCategory cat = jewelryManager.categories[idx];
-        JewelryItem[] items = cat.items;
-
+        JewelryItem[] items = jewelryManager.categories[idx].items;
         if (items == null || items.Length == 0)
         {
-            Debug.LogWarning($"[JewelryUI] No items in '{cat.categoryName}'");
+            Debug.LogWarning("[JewelryUI] No items in category " + idx);
             return;
         }
 
-        // Place items manually
-        int placed = 0;
+        // Spawn item buttons
         for (int i = 0; i < items.Length; i++)
         {
             if (items[i] == null) continue;
             int ci = i;
-            int col = placed % cols;
-            int row = placed / cols;
-            float x = pad + col * (cellW + gap);
-            float y = pad + row * (cellH + gap);
-
-            Button btn = SpawnItem(items[i], x, y);
-            btn.onClick.AddListener(() =>
+            GameObject cell = SpawnCell(items[i]);
+            Button b = cell.AddComponent<Button>();
+            b.transition = Selectable.Transition.None;
+            b.onClick.AddListener(() =>
             {
                 jewelryManager.EquipJewelryByIndex(activeCat, ci);
-                HighlightItem(ci);
+                HighlightCell(ci);
             });
-            itemBtns.Add(btn);
-            placed++;
+            itemObjects.Add(cell);
         }
 
-        // Set content height
-        int rows = Mathf.Max(1, Mathf.CeilToInt((float)placed / cols));
-        float height = pad * 2f + rows * cellH + (rows - 1) * gap;
-        height = Mathf.Max(height, botH);
-        contentRT.sizeDelta = new Vector2(0f, height);
-        contentRT.anchoredPosition = Vector2.zero;
-
-        Debug.Log($"[JewelryUI] Cat={idx} Items={placed} Height={height}");
+        LayoutRebuilder.ForceRebuildLayoutImmediate(
+            itemGrid.GetComponent<RectTransform>());
     }
 
-    // ─────────────────────────────────────────────────────────────────────
-    // SPAWN ONE ITEM BUTTON
-    // ─────────────────────────────────────────────────────────────────────
-    Button SpawnItem(JewelryItem item, float x, float y)
+    GameObject SpawnCell(JewelryItem item)
     {
-        GameObject obj = Make(item.itemName, contentRT);
-        RectTransform rt = RT(obj);
-        rt.anchorMin = new Vector2(0f, 1f);  // top-left anchor
-        rt.anchorMax = new Vector2(0f, 1f);
-        rt.pivot = new Vector2(0f, 1f);
-        rt.sizeDelta = new Vector2(cellW, cellH);
-        rt.anchoredPosition = new Vector2(x, -y);   // y negative = downward
+        // Outer cell (border)
+        GameObject cell = new GameObject(item.itemName, typeof(RectTransform));
+        cell.transform.SetParent(itemGrid.transform, false);
+        Image border = cell.AddComponent<Image>();
+        border.color = new Color(0.7f, 0.7f, 0.9f, 1f); // light blue-grey border
 
-        Image bg = BG(obj, itemBg);
+        // Inner background (inset 4px)
+        GameObject inner = new GameObject("Inner", typeof(RectTransform));
+        inner.transform.SetParent(cell.transform, false);
+        RectTransform irt = inner.GetComponent<RectTransform>();
+        irt.anchorMin = Vector2.zero;
+        irt.anchorMax = Vector2.one;
+        irt.offsetMin = new Vector2(4, 4);
+        irt.offsetMax = new Vector2(-4, -4);
+        Image bg = inner.AddComponent<Image>();
+
+        // If thumbnail exists, show it; otherwise show a purple box
         if (item.thumbnailImage != null)
         {
             bg.sprite = item.thumbnailImage;
             bg.color = Color.white;
             bg.preserveAspect = true;
-            bg.type = Image.Type.Simple;
         }
-
-        Button btn = obj.AddComponent<Button>();
-        btn.transition = Selectable.Transition.None;
-
-        // Name strip at bottom of cell
-        int stripH = Mathf.RoundToInt(cellH * 0.28f);
-        GameObject strip = Make("Strip", RT(obj));
-        RectTransform srt = RT(strip);
-        srt.anchorMin = new Vector2(0f, 0f);
-        srt.anchorMax = new Vector2(1f, 0f);
-        srt.pivot = new Vector2(0.5f, 0f);
-        srt.sizeDelta = new Vector2(0f, stripH);
-        srt.anchoredPosition = Vector2.zero;
-        BG(strip, new Color(0f, 0f, 0f, 0.72f));
-        Label(strip.transform, item.itemName,
-              Mathf.RoundToInt(stripH * 0.52f),
-              FontStyle.Normal, Color.white, TextAnchor.MiddleCenter);
-
-        return btn;
-    }
-
-    void HighlightItem(int idx)
-    {
-        for (int i = 0; i < itemBtns.Count; i++)
+        else
         {
-            Image bg = itemBtns[i].GetComponent<Image>();
-            if (bg) bg.color = (i == idx) ? itemHighlight : itemBg;
+            bg.color = new Color(0.30f, 0.28f, 0.48f, 1f); // visible purple
+        }
+
+        // Name label at bottom
+        GameObject labelGO = new GameObject("Label", typeof(RectTransform));
+        labelGO.transform.SetParent(inner.transform, false);
+        RectTransform lrt = labelGO.GetComponent<RectTransform>();
+        lrt.anchorMin = new Vector2(0, 0);
+        lrt.anchorMax = new Vector2(1, 0);
+        lrt.pivot = new Vector2(0.5f, 0);
+        lrt.sizeDelta = new Vector2(0, 80);
+        lrt.anchoredPosition = Vector2.zero;
+
+        // Dark strip behind text
+        Image labelBg = labelGO.AddComponent<Image>();
+        labelBg.color = new Color(0, 0, 0, 0.85f);
+
+        // Text
+        GameObject textGO = new GameObject("Text", typeof(RectTransform));
+        textGO.transform.SetParent(labelGO.transform, false);
+        RectTransform trt = textGO.GetComponent<RectTransform>();
+        trt.anchorMin = Vector2.zero;
+        trt.anchorMax = Vector2.one;
+        trt.offsetMin = new Vector2(4, 2);
+        trt.offsetMax = new Vector2(-4, -2);
+        Text t = textGO.AddComponent<Text>();
+        t.text = item.itemName;
+        t.font = font;
+        t.fontSize = 24;
+        t.fontStyle = FontStyle.Bold;
+        t.color = Color.white;
+        t.alignment = TextAnchor.MiddleCenter;
+        t.horizontalOverflow = HorizontalWrapMode.Wrap;
+        t.verticalOverflow = VerticalWrapMode.Truncate;
+        t.raycastTarget = false;
+
+        return cell;
+    }
+
+    void HighlightCell(int idx)
+    {
+        for (int i = 0; i < itemObjects.Count; i++)
+        {
+            Image img = itemObjects[i].GetComponent<Image>();
+            if (img != null)
+                img.color = (i == idx)
+                    ? new Color(0.82f, 0.62f, 0.10f, 1f)
+                    : new Color(0.7f, 0.7f, 0.9f, 1f);
         }
     }
 
-    // ─────────────────────────────────────────────────────────────────────
-    // HELPERS
-    // ─────────────────────────────────────────────────────────────────────
-    static GameObject Make(string name, Transform parent)
+    // ── Helpers ───────────────────────────────────────────────────────────
+
+    // Makes a RectTransform box with an Image
+    GameObject MakeBox(string name, RectTransform parent,
+                       Vector2 ancMin, Vector2 ancMax,
+                       Vector2 pivot, Vector2 sizeDelta)
     {
-        var go = new GameObject(name, typeof(RectTransform));
+        GameObject go = new GameObject(name, typeof(RectTransform));
         go.transform.SetParent(parent, false);
+        RectTransform rt = go.GetComponent<RectTransform>();
+        rt.anchorMin = ancMin;
+        rt.anchorMax = ancMax;
+        rt.pivot = pivot;
+        rt.sizeDelta = sizeDelta;
+        rt.anchoredPosition = Vector2.zero;
+        go.AddComponent<Image>().raycastTarget = true;
         return go;
     }
-    static GameObject Make(string name, RectTransform parent) =>
-        Make(name, parent.transform);
 
-    static RectTransform RT(GameObject go) =>
-        go.GetComponent<RectTransform>();
-
-    Image BG(GameObject go, Color c)
+    void SetColor(GameObject go, Color c)
     {
-        var img = go.AddComponent<Image>();
+        Image img = go.GetComponent<Image>();
+        if (img == null) img = go.AddComponent<Image>();
         img.color = c;
-        img.raycastTarget = true;
-        return img;
     }
 
-    void Label(Transform parent, string text, int size,
-               FontStyle style, Color col, TextAnchor align)
+    void AddText(GameObject go, string txt, int size, Color col)
     {
-        var go = Make("Lbl", parent);
-        var rt = RT(go);
+        GameObject tgo = new GameObject("Lbl", typeof(RectTransform));
+        tgo.transform.SetParent(go.transform, false);
+        RectTransform rt = tgo.GetComponent<RectTransform>();
         rt.anchorMin = Vector2.zero;
         rt.anchorMax = Vector2.one;
-        rt.offsetMin = new Vector2(3f, 2f);
-        rt.offsetMax = new Vector2(-3f, -2f);
-
-        var t = go.AddComponent<Text>();
-        t.text = text;
+        rt.offsetMin = new Vector2(4, 2);
+        rt.offsetMax = new Vector2(-4, -2);
+        Text t = tgo.AddComponent<Text>();
+        t.text = txt;
         t.font = font;
         t.fontSize = size;
-        t.fontStyle = style;
+        t.fontStyle = FontStyle.Bold;
         t.color = col;
-        t.alignment = align;
+        t.alignment = TextAnchor.MiddleCenter;
         t.horizontalOverflow = HorizontalWrapMode.Wrap;
         t.verticalOverflow = VerticalWrapMode.Truncate;
         t.raycastTarget = false;

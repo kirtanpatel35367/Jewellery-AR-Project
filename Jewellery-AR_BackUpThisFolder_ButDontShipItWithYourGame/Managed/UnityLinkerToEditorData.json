@@ -885,7 +885,9 @@
         "dependencies": [
           {
             "name": "BoxCollider",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/FaceTryOn.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
