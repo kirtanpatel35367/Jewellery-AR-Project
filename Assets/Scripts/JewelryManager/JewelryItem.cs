@@ -1,25 +1,18 @@
 using UnityEngine;
 
 /// <summary>
-/// Represents a single jewelry item (one earring design, one necklace design, etc.)
-/// This appears as a clickable button with thumbnail in the UI
+/// Holds data for ONE jewelry piece shown as a button in the UI.
+/// Fill these fields in the JewelryManager Inspector.
 /// </summary>
 [System.Serializable]
 public class JewelryItem
 {
-    [Tooltip("Display name shown in UI")]
+    [Tooltip("Name shown on the button, e.g. 'Gold Hoop'")]
     public string itemName;
 
-    [Tooltip("Small preview image shown on the button")]
+    [Tooltip("Small preview image shown on the button (optional)")]
     public Sprite thumbnailImage;
 
-    [Tooltip("3D prefab that appears on the face/neck")]
+    [Tooltip("The 3D model prefab that appears on the face when clicked")]
     public GameObject jewelryPrefab;
-
-    [Tooltip("Optional description or price")]
-    public string description;
-
-    [Header("Optional: For Different Attachment Methods")]
-    [Tooltip("Leave empty to use default attachment")]
-    public string customAttachmentScript;
 }

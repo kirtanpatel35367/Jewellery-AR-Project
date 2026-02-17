@@ -405,9 +405,7 @@
           },
           {
             "name": "Sprite",
-            "scenes": [
-              "Assets/Scenes/FaceTryOn.unity"
-            ],
+            "scenes": [],
             "dependencyType": 0,
             "icon": null
           },
@@ -1342,9 +1340,7 @@
           },
           {
             "name": "CanvasRenderer",
-            "scenes": [
-              "Assets/Scenes/FaceTryOn.unity"
-            ],
+            "scenes": [],
             "dependencyType": 0,
             "icon": null
           },

@@ -1,357 +1,199 @@
 using UnityEngine;
-using System.Collections.Generic;
+using System.Collections;
 
 /// <summary>
-/// UPDATED VERSION - Now handles both Earrings AND Necklaces
-/// Backward compatible with your existing setup
+/// JewelryManager — Fixed pending spawn system.
+///
+/// FIX: Instead of spawning once on RegisterEarAnchors(), a coroutine
+/// polls every frame until the anchor is non-null, then spawns.
+/// This handles the case where the user taps an earring item but the
+/// face mesh arrives several seconds later (common on Xiaomi).
 /// </summary>
 public class JewelryManager : MonoBehaviour
 {
-    // ============ LEGACY SUPPORT (Your old system still works) ============
-    [System.Serializable]
-    public class EarringItem
-    {
-        public string name;
-        public GameObject prefab;
-    }
-
-    [Header("LEGACY: Earring Collection (Still works)")]
-    public List<EarringItem> earringCollection = new List<EarringItem>();
-
-    // ============ NEW SYSTEM (Categories) ============
-    [Header("NEW: Category System")]
-    [Tooltip("All jewelry categories (Earrings, Necklace, etc.)")]
+    [Header("Jewelry Data  (fill in all items here)")]
     public JewelryCategory[] categories;
 
-    [Header("Anchor References (Auto-assigned at runtime)")]
+    [Header("AR Anchors — leave empty, filled at runtime")]
     public Transform leftEarAnchor;
     public Transform rightEarAnchor;
     public Transform necklaceAnchor;
 
-    // Current state tracking
-    private GameObject currentLeftEarring;
-    private GameObject currentRightEarring;
-    private GameObject currentNecklace;
+    private GameObject activeLeftEarring;
+    private GameObject activeRightEarring;
+    private GameObject activeNecklace;
 
-    // Track what's currently selected
-    private JewelryType currentType = JewelryType.Earrings;
+    private GameObject pendingEarPrefab;
+    private GameObject pendingNecklacePrefab;
 
-    // ============ ANCHOR REGISTRATION ============
-
-    /// <summary>
-    /// Called by EarAnchorController when FacePrefab is spawned
-    /// </summary>
-    public void RegisterEarAnchors(Transform leftAnchor, Transform rightAnchor)
+    // ── Anchor registration ───────────────────────────────────────────────
+    public void RegisterEarAnchors(Transform left, Transform right)
     {
-        leftEarAnchor = leftAnchor;
-        rightEarAnchor = rightAnchor;
-        Debug.Log($"✓ Ear Anchors registered! Left: {leftAnchor.name}, Right: {rightAnchor.name}");
+        leftEarAnchor = left;
+        rightEarAnchor = right;
+        Debug.Log("[JewelryManager] Ear anchors registered.");
+
+        if (pendingEarPrefab != null)
+        {
+            SpawnEarrings(pendingEarPrefab);
+            pendingEarPrefab = null;
+        }
     }
 
-    /// <summary>
-    /// Called by NecklaceAttachARCore when necklace anchor is ready
-    /// </summary>
     public void RegisterNecklaceAnchor(Transform anchor)
     {
         necklaceAnchor = anchor;
-        Debug.Log($"✓ Necklace Anchor registered! Anchor: {anchor.name}");
-    }
+        Debug.Log("[JewelryManager] Necklace anchor registered.");
 
-    // ============ LEGACY METHODS (Backward Compatible) ============
-
-    /// <summary>
-    /// LEGACY: Works with your old UI buttons
-    /// </summary>
-    public void EquipEarrings(string earringName)
-    {
-        Debug.Log($"===== EquipEarrings (LEGACY) called: {earringName} =====");
-
-        if (leftEarAnchor == null || rightEarAnchor == null)
+        if (pendingNecklacePrefab != null)
         {
-            Debug.LogWarning("⚠ Ear anchors not registered yet! Make sure face is detected.");
-            return;
-        }
-
-        EarringItem item = earringCollection.Find(x => x.name == earringName);
-        if (item == null)
-        {
-            Debug.LogError($"❌ Earring '{earringName}' not found in collection!");
-            return;
-        }
-
-        Debug.Log($"✓ Found item - Name: {item.name}, Prefab: {item.prefab.name}");
-
-        RemoveEarrings();
-        SpawnEarrings(item.prefab);
-    }
-
-    // ============ NEW CATEGORY-BASED METHODS ============
-
-    /// <summary>
-    /// NEW: Equip jewelry by category and item index
-    /// Called by the new dynamic UI system
-    /// </summary>
-    public void EquipJewelryByIndex(int categoryIndex, int itemIndex)
-    {
-        Debug.Log($"===== EquipJewelryByIndex - Category: {categoryIndex}, Item: {itemIndex} =====");
-
-        if (categories == null || categories.Length == 0)
-        {
-            Debug.LogError("❌ No categories configured! Fill Categories array in Inspector.");
-            return;
-        }
-
-        if (categoryIndex < 0 || categoryIndex >= categories.Length)
-        {
-            Debug.LogError($"❌ Invalid category index: {categoryIndex}");
-            return;
-        }
-
-        JewelryCategory category = categories[categoryIndex];
-
-        if (category.items == null || category.items.Length == 0)
-        {
-            Debug.LogError($"❌ Category '{category.categoryName}' has no items!");
-            return;
-        }
-
-        if (itemIndex < 0 || itemIndex >= category.items.Length)
-        {
-            Debug.LogError($"❌ Invalid item index: {itemIndex}");
-            return;
-        }
-
-        JewelryItem item = category.items[itemIndex];
-        currentType = category.type;
-
-        Debug.Log($"✓ Equipping: {item.itemName} (Type: {category.type})");
-
-        // Remove previous jewelry of same type
-        RemoveJewelryByType(category.type);
-
-        // Equip based on type
-        switch (category.type)
-        {
-            case JewelryType.Earrings:
-                EquipEarringsByPrefab(item.jewelryPrefab);
-                break;
-
-            case JewelryType.Necklace:
-                EquipNecklaceByPrefab(item.jewelryPrefab);
-                break;
-
-            default:
-                Debug.LogWarning($"⚠ Jewelry type {category.type} not yet implemented");
-                break;
+            SpawnNecklace(pendingNecklacePrefab);
+            pendingNecklacePrefab = null;
         }
     }
 
-    /// <summary>
-    /// NEW: Equip earrings using a prefab
-    /// </summary>
-    private void EquipEarringsByPrefab(GameObject prefab)
+    // ── Called by JewelryUI on item tap ───────────────────────────────────
+    public void EquipJewelryByIndex(int catIdx, int itemIdx)
     {
-        if (leftEarAnchor == null || rightEarAnchor == null)
+        if (categories == null || catIdx < 0 || catIdx >= categories.Length) return;
+        JewelryCategory cat = categories[catIdx];
+        if (cat.items == null || itemIdx < 0 || itemIdx >= cat.items.Length) return;
+        JewelryItem item = cat.items[itemIdx];
+        if (item.jewelryPrefab == null)
         {
-            Debug.LogWarning("⚠ Ear anchors not registered yet! Make sure face is detected.");
+            Debug.LogWarning($"[JewelryManager] No prefab on '{item.itemName}'");
             return;
         }
 
-        if (prefab == null)
+        if (cat.type == JewelryType.Earrings)
         {
-            Debug.LogError("❌ Earring prefab is null!");
-            return;
-        }
-
-        RemoveEarrings();
-        SpawnEarrings(prefab);
-    }
-
-    /// <summary>
-    /// NEW: Equip necklace using a prefab
-    /// </summary>
-    private void EquipNecklaceByPrefab(GameObject prefab)
-    {
-        if (prefab == null)
-        {
-            Debug.LogError("❌ Necklace prefab is null!");
-            return;
-        }
-
-        Debug.Log($"🔗 Equipping necklace: {prefab.name}");
-
-        RemoveNecklace();
-        SpawnNecklace(prefab);
-    }
-
-    // ============ SPAWNING METHODS ============
-
-    /// <summary>
-    /// Spawn earrings at ear anchors
-    /// </summary>
-    void SpawnEarrings(GameObject prefab)
-    {
-        Debug.Log($"👂 Spawning earrings: {prefab.name}");
-
-        // Left earring
-        currentLeftEarring = Instantiate(prefab, leftEarAnchor);
-        currentLeftEarring.transform.localPosition = Vector3.zero;
-        currentLeftEarring.transform.localRotation = Quaternion.identity;
-        currentLeftEarring.transform.localScale = Vector3.one;
-        currentLeftEarring.name = "LeftEarring";
-        Debug.Log($"✓ Left earring spawned at: {currentLeftEarring.transform.position}");
-
-        // Right earring
-        currentRightEarring = Instantiate(prefab, rightEarAnchor);
-        currentRightEarring.transform.localPosition = Vector3.zero;
-        currentRightEarring.transform.localRotation = Quaternion.identity;
-        currentRightEarring.transform.localScale = Vector3.one;
-        currentRightEarring.name = "RightEarring";
-
-        Debug.Log($"✓ Right earring spawned at: {currentRightEarring.transform.position}");
-        Debug.Log("===== ✓ Earrings equipped successfully! =====");
-    }
-
-    /// <summary>
-    /// Spawn necklace at neck position
-    /// </summary>
-    void SpawnNecklace(GameObject prefab)
-    {
-        Debug.Log($"📿 Spawning necklace: {prefab.name}");
-
-        // Try to find AR Face component for attachment
-        UnityEngine.Object arFaceObject = FindObjectOfType(System.Type.GetType("UnityEngine.XR.ARFoundation.ARFace, Unity.XR.ARFoundation"));
-        Component arFaceComponent = arFaceObject as Component;
-
-        if (necklaceAnchor != null)
-        {
-            // Use provided anchor
-            currentNecklace = Instantiate(prefab, necklaceAnchor);
-            currentNecklace.transform.localPosition = Vector3.zero;
-            currentNecklace.transform.localRotation = Quaternion.identity;
-            currentNecklace.transform.localScale = Vector3.one;
-        }
-        else if (arFaceComponent != null)
-        {
-            // Attach to AR Face
-            currentNecklace = Instantiate(prefab, arFaceComponent.transform);
-            currentNecklace.transform.localPosition = new Vector3(0, -0.12f, 0.02f);
-            currentNecklace.transform.localRotation = Quaternion.identity;
-            currentNecklace.transform.localScale = Vector3.one;
-            Debug.Log("✓ Necklace attached to ARFace");
+            if (leftEarAnchor == null || rightEarAnchor == null)
+            {
+                // Store and start a coroutine that waits for anchors
+                pendingEarPrefab = item.jewelryPrefab;
+                pendingNecklacePrefab = null;
+                Debug.Log("[JewelryManager] Ear anchors not ready — waiting...");
+                StartCoroutine(WaitAndSpawnEarrings(item.jewelryPrefab));
+            }
+            else
+            {
+                SpawnEarrings(item.jewelryPrefab);
+            }
         }
         else
         {
-            // Just spawn in world
-            currentNecklace = Instantiate(prefab);
-            Debug.LogWarning("⚠ No anchor or ARFace found. Necklace spawned in world space.");
-        }
-
-        currentNecklace.name = "CurrentNecklace";
-        Debug.Log($"✓ Necklace spawned at: {currentNecklace.transform.position}");
-        Debug.Log("===== ✓ Necklace equipped successfully! =====");
-    }
-
-    // ============ REMOVAL METHODS ============
-
-    /// <summary>
-    /// Remove earrings
-    /// </summary>
-    public void RemoveEarrings()
-    {
-        Debug.Log("🗑 Removing earrings...");
-
-        if (currentLeftEarring != null)
-        {
-            Destroy(currentLeftEarring);
-            Debug.Log("✓ Left earring removed");
-        }
-
-        if (currentRightEarring != null)
-        {
-            Destroy(currentRightEarring);
-            Debug.Log("✓ Right earring removed");
-        }
-
-        currentLeftEarring = null;
-        currentRightEarring = null;
-    }
-
-    /// <summary>
-    /// Remove necklace
-    /// </summary>
-    public void RemoveNecklace()
-    {
-        Debug.Log("🗑 Removing necklace...");
-
-        if (currentNecklace != null)
-        {
-            Destroy(currentNecklace);
-            Debug.Log("✓ Necklace removed");
-            currentNecklace = null;
+            if (necklaceAnchor == null)
+            {
+                pendingNecklacePrefab = item.jewelryPrefab;
+                pendingEarPrefab = null;
+                Debug.Log("[JewelryManager] Necklace anchor not ready — waiting...");
+                StartCoroutine(WaitAndSpawnNecklace(item.jewelryPrefab));
+            }
+            else
+            {
+                SpawnNecklace(item.jewelryPrefab);
+            }
         }
     }
 
-    /// <summary>
-    /// Remove jewelry by type
-    /// </summary>
-    public void RemoveJewelryByType(JewelryType type)
+    // Polls every frame until ear anchors are available, then spawns
+    IEnumerator WaitAndSpawnEarrings(GameObject prefab)
     {
-        switch (type)
+        float timeout = 30f;   // give up after 30 s if face never detected
+        float elapsed = 0f;
+        while ((leftEarAnchor == null || rightEarAnchor == null) && elapsed < timeout)
         {
-            case JewelryType.Earrings:
-                RemoveEarrings();
-                break;
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
 
-            case JewelryType.Necklace:
-                RemoveNecklace();
-                break;
+        if (leftEarAnchor == null || rightEarAnchor == null)
+        {
+            Debug.LogWarning("[JewelryManager] Ear anchor timeout — face not detected.");
+            yield break;
+        }
 
-            default:
-                Debug.LogWarning($"⚠ Remove not implemented for type: {type}");
-                break;
+        // Only spawn if this is still the most recent request
+        if (pendingEarPrefab == prefab || pendingEarPrefab == null)
+        {
+            SpawnEarrings(prefab);
+            pendingEarPrefab = null;
         }
     }
 
-    /// <summary>
-    /// Remove ALL currently equipped jewelry
-    /// </summary>
-    public void RemoveAllJewelry()
+    IEnumerator WaitAndSpawnNecklace(GameObject prefab)
     {
-        Debug.Log("🗑 Removing ALL jewelry...");
+        float timeout = 30f;
+        float elapsed = 0f;
+        while (necklaceAnchor == null && elapsed < timeout)
+        {
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        if (necklaceAnchor == null)
+        {
+            Debug.LogWarning("[JewelryManager] Necklace anchor timeout — face not detected.");
+            yield break;
+        }
+
+        if (pendingNecklacePrefab == prefab || pendingNecklacePrefab == null)
+        {
+            SpawnNecklace(prefab);
+            pendingNecklacePrefab = null;
+        }
+    }
+
+    // ── Spawn ─────────────────────────────────────────────────────────────
+    void SpawnEarrings(GameObject prefab)
+    {
+        RemoveEarrings();
+        activeLeftEarring = Instantiate(prefab, leftEarAnchor);
+        activeLeftEarring.transform.localPosition = Vector3.zero;
+        activeLeftEarring.transform.localRotation = Quaternion.identity;
+        activeLeftEarring.transform.localScale = Vector3.one;
+
+        activeRightEarring = Instantiate(prefab, rightEarAnchor);
+        activeRightEarring.transform.localPosition = Vector3.zero;
+        activeRightEarring.transform.localRotation = Quaternion.Euler(0f, 180f, 0f);
+        activeRightEarring.transform.localScale = Vector3.one;
+
+        Debug.Log($"[JewelryManager] Earrings spawned: {prefab.name}");
+    }
+
+    void SpawnNecklace(GameObject prefab)
+    {
+        RemoveNecklace();
+        activeNecklace = Instantiate(prefab, necklaceAnchor);
+        activeNecklace.transform.localPosition = Vector3.zero;
+        activeNecklace.transform.localRotation = Quaternion.identity;
+        activeNecklace.transform.localScale = Vector3.one;
+
+        Debug.Log($"[JewelryManager] Necklace spawned: {prefab.name}");
+    }
+
+    // ── Remove ────────────────────────────────────────────────────────────
+    void RemoveEarrings()
+    {
+        if (activeLeftEarring != null) Destroy(activeLeftEarring);
+        if (activeRightEarring != null) Destroy(activeRightEarring);
+        activeLeftEarring = activeRightEarring = null;
+    }
+
+    void RemoveNecklace()
+    {
+        if (activeNecklace != null) Destroy(activeNecklace);
+        activeNecklace = null;
+    }
+
+    public void RemoveAll()
+    {
         RemoveEarrings();
         RemoveNecklace();
+        pendingEarPrefab = null;
+        pendingNecklacePrefab = null;
+        Debug.Log("[JewelryManager] All removed.");
     }
 
-    // ============ UTILITY METHODS ============
-
-    /// <summary>
-    /// Get all items from a specific category
-    /// </summary>
-    public JewelryItem[] GetCategoryItems(int categoryIndex)
-    {
-        if (categories != null && categoryIndex >= 0 && categoryIndex < categories.Length)
-        {
-            return categories[categoryIndex].items;
-        }
-        return new JewelryItem[0];
-    }
-
-    /// <summary>
-    /// Get category count
-    /// </summary>
-    public int GetCategoryCount()
-    {
-        return categories != null ? categories.Length : 0;
-    }
-
-    /// <summary>
-    /// Check if jewelry is currently equipped
-    /// </summary>
-    public bool IsJewelryEquipped()
-    {
-        return currentLeftEarring != null ||
-               currentRightEarring != null ||
-               currentNecklace != null;
-    }
+    public int CategoryCount => categories != null ? categories.Length : 0;
 }

@@ -1,471 +1,386 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 using System.Collections.Generic;
 
 /// <summary>
-/// UPDATED VERSION - Dynamic category-based UI
-/// Automatically generates buttons for all categories and items
+/// JewelryUI — Standard Unity stretch-anchor approach.
+///
+/// Uses the correct Unity pattern:
+///   • Every panel stretches to fill its parent via anchorMin=0,0 anchorMax=1,1
+///   • Then offsetMin/offsetMax crop it to the desired region
+///   • This is how Unity's own UI samples work and is reliable everywhere
+///
+/// Layout:
+///   Top bar    = full width, top N pixels    → offsetMin.y = SH - topH
+///   Bottom panel = full width, bottom N px  → offsetMax.y = panelH  
+///   Items      = placed manually inside content
 /// </summary>
 public class JewelryUI : MonoBehaviour
 {
-    [Header("Manager Reference")]
-    [Tooltip("The JewelryManager that controls jewelry spawning")]
+    [Header("Required")]
     public JewelryManager jewelryManager;
+    public Canvas mainCanvas;
 
-    [Header("UI Containers")]
-    [Tooltip("Parent object for category buttons (Earrings, Necklace tabs)")]
-    public Transform categoryButtonContainer;
+    [Header("Colors")]
+    public Color barColor = new Color(0.08f, 0.08f, 0.12f, 1f);
+    public Color catNormal = new Color(0.20f, 0.20f, 0.28f, 1f);
+    public Color catSelected = new Color(0.82f, 0.62f, 0.10f, 1f);
+    public Color itemBg = new Color(0.22f, 0.22f, 0.30f, 1f);
+    public Color itemHighlight = new Color(0.82f, 0.62f, 0.10f, 1f);
+    public Color removeColor = new Color(0.72f, 0.13f, 0.13f, 1f);
 
-    [Tooltip("Parent object for item buttons (individual jewelry thumbnails)")]
-    public Transform itemButtonContainer;
+    // These are set from screen size at runtime
+    private float topH;      // top bar height
+    private float botH;      // bottom panel height
+    private float cellW;     // item cell width
+    private float cellH;     // item cell height
+    private float gap;       // cell gap
+    private float pad;       // panel padding
+    private int cols = 3;
 
-    [Tooltip("Optional: Scroll view for items (if you have many items)")]
-    public ScrollRect itemScrollView;
+    private int activeCat;
+    private RectTransform contentRT;
+    private List<Button> catBtns = new List<Button>();
+    private List<Button> itemBtns = new List<Button>();
+    private Font font;
 
-    [Header("Button Prefabs")]
-    [Tooltip("Template for category buttons")]
-    public GameObject categoryButtonPrefab;
-
-    [Tooltip("Template for item buttons (jewelry thumbnails)")]
-    public GameObject itemButtonPrefab;
-
-    [Header("Remove Button")]
-    [Tooltip("Button to remove all jewelry")]
-    public Button removeAllButton;
-
-    [Header("UI Settings")]
-    [Tooltip("Highlight color for selected category")]
-    public Color selectedCategoryColor = new Color(0.2f, 0.6f, 1f);
-
-    [Tooltip("Normal color for category buttons")]
-    public Color normalCategoryColor = Color.white;
-
-    [Tooltip("Animation speed for button transitions")]
-    public float buttonAnimationSpeed = 0.2f;
-
-    // State tracking
-    private int currentCategoryIndex = -1;
-    private List<Button> categoryButtons = new List<Button>();
-    private List<GameObject> itemButtonObjects = new List<GameObject>();
-
+    // ── Entry point ───────────────────────────────────────────────────────
     void Start()
     {
-        // Setup remove button if assigned
-        if (removeAllButton != null)
+        if (jewelryManager == null || mainCanvas == null)
         {
-            removeAllButton.onClick.AddListener(() => jewelryManager.RemoveAllJewelry());
+            Debug.LogError("[JewelryUI] Assign JewelryManager + Canvas in Inspector!");
+            return;
+        }
+        StartCoroutine(Build());
+    }
+
+    IEnumerator Build()
+    {
+        // Step 1: lock orientation and wait for it to settle
+        Screen.orientation = ScreenOrientation.Portrait;
+        yield return new WaitForSeconds(0.1f);
+
+        font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+
+        // Step 2: configure canvas FIRST, before reading any sizes
+        mainCanvas.renderMode = RenderMode.ScreenSpaceOverlay;
+        mainCanvas.sortingOrder = 999;
+        mainCanvas.worldCamera = null;
+
+        // Disable CanvasScaler — we work in raw pixels
+        CanvasScaler cs = mainCanvas.GetComponent<CanvasScaler>();
+        if (cs != null) { cs.enabled = false; }
+
+        // Ensure GraphicRaycaster
+        if (mainCanvas.GetComponent<GraphicRaycaster>() == null)
+            mainCanvas.gameObject.AddComponent<GraphicRaycaster>();
+
+        // Step 3: wait TWO frames for canvas to resolve its rect
+        yield return null;
+        yield return null;
+
+        // Step 4: read the CANVAS rect (not Screen directly - scaler may affect it)
+        RectTransform canvasRT = mainCanvas.GetComponent<RectTransform>();
+        float CW = canvasRT.rect.width;
+        float CH = canvasRT.rect.height;
+
+        // If canvas rect is still zero, fall back to Screen size
+        if (CW < 1f || CH < 1f)
+        {
+            CW = Screen.width;
+            CH = Screen.height;
         }
 
-        // Generate category buttons
-        CreateCategoryButtons();
+        Debug.Log($"[JewelryUI] Canvas: {CW}x{CH}  Screen: {Screen.width}x{Screen.height}");
 
-        // Auto-select first category
-        if (jewelryManager.GetCategoryCount() > 0)
+        // Step 5: calculate layout proportions
+        topH = Mathf.Round(CH * 0.07f);
+        botH = Mathf.Round(CH * 0.22f);
+        pad = Mathf.Round(CW * 0.03f);
+        gap = Mathf.Round(CW * 0.02f);
+        cellW = Mathf.Round((CW - pad * 2f - gap * (cols - 1)) / cols);
+        cellH = Mathf.Round(cellW * 1.15f);
+
+        Debug.Log($"[JewelryUI] topH={topH} botH={botH} cellW={cellW} cellH={cellH}");
+
+        // Step 6: build UI
+        BuildTopBar(canvasRT, CW, CH);
+        BuildBottomPanel(canvasRT, CW, CH);
+        BuildRemoveButton(canvasRT, CW, CH);
+        SelectCategory(0);
+    }
+
+    // ─────────────────────────────────────────────────────────────────────
+    // TOP BAR  — sits at the top of the canvas
+    // ─────────────────────────────────────────────────────────────────────
+    void BuildTopBar(RectTransform canvasRT, float CW, float CH)
+    {
+        // Stretch to full canvas, then crop to top topH pixels
+        GameObject bar = Make("TopBar", canvasRT);
+        RectTransform rt = RT(bar);
+        rt.anchorMin = Vector2.zero;
+        rt.anchorMax = Vector2.one;
+        rt.offsetMin = new Vector2(0, CH - topH);  // bottom of bar
+        rt.offsetMax = new Vector2(0, 0);           // top of bar = canvas top
+        BG(bar, barColor);
+
+        // Category buttons inside the bar
+        float btnW = Mathf.Round((CW - pad * 2f - gap * (jewelryManager.CategoryCount - 1))
+                                  / jewelryManager.CategoryCount);
+        float btnH = topH - pad;
+        float btnY = pad * 0.5f;  // from bottom of bar
+
+        for (int i = 0; i < jewelryManager.CategoryCount; i++)
         {
-            SelectCategory(0);
+            int ci = i;
+            string nm = jewelryManager.categories[i].categoryName;
+
+            GameObject obj = Make("Cat_" + nm, rt);
+            RectTransform brt = RT(obj);
+            brt.anchorMin = Vector2.zero;
+            brt.anchorMax = Vector2.zero;
+            brt.pivot = new Vector2(0f, 0f);
+            float bx = pad + i * (btnW + gap);
+            brt.anchoredPosition = new Vector2(bx, btnY);
+            brt.sizeDelta = new Vector2(btnW, btnH);
+            BG(obj, catNormal);
+
+            Button btn = obj.AddComponent<Button>();
+            btn.transition = Selectable.Transition.None;
+            Label(obj.transform, nm, Mathf.RoundToInt(btnH * 0.35f),
+                  FontStyle.Bold, Color.white, TextAnchor.MiddleCenter);
+            btn.onClick.AddListener(() => SelectCategory(ci));
+            catBtns.Add(btn);
         }
     }
 
-    // ============ CATEGORY BUTTON CREATION ============
-
-    /// <summary>
-    /// Creates buttons for each category (Earrings, Necklace, etc.)
-    /// </summary>
-    void CreateCategoryButtons()
+    // ─────────────────────────────────────────────────────────────────────
+    // BOTTOM PANEL  — sits at the bottom of the canvas
+    // ─────────────────────────────────────────────────────────────────────
+    void BuildBottomPanel(RectTransform canvasRT, float CW, float CH)
     {
-        Debug.Log("🎨 Creating category buttons...");
+        // Stretch to full canvas, then crop to bottom botH pixels
+        GameObject panel = Make("BottomPanel", canvasRT);
+        RectTransform prt = RT(panel);
+        prt.anchorMin = Vector2.zero;
+        prt.anchorMax = Vector2.one;
+        prt.offsetMin = new Vector2(0, 0);     // bottom of panel = canvas bottom
+        prt.offsetMax = new Vector2(0, -(CH - botH)); // top of panel = botH above bottom
+        BG(panel, barColor);
 
-        if (categoryButtonContainer == null)
+        // ScrollRect
+        ScrollRect sr = panel.AddComponent<ScrollRect>();
+        sr.horizontal = false;
+        sr.vertical = true;
+        sr.movementType = ScrollRect.MovementType.Clamped;
+        sr.inertia = true;
+        sr.decelerationRate = 0.15f;
+        sr.scrollSensitivity = 20f;
+
+        // Viewport fills the panel
+        GameObject vp = Make("Viewport", prt);
+        RectTransform vrt = RT(vp);
+        vrt.anchorMin = Vector2.zero;
+        vrt.anchorMax = Vector2.one;
+        vrt.offsetMin = Vector2.zero;
+        vrt.offsetMax = Vector2.zero;
+        Image vi = vp.AddComponent<Image>();
+        vi.color = Color.clear;
+        Mask msk = vp.AddComponent<Mask>();
+        msk.showMaskGraphic = false;
+
+        // Content — top-anchored, height set when items are spawned
+        GameObject ct = Make("Content", RT(vp));
+        contentRT = RT(ct);
+        contentRT.anchorMin = new Vector2(0f, 1f);
+        contentRT.anchorMax = new Vector2(1f, 1f);
+        contentRT.pivot = new Vector2(0.5f, 1f);
+        contentRT.sizeDelta = new Vector2(0f, botH);
+        contentRT.anchoredPosition = Vector2.zero;
+
+        sr.viewport = vrt;
+        sr.content = contentRT;
+    }
+
+    // ─────────────────────────────────────────────────────────────────────
+    // REMOVE BUTTON  — just above the bottom panel
+    // ─────────────────────────────────────────────────────────────────────
+    void BuildRemoveButton(RectTransform canvasRT, float CW, float CH)
+    {
+        float btnW = CW * 0.38f;
+        float btnH = CH * 0.042f;
+
+        GameObject obj = Make("RemoveBtn", canvasRT);
+        RectTransform rt = RT(obj);
+        rt.anchorMin = Vector2.zero;
+        rt.anchorMax = Vector2.zero;
+        rt.pivot = new Vector2(1f, 0f);
+        rt.sizeDelta = new Vector2(btnW, btnH);
+        rt.anchoredPosition = new Vector2(CW - pad, botH + pad);
+        BG(obj, removeColor);
+
+        Button btn = obj.AddComponent<Button>();
+        btn.transition = Selectable.Transition.None;
+        btn.onClick.AddListener(() => jewelryManager.RemoveAll());
+        Label(obj.transform, "✕  Remove All",
+              Mathf.RoundToInt(btnH * 0.4f),
+              FontStyle.Bold, Color.white, TextAnchor.MiddleCenter);
+    }
+
+    // ─────────────────────────────────────────────────────────────────────
+    // SELECT CATEGORY
+    // ─────────────────────────────────────────────────────────────────────
+    void SelectCategory(int idx)
+    {
+        activeCat = idx;
+
+        // Update tab highlight
+        for (int i = 0; i < catBtns.Count; i++)
         {
-            Debug.LogError("❌ Category Button Container not assigned!");
+            Image bg = catBtns[i].GetComponent<Image>();
+            if (bg) bg.color = (i == idx) ? catSelected : catNormal;
+        }
+
+        // Clear old items
+        for (int c = contentRT.childCount - 1; c >= 0; c--)
+            DestroyImmediate(contentRT.GetChild(c).gameObject);
+        itemBtns.Clear();
+
+        JewelryCategory cat = jewelryManager.categories[idx];
+        JewelryItem[] items = cat.items;
+
+        if (items == null || items.Length == 0)
+        {
+            Debug.LogWarning($"[JewelryUI] No items in '{cat.categoryName}'");
             return;
         }
 
-        if (categoryButtonPrefab == null)
-        {
-            Debug.LogError("❌ Category Button Prefab not assigned!");
-            return;
-        }
-
-        // Clear existing buttons
-        foreach (Transform child in categoryButtonContainer)
-        {
-            Destroy(child.gameObject);
-        }
-        categoryButtons.Clear();
-
-        // Create a button for each category
-        for (int i = 0; i < jewelryManager.categories.Length; i++)
-        {
-            JewelryCategory category = jewelryManager.categories[i];
-
-            // Instantiate button
-            GameObject buttonObj = Instantiate(categoryButtonPrefab, categoryButtonContainer);
-            buttonObj.name = $"CategoryButton_{category.categoryName}";
-
-            // Get button component
-            Button button = buttonObj.GetComponent<Button>();
-            if (button == null)
-            {
-                Debug.LogError($"❌ Category button prefab missing Button component!");
-                continue;
-            }
-
-            // Setup button appearance
-            SetupCategoryButton(buttonObj, category, i);
-
-            // Add click listener
-            int categoryIndex = i; // Capture for closure
-            button.onClick.AddListener(() => SelectCategory(categoryIndex));
-
-            // Store reference
-            categoryButtons.Add(button);
-
-            Debug.Log($"✓ Created category button: {category.categoryName}");
-        }
-
-        Debug.Log($"✓ Created {categoryButtons.Count} category buttons");
-    }
-
-    /// <summary>
-    /// Configures the visual appearance of a category button
-    /// </summary>
-    void SetupCategoryButton(GameObject buttonObj, JewelryCategory category, int index)
-    {
-        // Set text
-        Text buttonText = buttonObj.GetComponentInChildren<Text>();
-        if (buttonText != null)
-        {
-            buttonText.text = category.categoryName;
-            buttonText.fontSize = 20;
-            buttonText.fontStyle = FontStyle.Bold;
-        }
-
-        // Set icon (if available)
-        Image buttonImage = buttonObj.GetComponent<Image>();
-        if (buttonImage != null && category.categoryIcon != null)
-        {
-            buttonImage.sprite = category.categoryIcon;
-        }
-
-        // You can also add a separate Image component for icons
-        Image iconImage = buttonObj.transform.Find("Icon")?.GetComponent<Image>();
-        if (iconImage != null && category.categoryIcon != null)
-        {
-            iconImage.sprite = category.categoryIcon;
-            iconImage.preserveAspect = true;
-        }
-    }
-
-    // ============ CATEGORY SELECTION ============
-
-    /// <summary>
-    /// Called when user clicks a category button
-    /// Shows all items in that category
-    /// </summary>
-    public void SelectCategory(int categoryIndex)
-    {
-        Debug.Log($"📂 Selecting category: {categoryIndex}");
-
-        if (categoryIndex < 0 || categoryIndex >= jewelryManager.categories.Length)
-        {
-            Debug.LogError($"❌ Invalid category index: {categoryIndex}");
-            return;
-        }
-
-        // Update current category
-        currentCategoryIndex = categoryIndex;
-
-        // Update category button visuals
-        UpdateCategoryButtonStates();
-
-        // Clear and create new item buttons
-        CreateItemButtons();
-    }
-
-    /// <summary>
-    /// Updates the visual state of category buttons (highlight selected)
-    /// </summary>
-    void UpdateCategoryButtonStates()
-    {
-        for (int i = 0; i < categoryButtons.Count; i++)
-        {
-            Button button = categoryButtons[i];
-            ColorBlock colors = button.colors;
-
-            if (i == currentCategoryIndex)
-            {
-                // Selected state
-                colors.normalColor = selectedCategoryColor;
-                colors.highlightedColor = selectedCategoryColor * 1.1f;
-
-                // Make text bold
-                Text text = button.GetComponentInChildren<Text>();
-                if (text != null)
-                {
-                    text.fontStyle = FontStyle.Bold;
-                }
-            }
-            else
-            {
-                // Normal state
-                colors.normalColor = normalCategoryColor;
-                colors.highlightedColor = normalCategoryColor * 0.9f;
-
-                // Make text normal
-                Text text = button.GetComponentInChildren<Text>();
-                if (text != null)
-                {
-                    text.fontStyle = FontStyle.Normal;
-                }
-            }
-
-            button.colors = colors;
-        }
-    }
-
-    // ============ ITEM BUTTON CREATION ============
-
-    /// <summary>
-    /// Creates thumbnail buttons for all items in the current category
-    /// </summary>
-    void CreateItemButtons()
-    {
-        Debug.Log("🎨 Creating item buttons...");
-
-        if (itemButtonContainer == null)
-        {
-            Debug.LogError("❌ Item Button Container not assigned!");
-            return;
-        }
-
-        if (itemButtonPrefab == null)
-        {
-            Debug.LogError("❌ Item Button Prefab not assigned!");
-            return;
-        }
-
-        // Clear existing item buttons
-        ClearItemButtons();
-
-        // Get items from current category
-        JewelryCategory category = jewelryManager.categories[currentCategoryIndex];
-
-        Debug.Log($"📦 Creating {category.items.Length} item buttons for {category.categoryName}");
-
-        // Create a button for each item
-        for (int i = 0; i < category.items.Length; i++)
-        {
-            JewelryItem item = category.items[i];
-
-            // Instantiate button
-            GameObject buttonObj = Instantiate(itemButtonPrefab, itemButtonContainer);
-            buttonObj.name = $"ItemButton_{item.itemName}";
-
-            // Get button component
-            Button button = buttonObj.GetComponent<Button>();
-            if (button == null)
-            {
-                Debug.LogError("❌ Item button prefab missing Button component!");
-                continue;
-            }
-
-            // Setup button appearance
-            SetupItemButton(buttonObj, item, i);
-
-            // Add click listener
-            int itemIndex = i; // Capture for closure
-            button.onClick.AddListener(() => SelectItem(itemIndex));
-
-            // Store reference
-            itemButtonObjects.Add(buttonObj);
-
-            Debug.Log($"✓ Created item button: {item.itemName}");
-        }
-
-        Debug.Log($"✓ Created {itemButtonObjects.Count} item buttons");
-
-        // Scroll to top
-        if (itemScrollView != null)
-        {
-            Canvas.ForceUpdateCanvases();
-            itemScrollView.verticalNormalizedPosition = 1f;
-        }
-    }
-
-    /// <summary>
-    /// Configures the visual appearance of an item button
-    /// </summary>
-    void SetupItemButton(GameObject buttonObj, JewelryItem item, int index)
-    {
-        // Set thumbnail image (main button image)
-        Image buttonImage = buttonObj.GetComponent<Image>();
-        if (buttonImage != null && item.thumbnailImage != null)
-        {
-            buttonImage.sprite = item.thumbnailImage;
-            buttonImage.preserveAspect = true;
-        }
-        else if (buttonImage != null)
-        {
-            // No thumbnail - use placeholder color
-            buttonImage.color = new Color(0.8f, 0.8f, 0.8f);
-        }
-
-        // Set item name (if there's a Text component)
-        Text nameText = buttonObj.GetComponentInChildren<Text>();
-        if (nameText != null)
-        {
-            nameText.text = item.itemName;
-            nameText.fontSize = 14;
-            nameText.alignment = TextAnchor.MiddleCenter;
-        }
-
-        // You can also find specific child objects
-        // For example, if your prefab has:
-        // - "Thumbnail" Image for the picture
-        // - "NameLabel" Text for the name
-
-        Transform thumbnailTransform = buttonObj.transform.Find("Thumbnail");
-        if (thumbnailTransform != null)
-        {
-            Image thumbnailImage = thumbnailTransform.GetComponent<Image>();
-            if (thumbnailImage != null && item.thumbnailImage != null)
-            {
-                thumbnailImage.sprite = item.thumbnailImage;
-                thumbnailImage.preserveAspect = true;
-            }
-        }
-
-        Transform nameTransform = buttonObj.transform.Find("NameLabel");
-        if (nameTransform != null)
-        {
-            Text labelText = nameTransform.GetComponent<Text>();
-            if (labelText != null)
-            {
-                labelText.text = item.itemName;
-            }
-        }
-
-        // Optional: Add description
-        Transform descTransform = buttonObj.transform.Find("Description");
-        if (descTransform != null && !string.IsNullOrEmpty(item.description))
-        {
-            Text descText = descTransform.GetComponent<Text>();
-            if (descText != null)
-            {
-                descText.text = item.description;
-            }
-        }
-    }
-
-    /// <summary>
-    /// Removes all item buttons
-    /// </summary>
-    void ClearItemButtons()
-    {
-        foreach (GameObject buttonObj in itemButtonObjects)
-        {
-            if (buttonObj != null)
-            {
-                Destroy(buttonObj);
-            }
-        }
-        itemButtonObjects.Clear();
-    }
-
-    // ============ ITEM SELECTION ============
-
-    /// <summary>
-    /// Called when user clicks an item button
-    /// Tells the JewelryManager to equip that jewelry
-    /// </summary>
-    public void SelectItem(int itemIndex)
-    {
-        Debug.Log($"✨ Selected item: {itemIndex} in category {currentCategoryIndex}");
-
-        // Tell the manager to equip this jewelry
-        jewelryManager.EquipJewelryByIndex(currentCategoryIndex, itemIndex);
-
-        // Optional: Add visual feedback
-        HighlightSelectedItem(itemIndex);
-    }
-
-    /// <summary>
-    /// Optional: Highlights the selected item button
-    /// </summary>
-    void HighlightSelectedItem(int itemIndex)
-    {
-        for (int i = 0; i < itemButtonObjects.Count; i++)
-        {
-            Button button = itemButtonObjects[i].GetComponent<Button>();
-            if (button != null)
-            {
-                ColorBlock colors = button.colors;
-
-                if (i == itemIndex)
-                {
-                    // Selected - add a border or change color
-                    colors.normalColor = Color.yellow;
-                    colors.highlightedColor = Color.yellow * 1.1f;
-                }
-                else
-                {
-                    // Normal
-                    colors.normalColor = Color.white;
-                    colors.highlightedColor = Color.white * 0.9f;
-                }
-
-                button.colors = colors;
-            }
-        }
-    }
-
-    // ============ PUBLIC UTILITY METHODS ============
-
-    /// <summary>
-    /// Programmatically select a category (useful for default selection)
-    /// </summary>
-    public void SetActiveCategory(string categoryName)
-    {
-        for (int i = 0; i < jewelryManager.categories.Length; i++)
-        {
-            if (jewelryManager.categories[i].categoryName == categoryName)
-            {
-                SelectCategory(i);
-                return;
-            }
-        }
-        Debug.LogWarning($"⚠ Category not found: {categoryName}");
-    }
-
-    /// <summary>
-    /// Programmatically select an item by name
-    /// </summary>
-    public void SelectItemByName(string itemName)
-    {
-        if (currentCategoryIndex < 0) return;
-
-        JewelryItem[] items = jewelryManager.categories[currentCategoryIndex].items;
+        // Place items manually
+        int placed = 0;
         for (int i = 0; i < items.Length; i++)
         {
-            if (items[i].itemName == itemName)
+            if (items[i] == null) continue;
+            int ci = i;
+            int col = placed % cols;
+            int row = placed / cols;
+            float x = pad + col * (cellW + gap);
+            float y = pad + row * (cellH + gap);
+
+            Button btn = SpawnItem(items[i], x, y);
+            btn.onClick.AddListener(() =>
             {
-                SelectItem(i);
-                return;
-            }
+                jewelryManager.EquipJewelryByIndex(activeCat, ci);
+                HighlightItem(ci);
+            });
+            itemBtns.Add(btn);
+            placed++;
         }
-        Debug.LogWarning($"⚠ Item not found: {itemName}");
+
+        // Set content height
+        int rows = Mathf.Max(1, Mathf.CeilToInt((float)placed / cols));
+        float height = pad * 2f + rows * cellH + (rows - 1) * gap;
+        height = Mathf.Max(height, botH);
+        contentRT.sizeDelta = new Vector2(0f, height);
+        contentRT.anchoredPosition = Vector2.zero;
+
+        Debug.Log($"[JewelryUI] Cat={idx} Items={placed} Height={height}");
     }
 
-    /// <summary>
-    /// Refresh the UI (useful if categories change at runtime)
-    /// </summary>
-    public void RefreshUI()
+    // ─────────────────────────────────────────────────────────────────────
+    // SPAWN ONE ITEM BUTTON
+    // ─────────────────────────────────────────────────────────────────────
+    Button SpawnItem(JewelryItem item, float x, float y)
     {
-        CreateCategoryButtons();
-        if (currentCategoryIndex >= 0)
+        GameObject obj = Make(item.itemName, contentRT);
+        RectTransform rt = RT(obj);
+        rt.anchorMin = new Vector2(0f, 1f);  // top-left anchor
+        rt.anchorMax = new Vector2(0f, 1f);
+        rt.pivot = new Vector2(0f, 1f);
+        rt.sizeDelta = new Vector2(cellW, cellH);
+        rt.anchoredPosition = new Vector2(x, -y);   // y negative = downward
+
+        Image bg = BG(obj, itemBg);
+        if (item.thumbnailImage != null)
         {
-            CreateItemButtons();
+            bg.sprite = item.thumbnailImage;
+            bg.color = Color.white;
+            bg.preserveAspect = true;
+            bg.type = Image.Type.Simple;
         }
+
+        Button btn = obj.AddComponent<Button>();
+        btn.transition = Selectable.Transition.None;
+
+        // Name strip at bottom of cell
+        int stripH = Mathf.RoundToInt(cellH * 0.28f);
+        GameObject strip = Make("Strip", RT(obj));
+        RectTransform srt = RT(strip);
+        srt.anchorMin = new Vector2(0f, 0f);
+        srt.anchorMax = new Vector2(1f, 0f);
+        srt.pivot = new Vector2(0.5f, 0f);
+        srt.sizeDelta = new Vector2(0f, stripH);
+        srt.anchoredPosition = Vector2.zero;
+        BG(strip, new Color(0f, 0f, 0f, 0.72f));
+        Label(strip.transform, item.itemName,
+              Mathf.RoundToInt(stripH * 0.52f),
+              FontStyle.Normal, Color.white, TextAnchor.MiddleCenter);
+
+        return btn;
+    }
+
+    void HighlightItem(int idx)
+    {
+        for (int i = 0; i < itemBtns.Count; i++)
+        {
+            Image bg = itemBtns[i].GetComponent<Image>();
+            if (bg) bg.color = (i == idx) ? itemHighlight : itemBg;
+        }
+    }
+
+    // ─────────────────────────────────────────────────────────────────────
+    // HELPERS
+    // ─────────────────────────────────────────────────────────────────────
+    static GameObject Make(string name, Transform parent)
+    {
+        var go = new GameObject(name, typeof(RectTransform));
+        go.transform.SetParent(parent, false);
+        return go;
+    }
+    static GameObject Make(string name, RectTransform parent) =>
+        Make(name, parent.transform);
+
+    static RectTransform RT(GameObject go) =>
+        go.GetComponent<RectTransform>();
+
+    Image BG(GameObject go, Color c)
+    {
+        var img = go.AddComponent<Image>();
+        img.color = c;
+        img.raycastTarget = true;
+        return img;
+    }
+
+    void Label(Transform parent, string text, int size,
+               FontStyle style, Color col, TextAnchor align)
+    {
+        var go = Make("Lbl", parent);
+        var rt = RT(go);
+        rt.anchorMin = Vector2.zero;
+        rt.anchorMax = Vector2.one;
+        rt.offsetMin = new Vector2(3f, 2f);
+        rt.offsetMax = new Vector2(-3f, -2f);
+
+        var t = go.AddComponent<Text>();
+        t.text = text;
+        t.font = font;
+        t.fontSize = size;
+        t.fontStyle = style;
+        t.color = col;
+        t.alignment = align;
+        t.horizontalOverflow = HorizontalWrapMode.Wrap;
+        t.verticalOverflow = VerticalWrapMode.Truncate;
+        t.raycastTarget = false;
     }
 }

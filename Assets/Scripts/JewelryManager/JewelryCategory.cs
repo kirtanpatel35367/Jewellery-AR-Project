@@ -1,34 +1,29 @@
 using UnityEngine;
 
 /// <summary>
-/// Represents a category of jewelry (Earrings, Necklace, etc.)
-/// Each category contains multiple items
-/// </summary>
-[System.Serializable]
-public class JewelryCategory
-{
-    [Tooltip("Category name displayed on tab button")]
-    public string categoryName;
-
-    [Tooltip("Icon shown on the category button (optional)")]
-    public Sprite categoryIcon;
-
-    [Tooltip("All jewelry items in this category")]
-    public JewelryItem[] items;
-
-    [Header("Category Type")]
-    [Tooltip("What type of jewelry is this?")]
-    public JewelryType type = JewelryType.Earrings;
-}
-
-/// <summary>
-/// Enum to identify what type of jewelry this category contains
+/// Jewelry type — used by JewelryManager to know
+/// where to attach the jewelry (ears vs neck).
 /// </summary>
 public enum JewelryType
 {
     Earrings,
-    Necklace,
-    Ring,
-    Bracelet,
-    Other
+    Necklace
+}
+
+/// <summary>
+/// One category tab (e.g. "Earring" or "Necklace").
+/// Contains an array of JewelryItem entries.
+/// Fill these fields in the JewelryManager Inspector.
+/// </summary>
+[System.Serializable]
+public class JewelryCategory
+{
+    [Tooltip("Name shown on the tab button, e.g. 'Earring'")]
+    public string categoryName;
+
+    [Tooltip("Earrings or Necklace")]
+    public JewelryType type;
+
+    [Tooltip("All items inside this category")]
+    public JewelryItem[] items;
 }
