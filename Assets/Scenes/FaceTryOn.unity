@@ -669,18 +669,42 @@ MonoBehaviour:
     - itemName: Leaf Earring
       thumbnailImage: {fileID: 0}
       jewelryPrefab: {fileID: 4150531508703666475, guid: ea6bf86d2052e0346b06d5912b6b4ef2, type: 3}
+      necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
+      necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
+      necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
     - itemName: Dimond Earring
       thumbnailImage: {fileID: 0}
       jewelryPrefab: {fileID: 3904221455364503044, guid: 28adc13054d87a04ab99aae5a91f1b27, type: 3}
+      necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
+      necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
+      necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
     - itemName: Golden Earring
       thumbnailImage: {fileID: 0}
       jewelryPrefab: {fileID: 712837861599813127, guid: f38eebe72a3997f47b44eba6d794a6a9, type: 3}
+      necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
+      necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
+      necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
   - categoryName: Nacklace
     type: 1
     items:
     - itemName: Gold Necklace
       thumbnailImage: {fileID: 0}
       jewelryPrefab: {fileID: 804426986579811739, guid: 0cc442a5c1b83a94b9aeb7983e1c69b4, type: 3}
+      necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
+      necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
+      necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
+    - itemName: Gold Necklace
+      thumbnailImage: {fileID: 0}
+      jewelryPrefab: {fileID: 5898075654446669484, guid: 31d21521e8a164267a2dfe0f6116c2c1, type: 3}
+      necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
+      necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
+      necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
+    - itemName: Egyptian Necklace
+      thumbnailImage: {fileID: 0}
+      jewelryPrefab: {fileID: -6689036041284674117, guid: b1b28ce34077f46edbdd67ea718bb46f, type: 3}
+      necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
+      necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
+      necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
   leftEarAnchor: {fileID: 0}
   rightEarAnchor: {fileID: 0}
   necklaceAnchor: {fileID: 0}
@@ -867,13 +891,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::JewelryUI
   jewelryManager: {fileID: 954362369}
-  mainCanvas: {fileID: 933739670}
-  barColor: {r: 0.07, g: 0.07, b: 0.1, a: 0.93}
-  catNormal: {r: 0.2, g: 0.2, b: 0.28, a: 1}
-  catSelected: {r: 0.82, g: 0.62, b: 0.1, a: 1}
-  itemNormal: {r: 0.18, g: 0.18, b: 0.24, a: 1}
-  itemSelected: {r: 0.82, g: 0.62, b: 0.1, a: 1}
-  removeBtnColor: {r: 0.72, g: 0.13, b: 0.13, a: 1}
 --- !u!4 &1900725528
 Transform:
   m_ObjectHideFlags: 0
