@@ -286,14 +286,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a0f5cb7ada16464dbd272caa5edd794, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NecklaceAttachARCore
-  neckDrop: 0.12
-  forward: 0.02
-  extraOffset: {x: 0, y: 0, z: 0}
-  posSmooth: 12
-  rotSmooth: 10
+  neckDrop: 0.15
+  forward: 0.11
+  extraOffset: {x: 0, y: -0.05, z: 0.2}
+  posSmooth: 10
+  rotSmooth: 2
   lockPitch: 1
   lockRoll: 1
-  yawFollow: 0.3
+  yawFollow: 0
+  faceMovementDamp: 0.15
 --- !u!114 &4867578517955240944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -306,9 +307,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d16e1116f1063304fa91589fdf1b6897, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EarAttachARCore
-  outward: -0.01
-  downward: -0.035
-  depth: 0.05
+  lobeDropFraction: 0.25
+  outwardFraction: 0.03
+  forwardFraction: 0.05
+  usePerEarOverrides: 1
+  leftDropFraction: 0.25
+  leftOutwardFraction: 0.02
+  leftForwardFraction: 0.05
+  rightDropFraction: 0.25
+  rightOutwardFraction: 0
+  rightForwardFraction: 0.05
+  kalmanProcessNoise: 0.01
+  kalmanMeasureNoise: 0.1
+  rotSmoothing: 16
+  angleRealism: 0
+  targetSizeMetres: 0.022
+  autoScale: 1
 --- !u!1 &1576383704744356627
 GameObject:
   m_ObjectHideFlags: 0

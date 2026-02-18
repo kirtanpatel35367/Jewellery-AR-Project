@@ -668,7 +668,7 @@ MonoBehaviour:
     items:
     - itemName: Leaf Earring
       thumbnailImage: {fileID: 21300000, guid: 6b19f5cc9f4c1164d988212d1a1bf241, type: 3}
-      jewelryPrefab: {fileID: 4150531508703666475, guid: ea6bf86d2052e0346b06d5912b6b4ef2, type: 3}
+      jewelryPrefab: {fileID: 8362277072573744655, guid: 256cd0073004aec4487d851061d34950, type: 3}
       necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
       necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
       necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
