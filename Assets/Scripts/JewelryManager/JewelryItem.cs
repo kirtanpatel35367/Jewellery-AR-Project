@@ -1,9 +1,5 @@
 using UnityEngine;
 
-/// <summary>
-/// Holds data for ONE jewelry piece shown as a button in the UI.
-/// Fill these fields in the JewelryManager Inspector.
-/// </summary>
 [System.Serializable]
 public class JewelryItem
 {
@@ -15,4 +11,10 @@ public class JewelryItem
 
     [Tooltip("The 3D model prefab that appears on the face when clicked")]
     public GameObject jewelryPrefab;
+
+    // ── Necklace ONLY adjustments ─────────────────────────────
+    [Header("Necklace Placement Fix (only used for necklaces)")]
+    public Vector3 necklaceLocalPositionOffset = Vector3.zero;
+    public Vector3 necklaceLocalRotationOffsetEuler = Vector3.zero;
+    public Vector3 necklaceLocalScaleMultiplier = Vector3.one;
 }
