@@ -8926,7 +8926,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GenericPool_1__cctor_m1BC16272F723119057
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 35764
+// Method Definition Index: 35762
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GenericPool_1_Get_mCE78B62B08C1F3D85D4D9B1DA406537DD36B622A_gshared (const RuntimeMethod* method) 
 {
 	{
@@ -8938,7 +8938,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GenericPool_1_Get_mCE78B62B08C
 		return L_1;
 	}
 }
-// Method Definition Index: 35765
+// Method Definition Index: 35763
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GenericPool_1_Release_mF52007291AA523AB63FD65610C4B849C15D6B22A_gshared (RuntimeObject* ___0_toRelease, const RuntimeMethod* method) 
 {
 	{
@@ -8950,7 +8950,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GenericPool_1_Release_mF52007291AA523AB6
 		return;
 	}
 }
-// Method Definition Index: 35766
+// Method Definition Index: 35764
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GenericPool_1__cctor_m0339F5ADDFE0DB7BD9EF64ED918CB6563D8A7EA2_gshared (const RuntimeMethod* method) 
 {
 	{
@@ -9021,7 +9021,7 @@ void GetClassValueAction_Invoke_mC1959AA150BD93B52DF72F534318E19818911E90_OpenGe
 	NullCheck(___0_container);
 	GenericInterfaceActionInvoker1Invoker< Il2CppFullySharedGenericAny* >::Invoke(method, (RuntimeObject*)___0_container, il2cppRetVal);
 }
-// Method Definition Index: 51622
+// Method Definition Index: 51620
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetClassValueAction__ctor_m77857F27480265EC4F68B5964C56A0397951A9D0_gshared (GetClassValueAction_t4F5F9F51B79F47048B6A97418F21D4BF3A05AC56* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) 
 {
 	__this->___method_ptr = (intptr_t)il2cpp_codegen_get_method_pointer((RuntimeMethod*)___1_method);
@@ -9070,7 +9070,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetClassValueAction__ctor_m77857F2748026
 	}
 	__this->___extra_arg = (intptr_t)&GetClassValueAction_Invoke_mC1959AA150BD93B52DF72F534318E19818911E90_Multicast;
 }
-// Method Definition Index: 51623
+// Method Definition Index: 51621
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetClassValueAction_Invoke_mC1959AA150BD93B52DF72F534318E19818911E90_gshared (GetClassValueAction_t4F5F9F51B79F47048B6A97418F21D4BF3A05AC56* __this, Il2CppFullySharedGenericAny ___0_container, Il2CppFullySharedGenericAny* il2cppRetVal, const RuntimeMethod* method) 
 {
 	typedef void (*FunctionPointerType) (RuntimeObject*, Il2CppFullySharedGenericAny, Il2CppFullySharedGenericAny*, const RuntimeMethod*);
@@ -9084,7 +9084,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetClassValueAction_Invoke_mC1959AA150BD
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 39479
+// Method Definition Index: 39477
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* GetGraph_3_get_gameObject_mDCBF023CF432726FF35B42A112C91D56FC85B1F6_gshared (GetGraph_3_tB9B245D31C6EA5C0BB569EC1D84F95DD91213A86* __this, const RuntimeMethod* method) 
 {
 	{
@@ -9093,7 +9093,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D
 		return L_0;
 	}
 }
-// Method Definition Index: 39480
+// Method Definition Index: 39478
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetGraph_3_set_gameObject_m6FE16ED49C8561FB68BEEAE4930446216B80289E_gshared (GetGraph_3_tB9B245D31C6EA5C0BB569EC1D84F95DD91213A86* __this, ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -9104,7 +9104,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetGraph_3_set_gameObject_m6FE16ED49C856
 		return;
 	}
 }
-// Method Definition Index: 39481
+// Method Definition Index: 39479
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* GetGraph_3_get_graphOutput_m25628E588F877DBEB26F52376474CA7EBB19C010_gshared (GetGraph_3_tB9B245D31C6EA5C0BB569EC1D84F95DD91213A86* __this, const RuntimeMethod* method) 
 {
 	{
@@ -9113,7 +9113,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110
 		return L_0;
 	}
 }
-// Method Definition Index: 39482
+// Method Definition Index: 39480
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetGraph_3_set_graphOutput_mA07CC9EFE8F43FC4AF55F9B26D16F0482A739F23_gshared (GetGraph_3_tB9B245D31C6EA5C0BB569EC1D84F95DD91213A86* __this, ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -9124,7 +9124,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetGraph_3_set_graphOutput_mA07CC9EFE8F4
 		return;
 	}
 }
-// Method Definition Index: 39483
+// Method Definition Index: 39481
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetGraph_3_Definition_m90F49859BD1F77BF16D335FC00DD3FC809979AEE_gshared (GetGraph_3_tB9B245D31C6EA5C0BB569EC1D84F95DD91213A86* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9155,7 +9155,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetGraph_3_Definition_m90F49859BD1F77BF1
 		return;
 	}
 }
-// Method Definition Index: 39484
+// Method Definition Index: 39482
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GetGraph_3_Get_mDA83E4D4475E7C15E0C12BB6806DD6A69937DF01_gshared (GetGraph_3_tB9B245D31C6EA5C0BB569EC1D84F95DD91213A86* __this, Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* ___0_flow, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9185,7 +9185,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GetGraph_3_Get_mDA83E4D4475E7C
 		return L_5;
 	}
 }
-// Method Definition Index: 39485
+// Method Definition Index: 39483
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetGraph_3__ctor_mDEAB0D5867A53E33D02EE7C0E766BA055513D89D_gshared (GetGraph_3_tB9B245D31C6EA5C0BB569EC1D84F95DD91213A86* __this, const RuntimeMethod* method) 
 {
 	{
@@ -9201,7 +9201,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetGraph_3__ctor_mDEAB0D5867A53E33D02EE7
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 39486
+// Method Definition Index: 39484
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* GetGraphs_3_get_gameObject_m750FCD2E0775B325441525F6AC46E131B9D4E4A0_gshared (GetGraphs_3_t574646358DD5C0E139628A2C73E008AF88916CDE* __this, const RuntimeMethod* method) 
 {
 	{
@@ -9210,7 +9210,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D
 		return L_0;
 	}
 }
-// Method Definition Index: 39487
+// Method Definition Index: 39485
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetGraphs_3_set_gameObject_m05B3BFF4070733CB9610CB39EFCA59430FA43BBD_gshared (GetGraphs_3_t574646358DD5C0E139628A2C73E008AF88916CDE* __this, ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -9221,7 +9221,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetGraphs_3_set_gameObject_m05B3BFF40707
 		return;
 	}
 }
-// Method Definition Index: 39488
+// Method Definition Index: 39486
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* GetGraphs_3_get_graphList_m80CC2951367C875B2AE5D92D38DD3023C3ACBB6E_gshared (GetGraphs_3_t574646358DD5C0E139628A2C73E008AF88916CDE* __this, const RuntimeMethod* method) 
 {
 	{
@@ -9230,7 +9230,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110
 		return L_0;
 	}
 }
-// Method Definition Index: 39489
+// Method Definition Index: 39487
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetGraphs_3_set_graphList_m834C7FC835F2D3B5FFFB11467FC07B46F91EA9CC_gshared (GetGraphs_3_t574646358DD5C0E139628A2C73E008AF88916CDE* __this, ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -9241,7 +9241,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetGraphs_3_set_graphList_m834C7FC835F2D
 		return;
 	}
 }
-// Method Definition Index: 39490
+// Method Definition Index: 39488
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetGraphs_3_Definition_m0FF6168F6B7AA8AD14460CA258A09142CE0C0735_gshared (GetGraphs_3_t574646358DD5C0E139628A2C73E008AF88916CDE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9272,7 +9272,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetGraphs_3_Definition_m0FF6168F6B7AA8AD
 		return;
 	}
 }
-// Method Definition Index: 39491
+// Method Definition Index: 39489
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* GetGraphs_3_Get_m65861D125397BC20D03A6849737A9597B97AA6A9_gshared (GetGraphs_3_t574646358DD5C0E139628A2C73E008AF88916CDE* __this, Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* ___0_flow, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9349,7 +9349,7 @@ IL_0053:
 		return L_17;
 	}
 }
-// Method Definition Index: 39492
+// Method Definition Index: 39490
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetGraphs_3__ctor_m363A09235473489F4072D77BA28D8B2A98463AAD_gshared (GetGraphs_3_t574646358DD5C0E139628A2C73E008AF88916CDE* __this, const RuntimeMethod* method) 
 {
 	{
@@ -9393,7 +9393,7 @@ void GetStructValueAction_Invoke_m6DFA81D13EC787F1ADE1F0915B144080044D8472_OpenI
 	NullCheck(___0_container);
 	InvokerActionInvoker1< Il2CppFullySharedGenericAny* >::Invoke((Il2CppMethodPointer)__this->___method_ptr, method, ___0_container, il2cppRetVal);
 }
-// Method Definition Index: 51618
+// Method Definition Index: 51616
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetStructValueAction__ctor_m8973674F88313BE08D424879CC8063F7E58573A1_gshared (GetStructValueAction_t1D4341987D3AB639208F418686483312904A7B39* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) 
 {
 	__this->___method_ptr = (intptr_t)il2cpp_codegen_get_method_pointer((RuntimeMethod*)___1_method);
@@ -9426,7 +9426,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetStructValueAction__ctor_m8973674F8831
 	}
 	__this->___extra_arg = (intptr_t)&GetStructValueAction_Invoke_m6DFA81D13EC787F1ADE1F0915B144080044D8472_Multicast;
 }
-// Method Definition Index: 51619
+// Method Definition Index: 51617
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetStructValueAction_Invoke_m6DFA81D13EC787F1ADE1F0915B144080044D8472_gshared (GetStructValueAction_t1D4341987D3AB639208F418686483312904A7B39* __this, Il2CppFullySharedGenericAny* ___0_container, Il2CppFullySharedGenericAny* il2cppRetVal, const RuntimeMethod* method) 
 {
 	typedef void (*FunctionPointerType) (RuntimeObject*, Il2CppFullySharedGenericAny*, Il2CppFullySharedGenericAny*, const RuntimeMethod*);
@@ -9440,107 +9440,107 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetStructValueAction_Invoke_m6DFA81D13EC
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 56105
+// Method Definition Index: 56103
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* GetTrackablesUnit_6_get_flowIn_mAAFDCFDAAA9BC57B6A981EA282B07F52359C1502_gshared (GetTrackablesUnit_6_t53BDD6CA0F569B84218F5FD0AE07A3F5A12B4681* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_0 = __this->___U3CflowInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56106
+// Method Definition Index: 56104
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_flowIn_m8EEE0B2D5991AD4FAF690E3B1376820477F33811_gshared (GetTrackablesUnit_6_t53BDD6CA0F569B84218F5FD0AE07A3F5A12B4681* __this, ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_0 = ___0_value;
 		__this->___U3CflowInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CflowInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56107
+// Method Definition Index: 56105
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* GetTrackablesUnit_6_get_flowOut_m2EFD468A0C47BE0461269FF6A54FF6FA3BE39896_gshared (GetTrackablesUnit_6_t53BDD6CA0F569B84218F5FD0AE07A3F5A12B4681* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = __this->___U3CflowOutU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56108
+// Method Definition Index: 56106
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_flowOut_m4479F9C23EE8AB54A808284316B5F0C1F50F365B_gshared (GetTrackablesUnit_6_t53BDD6CA0F569B84218F5FD0AE07A3F5A12B4681* __this, ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = ___0_value;
 		__this->___U3CflowOutU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CflowOutU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56109
+// Method Definition Index: 56107
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* GetTrackablesUnit_6_get_managerIn_m358D1437379511D9D99962BABE4CF42C49697105_gshared (GetTrackablesUnit_6_t53BDD6CA0F569B84218F5FD0AE07A3F5A12B4681* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = __this->___U3CmanagerInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56110
+// Method Definition Index: 56108
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_managerIn_m6360E18578C217E3A0F6BE048B8F63E4E72AFE3E_gshared (GetTrackablesUnit_6_t53BDD6CA0F569B84218F5FD0AE07A3F5A12B4681* __this, ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = ___0_value;
 		__this->___U3CmanagerInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CmanagerInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56111
+// Method Definition Index: 56109
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* GetTrackablesUnit_6_get_trackablesIn_m77E455726BA7C8C2D76A024CA9D2CFD16E833D0E_gshared (GetTrackablesUnit_6_t53BDD6CA0F569B84218F5FD0AE07A3F5A12B4681* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = __this->___U3CtrackablesInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56112
+// Method Definition Index: 56110
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_trackablesIn_m2BD844CE32AB3CE882C909F74A8EBAB07724F7C4_gshared (GetTrackablesUnit_6_t53BDD6CA0F569B84218F5FD0AE07A3F5A12B4681* __this, ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = ___0_value;
 		__this->___U3CtrackablesInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtrackablesInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56113
+// Method Definition Index: 56111
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* GetTrackablesUnit_6_get_trackablesOut_m8264E3610A203450C23587180D1AACE4AC6CBA94_gshared (GetTrackablesUnit_6_t53BDD6CA0F569B84218F5FD0AE07A3F5A12B4681* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = __this->___U3CtrackablesOutU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56114
+// Method Definition Index: 56112
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_trackablesOut_m23BCBD3ED48A4F0D535176194D20A5707E91B77B_gshared (GetTrackablesUnit_6_t53BDD6CA0F569B84218F5FD0AE07A3F5A12B4681* __this, ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = ___0_value;
 		__this->___U3CtrackablesOutU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtrackablesOutU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56115
+// Method Definition Index: 56113
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_Definition_m2787484EDB9909F122AD21C20B34631569F59DE6_gshared (GetTrackablesUnit_6_t53BDD6CA0F569B84218F5FD0AE07A3F5A12B4681* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9555,66 +9555,66 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_Definition_m2787484E
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:78>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:78>
 		Func_2_tE299C631F0CB2E8E61444D749D446C27349C90B8* L_0 = (Func_2_tE299C631F0CB2E8E61444D749D446C27349C90B8*)il2cpp_codegen_object_new(Func_2_tE299C631F0CB2E8E61444D749D446C27349C90B8_il2cpp_TypeInfo_var);
 		Func_2__ctor_m36A365D852CA6BD70A68A3A26FF683FB3369DDF4(L_0, (RuntimeObject*)__this, (intptr_t)((void*)il2cpp_rgctx_method(method->klass->rgctx_data, 1)), NULL);
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_1;
 		L_1 = Unit_ControlInput_mF730DABA4FE60423D39B8EADE5DA72F51E6166A5((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, _stringLiteral8A8FE283442D993E502B69A3252F69EFFAE40786, L_0, NULL);
 		GetTrackablesUnit_6_set_flowIn_m8EEE0B2D5991AD4FAF690E3B1376820477F33811_inline(__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 2));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:79>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:79>
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_2;
 		L_2 = Unit_ControlOutput_mCD76724DFB6AAE10C099E9984A39A5E0FC2824FE((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, _stringLiteralB2A5EAD5177EC36640CF7F1A9B069A6C8151F818, NULL);
 		GetTrackablesUnit_6_set_flowOut_m4479F9C23EE8AB54A808284316B5F0C1F50F365B_inline(__this, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 3));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:80>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:80>
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_3;
 		L_3 = Unit_ValueInput_TisRuntimeObject_m122343074F8193EFCD173C88278671A117E7DF71((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, _stringLiteralBC164227AFDA156ECBA6FB703F556B9031872E75, il2cpp_rgctx_method(method->klass->rgctx_data, 4));
 		GetTrackablesUnit_6_set_managerIn_m6360E18578C217E3A0F6BE048B8F63E4E72AFE3E_inline(__this, L_3, il2cpp_rgctx_method(method->klass->rgctx_data, 5));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:81>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:81>
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_4;
 		L_4 = Unit_ValueInput_TisList_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D_m6ACA4847F4A6B7F1BE04C85E4620523C7CC95D0D((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, _stringLiteral3C72CD06402C9318AD966E59D6028E2828D7A030, il2cpp_rgctx_method(method->klass->rgctx_data, 6));
 		GetTrackablesUnit_6_set_trackablesIn_m2BD844CE32AB3CE882C909F74A8EBAB07724F7C4_inline(__this, L_4, il2cpp_rgctx_method(method->klass->rgctx_data, 7));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:82>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:82>
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_5;
 		L_5 = Unit_ValueOutput_TisList_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D_m0B1CFA3FB04858C9D26BCFFD15291925A42EB224((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, _stringLiteral8E2BFA941EB89B5F2206FB52D76B3EB7E41CD6BC, il2cpp_rgctx_method(method->klass->rgctx_data, 8));
 		GetTrackablesUnit_6_set_trackablesOut_m23BCBD3ED48A4F0D535176194D20A5707E91B77B_inline(__this, L_5, il2cpp_rgctx_method(method->klass->rgctx_data, 9));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:84>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:84>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_6;
 		L_6 = GetTrackablesUnit_6_get_managerIn_m358D1437379511D9D99962BABE4CF42C49697105_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_7;
 		L_7 = GetTrackablesUnit_6_get_flowIn_mAAFDCFDAAA9BC57B6A981EA282B07F52359C1502_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		Unit_Requirement_m9F929AD842C0E254FA9AD48E9200C63B43BFE64A((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, L_6, L_7, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:85>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:85>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_8;
 		L_8 = GetTrackablesUnit_6_get_trackablesIn_m77E455726BA7C8C2D76A024CA9D2CFD16E833D0E_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_9;
 		L_9 = GetTrackablesUnit_6_get_flowIn_mAAFDCFDAAA9BC57B6A981EA282B07F52359C1502_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		Unit_Requirement_m9F929AD842C0E254FA9AD48E9200C63B43BFE64A((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, L_8, L_9, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:86>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:86>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_10;
 		L_10 = GetTrackablesUnit_6_get_flowIn_mAAFDCFDAAA9BC57B6A981EA282B07F52359C1502_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_11;
 		L_11 = GetTrackablesUnit_6_get_flowOut_m2EFD468A0C47BE0461269FF6A54FF6FA3BE39896_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		Unit_Succession_m202BB700D861D65B85102AD7B3119AD1B2FF2158((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, L_10, L_11, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:87>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:87>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_12;
 		L_12 = GetTrackablesUnit_6_get_flowIn_mAAFDCFDAAA9BC57B6A981EA282B07F52359C1502_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_13;
 		L_13 = GetTrackablesUnit_6_get_trackablesOut_m8264E3610A203450C23587180D1AACE4AC6CBA94_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 14));
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		Unit_Assignment_mE5DC2E131C1BA666F655E321312165D7B4BB74C7((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, L_12, L_13, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:88>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:88>
 		return;
 	}
 }
-// Method Definition Index: 56116
+// Method Definition Index: 56114
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* GetTrackablesUnit_6_ProcessFlow_m83A719DFF7640D197079869203B88A40C17558CA_gshared (GetTrackablesUnit_6_t53BDD6CA0F569B84218F5FD0AE07A3F5A12B4681* __this, Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* ___0_flow, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9642,7 +9642,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E7
 	memset((&V_3), 0, sizeof(V_3));
 	RuntimeObject* V_4 = NULL;
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:92>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:92>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_0 = ___0_flow;
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_1;
 		L_1 = GetTrackablesUnit_6_get_managerIn_m358D1437379511D9D99962BABE4CF42C49697105_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
@@ -9650,7 +9650,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E7
 		RuntimeObject* L_2;
 		L_2 = Flow_GetValue_m4396BFB8BF013A1CF992A4E36D47E864D4180718(L_0, L_1, NULL);
 		V_0 = ((ARTrackableManager_5_tCF3716950AB6E762DC60917DB4A4A6214010074D*)IsInstClass((RuntimeObject*)L_2, il2cpp_rgctx_data(method->klass->rgctx_data, 15)));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:93>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:93>
 		ARTrackableManager_5_tCF3716950AB6E762DC60917DB4A4A6214010074D* L_3 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_4;
@@ -9661,7 +9661,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E7
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:95>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:95>
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		ARTrackableManager_5_tCF3716950AB6E762DC60917DB4A4A6214010074D* L_5;
 		L_5 = Object_FindAnyObjectByType_TisARTrackableManager_5_tCF3716950AB6E762DC60917DB4A4A6214010074D_mAC1453E7E1BF3A1437D1184B4211D95C029C1187(il2cpp_rgctx_method(method->klass->rgctx_data, 16));
@@ -9670,7 +9670,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E7
 
 IL_0021:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:97>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:97>
 		ARTrackableManager_5_tCF3716950AB6E762DC60917DB4A4A6214010074D* L_6 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_7;
@@ -9681,8 +9681,8 @@ IL_0021:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:98>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:99>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:98>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:99>
 		NullCheck((GraphElement_1_t3220EDD6251B31FC22A192EC12682C1D8B28F16D*)__this);
 		FlowGraph_tF9E42FECF535CD5BAB10F75672B5BCE285627A45* L_8;
 		L_8 = GraphElement_1_get_graph_m854D04434240C328A8D726D991A89A7CDAA9116B_inline((GraphElement_1_t3220EDD6251B31FC22A192EC12682C1D8B28F16D*)__this, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&GraphElement_1_get_graph_m854D04434240C328A8D726D991A89A7CDAA9116B_RuntimeMethod_var)));
@@ -9702,7 +9702,7 @@ IL_0021:
 
 IL_004f:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:101>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:101>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_14;
 		L_14 = GetTrackablesUnit_6_get_managerIn_m358D1437379511D9D99962BABE4CF42C49697105_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
 		NullCheck((UnitPort_3_t3BDB6AF6AAF9927A0C940F08CFD19E645813CFB0*)L_14);
@@ -9722,7 +9722,7 @@ IL_004f:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:103>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:103>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_17;
 		L_17 = GetTrackablesUnit_6_get_managerIn_m358D1437379511D9D99962BABE4CF42C49697105_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
 		NullCheck((UnitPort_3_t3BDB6AF6AAF9927A0C940F08CFD19E645813CFB0*)L_17);
@@ -9734,7 +9734,7 @@ IL_004f:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:104>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:104>
 		StringBuilder_t* L_19 = __this->___m_LogBuilder;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_20 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_21 = L_20;
@@ -9774,7 +9774,7 @@ IL_004f:
 
 IL_00c3:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:106>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:106>
 		StringBuilder_t* L_32 = __this->___m_LogBuilder;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_33 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_34 = L_33;
@@ -9813,20 +9813,20 @@ IL_00c3:
 
 IL_010e:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:108>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:109>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:108>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:109>
 		StringBuilder_t* L_45 = __this->___m_LogBuilder;
 		NullCheck(L_45);
 		StringBuilder_t* L_46;
 		L_46 = StringBuilder_Append_m08904D74E0C78E5F36DCD9C9303BDD07886D9F7D(L_45, _stringLiteral82E984AB94E4E3FF2391F79D9BAAB2F58B03179E, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:111>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:111>
 		StringBuilder_t* L_47 = __this->___m_LogBuilder;
 		NullCheck((RuntimeObject*)L_47);
 		String_t* L_48;
 		L_48 = VirtualFuncInvoker0< String_t* >::Invoke(3, (RuntimeObject*)L_47);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9((RuntimeObject*)L_48, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:112>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:112>
 		StringBuilder_t* L_49 = __this->___m_LogBuilder;
 		NullCheck(L_49);
 		StringBuilder_t* L_50;
@@ -9835,7 +9835,7 @@ IL_010e:
 
 IL_013b:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:115>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:115>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_51 = ___0_flow;
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_52;
 		L_52 = GetTrackablesUnit_6_get_trackablesIn_m77E455726BA7C8C2D76A024CA9D2CFD16E833D0E_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
@@ -9850,11 +9850,11 @@ IL_013b:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:117>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:117>
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_55 = (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 19));
 		List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690(L_55, il2cpp_rgctx_method(method->klass->rgctx_data, 20));
 		V_1 = L_55;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:119>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:119>
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 18));
 		bool L_56 = ((GetTrackablesUnit_6_t53BDD6CA0F569B84218F5FD0AE07A3F5A12B4681_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 18)))->___s_IsFirstFrame;
 		if (!L_56)
@@ -9863,7 +9863,7 @@ IL_013b:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:121>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:121>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_57;
 		L_57 = GetTrackablesUnit_6_get_trackablesIn_m77E455726BA7C8C2D76A024CA9D2CFD16E833D0E_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
 		NullCheck((UnitPort_3_t3BDB6AF6AAF9927A0C940F08CFD19E645813CFB0*)L_57);
@@ -9875,7 +9875,7 @@ IL_013b:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:122>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:122>
 		StringBuilder_t* L_59 = __this->___m_LogBuilder;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_60 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_61 = L_60;
@@ -9915,7 +9915,7 @@ IL_013b:
 
 IL_01bd:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:124>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:124>
 		StringBuilder_t* L_72 = __this->___m_LogBuilder;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_73 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_74 = L_73;
@@ -9954,8 +9954,8 @@ IL_01bd:
 
 IL_0208:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:126>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:127>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:126>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:127>
 		StringBuilder_t* L_85 = __this->___m_LogBuilder;
 		NullCheck(L_85);
 		StringBuilder_t* L_86;
@@ -9964,14 +9964,14 @@ IL_0208:
 
 IL_0219:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:130>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:130>
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 18));
 		((GetTrackablesUnit_6_t53BDD6CA0F569B84218F5FD0AE07A3F5A12B4681_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 18)))->___s_IsFirstFrame = (bool)0;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:132>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:132>
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_87 = V_1;
 		NullCheck(L_87);
 		List_1_Clear_m16C1F2C61FED5955F10EB36BC1CB2DF34B128994_inline(L_87, il2cpp_rgctx_method(method->klass->rgctx_data, 21));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
 		ARTrackableManager_5_tCF3716950AB6E762DC60917DB4A4A6214010074D* L_88 = V_0;
 		NullCheck(L_88);
 		TrackableCollection_1_tFCC29DC30D1D7BF9DF5F84F8DF60BD67C7832EDB L_89;
@@ -9985,11 +9985,11 @@ IL_0219:
 
 IL_0236:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
 		RuntimeObject* L_91;
 		L_91 = Enumerator_get_Current_m0C78B1A685CCC36524577967CE1620CB889FDC0A((&V_2), il2cpp_rgctx_method(method->klass->rgctx_data, 27));
 		V_4 = L_91;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:135>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:135>
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_92 = V_1;
 		RuntimeObject* L_93 = V_4;
 		NullCheck(L_92);
@@ -9998,7 +9998,7 @@ IL_0236:
 
 IL_0247:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
 		bool L_94;
 		L_94 = Enumerator_MoveNext_m2DFDA23C7884D9A93FF21291F1DF5DDA2C0DA27C((&V_2), il2cpp_rgctx_method(method->klass->rgctx_data, 31));
 		if (L_94)
@@ -10007,20 +10007,20 @@ IL_0247:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:138>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:138>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_95 = ___0_flow;
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_96;
 		L_96 = GetTrackablesUnit_6_get_trackablesOut_m8264E3610A203450C23587180D1AACE4AC6CBA94_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 14));
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_97 = V_1;
 		NullCheck(L_95);
 		Flow_SetValue_m635BAF02F51D7C027C4F85157B80E2AB2DFB48A7(L_95, (RuntimeObject*)L_96, (RuntimeObject*)L_97, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:139>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:139>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_98;
 		L_98 = GetTrackablesUnit_6_get_flowOut_m2EFD468A0C47BE0461269FF6A54FF6FA3BE39896_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
 		return L_98;
 	}
 }
-// Method Definition Index: 56117
+// Method Definition Index: 56115
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6__ctor_m4A8A07763DB4937CE0573C3506EE437345CBBA0A_gshared (GetTrackablesUnit_6_t53BDD6CA0F569B84218F5FD0AE07A3F5A12B4681* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10030,7 +10030,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6__ctor_m4A8A07763DB49
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:42>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:42>
 		StringBuilder_t* L_0 = (StringBuilder_t*)il2cpp_codegen_object_new(StringBuilder_t_il2cpp_TypeInfo_var);
 		StringBuilder__ctor_m1D99713357DE05DAFA296633639DB55F8C30587D(L_0, NULL);
 		__this->___m_LogBuilder = L_0;
@@ -10039,11 +10039,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6__ctor_m4A8A07763DB49
 		return;
 	}
 }
-// Method Definition Index: 56118
+// Method Definition Index: 56116
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6__cctor_m6EB8936D642B2841957D92CC590E74C416185AAE_gshared (const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:40>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:40>
 		((GetTrackablesUnit_6_t53BDD6CA0F569B84218F5FD0AE07A3F5A12B4681_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 18)))->___s_IsFirstFrame = (bool)1;
 		return;
 	}
@@ -10056,107 +10056,107 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6__cctor_m6EB8936D642B
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 56105
+// Method Definition Index: 56103
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* GetTrackablesUnit_6_get_flowIn_m7346B886C7A86503D67620697BBBC5A94CA38FE3_gshared (GetTrackablesUnit_6_tF13014734999E8A2395BF31956B595A732B18759* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_0 = __this->___U3CflowInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56106
+// Method Definition Index: 56104
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_flowIn_m806F2F4C11F404B00F077CB647CE2AF7F0EE0062_gshared (GetTrackablesUnit_6_tF13014734999E8A2395BF31956B595A732B18759* __this, ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_0 = ___0_value;
 		__this->___U3CflowInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CflowInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56107
+// Method Definition Index: 56105
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* GetTrackablesUnit_6_get_flowOut_m186BD9C5D4DC38F534F9885BFC01FE782363A836_gshared (GetTrackablesUnit_6_tF13014734999E8A2395BF31956B595A732B18759* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = __this->___U3CflowOutU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56108
+// Method Definition Index: 56106
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_flowOut_mF293B5AA9AD8D1DB45A16047A428C6BCDD475A11_gshared (GetTrackablesUnit_6_tF13014734999E8A2395BF31956B595A732B18759* __this, ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = ___0_value;
 		__this->___U3CflowOutU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CflowOutU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56109
+// Method Definition Index: 56107
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* GetTrackablesUnit_6_get_managerIn_m78D4EAFCD6FC7CB0BFB4F17DA7E00B711B1445FC_gshared (GetTrackablesUnit_6_tF13014734999E8A2395BF31956B595A732B18759* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = __this->___U3CmanagerInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56110
+// Method Definition Index: 56108
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_managerIn_m78171281D411288F5BBF037AADF22F4777838457_gshared (GetTrackablesUnit_6_tF13014734999E8A2395BF31956B595A732B18759* __this, ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = ___0_value;
 		__this->___U3CmanagerInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CmanagerInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56111
+// Method Definition Index: 56109
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* GetTrackablesUnit_6_get_trackablesIn_mECFF012B677EADF39932AFC63EB81022642F081A_gshared (GetTrackablesUnit_6_tF13014734999E8A2395BF31956B595A732B18759* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = __this->___U3CtrackablesInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56112
+// Method Definition Index: 56110
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_trackablesIn_mE2E281966F8FCFD28D4D507EA4722956D509FB25_gshared (GetTrackablesUnit_6_tF13014734999E8A2395BF31956B595A732B18759* __this, ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = ___0_value;
 		__this->___U3CtrackablesInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtrackablesInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56113
+// Method Definition Index: 56111
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* GetTrackablesUnit_6_get_trackablesOut_m963D74D3B5AF8703528B1A97E57971DACF9ED8FC_gshared (GetTrackablesUnit_6_tF13014734999E8A2395BF31956B595A732B18759* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = __this->___U3CtrackablesOutU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56114
+// Method Definition Index: 56112
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_trackablesOut_mEA3E85FF2DA6FA49FAB674E4299FD6933756C54F_gshared (GetTrackablesUnit_6_tF13014734999E8A2395BF31956B595A732B18759* __this, ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = ___0_value;
 		__this->___U3CtrackablesOutU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtrackablesOutU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56115
+// Method Definition Index: 56113
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_Definition_mD511D4C6AFD670FCBA756CB5DF6FE92D53595635_gshared (GetTrackablesUnit_6_tF13014734999E8A2395BF31956B595A732B18759* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10171,66 +10171,66 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_Definition_mD511D4C6
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:78>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:78>
 		Func_2_tE299C631F0CB2E8E61444D749D446C27349C90B8* L_0 = (Func_2_tE299C631F0CB2E8E61444D749D446C27349C90B8*)il2cpp_codegen_object_new(Func_2_tE299C631F0CB2E8E61444D749D446C27349C90B8_il2cpp_TypeInfo_var);
 		Func_2__ctor_m36A365D852CA6BD70A68A3A26FF683FB3369DDF4(L_0, (RuntimeObject*)__this, (intptr_t)((void*)il2cpp_rgctx_method(method->klass->rgctx_data, 1)), NULL);
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_1;
 		L_1 = Unit_ControlInput_mF730DABA4FE60423D39B8EADE5DA72F51E6166A5((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, _stringLiteral8A8FE283442D993E502B69A3252F69EFFAE40786, L_0, NULL);
 		GetTrackablesUnit_6_set_flowIn_m806F2F4C11F404B00F077CB647CE2AF7F0EE0062_inline(__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 2));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:79>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:79>
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_2;
 		L_2 = Unit_ControlOutput_mCD76724DFB6AAE10C099E9984A39A5E0FC2824FE((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, _stringLiteralB2A5EAD5177EC36640CF7F1A9B069A6C8151F818, NULL);
 		GetTrackablesUnit_6_set_flowOut_mF293B5AA9AD8D1DB45A16047A428C6BCDD475A11_inline(__this, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 3));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:80>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:80>
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_3;
 		L_3 = Unit_ValueInput_TisRuntimeObject_m122343074F8193EFCD173C88278671A117E7DF71((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, _stringLiteralBC164227AFDA156ECBA6FB703F556B9031872E75, il2cpp_rgctx_method(method->klass->rgctx_data, 4));
 		GetTrackablesUnit_6_set_managerIn_m78171281D411288F5BBF037AADF22F4777838457_inline(__this, L_3, il2cpp_rgctx_method(method->klass->rgctx_data, 5));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:81>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:81>
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_4;
 		L_4 = Unit_ValueInput_TisList_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D_m6ACA4847F4A6B7F1BE04C85E4620523C7CC95D0D((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, _stringLiteral3C72CD06402C9318AD966E59D6028E2828D7A030, il2cpp_rgctx_method(method->klass->rgctx_data, 6));
 		GetTrackablesUnit_6_set_trackablesIn_mE2E281966F8FCFD28D4D507EA4722956D509FB25_inline(__this, L_4, il2cpp_rgctx_method(method->klass->rgctx_data, 7));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:82>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:82>
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_5;
 		L_5 = Unit_ValueOutput_TisList_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D_m0B1CFA3FB04858C9D26BCFFD15291925A42EB224((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, _stringLiteral8E2BFA941EB89B5F2206FB52D76B3EB7E41CD6BC, il2cpp_rgctx_method(method->klass->rgctx_data, 8));
 		GetTrackablesUnit_6_set_trackablesOut_mEA3E85FF2DA6FA49FAB674E4299FD6933756C54F_inline(__this, L_5, il2cpp_rgctx_method(method->klass->rgctx_data, 9));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:84>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:84>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_6;
 		L_6 = GetTrackablesUnit_6_get_managerIn_m78D4EAFCD6FC7CB0BFB4F17DA7E00B711B1445FC_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_7;
 		L_7 = GetTrackablesUnit_6_get_flowIn_m7346B886C7A86503D67620697BBBC5A94CA38FE3_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		Unit_Requirement_m9F929AD842C0E254FA9AD48E9200C63B43BFE64A((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, L_6, L_7, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:85>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:85>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_8;
 		L_8 = GetTrackablesUnit_6_get_trackablesIn_mECFF012B677EADF39932AFC63EB81022642F081A_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_9;
 		L_9 = GetTrackablesUnit_6_get_flowIn_m7346B886C7A86503D67620697BBBC5A94CA38FE3_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		Unit_Requirement_m9F929AD842C0E254FA9AD48E9200C63B43BFE64A((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, L_8, L_9, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:86>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:86>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_10;
 		L_10 = GetTrackablesUnit_6_get_flowIn_m7346B886C7A86503D67620697BBBC5A94CA38FE3_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_11;
 		L_11 = GetTrackablesUnit_6_get_flowOut_m186BD9C5D4DC38F534F9885BFC01FE782363A836_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		Unit_Succession_m202BB700D861D65B85102AD7B3119AD1B2FF2158((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, L_10, L_11, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:87>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:87>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_12;
 		L_12 = GetTrackablesUnit_6_get_flowIn_m7346B886C7A86503D67620697BBBC5A94CA38FE3_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_13;
 		L_13 = GetTrackablesUnit_6_get_trackablesOut_m963D74D3B5AF8703528B1A97E57971DACF9ED8FC_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 14));
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		Unit_Assignment_mE5DC2E131C1BA666F655E321312165D7B4BB74C7((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, L_12, L_13, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:88>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:88>
 		return;
 	}
 }
-// Method Definition Index: 56116
+// Method Definition Index: 56114
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* GetTrackablesUnit_6_ProcessFlow_m6C8DB5A36CC8A966AFF3929CC755A1DE90C4482F_gshared (GetTrackablesUnit_6_tF13014734999E8A2395BF31956B595A732B18759* __this, Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* ___0_flow, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10258,7 +10258,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E7
 	memset((&V_3), 0, sizeof(V_3));
 	RuntimeObject* V_4 = NULL;
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:92>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:92>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_0 = ___0_flow;
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_1;
 		L_1 = GetTrackablesUnit_6_get_managerIn_m78D4EAFCD6FC7CB0BFB4F17DA7E00B711B1445FC_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
@@ -10266,7 +10266,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E7
 		RuntimeObject* L_2;
 		L_2 = Flow_GetValue_m4396BFB8BF013A1CF992A4E36D47E864D4180718(L_0, L_1, NULL);
 		V_0 = ((ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465*)IsInstClass((RuntimeObject*)L_2, il2cpp_rgctx_data(method->klass->rgctx_data, 15)));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:93>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:93>
 		ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465* L_3 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_4;
@@ -10277,7 +10277,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E7
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:95>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:95>
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465* L_5;
 		L_5 = Object_FindAnyObjectByType_TisARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465_m645BD89F0B6F3FCA4049A5C3D5A7AB70AE9CDA04(il2cpp_rgctx_method(method->klass->rgctx_data, 16));
@@ -10286,7 +10286,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E7
 
 IL_0021:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:97>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:97>
 		ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465* L_6 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_7;
@@ -10297,8 +10297,8 @@ IL_0021:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:98>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:99>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:98>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:99>
 		NullCheck((GraphElement_1_t3220EDD6251B31FC22A192EC12682C1D8B28F16D*)__this);
 		FlowGraph_tF9E42FECF535CD5BAB10F75672B5BCE285627A45* L_8;
 		L_8 = GraphElement_1_get_graph_m854D04434240C328A8D726D991A89A7CDAA9116B_inline((GraphElement_1_t3220EDD6251B31FC22A192EC12682C1D8B28F16D*)__this, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&GraphElement_1_get_graph_m854D04434240C328A8D726D991A89A7CDAA9116B_RuntimeMethod_var)));
@@ -10318,7 +10318,7 @@ IL_0021:
 
 IL_004f:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:101>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:101>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_14;
 		L_14 = GetTrackablesUnit_6_get_managerIn_m78D4EAFCD6FC7CB0BFB4F17DA7E00B711B1445FC_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
 		NullCheck((UnitPort_3_t3BDB6AF6AAF9927A0C940F08CFD19E645813CFB0*)L_14);
@@ -10338,7 +10338,7 @@ IL_004f:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:103>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:103>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_17;
 		L_17 = GetTrackablesUnit_6_get_managerIn_m78D4EAFCD6FC7CB0BFB4F17DA7E00B711B1445FC_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
 		NullCheck((UnitPort_3_t3BDB6AF6AAF9927A0C940F08CFD19E645813CFB0*)L_17);
@@ -10350,7 +10350,7 @@ IL_004f:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:104>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:104>
 		StringBuilder_t* L_19 = __this->___m_LogBuilder;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_20 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_21 = L_20;
@@ -10390,7 +10390,7 @@ IL_004f:
 
 IL_00c3:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:106>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:106>
 		StringBuilder_t* L_32 = __this->___m_LogBuilder;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_33 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_34 = L_33;
@@ -10429,20 +10429,20 @@ IL_00c3:
 
 IL_010e:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:108>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:109>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:108>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:109>
 		StringBuilder_t* L_45 = __this->___m_LogBuilder;
 		NullCheck(L_45);
 		StringBuilder_t* L_46;
 		L_46 = StringBuilder_Append_m08904D74E0C78E5F36DCD9C9303BDD07886D9F7D(L_45, _stringLiteral82E984AB94E4E3FF2391F79D9BAAB2F58B03179E, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:111>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:111>
 		StringBuilder_t* L_47 = __this->___m_LogBuilder;
 		NullCheck((RuntimeObject*)L_47);
 		String_t* L_48;
 		L_48 = VirtualFuncInvoker0< String_t* >::Invoke(3, (RuntimeObject*)L_47);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9((RuntimeObject*)L_48, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:112>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:112>
 		StringBuilder_t* L_49 = __this->___m_LogBuilder;
 		NullCheck(L_49);
 		StringBuilder_t* L_50;
@@ -10451,7 +10451,7 @@ IL_010e:
 
 IL_013b:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:115>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:115>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_51 = ___0_flow;
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_52;
 		L_52 = GetTrackablesUnit_6_get_trackablesIn_mECFF012B677EADF39932AFC63EB81022642F081A_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
@@ -10466,11 +10466,11 @@ IL_013b:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:117>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:117>
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_55 = (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 19));
 		List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690(L_55, il2cpp_rgctx_method(method->klass->rgctx_data, 20));
 		V_1 = L_55;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:119>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:119>
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 18));
 		bool L_56 = ((GetTrackablesUnit_6_tF13014734999E8A2395BF31956B595A732B18759_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 18)))->___s_IsFirstFrame;
 		if (!L_56)
@@ -10479,7 +10479,7 @@ IL_013b:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:121>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:121>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_57;
 		L_57 = GetTrackablesUnit_6_get_trackablesIn_mECFF012B677EADF39932AFC63EB81022642F081A_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
 		NullCheck((UnitPort_3_t3BDB6AF6AAF9927A0C940F08CFD19E645813CFB0*)L_57);
@@ -10491,7 +10491,7 @@ IL_013b:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:122>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:122>
 		StringBuilder_t* L_59 = __this->___m_LogBuilder;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_60 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_61 = L_60;
@@ -10531,7 +10531,7 @@ IL_013b:
 
 IL_01bd:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:124>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:124>
 		StringBuilder_t* L_72 = __this->___m_LogBuilder;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_73 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_74 = L_73;
@@ -10570,8 +10570,8 @@ IL_01bd:
 
 IL_0208:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:126>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:127>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:126>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:127>
 		StringBuilder_t* L_85 = __this->___m_LogBuilder;
 		NullCheck(L_85);
 		StringBuilder_t* L_86;
@@ -10580,14 +10580,14 @@ IL_0208:
 
 IL_0219:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:130>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:130>
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 18));
 		((GetTrackablesUnit_6_tF13014734999E8A2395BF31956B595A732B18759_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 18)))->___s_IsFirstFrame = (bool)0;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:132>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:132>
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_87 = V_1;
 		NullCheck(L_87);
 		List_1_Clear_m16C1F2C61FED5955F10EB36BC1CB2DF34B128994_inline(L_87, il2cpp_rgctx_method(method->klass->rgctx_data, 21));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
 		ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465* L_88 = V_0;
 		NullCheck(L_88);
 		TrackableCollection_1_tFCC29DC30D1D7BF9DF5F84F8DF60BD67C7832EDB L_89;
@@ -10601,11 +10601,11 @@ IL_0219:
 
 IL_0236:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
 		RuntimeObject* L_91;
 		L_91 = Enumerator_get_Current_m0C78B1A685CCC36524577967CE1620CB889FDC0A((&V_2), il2cpp_rgctx_method(method->klass->rgctx_data, 27));
 		V_4 = L_91;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:135>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:135>
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_92 = V_1;
 		RuntimeObject* L_93 = V_4;
 		NullCheck(L_92);
@@ -10614,7 +10614,7 @@ IL_0236:
 
 IL_0247:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
 		bool L_94;
 		L_94 = Enumerator_MoveNext_m2DFDA23C7884D9A93FF21291F1DF5DDA2C0DA27C((&V_2), il2cpp_rgctx_method(method->klass->rgctx_data, 31));
 		if (L_94)
@@ -10623,20 +10623,20 @@ IL_0247:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:138>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:138>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_95 = ___0_flow;
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_96;
 		L_96 = GetTrackablesUnit_6_get_trackablesOut_m963D74D3B5AF8703528B1A97E57971DACF9ED8FC_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 14));
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_97 = V_1;
 		NullCheck(L_95);
 		Flow_SetValue_m635BAF02F51D7C027C4F85157B80E2AB2DFB48A7(L_95, (RuntimeObject*)L_96, (RuntimeObject*)L_97, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:139>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:139>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_98;
 		L_98 = GetTrackablesUnit_6_get_flowOut_m186BD9C5D4DC38F534F9885BFC01FE782363A836_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
 		return L_98;
 	}
 }
-// Method Definition Index: 56117
+// Method Definition Index: 56115
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6__ctor_m3AE000A7F3697AAB7BE4FF74B3F1B44FB61F723F_gshared (GetTrackablesUnit_6_tF13014734999E8A2395BF31956B595A732B18759* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10646,7 +10646,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6__ctor_m3AE000A7F3697
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:42>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:42>
 		StringBuilder_t* L_0 = (StringBuilder_t*)il2cpp_codegen_object_new(StringBuilder_t_il2cpp_TypeInfo_var);
 		StringBuilder__ctor_m1D99713357DE05DAFA296633639DB55F8C30587D(L_0, NULL);
 		__this->___m_LogBuilder = L_0;
@@ -10655,11 +10655,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6__ctor_m3AE000A7F3697
 		return;
 	}
 }
-// Method Definition Index: 56118
+// Method Definition Index: 56116
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6__cctor_m39D4A5583FD7B903BFDD16F069C1BE25180AAAF4_gshared (const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:40>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:40>
 		((GetTrackablesUnit_6_tF13014734999E8A2395BF31956B595A732B18759_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 18)))->___s_IsFirstFrame = (bool)1;
 		return;
 	}
@@ -10672,107 +10672,107 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6__cctor_m39D4A5583FD7
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 56105
+// Method Definition Index: 56103
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* GetTrackablesUnit_6_get_flowIn_mBEF826152046350F0D72D48C97239566DA27154F_gshared (GetTrackablesUnit_6_tD4A938F1E77E1BAE7C41C15D337E459E3CB21C85* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_0 = __this->___U3CflowInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56106
+// Method Definition Index: 56104
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_flowIn_mB325D4652315017075B81F1888C47D29E1EE4F85_gshared (GetTrackablesUnit_6_tD4A938F1E77E1BAE7C41C15D337E459E3CB21C85* __this, ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_0 = ___0_value;
 		__this->___U3CflowInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CflowInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56107
+// Method Definition Index: 56105
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* GetTrackablesUnit_6_get_flowOut_m85C63C4CE85E86CEDCB4A265905A76BF18921ADA_gshared (GetTrackablesUnit_6_tD4A938F1E77E1BAE7C41C15D337E459E3CB21C85* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = __this->___U3CflowOutU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56108
+// Method Definition Index: 56106
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_flowOut_m7614D74871DF91D539B3690E47B42E65CA273293_gshared (GetTrackablesUnit_6_tD4A938F1E77E1BAE7C41C15D337E459E3CB21C85* __this, ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = ___0_value;
 		__this->___U3CflowOutU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CflowOutU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56109
+// Method Definition Index: 56107
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* GetTrackablesUnit_6_get_managerIn_m6C56779D2A8E6584CA61E7E67E97E71D026163FB_gshared (GetTrackablesUnit_6_tD4A938F1E77E1BAE7C41C15D337E459E3CB21C85* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = __this->___U3CmanagerInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56110
+// Method Definition Index: 56108
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_managerIn_mBC2BEBFA2837DAA184C94B04A28A1A06FC173889_gshared (GetTrackablesUnit_6_tD4A938F1E77E1BAE7C41C15D337E459E3CB21C85* __this, ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = ___0_value;
 		__this->___U3CmanagerInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CmanagerInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56111
+// Method Definition Index: 56109
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* GetTrackablesUnit_6_get_trackablesIn_m91A1AAEAAA9817F2D096965DBB6E47EDB2FB0A37_gshared (GetTrackablesUnit_6_tD4A938F1E77E1BAE7C41C15D337E459E3CB21C85* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = __this->___U3CtrackablesInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56112
+// Method Definition Index: 56110
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_trackablesIn_m59F3618A61774DB7995DB272FEA45D400A25761E_gshared (GetTrackablesUnit_6_tD4A938F1E77E1BAE7C41C15D337E459E3CB21C85* __this, ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = ___0_value;
 		__this->___U3CtrackablesInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtrackablesInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56113
+// Method Definition Index: 56111
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* GetTrackablesUnit_6_get_trackablesOut_m6A7F04B00B2849A666E205B71DD9B195152B7015_gshared (GetTrackablesUnit_6_tD4A938F1E77E1BAE7C41C15D337E459E3CB21C85* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = __this->___U3CtrackablesOutU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56114
+// Method Definition Index: 56112
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_trackablesOut_mACDA5F94D670A31407888C71CD46B9DF2708E8B6_gshared (GetTrackablesUnit_6_tD4A938F1E77E1BAE7C41C15D337E459E3CB21C85* __this, ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = ___0_value;
 		__this->___U3CtrackablesOutU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtrackablesOutU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56115
+// Method Definition Index: 56113
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_Definition_mA52307E9189EEB4F304A73DFBC0A74563DE81A25_gshared (GetTrackablesUnit_6_tD4A938F1E77E1BAE7C41C15D337E459E3CB21C85* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10787,66 +10787,66 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_Definition_mA52307E9
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:78>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:78>
 		Func_2_tE299C631F0CB2E8E61444D749D446C27349C90B8* L_0 = (Func_2_tE299C631F0CB2E8E61444D749D446C27349C90B8*)il2cpp_codegen_object_new(Func_2_tE299C631F0CB2E8E61444D749D446C27349C90B8_il2cpp_TypeInfo_var);
 		Func_2__ctor_m36A365D852CA6BD70A68A3A26FF683FB3369DDF4(L_0, (RuntimeObject*)__this, (intptr_t)((void*)il2cpp_rgctx_method(method->klass->rgctx_data, 1)), NULL);
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_1;
 		L_1 = Unit_ControlInput_mF730DABA4FE60423D39B8EADE5DA72F51E6166A5((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, _stringLiteral8A8FE283442D993E502B69A3252F69EFFAE40786, L_0, NULL);
 		GetTrackablesUnit_6_set_flowIn_mB325D4652315017075B81F1888C47D29E1EE4F85_inline(__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 2));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:79>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:79>
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_2;
 		L_2 = Unit_ControlOutput_mCD76724DFB6AAE10C099E9984A39A5E0FC2824FE((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, _stringLiteralB2A5EAD5177EC36640CF7F1A9B069A6C8151F818, NULL);
 		GetTrackablesUnit_6_set_flowOut_m7614D74871DF91D539B3690E47B42E65CA273293_inline(__this, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 3));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:80>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:80>
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_3;
 		L_3 = Unit_ValueInput_TisRuntimeObject_m122343074F8193EFCD173C88278671A117E7DF71((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, _stringLiteralBC164227AFDA156ECBA6FB703F556B9031872E75, il2cpp_rgctx_method(method->klass->rgctx_data, 4));
 		GetTrackablesUnit_6_set_managerIn_mBC2BEBFA2837DAA184C94B04A28A1A06FC173889_inline(__this, L_3, il2cpp_rgctx_method(method->klass->rgctx_data, 5));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:81>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:81>
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_4;
 		L_4 = Unit_ValueInput_TisList_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D_m6ACA4847F4A6B7F1BE04C85E4620523C7CC95D0D((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, _stringLiteral3C72CD06402C9318AD966E59D6028E2828D7A030, il2cpp_rgctx_method(method->klass->rgctx_data, 6));
 		GetTrackablesUnit_6_set_trackablesIn_m59F3618A61774DB7995DB272FEA45D400A25761E_inline(__this, L_4, il2cpp_rgctx_method(method->klass->rgctx_data, 7));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:82>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:82>
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_5;
 		L_5 = Unit_ValueOutput_TisList_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D_m0B1CFA3FB04858C9D26BCFFD15291925A42EB224((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, _stringLiteral8E2BFA941EB89B5F2206FB52D76B3EB7E41CD6BC, il2cpp_rgctx_method(method->klass->rgctx_data, 8));
 		GetTrackablesUnit_6_set_trackablesOut_mACDA5F94D670A31407888C71CD46B9DF2708E8B6_inline(__this, L_5, il2cpp_rgctx_method(method->klass->rgctx_data, 9));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:84>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:84>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_6;
 		L_6 = GetTrackablesUnit_6_get_managerIn_m6C56779D2A8E6584CA61E7E67E97E71D026163FB_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_7;
 		L_7 = GetTrackablesUnit_6_get_flowIn_mBEF826152046350F0D72D48C97239566DA27154F_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		Unit_Requirement_m9F929AD842C0E254FA9AD48E9200C63B43BFE64A((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, L_6, L_7, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:85>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:85>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_8;
 		L_8 = GetTrackablesUnit_6_get_trackablesIn_m91A1AAEAAA9817F2D096965DBB6E47EDB2FB0A37_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_9;
 		L_9 = GetTrackablesUnit_6_get_flowIn_mBEF826152046350F0D72D48C97239566DA27154F_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		Unit_Requirement_m9F929AD842C0E254FA9AD48E9200C63B43BFE64A((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, L_8, L_9, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:86>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:86>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_10;
 		L_10 = GetTrackablesUnit_6_get_flowIn_mBEF826152046350F0D72D48C97239566DA27154F_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_11;
 		L_11 = GetTrackablesUnit_6_get_flowOut_m85C63C4CE85E86CEDCB4A265905A76BF18921ADA_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		Unit_Succession_m202BB700D861D65B85102AD7B3119AD1B2FF2158((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, L_10, L_11, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:87>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:87>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_12;
 		L_12 = GetTrackablesUnit_6_get_flowIn_mBEF826152046350F0D72D48C97239566DA27154F_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_13;
 		L_13 = GetTrackablesUnit_6_get_trackablesOut_m6A7F04B00B2849A666E205B71DD9B195152B7015_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 14));
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		Unit_Assignment_mE5DC2E131C1BA666F655E321312165D7B4BB74C7((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, L_12, L_13, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:88>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:88>
 		return;
 	}
 }
-// Method Definition Index: 56116
+// Method Definition Index: 56114
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* GetTrackablesUnit_6_ProcessFlow_mC9BEB45C597231A32758C360CF8FC4101BC282F6_gshared (GetTrackablesUnit_6_tD4A938F1E77E1BAE7C41C15D337E459E3CB21C85* __this, Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* ___0_flow, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10874,7 +10874,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E7
 	memset((&V_3), 0, sizeof(V_3));
 	RuntimeObject* V_4 = NULL;
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:92>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:92>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_0 = ___0_flow;
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_1;
 		L_1 = GetTrackablesUnit_6_get_managerIn_m6C56779D2A8E6584CA61E7E67E97E71D026163FB_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
@@ -10882,7 +10882,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E7
 		RuntimeObject* L_2;
 		L_2 = Flow_GetValue_m4396BFB8BF013A1CF992A4E36D47E864D4180718(L_0, L_1, NULL);
 		V_0 = ((ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884*)IsInstClass((RuntimeObject*)L_2, il2cpp_rgctx_data(method->klass->rgctx_data, 15)));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:93>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:93>
 		ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884* L_3 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_4;
@@ -10893,7 +10893,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E7
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:95>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:95>
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884* L_5;
 		L_5 = Object_FindAnyObjectByType_TisARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884_m3BFBC78AB76F874FA08438DD949B0BE600A85D15(il2cpp_rgctx_method(method->klass->rgctx_data, 16));
@@ -10902,7 +10902,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E7
 
 IL_0021:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:97>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:97>
 		ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884* L_6 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_7;
@@ -10913,8 +10913,8 @@ IL_0021:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:98>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:99>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:98>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:99>
 		NullCheck((GraphElement_1_t3220EDD6251B31FC22A192EC12682C1D8B28F16D*)__this);
 		FlowGraph_tF9E42FECF535CD5BAB10F75672B5BCE285627A45* L_8;
 		L_8 = GraphElement_1_get_graph_m854D04434240C328A8D726D991A89A7CDAA9116B_inline((GraphElement_1_t3220EDD6251B31FC22A192EC12682C1D8B28F16D*)__this, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&GraphElement_1_get_graph_m854D04434240C328A8D726D991A89A7CDAA9116B_RuntimeMethod_var)));
@@ -10934,7 +10934,7 @@ IL_0021:
 
 IL_004f:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:101>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:101>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_14;
 		L_14 = GetTrackablesUnit_6_get_managerIn_m6C56779D2A8E6584CA61E7E67E97E71D026163FB_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
 		NullCheck((UnitPort_3_t3BDB6AF6AAF9927A0C940F08CFD19E645813CFB0*)L_14);
@@ -10954,7 +10954,7 @@ IL_004f:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:103>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:103>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_17;
 		L_17 = GetTrackablesUnit_6_get_managerIn_m6C56779D2A8E6584CA61E7E67E97E71D026163FB_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
 		NullCheck((UnitPort_3_t3BDB6AF6AAF9927A0C940F08CFD19E645813CFB0*)L_17);
@@ -10966,7 +10966,7 @@ IL_004f:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:104>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:104>
 		StringBuilder_t* L_19 = __this->___m_LogBuilder;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_20 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_21 = L_20;
@@ -11006,7 +11006,7 @@ IL_004f:
 
 IL_00c3:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:106>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:106>
 		StringBuilder_t* L_32 = __this->___m_LogBuilder;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_33 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_34 = L_33;
@@ -11045,20 +11045,20 @@ IL_00c3:
 
 IL_010e:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:108>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:109>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:108>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:109>
 		StringBuilder_t* L_45 = __this->___m_LogBuilder;
 		NullCheck(L_45);
 		StringBuilder_t* L_46;
 		L_46 = StringBuilder_Append_m08904D74E0C78E5F36DCD9C9303BDD07886D9F7D(L_45, _stringLiteral82E984AB94E4E3FF2391F79D9BAAB2F58B03179E, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:111>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:111>
 		StringBuilder_t* L_47 = __this->___m_LogBuilder;
 		NullCheck((RuntimeObject*)L_47);
 		String_t* L_48;
 		L_48 = VirtualFuncInvoker0< String_t* >::Invoke(3, (RuntimeObject*)L_47);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9((RuntimeObject*)L_48, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:112>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:112>
 		StringBuilder_t* L_49 = __this->___m_LogBuilder;
 		NullCheck(L_49);
 		StringBuilder_t* L_50;
@@ -11067,7 +11067,7 @@ IL_010e:
 
 IL_013b:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:115>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:115>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_51 = ___0_flow;
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_52;
 		L_52 = GetTrackablesUnit_6_get_trackablesIn_m91A1AAEAAA9817F2D096965DBB6E47EDB2FB0A37_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
@@ -11082,11 +11082,11 @@ IL_013b:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:117>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:117>
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_55 = (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 19));
 		List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690(L_55, il2cpp_rgctx_method(method->klass->rgctx_data, 20));
 		V_1 = L_55;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:119>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:119>
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 18));
 		bool L_56 = ((GetTrackablesUnit_6_tD4A938F1E77E1BAE7C41C15D337E459E3CB21C85_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 18)))->___s_IsFirstFrame;
 		if (!L_56)
@@ -11095,7 +11095,7 @@ IL_013b:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:121>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:121>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_57;
 		L_57 = GetTrackablesUnit_6_get_trackablesIn_m91A1AAEAAA9817F2D096965DBB6E47EDB2FB0A37_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
 		NullCheck((UnitPort_3_t3BDB6AF6AAF9927A0C940F08CFD19E645813CFB0*)L_57);
@@ -11107,7 +11107,7 @@ IL_013b:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:122>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:122>
 		StringBuilder_t* L_59 = __this->___m_LogBuilder;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_60 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_61 = L_60;
@@ -11147,7 +11147,7 @@ IL_013b:
 
 IL_01bd:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:124>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:124>
 		StringBuilder_t* L_72 = __this->___m_LogBuilder;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_73 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_74 = L_73;
@@ -11186,8 +11186,8 @@ IL_01bd:
 
 IL_0208:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:126>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:127>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:126>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:127>
 		StringBuilder_t* L_85 = __this->___m_LogBuilder;
 		NullCheck(L_85);
 		StringBuilder_t* L_86;
@@ -11196,14 +11196,14 @@ IL_0208:
 
 IL_0219:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:130>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:130>
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 18));
 		((GetTrackablesUnit_6_tD4A938F1E77E1BAE7C41C15D337E459E3CB21C85_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 18)))->___s_IsFirstFrame = (bool)0;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:132>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:132>
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_87 = V_1;
 		NullCheck(L_87);
 		List_1_Clear_m16C1F2C61FED5955F10EB36BC1CB2DF34B128994_inline(L_87, il2cpp_rgctx_method(method->klass->rgctx_data, 21));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
 		ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884* L_88 = V_0;
 		NullCheck(L_88);
 		TrackableCollection_1_tFCC29DC30D1D7BF9DF5F84F8DF60BD67C7832EDB L_89;
@@ -11217,11 +11217,11 @@ IL_0219:
 
 IL_0236:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
 		RuntimeObject* L_91;
 		L_91 = Enumerator_get_Current_m0C78B1A685CCC36524577967CE1620CB889FDC0A((&V_2), il2cpp_rgctx_method(method->klass->rgctx_data, 27));
 		V_4 = L_91;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:135>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:135>
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_92 = V_1;
 		RuntimeObject* L_93 = V_4;
 		NullCheck(L_92);
@@ -11230,7 +11230,7 @@ IL_0236:
 
 IL_0247:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
 		bool L_94;
 		L_94 = Enumerator_MoveNext_m2DFDA23C7884D9A93FF21291F1DF5DDA2C0DA27C((&V_2), il2cpp_rgctx_method(method->klass->rgctx_data, 31));
 		if (L_94)
@@ -11239,20 +11239,20 @@ IL_0247:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:138>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:138>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_95 = ___0_flow;
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_96;
 		L_96 = GetTrackablesUnit_6_get_trackablesOut_m6A7F04B00B2849A666E205B71DD9B195152B7015_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 14));
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_97 = V_1;
 		NullCheck(L_95);
 		Flow_SetValue_m635BAF02F51D7C027C4F85157B80E2AB2DFB48A7(L_95, (RuntimeObject*)L_96, (RuntimeObject*)L_97, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:139>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:139>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_98;
 		L_98 = GetTrackablesUnit_6_get_flowOut_m85C63C4CE85E86CEDCB4A265905A76BF18921ADA_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
 		return L_98;
 	}
 }
-// Method Definition Index: 56117
+// Method Definition Index: 56115
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6__ctor_m57BA41B655EE5E6D80FFA1B27E8FAFDB7A9E1970_gshared (GetTrackablesUnit_6_tD4A938F1E77E1BAE7C41C15D337E459E3CB21C85* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11262,7 +11262,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6__ctor_m57BA41B655EE5
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:42>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:42>
 		StringBuilder_t* L_0 = (StringBuilder_t*)il2cpp_codegen_object_new(StringBuilder_t_il2cpp_TypeInfo_var);
 		StringBuilder__ctor_m1D99713357DE05DAFA296633639DB55F8C30587D(L_0, NULL);
 		__this->___m_LogBuilder = L_0;
@@ -11271,11 +11271,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6__ctor_m57BA41B655EE5
 		return;
 	}
 }
-// Method Definition Index: 56118
+// Method Definition Index: 56116
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6__cctor_mC55FC0940DB29B744A464F22D4A6901422D3FED6_gshared (const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:40>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:40>
 		((GetTrackablesUnit_6_tD4A938F1E77E1BAE7C41C15D337E459E3CB21C85_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 18)))->___s_IsFirstFrame = (bool)1;
 		return;
 	}
@@ -11288,107 +11288,107 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6__cctor_mC55FC0940DB2
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 56105
+// Method Definition Index: 56103
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* GetTrackablesUnit_6_get_flowIn_mAE93B562E00C24E976DC5936F9139B581F654E05_gshared (GetTrackablesUnit_6_t7CDABC4A4629CF084D0C402FEABCB091691C0EC3* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_0 = __this->___U3CflowInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56106
+// Method Definition Index: 56104
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_flowIn_mF0DA6341906627C8D88D7D1C72D44EF4AADB5105_gshared (GetTrackablesUnit_6_t7CDABC4A4629CF084D0C402FEABCB091691C0EC3* __this, ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_0 = ___0_value;
 		__this->___U3CflowInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CflowInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56107
+// Method Definition Index: 56105
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* GetTrackablesUnit_6_get_flowOut_mE8D894419AE403C26D30FAA83D0747508C846C77_gshared (GetTrackablesUnit_6_t7CDABC4A4629CF084D0C402FEABCB091691C0EC3* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = __this->___U3CflowOutU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56108
+// Method Definition Index: 56106
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_flowOut_m7D4FB2C152C2184501607C97A0B330A633D943ED_gshared (GetTrackablesUnit_6_t7CDABC4A4629CF084D0C402FEABCB091691C0EC3* __this, ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = ___0_value;
 		__this->___U3CflowOutU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CflowOutU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56109
+// Method Definition Index: 56107
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* GetTrackablesUnit_6_get_managerIn_m6CB397F9A210E1590CB8A4E530531BACD5BCE5A0_gshared (GetTrackablesUnit_6_t7CDABC4A4629CF084D0C402FEABCB091691C0EC3* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = __this->___U3CmanagerInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56110
+// Method Definition Index: 56108
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_managerIn_mF67D2D266C227C687A8851DE857D21BAA981C99B_gshared (GetTrackablesUnit_6_t7CDABC4A4629CF084D0C402FEABCB091691C0EC3* __this, ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = ___0_value;
 		__this->___U3CmanagerInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CmanagerInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56111
+// Method Definition Index: 56109
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* GetTrackablesUnit_6_get_trackablesIn_m7DF2F0E1D7418193818D9F388409D7E44ACFE092_gshared (GetTrackablesUnit_6_t7CDABC4A4629CF084D0C402FEABCB091691C0EC3* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = __this->___U3CtrackablesInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56112
+// Method Definition Index: 56110
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_trackablesIn_mE6824C2A223A294BBF31F0320C359D0A816C620B_gshared (GetTrackablesUnit_6_t7CDABC4A4629CF084D0C402FEABCB091691C0EC3* __this, ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = ___0_value;
 		__this->___U3CtrackablesInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtrackablesInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56113
+// Method Definition Index: 56111
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* GetTrackablesUnit_6_get_trackablesOut_m5F7BDE04E37C8D5B58DED06758D2E4EAC8DD8FE7_gshared (GetTrackablesUnit_6_t7CDABC4A4629CF084D0C402FEABCB091691C0EC3* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = __this->___U3CtrackablesOutU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56114
+// Method Definition Index: 56112
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_trackablesOut_mEFFFF6D3781C53058499619BC23DE0A5AB00F318_gshared (GetTrackablesUnit_6_t7CDABC4A4629CF084D0C402FEABCB091691C0EC3* __this, ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = ___0_value;
 		__this->___U3CtrackablesOutU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtrackablesOutU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56115
+// Method Definition Index: 56113
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_Definition_m6DA97C28861B24C6B46FB89EA8AD610D670350EC_gshared (GetTrackablesUnit_6_t7CDABC4A4629CF084D0C402FEABCB091691C0EC3* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11403,66 +11403,66 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_Definition_m6DA97C28
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:78>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:78>
 		Func_2_tE299C631F0CB2E8E61444D749D446C27349C90B8* L_0 = (Func_2_tE299C631F0CB2E8E61444D749D446C27349C90B8*)il2cpp_codegen_object_new(Func_2_tE299C631F0CB2E8E61444D749D446C27349C90B8_il2cpp_TypeInfo_var);
 		Func_2__ctor_m36A365D852CA6BD70A68A3A26FF683FB3369DDF4(L_0, (RuntimeObject*)__this, (intptr_t)((void*)il2cpp_rgctx_method(method->klass->rgctx_data, 1)), NULL);
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_1;
 		L_1 = Unit_ControlInput_mF730DABA4FE60423D39B8EADE5DA72F51E6166A5((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, _stringLiteral8A8FE283442D993E502B69A3252F69EFFAE40786, L_0, NULL);
 		GetTrackablesUnit_6_set_flowIn_mF0DA6341906627C8D88D7D1C72D44EF4AADB5105_inline(__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 2));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:79>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:79>
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_2;
 		L_2 = Unit_ControlOutput_mCD76724DFB6AAE10C099E9984A39A5E0FC2824FE((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, _stringLiteralB2A5EAD5177EC36640CF7F1A9B069A6C8151F818, NULL);
 		GetTrackablesUnit_6_set_flowOut_m7D4FB2C152C2184501607C97A0B330A633D943ED_inline(__this, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 3));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:80>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:80>
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_3;
 		L_3 = Unit_ValueInput_TisRuntimeObject_m122343074F8193EFCD173C88278671A117E7DF71((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, _stringLiteralBC164227AFDA156ECBA6FB703F556B9031872E75, il2cpp_rgctx_method(method->klass->rgctx_data, 4));
 		GetTrackablesUnit_6_set_managerIn_mF67D2D266C227C687A8851DE857D21BAA981C99B_inline(__this, L_3, il2cpp_rgctx_method(method->klass->rgctx_data, 5));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:81>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:81>
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_4;
 		L_4 = Unit_ValueInput_TisList_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D_m6ACA4847F4A6B7F1BE04C85E4620523C7CC95D0D((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, _stringLiteral3C72CD06402C9318AD966E59D6028E2828D7A030, il2cpp_rgctx_method(method->klass->rgctx_data, 6));
 		GetTrackablesUnit_6_set_trackablesIn_mE6824C2A223A294BBF31F0320C359D0A816C620B_inline(__this, L_4, il2cpp_rgctx_method(method->klass->rgctx_data, 7));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:82>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:82>
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_5;
 		L_5 = Unit_ValueOutput_TisList_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D_m0B1CFA3FB04858C9D26BCFFD15291925A42EB224((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, _stringLiteral8E2BFA941EB89B5F2206FB52D76B3EB7E41CD6BC, il2cpp_rgctx_method(method->klass->rgctx_data, 8));
 		GetTrackablesUnit_6_set_trackablesOut_mEFFFF6D3781C53058499619BC23DE0A5AB00F318_inline(__this, L_5, il2cpp_rgctx_method(method->klass->rgctx_data, 9));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:84>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:84>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_6;
 		L_6 = GetTrackablesUnit_6_get_managerIn_m6CB397F9A210E1590CB8A4E530531BACD5BCE5A0_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_7;
 		L_7 = GetTrackablesUnit_6_get_flowIn_mAE93B562E00C24E976DC5936F9139B581F654E05_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		Unit_Requirement_m9F929AD842C0E254FA9AD48E9200C63B43BFE64A((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, L_6, L_7, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:85>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:85>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_8;
 		L_8 = GetTrackablesUnit_6_get_trackablesIn_m7DF2F0E1D7418193818D9F388409D7E44ACFE092_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_9;
 		L_9 = GetTrackablesUnit_6_get_flowIn_mAE93B562E00C24E976DC5936F9139B581F654E05_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		Unit_Requirement_m9F929AD842C0E254FA9AD48E9200C63B43BFE64A((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, L_8, L_9, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:86>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:86>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_10;
 		L_10 = GetTrackablesUnit_6_get_flowIn_mAE93B562E00C24E976DC5936F9139B581F654E05_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_11;
 		L_11 = GetTrackablesUnit_6_get_flowOut_mE8D894419AE403C26D30FAA83D0747508C846C77_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		Unit_Succession_m202BB700D861D65B85102AD7B3119AD1B2FF2158((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, L_10, L_11, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:87>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:87>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_12;
 		L_12 = GetTrackablesUnit_6_get_flowIn_mAE93B562E00C24E976DC5936F9139B581F654E05_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_13;
 		L_13 = GetTrackablesUnit_6_get_trackablesOut_m5F7BDE04E37C8D5B58DED06758D2E4EAC8DD8FE7_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 14));
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		Unit_Assignment_mE5DC2E131C1BA666F655E321312165D7B4BB74C7((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, L_12, L_13, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:88>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:88>
 		return;
 	}
 }
-// Method Definition Index: 56116
+// Method Definition Index: 56114
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* GetTrackablesUnit_6_ProcessFlow_m07571287EBB45212F3D5CC99CEF9729951519D66_gshared (GetTrackablesUnit_6_t7CDABC4A4629CF084D0C402FEABCB091691C0EC3* __this, Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* ___0_flow, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11490,7 +11490,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E7
 	memset((&V_3), 0, sizeof(V_3));
 	RuntimeObject* V_4 = NULL;
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:92>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:92>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_0 = ___0_flow;
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_1;
 		L_1 = GetTrackablesUnit_6_get_managerIn_m6CB397F9A210E1590CB8A4E530531BACD5BCE5A0_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
@@ -11498,7 +11498,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E7
 		RuntimeObject* L_2;
 		L_2 = Flow_GetValue_m4396BFB8BF013A1CF992A4E36D47E864D4180718(L_0, L_1, NULL);
 		V_0 = ((ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C*)IsInstClass((RuntimeObject*)L_2, il2cpp_rgctx_data(method->klass->rgctx_data, 15)));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:93>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:93>
 		ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C* L_3 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_4;
@@ -11509,7 +11509,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E7
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:95>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:95>
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C* L_5;
 		L_5 = Object_FindAnyObjectByType_TisARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C_m716004AE3E253D6D73F4184996686A3D620CBE90(il2cpp_rgctx_method(method->klass->rgctx_data, 16));
@@ -11518,7 +11518,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E7
 
 IL_0021:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:97>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:97>
 		ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C* L_6 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_7;
@@ -11529,8 +11529,8 @@ IL_0021:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:98>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:99>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:98>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:99>
 		NullCheck((GraphElement_1_t3220EDD6251B31FC22A192EC12682C1D8B28F16D*)__this);
 		FlowGraph_tF9E42FECF535CD5BAB10F75672B5BCE285627A45* L_8;
 		L_8 = GraphElement_1_get_graph_m854D04434240C328A8D726D991A89A7CDAA9116B_inline((GraphElement_1_t3220EDD6251B31FC22A192EC12682C1D8B28F16D*)__this, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&GraphElement_1_get_graph_m854D04434240C328A8D726D991A89A7CDAA9116B_RuntimeMethod_var)));
@@ -11550,7 +11550,7 @@ IL_0021:
 
 IL_004f:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:101>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:101>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_14;
 		L_14 = GetTrackablesUnit_6_get_managerIn_m6CB397F9A210E1590CB8A4E530531BACD5BCE5A0_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
 		NullCheck((UnitPort_3_t3BDB6AF6AAF9927A0C940F08CFD19E645813CFB0*)L_14);
@@ -11570,7 +11570,7 @@ IL_004f:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:103>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:103>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_17;
 		L_17 = GetTrackablesUnit_6_get_managerIn_m6CB397F9A210E1590CB8A4E530531BACD5BCE5A0_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
 		NullCheck((UnitPort_3_t3BDB6AF6AAF9927A0C940F08CFD19E645813CFB0*)L_17);
@@ -11582,7 +11582,7 @@ IL_004f:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:104>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:104>
 		StringBuilder_t* L_19 = __this->___m_LogBuilder;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_20 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_21 = L_20;
@@ -11622,7 +11622,7 @@ IL_004f:
 
 IL_00c3:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:106>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:106>
 		StringBuilder_t* L_32 = __this->___m_LogBuilder;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_33 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_34 = L_33;
@@ -11661,20 +11661,20 @@ IL_00c3:
 
 IL_010e:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:108>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:109>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:108>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:109>
 		StringBuilder_t* L_45 = __this->___m_LogBuilder;
 		NullCheck(L_45);
 		StringBuilder_t* L_46;
 		L_46 = StringBuilder_Append_m08904D74E0C78E5F36DCD9C9303BDD07886D9F7D(L_45, _stringLiteral82E984AB94E4E3FF2391F79D9BAAB2F58B03179E, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:111>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:111>
 		StringBuilder_t* L_47 = __this->___m_LogBuilder;
 		NullCheck((RuntimeObject*)L_47);
 		String_t* L_48;
 		L_48 = VirtualFuncInvoker0< String_t* >::Invoke(3, (RuntimeObject*)L_47);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9((RuntimeObject*)L_48, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:112>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:112>
 		StringBuilder_t* L_49 = __this->___m_LogBuilder;
 		NullCheck(L_49);
 		StringBuilder_t* L_50;
@@ -11683,7 +11683,7 @@ IL_010e:
 
 IL_013b:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:115>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:115>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_51 = ___0_flow;
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_52;
 		L_52 = GetTrackablesUnit_6_get_trackablesIn_m7DF2F0E1D7418193818D9F388409D7E44ACFE092_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
@@ -11698,11 +11698,11 @@ IL_013b:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:117>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:117>
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_55 = (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 19));
 		List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690(L_55, il2cpp_rgctx_method(method->klass->rgctx_data, 20));
 		V_1 = L_55;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:119>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:119>
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 18));
 		bool L_56 = ((GetTrackablesUnit_6_t7CDABC4A4629CF084D0C402FEABCB091691C0EC3_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 18)))->___s_IsFirstFrame;
 		if (!L_56)
@@ -11711,7 +11711,7 @@ IL_013b:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:121>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:121>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_57;
 		L_57 = GetTrackablesUnit_6_get_trackablesIn_m7DF2F0E1D7418193818D9F388409D7E44ACFE092_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
 		NullCheck((UnitPort_3_t3BDB6AF6AAF9927A0C940F08CFD19E645813CFB0*)L_57);
@@ -11723,7 +11723,7 @@ IL_013b:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:122>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:122>
 		StringBuilder_t* L_59 = __this->___m_LogBuilder;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_60 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_61 = L_60;
@@ -11763,7 +11763,7 @@ IL_013b:
 
 IL_01bd:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:124>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:124>
 		StringBuilder_t* L_72 = __this->___m_LogBuilder;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_73 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_74 = L_73;
@@ -11802,8 +11802,8 @@ IL_01bd:
 
 IL_0208:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:126>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:127>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:126>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:127>
 		StringBuilder_t* L_85 = __this->___m_LogBuilder;
 		NullCheck(L_85);
 		StringBuilder_t* L_86;
@@ -11812,14 +11812,14 @@ IL_0208:
 
 IL_0219:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:130>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:130>
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 18));
 		((GetTrackablesUnit_6_t7CDABC4A4629CF084D0C402FEABCB091691C0EC3_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 18)))->___s_IsFirstFrame = (bool)0;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:132>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:132>
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_87 = V_1;
 		NullCheck(L_87);
 		List_1_Clear_m16C1F2C61FED5955F10EB36BC1CB2DF34B128994_inline(L_87, il2cpp_rgctx_method(method->klass->rgctx_data, 21));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
 		ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C* L_88 = V_0;
 		NullCheck(L_88);
 		TrackableCollection_1_tFCC29DC30D1D7BF9DF5F84F8DF60BD67C7832EDB L_89;
@@ -11833,11 +11833,11 @@ IL_0219:
 
 IL_0236:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
 		RuntimeObject* L_91;
 		L_91 = Enumerator_get_Current_m0C78B1A685CCC36524577967CE1620CB889FDC0A((&V_2), il2cpp_rgctx_method(method->klass->rgctx_data, 27));
 		V_4 = L_91;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:135>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:135>
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_92 = V_1;
 		RuntimeObject* L_93 = V_4;
 		NullCheck(L_92);
@@ -11846,7 +11846,7 @@ IL_0236:
 
 IL_0247:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
 		bool L_94;
 		L_94 = Enumerator_MoveNext_m2DFDA23C7884D9A93FF21291F1DF5DDA2C0DA27C((&V_2), il2cpp_rgctx_method(method->klass->rgctx_data, 31));
 		if (L_94)
@@ -11855,20 +11855,20 @@ IL_0247:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:138>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:138>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_95 = ___0_flow;
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_96;
 		L_96 = GetTrackablesUnit_6_get_trackablesOut_m5F7BDE04E37C8D5B58DED06758D2E4EAC8DD8FE7_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 14));
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_97 = V_1;
 		NullCheck(L_95);
 		Flow_SetValue_m635BAF02F51D7C027C4F85157B80E2AB2DFB48A7(L_95, (RuntimeObject*)L_96, (RuntimeObject*)L_97, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:139>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:139>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_98;
 		L_98 = GetTrackablesUnit_6_get_flowOut_mE8D894419AE403C26D30FAA83D0747508C846C77_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
 		return L_98;
 	}
 }
-// Method Definition Index: 56117
+// Method Definition Index: 56115
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6__ctor_m0BC517A1466D742CE4C647BD284033CC11A8B376_gshared (GetTrackablesUnit_6_t7CDABC4A4629CF084D0C402FEABCB091691C0EC3* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11878,7 +11878,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6__ctor_m0BC517A1466D7
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:42>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:42>
 		StringBuilder_t* L_0 = (StringBuilder_t*)il2cpp_codegen_object_new(StringBuilder_t_il2cpp_TypeInfo_var);
 		StringBuilder__ctor_m1D99713357DE05DAFA296633639DB55F8C30587D(L_0, NULL);
 		__this->___m_LogBuilder = L_0;
@@ -11887,11 +11887,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6__ctor_m0BC517A1466D7
 		return;
 	}
 }
-// Method Definition Index: 56118
+// Method Definition Index: 56116
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6__cctor_m82F1FADE9470AA428F7785C369C30EBDF37B41DE_gshared (const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:40>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:40>
 		((GetTrackablesUnit_6_t7CDABC4A4629CF084D0C402FEABCB091691C0EC3_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 18)))->___s_IsFirstFrame = (bool)1;
 		return;
 	}
@@ -11904,107 +11904,107 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6__cctor_m82F1FADE9470
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 56105
+// Method Definition Index: 56103
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* GetTrackablesUnit_6_get_flowIn_m3148B022E56F3A4C49520F04B074ED2933D3A040_gshared (GetTrackablesUnit_6_t394D5BEFC7488634A560E3C112D1AA5F0B2597B8* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_0 = __this->___U3CflowInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56106
+// Method Definition Index: 56104
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_flowIn_mCDC13CB4FB63AA6ECD99780364EF6F05F314B728_gshared (GetTrackablesUnit_6_t394D5BEFC7488634A560E3C112D1AA5F0B2597B8* __this, ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_0 = ___0_value;
 		__this->___U3CflowInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CflowInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56107
+// Method Definition Index: 56105
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* GetTrackablesUnit_6_get_flowOut_m534A574AAB547925D0501FCFD234D91B1B64A898_gshared (GetTrackablesUnit_6_t394D5BEFC7488634A560E3C112D1AA5F0B2597B8* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = __this->___U3CflowOutU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56108
+// Method Definition Index: 56106
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_flowOut_m0322457E12551E908E5A6DD92DA545EF318D4F60_gshared (GetTrackablesUnit_6_t394D5BEFC7488634A560E3C112D1AA5F0B2597B8* __this, ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = ___0_value;
 		__this->___U3CflowOutU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CflowOutU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56109
+// Method Definition Index: 56107
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* GetTrackablesUnit_6_get_managerIn_m693E4FA6EE41099364134309301AA2BDF1877634_gshared (GetTrackablesUnit_6_t394D5BEFC7488634A560E3C112D1AA5F0B2597B8* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = __this->___U3CmanagerInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56110
+// Method Definition Index: 56108
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_managerIn_mD9F9AA39DEB5A1FC07418D6D711624A70546D0DA_gshared (GetTrackablesUnit_6_t394D5BEFC7488634A560E3C112D1AA5F0B2597B8* __this, ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = ___0_value;
 		__this->___U3CmanagerInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CmanagerInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56111
+// Method Definition Index: 56109
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* GetTrackablesUnit_6_get_trackablesIn_m4B3CB14C88937350166DF30DA50D006DBB5FDBAE_gshared (GetTrackablesUnit_6_t394D5BEFC7488634A560E3C112D1AA5F0B2597B8* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = __this->___U3CtrackablesInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56112
+// Method Definition Index: 56110
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_trackablesIn_mD225D4261C7796589C40B5E973620AF458C51169_gshared (GetTrackablesUnit_6_t394D5BEFC7488634A560E3C112D1AA5F0B2597B8* __this, ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = ___0_value;
 		__this->___U3CtrackablesInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtrackablesInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56113
+// Method Definition Index: 56111
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* GetTrackablesUnit_6_get_trackablesOut_mD2E14FF9E55F3212390765A7EAAA6C1E03FC1A15_gshared (GetTrackablesUnit_6_t394D5BEFC7488634A560E3C112D1AA5F0B2597B8* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = __this->___U3CtrackablesOutU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56114
+// Method Definition Index: 56112
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_trackablesOut_m411A8766514BEFE1E65DC53969646EF0189614F7_gshared (GetTrackablesUnit_6_t394D5BEFC7488634A560E3C112D1AA5F0B2597B8* __this, ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = ___0_value;
 		__this->___U3CtrackablesOutU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtrackablesOutU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56115
+// Method Definition Index: 56113
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_Definition_m5404DC6CCCC19212053FA14B0AB47149470950FA_gshared (GetTrackablesUnit_6_t394D5BEFC7488634A560E3C112D1AA5F0B2597B8* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12019,66 +12019,66 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_Definition_m5404DC6C
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:78>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:78>
 		Func_2_tE299C631F0CB2E8E61444D749D446C27349C90B8* L_0 = (Func_2_tE299C631F0CB2E8E61444D749D446C27349C90B8*)il2cpp_codegen_object_new(Func_2_tE299C631F0CB2E8E61444D749D446C27349C90B8_il2cpp_TypeInfo_var);
 		Func_2__ctor_m36A365D852CA6BD70A68A3A26FF683FB3369DDF4(L_0, (RuntimeObject*)__this, (intptr_t)((void*)il2cpp_rgctx_method(method->klass->rgctx_data, 1)), NULL);
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_1;
 		L_1 = Unit_ControlInput_mF730DABA4FE60423D39B8EADE5DA72F51E6166A5((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, _stringLiteral8A8FE283442D993E502B69A3252F69EFFAE40786, L_0, NULL);
 		GetTrackablesUnit_6_set_flowIn_mCDC13CB4FB63AA6ECD99780364EF6F05F314B728_inline(__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 2));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:79>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:79>
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_2;
 		L_2 = Unit_ControlOutput_mCD76724DFB6AAE10C099E9984A39A5E0FC2824FE((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, _stringLiteralB2A5EAD5177EC36640CF7F1A9B069A6C8151F818, NULL);
 		GetTrackablesUnit_6_set_flowOut_m0322457E12551E908E5A6DD92DA545EF318D4F60_inline(__this, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 3));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:80>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:80>
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_3;
 		L_3 = Unit_ValueInput_TisRuntimeObject_m122343074F8193EFCD173C88278671A117E7DF71((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, _stringLiteralBC164227AFDA156ECBA6FB703F556B9031872E75, il2cpp_rgctx_method(method->klass->rgctx_data, 4));
 		GetTrackablesUnit_6_set_managerIn_mD9F9AA39DEB5A1FC07418D6D711624A70546D0DA_inline(__this, L_3, il2cpp_rgctx_method(method->klass->rgctx_data, 5));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:81>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:81>
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_4;
 		L_4 = Unit_ValueInput_TisList_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D_m6ACA4847F4A6B7F1BE04C85E4620523C7CC95D0D((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, _stringLiteral3C72CD06402C9318AD966E59D6028E2828D7A030, il2cpp_rgctx_method(method->klass->rgctx_data, 6));
 		GetTrackablesUnit_6_set_trackablesIn_mD225D4261C7796589C40B5E973620AF458C51169_inline(__this, L_4, il2cpp_rgctx_method(method->klass->rgctx_data, 7));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:82>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:82>
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_5;
 		L_5 = Unit_ValueOutput_TisList_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D_m0B1CFA3FB04858C9D26BCFFD15291925A42EB224((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, _stringLiteral8E2BFA941EB89B5F2206FB52D76B3EB7E41CD6BC, il2cpp_rgctx_method(method->klass->rgctx_data, 8));
 		GetTrackablesUnit_6_set_trackablesOut_m411A8766514BEFE1E65DC53969646EF0189614F7_inline(__this, L_5, il2cpp_rgctx_method(method->klass->rgctx_data, 9));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:84>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:84>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_6;
 		L_6 = GetTrackablesUnit_6_get_managerIn_m693E4FA6EE41099364134309301AA2BDF1877634_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_7;
 		L_7 = GetTrackablesUnit_6_get_flowIn_m3148B022E56F3A4C49520F04B074ED2933D3A040_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		Unit_Requirement_m9F929AD842C0E254FA9AD48E9200C63B43BFE64A((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, L_6, L_7, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:85>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:85>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_8;
 		L_8 = GetTrackablesUnit_6_get_trackablesIn_m4B3CB14C88937350166DF30DA50D006DBB5FDBAE_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_9;
 		L_9 = GetTrackablesUnit_6_get_flowIn_m3148B022E56F3A4C49520F04B074ED2933D3A040_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		Unit_Requirement_m9F929AD842C0E254FA9AD48E9200C63B43BFE64A((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, L_8, L_9, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:86>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:86>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_10;
 		L_10 = GetTrackablesUnit_6_get_flowIn_m3148B022E56F3A4C49520F04B074ED2933D3A040_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_11;
 		L_11 = GetTrackablesUnit_6_get_flowOut_m534A574AAB547925D0501FCFD234D91B1B64A898_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		Unit_Succession_m202BB700D861D65B85102AD7B3119AD1B2FF2158((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, L_10, L_11, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:87>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:87>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_12;
 		L_12 = GetTrackablesUnit_6_get_flowIn_m3148B022E56F3A4C49520F04B074ED2933D3A040_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_13;
 		L_13 = GetTrackablesUnit_6_get_trackablesOut_mD2E14FF9E55F3212390765A7EAAA6C1E03FC1A15_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 14));
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		Unit_Assignment_mE5DC2E131C1BA666F655E321312165D7B4BB74C7((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, L_12, L_13, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:88>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:88>
 		return;
 	}
 }
-// Method Definition Index: 56116
+// Method Definition Index: 56114
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* GetTrackablesUnit_6_ProcessFlow_m2822EDCD37744696876AA690044B2CCF1C42CDA2_gshared (GetTrackablesUnit_6_t394D5BEFC7488634A560E3C112D1AA5F0B2597B8* __this, Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* ___0_flow, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12106,7 +12106,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E7
 	memset((&V_3), 0, sizeof(V_3));
 	RuntimeObject* V_4 = NULL;
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:92>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:92>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_0 = ___0_flow;
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_1;
 		L_1 = GetTrackablesUnit_6_get_managerIn_m693E4FA6EE41099364134309301AA2BDF1877634_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
@@ -12114,7 +12114,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E7
 		RuntimeObject* L_2;
 		L_2 = Flow_GetValue_m4396BFB8BF013A1CF992A4E36D47E864D4180718(L_0, L_1, NULL);
 		V_0 = ((ARTrackableManager_5_tAFB0AD849260B6C33E8F815788CCACE8E5D66AD8*)IsInstClass((RuntimeObject*)L_2, il2cpp_rgctx_data(method->klass->rgctx_data, 15)));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:93>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:93>
 		ARTrackableManager_5_tAFB0AD849260B6C33E8F815788CCACE8E5D66AD8* L_3 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_4;
@@ -12125,7 +12125,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E7
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:95>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:95>
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		ARTrackableManager_5_tAFB0AD849260B6C33E8F815788CCACE8E5D66AD8* L_5;
 		L_5 = Object_FindAnyObjectByType_TisARTrackableManager_5_tAFB0AD849260B6C33E8F815788CCACE8E5D66AD8_mAE239FDD0653DDA363C54B7320849E609ABE27FC(il2cpp_rgctx_method(method->klass->rgctx_data, 16));
@@ -12134,7 +12134,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E7
 
 IL_0021:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:97>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:97>
 		ARTrackableManager_5_tAFB0AD849260B6C33E8F815788CCACE8E5D66AD8* L_6 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_7;
@@ -12145,8 +12145,8 @@ IL_0021:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:98>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:99>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:98>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:99>
 		NullCheck((GraphElement_1_t3220EDD6251B31FC22A192EC12682C1D8B28F16D*)__this);
 		FlowGraph_tF9E42FECF535CD5BAB10F75672B5BCE285627A45* L_8;
 		L_8 = GraphElement_1_get_graph_m854D04434240C328A8D726D991A89A7CDAA9116B_inline((GraphElement_1_t3220EDD6251B31FC22A192EC12682C1D8B28F16D*)__this, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&GraphElement_1_get_graph_m854D04434240C328A8D726D991A89A7CDAA9116B_RuntimeMethod_var)));
@@ -12166,7 +12166,7 @@ IL_0021:
 
 IL_004f:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:101>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:101>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_14;
 		L_14 = GetTrackablesUnit_6_get_managerIn_m693E4FA6EE41099364134309301AA2BDF1877634_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
 		NullCheck((UnitPort_3_t3BDB6AF6AAF9927A0C940F08CFD19E645813CFB0*)L_14);
@@ -12186,7 +12186,7 @@ IL_004f:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:103>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:103>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_17;
 		L_17 = GetTrackablesUnit_6_get_managerIn_m693E4FA6EE41099364134309301AA2BDF1877634_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
 		NullCheck((UnitPort_3_t3BDB6AF6AAF9927A0C940F08CFD19E645813CFB0*)L_17);
@@ -12198,7 +12198,7 @@ IL_004f:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:104>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:104>
 		StringBuilder_t* L_19 = __this->___m_LogBuilder;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_20 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_21 = L_20;
@@ -12238,7 +12238,7 @@ IL_004f:
 
 IL_00c3:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:106>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:106>
 		StringBuilder_t* L_32 = __this->___m_LogBuilder;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_33 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_34 = L_33;
@@ -12277,20 +12277,20 @@ IL_00c3:
 
 IL_010e:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:108>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:109>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:108>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:109>
 		StringBuilder_t* L_45 = __this->___m_LogBuilder;
 		NullCheck(L_45);
 		StringBuilder_t* L_46;
 		L_46 = StringBuilder_Append_m08904D74E0C78E5F36DCD9C9303BDD07886D9F7D(L_45, _stringLiteral82E984AB94E4E3FF2391F79D9BAAB2F58B03179E, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:111>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:111>
 		StringBuilder_t* L_47 = __this->___m_LogBuilder;
 		NullCheck((RuntimeObject*)L_47);
 		String_t* L_48;
 		L_48 = VirtualFuncInvoker0< String_t* >::Invoke(3, (RuntimeObject*)L_47);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9((RuntimeObject*)L_48, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:112>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:112>
 		StringBuilder_t* L_49 = __this->___m_LogBuilder;
 		NullCheck(L_49);
 		StringBuilder_t* L_50;
@@ -12299,7 +12299,7 @@ IL_010e:
 
 IL_013b:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:115>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:115>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_51 = ___0_flow;
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_52;
 		L_52 = GetTrackablesUnit_6_get_trackablesIn_m4B3CB14C88937350166DF30DA50D006DBB5FDBAE_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
@@ -12314,11 +12314,11 @@ IL_013b:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:117>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:117>
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_55 = (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 19));
 		List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690(L_55, il2cpp_rgctx_method(method->klass->rgctx_data, 20));
 		V_1 = L_55;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:119>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:119>
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 18));
 		bool L_56 = ((GetTrackablesUnit_6_t394D5BEFC7488634A560E3C112D1AA5F0B2597B8_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 18)))->___s_IsFirstFrame;
 		if (!L_56)
@@ -12327,7 +12327,7 @@ IL_013b:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:121>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:121>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_57;
 		L_57 = GetTrackablesUnit_6_get_trackablesIn_m4B3CB14C88937350166DF30DA50D006DBB5FDBAE_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
 		NullCheck((UnitPort_3_t3BDB6AF6AAF9927A0C940F08CFD19E645813CFB0*)L_57);
@@ -12339,7 +12339,7 @@ IL_013b:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:122>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:122>
 		StringBuilder_t* L_59 = __this->___m_LogBuilder;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_60 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_61 = L_60;
@@ -12379,7 +12379,7 @@ IL_013b:
 
 IL_01bd:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:124>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:124>
 		StringBuilder_t* L_72 = __this->___m_LogBuilder;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_73 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_74 = L_73;
@@ -12418,8 +12418,8 @@ IL_01bd:
 
 IL_0208:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:126>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:127>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:126>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:127>
 		StringBuilder_t* L_85 = __this->___m_LogBuilder;
 		NullCheck(L_85);
 		StringBuilder_t* L_86;
@@ -12428,14 +12428,14 @@ IL_0208:
 
 IL_0219:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:130>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:130>
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 18));
 		((GetTrackablesUnit_6_t394D5BEFC7488634A560E3C112D1AA5F0B2597B8_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 18)))->___s_IsFirstFrame = (bool)0;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:132>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:132>
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_87 = V_1;
 		NullCheck(L_87);
 		List_1_Clear_m16C1F2C61FED5955F10EB36BC1CB2DF34B128994_inline(L_87, il2cpp_rgctx_method(method->klass->rgctx_data, 21));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
 		ARTrackableManager_5_tAFB0AD849260B6C33E8F815788CCACE8E5D66AD8* L_88 = V_0;
 		NullCheck(L_88);
 		TrackableCollection_1_tFCC29DC30D1D7BF9DF5F84F8DF60BD67C7832EDB L_89;
@@ -12449,11 +12449,11 @@ IL_0219:
 
 IL_0236:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
 		RuntimeObject* L_91;
 		L_91 = Enumerator_get_Current_m0C78B1A685CCC36524577967CE1620CB889FDC0A((&V_2), il2cpp_rgctx_method(method->klass->rgctx_data, 27));
 		V_4 = L_91;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:135>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:135>
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_92 = V_1;
 		RuntimeObject* L_93 = V_4;
 		NullCheck(L_92);
@@ -12462,7 +12462,7 @@ IL_0236:
 
 IL_0247:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
 		bool L_94;
 		L_94 = Enumerator_MoveNext_m2DFDA23C7884D9A93FF21291F1DF5DDA2C0DA27C((&V_2), il2cpp_rgctx_method(method->klass->rgctx_data, 31));
 		if (L_94)
@@ -12471,20 +12471,20 @@ IL_0247:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:138>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:138>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_95 = ___0_flow;
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_96;
 		L_96 = GetTrackablesUnit_6_get_trackablesOut_mD2E14FF9E55F3212390765A7EAAA6C1E03FC1A15_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 14));
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_97 = V_1;
 		NullCheck(L_95);
 		Flow_SetValue_m635BAF02F51D7C027C4F85157B80E2AB2DFB48A7(L_95, (RuntimeObject*)L_96, (RuntimeObject*)L_97, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:139>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:139>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_98;
 		L_98 = GetTrackablesUnit_6_get_flowOut_m534A574AAB547925D0501FCFD234D91B1B64A898_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
 		return L_98;
 	}
 }
-// Method Definition Index: 56117
+// Method Definition Index: 56115
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6__ctor_mFE6377E90C71DD4DB1780C5BDE5E5A91667D1FBB_gshared (GetTrackablesUnit_6_t394D5BEFC7488634A560E3C112D1AA5F0B2597B8* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12494,7 +12494,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6__ctor_mFE6377E90C71D
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:42>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:42>
 		StringBuilder_t* L_0 = (StringBuilder_t*)il2cpp_codegen_object_new(StringBuilder_t_il2cpp_TypeInfo_var);
 		StringBuilder__ctor_m1D99713357DE05DAFA296633639DB55F8C30587D(L_0, NULL);
 		__this->___m_LogBuilder = L_0;
@@ -12503,11 +12503,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6__ctor_mFE6377E90C71D
 		return;
 	}
 }
-// Method Definition Index: 56118
+// Method Definition Index: 56116
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6__cctor_m0CD488A3D0DE84FB71D98B42C0E3EFD14345E7EB_gshared (const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:40>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:40>
 		((GetTrackablesUnit_6_t394D5BEFC7488634A560E3C112D1AA5F0B2597B8_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 18)))->___s_IsFirstFrame = (bool)1;
 		return;
 	}
@@ -12520,107 +12520,107 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6__cctor_m0CD488A3D0DE
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 56105
+// Method Definition Index: 56103
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* GetTrackablesUnit_6_get_flowIn_m391745112DB7A83FB89679A20315BEEA8166A742_gshared (GetTrackablesUnit_6_t40700C5453679D51CCE89F1B99C1B4EBCF9F8144* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_0 = __this->___U3CflowInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56106
+// Method Definition Index: 56104
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_flowIn_m9DBF3E876EB2C50EF046080A9F84F75089FA15C9_gshared (GetTrackablesUnit_6_t40700C5453679D51CCE89F1B99C1B4EBCF9F8144* __this, ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_0 = ___0_value;
 		__this->___U3CflowInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CflowInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56107
+// Method Definition Index: 56105
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* GetTrackablesUnit_6_get_flowOut_m020A7A27283131656A10DDC2E15B81C5FCD3DC99_gshared (GetTrackablesUnit_6_t40700C5453679D51CCE89F1B99C1B4EBCF9F8144* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = __this->___U3CflowOutU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56108
+// Method Definition Index: 56106
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_flowOut_m76BCA0367C3D00711A64D51361B15A901638867B_gshared (GetTrackablesUnit_6_t40700C5453679D51CCE89F1B99C1B4EBCF9F8144* __this, ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = ___0_value;
 		__this->___U3CflowOutU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CflowOutU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56109
+// Method Definition Index: 56107
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* GetTrackablesUnit_6_get_managerIn_m7F61563262261FC69FBE3BDA805E1C9AB33D2493_gshared (GetTrackablesUnit_6_t40700C5453679D51CCE89F1B99C1B4EBCF9F8144* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = __this->___U3CmanagerInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56110
+// Method Definition Index: 56108
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_managerIn_mE5628C7E45CE7ECF41677B9166F504A28D2EDA8E_gshared (GetTrackablesUnit_6_t40700C5453679D51CCE89F1B99C1B4EBCF9F8144* __this, ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = ___0_value;
 		__this->___U3CmanagerInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CmanagerInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56111
+// Method Definition Index: 56109
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* GetTrackablesUnit_6_get_trackablesIn_m53EC9C9F7D8C6D1ADBAC97CE7A46B9C883E55C0D_gshared (GetTrackablesUnit_6_t40700C5453679D51CCE89F1B99C1B4EBCF9F8144* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = __this->___U3CtrackablesInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56112
+// Method Definition Index: 56110
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_trackablesIn_m8695985889F93F405E98CF7A0F08B35E37CA6309_gshared (GetTrackablesUnit_6_t40700C5453679D51CCE89F1B99C1B4EBCF9F8144* __this, ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = ___0_value;
 		__this->___U3CtrackablesInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtrackablesInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56113
+// Method Definition Index: 56111
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* GetTrackablesUnit_6_get_trackablesOut_m7A221AE39CE9CAD5644964EBFF288BED7F25D3B1_gshared (GetTrackablesUnit_6_t40700C5453679D51CCE89F1B99C1B4EBCF9F8144* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = __this->___U3CtrackablesOutU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56114
+// Method Definition Index: 56112
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_trackablesOut_mD011B8193026308257F054A6DF6A7F5C990CB125_gshared (GetTrackablesUnit_6_t40700C5453679D51CCE89F1B99C1B4EBCF9F8144* __this, ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = ___0_value;
 		__this->___U3CtrackablesOutU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtrackablesOutU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56115
+// Method Definition Index: 56113
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_Definition_m414E15085A3C1EF1771325A01B3E3E529E35CBAD_gshared (GetTrackablesUnit_6_t40700C5453679D51CCE89F1B99C1B4EBCF9F8144* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12635,66 +12635,66 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_Definition_m414E1508
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:78>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:78>
 		Func_2_tE299C631F0CB2E8E61444D749D446C27349C90B8* L_0 = (Func_2_tE299C631F0CB2E8E61444D749D446C27349C90B8*)il2cpp_codegen_object_new(Func_2_tE299C631F0CB2E8E61444D749D446C27349C90B8_il2cpp_TypeInfo_var);
 		Func_2__ctor_m36A365D852CA6BD70A68A3A26FF683FB3369DDF4(L_0, (RuntimeObject*)__this, (intptr_t)((void*)il2cpp_rgctx_method(method->klass->rgctx_data, 1)), NULL);
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_1;
 		L_1 = Unit_ControlInput_mF730DABA4FE60423D39B8EADE5DA72F51E6166A5((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, _stringLiteral8A8FE283442D993E502B69A3252F69EFFAE40786, L_0, NULL);
 		GetTrackablesUnit_6_set_flowIn_m9DBF3E876EB2C50EF046080A9F84F75089FA15C9_inline(__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 2));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:79>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:79>
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_2;
 		L_2 = Unit_ControlOutput_mCD76724DFB6AAE10C099E9984A39A5E0FC2824FE((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, _stringLiteralB2A5EAD5177EC36640CF7F1A9B069A6C8151F818, NULL);
 		GetTrackablesUnit_6_set_flowOut_m76BCA0367C3D00711A64D51361B15A901638867B_inline(__this, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 3));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:80>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:80>
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_3;
 		L_3 = Unit_ValueInput_TisRuntimeObject_m122343074F8193EFCD173C88278671A117E7DF71((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, _stringLiteralBC164227AFDA156ECBA6FB703F556B9031872E75, il2cpp_rgctx_method(method->klass->rgctx_data, 4));
 		GetTrackablesUnit_6_set_managerIn_mE5628C7E45CE7ECF41677B9166F504A28D2EDA8E_inline(__this, L_3, il2cpp_rgctx_method(method->klass->rgctx_data, 5));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:81>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:81>
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_4;
 		L_4 = Unit_ValueInput_TisList_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D_m6ACA4847F4A6B7F1BE04C85E4620523C7CC95D0D((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, _stringLiteral3C72CD06402C9318AD966E59D6028E2828D7A030, il2cpp_rgctx_method(method->klass->rgctx_data, 6));
 		GetTrackablesUnit_6_set_trackablesIn_m8695985889F93F405E98CF7A0F08B35E37CA6309_inline(__this, L_4, il2cpp_rgctx_method(method->klass->rgctx_data, 7));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:82>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:82>
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_5;
 		L_5 = Unit_ValueOutput_TisList_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D_m0B1CFA3FB04858C9D26BCFFD15291925A42EB224((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, _stringLiteral8E2BFA941EB89B5F2206FB52D76B3EB7E41CD6BC, il2cpp_rgctx_method(method->klass->rgctx_data, 8));
 		GetTrackablesUnit_6_set_trackablesOut_mD011B8193026308257F054A6DF6A7F5C990CB125_inline(__this, L_5, il2cpp_rgctx_method(method->klass->rgctx_data, 9));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:84>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:84>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_6;
 		L_6 = GetTrackablesUnit_6_get_managerIn_m7F61563262261FC69FBE3BDA805E1C9AB33D2493_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_7;
 		L_7 = GetTrackablesUnit_6_get_flowIn_m391745112DB7A83FB89679A20315BEEA8166A742_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		Unit_Requirement_m9F929AD842C0E254FA9AD48E9200C63B43BFE64A((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, L_6, L_7, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:85>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:85>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_8;
 		L_8 = GetTrackablesUnit_6_get_trackablesIn_m53EC9C9F7D8C6D1ADBAC97CE7A46B9C883E55C0D_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_9;
 		L_9 = GetTrackablesUnit_6_get_flowIn_m391745112DB7A83FB89679A20315BEEA8166A742_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		Unit_Requirement_m9F929AD842C0E254FA9AD48E9200C63B43BFE64A((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, L_8, L_9, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:86>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:86>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_10;
 		L_10 = GetTrackablesUnit_6_get_flowIn_m391745112DB7A83FB89679A20315BEEA8166A742_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_11;
 		L_11 = GetTrackablesUnit_6_get_flowOut_m020A7A27283131656A10DDC2E15B81C5FCD3DC99_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		Unit_Succession_m202BB700D861D65B85102AD7B3119AD1B2FF2158((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, L_10, L_11, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:87>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:87>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_12;
 		L_12 = GetTrackablesUnit_6_get_flowIn_m391745112DB7A83FB89679A20315BEEA8166A742_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_13;
 		L_13 = GetTrackablesUnit_6_get_trackablesOut_m7A221AE39CE9CAD5644964EBFF288BED7F25D3B1_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 14));
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		Unit_Assignment_mE5DC2E131C1BA666F655E321312165D7B4BB74C7((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, L_12, L_13, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:88>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:88>
 		return;
 	}
 }
-// Method Definition Index: 56116
+// Method Definition Index: 56114
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* GetTrackablesUnit_6_ProcessFlow_mB1ACD62DAFFD3402B8DFA17BE5A2F91C5AADE35C_gshared (GetTrackablesUnit_6_t40700C5453679D51CCE89F1B99C1B4EBCF9F8144* __this, Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* ___0_flow, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12722,7 +12722,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E7
 	memset((&V_3), 0, sizeof(V_3));
 	RuntimeObject* V_4 = NULL;
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:92>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:92>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_0 = ___0_flow;
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_1;
 		L_1 = GetTrackablesUnit_6_get_managerIn_m7F61563262261FC69FBE3BDA805E1C9AB33D2493_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
@@ -12730,7 +12730,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E7
 		RuntimeObject* L_2;
 		L_2 = Flow_GetValue_m4396BFB8BF013A1CF992A4E36D47E864D4180718(L_0, L_1, NULL);
 		V_0 = ((ARTrackableManager_5_tF00DDF940AEB2DC7AFEBBF04BD8FF13E9EF3CA7E*)IsInstClass((RuntimeObject*)L_2, il2cpp_rgctx_data(method->klass->rgctx_data, 15)));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:93>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:93>
 		ARTrackableManager_5_tF00DDF940AEB2DC7AFEBBF04BD8FF13E9EF3CA7E* L_3 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_4;
@@ -12741,7 +12741,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E7
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:95>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:95>
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		ARTrackableManager_5_tF00DDF940AEB2DC7AFEBBF04BD8FF13E9EF3CA7E* L_5;
 		L_5 = Object_FindAnyObjectByType_TisARTrackableManager_5_tF00DDF940AEB2DC7AFEBBF04BD8FF13E9EF3CA7E_m5663996B36FC5E890CD3A4BC087B190DC9CC20FC(il2cpp_rgctx_method(method->klass->rgctx_data, 16));
@@ -12750,7 +12750,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E7
 
 IL_0021:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:97>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:97>
 		ARTrackableManager_5_tF00DDF940AEB2DC7AFEBBF04BD8FF13E9EF3CA7E* L_6 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_7;
@@ -12761,8 +12761,8 @@ IL_0021:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:98>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:99>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:98>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:99>
 		NullCheck((GraphElement_1_t3220EDD6251B31FC22A192EC12682C1D8B28F16D*)__this);
 		FlowGraph_tF9E42FECF535CD5BAB10F75672B5BCE285627A45* L_8;
 		L_8 = GraphElement_1_get_graph_m854D04434240C328A8D726D991A89A7CDAA9116B_inline((GraphElement_1_t3220EDD6251B31FC22A192EC12682C1D8B28F16D*)__this, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&GraphElement_1_get_graph_m854D04434240C328A8D726D991A89A7CDAA9116B_RuntimeMethod_var)));
@@ -12782,7 +12782,7 @@ IL_0021:
 
 IL_004f:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:101>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:101>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_14;
 		L_14 = GetTrackablesUnit_6_get_managerIn_m7F61563262261FC69FBE3BDA805E1C9AB33D2493_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
 		NullCheck((UnitPort_3_t3BDB6AF6AAF9927A0C940F08CFD19E645813CFB0*)L_14);
@@ -12802,7 +12802,7 @@ IL_004f:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:103>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:103>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_17;
 		L_17 = GetTrackablesUnit_6_get_managerIn_m7F61563262261FC69FBE3BDA805E1C9AB33D2493_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
 		NullCheck((UnitPort_3_t3BDB6AF6AAF9927A0C940F08CFD19E645813CFB0*)L_17);
@@ -12814,7 +12814,7 @@ IL_004f:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:104>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:104>
 		StringBuilder_t* L_19 = __this->___m_LogBuilder;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_20 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_21 = L_20;
@@ -12854,7 +12854,7 @@ IL_004f:
 
 IL_00c3:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:106>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:106>
 		StringBuilder_t* L_32 = __this->___m_LogBuilder;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_33 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_34 = L_33;
@@ -12893,20 +12893,20 @@ IL_00c3:
 
 IL_010e:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:108>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:109>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:108>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:109>
 		StringBuilder_t* L_45 = __this->___m_LogBuilder;
 		NullCheck(L_45);
 		StringBuilder_t* L_46;
 		L_46 = StringBuilder_Append_m08904D74E0C78E5F36DCD9C9303BDD07886D9F7D(L_45, _stringLiteral82E984AB94E4E3FF2391F79D9BAAB2F58B03179E, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:111>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:111>
 		StringBuilder_t* L_47 = __this->___m_LogBuilder;
 		NullCheck((RuntimeObject*)L_47);
 		String_t* L_48;
 		L_48 = VirtualFuncInvoker0< String_t* >::Invoke(3, (RuntimeObject*)L_47);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9((RuntimeObject*)L_48, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:112>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:112>
 		StringBuilder_t* L_49 = __this->___m_LogBuilder;
 		NullCheck(L_49);
 		StringBuilder_t* L_50;
@@ -12915,7 +12915,7 @@ IL_010e:
 
 IL_013b:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:115>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:115>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_51 = ___0_flow;
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_52;
 		L_52 = GetTrackablesUnit_6_get_trackablesIn_m53EC9C9F7D8C6D1ADBAC97CE7A46B9C883E55C0D_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
@@ -12930,11 +12930,11 @@ IL_013b:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:117>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:117>
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_55 = (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 19));
 		List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690(L_55, il2cpp_rgctx_method(method->klass->rgctx_data, 20));
 		V_1 = L_55;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:119>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:119>
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 18));
 		bool L_56 = ((GetTrackablesUnit_6_t40700C5453679D51CCE89F1B99C1B4EBCF9F8144_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 18)))->___s_IsFirstFrame;
 		if (!L_56)
@@ -12943,7 +12943,7 @@ IL_013b:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:121>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:121>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_57;
 		L_57 = GetTrackablesUnit_6_get_trackablesIn_m53EC9C9F7D8C6D1ADBAC97CE7A46B9C883E55C0D_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
 		NullCheck((UnitPort_3_t3BDB6AF6AAF9927A0C940F08CFD19E645813CFB0*)L_57);
@@ -12955,7 +12955,7 @@ IL_013b:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:122>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:122>
 		StringBuilder_t* L_59 = __this->___m_LogBuilder;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_60 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_61 = L_60;
@@ -12995,7 +12995,7 @@ IL_013b:
 
 IL_01bd:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:124>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:124>
 		StringBuilder_t* L_72 = __this->___m_LogBuilder;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_73 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_74 = L_73;
@@ -13034,8 +13034,8 @@ IL_01bd:
 
 IL_0208:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:126>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:127>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:126>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:127>
 		StringBuilder_t* L_85 = __this->___m_LogBuilder;
 		NullCheck(L_85);
 		StringBuilder_t* L_86;
@@ -13044,14 +13044,14 @@ IL_0208:
 
 IL_0219:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:130>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:130>
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 18));
 		((GetTrackablesUnit_6_t40700C5453679D51CCE89F1B99C1B4EBCF9F8144_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 18)))->___s_IsFirstFrame = (bool)0;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:132>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:132>
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_87 = V_1;
 		NullCheck(L_87);
 		List_1_Clear_m16C1F2C61FED5955F10EB36BC1CB2DF34B128994_inline(L_87, il2cpp_rgctx_method(method->klass->rgctx_data, 21));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
 		ARTrackableManager_5_tF00DDF940AEB2DC7AFEBBF04BD8FF13E9EF3CA7E* L_88 = V_0;
 		NullCheck(L_88);
 		TrackableCollection_1_tFCC29DC30D1D7BF9DF5F84F8DF60BD67C7832EDB L_89;
@@ -13065,11 +13065,11 @@ IL_0219:
 
 IL_0236:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
 		RuntimeObject* L_91;
 		L_91 = Enumerator_get_Current_m0C78B1A685CCC36524577967CE1620CB889FDC0A((&V_2), il2cpp_rgctx_method(method->klass->rgctx_data, 27));
 		V_4 = L_91;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:135>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:135>
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_92 = V_1;
 		RuntimeObject* L_93 = V_4;
 		NullCheck(L_92);
@@ -13078,7 +13078,7 @@ IL_0236:
 
 IL_0247:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
 		bool L_94;
 		L_94 = Enumerator_MoveNext_m2DFDA23C7884D9A93FF21291F1DF5DDA2C0DA27C((&V_2), il2cpp_rgctx_method(method->klass->rgctx_data, 31));
 		if (L_94)
@@ -13087,20 +13087,20 @@ IL_0247:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:138>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:138>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_95 = ___0_flow;
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_96;
 		L_96 = GetTrackablesUnit_6_get_trackablesOut_m7A221AE39CE9CAD5644964EBFF288BED7F25D3B1_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 14));
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_97 = V_1;
 		NullCheck(L_95);
 		Flow_SetValue_m635BAF02F51D7C027C4F85157B80E2AB2DFB48A7(L_95, (RuntimeObject*)L_96, (RuntimeObject*)L_97, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:139>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:139>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_98;
 		L_98 = GetTrackablesUnit_6_get_flowOut_m020A7A27283131656A10DDC2E15B81C5FCD3DC99_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
 		return L_98;
 	}
 }
-// Method Definition Index: 56117
+// Method Definition Index: 56115
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6__ctor_m4ACF2829E61A424E7F31E13E41D9D9DF158DAA3B_gshared (GetTrackablesUnit_6_t40700C5453679D51CCE89F1B99C1B4EBCF9F8144* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13110,7 +13110,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6__ctor_m4ACF2829E61A4
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:42>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:42>
 		StringBuilder_t* L_0 = (StringBuilder_t*)il2cpp_codegen_object_new(StringBuilder_t_il2cpp_TypeInfo_var);
 		StringBuilder__ctor_m1D99713357DE05DAFA296633639DB55F8C30587D(L_0, NULL);
 		__this->___m_LogBuilder = L_0;
@@ -13119,11 +13119,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6__ctor_m4ACF2829E61A4
 		return;
 	}
 }
-// Method Definition Index: 56118
+// Method Definition Index: 56116
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6__cctor_mBF509933F80C57191EF12CAA37356EFA8CF2903B_gshared (const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:40>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:40>
 		((GetTrackablesUnit_6_t40700C5453679D51CCE89F1B99C1B4EBCF9F8144_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 18)))->___s_IsFirstFrame = (bool)1;
 		return;
 	}
@@ -13136,107 +13136,107 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6__cctor_mBF509933F80C
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 56105
+// Method Definition Index: 56103
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* GetTrackablesUnit_6_get_flowIn_m2241FA0863717356459E9EC8F2A6FE4B118B49B6_gshared (GetTrackablesUnit_6_tA252AFCA8D6AD9170BE371DD63B4E1A3D1DC456B* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_0 = __this->___U3CflowInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56106
+// Method Definition Index: 56104
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_flowIn_m0C1FA8E60BCD1E0860E2A0C8485FD79F2E2B2516_gshared (GetTrackablesUnit_6_tA252AFCA8D6AD9170BE371DD63B4E1A3D1DC456B* __this, ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_0 = ___0_value;
 		__this->___U3CflowInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CflowInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56107
+// Method Definition Index: 56105
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* GetTrackablesUnit_6_get_flowOut_mC0E4AD042E3372F8EB35B9C2FA783065D282286B_gshared (GetTrackablesUnit_6_tA252AFCA8D6AD9170BE371DD63B4E1A3D1DC456B* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = __this->___U3CflowOutU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56108
+// Method Definition Index: 56106
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_flowOut_mFB3F6EDCCCC69D93191CF2C8CF2A6A95432D51C0_gshared (GetTrackablesUnit_6_tA252AFCA8D6AD9170BE371DD63B4E1A3D1DC456B* __this, ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = ___0_value;
 		__this->___U3CflowOutU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CflowOutU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56109
+// Method Definition Index: 56107
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* GetTrackablesUnit_6_get_managerIn_mF2BA2E872B867372BC9C48C72CE67B3AFBB0EDB8_gshared (GetTrackablesUnit_6_tA252AFCA8D6AD9170BE371DD63B4E1A3D1DC456B* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = __this->___U3CmanagerInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56110
+// Method Definition Index: 56108
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_managerIn_m23CFBE4C17B08D8064AC6C49614D81C09658201D_gshared (GetTrackablesUnit_6_tA252AFCA8D6AD9170BE371DD63B4E1A3D1DC456B* __this, ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = ___0_value;
 		__this->___U3CmanagerInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CmanagerInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56111
+// Method Definition Index: 56109
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* GetTrackablesUnit_6_get_trackablesIn_m4F6E1180C2BF0AD32D76030478C65AF732CAD595_gshared (GetTrackablesUnit_6_tA252AFCA8D6AD9170BE371DD63B4E1A3D1DC456B* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = __this->___U3CtrackablesInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56112
+// Method Definition Index: 56110
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_trackablesIn_m004AAD5561D73134D50D264446032E076076CC32_gshared (GetTrackablesUnit_6_tA252AFCA8D6AD9170BE371DD63B4E1A3D1DC456B* __this, ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = ___0_value;
 		__this->___U3CtrackablesInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtrackablesInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56113
+// Method Definition Index: 56111
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* GetTrackablesUnit_6_get_trackablesOut_m05DA512D5CDFCC442F6D7D7EAA84429A0D9A0BAA_gshared (GetTrackablesUnit_6_tA252AFCA8D6AD9170BE371DD63B4E1A3D1DC456B* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = __this->___U3CtrackablesOutU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56114
+// Method Definition Index: 56112
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_trackablesOut_m648EDA9F7723ACE426E18627DA389CA2E9085805_gshared (GetTrackablesUnit_6_tA252AFCA8D6AD9170BE371DD63B4E1A3D1DC456B* __this, ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = ___0_value;
 		__this->___U3CtrackablesOutU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtrackablesOutU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56115
+// Method Definition Index: 56113
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_Definition_m19460DDA8962346BBB12221164F1956509965D00_gshared (GetTrackablesUnit_6_tA252AFCA8D6AD9170BE371DD63B4E1A3D1DC456B* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13251,66 +13251,66 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_Definition_m19460DDA
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:78>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:78>
 		Func_2_tE299C631F0CB2E8E61444D749D446C27349C90B8* L_0 = (Func_2_tE299C631F0CB2E8E61444D749D446C27349C90B8*)il2cpp_codegen_object_new(Func_2_tE299C631F0CB2E8E61444D749D446C27349C90B8_il2cpp_TypeInfo_var);
 		Func_2__ctor_m36A365D852CA6BD70A68A3A26FF683FB3369DDF4(L_0, (RuntimeObject*)__this, (intptr_t)((void*)il2cpp_rgctx_method(method->klass->rgctx_data, 1)), NULL);
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_1;
 		L_1 = Unit_ControlInput_mF730DABA4FE60423D39B8EADE5DA72F51E6166A5((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, _stringLiteral8A8FE283442D993E502B69A3252F69EFFAE40786, L_0, NULL);
 		GetTrackablesUnit_6_set_flowIn_m0C1FA8E60BCD1E0860E2A0C8485FD79F2E2B2516_inline(__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 2));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:79>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:79>
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_2;
 		L_2 = Unit_ControlOutput_mCD76724DFB6AAE10C099E9984A39A5E0FC2824FE((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, _stringLiteralB2A5EAD5177EC36640CF7F1A9B069A6C8151F818, NULL);
 		GetTrackablesUnit_6_set_flowOut_mFB3F6EDCCCC69D93191CF2C8CF2A6A95432D51C0_inline(__this, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 3));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:80>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:80>
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_3;
 		L_3 = Unit_ValueInput_TisRuntimeObject_m122343074F8193EFCD173C88278671A117E7DF71((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, _stringLiteralBC164227AFDA156ECBA6FB703F556B9031872E75, il2cpp_rgctx_method(method->klass->rgctx_data, 4));
 		GetTrackablesUnit_6_set_managerIn_m23CFBE4C17B08D8064AC6C49614D81C09658201D_inline(__this, L_3, il2cpp_rgctx_method(method->klass->rgctx_data, 5));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:81>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:81>
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_4;
 		L_4 = Unit_ValueInput_TisList_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D_m6ACA4847F4A6B7F1BE04C85E4620523C7CC95D0D((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, _stringLiteral3C72CD06402C9318AD966E59D6028E2828D7A030, il2cpp_rgctx_method(method->klass->rgctx_data, 6));
 		GetTrackablesUnit_6_set_trackablesIn_m004AAD5561D73134D50D264446032E076076CC32_inline(__this, L_4, il2cpp_rgctx_method(method->klass->rgctx_data, 7));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:82>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:82>
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_5;
 		L_5 = Unit_ValueOutput_TisList_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D_m0B1CFA3FB04858C9D26BCFFD15291925A42EB224((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, _stringLiteral8E2BFA941EB89B5F2206FB52D76B3EB7E41CD6BC, il2cpp_rgctx_method(method->klass->rgctx_data, 8));
 		GetTrackablesUnit_6_set_trackablesOut_m648EDA9F7723ACE426E18627DA389CA2E9085805_inline(__this, L_5, il2cpp_rgctx_method(method->klass->rgctx_data, 9));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:84>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:84>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_6;
 		L_6 = GetTrackablesUnit_6_get_managerIn_mF2BA2E872B867372BC9C48C72CE67B3AFBB0EDB8_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_7;
 		L_7 = GetTrackablesUnit_6_get_flowIn_m2241FA0863717356459E9EC8F2A6FE4B118B49B6_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		Unit_Requirement_m9F929AD842C0E254FA9AD48E9200C63B43BFE64A((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, L_6, L_7, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:85>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:85>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_8;
 		L_8 = GetTrackablesUnit_6_get_trackablesIn_m4F6E1180C2BF0AD32D76030478C65AF732CAD595_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_9;
 		L_9 = GetTrackablesUnit_6_get_flowIn_m2241FA0863717356459E9EC8F2A6FE4B118B49B6_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		Unit_Requirement_m9F929AD842C0E254FA9AD48E9200C63B43BFE64A((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, L_8, L_9, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:86>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:86>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_10;
 		L_10 = GetTrackablesUnit_6_get_flowIn_m2241FA0863717356459E9EC8F2A6FE4B118B49B6_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_11;
 		L_11 = GetTrackablesUnit_6_get_flowOut_mC0E4AD042E3372F8EB35B9C2FA783065D282286B_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		Unit_Succession_m202BB700D861D65B85102AD7B3119AD1B2FF2158((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, L_10, L_11, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:87>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:87>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_12;
 		L_12 = GetTrackablesUnit_6_get_flowIn_m2241FA0863717356459E9EC8F2A6FE4B118B49B6_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_13;
 		L_13 = GetTrackablesUnit_6_get_trackablesOut_m05DA512D5CDFCC442F6D7D7EAA84429A0D9A0BAA_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 14));
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		Unit_Assignment_mE5DC2E131C1BA666F655E321312165D7B4BB74C7((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, L_12, L_13, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:88>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:88>
 		return;
 	}
 }
-// Method Definition Index: 56116
+// Method Definition Index: 56114
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* GetTrackablesUnit_6_ProcessFlow_m98D1A1BFB42DB993659566452898607CB410BE32_gshared (GetTrackablesUnit_6_tA252AFCA8D6AD9170BE371DD63B4E1A3D1DC456B* __this, Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* ___0_flow, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13338,7 +13338,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E7
 	memset((&V_3), 0, sizeof(V_3));
 	RuntimeObject* V_4 = NULL;
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:92>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:92>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_0 = ___0_flow;
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_1;
 		L_1 = GetTrackablesUnit_6_get_managerIn_mF2BA2E872B867372BC9C48C72CE67B3AFBB0EDB8_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
@@ -13346,7 +13346,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E7
 		RuntimeObject* L_2;
 		L_2 = Flow_GetValue_m4396BFB8BF013A1CF992A4E36D47E864D4180718(L_0, L_1, NULL);
 		V_0 = ((ARTrackableManager_5_t2A93ECAB1D6B15321FBA6CB85604DC3895F98E92*)IsInstClass((RuntimeObject*)L_2, il2cpp_rgctx_data(method->klass->rgctx_data, 15)));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:93>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:93>
 		ARTrackableManager_5_t2A93ECAB1D6B15321FBA6CB85604DC3895F98E92* L_3 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_4;
@@ -13357,7 +13357,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E7
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:95>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:95>
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		ARTrackableManager_5_t2A93ECAB1D6B15321FBA6CB85604DC3895F98E92* L_5;
 		L_5 = Object_FindAnyObjectByType_TisARTrackableManager_5_t2A93ECAB1D6B15321FBA6CB85604DC3895F98E92_m3EE7A95242BBDFCC2088366B6B62C9F805C4F9C0(il2cpp_rgctx_method(method->klass->rgctx_data, 16));
@@ -13366,7 +13366,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E7
 
 IL_0021:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:97>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:97>
 		ARTrackableManager_5_t2A93ECAB1D6B15321FBA6CB85604DC3895F98E92* L_6 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_7;
@@ -13377,8 +13377,8 @@ IL_0021:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:98>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:99>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:98>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:99>
 		NullCheck((GraphElement_1_t3220EDD6251B31FC22A192EC12682C1D8B28F16D*)__this);
 		FlowGraph_tF9E42FECF535CD5BAB10F75672B5BCE285627A45* L_8;
 		L_8 = GraphElement_1_get_graph_m854D04434240C328A8D726D991A89A7CDAA9116B_inline((GraphElement_1_t3220EDD6251B31FC22A192EC12682C1D8B28F16D*)__this, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&GraphElement_1_get_graph_m854D04434240C328A8D726D991A89A7CDAA9116B_RuntimeMethod_var)));
@@ -13398,7 +13398,7 @@ IL_0021:
 
 IL_004f:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:101>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:101>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_14;
 		L_14 = GetTrackablesUnit_6_get_managerIn_mF2BA2E872B867372BC9C48C72CE67B3AFBB0EDB8_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
 		NullCheck((UnitPort_3_t3BDB6AF6AAF9927A0C940F08CFD19E645813CFB0*)L_14);
@@ -13418,7 +13418,7 @@ IL_004f:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:103>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:103>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_17;
 		L_17 = GetTrackablesUnit_6_get_managerIn_mF2BA2E872B867372BC9C48C72CE67B3AFBB0EDB8_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
 		NullCheck((UnitPort_3_t3BDB6AF6AAF9927A0C940F08CFD19E645813CFB0*)L_17);
@@ -13430,7 +13430,7 @@ IL_004f:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:104>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:104>
 		StringBuilder_t* L_19 = __this->___m_LogBuilder;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_20 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_21 = L_20;
@@ -13470,7 +13470,7 @@ IL_004f:
 
 IL_00c3:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:106>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:106>
 		StringBuilder_t* L_32 = __this->___m_LogBuilder;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_33 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_34 = L_33;
@@ -13509,20 +13509,20 @@ IL_00c3:
 
 IL_010e:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:108>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:109>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:108>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:109>
 		StringBuilder_t* L_45 = __this->___m_LogBuilder;
 		NullCheck(L_45);
 		StringBuilder_t* L_46;
 		L_46 = StringBuilder_Append_m08904D74E0C78E5F36DCD9C9303BDD07886D9F7D(L_45, _stringLiteral82E984AB94E4E3FF2391F79D9BAAB2F58B03179E, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:111>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:111>
 		StringBuilder_t* L_47 = __this->___m_LogBuilder;
 		NullCheck((RuntimeObject*)L_47);
 		String_t* L_48;
 		L_48 = VirtualFuncInvoker0< String_t* >::Invoke(3, (RuntimeObject*)L_47);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9((RuntimeObject*)L_48, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:112>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:112>
 		StringBuilder_t* L_49 = __this->___m_LogBuilder;
 		NullCheck(L_49);
 		StringBuilder_t* L_50;
@@ -13531,7 +13531,7 @@ IL_010e:
 
 IL_013b:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:115>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:115>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_51 = ___0_flow;
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_52;
 		L_52 = GetTrackablesUnit_6_get_trackablesIn_m4F6E1180C2BF0AD32D76030478C65AF732CAD595_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
@@ -13546,11 +13546,11 @@ IL_013b:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:117>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:117>
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_55 = (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 19));
 		List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690(L_55, il2cpp_rgctx_method(method->klass->rgctx_data, 20));
 		V_1 = L_55;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:119>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:119>
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 18));
 		bool L_56 = ((GetTrackablesUnit_6_tA252AFCA8D6AD9170BE371DD63B4E1A3D1DC456B_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 18)))->___s_IsFirstFrame;
 		if (!L_56)
@@ -13559,7 +13559,7 @@ IL_013b:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:121>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:121>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_57;
 		L_57 = GetTrackablesUnit_6_get_trackablesIn_m4F6E1180C2BF0AD32D76030478C65AF732CAD595_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
 		NullCheck((UnitPort_3_t3BDB6AF6AAF9927A0C940F08CFD19E645813CFB0*)L_57);
@@ -13571,7 +13571,7 @@ IL_013b:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:122>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:122>
 		StringBuilder_t* L_59 = __this->___m_LogBuilder;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_60 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_61 = L_60;
@@ -13611,7 +13611,7 @@ IL_013b:
 
 IL_01bd:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:124>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:124>
 		StringBuilder_t* L_72 = __this->___m_LogBuilder;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_73 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_74 = L_73;
@@ -13650,8 +13650,8 @@ IL_01bd:
 
 IL_0208:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:126>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:127>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:126>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:127>
 		StringBuilder_t* L_85 = __this->___m_LogBuilder;
 		NullCheck(L_85);
 		StringBuilder_t* L_86;
@@ -13660,14 +13660,14 @@ IL_0208:
 
 IL_0219:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:130>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:130>
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 18));
 		((GetTrackablesUnit_6_tA252AFCA8D6AD9170BE371DD63B4E1A3D1DC456B_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 18)))->___s_IsFirstFrame = (bool)0;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:132>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:132>
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_87 = V_1;
 		NullCheck(L_87);
 		List_1_Clear_m16C1F2C61FED5955F10EB36BC1CB2DF34B128994_inline(L_87, il2cpp_rgctx_method(method->klass->rgctx_data, 21));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
 		ARTrackableManager_5_t2A93ECAB1D6B15321FBA6CB85604DC3895F98E92* L_88 = V_0;
 		NullCheck(L_88);
 		TrackableCollection_1_tFCC29DC30D1D7BF9DF5F84F8DF60BD67C7832EDB L_89;
@@ -13681,11 +13681,11 @@ IL_0219:
 
 IL_0236:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
 		RuntimeObject* L_91;
 		L_91 = Enumerator_get_Current_m0C78B1A685CCC36524577967CE1620CB889FDC0A((&V_2), il2cpp_rgctx_method(method->klass->rgctx_data, 27));
 		V_4 = L_91;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:135>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:135>
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_92 = V_1;
 		RuntimeObject* L_93 = V_4;
 		NullCheck(L_92);
@@ -13694,7 +13694,7 @@ IL_0236:
 
 IL_0247:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
 		bool L_94;
 		L_94 = Enumerator_MoveNext_m2DFDA23C7884D9A93FF21291F1DF5DDA2C0DA27C((&V_2), il2cpp_rgctx_method(method->klass->rgctx_data, 31));
 		if (L_94)
@@ -13703,20 +13703,20 @@ IL_0247:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:138>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:138>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_95 = ___0_flow;
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_96;
 		L_96 = GetTrackablesUnit_6_get_trackablesOut_m05DA512D5CDFCC442F6D7D7EAA84429A0D9A0BAA_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 14));
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_97 = V_1;
 		NullCheck(L_95);
 		Flow_SetValue_m635BAF02F51D7C027C4F85157B80E2AB2DFB48A7(L_95, (RuntimeObject*)L_96, (RuntimeObject*)L_97, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:139>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:139>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_98;
 		L_98 = GetTrackablesUnit_6_get_flowOut_mC0E4AD042E3372F8EB35B9C2FA783065D282286B_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
 		return L_98;
 	}
 }
-// Method Definition Index: 56117
+// Method Definition Index: 56115
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6__ctor_mAE655F774D272F686546A115114DD2543A30E6A0_gshared (GetTrackablesUnit_6_tA252AFCA8D6AD9170BE371DD63B4E1A3D1DC456B* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13726,7 +13726,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6__ctor_mAE655F774D272
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:42>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:42>
 		StringBuilder_t* L_0 = (StringBuilder_t*)il2cpp_codegen_object_new(StringBuilder_t_il2cpp_TypeInfo_var);
 		StringBuilder__ctor_m1D99713357DE05DAFA296633639DB55F8C30587D(L_0, NULL);
 		__this->___m_LogBuilder = L_0;
@@ -13735,11 +13735,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6__ctor_mAE655F774D272
 		return;
 	}
 }
-// Method Definition Index: 56118
+// Method Definition Index: 56116
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6__cctor_mB329D6FB025205901CF4120A029A80532267D968_gshared (const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:40>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:40>
 		((GetTrackablesUnit_6_tA252AFCA8D6AD9170BE371DD63B4E1A3D1DC456B_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 18)))->___s_IsFirstFrame = (bool)1;
 		return;
 	}
@@ -13752,107 +13752,107 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6__cctor_mB329D6FB0252
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 56105
+// Method Definition Index: 56103
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* GetTrackablesUnit_6_get_flowIn_m68732541610F1CC1CEB53AD5551891C0A236CF08_gshared (GetTrackablesUnit_6_tE93598F0E5891061730B627819A5B94E3EC137C8* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_0 = __this->___U3CflowInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56106
+// Method Definition Index: 56104
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_flowIn_m26159308AEB66C094BF2CCB9079E1FC920902585_gshared (GetTrackablesUnit_6_tE93598F0E5891061730B627819A5B94E3EC137C8* __this, ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_0 = ___0_value;
 		__this->___U3CflowInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CflowInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56107
+// Method Definition Index: 56105
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* GetTrackablesUnit_6_get_flowOut_mD0484C305ADB65ABC3D44AE4BBE53BAED519BCA9_gshared (GetTrackablesUnit_6_tE93598F0E5891061730B627819A5B94E3EC137C8* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = __this->___U3CflowOutU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56108
+// Method Definition Index: 56106
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_flowOut_m5BEC3FDE3FEC3161DFED100C5A094EC104B10AA5_gshared (GetTrackablesUnit_6_tE93598F0E5891061730B627819A5B94E3EC137C8* __this, ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = ___0_value;
 		__this->___U3CflowOutU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CflowOutU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56109
+// Method Definition Index: 56107
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* GetTrackablesUnit_6_get_managerIn_mE72F0F37AECC724B4EE73CEEED9E0578D1210A73_gshared (GetTrackablesUnit_6_tE93598F0E5891061730B627819A5B94E3EC137C8* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = __this->___U3CmanagerInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56110
+// Method Definition Index: 56108
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_managerIn_m39B04DF5FAA6CE0195909EF5432BE2E7B3F51627_gshared (GetTrackablesUnit_6_tE93598F0E5891061730B627819A5B94E3EC137C8* __this, ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = ___0_value;
 		__this->___U3CmanagerInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CmanagerInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56111
+// Method Definition Index: 56109
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* GetTrackablesUnit_6_get_trackablesIn_m79428EFA50C23E3BB4602AF09DD5FDBE98E634AA_gshared (GetTrackablesUnit_6_tE93598F0E5891061730B627819A5B94E3EC137C8* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = __this->___U3CtrackablesInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56112
+// Method Definition Index: 56110
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_trackablesIn_mD43967A2620AC154B07385E2395A3C3806793904_gshared (GetTrackablesUnit_6_tE93598F0E5891061730B627819A5B94E3EC137C8* __this, ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = ___0_value;
 		__this->___U3CtrackablesInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtrackablesInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56113
+// Method Definition Index: 56111
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* GetTrackablesUnit_6_get_trackablesOut_m8FBA78913906A44F11BFF9C6F174FAB9A3A36EAF_gshared (GetTrackablesUnit_6_tE93598F0E5891061730B627819A5B94E3EC137C8* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = __this->___U3CtrackablesOutU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56114
+// Method Definition Index: 56112
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_trackablesOut_m1F757CD8F2381C96519B0957CC86C521123903D1_gshared (GetTrackablesUnit_6_tE93598F0E5891061730B627819A5B94E3EC137C8* __this, ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = ___0_value;
 		__this->___U3CtrackablesOutU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtrackablesOutU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56115
+// Method Definition Index: 56113
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_Definition_mF18C20EC0BDC953A884F5B7D126EABC50B632F8F_gshared (GetTrackablesUnit_6_tE93598F0E5891061730B627819A5B94E3EC137C8* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13867,66 +13867,66 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_Definition_mF18C20EC
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:78>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:78>
 		Func_2_tE299C631F0CB2E8E61444D749D446C27349C90B8* L_0 = (Func_2_tE299C631F0CB2E8E61444D749D446C27349C90B8*)il2cpp_codegen_object_new(Func_2_tE299C631F0CB2E8E61444D749D446C27349C90B8_il2cpp_TypeInfo_var);
 		Func_2__ctor_m36A365D852CA6BD70A68A3A26FF683FB3369DDF4(L_0, (RuntimeObject*)__this, (intptr_t)((void*)il2cpp_rgctx_method(method->klass->rgctx_data, 1)), NULL);
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_1;
 		L_1 = Unit_ControlInput_mF730DABA4FE60423D39B8EADE5DA72F51E6166A5((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, _stringLiteral8A8FE283442D993E502B69A3252F69EFFAE40786, L_0, NULL);
 		GetTrackablesUnit_6_set_flowIn_m26159308AEB66C094BF2CCB9079E1FC920902585_inline(__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 2));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:79>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:79>
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_2;
 		L_2 = Unit_ControlOutput_mCD76724DFB6AAE10C099E9984A39A5E0FC2824FE((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, _stringLiteralB2A5EAD5177EC36640CF7F1A9B069A6C8151F818, NULL);
 		GetTrackablesUnit_6_set_flowOut_m5BEC3FDE3FEC3161DFED100C5A094EC104B10AA5_inline(__this, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 3));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:80>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:80>
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_3;
 		L_3 = Unit_ValueInput_TisRuntimeObject_m122343074F8193EFCD173C88278671A117E7DF71((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, _stringLiteralBC164227AFDA156ECBA6FB703F556B9031872E75, il2cpp_rgctx_method(method->klass->rgctx_data, 4));
 		GetTrackablesUnit_6_set_managerIn_m39B04DF5FAA6CE0195909EF5432BE2E7B3F51627_inline(__this, L_3, il2cpp_rgctx_method(method->klass->rgctx_data, 5));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:81>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:81>
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_4;
 		L_4 = Unit_ValueInput_TisList_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D_m6ACA4847F4A6B7F1BE04C85E4620523C7CC95D0D((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, _stringLiteral3C72CD06402C9318AD966E59D6028E2828D7A030, il2cpp_rgctx_method(method->klass->rgctx_data, 6));
 		GetTrackablesUnit_6_set_trackablesIn_mD43967A2620AC154B07385E2395A3C3806793904_inline(__this, L_4, il2cpp_rgctx_method(method->klass->rgctx_data, 7));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:82>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:82>
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_5;
 		L_5 = Unit_ValueOutput_TisList_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D_m0B1CFA3FB04858C9D26BCFFD15291925A42EB224((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, _stringLiteral8E2BFA941EB89B5F2206FB52D76B3EB7E41CD6BC, il2cpp_rgctx_method(method->klass->rgctx_data, 8));
 		GetTrackablesUnit_6_set_trackablesOut_m1F757CD8F2381C96519B0957CC86C521123903D1_inline(__this, L_5, il2cpp_rgctx_method(method->klass->rgctx_data, 9));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:84>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:84>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_6;
 		L_6 = GetTrackablesUnit_6_get_managerIn_mE72F0F37AECC724B4EE73CEEED9E0578D1210A73_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_7;
 		L_7 = GetTrackablesUnit_6_get_flowIn_m68732541610F1CC1CEB53AD5551891C0A236CF08_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		Unit_Requirement_m9F929AD842C0E254FA9AD48E9200C63B43BFE64A((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, L_6, L_7, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:85>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:85>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_8;
 		L_8 = GetTrackablesUnit_6_get_trackablesIn_m79428EFA50C23E3BB4602AF09DD5FDBE98E634AA_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_9;
 		L_9 = GetTrackablesUnit_6_get_flowIn_m68732541610F1CC1CEB53AD5551891C0A236CF08_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		Unit_Requirement_m9F929AD842C0E254FA9AD48E9200C63B43BFE64A((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, L_8, L_9, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:86>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:86>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_10;
 		L_10 = GetTrackablesUnit_6_get_flowIn_m68732541610F1CC1CEB53AD5551891C0A236CF08_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_11;
 		L_11 = GetTrackablesUnit_6_get_flowOut_mD0484C305ADB65ABC3D44AE4BBE53BAED519BCA9_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		Unit_Succession_m202BB700D861D65B85102AD7B3119AD1B2FF2158((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, L_10, L_11, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:87>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:87>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_12;
 		L_12 = GetTrackablesUnit_6_get_flowIn_m68732541610F1CC1CEB53AD5551891C0A236CF08_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_13;
 		L_13 = GetTrackablesUnit_6_get_trackablesOut_m8FBA78913906A44F11BFF9C6F174FAB9A3A36EAF_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 14));
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		Unit_Assignment_mE5DC2E131C1BA666F655E321312165D7B4BB74C7((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, L_12, L_13, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:88>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:88>
 		return;
 	}
 }
-// Method Definition Index: 56116
+// Method Definition Index: 56114
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* GetTrackablesUnit_6_ProcessFlow_mC95372D380C91B601BC57A3D7282D7DBFC9EB1D3_gshared (GetTrackablesUnit_6_tE93598F0E5891061730B627819A5B94E3EC137C8* __this, Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* ___0_flow, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13954,7 +13954,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E7
 	memset((&V_3), 0, sizeof(V_3));
 	RuntimeObject* V_4 = NULL;
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:92>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:92>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_0 = ___0_flow;
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_1;
 		L_1 = GetTrackablesUnit_6_get_managerIn_mE72F0F37AECC724B4EE73CEEED9E0578D1210A73_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
@@ -13962,7 +13962,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E7
 		RuntimeObject* L_2;
 		L_2 = Flow_GetValue_m4396BFB8BF013A1CF992A4E36D47E864D4180718(L_0, L_1, NULL);
 		V_0 = ((ARTrackableManager_5_t5A4E031D332FAC1F3759C77AB4F4F7A0F914286F*)IsInstClass((RuntimeObject*)L_2, il2cpp_rgctx_data(method->klass->rgctx_data, 15)));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:93>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:93>
 		ARTrackableManager_5_t5A4E031D332FAC1F3759C77AB4F4F7A0F914286F* L_3 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_4;
@@ -13973,7 +13973,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E7
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:95>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:95>
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		ARTrackableManager_5_t5A4E031D332FAC1F3759C77AB4F4F7A0F914286F* L_5;
 		L_5 = Object_FindAnyObjectByType_TisARTrackableManager_5_t5A4E031D332FAC1F3759C77AB4F4F7A0F914286F_m2CEBEC88F67CF23C34E992146BF12A318094637E(il2cpp_rgctx_method(method->klass->rgctx_data, 16));
@@ -13982,7 +13982,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E7
 
 IL_0021:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:97>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:97>
 		ARTrackableManager_5_t5A4E031D332FAC1F3759C77AB4F4F7A0F914286F* L_6 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_7;
@@ -13993,8 +13993,8 @@ IL_0021:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:98>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:99>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:98>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:99>
 		NullCheck((GraphElement_1_t3220EDD6251B31FC22A192EC12682C1D8B28F16D*)__this);
 		FlowGraph_tF9E42FECF535CD5BAB10F75672B5BCE285627A45* L_8;
 		L_8 = GraphElement_1_get_graph_m854D04434240C328A8D726D991A89A7CDAA9116B_inline((GraphElement_1_t3220EDD6251B31FC22A192EC12682C1D8B28F16D*)__this, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&GraphElement_1_get_graph_m854D04434240C328A8D726D991A89A7CDAA9116B_RuntimeMethod_var)));
@@ -14014,7 +14014,7 @@ IL_0021:
 
 IL_004f:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:101>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:101>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_14;
 		L_14 = GetTrackablesUnit_6_get_managerIn_mE72F0F37AECC724B4EE73CEEED9E0578D1210A73_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
 		NullCheck((UnitPort_3_t3BDB6AF6AAF9927A0C940F08CFD19E645813CFB0*)L_14);
@@ -14034,7 +14034,7 @@ IL_004f:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:103>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:103>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_17;
 		L_17 = GetTrackablesUnit_6_get_managerIn_mE72F0F37AECC724B4EE73CEEED9E0578D1210A73_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
 		NullCheck((UnitPort_3_t3BDB6AF6AAF9927A0C940F08CFD19E645813CFB0*)L_17);
@@ -14046,7 +14046,7 @@ IL_004f:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:104>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:104>
 		StringBuilder_t* L_19 = __this->___m_LogBuilder;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_20 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_21 = L_20;
@@ -14086,7 +14086,7 @@ IL_004f:
 
 IL_00c3:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:106>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:106>
 		StringBuilder_t* L_32 = __this->___m_LogBuilder;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_33 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_34 = L_33;
@@ -14125,20 +14125,20 @@ IL_00c3:
 
 IL_010e:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:108>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:109>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:108>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:109>
 		StringBuilder_t* L_45 = __this->___m_LogBuilder;
 		NullCheck(L_45);
 		StringBuilder_t* L_46;
 		L_46 = StringBuilder_Append_m08904D74E0C78E5F36DCD9C9303BDD07886D9F7D(L_45, _stringLiteral82E984AB94E4E3FF2391F79D9BAAB2F58B03179E, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:111>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:111>
 		StringBuilder_t* L_47 = __this->___m_LogBuilder;
 		NullCheck((RuntimeObject*)L_47);
 		String_t* L_48;
 		L_48 = VirtualFuncInvoker0< String_t* >::Invoke(3, (RuntimeObject*)L_47);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9((RuntimeObject*)L_48, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:112>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:112>
 		StringBuilder_t* L_49 = __this->___m_LogBuilder;
 		NullCheck(L_49);
 		StringBuilder_t* L_50;
@@ -14147,7 +14147,7 @@ IL_010e:
 
 IL_013b:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:115>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:115>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_51 = ___0_flow;
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_52;
 		L_52 = GetTrackablesUnit_6_get_trackablesIn_m79428EFA50C23E3BB4602AF09DD5FDBE98E634AA_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
@@ -14162,11 +14162,11 @@ IL_013b:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:117>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:117>
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_55 = (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 19));
 		List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690(L_55, il2cpp_rgctx_method(method->klass->rgctx_data, 20));
 		V_1 = L_55;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:119>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:119>
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 18));
 		bool L_56 = ((GetTrackablesUnit_6_tE93598F0E5891061730B627819A5B94E3EC137C8_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 18)))->___s_IsFirstFrame;
 		if (!L_56)
@@ -14175,7 +14175,7 @@ IL_013b:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:121>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:121>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_57;
 		L_57 = GetTrackablesUnit_6_get_trackablesIn_m79428EFA50C23E3BB4602AF09DD5FDBE98E634AA_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
 		NullCheck((UnitPort_3_t3BDB6AF6AAF9927A0C940F08CFD19E645813CFB0*)L_57);
@@ -14187,7 +14187,7 @@ IL_013b:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:122>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:122>
 		StringBuilder_t* L_59 = __this->___m_LogBuilder;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_60 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_61 = L_60;
@@ -14227,7 +14227,7 @@ IL_013b:
 
 IL_01bd:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:124>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:124>
 		StringBuilder_t* L_72 = __this->___m_LogBuilder;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_73 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_74 = L_73;
@@ -14266,8 +14266,8 @@ IL_01bd:
 
 IL_0208:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:126>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:127>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:126>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:127>
 		StringBuilder_t* L_85 = __this->___m_LogBuilder;
 		NullCheck(L_85);
 		StringBuilder_t* L_86;
@@ -14276,14 +14276,14 @@ IL_0208:
 
 IL_0219:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:130>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:130>
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 18));
 		((GetTrackablesUnit_6_tE93598F0E5891061730B627819A5B94E3EC137C8_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 18)))->___s_IsFirstFrame = (bool)0;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:132>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:132>
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_87 = V_1;
 		NullCheck(L_87);
 		List_1_Clear_m16C1F2C61FED5955F10EB36BC1CB2DF34B128994_inline(L_87, il2cpp_rgctx_method(method->klass->rgctx_data, 21));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
 		ARTrackableManager_5_t5A4E031D332FAC1F3759C77AB4F4F7A0F914286F* L_88 = V_0;
 		NullCheck(L_88);
 		TrackableCollection_1_tFCC29DC30D1D7BF9DF5F84F8DF60BD67C7832EDB L_89;
@@ -14297,11 +14297,11 @@ IL_0219:
 
 IL_0236:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
 		RuntimeObject* L_91;
 		L_91 = Enumerator_get_Current_m0C78B1A685CCC36524577967CE1620CB889FDC0A((&V_2), il2cpp_rgctx_method(method->klass->rgctx_data, 27));
 		V_4 = L_91;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:135>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:135>
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_92 = V_1;
 		RuntimeObject* L_93 = V_4;
 		NullCheck(L_92);
@@ -14310,7 +14310,7 @@ IL_0236:
 
 IL_0247:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
 		bool L_94;
 		L_94 = Enumerator_MoveNext_m2DFDA23C7884D9A93FF21291F1DF5DDA2C0DA27C((&V_2), il2cpp_rgctx_method(method->klass->rgctx_data, 31));
 		if (L_94)
@@ -14319,20 +14319,20 @@ IL_0247:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:138>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:138>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_95 = ___0_flow;
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_96;
 		L_96 = GetTrackablesUnit_6_get_trackablesOut_m8FBA78913906A44F11BFF9C6F174FAB9A3A36EAF_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 14));
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_97 = V_1;
 		NullCheck(L_95);
 		Flow_SetValue_m635BAF02F51D7C027C4F85157B80E2AB2DFB48A7(L_95, (RuntimeObject*)L_96, (RuntimeObject*)L_97, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:139>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:139>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_98;
 		L_98 = GetTrackablesUnit_6_get_flowOut_mD0484C305ADB65ABC3D44AE4BBE53BAED519BCA9_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
 		return L_98;
 	}
 }
-// Method Definition Index: 56117
+// Method Definition Index: 56115
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6__ctor_m08D7B92FD847DFB1385D59CCA674A532758E0D26_gshared (GetTrackablesUnit_6_tE93598F0E5891061730B627819A5B94E3EC137C8* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14342,7 +14342,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6__ctor_m08D7B92FD847D
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:42>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:42>
 		StringBuilder_t* L_0 = (StringBuilder_t*)il2cpp_codegen_object_new(StringBuilder_t_il2cpp_TypeInfo_var);
 		StringBuilder__ctor_m1D99713357DE05DAFA296633639DB55F8C30587D(L_0, NULL);
 		__this->___m_LogBuilder = L_0;
@@ -14351,11 +14351,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6__ctor_m08D7B92FD847D
 		return;
 	}
 }
-// Method Definition Index: 56118
+// Method Definition Index: 56116
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6__cctor_m1AC152AD77CD9FF021886D5992FBADB5D3E6C0A0_gshared (const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:40>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:40>
 		((GetTrackablesUnit_6_tE93598F0E5891061730B627819A5B94E3EC137C8_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 18)))->___s_IsFirstFrame = (bool)1;
 		return;
 	}
@@ -14368,107 +14368,107 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6__cctor_m1AC152AD77CD
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 56105
+// Method Definition Index: 56103
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* GetTrackablesUnit_6_get_flowIn_mBD6157CBCD9C2323ADD234CD79125FF0CAF56712_gshared (GetTrackablesUnit_6_t5CCB2F47ECD9360ADBCC2038E60046BB7E753997* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_0 = __this->___U3CflowInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56106
+// Method Definition Index: 56104
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_flowIn_mB42A2D936FBC4A30062428B10F536A120919B787_gshared (GetTrackablesUnit_6_t5CCB2F47ECD9360ADBCC2038E60046BB7E753997* __this, ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_0 = ___0_value;
 		__this->___U3CflowInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CflowInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56107
+// Method Definition Index: 56105
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* GetTrackablesUnit_6_get_flowOut_m346EA82E879A5E36C8177DF73BEAD0787FA597DA_gshared (GetTrackablesUnit_6_t5CCB2F47ECD9360ADBCC2038E60046BB7E753997* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = __this->___U3CflowOutU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56108
+// Method Definition Index: 56106
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_flowOut_m9E16FBC4E7F4F7B9D3A01D8C4E7B0B594FDB2CE2_gshared (GetTrackablesUnit_6_t5CCB2F47ECD9360ADBCC2038E60046BB7E753997* __this, ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = ___0_value;
 		__this->___U3CflowOutU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CflowOutU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56109
+// Method Definition Index: 56107
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* GetTrackablesUnit_6_get_managerIn_mB90B9B8D5DFBF1185C730DDA420E12685671716B_gshared (GetTrackablesUnit_6_t5CCB2F47ECD9360ADBCC2038E60046BB7E753997* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = __this->___U3CmanagerInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56110
+// Method Definition Index: 56108
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_managerIn_m85D504E5CB56EAAEF70113A4BDA3073A17B476A4_gshared (GetTrackablesUnit_6_t5CCB2F47ECD9360ADBCC2038E60046BB7E753997* __this, ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = ___0_value;
 		__this->___U3CmanagerInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CmanagerInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56111
+// Method Definition Index: 56109
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* GetTrackablesUnit_6_get_trackablesIn_m76CC6C7BCD4AAEA181B6DA77533EE80859B6D5A8_gshared (GetTrackablesUnit_6_t5CCB2F47ECD9360ADBCC2038E60046BB7E753997* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = __this->___U3CtrackablesInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56112
+// Method Definition Index: 56110
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_trackablesIn_m74FA744DE65CCF9DB53A194670E9AF382B3620C2_gshared (GetTrackablesUnit_6_t5CCB2F47ECD9360ADBCC2038E60046BB7E753997* __this, ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = ___0_value;
 		__this->___U3CtrackablesInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtrackablesInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56113
+// Method Definition Index: 56111
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* GetTrackablesUnit_6_get_trackablesOut_mF7757418BB7F47D19A5C5998A32C49835DD71B87_gshared (GetTrackablesUnit_6_t5CCB2F47ECD9360ADBCC2038E60046BB7E753997* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = __this->___U3CtrackablesOutU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56114
+// Method Definition Index: 56112
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_trackablesOut_mC300984A361BA163AB05CF71DC1CFF18CA87EAE5_gshared (GetTrackablesUnit_6_t5CCB2F47ECD9360ADBCC2038E60046BB7E753997* __this, ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = ___0_value;
 		__this->___U3CtrackablesOutU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtrackablesOutU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56115
+// Method Definition Index: 56113
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_Definition_mE3159014326CE3F078B3434AF18412FBE05B8DE4_gshared (GetTrackablesUnit_6_t5CCB2F47ECD9360ADBCC2038E60046BB7E753997* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14483,66 +14483,66 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_Definition_mE3159014
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:78>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:78>
 		Func_2_tE299C631F0CB2E8E61444D749D446C27349C90B8* L_0 = (Func_2_tE299C631F0CB2E8E61444D749D446C27349C90B8*)il2cpp_codegen_object_new(Func_2_tE299C631F0CB2E8E61444D749D446C27349C90B8_il2cpp_TypeInfo_var);
 		Func_2__ctor_m36A365D852CA6BD70A68A3A26FF683FB3369DDF4(L_0, (RuntimeObject*)__this, (intptr_t)((void*)il2cpp_rgctx_method(method->klass->rgctx_data, 1)), NULL);
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_1;
 		L_1 = Unit_ControlInput_mF730DABA4FE60423D39B8EADE5DA72F51E6166A5((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, _stringLiteral8A8FE283442D993E502B69A3252F69EFFAE40786, L_0, NULL);
 		GetTrackablesUnit_6_set_flowIn_mB42A2D936FBC4A30062428B10F536A120919B787_inline(__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 2));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:79>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:79>
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_2;
 		L_2 = Unit_ControlOutput_mCD76724DFB6AAE10C099E9984A39A5E0FC2824FE((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, _stringLiteralB2A5EAD5177EC36640CF7F1A9B069A6C8151F818, NULL);
 		GetTrackablesUnit_6_set_flowOut_m9E16FBC4E7F4F7B9D3A01D8C4E7B0B594FDB2CE2_inline(__this, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 3));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:80>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:80>
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_3;
 		L_3 = Unit_ValueInput_TisRuntimeObject_m122343074F8193EFCD173C88278671A117E7DF71((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, _stringLiteralBC164227AFDA156ECBA6FB703F556B9031872E75, il2cpp_rgctx_method(method->klass->rgctx_data, 4));
 		GetTrackablesUnit_6_set_managerIn_m85D504E5CB56EAAEF70113A4BDA3073A17B476A4_inline(__this, L_3, il2cpp_rgctx_method(method->klass->rgctx_data, 5));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:81>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:81>
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_4;
 		L_4 = Unit_ValueInput_TisList_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D_m6ACA4847F4A6B7F1BE04C85E4620523C7CC95D0D((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, _stringLiteral3C72CD06402C9318AD966E59D6028E2828D7A030, il2cpp_rgctx_method(method->klass->rgctx_data, 6));
 		GetTrackablesUnit_6_set_trackablesIn_m74FA744DE65CCF9DB53A194670E9AF382B3620C2_inline(__this, L_4, il2cpp_rgctx_method(method->klass->rgctx_data, 7));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:82>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:82>
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_5;
 		L_5 = Unit_ValueOutput_TisList_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D_m0B1CFA3FB04858C9D26BCFFD15291925A42EB224((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, _stringLiteral8E2BFA941EB89B5F2206FB52D76B3EB7E41CD6BC, il2cpp_rgctx_method(method->klass->rgctx_data, 8));
 		GetTrackablesUnit_6_set_trackablesOut_mC300984A361BA163AB05CF71DC1CFF18CA87EAE5_inline(__this, L_5, il2cpp_rgctx_method(method->klass->rgctx_data, 9));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:84>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:84>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_6;
 		L_6 = GetTrackablesUnit_6_get_managerIn_mB90B9B8D5DFBF1185C730DDA420E12685671716B_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_7;
 		L_7 = GetTrackablesUnit_6_get_flowIn_mBD6157CBCD9C2323ADD234CD79125FF0CAF56712_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		Unit_Requirement_m9F929AD842C0E254FA9AD48E9200C63B43BFE64A((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, L_6, L_7, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:85>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:85>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_8;
 		L_8 = GetTrackablesUnit_6_get_trackablesIn_m76CC6C7BCD4AAEA181B6DA77533EE80859B6D5A8_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_9;
 		L_9 = GetTrackablesUnit_6_get_flowIn_mBD6157CBCD9C2323ADD234CD79125FF0CAF56712_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		Unit_Requirement_m9F929AD842C0E254FA9AD48E9200C63B43BFE64A((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, L_8, L_9, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:86>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:86>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_10;
 		L_10 = GetTrackablesUnit_6_get_flowIn_mBD6157CBCD9C2323ADD234CD79125FF0CAF56712_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_11;
 		L_11 = GetTrackablesUnit_6_get_flowOut_m346EA82E879A5E36C8177DF73BEAD0787FA597DA_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		Unit_Succession_m202BB700D861D65B85102AD7B3119AD1B2FF2158((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, L_10, L_11, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:87>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:87>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_12;
 		L_12 = GetTrackablesUnit_6_get_flowIn_mBD6157CBCD9C2323ADD234CD79125FF0CAF56712_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_13;
 		L_13 = GetTrackablesUnit_6_get_trackablesOut_mF7757418BB7F47D19A5C5998A32C49835DD71B87_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 14));
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		Unit_Assignment_mE5DC2E131C1BA666F655E321312165D7B4BB74C7((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, L_12, L_13, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:88>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:88>
 		return;
 	}
 }
-// Method Definition Index: 56116
+// Method Definition Index: 56114
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* GetTrackablesUnit_6_ProcessFlow_m16699B04D0B002F745426185033AFC1AAF3B8978_gshared (GetTrackablesUnit_6_t5CCB2F47ECD9360ADBCC2038E60046BB7E753997* __this, Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* ___0_flow, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14570,7 +14570,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E7
 	memset((&V_3), 0, sizeof(V_3));
 	RuntimeObject* V_4 = NULL;
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:92>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:92>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_0 = ___0_flow;
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_1;
 		L_1 = GetTrackablesUnit_6_get_managerIn_mB90B9B8D5DFBF1185C730DDA420E12685671716B_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
@@ -14578,7 +14578,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E7
 		RuntimeObject* L_2;
 		L_2 = Flow_GetValue_m4396BFB8BF013A1CF992A4E36D47E864D4180718(L_0, L_1, NULL);
 		V_0 = ((ARTrackableManager_5_t781ED5020888538CF6FC3405034BBF27F05FA2C2*)IsInstClass((RuntimeObject*)L_2, il2cpp_rgctx_data(method->klass->rgctx_data, 15)));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:93>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:93>
 		ARTrackableManager_5_t781ED5020888538CF6FC3405034BBF27F05FA2C2* L_3 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_4;
@@ -14589,7 +14589,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E7
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:95>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:95>
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		ARTrackableManager_5_t781ED5020888538CF6FC3405034BBF27F05FA2C2* L_5;
 		L_5 = Object_FindAnyObjectByType_TisARTrackableManager_5_t781ED5020888538CF6FC3405034BBF27F05FA2C2_m02D4B613C06B73C5BB84DE93709D1B38CCEA8593(il2cpp_rgctx_method(method->klass->rgctx_data, 16));
@@ -14598,7 +14598,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E7
 
 IL_0021:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:97>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:97>
 		ARTrackableManager_5_t781ED5020888538CF6FC3405034BBF27F05FA2C2* L_6 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_7;
@@ -14609,8 +14609,8 @@ IL_0021:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:98>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:99>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:98>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:99>
 		NullCheck((GraphElement_1_t3220EDD6251B31FC22A192EC12682C1D8B28F16D*)__this);
 		FlowGraph_tF9E42FECF535CD5BAB10F75672B5BCE285627A45* L_8;
 		L_8 = GraphElement_1_get_graph_m854D04434240C328A8D726D991A89A7CDAA9116B_inline((GraphElement_1_t3220EDD6251B31FC22A192EC12682C1D8B28F16D*)__this, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&GraphElement_1_get_graph_m854D04434240C328A8D726D991A89A7CDAA9116B_RuntimeMethod_var)));
@@ -14630,7 +14630,7 @@ IL_0021:
 
 IL_004f:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:101>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:101>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_14;
 		L_14 = GetTrackablesUnit_6_get_managerIn_mB90B9B8D5DFBF1185C730DDA420E12685671716B_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
 		NullCheck((UnitPort_3_t3BDB6AF6AAF9927A0C940F08CFD19E645813CFB0*)L_14);
@@ -14650,7 +14650,7 @@ IL_004f:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:103>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:103>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_17;
 		L_17 = GetTrackablesUnit_6_get_managerIn_mB90B9B8D5DFBF1185C730DDA420E12685671716B_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
 		NullCheck((UnitPort_3_t3BDB6AF6AAF9927A0C940F08CFD19E645813CFB0*)L_17);
@@ -14662,7 +14662,7 @@ IL_004f:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:104>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:104>
 		StringBuilder_t* L_19 = __this->___m_LogBuilder;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_20 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_21 = L_20;
@@ -14702,7 +14702,7 @@ IL_004f:
 
 IL_00c3:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:106>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:106>
 		StringBuilder_t* L_32 = __this->___m_LogBuilder;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_33 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_34 = L_33;
@@ -14741,20 +14741,20 @@ IL_00c3:
 
 IL_010e:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:108>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:109>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:108>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:109>
 		StringBuilder_t* L_45 = __this->___m_LogBuilder;
 		NullCheck(L_45);
 		StringBuilder_t* L_46;
 		L_46 = StringBuilder_Append_m08904D74E0C78E5F36DCD9C9303BDD07886D9F7D(L_45, _stringLiteral82E984AB94E4E3FF2391F79D9BAAB2F58B03179E, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:111>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:111>
 		StringBuilder_t* L_47 = __this->___m_LogBuilder;
 		NullCheck((RuntimeObject*)L_47);
 		String_t* L_48;
 		L_48 = VirtualFuncInvoker0< String_t* >::Invoke(3, (RuntimeObject*)L_47);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9((RuntimeObject*)L_48, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:112>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:112>
 		StringBuilder_t* L_49 = __this->___m_LogBuilder;
 		NullCheck(L_49);
 		StringBuilder_t* L_50;
@@ -14763,7 +14763,7 @@ IL_010e:
 
 IL_013b:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:115>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:115>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_51 = ___0_flow;
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_52;
 		L_52 = GetTrackablesUnit_6_get_trackablesIn_m76CC6C7BCD4AAEA181B6DA77533EE80859B6D5A8_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
@@ -14778,11 +14778,11 @@ IL_013b:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:117>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:117>
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_55 = (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 19));
 		List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690(L_55, il2cpp_rgctx_method(method->klass->rgctx_data, 20));
 		V_1 = L_55;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:119>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:119>
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 18));
 		bool L_56 = ((GetTrackablesUnit_6_t5CCB2F47ECD9360ADBCC2038E60046BB7E753997_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 18)))->___s_IsFirstFrame;
 		if (!L_56)
@@ -14791,7 +14791,7 @@ IL_013b:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:121>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:121>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_57;
 		L_57 = GetTrackablesUnit_6_get_trackablesIn_m76CC6C7BCD4AAEA181B6DA77533EE80859B6D5A8_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
 		NullCheck((UnitPort_3_t3BDB6AF6AAF9927A0C940F08CFD19E645813CFB0*)L_57);
@@ -14803,7 +14803,7 @@ IL_013b:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:122>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:122>
 		StringBuilder_t* L_59 = __this->___m_LogBuilder;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_60 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_61 = L_60;
@@ -14843,7 +14843,7 @@ IL_013b:
 
 IL_01bd:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:124>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:124>
 		StringBuilder_t* L_72 = __this->___m_LogBuilder;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_73 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_74 = L_73;
@@ -14882,8 +14882,8 @@ IL_01bd:
 
 IL_0208:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:126>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:127>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:126>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:127>
 		StringBuilder_t* L_85 = __this->___m_LogBuilder;
 		NullCheck(L_85);
 		StringBuilder_t* L_86;
@@ -14892,14 +14892,14 @@ IL_0208:
 
 IL_0219:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:130>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:130>
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 18));
 		((GetTrackablesUnit_6_t5CCB2F47ECD9360ADBCC2038E60046BB7E753997_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 18)))->___s_IsFirstFrame = (bool)0;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:132>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:132>
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_87 = V_1;
 		NullCheck(L_87);
 		List_1_Clear_m16C1F2C61FED5955F10EB36BC1CB2DF34B128994_inline(L_87, il2cpp_rgctx_method(method->klass->rgctx_data, 21));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
 		ARTrackableManager_5_t781ED5020888538CF6FC3405034BBF27F05FA2C2* L_88 = V_0;
 		NullCheck(L_88);
 		TrackableCollection_1_tFCC29DC30D1D7BF9DF5F84F8DF60BD67C7832EDB L_89;
@@ -14913,11 +14913,11 @@ IL_0219:
 
 IL_0236:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
 		RuntimeObject* L_91;
 		L_91 = Enumerator_get_Current_m0C78B1A685CCC36524577967CE1620CB889FDC0A((&V_2), il2cpp_rgctx_method(method->klass->rgctx_data, 27));
 		V_4 = L_91;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:135>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:135>
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_92 = V_1;
 		RuntimeObject* L_93 = V_4;
 		NullCheck(L_92);
@@ -14926,7 +14926,7 @@ IL_0236:
 
 IL_0247:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
 		bool L_94;
 		L_94 = Enumerator_MoveNext_m2DFDA23C7884D9A93FF21291F1DF5DDA2C0DA27C((&V_2), il2cpp_rgctx_method(method->klass->rgctx_data, 31));
 		if (L_94)
@@ -14935,20 +14935,20 @@ IL_0247:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:138>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:138>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_95 = ___0_flow;
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_96;
 		L_96 = GetTrackablesUnit_6_get_trackablesOut_mF7757418BB7F47D19A5C5998A32C49835DD71B87_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 14));
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_97 = V_1;
 		NullCheck(L_95);
 		Flow_SetValue_m635BAF02F51D7C027C4F85157B80E2AB2DFB48A7(L_95, (RuntimeObject*)L_96, (RuntimeObject*)L_97, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:139>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:139>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_98;
 		L_98 = GetTrackablesUnit_6_get_flowOut_m346EA82E879A5E36C8177DF73BEAD0787FA597DA_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
 		return L_98;
 	}
 }
-// Method Definition Index: 56117
+// Method Definition Index: 56115
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6__ctor_m245C91BBB8F29976768E72A2DBD98FA1227FB902_gshared (GetTrackablesUnit_6_t5CCB2F47ECD9360ADBCC2038E60046BB7E753997* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14958,7 +14958,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6__ctor_m245C91BBB8F29
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:42>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:42>
 		StringBuilder_t* L_0 = (StringBuilder_t*)il2cpp_codegen_object_new(StringBuilder_t_il2cpp_TypeInfo_var);
 		StringBuilder__ctor_m1D99713357DE05DAFA296633639DB55F8C30587D(L_0, NULL);
 		__this->___m_LogBuilder = L_0;
@@ -14967,11 +14967,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6__ctor_m245C91BBB8F29
 		return;
 	}
 }
-// Method Definition Index: 56118
+// Method Definition Index: 56116
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6__cctor_m6422B271A0DDDB8C889E0D699C915A4CDC5C28C7_gshared (const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:40>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:40>
 		((GetTrackablesUnit_6_t5CCB2F47ECD9360ADBCC2038E60046BB7E753997_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 18)))->___s_IsFirstFrame = (bool)1;
 		return;
 	}
@@ -14984,107 +14984,107 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6__cctor_m6422B271A0DD
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 56105
+// Method Definition Index: 56103
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* GetTrackablesUnit_6_get_flowIn_m23612110CFA3BB689E205548C21FFEB76772A625_gshared (GetTrackablesUnit_6_tEE2BC0E2559CB40B4104C870DF982285700AAA7E* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_0 = __this->___U3CflowInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56106
+// Method Definition Index: 56104
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_flowIn_m758EB75C8034B05A6FD9AD957307562F35B33372_gshared (GetTrackablesUnit_6_tEE2BC0E2559CB40B4104C870DF982285700AAA7E* __this, ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_0 = ___0_value;
 		__this->___U3CflowInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CflowInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56107
+// Method Definition Index: 56105
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* GetTrackablesUnit_6_get_flowOut_mA33B202912A7BACF97A4A01BCD146E81B4897D76_gshared (GetTrackablesUnit_6_tEE2BC0E2559CB40B4104C870DF982285700AAA7E* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = __this->___U3CflowOutU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56108
+// Method Definition Index: 56106
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_flowOut_mB2AF80C0998269C9FA408E9844535FEA8BC69295_gshared (GetTrackablesUnit_6_tEE2BC0E2559CB40B4104C870DF982285700AAA7E* __this, ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = ___0_value;
 		__this->___U3CflowOutU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CflowOutU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56109
+// Method Definition Index: 56107
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* GetTrackablesUnit_6_get_managerIn_mB9D376B8091ED8DBB23E0B7B686E3B770E83E6CC_gshared (GetTrackablesUnit_6_tEE2BC0E2559CB40B4104C870DF982285700AAA7E* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = __this->___U3CmanagerInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56110
+// Method Definition Index: 56108
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_managerIn_m58C9B6B11A663A134E9EAA38325D85CAC22F6FB1_gshared (GetTrackablesUnit_6_tEE2BC0E2559CB40B4104C870DF982285700AAA7E* __this, ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = ___0_value;
 		__this->___U3CmanagerInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CmanagerInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56111
+// Method Definition Index: 56109
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* GetTrackablesUnit_6_get_trackablesIn_m7176A85216A816479F293A123596F42B68B31A6C_gshared (GetTrackablesUnit_6_tEE2BC0E2559CB40B4104C870DF982285700AAA7E* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = __this->___U3CtrackablesInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56112
+// Method Definition Index: 56110
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_trackablesIn_m2388425D6E1B12E2AD5526DE4FCB919C499A1A56_gshared (GetTrackablesUnit_6_tEE2BC0E2559CB40B4104C870DF982285700AAA7E* __this, ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = ___0_value;
 		__this->___U3CtrackablesInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtrackablesInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56113
+// Method Definition Index: 56111
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* GetTrackablesUnit_6_get_trackablesOut_mB4DB31F725DAF04432099F963D52D2891C174B3B_gshared (GetTrackablesUnit_6_tEE2BC0E2559CB40B4104C870DF982285700AAA7E* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = __this->___U3CtrackablesOutU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56114
+// Method Definition Index: 56112
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_trackablesOut_mB98E80D0950B993C4BBAD70844B966BDC1FD2D37_gshared (GetTrackablesUnit_6_tEE2BC0E2559CB40B4104C870DF982285700AAA7E* __this, ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = ___0_value;
 		__this->___U3CtrackablesOutU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtrackablesOutU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56115
+// Method Definition Index: 56113
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_Definition_m97FDEB466300BF6FE1175A7C22AEED036A3923FC_gshared (GetTrackablesUnit_6_tEE2BC0E2559CB40B4104C870DF982285700AAA7E* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15099,66 +15099,66 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_Definition_m97FDEB46
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:78>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:78>
 		Func_2_tE299C631F0CB2E8E61444D749D446C27349C90B8* L_0 = (Func_2_tE299C631F0CB2E8E61444D749D446C27349C90B8*)il2cpp_codegen_object_new(Func_2_tE299C631F0CB2E8E61444D749D446C27349C90B8_il2cpp_TypeInfo_var);
 		Func_2__ctor_m36A365D852CA6BD70A68A3A26FF683FB3369DDF4(L_0, (RuntimeObject*)__this, (intptr_t)((void*)il2cpp_rgctx_method(method->klass->rgctx_data, 1)), NULL);
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_1;
 		L_1 = Unit_ControlInput_mF730DABA4FE60423D39B8EADE5DA72F51E6166A5((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, _stringLiteral8A8FE283442D993E502B69A3252F69EFFAE40786, L_0, NULL);
 		GetTrackablesUnit_6_set_flowIn_m758EB75C8034B05A6FD9AD957307562F35B33372_inline(__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 2));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:79>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:79>
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_2;
 		L_2 = Unit_ControlOutput_mCD76724DFB6AAE10C099E9984A39A5E0FC2824FE((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, _stringLiteralB2A5EAD5177EC36640CF7F1A9B069A6C8151F818, NULL);
 		GetTrackablesUnit_6_set_flowOut_mB2AF80C0998269C9FA408E9844535FEA8BC69295_inline(__this, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 3));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:80>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:80>
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_3;
 		L_3 = Unit_ValueInput_TisRuntimeObject_m122343074F8193EFCD173C88278671A117E7DF71((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, _stringLiteralBC164227AFDA156ECBA6FB703F556B9031872E75, il2cpp_rgctx_method(method->klass->rgctx_data, 4));
 		GetTrackablesUnit_6_set_managerIn_m58C9B6B11A663A134E9EAA38325D85CAC22F6FB1_inline(__this, L_3, il2cpp_rgctx_method(method->klass->rgctx_data, 5));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:81>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:81>
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_4;
 		L_4 = Unit_ValueInput_TisList_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D_m6ACA4847F4A6B7F1BE04C85E4620523C7CC95D0D((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, _stringLiteral3C72CD06402C9318AD966E59D6028E2828D7A030, il2cpp_rgctx_method(method->klass->rgctx_data, 6));
 		GetTrackablesUnit_6_set_trackablesIn_m2388425D6E1B12E2AD5526DE4FCB919C499A1A56_inline(__this, L_4, il2cpp_rgctx_method(method->klass->rgctx_data, 7));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:82>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:82>
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_5;
 		L_5 = Unit_ValueOutput_TisList_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D_m0B1CFA3FB04858C9D26BCFFD15291925A42EB224((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, _stringLiteral8E2BFA941EB89B5F2206FB52D76B3EB7E41CD6BC, il2cpp_rgctx_method(method->klass->rgctx_data, 8));
 		GetTrackablesUnit_6_set_trackablesOut_mB98E80D0950B993C4BBAD70844B966BDC1FD2D37_inline(__this, L_5, il2cpp_rgctx_method(method->klass->rgctx_data, 9));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:84>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:84>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_6;
 		L_6 = GetTrackablesUnit_6_get_managerIn_mB9D376B8091ED8DBB23E0B7B686E3B770E83E6CC_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_7;
 		L_7 = GetTrackablesUnit_6_get_flowIn_m23612110CFA3BB689E205548C21FFEB76772A625_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		Unit_Requirement_m9F929AD842C0E254FA9AD48E9200C63B43BFE64A((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, L_6, L_7, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:85>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:85>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_8;
 		L_8 = GetTrackablesUnit_6_get_trackablesIn_m7176A85216A816479F293A123596F42B68B31A6C_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_9;
 		L_9 = GetTrackablesUnit_6_get_flowIn_m23612110CFA3BB689E205548C21FFEB76772A625_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		Unit_Requirement_m9F929AD842C0E254FA9AD48E9200C63B43BFE64A((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, L_8, L_9, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:86>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:86>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_10;
 		L_10 = GetTrackablesUnit_6_get_flowIn_m23612110CFA3BB689E205548C21FFEB76772A625_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_11;
 		L_11 = GetTrackablesUnit_6_get_flowOut_mA33B202912A7BACF97A4A01BCD146E81B4897D76_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		Unit_Succession_m202BB700D861D65B85102AD7B3119AD1B2FF2158((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, L_10, L_11, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:87>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:87>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_12;
 		L_12 = GetTrackablesUnit_6_get_flowIn_m23612110CFA3BB689E205548C21FFEB76772A625_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_13;
 		L_13 = GetTrackablesUnit_6_get_trackablesOut_mB4DB31F725DAF04432099F963D52D2891C174B3B_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 14));
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		Unit_Assignment_mE5DC2E131C1BA666F655E321312165D7B4BB74C7((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, L_12, L_13, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:88>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:88>
 		return;
 	}
 }
-// Method Definition Index: 56116
+// Method Definition Index: 56114
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* GetTrackablesUnit_6_ProcessFlow_m10649DB8FCFDBE4EF1DA10FC1E3962E8C56655EF_gshared (GetTrackablesUnit_6_tEE2BC0E2559CB40B4104C870DF982285700AAA7E* __this, Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* ___0_flow, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15186,7 +15186,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E7
 	memset((&V_3), 0, sizeof(V_3));
 	RuntimeObject* V_4 = NULL;
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:92>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:92>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_0 = ___0_flow;
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_1;
 		L_1 = GetTrackablesUnit_6_get_managerIn_mB9D376B8091ED8DBB23E0B7B686E3B770E83E6CC_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
@@ -15194,7 +15194,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E7
 		RuntimeObject* L_2;
 		L_2 = Flow_GetValue_m4396BFB8BF013A1CF992A4E36D47E864D4180718(L_0, L_1, NULL);
 		V_0 = ((ARTrackableManager_5_tED5068383CE6A1188850AE038754D6CF77999A53*)IsInstClass((RuntimeObject*)L_2, il2cpp_rgctx_data(method->klass->rgctx_data, 15)));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:93>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:93>
 		ARTrackableManager_5_tED5068383CE6A1188850AE038754D6CF77999A53* L_3 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_4;
@@ -15205,7 +15205,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E7
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:95>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:95>
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		ARTrackableManager_5_tED5068383CE6A1188850AE038754D6CF77999A53* L_5;
 		L_5 = Object_FindAnyObjectByType_TisARTrackableManager_5_tED5068383CE6A1188850AE038754D6CF77999A53_m6FB414E343D07DB869A8217C8F5D411703FEFE09(il2cpp_rgctx_method(method->klass->rgctx_data, 16));
@@ -15214,7 +15214,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E7
 
 IL_0021:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:97>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:97>
 		ARTrackableManager_5_tED5068383CE6A1188850AE038754D6CF77999A53* L_6 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_7;
@@ -15225,8 +15225,8 @@ IL_0021:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:98>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:99>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:98>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:99>
 		NullCheck((GraphElement_1_t3220EDD6251B31FC22A192EC12682C1D8B28F16D*)__this);
 		FlowGraph_tF9E42FECF535CD5BAB10F75672B5BCE285627A45* L_8;
 		L_8 = GraphElement_1_get_graph_m854D04434240C328A8D726D991A89A7CDAA9116B_inline((GraphElement_1_t3220EDD6251B31FC22A192EC12682C1D8B28F16D*)__this, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&GraphElement_1_get_graph_m854D04434240C328A8D726D991A89A7CDAA9116B_RuntimeMethod_var)));
@@ -15246,7 +15246,7 @@ IL_0021:
 
 IL_004f:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:101>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:101>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_14;
 		L_14 = GetTrackablesUnit_6_get_managerIn_mB9D376B8091ED8DBB23E0B7B686E3B770E83E6CC_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
 		NullCheck((UnitPort_3_t3BDB6AF6AAF9927A0C940F08CFD19E645813CFB0*)L_14);
@@ -15266,7 +15266,7 @@ IL_004f:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:103>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:103>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_17;
 		L_17 = GetTrackablesUnit_6_get_managerIn_mB9D376B8091ED8DBB23E0B7B686E3B770E83E6CC_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
 		NullCheck((UnitPort_3_t3BDB6AF6AAF9927A0C940F08CFD19E645813CFB0*)L_17);
@@ -15278,7 +15278,7 @@ IL_004f:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:104>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:104>
 		StringBuilder_t* L_19 = __this->___m_LogBuilder;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_20 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_21 = L_20;
@@ -15318,7 +15318,7 @@ IL_004f:
 
 IL_00c3:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:106>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:106>
 		StringBuilder_t* L_32 = __this->___m_LogBuilder;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_33 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_34 = L_33;
@@ -15357,20 +15357,20 @@ IL_00c3:
 
 IL_010e:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:108>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:109>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:108>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:109>
 		StringBuilder_t* L_45 = __this->___m_LogBuilder;
 		NullCheck(L_45);
 		StringBuilder_t* L_46;
 		L_46 = StringBuilder_Append_m08904D74E0C78E5F36DCD9C9303BDD07886D9F7D(L_45, _stringLiteral82E984AB94E4E3FF2391F79D9BAAB2F58B03179E, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:111>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:111>
 		StringBuilder_t* L_47 = __this->___m_LogBuilder;
 		NullCheck((RuntimeObject*)L_47);
 		String_t* L_48;
 		L_48 = VirtualFuncInvoker0< String_t* >::Invoke(3, (RuntimeObject*)L_47);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9((RuntimeObject*)L_48, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:112>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:112>
 		StringBuilder_t* L_49 = __this->___m_LogBuilder;
 		NullCheck(L_49);
 		StringBuilder_t* L_50;
@@ -15379,7 +15379,7 @@ IL_010e:
 
 IL_013b:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:115>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:115>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_51 = ___0_flow;
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_52;
 		L_52 = GetTrackablesUnit_6_get_trackablesIn_m7176A85216A816479F293A123596F42B68B31A6C_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
@@ -15394,11 +15394,11 @@ IL_013b:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:117>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:117>
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_55 = (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 19));
 		List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690(L_55, il2cpp_rgctx_method(method->klass->rgctx_data, 20));
 		V_1 = L_55;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:119>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:119>
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 18));
 		bool L_56 = ((GetTrackablesUnit_6_tEE2BC0E2559CB40B4104C870DF982285700AAA7E_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 18)))->___s_IsFirstFrame;
 		if (!L_56)
@@ -15407,7 +15407,7 @@ IL_013b:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:121>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:121>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_57;
 		L_57 = GetTrackablesUnit_6_get_trackablesIn_m7176A85216A816479F293A123596F42B68B31A6C_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
 		NullCheck((UnitPort_3_t3BDB6AF6AAF9927A0C940F08CFD19E645813CFB0*)L_57);
@@ -15419,7 +15419,7 @@ IL_013b:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:122>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:122>
 		StringBuilder_t* L_59 = __this->___m_LogBuilder;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_60 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_61 = L_60;
@@ -15459,7 +15459,7 @@ IL_013b:
 
 IL_01bd:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:124>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:124>
 		StringBuilder_t* L_72 = __this->___m_LogBuilder;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_73 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_74 = L_73;
@@ -15498,8 +15498,8 @@ IL_01bd:
 
 IL_0208:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:126>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:127>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:126>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:127>
 		StringBuilder_t* L_85 = __this->___m_LogBuilder;
 		NullCheck(L_85);
 		StringBuilder_t* L_86;
@@ -15508,14 +15508,14 @@ IL_0208:
 
 IL_0219:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:130>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:130>
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 18));
 		((GetTrackablesUnit_6_tEE2BC0E2559CB40B4104C870DF982285700AAA7E_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 18)))->___s_IsFirstFrame = (bool)0;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:132>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:132>
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_87 = V_1;
 		NullCheck(L_87);
 		List_1_Clear_m16C1F2C61FED5955F10EB36BC1CB2DF34B128994_inline(L_87, il2cpp_rgctx_method(method->klass->rgctx_data, 21));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
 		ARTrackableManager_5_tED5068383CE6A1188850AE038754D6CF77999A53* L_88 = V_0;
 		NullCheck(L_88);
 		TrackableCollection_1_tFCC29DC30D1D7BF9DF5F84F8DF60BD67C7832EDB L_89;
@@ -15529,11 +15529,11 @@ IL_0219:
 
 IL_0236:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
 		RuntimeObject* L_91;
 		L_91 = Enumerator_get_Current_m0C78B1A685CCC36524577967CE1620CB889FDC0A((&V_2), il2cpp_rgctx_method(method->klass->rgctx_data, 27));
 		V_4 = L_91;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:135>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:135>
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_92 = V_1;
 		RuntimeObject* L_93 = V_4;
 		NullCheck(L_92);
@@ -15542,7 +15542,7 @@ IL_0236:
 
 IL_0247:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
 		bool L_94;
 		L_94 = Enumerator_MoveNext_m2DFDA23C7884D9A93FF21291F1DF5DDA2C0DA27C((&V_2), il2cpp_rgctx_method(method->klass->rgctx_data, 31));
 		if (L_94)
@@ -15551,20 +15551,20 @@ IL_0247:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:138>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:138>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_95 = ___0_flow;
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_96;
 		L_96 = GetTrackablesUnit_6_get_trackablesOut_mB4DB31F725DAF04432099F963D52D2891C174B3B_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 14));
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_97 = V_1;
 		NullCheck(L_95);
 		Flow_SetValue_m635BAF02F51D7C027C4F85157B80E2AB2DFB48A7(L_95, (RuntimeObject*)L_96, (RuntimeObject*)L_97, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:139>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:139>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_98;
 		L_98 = GetTrackablesUnit_6_get_flowOut_mA33B202912A7BACF97A4A01BCD146E81B4897D76_inline(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
 		return L_98;
 	}
 }
-// Method Definition Index: 56117
+// Method Definition Index: 56115
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6__ctor_mC2A77B203229D56DD6BFEEAE238E1F727E36CA54_gshared (GetTrackablesUnit_6_tEE2BC0E2559CB40B4104C870DF982285700AAA7E* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15574,7 +15574,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6__ctor_mC2A77B203229D
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:42>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:42>
 		StringBuilder_t* L_0 = (StringBuilder_t*)il2cpp_codegen_object_new(StringBuilder_t_il2cpp_TypeInfo_var);
 		StringBuilder__ctor_m1D99713357DE05DAFA296633639DB55F8C30587D(L_0, NULL);
 		__this->___m_LogBuilder = L_0;
@@ -15583,11 +15583,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6__ctor_mC2A77B203229D
 		return;
 	}
 }
-// Method Definition Index: 56118
+// Method Definition Index: 56116
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6__cctor_m5AE910978B19879939E1DD437C1F1FBE70543619_gshared (const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:40>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:40>
 		((GetTrackablesUnit_6_tEE2BC0E2559CB40B4104C870DF982285700AAA7E_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 18)))->___s_IsFirstFrame = (bool)1;
 		return;
 	}
@@ -15600,107 +15600,107 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6__cctor_m5AE910978B19
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 56105
+// Method Definition Index: 56103
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* GetTrackablesUnit_6_get_flowIn_mF55E42A148C2682A1AEC0AFE547F08F8BDB55193_gshared (GetTrackablesUnit_6_tCB9B84B4AB044A502C14FDEF6973012930B331D1* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_0 = __this->___U3CflowInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56106
+// Method Definition Index: 56104
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_flowIn_m46B60AD9FED73C03115EC31D883FC2F5658B4729_gshared (GetTrackablesUnit_6_tCB9B84B4AB044A502C14FDEF6973012930B331D1* __this, ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_0 = ___0_value;
 		__this->___U3CflowInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CflowInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56107
+// Method Definition Index: 56105
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* GetTrackablesUnit_6_get_flowOut_m7CA05D3788DC34BD8F22C34B670C6F13B4ADC2A5_gshared (GetTrackablesUnit_6_tCB9B84B4AB044A502C14FDEF6973012930B331D1* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = __this->___U3CflowOutU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56108
+// Method Definition Index: 56106
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_flowOut_m0FE2BC1EDC3A9BF58A3E650638C49A6BF01B8109_gshared (GetTrackablesUnit_6_tCB9B84B4AB044A502C14FDEF6973012930B331D1* __this, ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = ___0_value;
 		__this->___U3CflowOutU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CflowOutU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56109
+// Method Definition Index: 56107
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* GetTrackablesUnit_6_get_managerIn_m41F30D626DE5A861B82103EE1BEBCB63B38F2B4F_gshared (GetTrackablesUnit_6_tCB9B84B4AB044A502C14FDEF6973012930B331D1* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = __this->___U3CmanagerInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56110
+// Method Definition Index: 56108
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_managerIn_m3B94C495BCAFF79BEE471859235051BECE5AF381_gshared (GetTrackablesUnit_6_tCB9B84B4AB044A502C14FDEF6973012930B331D1* __this, ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = ___0_value;
 		__this->___U3CmanagerInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CmanagerInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56111
+// Method Definition Index: 56109
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* GetTrackablesUnit_6_get_trackablesIn_mDD86BF5F185EFB3DA0B3A37A4115DC88D85621A9_gshared (GetTrackablesUnit_6_tCB9B84B4AB044A502C14FDEF6973012930B331D1* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = __this->___U3CtrackablesInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56112
+// Method Definition Index: 56110
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_trackablesIn_mAAA55880D414ECA3165CA75D7257FA6A821E8876_gshared (GetTrackablesUnit_6_tCB9B84B4AB044A502C14FDEF6973012930B331D1* __this, ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = ___0_value;
 		__this->___U3CtrackablesInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtrackablesInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56113
+// Method Definition Index: 56111
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* GetTrackablesUnit_6_get_trackablesOut_m9896A9AAAEA4E196C22849357C5236A66B2F30AF_gshared (GetTrackablesUnit_6_tCB9B84B4AB044A502C14FDEF6973012930B331D1* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = __this->___U3CtrackablesOutU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56114
+// Method Definition Index: 56112
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_trackablesOut_m27A72CB776F69CF720A1F91AE894326FB8901EA2_gshared (GetTrackablesUnit_6_tCB9B84B4AB044A502C14FDEF6973012930B331D1* __this, ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = ___0_value;
 		__this->___U3CtrackablesOutU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtrackablesOutU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56115
+// Method Definition Index: 56113
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_Definition_m072AD4FC4774CD583200117A1B75F49174BAA5F8_gshared (GetTrackablesUnit_6_tCB9B84B4AB044A502C14FDEF6973012930B331D1* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15715,66 +15715,66 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_Definition_m072AD4FC
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:78>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:78>
 		Func_2_tE299C631F0CB2E8E61444D749D446C27349C90B8* L_0 = (Func_2_tE299C631F0CB2E8E61444D749D446C27349C90B8*)il2cpp_codegen_object_new(Func_2_tE299C631F0CB2E8E61444D749D446C27349C90B8_il2cpp_TypeInfo_var);
 		Func_2__ctor_m36A365D852CA6BD70A68A3A26FF683FB3369DDF4(L_0, (RuntimeObject*)__this, (intptr_t)((void*)il2cpp_rgctx_method(method->klass->rgctx_data, 1)), NULL);
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_1;
 		L_1 = Unit_ControlInput_mF730DABA4FE60423D39B8EADE5DA72F51E6166A5((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, _stringLiteral8A8FE283442D993E502B69A3252F69EFFAE40786, L_0, NULL);
 		((  void (*) (GetTrackablesUnit_6_tCB9B84B4AB044A502C14FDEF6973012930B331D1*, ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE*, const RuntimeMethod*))il2cpp_codegen_get_direct_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 2)))(__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 2));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:79>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:79>
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_2;
 		L_2 = Unit_ControlOutput_mCD76724DFB6AAE10C099E9984A39A5E0FC2824FE((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, _stringLiteralB2A5EAD5177EC36640CF7F1A9B069A6C8151F818, NULL);
 		((  void (*) (GetTrackablesUnit_6_tCB9B84B4AB044A502C14FDEF6973012930B331D1*, ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9*, const RuntimeMethod*))il2cpp_codegen_get_direct_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 3)))(__this, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 3));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:80>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:80>
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_3;
 		L_3 = Unit_ValueInput_TisRuntimeObject_m122343074F8193EFCD173C88278671A117E7DF71((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, _stringLiteralBC164227AFDA156ECBA6FB703F556B9031872E75, il2cpp_rgctx_method(method->klass->rgctx_data, 4));
 		((  void (*) (GetTrackablesUnit_6_tCB9B84B4AB044A502C14FDEF6973012930B331D1*, ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392*, const RuntimeMethod*))il2cpp_codegen_get_direct_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 5)))(__this, L_3, il2cpp_rgctx_method(method->klass->rgctx_data, 5));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:81>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:81>
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_4;
 		L_4 = Unit_ValueInput_TisList_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D_m6ACA4847F4A6B7F1BE04C85E4620523C7CC95D0D((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, _stringLiteral3C72CD06402C9318AD966E59D6028E2828D7A030, il2cpp_rgctx_method(method->klass->rgctx_data, 6));
 		((  void (*) (GetTrackablesUnit_6_tCB9B84B4AB044A502C14FDEF6973012930B331D1*, ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392*, const RuntimeMethod*))il2cpp_codegen_get_direct_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 7)))(__this, L_4, il2cpp_rgctx_method(method->klass->rgctx_data, 7));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:82>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:82>
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_5;
 		L_5 = Unit_ValueOutput_TisList_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D_m0B1CFA3FB04858C9D26BCFFD15291925A42EB224((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, _stringLiteral8E2BFA941EB89B5F2206FB52D76B3EB7E41CD6BC, il2cpp_rgctx_method(method->klass->rgctx_data, 8));
 		((  void (*) (GetTrackablesUnit_6_tCB9B84B4AB044A502C14FDEF6973012930B331D1*, ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B*, const RuntimeMethod*))il2cpp_codegen_get_direct_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 9)))(__this, L_5, il2cpp_rgctx_method(method->klass->rgctx_data, 9));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:84>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:84>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_6;
 		L_6 = ((  ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* (*) (GetTrackablesUnit_6_tCB9B84B4AB044A502C14FDEF6973012930B331D1*, const RuntimeMethod*))il2cpp_codegen_get_direct_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_7;
 		L_7 = ((  ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* (*) (GetTrackablesUnit_6_tCB9B84B4AB044A502C14FDEF6973012930B331D1*, const RuntimeMethod*))il2cpp_codegen_get_direct_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 11)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		Unit_Requirement_m9F929AD842C0E254FA9AD48E9200C63B43BFE64A((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, L_6, L_7, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:85>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:85>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_8;
 		L_8 = ((  ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* (*) (GetTrackablesUnit_6_tCB9B84B4AB044A502C14FDEF6973012930B331D1*, const RuntimeMethod*))il2cpp_codegen_get_direct_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 12)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_9;
 		L_9 = ((  ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* (*) (GetTrackablesUnit_6_tCB9B84B4AB044A502C14FDEF6973012930B331D1*, const RuntimeMethod*))il2cpp_codegen_get_direct_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 11)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		Unit_Requirement_m9F929AD842C0E254FA9AD48E9200C63B43BFE64A((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, L_8, L_9, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:86>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:86>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_10;
 		L_10 = ((  ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* (*) (GetTrackablesUnit_6_tCB9B84B4AB044A502C14FDEF6973012930B331D1*, const RuntimeMethod*))il2cpp_codegen_get_direct_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 11)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_11;
 		L_11 = ((  ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* (*) (GetTrackablesUnit_6_tCB9B84B4AB044A502C14FDEF6973012930B331D1*, const RuntimeMethod*))il2cpp_codegen_get_direct_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 13)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		Unit_Succession_m202BB700D861D65B85102AD7B3119AD1B2FF2158((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, L_10, L_11, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:87>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:87>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_12;
 		L_12 = ((  ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* (*) (GetTrackablesUnit_6_tCB9B84B4AB044A502C14FDEF6973012930B331D1*, const RuntimeMethod*))il2cpp_codegen_get_direct_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 11)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_13;
 		L_13 = ((  ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* (*) (GetTrackablesUnit_6_tCB9B84B4AB044A502C14FDEF6973012930B331D1*, const RuntimeMethod*))il2cpp_codegen_get_direct_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 14)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 14));
 		NullCheck((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this);
 		Unit_Assignment_mE5DC2E131C1BA666F655E321312165D7B4BB74C7((Unit_tEFDDF0DAD2C72D6F68E357D3530E23599F7D8191*)__this, L_12, L_13, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:88>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:88>
 		return;
 	}
 }
-// Method Definition Index: 56116
+// Method Definition Index: 56114
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* GetTrackablesUnit_6_ProcessFlow_m01D5C32B8E98318E5EE615E14A85E0BB4CFEA7A8_gshared (GetTrackablesUnit_6_tCB9B84B4AB044A502C14FDEF6973012930B331D1* __this, Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* ___0_flow, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15802,7 +15802,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E7
 	memset((&V_3), 0, sizeof(V_3));
 	RuntimeObject* V_4 = NULL;
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:92>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:92>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_0 = ___0_flow;
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_1;
 		L_1 = ((  ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* (*) (GetTrackablesUnit_6_tCB9B84B4AB044A502C14FDEF6973012930B331D1*, const RuntimeMethod*))il2cpp_codegen_get_direct_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
@@ -15810,7 +15810,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E7
 		RuntimeObject* L_2;
 		L_2 = Flow_GetValue_m4396BFB8BF013A1CF992A4E36D47E864D4180718(L_0, L_1, NULL);
 		V_0 = ((ARTrackableManager_5_tEEB836952A51A753335D44BC6281D4B15EB5A11F*)IsInstClass((RuntimeObject*)L_2, il2cpp_rgctx_data(method->klass->rgctx_data, 15)));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:93>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:93>
 		ARTrackableManager_5_tEEB836952A51A753335D44BC6281D4B15EB5A11F* L_3 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_4;
@@ -15821,7 +15821,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E7
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:95>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:95>
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		ARTrackableManager_5_tEEB836952A51A753335D44BC6281D4B15EB5A11F* L_5;
 		L_5 = ((  ARTrackableManager_5_tEEB836952A51A753335D44BC6281D4B15EB5A11F* (*) (const RuntimeMethod*))il2cpp_codegen_get_direct_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 16)))(il2cpp_rgctx_method(method->klass->rgctx_data, 16));
@@ -15830,7 +15830,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E7
 
 IL_0021:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:97>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:97>
 		ARTrackableManager_5_tEEB836952A51A753335D44BC6281D4B15EB5A11F* L_6 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_7;
@@ -15841,8 +15841,8 @@ IL_0021:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:98>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:99>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:98>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:99>
 		NullCheck((GraphElement_1_t3220EDD6251B31FC22A192EC12682C1D8B28F16D*)__this);
 		FlowGraph_tF9E42FECF535CD5BAB10F75672B5BCE285627A45* L_8;
 		L_8 = GraphElement_1_get_graph_m854D04434240C328A8D726D991A89A7CDAA9116B_inline((GraphElement_1_t3220EDD6251B31FC22A192EC12682C1D8B28F16D*)__this, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&GraphElement_1_get_graph_m854D04434240C328A8D726D991A89A7CDAA9116B_RuntimeMethod_var)));
@@ -15862,7 +15862,7 @@ IL_0021:
 
 IL_004f:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:101>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:101>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_14;
 		L_14 = ((  ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* (*) (GetTrackablesUnit_6_tCB9B84B4AB044A502C14FDEF6973012930B331D1*, const RuntimeMethod*))il2cpp_codegen_get_direct_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
 		NullCheck((UnitPort_3_t3BDB6AF6AAF9927A0C940F08CFD19E645813CFB0*)L_14);
@@ -15882,7 +15882,7 @@ IL_004f:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:103>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:103>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_17;
 		L_17 = ((  ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* (*) (GetTrackablesUnit_6_tCB9B84B4AB044A502C14FDEF6973012930B331D1*, const RuntimeMethod*))il2cpp_codegen_get_direct_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
 		NullCheck((UnitPort_3_t3BDB6AF6AAF9927A0C940F08CFD19E645813CFB0*)L_17);
@@ -15894,7 +15894,7 @@ IL_004f:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:104>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:104>
 		StringBuilder_t* L_19 = __this->___m_LogBuilder;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_20 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_21 = L_20;
@@ -15934,7 +15934,7 @@ IL_004f:
 
 IL_00c3:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:106>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:106>
 		StringBuilder_t* L_32 = __this->___m_LogBuilder;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_33 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_34 = L_33;
@@ -15973,20 +15973,20 @@ IL_00c3:
 
 IL_010e:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:108>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:109>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:108>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:109>
 		StringBuilder_t* L_45 = __this->___m_LogBuilder;
 		NullCheck(L_45);
 		StringBuilder_t* L_46;
 		L_46 = StringBuilder_Append_m08904D74E0C78E5F36DCD9C9303BDD07886D9F7D(L_45, _stringLiteral82E984AB94E4E3FF2391F79D9BAAB2F58B03179E, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:111>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:111>
 		StringBuilder_t* L_47 = __this->___m_LogBuilder;
 		NullCheck((RuntimeObject*)L_47);
 		String_t* L_48;
 		L_48 = VirtualFuncInvoker0< String_t* >::Invoke(3, (RuntimeObject*)L_47);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9((RuntimeObject*)L_48, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:112>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:112>
 		StringBuilder_t* L_49 = __this->___m_LogBuilder;
 		NullCheck(L_49);
 		StringBuilder_t* L_50;
@@ -15995,7 +15995,7 @@ IL_010e:
 
 IL_013b:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:115>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:115>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_51 = ___0_flow;
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_52;
 		L_52 = ((  ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* (*) (GetTrackablesUnit_6_tCB9B84B4AB044A502C14FDEF6973012930B331D1*, const RuntimeMethod*))il2cpp_codegen_get_direct_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 12)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
@@ -16010,11 +16010,11 @@ IL_013b:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:117>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:117>
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_55 = (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 19));
 		List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690(L_55, il2cpp_rgctx_method(method->klass->rgctx_data, 20));
 		V_1 = L_55;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:119>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:119>
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 18));
 		bool L_56 = ((GetTrackablesUnit_6_tCB9B84B4AB044A502C14FDEF6973012930B331D1_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 18)))->___s_IsFirstFrame;
 		if (!L_56)
@@ -16023,7 +16023,7 @@ IL_013b:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:121>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:121>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_57;
 		L_57 = ((  ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* (*) (GetTrackablesUnit_6_tCB9B84B4AB044A502C14FDEF6973012930B331D1*, const RuntimeMethod*))il2cpp_codegen_get_direct_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 12)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
 		NullCheck((UnitPort_3_t3BDB6AF6AAF9927A0C940F08CFD19E645813CFB0*)L_57);
@@ -16035,7 +16035,7 @@ IL_013b:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:122>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:122>
 		StringBuilder_t* L_59 = __this->___m_LogBuilder;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_60 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_61 = L_60;
@@ -16075,7 +16075,7 @@ IL_013b:
 
 IL_01bd:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:124>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:124>
 		StringBuilder_t* L_72 = __this->___m_LogBuilder;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_73 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_74 = L_73;
@@ -16114,8 +16114,8 @@ IL_01bd:
 
 IL_0208:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:126>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:127>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:126>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:127>
 		StringBuilder_t* L_85 = __this->___m_LogBuilder;
 		NullCheck(L_85);
 		StringBuilder_t* L_86;
@@ -16124,14 +16124,14 @@ IL_0208:
 
 IL_0219:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:130>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:130>
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 18));
 		((GetTrackablesUnit_6_tCB9B84B4AB044A502C14FDEF6973012930B331D1_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 18)))->___s_IsFirstFrame = (bool)0;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:132>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:132>
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_87 = V_1;
 		NullCheck(L_87);
 		List_1_Clear_m16C1F2C61FED5955F10EB36BC1CB2DF34B128994_inline(L_87, il2cpp_rgctx_method(method->klass->rgctx_data, 21));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
 		ARTrackableManager_5_tEEB836952A51A753335D44BC6281D4B15EB5A11F* L_88 = V_0;
 		NullCheck(L_88);
 		TrackableCollection_1_tFCC29DC30D1D7BF9DF5F84F8DF60BD67C7832EDB L_89;
@@ -16145,11 +16145,11 @@ IL_0219:
 
 IL_0236:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
 		RuntimeObject* L_91;
 		L_91 = Enumerator_get_Current_m0C78B1A685CCC36524577967CE1620CB889FDC0A((&V_2), il2cpp_rgctx_method(method->klass->rgctx_data, 27));
 		V_4 = L_91;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:135>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:135>
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_92 = V_1;
 		RuntimeObject* L_93 = V_4;
 		NullCheck(L_92);
@@ -16158,7 +16158,7 @@ IL_0236:
 
 IL_0247:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:133>
 		bool L_94;
 		L_94 = Enumerator_MoveNext_m2DFDA23C7884D9A93FF21291F1DF5DDA2C0DA27C((&V_2), il2cpp_rgctx_method(method->klass->rgctx_data, 31));
 		if (L_94)
@@ -16167,20 +16167,20 @@ IL_0247:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:138>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:138>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_95 = ___0_flow;
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_96;
 		L_96 = ((  ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* (*) (GetTrackablesUnit_6_tCB9B84B4AB044A502C14FDEF6973012930B331D1*, const RuntimeMethod*))il2cpp_codegen_get_direct_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 14)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 14));
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_97 = V_1;
 		NullCheck(L_95);
 		Flow_SetValue_m635BAF02F51D7C027C4F85157B80E2AB2DFB48A7(L_95, (RuntimeObject*)L_96, (RuntimeObject*)L_97, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:139>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:139>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_98;
 		L_98 = ((  ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* (*) (GetTrackablesUnit_6_tCB9B84B4AB044A502C14FDEF6973012930B331D1*, const RuntimeMethod*))il2cpp_codegen_get_direct_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 13)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
 		return L_98;
 	}
 }
-// Method Definition Index: 56117
+// Method Definition Index: 56115
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6__ctor_m47974FBF438CE4607EB6C50A9638CDC64EBF0447_gshared (GetTrackablesUnit_6_tCB9B84B4AB044A502C14FDEF6973012930B331D1* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16190,7 +16190,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6__ctor_m47974FBF438CE
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:42>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:42>
 		StringBuilder_t* L_0 = (StringBuilder_t*)il2cpp_codegen_object_new(StringBuilder_t_il2cpp_TypeInfo_var);
 		StringBuilder__ctor_m1D99713357DE05DAFA296633639DB55F8C30587D(L_0, NULL);
 		__this->___m_LogBuilder = L_0;
@@ -16199,11 +16199,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6__ctor_m47974FBF438CE
 		return;
 	}
 }
-// Method Definition Index: 56118
+// Method Definition Index: 56116
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6__cctor_mA7561E196277FE9CDB4556C7688A637068DDD76C_gshared (const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:40>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:40>
 		((GetTrackablesUnit_6_tCB9B84B4AB044A502C14FDEF6973012930B331D1_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 18)))->___s_IsFirstFrame = (bool)1;
 		return;
 	}
@@ -16216,7 +16216,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackablesUnit_6__cctor_mA7561E196277
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 51504
+// Method Definition Index: 51502
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetValueVisitor_1_Reset_mCF5FB555894899C57583B5D681C72A043F92DB31_gshared (GetValueVisitor_1_t1DB2674072F31A2FC68E2858E779F0958CC80E09* __this, const RuntimeMethod* method) 
 {
 	{
@@ -16229,7 +16229,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetValueVisitor_1_Reset_mCF5FB555894899C
 		return;
 	}
 }
-// Method Definition Index: 51506
+// Method Definition Index: 51504
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetValueVisitor_1__ctor_m292EAFD92455E194EADC732DBFA1710CC39F9FB5_gshared (GetValueVisitor_1_t1DB2674072F31A2FC68E2858E779F0958CC80E09* __this, const RuntimeMethod* method) 
 {
 	{
@@ -16237,7 +16237,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetValueVisitor_1__ctor_m292EAFD92455E19
 		return;
 	}
 }
-// Method Definition Index: 51507
+// Method Definition Index: 51505
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetValueVisitor_1__cctor_m5D78C751F9289CDA410E0497EDDA3853EDC03C69_gshared (const RuntimeMethod* method) 
 {
 	{
@@ -16263,7 +16263,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetValueVisitor_1__cctor_m5D78C751F9289C
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 51504
+// Method Definition Index: 51502
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetValueVisitor_1_Reset_m4CCC2C99F5F34F2A03BCAD09782791A03188855F_gshared (GetValueVisitor_1_tD6256BC21B659DF4D4AAAACF2E22A594DD1F2421* __this, const RuntimeMethod* method) 
 {
 	const uint32_t SizeOf_TSrcValue_t6B32BF02ADA339EFE83D5BC12CD6ACDC74377B90 = il2cpp_codegen_sizeof(il2cpp_rgctx_data_no_init(method->klass->rgctx_data, 1));
@@ -16276,7 +16276,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetValueVisitor_1_Reset_m4CCC2C99F5F34F2
 		return;
 	}
 }
-// Method Definition Index: 51506
+// Method Definition Index: 51504
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetValueVisitor_1__ctor_m26E1A47ED9B2D30AC91FBE5161EDCE97BA93404C_gshared (GetValueVisitor_1_tD6256BC21B659DF4D4AAAACF2E22A594DD1F2421* __this, const RuntimeMethod* method) 
 {
 	{
@@ -16284,7 +16284,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetValueVisitor_1__ctor_m26E1A47ED9B2D30
 		return;
 	}
 }
-// Method Definition Index: 51507
+// Method Definition Index: 51505
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetValueVisitor_1__cctor_m56E7AACC4F5B5B048D016D5902267DF3F93FB091_gshared (const RuntimeMethod* method) 
 {
 	{
@@ -16421,7 +16421,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Getter_2_Invoke_m2B7803CA2CAB952135613AA
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 39103
+// Method Definition Index: 39101
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GlobalEventUnit_1_get_register_mFBE284F26D71291A67A421F2EBA37C482A39F209_gshared (GlobalEventUnit_1_t66E72C84191E1B4F9B08D0CEA8B0AAFAC1EDD681* __this, const RuntimeMethod* method) 
 {
 	{
@@ -16429,7 +16429,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GlobalEventUnit_1_get_register_mFBE284F2
 		return (bool)1;
 	}
 }
-// Method Definition Index: 39104
+// Method Definition Index: 39102
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* GlobalEventUnit_1_get_hookName_m4CC59D30E76706EFFB3BF79AC0AA2623624E6AE5_gshared (GlobalEventUnit_1_t66E72C84191E1B4F9B08D0CEA8B0AAFAC1EDD681* __this, const RuntimeMethod* method) 
 {
 	{
@@ -16439,7 +16439,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* GlobalEventUnit_1_get_hookName_m4CC
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, method);
 	}
 }
-// Method Definition Index: 39105
+// Method Definition Index: 39103
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR EventHook_t1C9E2570B55940C342214BACB5E9EC889A113157 GlobalEventUnit_1_GetHook_m7F4A2C89A225DB6EECC416703807B7A57FB82EF8_gshared (GlobalEventUnit_1_t66E72C84191E1B4F9B08D0CEA8B0AAFAC1EDD681* __this, GraphReference_t721C982B418EEAA6BE9FA2BFB6A047A8E9362DA9* ___0_reference, const RuntimeMethod* method) 
 {
 	{
@@ -16451,7 +16451,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR EventHook_t1C9E2570B55940C342214BACB5E9EC889A
 		return L_1;
 	}
 }
-// Method Definition Index: 39106
+// Method Definition Index: 39104
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GlobalEventUnit_1__ctor_m597B38CAC4B2D81EC65BA52A5CE76C0F9E4004AA_gshared (GlobalEventUnit_1_t66E72C84191E1B4F9B08D0CEA8B0AAFAC1EDD681* __this, const RuntimeMethod* method) 
 {
 	{
@@ -16467,7 +16467,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GlobalEventUnit_1__ctor_m597B38CAC4B2D81
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 39103
+// Method Definition Index: 39101
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GlobalEventUnit_1_get_register_m332CEA2F603D3E7C36AF2ED65BBE7E71B4BD05FC_gshared (GlobalEventUnit_1_tFA67B258020D820C41BB840BDBB4B4C3FEA8794B* __this, const RuntimeMethod* method) 
 {
 	{
@@ -16475,7 +16475,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GlobalEventUnit_1_get_register_m332CEA2F
 		return (bool)1;
 	}
 }
-// Method Definition Index: 39104
+// Method Definition Index: 39102
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* GlobalEventUnit_1_get_hookName_m50BFBFFEC1DCD2B41CDB3B5D2D2405EF78DB2B4C_gshared (GlobalEventUnit_1_tFA67B258020D820C41BB840BDBB4B4C3FEA8794B* __this, const RuntimeMethod* method) 
 {
 	{
@@ -16485,7 +16485,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* GlobalEventUnit_1_get_hookName_m50B
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, method);
 	}
 }
-// Method Definition Index: 39105
+// Method Definition Index: 39103
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR EventHook_t1C9E2570B55940C342214BACB5E9EC889A113157 GlobalEventUnit_1_GetHook_m0AECF7E1BE03AB7C230C2ABD6568BB6E798F9D19_gshared (GlobalEventUnit_1_tFA67B258020D820C41BB840BDBB4B4C3FEA8794B* __this, GraphReference_t721C982B418EEAA6BE9FA2BFB6A047A8E9362DA9* ___0_reference, const RuntimeMethod* method) 
 {
 	{
@@ -16497,7 +16497,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR EventHook_t1C9E2570B55940C342214BACB5E9EC889A
 		return L_1;
 	}
 }
-// Method Definition Index: 39106
+// Method Definition Index: 39104
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GlobalEventUnit_1__ctor_m8C8326D5D9025D0E62A11522CD3915AB44006289_gshared (GlobalEventUnit_1_tFA67B258020D820C41BB840BDBB4B4C3FEA8794B* __this, const RuntimeMethod* method) 
 {
 	{
@@ -16513,7 +16513,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GlobalEventUnit_1__ctor_m8C8326D5D9025D0
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 39103
+// Method Definition Index: 39101
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GlobalEventUnit_1_get_register_m9361B7388EA3B48E8A6BF2F684271BD68F6C5869_gshared (GlobalEventUnit_1_t0578A517DE911B2B0652606F6B9E3B7A9C189D4C* __this, const RuntimeMethod* method) 
 {
 	{
@@ -16521,7 +16521,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GlobalEventUnit_1_get_register_m9361B738
 		return (bool)1;
 	}
 }
-// Method Definition Index: 39104
+// Method Definition Index: 39102
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* GlobalEventUnit_1_get_hookName_mB9196C15A3E71C11D7B1D021F5E094B37029DD46_gshared (GlobalEventUnit_1_t0578A517DE911B2B0652606F6B9E3B7A9C189D4C* __this, const RuntimeMethod* method) 
 {
 	{
@@ -16531,7 +16531,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* GlobalEventUnit_1_get_hookName_mB91
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, method);
 	}
 }
-// Method Definition Index: 39105
+// Method Definition Index: 39103
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR EventHook_t1C9E2570B55940C342214BACB5E9EC889A113157 GlobalEventUnit_1_GetHook_mE620766A3FA53E1FE08A8C642E16CBDA8F187C8C_gshared (GlobalEventUnit_1_t0578A517DE911B2B0652606F6B9E3B7A9C189D4C* __this, GraphReference_t721C982B418EEAA6BE9FA2BFB6A047A8E9362DA9* ___0_reference, const RuntimeMethod* method) 
 {
 	{
@@ -16543,7 +16543,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR EventHook_t1C9E2570B55940C342214BACB5E9EC889A
 		return L_1;
 	}
 }
-// Method Definition Index: 39106
+// Method Definition Index: 39104
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GlobalEventUnit_1__ctor_m33BAD2D1CF80D9A4DD2820B69CED262105986928_gshared (GlobalEventUnit_1_t0578A517DE911B2B0652606F6B9E3B7A9C189D4C* __this, const RuntimeMethod* method) 
 {
 	{
@@ -20834,7 +20834,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GraphNest_2__ctor_mE3832755DA435ED34A58F
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 41645
+// Method Definition Index: 41643
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GroupedEnumerable_3__ctor_mBF6E0EB71E9E41D9D294294D9764FE630D1F3083_gshared (GroupedEnumerable_3_t4A07DEDFF6AAFE7DB06FE12B12AEAFDCB45D75D4* __this, RuntimeObject* ___0_source, Func_2_tACBF5A1656250800CE861707354491F0611F6624* ___1_keySelector, Func_2_tACBF5A1656250800CE861707354491F0611F6624* ___2_elementSelector, RuntimeObject* ___3_comparer, const RuntimeMethod* method) 
 {
 	{
@@ -20896,7 +20896,7 @@ IL_0030:
 		return;
 	}
 }
-// Method Definition Index: 41646
+// Method Definition Index: 41644
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GroupedEnumerable_3_GetEnumerator_mEA7FF2031A88AD2D44958B6A719E042F59A67958_gshared (GroupedEnumerable_3_t4A07DEDFF6AAFE7DB06FE12B12AEAFDCB45D75D4* __this, const RuntimeMethod* method) 
 {
 	{
@@ -20912,7 +20912,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GroupedEnumerable_3_GetEnumera
 		return L_5;
 	}
 }
-// Method Definition Index: 41647
+// Method Definition Index: 41645
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GroupedEnumerable_3_System_Collections_IEnumerable_GetEnumerator_m7FD6A054E5891A3E0FA6289557D8337DB4BDFF54_gshared (GroupedEnumerable_3_t4A07DEDFF6AAFE7DB06FE12B12AEAFDCB45D75D4* __this, const RuntimeMethod* method) 
 {
 	{
@@ -20929,7 +20929,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GroupedEnumerable_3_System_Col
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 41645
+// Method Definition Index: 41643
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GroupedEnumerable_3__ctor_m11F7371B9933BCD87BDA4DBDBCBE3B4F7890D1DD_gshared (GroupedEnumerable_3_t783A751065953EFFD14A4C37378F3A40A87A5D65* __this, RuntimeObject* ___0_source, Func_2_t7F5F5324CE2DDB7001B68FFE29A5D9F907139FB0* ___1_keySelector, Func_2_t7F5F5324CE2DDB7001B68FFE29A5D9F907139FB0* ___2_elementSelector, RuntimeObject* ___3_comparer, const RuntimeMethod* method) 
 {
 	{
@@ -20991,7 +20991,7 @@ IL_0030:
 		return;
 	}
 }
-// Method Definition Index: 41646
+// Method Definition Index: 41644
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GroupedEnumerable_3_GetEnumerator_m869F3A7BA417A474D928723267701A343B8A0748_gshared (GroupedEnumerable_3_t783A751065953EFFD14A4C37378F3A40A87A5D65* __this, const RuntimeMethod* method) 
 {
 	{
@@ -21007,7 +21007,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GroupedEnumerable_3_GetEnumera
 		return L_5;
 	}
 }
-// Method Definition Index: 41647
+// Method Definition Index: 41645
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GroupedEnumerable_3_System_Collections_IEnumerable_GetEnumerator_m748E7FC4BB43591286EAD64A905A2A3E9747D587_gshared (GroupedEnumerable_3_t783A751065953EFFD14A4C37378F3A40A87A5D65* __this, const RuntimeMethod* method) 
 {
 	{
@@ -21024,7 +21024,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GroupedEnumerable_3_System_Col
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 41612
+// Method Definition Index: 41610
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Grouping_Add_m589DFF64A624B2BA0D919DEF16F4F5AC6EDB3CC9_gshared (Grouping_tA77BA10F6914B0E3DE1904821D54E559FC104F44* __this, RuntimeObject* ___0_element, const RuntimeMethod* method) 
 {
 	{
@@ -21056,7 +21056,7 @@ IL_0023:
 		return;
 	}
 }
-// Method Definition Index: 41613
+// Method Definition Index: 41611
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Grouping_GetEnumerator_mDDC42788642A4829328CEAA45843B1E88A8F4C21_gshared (Grouping_tA77BA10F6914B0E3DE1904821D54E559FC104F44* __this, const RuntimeMethod* method) 
 {
 	{
@@ -21069,7 +21069,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Grouping_GetEnumerator_mDDC427
 		return (RuntimeObject*)L_1;
 	}
 }
-// Method Definition Index: 41614
+// Method Definition Index: 41612
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Grouping_System_Collections_IEnumerable_GetEnumerator_m1DFF9E583B87BFD0560B1E3ACF9A034C43A3765D_gshared (Grouping_tA77BA10F6914B0E3DE1904821D54E559FC104F44* __this, const RuntimeMethod* method) 
 {
 	{
@@ -21078,7 +21078,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Grouping_System_Collections_IE
 		return (RuntimeObject*)L_0;
 	}
 }
-// Method Definition Index: 41615
+// Method Definition Index: 41613
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Grouping_System_Collections_Generic_ICollectionU3CTElementU3E_get_Count_mF856820B0F79F935A6541A0D172194C23F2E35CA_gshared (Grouping_tA77BA10F6914B0E3DE1904821D54E559FC104F44* __this, const RuntimeMethod* method) 
 {
 	{
@@ -21086,14 +21086,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Grouping_System_Collections_Generic_I
 		return L_0;
 	}
 }
-// Method Definition Index: 41616
+// Method Definition Index: 41614
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Grouping_System_Collections_Generic_ICollectionU3CTElementU3E_get_IsReadOnly_m89DB10E1F5A557C1B91D328583B13D429C894260_gshared (Grouping_tA77BA10F6914B0E3DE1904821D54E559FC104F44* __this, const RuntimeMethod* method) 
 {
 	{
 		return (bool)1;
 	}
 }
-// Method Definition Index: 41617
+// Method Definition Index: 41615
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Grouping_System_Collections_Generic_ICollectionU3CTElementU3E_Add_m649A6BD64CDC1C9507B70F1EF10F58935EFEF438_gshared (Grouping_tA77BA10F6914B0E3DE1904821D54E559FC104F44* __this, RuntimeObject* ___0_item, const RuntimeMethod* method) 
 {
 	{
@@ -21102,7 +21102,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Grouping_System_Collections_Generic_ICol
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, method);
 	}
 }
-// Method Definition Index: 41618
+// Method Definition Index: 41616
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Grouping_System_Collections_Generic_ICollectionU3CTElementU3E_Clear_m84B80B736B2DB2394ECF11CEA6AB497368C71027_gshared (Grouping_tA77BA10F6914B0E3DE1904821D54E559FC104F44* __this, const RuntimeMethod* method) 
 {
 	{
@@ -21111,7 +21111,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Grouping_System_Collections_Generic_ICol
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, method);
 	}
 }
-// Method Definition Index: 41619
+// Method Definition Index: 41617
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Grouping_System_Collections_Generic_ICollectionU3CTElementU3E_Contains_m4D784FAE6F98CEF8BA082AF6D6CE32F73E38EC96_gshared (Grouping_tA77BA10F6914B0E3DE1904821D54E559FC104F44* __this, RuntimeObject* ___0_item, const RuntimeMethod* method) 
 {
 	{
@@ -21123,7 +21123,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Grouping_System_Collections_Generic_ICol
 		return (bool)((((int32_t)((((int32_t)L_3) < ((int32_t)0))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 	}
 }
-// Method Definition Index: 41620
+// Method Definition Index: 41618
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Grouping_System_Collections_Generic_ICollectionU3CTElementU3E_CopyTo_m0BF8DE015614F3F78C4B5540FEA922436B5639C3_gshared (Grouping_tA77BA10F6914B0E3DE1904821D54E559FC104F44* __this, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___0_array, int32_t ___1_arrayIndex, const RuntimeMethod* method) 
 {
 	{
@@ -21135,7 +21135,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Grouping_System_Collections_Generic_ICol
 		return;
 	}
 }
-// Method Definition Index: 41621
+// Method Definition Index: 41619
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Grouping_System_Collections_Generic_ICollectionU3CTElementU3E_Remove_mD5D1E2F6EB99C894EF0DF9BE3B9072F21800C6D1_gshared (Grouping_tA77BA10F6914B0E3DE1904821D54E559FC104F44* __this, RuntimeObject* ___0_item, const RuntimeMethod* method) 
 {
 	{
@@ -21144,7 +21144,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Grouping_System_Collections_Generic_ICol
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, method);
 	}
 }
-// Method Definition Index: 41622
+// Method Definition Index: 41620
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Grouping_System_Collections_Generic_IListU3CTElementU3E_IndexOf_mF001A047FB11B22D6518C025E586FCF4BBAAFEAB_gshared (Grouping_tA77BA10F6914B0E3DE1904821D54E559FC104F44* __this, RuntimeObject* ___0_item, const RuntimeMethod* method) 
 {
 	{
@@ -21156,7 +21156,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Grouping_System_Collections_Generic_I
 		return L_3;
 	}
 }
-// Method Definition Index: 41623
+// Method Definition Index: 41621
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Grouping_System_Collections_Generic_IListU3CTElementU3E_Insert_mC62C9B60F7642EAC31B0B11760FCA5196B18F62B_gshared (Grouping_tA77BA10F6914B0E3DE1904821D54E559FC104F44* __this, int32_t ___0_index, RuntimeObject* ___1_item, const RuntimeMethod* method) 
 {
 	{
@@ -21165,7 +21165,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Grouping_System_Collections_Generic_ILis
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, method);
 	}
 }
-// Method Definition Index: 41624
+// Method Definition Index: 41622
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Grouping_System_Collections_Generic_IListU3CTElementU3E_RemoveAt_mFF93A8CAC9BC768E6ADA016070E74992A2D2F429_gshared (Grouping_tA77BA10F6914B0E3DE1904821D54E559FC104F44* __this, int32_t ___0_index, const RuntimeMethod* method) 
 {
 	{
@@ -21174,7 +21174,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Grouping_System_Collections_Generic_ILis
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, method);
 	}
 }
-// Method Definition Index: 41625
+// Method Definition Index: 41623
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Grouping_System_Collections_Generic_IListU3CTElementU3E_get_Item_m4C494EF1BE1337EEE109D9E3BCDDE78A842FB5F8_gshared (Grouping_tA77BA10F6914B0E3DE1904821D54E559FC104F44* __this, int32_t ___0_index, const RuntimeMethod* method) 
 {
 	{
@@ -21210,7 +21210,7 @@ IL_0018:
 		return L_7;
 	}
 }
-// Method Definition Index: 41626
+// Method Definition Index: 41624
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Grouping_System_Collections_Generic_IListU3CTElementU3E_set_Item_m1AE82C8F2862990D6F4E5F80A8EBD8F1E13796BF_gshared (Grouping_tA77BA10F6914B0E3DE1904821D54E559FC104F44* __this, int32_t ___0_index, RuntimeObject* ___1_value, const RuntimeMethod* method) 
 {
 	{
@@ -21219,7 +21219,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Grouping_System_Collections_Generic_ILis
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, method);
 	}
 }
-// Method Definition Index: 41627
+// Method Definition Index: 41625
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Grouping__ctor_mC34907483EF812F5B041B5A1320E081F18C104D2_gshared (Grouping_tA77BA10F6914B0E3DE1904821D54E559FC104F44* __this, const RuntimeMethod* method) 
 {
 	{
@@ -21235,7 +21235,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Grouping__ctor_mC34907483EF812F5B041B5A1
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 41612
+// Method Definition Index: 41610
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Grouping_Add_m20DB6101BCB10AFF97DBD7AE441D96C65F7499C2_gshared (Grouping_tA7D79A8DCF5DF54971F5E38E3B02BC390C7F93C2* __this, Il2CppFullySharedGenericAny ___0_element, const RuntimeMethod* method) 
 {
 	const uint32_t SizeOf_TElement_tF46FE415280FB221B323D36ABA2C80A1E66A16A3 = il2cpp_codegen_sizeof(il2cpp_rgctx_data_no_init(method->klass->rgctx_data, 4));
@@ -21269,7 +21269,7 @@ IL_0023:
 		return;
 	}
 }
-// Method Definition Index: 41613
+// Method Definition Index: 41611
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Grouping_GetEnumerator_mA3D23DBD6F573AB63A87A071EDB4511DAACD3DEA_gshared (Grouping_tA7D79A8DCF5DF54971F5E38E3B02BC390C7F93C2* __this, const RuntimeMethod* method) 
 {
 	{
@@ -21281,7 +21281,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Grouping_GetEnumerator_mA3D23D
 		return (RuntimeObject*)L_1;
 	}
 }
-// Method Definition Index: 41614
+// Method Definition Index: 41612
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Grouping_System_Collections_IEnumerable_GetEnumerator_mA3FE1C12DA3E21CB16E95E37A2EE4FB749097FF2_gshared (Grouping_tA7D79A8DCF5DF54971F5E38E3B02BC390C7F93C2* __this, const RuntimeMethod* method) 
 {
 	{
@@ -21290,7 +21290,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Grouping_System_Collections_IE
 		return (RuntimeObject*)L_0;
 	}
 }
-// Method Definition Index: 41615
+// Method Definition Index: 41613
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Grouping_System_Collections_Generic_ICollectionU3CTElementU3E_get_Count_m039B345B3655A6609C6DFF90B41A5FA90A2F6F9A_gshared (Grouping_tA7D79A8DCF5DF54971F5E38E3B02BC390C7F93C2* __this, const RuntimeMethod* method) 
 {
 	{
@@ -21298,14 +21298,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Grouping_System_Collections_Generic_I
 		return L_0;
 	}
 }
-// Method Definition Index: 41616
+// Method Definition Index: 41614
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Grouping_System_Collections_Generic_ICollectionU3CTElementU3E_get_IsReadOnly_m1E04BA060734361EAB8B167878F1ADD350E0D25C_gshared (Grouping_tA7D79A8DCF5DF54971F5E38E3B02BC390C7F93C2* __this, const RuntimeMethod* method) 
 {
 	{
 		return (bool)1;
 	}
 }
-// Method Definition Index: 41617
+// Method Definition Index: 41615
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Grouping_System_Collections_Generic_ICollectionU3CTElementU3E_Add_mF7C70D11948E1EF4E049B97718C0FFA5133A50D2_gshared (Grouping_tA7D79A8DCF5DF54971F5E38E3B02BC390C7F93C2* __this, Il2CppFullySharedGenericAny ___0_item, const RuntimeMethod* method) 
 {
 	{
@@ -21314,7 +21314,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Grouping_System_Collections_Generic_ICol
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, method);
 	}
 }
-// Method Definition Index: 41618
+// Method Definition Index: 41616
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Grouping_System_Collections_Generic_ICollectionU3CTElementU3E_Clear_mD6EB30FC1A2399C8AFCC6CCD35EEA82B52747AA3_gshared (Grouping_tA7D79A8DCF5DF54971F5E38E3B02BC390C7F93C2* __this, const RuntimeMethod* method) 
 {
 	{
@@ -21323,7 +21323,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Grouping_System_Collections_Generic_ICol
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, method);
 	}
 }
-// Method Definition Index: 41619
+// Method Definition Index: 41617
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Grouping_System_Collections_Generic_ICollectionU3CTElementU3E_Contains_mD59CFF01F9FB973C005D493E3632F9E023E841FA_gshared (Grouping_tA7D79A8DCF5DF54971F5E38E3B02BC390C7F93C2* __this, Il2CppFullySharedGenericAny ___0_item, const RuntimeMethod* method) 
 {
 	const uint32_t SizeOf_TElement_tF46FE415280FB221B323D36ABA2C80A1E66A16A3 = il2cpp_codegen_sizeof(il2cpp_rgctx_data_no_init(method->klass->rgctx_data, 4));
@@ -21337,7 +21337,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Grouping_System_Collections_Generic_ICol
 		return (bool)((((int32_t)((((int32_t)L_3) < ((int32_t)0))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 	}
 }
-// Method Definition Index: 41620
+// Method Definition Index: 41618
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Grouping_System_Collections_Generic_ICollectionU3CTElementU3E_CopyTo_mB1F998E48C2692EFBF862FE8667705CC239C07DF_gshared (Grouping_tA7D79A8DCF5DF54971F5E38E3B02BC390C7F93C2* __this, __Il2CppFullySharedGenericTypeU5BU5D_tCAB6D060972DD49223A834B7EEFEB9FE2D003BEC* ___0_array, int32_t ___1_arrayIndex, const RuntimeMethod* method) 
 {
 	{
@@ -21349,7 +21349,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Grouping_System_Collections_Generic_ICol
 		return;
 	}
 }
-// Method Definition Index: 41621
+// Method Definition Index: 41619
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Grouping_System_Collections_Generic_ICollectionU3CTElementU3E_Remove_mCD8CFBE362CB9FB2FB238C589C0C5D87C30762BF_gshared (Grouping_tA7D79A8DCF5DF54971F5E38E3B02BC390C7F93C2* __this, Il2CppFullySharedGenericAny ___0_item, const RuntimeMethod* method) 
 {
 	{
@@ -21358,7 +21358,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Grouping_System_Collections_Generic_ICol
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, method);
 	}
 }
-// Method Definition Index: 41622
+// Method Definition Index: 41620
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Grouping_System_Collections_Generic_IListU3CTElementU3E_IndexOf_m5E4B8FCA11DAF8CAAF344E4DF74BDF63A17EE366_gshared (Grouping_tA7D79A8DCF5DF54971F5E38E3B02BC390C7F93C2* __this, Il2CppFullySharedGenericAny ___0_item, const RuntimeMethod* method) 
 {
 	const uint32_t SizeOf_TElement_tF46FE415280FB221B323D36ABA2C80A1E66A16A3 = il2cpp_codegen_sizeof(il2cpp_rgctx_data_no_init(method->klass->rgctx_data, 4));
@@ -21372,7 +21372,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Grouping_System_Collections_Generic_I
 		return L_3;
 	}
 }
-// Method Definition Index: 41623
+// Method Definition Index: 41621
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Grouping_System_Collections_Generic_IListU3CTElementU3E_Insert_mE5E3DBF616FCD7FAB0D12B29A4F4B708E6D193C1_gshared (Grouping_tA7D79A8DCF5DF54971F5E38E3B02BC390C7F93C2* __this, int32_t ___0_index, Il2CppFullySharedGenericAny ___1_item, const RuntimeMethod* method) 
 {
 	{
@@ -21381,7 +21381,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Grouping_System_Collections_Generic_ILis
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, method);
 	}
 }
-// Method Definition Index: 41624
+// Method Definition Index: 41622
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Grouping_System_Collections_Generic_IListU3CTElementU3E_RemoveAt_mCCEC71F13600BEE86A901388ABAD8873D5BADA72_gshared (Grouping_tA7D79A8DCF5DF54971F5E38E3B02BC390C7F93C2* __this, int32_t ___0_index, const RuntimeMethod* method) 
 {
 	{
@@ -21390,7 +21390,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Grouping_System_Collections_Generic_ILis
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, method);
 	}
 }
-// Method Definition Index: 41625
+// Method Definition Index: 41623
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Grouping_System_Collections_Generic_IListU3CTElementU3E_get_Item_m9786F14072EC019DA81ED0A76B8E9770120A592A_gshared (Grouping_tA7D79A8DCF5DF54971F5E38E3B02BC390C7F93C2* __this, int32_t ___0_index, Il2CppFullySharedGenericAny* il2cppRetVal, const RuntimeMethod* method) 
 {
 	const uint32_t SizeOf_TElement_tF46FE415280FB221B323D36ABA2C80A1E66A16A3 = il2cpp_codegen_sizeof(il2cpp_rgctx_data_no_init(method->klass->rgctx_data, 4));
@@ -21429,7 +21429,7 @@ IL_0018:
 		return;
 	}
 }
-// Method Definition Index: 41626
+// Method Definition Index: 41624
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Grouping_System_Collections_Generic_IListU3CTElementU3E_set_Item_m9359839F671287E236F10F4B916E6AC3EBED1F52_gshared (Grouping_tA7D79A8DCF5DF54971F5E38E3B02BC390C7F93C2* __this, int32_t ___0_index, Il2CppFullySharedGenericAny ___1_value, const RuntimeMethod* method) 
 {
 	{
@@ -21438,7 +21438,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Grouping_System_Collections_Generic_ILis
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, method);
 	}
 }
-// Method Definition Index: 41627
+// Method Definition Index: 41625
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Grouping__ctor_mCDE1A56686DFD326A7C0A3FD0494F04597C8A7A4_gshared (Grouping_tA7D79A8DCF5DF54971F5E38E3B02BC390C7F93C2* __this, const RuntimeMethod* method) 
 {
 	{
@@ -21767,7 +21767,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GuidCollection_1_Unity_VisualScripting_I
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 39500
+// Method Definition Index: 39498
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* HasGraph_3_get_enter_mD9621C8D3974BD33239C788794D72EE008711351_gshared (HasGraph_3_t9769A21D1460CF887917FC23AF55101D899A446E* __this, const RuntimeMethod* method) 
 {
 	{
@@ -21776,7 +21776,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlInput_t1AD434958538C865F55A62C66B9C24D
 		return L_0;
 	}
 }
-// Method Definition Index: 39501
+// Method Definition Index: 39499
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HasGraph_3_set_enter_m9C6C157CB9D66D578DBB05E51EA59106B2F04BB8_gshared (HasGraph_3_t9769A21D1460CF887917FC23AF55101D899A446E* __this, ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -21787,7 +21787,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HasGraph_3_set_enter_m9C6C157CB9D66D578D
 		return;
 	}
 }
-// Method Definition Index: 39502
+// Method Definition Index: 39500
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* HasGraph_3_get_target_m13596B4675991EB20F1A221FCA5A19214A1B3030_gshared (HasGraph_3_t9769A21D1460CF887917FC23AF55101D899A446E* __this, const RuntimeMethod* method) 
 {
 	{
@@ -21796,7 +21796,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D
 		return L_0;
 	}
 }
-// Method Definition Index: 39503
+// Method Definition Index: 39501
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HasGraph_3_set_target_m8AEBFAC29B3E4DAF40A16CF52CAD133685969CCC_gshared (HasGraph_3_t9769A21D1460CF887917FC23AF55101D899A446E* __this, ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -21807,7 +21807,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HasGraph_3_set_target_m8AEBFAC29B3E4DAF4
 		return;
 	}
 }
-// Method Definition Index: 39504
+// Method Definition Index: 39502
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* HasGraph_3_get_graphInput_m64E9AC74925C98BDBC31DD5AC5E0905D6C0BC447_gshared (HasGraph_3_t9769A21D1460CF887917FC23AF55101D899A446E* __this, const RuntimeMethod* method) 
 {
 	{
@@ -21816,7 +21816,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D
 		return L_0;
 	}
 }
-// Method Definition Index: 39505
+// Method Definition Index: 39503
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HasGraph_3_set_graphInput_mD87CD801322161115CB1443976D7A2A5EADEDC5C_gshared (HasGraph_3_t9769A21D1460CF887917FC23AF55101D899A446E* __this, ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -21827,7 +21827,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HasGraph_3_set_graphInput_mD87CD80132216
 		return;
 	}
 }
-// Method Definition Index: 39506
+// Method Definition Index: 39504
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* HasGraph_3_get_hasGraphOutput_mC12CB0A7F81C018C1AAD2E63AF91FB4A1677302A_gshared (HasGraph_3_t9769A21D1460CF887917FC23AF55101D899A446E* __this, const RuntimeMethod* method) 
 {
 	{
@@ -21836,7 +21836,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110
 		return L_0;
 	}
 }
-// Method Definition Index: 39507
+// Method Definition Index: 39505
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HasGraph_3_set_hasGraphOutput_m92ECC96752C6647C5450BE5C10F6C2D0DDF926CD_gshared (HasGraph_3_t9769A21D1460CF887917FC23AF55101D899A446E* __this, ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -21847,7 +21847,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HasGraph_3_set_hasGraphOutput_m92ECC9675
 		return;
 	}
 }
-// Method Definition Index: 39508
+// Method Definition Index: 39506
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* HasGraph_3_get_exit_m76FE479B94F34211C1BC292ACB468BA51D2F362A_gshared (HasGraph_3_t9769A21D1460CF887917FC23AF55101D899A446E* __this, const RuntimeMethod* method) 
 {
 	{
@@ -21856,7 +21856,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E7
 		return L_0;
 	}
 }
-// Method Definition Index: 39509
+// Method Definition Index: 39507
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HasGraph_3_set_exit_m5D31E31D8984829EAFE5A63221141C7DF58B134F_gshared (HasGraph_3_t9769A21D1460CF887917FC23AF55101D899A446E* __this, ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -21867,7 +21867,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HasGraph_3_set_exit_m5D31E31D8984829EAFE
 		return;
 	}
 }
-// Method Definition Index: 39511
+// Method Definition Index: 39509
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Type_t* HasGraph_3_get_targetType_mD886DA34D0CEAACFEBB84D54FAD7A6B189C6B7E7_gshared (HasGraph_3_t9769A21D1460CF887917FC23AF55101D899A446E* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21902,7 +21902,7 @@ IL_0013:
 		return L_4;
 	}
 }
-// Method Definition Index: 39512
+// Method Definition Index: 39510
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HasGraph_3_Definition_m29EFEE7F416EFEEE9536D3323D1440EFAB6678BD_gshared (HasGraph_3_t9769A21D1460CF887917FC23AF55101D899A446E* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21992,7 +21992,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HasGraph_3_Definition_m29EFEE7F416EFEEE9
 		return;
 	}
 }
-// Method Definition Index: 39513
+// Method Definition Index: 39511
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* HasGraph_3_TriggerHasGraph_m797F269E4C0DEE3939D96DC0072857A90CF44850_gshared (HasGraph_3_t9769A21D1460CF887917FC23AF55101D899A446E* __this, Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* ___0_flow, const RuntimeMethod* method) 
 {
 	{
@@ -22013,7 +22013,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E7
 		return L_6;
 	}
 }
-// Method Definition Index: 39514
+// Method Definition Index: 39512
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HasGraph_3_OutputHasGraph_m444C11BED208BFDF9C6D89A4C57A188D5BF29B2F_gshared (HasGraph_3_t9769A21D1460CF887917FC23AF55101D899A446E* __this, Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* ___0_flow, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22179,7 +22179,7 @@ IL_00da:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 39515
+// Method Definition Index: 39513
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HasGraph_3__ctor_m14DEF6FA09116F23C0D72ACFBC5756F4866A5E34_gshared (HasGraph_3_t9769A21D1460CF887917FC23AF55101D899A446E* __this, const RuntimeMethod* method) 
 {
 	{
@@ -23120,7 +23120,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashCode64_1__cctor_m1A47E3C4E4C8DF53C16
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 53997
+// Method Definition Index: 53995
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HashSetList_1_get_Count_m7B4003BA1C82B14972FABCB61ABB88418D13297A_gshared (HashSetList_1_tA79BA5A1A2EFA49275053A69FD2E6CC78A69BB1F* __this, const RuntimeMethod* method) 
 {
 	{
@@ -23129,7 +23129,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HashSetList_1_get_Count_m7B4003BA1C82
 		return L_0;
 	}
 }
-// Method Definition Index: 53998
+// Method Definition Index: 53996
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HashSetList_1_System_Collections_Generic_ICollectionU3CTU3E_get_IsReadOnly_m00286C3AA5A460F402616DC3D28B5B4564677795_gshared (HashSetList_1_tA79BA5A1A2EFA49275053A69FD2E6CC78A69BB1F* __this, const RuntimeMethod* method) 
 {
 	{
@@ -23137,7 +23137,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HashSetList_1_System_Collections_Generic
 		return (bool)0;
 	}
 }
-// Method Definition Index: 53999
+// Method Definition Index: 53997
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSetList_1_get_Item_mF0AEDE4336E16DF90CA95FD8F27D01168CC62A1A_gshared (HashSetList_1_tA79BA5A1A2EFA49275053A69FD2E6CC78A69BB1F* __this, int32_t ___0_index, Il2CppFullySharedGenericAny* il2cppRetVal, const RuntimeMethod* method) 
 {
 	const uint32_t SizeOf_T_t9E1924ADE529330683656A7627F81623E5DB8B5E = il2cpp_codegen_sizeof(il2cpp_rgctx_data_no_init(method->klass->rgctx_data, 3));
@@ -23152,7 +23152,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSetList_1_get_Item_mF0AEDE4336E16DF9
 		return;
 	}
 }
-// Method Definition Index: 54000
+// Method Definition Index: 53998
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSetList_1__ctor_mB92CE659567A313D9933EE4AFDB35B4393F00CD0_gshared (HashSetList_1_tA79BA5A1A2EFA49275053A69FD2E6CC78A69BB1F* __this, int32_t ___0_capacity, const RuntimeMethod* method) 
 {
 	{
@@ -23173,7 +23173,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSetList_1__ctor_mB92CE659567A313D993
 		return;
 	}
 }
-// Method Definition Index: 54001
+// Method Definition Index: 53999
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSetList_1_GetEnumerator_mED48C3A41746675D7B86326399E4B2E8FC502D45_gshared (HashSetList_1_tA79BA5A1A2EFA49275053A69FD2E6CC78A69BB1F* __this, Enumerator_tF5AC6CD19D283FBD724440520CEE68FE2602F7AF* il2cppRetVal, const RuntimeMethod* method) 
 {
 	const uint32_t SizeOf_Enumerator_t03E80689F9403B15A8F8DDE5957D116028BA4172 = il2cpp_codegen_sizeof(il2cpp_rgctx_data_no_init(method->klass->rgctx_data, 8));
@@ -23187,7 +23187,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSetList_1_GetEnumerator_mED48C3A4174
 		return;
 	}
 }
-// Method Definition Index: 54002
+// Method Definition Index: 54000
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* HashSetList_1_System_Collections_Generic_IEnumerableU3CTU3E_GetEnumerator_m0E14A0E9FFB03FEE873454E7A88819620A276C2B_gshared (HashSetList_1_tA79BA5A1A2EFA49275053A69FD2E6CC78A69BB1F* __this, const RuntimeMethod* method) 
 {
 	const uint32_t SizeOf_Enumerator_t03E80689F9403B15A8F8DDE5957D116028BA4172 = il2cpp_codegen_sizeof(il2cpp_rgctx_data_no_init(method->klass->rgctx_data, 8));
@@ -23201,7 +23201,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* HashSetList_1_System_Collectio
 		return (RuntimeObject*)L_2;
 	}
 }
-// Method Definition Index: 54003
+// Method Definition Index: 54001
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* HashSetList_1_System_Collections_IEnumerable_GetEnumerator_m6C09F0F1BB0D308A024633D9068EDFDF9827AABD_gshared (HashSetList_1_tA79BA5A1A2EFA49275053A69FD2E6CC78A69BB1F* __this, const RuntimeMethod* method) 
 {
 	const uint32_t SizeOf_Enumerator_t03E80689F9403B15A8F8DDE5957D116028BA4172 = il2cpp_codegen_sizeof(il2cpp_rgctx_data_no_init(method->klass->rgctx_data, 8));
@@ -23213,7 +23213,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* HashSetList_1_System_Collectio
 		return (RuntimeObject*)L_1;
 	}
 }
-// Method Definition Index: 54004
+// Method Definition Index: 54002
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSetList_1_System_Collections_Generic_ICollectionU3CTU3E_Add_m4B43E70BCB0E21EBB4F6B95B49EACA97DA1343E5_gshared (HashSetList_1_tA79BA5A1A2EFA49275053A69FD2E6CC78A69BB1F* __this, Il2CppFullySharedGenericAny ___0_item, const RuntimeMethod* method) 
 {
 	const uint32_t SizeOf_T_t9E1924ADE529330683656A7627F81623E5DB8B5E = il2cpp_codegen_sizeof(il2cpp_rgctx_data_no_init(method->klass->rgctx_data, 3));
@@ -23248,7 +23248,7 @@ IL_0028:
 		return;
 	}
 }
-// Method Definition Index: 54005
+// Method Definition Index: 54003
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HashSetList_1_Add_m21701EF1E0EF369AE87073E6100CD6C97BBB04A6_gshared (HashSetList_1_tA79BA5A1A2EFA49275053A69FD2E6CC78A69BB1F* __this, Il2CppFullySharedGenericAny ___0_item, const RuntimeMethod* method) 
 {
 	const uint32_t SizeOf_T_t9E1924ADE529330683656A7627F81623E5DB8B5E = il2cpp_codegen_sizeof(il2cpp_rgctx_data_no_init(method->klass->rgctx_data, 3));
@@ -23290,7 +23290,7 @@ IL_0029:
 		return G_B2_0;
 	}
 }
-// Method Definition Index: 54006
+// Method Definition Index: 54004
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HashSetList_1_Remove_m2813ED7B8BA29B7638D86E77187F202EA7161F2F_gshared (HashSetList_1_tA79BA5A1A2EFA49275053A69FD2E6CC78A69BB1F* __this, Il2CppFullySharedGenericAny ___0_item, const RuntimeMethod* method) 
 {
 	const uint32_t SizeOf_T_t9E1924ADE529330683656A7627F81623E5DB8B5E = il2cpp_codegen_sizeof(il2cpp_rgctx_data_no_init(method->klass->rgctx_data, 3));
@@ -23347,7 +23347,7 @@ IL_0034:
 		return G_B4_0;
 	}
 }
-// Method Definition Index: 54007
+// Method Definition Index: 54005
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSetList_1_ExceptWith_m95C9931EBA84A11C0FC09A19F6820EA729E38650_gshared (HashSetList_1_tA79BA5A1A2EFA49275053A69FD2E6CC78A69BB1F* __this, RuntimeObject* ___0_other, const RuntimeMethod* method) 
 {
 	{
@@ -23362,7 +23362,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSetList_1_ExceptWith_m95C9931EBA84A1
 		return;
 	}
 }
-// Method Definition Index: 54008
+// Method Definition Index: 54006
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSetList_1_IntersectWith_m7021E80B055004496FE5F20D82E053E86889F289_gshared (HashSetList_1_tA79BA5A1A2EFA49275053A69FD2E6CC78A69BB1F* __this, RuntimeObject* ___0_other, const RuntimeMethod* method) 
 {
 	{
@@ -23377,7 +23377,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSetList_1_IntersectWith_m7021E80B055
 		return;
 	}
 }
-// Method Definition Index: 54009
+// Method Definition Index: 54007
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HashSetList_1_IsProperSubsetOf_m3ED235DBBB115F536C2C916E36DE1187B76DA3FD_gshared (HashSetList_1_tA79BA5A1A2EFA49275053A69FD2E6CC78A69BB1F* __this, RuntimeObject* ___0_other, const RuntimeMethod* method) 
 {
 	{
@@ -23390,7 +23390,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HashSetList_1_IsProperSubsetOf_m3ED235DB
 		return L_2;
 	}
 }
-// Method Definition Index: 54010
+// Method Definition Index: 54008
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HashSetList_1_IsProperSupersetOf_m9EBB05C9BFF312498DB9B70E8E76812A0B996A0C_gshared (HashSetList_1_tA79BA5A1A2EFA49275053A69FD2E6CC78A69BB1F* __this, RuntimeObject* ___0_other, const RuntimeMethod* method) 
 {
 	{
@@ -23403,7 +23403,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HashSetList_1_IsProperSupersetOf_m9EBB05
 		return L_2;
 	}
 }
-// Method Definition Index: 54011
+// Method Definition Index: 54009
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HashSetList_1_IsSubsetOf_m783FF9690A2D6FCE9CC0C2F10F46A3B087E52623_gshared (HashSetList_1_tA79BA5A1A2EFA49275053A69FD2E6CC78A69BB1F* __this, RuntimeObject* ___0_other, const RuntimeMethod* method) 
 {
 	{
@@ -23416,7 +23416,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HashSetList_1_IsSubsetOf_m783FF9690A2D6F
 		return L_2;
 	}
 }
-// Method Definition Index: 54012
+// Method Definition Index: 54010
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HashSetList_1_IsSupersetOf_m5C26BAA2E483442E2D1EDD59F1E9D5B097447DE0_gshared (HashSetList_1_tA79BA5A1A2EFA49275053A69FD2E6CC78A69BB1F* __this, RuntimeObject* ___0_other, const RuntimeMethod* method) 
 {
 	{
@@ -23429,7 +23429,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HashSetList_1_IsSupersetOf_m5C26BAA2E483
 		return L_2;
 	}
 }
-// Method Definition Index: 54013
+// Method Definition Index: 54011
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HashSetList_1_Overlaps_mC38ADB11C49F8D363C4D91F25740F026523ACB37_gshared (HashSetList_1_tA79BA5A1A2EFA49275053A69FD2E6CC78A69BB1F* __this, RuntimeObject* ___0_other, const RuntimeMethod* method) 
 {
 	{
@@ -23442,7 +23442,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HashSetList_1_Overlaps_mC38ADB11C49F8D36
 		return L_2;
 	}
 }
-// Method Definition Index: 54014
+// Method Definition Index: 54012
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HashSetList_1_SetEquals_m6D6F26ACB2A9F6CDF64742D647C5B0863186F340_gshared (HashSetList_1_tA79BA5A1A2EFA49275053A69FD2E6CC78A69BB1F* __this, RuntimeObject* ___0_other, const RuntimeMethod* method) 
 {
 	{
@@ -23455,7 +23455,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HashSetList_1_SetEquals_m6D6F26ACB2A9F6C
 		return L_2;
 	}
 }
-// Method Definition Index: 54015
+// Method Definition Index: 54013
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSetList_1_SymmetricExceptWith_mA0540CE9E706B419EF82AF7DDBA0AB54A76E5B63_gshared (HashSetList_1_tA79BA5A1A2EFA49275053A69FD2E6CC78A69BB1F* __this, RuntimeObject* ___0_other, const RuntimeMethod* method) 
 {
 	{
@@ -23470,7 +23470,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSetList_1_SymmetricExceptWith_mA0540
 		return;
 	}
 }
-// Method Definition Index: 54016
+// Method Definition Index: 54014
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSetList_1_UnionWith_mB6F590993706965711358329813C56E972F52C8F_gshared (HashSetList_1_tA79BA5A1A2EFA49275053A69FD2E6CC78A69BB1F* __this, RuntimeObject* ___0_other, const RuntimeMethod* method) 
 {
 	{
@@ -23485,7 +23485,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSetList_1_UnionWith_mB6F590993706965
 		return;
 	}
 }
-// Method Definition Index: 54017
+// Method Definition Index: 54015
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSetList_1_Clear_m56A7F362F104FAE67DB2724739313737E5CCEBC9_gshared (HashSetList_1_tA79BA5A1A2EFA49275053A69FD2E6CC78A69BB1F* __this, const RuntimeMethod* method) 
 {
 	{
@@ -23501,7 +23501,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSetList_1_Clear_m56A7F362F104FAE67DB
 		return;
 	}
 }
-// Method Definition Index: 54018
+// Method Definition Index: 54016
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HashSetList_1_Contains_mE1A209CC25539A5ED8C5F1460C45B4E5413D56BB_gshared (HashSetList_1_tA79BA5A1A2EFA49275053A69FD2E6CC78A69BB1F* __this, Il2CppFullySharedGenericAny ___0_item, const RuntimeMethod* method) 
 {
 	const uint32_t SizeOf_T_t9E1924ADE529330683656A7627F81623E5DB8B5E = il2cpp_codegen_sizeof(il2cpp_rgctx_data_no_init(method->klass->rgctx_data, 3));
@@ -23516,7 +23516,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HashSetList_1_Contains_mE1A209CC25539A5E
 		return L_2;
 	}
 }
-// Method Definition Index: 54019
+// Method Definition Index: 54017
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSetList_1_CopyTo_m5E099B5CB52F980DA4EE50B603A187DA4A59D5F1_gshared (HashSetList_1_tA79BA5A1A2EFA49275053A69FD2E6CC78A69BB1F* __this, __Il2CppFullySharedGenericTypeU5BU5D_tCAB6D060972DD49223A834B7EEFEB9FE2D003BEC* ___0_array, int32_t ___1_arrayIndex, const RuntimeMethod* method) 
 {
 	{
@@ -23530,7 +23530,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSetList_1_CopyTo_m5E099B5CB52F980DA4
 		return;
 	}
 }
-// Method Definition Index: 54020
+// Method Definition Index: 54018
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSetList_1_GetObjectData_mE2EB5403E8D2087DF3DC59A398511D44E75DA922_gshared (HashSetList_1_tA79BA5A1A2EFA49275053A69FD2E6CC78A69BB1F* __this, SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* ___0_info, StreamingContext_t56760522A751890146EE45F82F866B55B7E33677 ___1_context, const RuntimeMethod* method) 
 {
 	{
@@ -23546,7 +23546,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSetList_1_GetObjectData_mE2EB5403E8D
 		return;
 	}
 }
-// Method Definition Index: 54021
+// Method Definition Index: 54019
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSetList_1_OnDeserialization_m1C43F3D81AB32952E59A6D8A7D5895DBBD39797B_gshared (HashSetList_1_tA79BA5A1A2EFA49275053A69FD2E6CC78A69BB1F* __this, RuntimeObject* ___0_sender, const RuntimeMethod* method) 
 {
 	{
@@ -23561,7 +23561,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSetList_1_OnDeserialization_m1C43F3D
 		return;
 	}
 }
-// Method Definition Index: 54022
+// Method Definition Index: 54020
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSetList_1_RefreshList_mDD60D412C39746BDA06C5437EBF6BD9FACFDF45C_gshared (HashSetList_1_tA79BA5A1A2EFA49275053A69FD2E6CC78A69BB1F* __this, const RuntimeMethod* method) 
 {
 	{
@@ -23584,7 +23584,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSetList_1_RefreshList_mDD60D412C3974
 		return;
 	}
 }
-// Method Definition Index: 54023
+// Method Definition Index: 54021
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* HashSetList_1_AsList_m331AAB97FB14632EB560DF8D414CC709FFA4A3B7_gshared (HashSetList_1_tA79BA5A1A2EFA49275053A69FD2E6CC78A69BB1F* __this, const RuntimeMethod* method) 
 {
 	{
@@ -24045,14 +24045,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSetPool_1__cctor_m87F1483A19A3FFAF75
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 51639
+// Method Definition Index: 51637
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HashSetPropertyBag_1_get_InstantiationKind_m542C648FC9442316698457076FBC5B8C17656097_gshared (HashSetPropertyBag_1_tAA71EF2902794249B4D5127D03BA186EC5310BED* __this, const RuntimeMethod* method) 
 {
 	{
 		return (int32_t)(1);
 	}
 }
-// Method Definition Index: 51640
+// Method Definition Index: 51638
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HashSet_1_t2E820DA94CC6D5A61CA29EBD9BE297C43D691C87* HashSetPropertyBag_1_Instantiate_m40B346AADC5FFAA079D2DD84ED0FD4843585E19E_gshared (HashSetPropertyBag_1_tAA71EF2902794249B4D5127D03BA186EC5310BED* __this, const RuntimeMethod* method) 
 {
 	{
@@ -24061,7 +24061,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HashSet_1_t2E820DA94CC6D5A61CA29EBD9BE297C43D
 		return L_0;
 	}
 }
-// Method Definition Index: 51641
+// Method Definition Index: 51639
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSetPropertyBag_1__ctor_m97B9FF0A7C7B1247E10A3C8A5114080B3A6571D1_gshared (HashSetPropertyBag_1_tAA71EF2902794249B4D5127D03BA186EC5310BED* __this, const RuntimeMethod* method) 
 {
 	{
@@ -24077,7 +24077,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSetPropertyBag_1__ctor_m97B9FF0A7C7B
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 44153
+// Method Definition Index: 44151
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSet_1__ctor_m0468553BC44FAC4BA6BA8F517CBD7C8D42F42853_gshared (HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -24087,7 +24087,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSet_1__ctor_m0468553BC44FAC4BA6BA8F5
 		return;
 	}
 }
-// Method Definition Index: 44154
+// Method Definition Index: 44152
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSet_1__ctor_mD3E9E812F80AD610AEB68C6BAB82192673861A23_gshared (HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* __this, RuntimeObject* ___0_comparer, const RuntimeMethod* method) 
 {
 	{
@@ -24116,7 +24116,7 @@ IL_0010:
 		return;
 	}
 }
-// Method Definition Index: 44155
+// Method Definition Index: 44153
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSet_1__ctor_m4D50BAB10B1FAEE3CB2F73C7C317F476B0D7F97F_gshared (HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* __this, int32_t ___0_capacity, const RuntimeMethod* method) 
 {
 	{
@@ -24127,7 +24127,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSet_1__ctor_m4D50BAB10B1FAEE3CB2F73C
 		return;
 	}
 }
-// Method Definition Index: 44156
+// Method Definition Index: 44154
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSet_1__ctor_mD29D3E8CAEB61AF816E7BEFCEF45BEC2159581B6_gshared (HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* __this, RuntimeObject* ___0_collection, const RuntimeMethod* method) 
 {
 	{
@@ -24138,7 +24138,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSet_1__ctor_mD29D3E8CAEB61AF816E7BEF
 		return;
 	}
 }
-// Method Definition Index: 44157
+// Method Definition Index: 44155
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSet_1__ctor_m8D7D38AA93FCCD03667B6FAB677E2D40B5DA9D40_gshared (HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* __this, RuntimeObject* ___0_collection, RuntimeObject* ___1_comparer, const RuntimeMethod* method) 
 {
 	HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* V_0 = NULL;
@@ -24241,7 +24241,7 @@ IL_0074:
 		return;
 	}
 }
-// Method Definition Index: 44158
+// Method Definition Index: 44156
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSet_1__ctor_m16CA726371D460E5129254885F87BDA2139D4BF6_gshared (HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* __this, SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* ___0_info, StreamingContext_t56760522A751890146EE45F82F866B55B7E33677 ___1_context, const RuntimeMethod* method) 
 {
 	{
@@ -24252,7 +24252,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSet_1__ctor_m16CA726371D460E51292548
 		return;
 	}
 }
-// Method Definition Index: 44159
+// Method Definition Index: 44157
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSet_1_CopyFrom_mBB50D5A8AD07EEC9D2DA5D504E896D8BC4E50F89_gshared (HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* __this, HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* ___0_source, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -24399,7 +24399,7 @@ IL_00c7:
 		return;
 	}
 }
-// Method Definition Index: 44160
+// Method Definition Index: 44158
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSet_1__ctor_mCDE6C220610397121E1C9A333BD2550F80F6DEFD_gshared (HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* __this, int32_t ___0_capacity, RuntimeObject* ___1_comparer, const RuntimeMethod* method) 
 {
 	{
@@ -24436,7 +24436,7 @@ IL_0022:
 		return;
 	}
 }
-// Method Definition Index: 44161
+// Method Definition Index: 44159
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSet_1_System_Collections_Generic_ICollectionU3CTU3E_Add_mAFFA3183F2844979536D8D77E5182B1D174D4FCB_gshared (HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* __this, Il2CppChar ___0_item, const RuntimeMethod* method) 
 {
 	{
@@ -24446,7 +24446,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSet_1_System_Collections_Generic_ICo
 		return;
 	}
 }
-// Method Definition Index: 44162
+// Method Definition Index: 44160
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSet_1_Clear_m52449A6455A62F3FEFFB0BF049977B2A5DE06C27_gshared (HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -24476,7 +24476,7 @@ IL_0044:
 		return;
 	}
 }
-// Method Definition Index: 44163
+// Method Definition Index: 44161
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HashSet_1_Contains_mE60FDE27327895B50551345B5D75DFDD5349801B_gshared (HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* __this, Il2CppChar ___0_item, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
@@ -24581,7 +24581,7 @@ IL_0080:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 44164
+// Method Definition Index: 44162
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSet_1_CopyTo_mC3BF6A6366B765AD334C73ABF22B8BC5A2207798_gshared (HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* __this, CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___0_array, int32_t ___1_arrayIndex, const RuntimeMethod* method) 
 {
 	{
@@ -24592,7 +24592,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSet_1_CopyTo_mC3BF6A6366B765AD334C73
 		return;
 	}
 }
-// Method Definition Index: 44165
+// Method Definition Index: 44163
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HashSet_1_Remove_mF6C75FBA504D6FF37EF30292D3C066AE2607BDA4_gshared (HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* __this, Il2CppChar ___0_item, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
@@ -24774,7 +24774,7 @@ IL_0154:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 44166
+// Method Definition Index: 44164
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HashSet_1_get_Count_m1707C2DD29B7A03ABDE7B76B4FE067E39380B0E8_gshared (HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -24782,14 +24782,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HashSet_1_get_Count_m1707C2DD29B7A03A
 		return L_0;
 	}
 }
-// Method Definition Index: 44167
+// Method Definition Index: 44165
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HashSet_1_System_Collections_Generic_ICollectionU3CTU3E_get_IsReadOnly_m6290EB7325CA3A04ACD70770E08A053580C21515_gshared (HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* __this, const RuntimeMethod* method) 
 {
 	{
 		return (bool)0;
 	}
 }
-// Method Definition Index: 44168
+// Method Definition Index: 44166
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Enumerator_tC0C7D7D09056A8B57E4419D32DFE7C3748CE720E HashSet_1_GetEnumerator_mC8F37BAF7439F654953D16311BF032D9CAF0E95C_gshared (HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -24799,7 +24799,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Enumerator_tC0C7D7D09056A8B57E4419D32DFE7C374
 		return L_0;
 	}
 }
-// Method Definition Index: 44169
+// Method Definition Index: 44167
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* HashSet_1_System_Collections_Generic_IEnumerableU3CTU3E_GetEnumerator_mBE0664690A7F0C43310F6A782421562FEE276BC2_gshared (HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -24811,7 +24811,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* HashSet_1_System_Collections_G
 		return (RuntimeObject*)L_2;
 	}
 }
-// Method Definition Index: 44170
+// Method Definition Index: 44168
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* HashSet_1_System_Collections_IEnumerable_GetEnumerator_mC3972268FC28C387361A2B5B1F81E52DD692FD54_gshared (HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -24823,7 +24823,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* HashSet_1_System_Collections_I
 		return (RuntimeObject*)L_2;
 	}
 }
-// Method Definition Index: 44171
+// Method Definition Index: 44169
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSet_1_GetObjectData_m2A878F3F52EBEF8DDDD719E0DF81AE6E7F7DC53C_gshared (HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* __this, SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* ___0_info, StreamingContext_t56760522A751890146EE45F82F866B55B7E33677 ___1_context, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -24928,7 +24928,7 @@ IL_0089:
 		return;
 	}
 }
-// Method Definition Index: 44172
+// Method Definition Index: 44170
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSet_1_OnDeserialization_mF2B47202B52590759BC0A14642219471114322B1_gshared (HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* __this, RuntimeObject* ___0_sender, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -25060,7 +25060,7 @@ IL_00b4:
 		return;
 	}
 }
-// Method Definition Index: 44173
+// Method Definition Index: 44171
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HashSet_1_Add_mC54C49D2322343A65275FF0C6DCCA0948B6AD12A_gshared (HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* __this, Il2CppChar ___0_item, const RuntimeMethod* method) 
 {
 	{
@@ -25070,7 +25070,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HashSet_1_Add_mC54C49D2322343A65275FF0C6
 		return L_1;
 	}
 }
-// Method Definition Index: 44174
+// Method Definition Index: 44172
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSet_1_UnionWith_m52DBE985C523EFADE5C19C3E6391E6DA1D16CB1B_gshared (HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* __this, RuntimeObject* ___0_other, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -25172,7 +25172,7 @@ IL_003a:
 		return;
 	}
 }
-// Method Definition Index: 44175
+// Method Definition Index: 44173
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSet_1_IntersectWith_m883C9A909C6E44C7D1B62448A658352C6DCF74FE_gshared (HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* __this, RuntimeObject* ___0_other, const RuntimeMethod* method) 
 {
 	RuntimeObject* V_0 = NULL;
@@ -25271,7 +25271,7 @@ IL_0050:
 		return;
 	}
 }
-// Method Definition Index: 44176
+// Method Definition Index: 44174
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSet_1_ExceptWith_mA97074D0DB86337DC0FE4F0F352AC18CD6816428_gshared (HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* __this, RuntimeObject* ___0_other, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -25398,7 +25398,7 @@ IL_004e:
 		return;
 	}
 }
-// Method Definition Index: 44177
+// Method Definition Index: 44175
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSet_1_SymmetricExceptWith_m622DF3FF6CA224AC90DB0257DA0C657AFD892731_gshared (HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* __this, RuntimeObject* ___0_other, const RuntimeMethod* method) 
 {
 	HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* V_0 = NULL;
@@ -25474,7 +25474,7 @@ IL_0044:
 		return;
 	}
 }
-// Method Definition Index: 44178
+// Method Definition Index: 44176
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HashSet_1_IsSubsetOf_mC09AD6A38A21409BD59372B87E3EF40713BB2C10_gshared (HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* __this, RuntimeObject* ___0_other, const RuntimeMethod* method) 
 {
 	HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* V_0 = NULL;
@@ -25584,7 +25584,7 @@ IL_006d:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 44179
+// Method Definition Index: 44177
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HashSet_1_IsProperSubsetOf_m5B4E98D85F14EDFD6191B1136030EE078F358678_gshared (HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* __this, RuntimeObject* ___0_other, const RuntimeMethod* method) 
 {
 	RuntimeObject* V_0 = NULL;
@@ -25723,7 +25723,7 @@ IL_0086:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 44180
+// Method Definition Index: 44178
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HashSet_1_IsSupersetOf_mA735CA1942381A5E9032A4A8FB6061437A9C1954_gshared (HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* __this, RuntimeObject* ___0_other, const RuntimeMethod* method) 
 {
 	RuntimeObject* V_0 = NULL;
@@ -25819,7 +25819,7 @@ IL_004b:
 		return L_15;
 	}
 }
-// Method Definition Index: 44181
+// Method Definition Index: 44179
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HashSet_1_IsProperSupersetOf_mC8393CA6709EFF6C64F5A406090F1FDAE907B0AE_gshared (HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* __this, RuntimeObject* ___0_other, const RuntimeMethod* method) 
 {
 	RuntimeObject* V_0 = NULL;
@@ -25954,7 +25954,7 @@ IL_007e:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 44182
+// Method Definition Index: 44180
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HashSet_1_Overlaps_mB2C7B31259050A92B92A28BD34CA475046FD1ABE_gshared (HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* __this, RuntimeObject* ___0_other, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -26095,7 +26095,7 @@ IL_0051:
 		return L_14;
 	}
 }
-// Method Definition Index: 44183
+// Method Definition Index: 44181
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HashSet_1_SetEquals_m4E9B35D4F678932ACD02441C9744DCB52FA1DBD6_gshared (HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* __this, RuntimeObject* ___0_other, const RuntimeMethod* method) 
 {
 	HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* V_0 = NULL;
@@ -26225,7 +26225,7 @@ IL_007d:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 44184
+// Method Definition Index: 44182
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSet_1_CopyTo_m3A6C3A12C3B73F2528C5A13EF38BCD9810624308_gshared (HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* __this, CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___0_array, const RuntimeMethod* method) 
 {
 	{
@@ -26235,7 +26235,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSet_1_CopyTo_m3A6C3A12C3B73F2528C5A1
 		return;
 	}
 }
-// Method Definition Index: 44185
+// Method Definition Index: 44183
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSet_1_CopyTo_mFC00994F7D9B36D7487A3580DA64AEB0ACF7C6BD_gshared (HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* __this, CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___0_array, int32_t ___1_arrayIndex, int32_t ___2_count, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
@@ -26376,7 +26376,7 @@ IL_00a4:
 		return;
 	}
 }
-// Method Definition Index: 44186
+// Method Definition Index: 44184
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HashSet_1_RemoveWhere_mFC3AED11BE52E0B8218E233888CC1CF95B79C224_gshared (HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* __this, Predicate_1_t498CAB8C3A239510DF1CD4E0D9D0B8EFB398536E* ___0_match, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
@@ -26463,7 +26463,7 @@ IL_0054:
 		return L_17;
 	}
 }
-// Method Definition Index: 44187
+// Method Definition Index: 44185
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* HashSet_1_get_Comparer_m1FB92328D13ADF4805E8BE63E6512587F52FA437_gshared (HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -26471,7 +26471,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* HashSet_1_get_Comparer_m1FB923
 		return L_0;
 	}
 }
-// Method Definition Index: 44188
+// Method Definition Index: 44186
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSet_1_TrimExcess_mF5C317E5E41DC966951F716AE6C11389F450F416_gshared (HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -26595,7 +26595,7 @@ IL_00a2:
 		return;
 	}
 }
-// Method Definition Index: 44189
+// Method Definition Index: 44187
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HashSet_1_Initialize_mED06E74504EB8CDA7A93B8C5A05E7719391BE39B_gshared (HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* __this, int32_t ___0_capacity, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -26624,7 +26624,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HashSet_1_Initialize_mED06E74504EB8CD
 		return L_6;
 	}
 }
-// Method Definition Index: 44190
+// Method Definition Index: 44188
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSet_1_IncreaseCapacity_m83FC83E3A6BC6AEE6D56F1364667FD213CF2DA20_gshared (HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -26660,7 +26660,7 @@ IL_0020:
 		return;
 	}
 }
-// Method Definition Index: 44191
+// Method Definition Index: 44189
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSet_1_SetCapacity_m397E6844C97C30B267535203142BD41CB77A1F83_gshared (HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* __this, int32_t ___0_newSize, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -26744,7 +26744,7 @@ IL_0058:
 		return;
 	}
 }
-// Method Definition Index: 44192
+// Method Definition Index: 44190
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HashSet_1_AddIfNotPresent_m6F4A0681925D9C134962AD7F4AF40BF1A0F39716_gshared (HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* __this, Il2CppChar ___0_value, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
@@ -26932,7 +26932,7 @@ IL_00ef:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 44193
+// Method Definition Index: 44191
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSet_1_AddValue_mAF7254520AF5A7E3F27CE15E0A29CAEF6D653AC8_gshared (HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* __this, int32_t ___0_index, int32_t ___1_hashCode, Il2CppChar ___2_value, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
@@ -26968,7 +26968,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSet_1_AddValue_mAF7254520AF5A7E3F27C
 		return;
 	}
 }
-// Method Definition Index: 44194
+// Method Definition Index: 44192
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HashSet_1_ContainsAllElements_mFFE40ED5F16EA56C6F2BF3F3B7A55AA325B30B50_gshared (HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* __this, RuntimeObject* ___0_other, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -27071,7 +27071,7 @@ IL_0033:
 		return L_10;
 	}
 }
-// Method Definition Index: 44195
+// Method Definition Index: 44193
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HashSet_1_IsSubsetOfHashSetWithSameEC_m4EE5F3C1E9F9761418B4FD137FC13651D1CA177F_gshared (HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* __this, HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* ___0_other, const RuntimeMethod* method) 
 {
 	Enumerator_tC0C7D7D09056A8B57E4419D32DFE7C3748CE720E V_0;
@@ -27149,7 +27149,7 @@ IL_0039:
 		return L_6;
 	}
 }
-// Method Definition Index: 44196
+// Method Definition Index: 44194
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSet_1_IntersectWithHashSetWithSameEC_mCEBCEEAACCC17AD31B85EF607087C10542A61D11_gshared (HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* __this, HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* ___0_other, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
@@ -27211,7 +27211,7 @@ IL_003f:
 		return;
 	}
 }
-// Method Definition Index: 44197
+// Method Definition Index: 44195
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSet_1_IntersectWithEnumerable_m786ABC68427FCEE72A693717E3889C7A9F7326D5_gshared (HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* __this, RuntimeObject* ___0_other, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -27407,7 +27407,7 @@ IL_00ae:
 		return;
 	}
 }
-// Method Definition Index: 44198
+// Method Definition Index: 44196
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HashSet_1_InternalIndexOf_m82B2F4C42A44C25FABA6AF807D1AC593811D3035_gshared (HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* __this, Il2CppChar ___0_item, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
@@ -27504,7 +27504,7 @@ IL_0074:
 		return (-1);
 	}
 }
-// Method Definition Index: 44199
+// Method Definition Index: 44197
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSet_1_SymmetricExceptWithUniqueHashSet_m83D7F76CE08C514F6002C2EAD1E1B46966FCEF3B_gshared (HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* __this, HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* ___0_other, const RuntimeMethod* method) 
 {
 	Enumerator_tC0C7D7D09056A8B57E4419D32DFE7C3748CE720E V_0;
@@ -27576,7 +27576,7 @@ IL_003b:
 		return;
 	}
 }
-// Method Definition Index: 44200
+// Method Definition Index: 44198
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSet_1_SymmetricExceptWithEnumerable_mE47DB409A4731FA597E218DD6CF9887683F5CE30_gshared (HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* __this, RuntimeObject* ___0_other, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -27806,7 +27806,7 @@ IL_00d1:
 		return;
 	}
 }
-// Method Definition Index: 44201
+// Method Definition Index: 44199
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HashSet_1_AddOrGetLocation_mC0DCFBA5D7CC16CB07FE8761A152DBB95EDE9695_gshared (HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* __this, Il2CppChar ___0_value, int32_t* ___1_location, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
@@ -27987,7 +27987,7 @@ IL_00e3:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 44202
+// Method Definition Index: 44200
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ElementCount_t97A67559AF084666BC14E206F35CE42305187FF2 HashSet_1_CheckUniqueAndUnfoundElements_mCFDF85D9CE29B8EF6511522A99173E8F9FDE06B0_gshared (HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* __this, RuntimeObject* ___0_other, bool ___1_returnIfUnfound, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -28256,7 +28256,7 @@ IL_00dd:
 		return L_45;
 	}
 }
-// Method Definition Index: 44203
+// Method Definition Index: 44201
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HashSet_1_AreEqualityComparersEqual_mEF5E91C6DD42DA42259A8BD6D7D250D1DED8D688_gshared (HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* ___0_set1, HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* ___1_set2, const RuntimeMethod* method) 
 {
 	{
@@ -28274,7 +28274,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HashSet_1_AreEqualityComparersEqual_mEF5
 		return L_4;
 	}
 }
-// Method Definition Index: 44204
+// Method Definition Index: 44202
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HashSet_1_InternalGetHashCode_m47E40AC991B60777FB07AE0B1F3705E02F840D82_gshared (HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* __this, Il2CppChar ___0_item, const RuntimeMethod* method) 
 {
 	{
@@ -28294,7 +28294,7 @@ IL_000a:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-// Method Definition Index: 34405
+// Method Definition Index: 34404
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Vector3_Equals_mEDEAF86793D229455BBF9BA5B30DDF438D6CABC1_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_other, const RuntimeMethod* method) 
 {
 	int32_t G_B4_0 = 0;
@@ -28334,7 +28334,7 @@ IL_002d:
 		return (bool)G_B4_0;
 	}
 }
-// Method Definition Index: 34403
+// Method Definition Index: 34402
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Vector3_GetHashCode_mB08429DC931A85BD29CE11B9ABC77DE7E0E46327_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, const RuntimeMethod* method) 
 {
 	{
@@ -28350,7 +28350,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Vector3_GetHashCode_mB084
 		return ((int32_t)(((int32_t)(L_1^((int32_t)(L_3<<2))))^((int32_t)(L_5>>2))));
 	}
 }
-// Method Definition Index: 34612
+// Method Definition Index: 34610
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Vector3Int_Equals_mE4D179C5001B77DE05E3E4BC39DC9F6AE441EBD8_inline (Vector3Int_t65CB06F557251D18A37BD71F3655BA836A357376* __this, Vector3Int_t65CB06F557251D18A37BD71F3655BA836A357376 ___0_other, const RuntimeMethod* method) 
 {
 	{
@@ -28361,7 +28361,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Vector3Int_Equals_mE4D179C50
 		return L_2;
 	}
 }
-// Method Definition Index: 34614
+// Method Definition Index: 34612
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Vector3Int_GetHashCode_mFAA200CFE26F006BEE6F9A65AFD0AC8C49D730EA_inline (Vector3Int_t65CB06F557251D18A37BD71F3655BA836A357376* __this, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
@@ -28393,7 +28393,7 @@ IL_0039:
 		return L_10;
 	}
 }
-// Method Definition Index: 34626
+// Method Definition Index: 34624
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Vector4_Equals_m73FAA65A1A565EE28D6C9385603829894B7D4392_inline (Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3* __this, Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___0_other, const RuntimeMethod* method) 
 {
 	int32_t G_B5_0 = 0;
@@ -28442,7 +28442,7 @@ IL_003b:
 		return (bool)G_B5_0;
 	}
 }
-// Method Definition Index: 34624
+// Method Definition Index: 34622
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Vector4_GetHashCode_m53F6FCA56A0051C9D1AB41AA3EAA2C86CDAA8B92_inline (Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3* __this, const RuntimeMethod* method) 
 {
 	{
@@ -28470,7 +28470,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* Graph_get_title_mF963A9
 		return L_0;
 	}
 }
-// Method Definition Index: 51809
+// Method Definition Index: 51807
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void PathVisitor_set_ReadonlyVisit_m852F4CA7A95317B2AA5CBC9AB914037FC5A0CABD_inline (PathVisitor_tCD0947C41CDBDB774D22D560E5FFA01EF61C4446* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -28499,7 +28499,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Func_1_Invoke_m141
 	typedef RuntimeObject* (*FunctionPointerType) (RuntimeObject*, const RuntimeMethod*);
 	return ((FunctionPointerType)__this->___invoke_impl)((Il2CppObject*)__this->___method_code, reinterpret_cast<RuntimeMethod*>(__this->___method));
 }
-// Method Definition Index: 35775
+// Method Definition Index: 35773
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* ObjectPool_1_Get_m239BB169D8FEF3A2694E9A961C473D3807D67D89_gshared_inline (ObjectPool_1_t13378E8CD14858BB05EA28BAB9CC49EDB91BA259* __this, const RuntimeMethod* method) 
 {
 	RuntimeObject* V_0 = NULL;
@@ -28608,7 +28608,7 @@ IL_00a2:
 		return L_22;
 	}
 }
-// Method Definition Index: 35777
+// Method Definition Index: 35775
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ObjectPool_1_Release_m71F1CADB7AD9CC20BD824583A3675A4260965DB5_gshared_inline (ObjectPool_1_t13378E8CD14858BB05EA28BAB9CC49EDB91BA259* __this, RuntimeObject* ___0_element, const RuntimeMethod* method) 
 {
 	bool V_0 = false;
@@ -28712,7 +28712,7 @@ IL_007a:
 		return;
 	}
 }
-// Method Definition Index: 39480
+// Method Definition Index: 39478
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetGraph_3_set_gameObject_m6FE16ED49C8561FB68BEEAE4930446216B80289E_gshared_inline (GetGraph_3_tB9B245D31C6EA5C0BB569EC1D84F95DD91213A86* __this, ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -28723,7 +28723,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetGraph_3_set_gameObject_m6
 		return;
 	}
 }
-// Method Definition Index: 39482
+// Method Definition Index: 39480
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetGraph_3_set_graphOutput_mA07CC9EFE8F43FC4AF55F9B26D16F0482A739F23_gshared_inline (GetGraph_3_tB9B245D31C6EA5C0BB569EC1D84F95DD91213A86* __this, ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -28734,7 +28734,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetGraph_3_set_graphOutput_m
 		return;
 	}
 }
-// Method Definition Index: 39479
+// Method Definition Index: 39477
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* GetGraph_3_get_gameObject_mDCBF023CF432726FF35B42A112C91D56FC85B1F6_gshared_inline (GetGraph_3_tB9B245D31C6EA5C0BB569EC1D84F95DD91213A86* __this, const RuntimeMethod* method) 
 {
 	{
@@ -28761,7 +28761,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* GraphNest_2_get_ma
 		return L_0;
 	}
 }
-// Method Definition Index: 39487
+// Method Definition Index: 39485
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetGraphs_3_set_gameObject_m05B3BFF4070733CB9610CB39EFCA59430FA43BBD_gshared_inline (GetGraphs_3_t574646358DD5C0E139628A2C73E008AF88916CDE* __this, ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -28772,7 +28772,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetGraphs_3_set_gameObject_m
 		return;
 	}
 }
-// Method Definition Index: 39489
+// Method Definition Index: 39487
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetGraphs_3_set_graphList_m834C7FC835F2D3B5FFFB11467FC07B46F91EA9CC_gshared_inline (GetGraphs_3_t574646358DD5C0E139628A2C73E008AF88916CDE* __this, ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -28783,7 +28783,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetGraphs_3_set_graphList_m8
 		return;
 	}
 }
-// Method Definition Index: 39486
+// Method Definition Index: 39484
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* GetGraphs_3_get_gameObject_m750FCD2E0775B325441525F6AC46E131B9D4E4A0_gshared_inline (GetGraphs_3_t574646358DD5C0E139628A2C73E008AF88916CDE* __this, const RuntimeMethod* method) 
 {
 	{
@@ -28792,102 +28792,102 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C27
 		return L_0;
 	}
 }
-// Method Definition Index: 56106
+// Method Definition Index: 56104
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_flowIn_m8EEE0B2D5991AD4FAF690E3B1376820477F33811_gshared_inline (GetTrackablesUnit_6_t53BDD6CA0F569B84218F5FD0AE07A3F5A12B4681* __this, ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_0 = ___0_value;
 		__this->___U3CflowInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CflowInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56108
+// Method Definition Index: 56106
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_flowOut_m4479F9C23EE8AB54A808284316B5F0C1F50F365B_gshared_inline (GetTrackablesUnit_6_t53BDD6CA0F569B84218F5FD0AE07A3F5A12B4681* __this, ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = ___0_value;
 		__this->___U3CflowOutU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CflowOutU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56110
+// Method Definition Index: 56108
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_managerIn_m6360E18578C217E3A0F6BE048B8F63E4E72AFE3E_gshared_inline (GetTrackablesUnit_6_t53BDD6CA0F569B84218F5FD0AE07A3F5A12B4681* __this, ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = ___0_value;
 		__this->___U3CmanagerInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CmanagerInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56112
+// Method Definition Index: 56110
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_trackablesIn_m2BD844CE32AB3CE882C909F74A8EBAB07724F7C4_gshared_inline (GetTrackablesUnit_6_t53BDD6CA0F569B84218F5FD0AE07A3F5A12B4681* __this, ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = ___0_value;
 		__this->___U3CtrackablesInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtrackablesInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56114
+// Method Definition Index: 56112
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_trackablesOut_m23BCBD3ED48A4F0D535176194D20A5707E91B77B_gshared_inline (GetTrackablesUnit_6_t53BDD6CA0F569B84218F5FD0AE07A3F5A12B4681* __this, ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = ___0_value;
 		__this->___U3CtrackablesOutU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtrackablesOutU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56109
+// Method Definition Index: 56107
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* GetTrackablesUnit_6_get_managerIn_m358D1437379511D9D99962BABE4CF42C49697105_gshared_inline (GetTrackablesUnit_6_t53BDD6CA0F569B84218F5FD0AE07A3F5A12B4681* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = __this->___U3CmanagerInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56105
+// Method Definition Index: 56103
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* GetTrackablesUnit_6_get_flowIn_mAAFDCFDAAA9BC57B6A981EA282B07F52359C1502_gshared_inline (GetTrackablesUnit_6_t53BDD6CA0F569B84218F5FD0AE07A3F5A12B4681* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_0 = __this->___U3CflowInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56111
+// Method Definition Index: 56109
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* GetTrackablesUnit_6_get_trackablesIn_m77E455726BA7C8C2D76A024CA9D2CFD16E833D0E_gshared_inline (GetTrackablesUnit_6_t53BDD6CA0F569B84218F5FD0AE07A3F5A12B4681* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = __this->___U3CtrackablesInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56107
+// Method Definition Index: 56105
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* GetTrackablesUnit_6_get_flowOut_m2EFD468A0C47BE0461269FF6A54FF6FA3BE39896_gshared_inline (GetTrackablesUnit_6_t53BDD6CA0F569B84218F5FD0AE07A3F5A12B4681* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = __this->___U3CflowOutU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56113
+// Method Definition Index: 56111
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* GetTrackablesUnit_6_get_trackablesOut_m8264E3610A203450C23587180D1AACE4AC6CBA94_gshared_inline (GetTrackablesUnit_6_t53BDD6CA0F569B84218F5FD0AE07A3F5A12B4681* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = __this->___U3CtrackablesOutU3Ek__BackingField;
 		return L_0;
 	}
@@ -28969,902 +28969,902 @@ IL_0034:
 		return;
 	}
 }
-// Method Definition Index: 56106
+// Method Definition Index: 56104
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_flowIn_m806F2F4C11F404B00F077CB647CE2AF7F0EE0062_gshared_inline (GetTrackablesUnit_6_tF13014734999E8A2395BF31956B595A732B18759* __this, ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_0 = ___0_value;
 		__this->___U3CflowInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CflowInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56108
+// Method Definition Index: 56106
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_flowOut_mF293B5AA9AD8D1DB45A16047A428C6BCDD475A11_gshared_inline (GetTrackablesUnit_6_tF13014734999E8A2395BF31956B595A732B18759* __this, ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = ___0_value;
 		__this->___U3CflowOutU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CflowOutU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56110
+// Method Definition Index: 56108
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_managerIn_m78171281D411288F5BBF037AADF22F4777838457_gshared_inline (GetTrackablesUnit_6_tF13014734999E8A2395BF31956B595A732B18759* __this, ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = ___0_value;
 		__this->___U3CmanagerInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CmanagerInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56112
+// Method Definition Index: 56110
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_trackablesIn_mE2E281966F8FCFD28D4D507EA4722956D509FB25_gshared_inline (GetTrackablesUnit_6_tF13014734999E8A2395BF31956B595A732B18759* __this, ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = ___0_value;
 		__this->___U3CtrackablesInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtrackablesInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56114
+// Method Definition Index: 56112
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_trackablesOut_mEA3E85FF2DA6FA49FAB674E4299FD6933756C54F_gshared_inline (GetTrackablesUnit_6_tF13014734999E8A2395BF31956B595A732B18759* __this, ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = ___0_value;
 		__this->___U3CtrackablesOutU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtrackablesOutU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56109
+// Method Definition Index: 56107
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* GetTrackablesUnit_6_get_managerIn_m78D4EAFCD6FC7CB0BFB4F17DA7E00B711B1445FC_gshared_inline (GetTrackablesUnit_6_tF13014734999E8A2395BF31956B595A732B18759* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = __this->___U3CmanagerInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56105
+// Method Definition Index: 56103
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* GetTrackablesUnit_6_get_flowIn_m7346B886C7A86503D67620697BBBC5A94CA38FE3_gshared_inline (GetTrackablesUnit_6_tF13014734999E8A2395BF31956B595A732B18759* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_0 = __this->___U3CflowInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56111
+// Method Definition Index: 56109
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* GetTrackablesUnit_6_get_trackablesIn_mECFF012B677EADF39932AFC63EB81022642F081A_gshared_inline (GetTrackablesUnit_6_tF13014734999E8A2395BF31956B595A732B18759* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = __this->___U3CtrackablesInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56107
+// Method Definition Index: 56105
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* GetTrackablesUnit_6_get_flowOut_m186BD9C5D4DC38F534F9885BFC01FE782363A836_gshared_inline (GetTrackablesUnit_6_tF13014734999E8A2395BF31956B595A732B18759* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = __this->___U3CflowOutU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56113
+// Method Definition Index: 56111
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* GetTrackablesUnit_6_get_trackablesOut_m963D74D3B5AF8703528B1A97E57971DACF9ED8FC_gshared_inline (GetTrackablesUnit_6_tF13014734999E8A2395BF31956B595A732B18759* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = __this->___U3CtrackablesOutU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56106
+// Method Definition Index: 56104
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_flowIn_mB325D4652315017075B81F1888C47D29E1EE4F85_gshared_inline (GetTrackablesUnit_6_tD4A938F1E77E1BAE7C41C15D337E459E3CB21C85* __this, ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_0 = ___0_value;
 		__this->___U3CflowInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CflowInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56108
+// Method Definition Index: 56106
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_flowOut_m7614D74871DF91D539B3690E47B42E65CA273293_gshared_inline (GetTrackablesUnit_6_tD4A938F1E77E1BAE7C41C15D337E459E3CB21C85* __this, ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = ___0_value;
 		__this->___U3CflowOutU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CflowOutU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56110
+// Method Definition Index: 56108
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_managerIn_mBC2BEBFA2837DAA184C94B04A28A1A06FC173889_gshared_inline (GetTrackablesUnit_6_tD4A938F1E77E1BAE7C41C15D337E459E3CB21C85* __this, ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = ___0_value;
 		__this->___U3CmanagerInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CmanagerInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56112
+// Method Definition Index: 56110
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_trackablesIn_m59F3618A61774DB7995DB272FEA45D400A25761E_gshared_inline (GetTrackablesUnit_6_tD4A938F1E77E1BAE7C41C15D337E459E3CB21C85* __this, ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = ___0_value;
 		__this->___U3CtrackablesInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtrackablesInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56114
+// Method Definition Index: 56112
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_trackablesOut_mACDA5F94D670A31407888C71CD46B9DF2708E8B6_gshared_inline (GetTrackablesUnit_6_tD4A938F1E77E1BAE7C41C15D337E459E3CB21C85* __this, ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = ___0_value;
 		__this->___U3CtrackablesOutU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtrackablesOutU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56109
+// Method Definition Index: 56107
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* GetTrackablesUnit_6_get_managerIn_m6C56779D2A8E6584CA61E7E67E97E71D026163FB_gshared_inline (GetTrackablesUnit_6_tD4A938F1E77E1BAE7C41C15D337E459E3CB21C85* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = __this->___U3CmanagerInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56105
+// Method Definition Index: 56103
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* GetTrackablesUnit_6_get_flowIn_mBEF826152046350F0D72D48C97239566DA27154F_gshared_inline (GetTrackablesUnit_6_tD4A938F1E77E1BAE7C41C15D337E459E3CB21C85* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_0 = __this->___U3CflowInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56111
+// Method Definition Index: 56109
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* GetTrackablesUnit_6_get_trackablesIn_m91A1AAEAAA9817F2D096965DBB6E47EDB2FB0A37_gshared_inline (GetTrackablesUnit_6_tD4A938F1E77E1BAE7C41C15D337E459E3CB21C85* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = __this->___U3CtrackablesInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56107
+// Method Definition Index: 56105
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* GetTrackablesUnit_6_get_flowOut_m85C63C4CE85E86CEDCB4A265905A76BF18921ADA_gshared_inline (GetTrackablesUnit_6_tD4A938F1E77E1BAE7C41C15D337E459E3CB21C85* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = __this->___U3CflowOutU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56113
+// Method Definition Index: 56111
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* GetTrackablesUnit_6_get_trackablesOut_m6A7F04B00B2849A666E205B71DD9B195152B7015_gshared_inline (GetTrackablesUnit_6_tD4A938F1E77E1BAE7C41C15D337E459E3CB21C85* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = __this->___U3CtrackablesOutU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56106
+// Method Definition Index: 56104
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_flowIn_mF0DA6341906627C8D88D7D1C72D44EF4AADB5105_gshared_inline (GetTrackablesUnit_6_t7CDABC4A4629CF084D0C402FEABCB091691C0EC3* __this, ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_0 = ___0_value;
 		__this->___U3CflowInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CflowInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56108
+// Method Definition Index: 56106
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_flowOut_m7D4FB2C152C2184501607C97A0B330A633D943ED_gshared_inline (GetTrackablesUnit_6_t7CDABC4A4629CF084D0C402FEABCB091691C0EC3* __this, ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = ___0_value;
 		__this->___U3CflowOutU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CflowOutU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56110
+// Method Definition Index: 56108
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_managerIn_mF67D2D266C227C687A8851DE857D21BAA981C99B_gshared_inline (GetTrackablesUnit_6_t7CDABC4A4629CF084D0C402FEABCB091691C0EC3* __this, ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = ___0_value;
 		__this->___U3CmanagerInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CmanagerInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56112
+// Method Definition Index: 56110
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_trackablesIn_mE6824C2A223A294BBF31F0320C359D0A816C620B_gshared_inline (GetTrackablesUnit_6_t7CDABC4A4629CF084D0C402FEABCB091691C0EC3* __this, ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = ___0_value;
 		__this->___U3CtrackablesInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtrackablesInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56114
+// Method Definition Index: 56112
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_trackablesOut_mEFFFF6D3781C53058499619BC23DE0A5AB00F318_gshared_inline (GetTrackablesUnit_6_t7CDABC4A4629CF084D0C402FEABCB091691C0EC3* __this, ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = ___0_value;
 		__this->___U3CtrackablesOutU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtrackablesOutU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56109
+// Method Definition Index: 56107
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* GetTrackablesUnit_6_get_managerIn_m6CB397F9A210E1590CB8A4E530531BACD5BCE5A0_gshared_inline (GetTrackablesUnit_6_t7CDABC4A4629CF084D0C402FEABCB091691C0EC3* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = __this->___U3CmanagerInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56105
+// Method Definition Index: 56103
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* GetTrackablesUnit_6_get_flowIn_mAE93B562E00C24E976DC5936F9139B581F654E05_gshared_inline (GetTrackablesUnit_6_t7CDABC4A4629CF084D0C402FEABCB091691C0EC3* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_0 = __this->___U3CflowInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56111
+// Method Definition Index: 56109
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* GetTrackablesUnit_6_get_trackablesIn_m7DF2F0E1D7418193818D9F388409D7E44ACFE092_gshared_inline (GetTrackablesUnit_6_t7CDABC4A4629CF084D0C402FEABCB091691C0EC3* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = __this->___U3CtrackablesInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56107
+// Method Definition Index: 56105
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* GetTrackablesUnit_6_get_flowOut_mE8D894419AE403C26D30FAA83D0747508C846C77_gshared_inline (GetTrackablesUnit_6_t7CDABC4A4629CF084D0C402FEABCB091691C0EC3* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = __this->___U3CflowOutU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56113
+// Method Definition Index: 56111
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* GetTrackablesUnit_6_get_trackablesOut_m5F7BDE04E37C8D5B58DED06758D2E4EAC8DD8FE7_gshared_inline (GetTrackablesUnit_6_t7CDABC4A4629CF084D0C402FEABCB091691C0EC3* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = __this->___U3CtrackablesOutU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56106
+// Method Definition Index: 56104
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_flowIn_mCDC13CB4FB63AA6ECD99780364EF6F05F314B728_gshared_inline (GetTrackablesUnit_6_t394D5BEFC7488634A560E3C112D1AA5F0B2597B8* __this, ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_0 = ___0_value;
 		__this->___U3CflowInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CflowInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56108
+// Method Definition Index: 56106
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_flowOut_m0322457E12551E908E5A6DD92DA545EF318D4F60_gshared_inline (GetTrackablesUnit_6_t394D5BEFC7488634A560E3C112D1AA5F0B2597B8* __this, ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = ___0_value;
 		__this->___U3CflowOutU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CflowOutU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56110
+// Method Definition Index: 56108
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_managerIn_mD9F9AA39DEB5A1FC07418D6D711624A70546D0DA_gshared_inline (GetTrackablesUnit_6_t394D5BEFC7488634A560E3C112D1AA5F0B2597B8* __this, ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = ___0_value;
 		__this->___U3CmanagerInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CmanagerInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56112
+// Method Definition Index: 56110
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_trackablesIn_mD225D4261C7796589C40B5E973620AF458C51169_gshared_inline (GetTrackablesUnit_6_t394D5BEFC7488634A560E3C112D1AA5F0B2597B8* __this, ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = ___0_value;
 		__this->___U3CtrackablesInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtrackablesInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56114
+// Method Definition Index: 56112
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_trackablesOut_m411A8766514BEFE1E65DC53969646EF0189614F7_gshared_inline (GetTrackablesUnit_6_t394D5BEFC7488634A560E3C112D1AA5F0B2597B8* __this, ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = ___0_value;
 		__this->___U3CtrackablesOutU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtrackablesOutU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56109
+// Method Definition Index: 56107
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* GetTrackablesUnit_6_get_managerIn_m693E4FA6EE41099364134309301AA2BDF1877634_gshared_inline (GetTrackablesUnit_6_t394D5BEFC7488634A560E3C112D1AA5F0B2597B8* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = __this->___U3CmanagerInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56105
+// Method Definition Index: 56103
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* GetTrackablesUnit_6_get_flowIn_m3148B022E56F3A4C49520F04B074ED2933D3A040_gshared_inline (GetTrackablesUnit_6_t394D5BEFC7488634A560E3C112D1AA5F0B2597B8* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_0 = __this->___U3CflowInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56111
+// Method Definition Index: 56109
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* GetTrackablesUnit_6_get_trackablesIn_m4B3CB14C88937350166DF30DA50D006DBB5FDBAE_gshared_inline (GetTrackablesUnit_6_t394D5BEFC7488634A560E3C112D1AA5F0B2597B8* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = __this->___U3CtrackablesInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56107
+// Method Definition Index: 56105
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* GetTrackablesUnit_6_get_flowOut_m534A574AAB547925D0501FCFD234D91B1B64A898_gshared_inline (GetTrackablesUnit_6_t394D5BEFC7488634A560E3C112D1AA5F0B2597B8* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = __this->___U3CflowOutU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56113
+// Method Definition Index: 56111
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* GetTrackablesUnit_6_get_trackablesOut_mD2E14FF9E55F3212390765A7EAAA6C1E03FC1A15_gshared_inline (GetTrackablesUnit_6_t394D5BEFC7488634A560E3C112D1AA5F0B2597B8* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = __this->___U3CtrackablesOutU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56106
+// Method Definition Index: 56104
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_flowIn_m9DBF3E876EB2C50EF046080A9F84F75089FA15C9_gshared_inline (GetTrackablesUnit_6_t40700C5453679D51CCE89F1B99C1B4EBCF9F8144* __this, ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_0 = ___0_value;
 		__this->___U3CflowInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CflowInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56108
+// Method Definition Index: 56106
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_flowOut_m76BCA0367C3D00711A64D51361B15A901638867B_gshared_inline (GetTrackablesUnit_6_t40700C5453679D51CCE89F1B99C1B4EBCF9F8144* __this, ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = ___0_value;
 		__this->___U3CflowOutU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CflowOutU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56110
+// Method Definition Index: 56108
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_managerIn_mE5628C7E45CE7ECF41677B9166F504A28D2EDA8E_gshared_inline (GetTrackablesUnit_6_t40700C5453679D51CCE89F1B99C1B4EBCF9F8144* __this, ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = ___0_value;
 		__this->___U3CmanagerInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CmanagerInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56112
+// Method Definition Index: 56110
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_trackablesIn_m8695985889F93F405E98CF7A0F08B35E37CA6309_gshared_inline (GetTrackablesUnit_6_t40700C5453679D51CCE89F1B99C1B4EBCF9F8144* __this, ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = ___0_value;
 		__this->___U3CtrackablesInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtrackablesInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56114
+// Method Definition Index: 56112
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_trackablesOut_mD011B8193026308257F054A6DF6A7F5C990CB125_gshared_inline (GetTrackablesUnit_6_t40700C5453679D51CCE89F1B99C1B4EBCF9F8144* __this, ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = ___0_value;
 		__this->___U3CtrackablesOutU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtrackablesOutU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56109
+// Method Definition Index: 56107
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* GetTrackablesUnit_6_get_managerIn_m7F61563262261FC69FBE3BDA805E1C9AB33D2493_gshared_inline (GetTrackablesUnit_6_t40700C5453679D51CCE89F1B99C1B4EBCF9F8144* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = __this->___U3CmanagerInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56105
+// Method Definition Index: 56103
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* GetTrackablesUnit_6_get_flowIn_m391745112DB7A83FB89679A20315BEEA8166A742_gshared_inline (GetTrackablesUnit_6_t40700C5453679D51CCE89F1B99C1B4EBCF9F8144* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_0 = __this->___U3CflowInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56111
+// Method Definition Index: 56109
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* GetTrackablesUnit_6_get_trackablesIn_m53EC9C9F7D8C6D1ADBAC97CE7A46B9C883E55C0D_gshared_inline (GetTrackablesUnit_6_t40700C5453679D51CCE89F1B99C1B4EBCF9F8144* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = __this->___U3CtrackablesInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56107
+// Method Definition Index: 56105
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* GetTrackablesUnit_6_get_flowOut_m020A7A27283131656A10DDC2E15B81C5FCD3DC99_gshared_inline (GetTrackablesUnit_6_t40700C5453679D51CCE89F1B99C1B4EBCF9F8144* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = __this->___U3CflowOutU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56113
+// Method Definition Index: 56111
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* GetTrackablesUnit_6_get_trackablesOut_m7A221AE39CE9CAD5644964EBFF288BED7F25D3B1_gshared_inline (GetTrackablesUnit_6_t40700C5453679D51CCE89F1B99C1B4EBCF9F8144* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = __this->___U3CtrackablesOutU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56106
+// Method Definition Index: 56104
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_flowIn_m0C1FA8E60BCD1E0860E2A0C8485FD79F2E2B2516_gshared_inline (GetTrackablesUnit_6_tA252AFCA8D6AD9170BE371DD63B4E1A3D1DC456B* __this, ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_0 = ___0_value;
 		__this->___U3CflowInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CflowInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56108
+// Method Definition Index: 56106
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_flowOut_mFB3F6EDCCCC69D93191CF2C8CF2A6A95432D51C0_gshared_inline (GetTrackablesUnit_6_tA252AFCA8D6AD9170BE371DD63B4E1A3D1DC456B* __this, ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = ___0_value;
 		__this->___U3CflowOutU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CflowOutU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56110
+// Method Definition Index: 56108
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_managerIn_m23CFBE4C17B08D8064AC6C49614D81C09658201D_gshared_inline (GetTrackablesUnit_6_tA252AFCA8D6AD9170BE371DD63B4E1A3D1DC456B* __this, ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = ___0_value;
 		__this->___U3CmanagerInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CmanagerInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56112
+// Method Definition Index: 56110
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_trackablesIn_m004AAD5561D73134D50D264446032E076076CC32_gshared_inline (GetTrackablesUnit_6_tA252AFCA8D6AD9170BE371DD63B4E1A3D1DC456B* __this, ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = ___0_value;
 		__this->___U3CtrackablesInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtrackablesInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56114
+// Method Definition Index: 56112
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_trackablesOut_m648EDA9F7723ACE426E18627DA389CA2E9085805_gshared_inline (GetTrackablesUnit_6_tA252AFCA8D6AD9170BE371DD63B4E1A3D1DC456B* __this, ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = ___0_value;
 		__this->___U3CtrackablesOutU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtrackablesOutU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56109
+// Method Definition Index: 56107
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* GetTrackablesUnit_6_get_managerIn_mF2BA2E872B867372BC9C48C72CE67B3AFBB0EDB8_gshared_inline (GetTrackablesUnit_6_tA252AFCA8D6AD9170BE371DD63B4E1A3D1DC456B* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = __this->___U3CmanagerInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56105
+// Method Definition Index: 56103
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* GetTrackablesUnit_6_get_flowIn_m2241FA0863717356459E9EC8F2A6FE4B118B49B6_gshared_inline (GetTrackablesUnit_6_tA252AFCA8D6AD9170BE371DD63B4E1A3D1DC456B* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_0 = __this->___U3CflowInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56111
+// Method Definition Index: 56109
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* GetTrackablesUnit_6_get_trackablesIn_m4F6E1180C2BF0AD32D76030478C65AF732CAD595_gshared_inline (GetTrackablesUnit_6_tA252AFCA8D6AD9170BE371DD63B4E1A3D1DC456B* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = __this->___U3CtrackablesInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56107
+// Method Definition Index: 56105
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* GetTrackablesUnit_6_get_flowOut_mC0E4AD042E3372F8EB35B9C2FA783065D282286B_gshared_inline (GetTrackablesUnit_6_tA252AFCA8D6AD9170BE371DD63B4E1A3D1DC456B* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = __this->___U3CflowOutU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56113
+// Method Definition Index: 56111
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* GetTrackablesUnit_6_get_trackablesOut_m05DA512D5CDFCC442F6D7D7EAA84429A0D9A0BAA_gshared_inline (GetTrackablesUnit_6_tA252AFCA8D6AD9170BE371DD63B4E1A3D1DC456B* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = __this->___U3CtrackablesOutU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56106
+// Method Definition Index: 56104
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_flowIn_m26159308AEB66C094BF2CCB9079E1FC920902585_gshared_inline (GetTrackablesUnit_6_tE93598F0E5891061730B627819A5B94E3EC137C8* __this, ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_0 = ___0_value;
 		__this->___U3CflowInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CflowInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56108
+// Method Definition Index: 56106
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_flowOut_m5BEC3FDE3FEC3161DFED100C5A094EC104B10AA5_gshared_inline (GetTrackablesUnit_6_tE93598F0E5891061730B627819A5B94E3EC137C8* __this, ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = ___0_value;
 		__this->___U3CflowOutU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CflowOutU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56110
+// Method Definition Index: 56108
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_managerIn_m39B04DF5FAA6CE0195909EF5432BE2E7B3F51627_gshared_inline (GetTrackablesUnit_6_tE93598F0E5891061730B627819A5B94E3EC137C8* __this, ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = ___0_value;
 		__this->___U3CmanagerInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CmanagerInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56112
+// Method Definition Index: 56110
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_trackablesIn_mD43967A2620AC154B07385E2395A3C3806793904_gshared_inline (GetTrackablesUnit_6_tE93598F0E5891061730B627819A5B94E3EC137C8* __this, ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = ___0_value;
 		__this->___U3CtrackablesInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtrackablesInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56114
+// Method Definition Index: 56112
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_trackablesOut_m1F757CD8F2381C96519B0957CC86C521123903D1_gshared_inline (GetTrackablesUnit_6_tE93598F0E5891061730B627819A5B94E3EC137C8* __this, ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = ___0_value;
 		__this->___U3CtrackablesOutU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtrackablesOutU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56109
+// Method Definition Index: 56107
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* GetTrackablesUnit_6_get_managerIn_mE72F0F37AECC724B4EE73CEEED9E0578D1210A73_gshared_inline (GetTrackablesUnit_6_tE93598F0E5891061730B627819A5B94E3EC137C8* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = __this->___U3CmanagerInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56105
+// Method Definition Index: 56103
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* GetTrackablesUnit_6_get_flowIn_m68732541610F1CC1CEB53AD5551891C0A236CF08_gshared_inline (GetTrackablesUnit_6_tE93598F0E5891061730B627819A5B94E3EC137C8* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_0 = __this->___U3CflowInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56111
+// Method Definition Index: 56109
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* GetTrackablesUnit_6_get_trackablesIn_m79428EFA50C23E3BB4602AF09DD5FDBE98E634AA_gshared_inline (GetTrackablesUnit_6_tE93598F0E5891061730B627819A5B94E3EC137C8* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = __this->___U3CtrackablesInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56107
+// Method Definition Index: 56105
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* GetTrackablesUnit_6_get_flowOut_mD0484C305ADB65ABC3D44AE4BBE53BAED519BCA9_gshared_inline (GetTrackablesUnit_6_tE93598F0E5891061730B627819A5B94E3EC137C8* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = __this->___U3CflowOutU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56113
+// Method Definition Index: 56111
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* GetTrackablesUnit_6_get_trackablesOut_m8FBA78913906A44F11BFF9C6F174FAB9A3A36EAF_gshared_inline (GetTrackablesUnit_6_tE93598F0E5891061730B627819A5B94E3EC137C8* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = __this->___U3CtrackablesOutU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56106
+// Method Definition Index: 56104
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_flowIn_mB42A2D936FBC4A30062428B10F536A120919B787_gshared_inline (GetTrackablesUnit_6_t5CCB2F47ECD9360ADBCC2038E60046BB7E753997* __this, ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_0 = ___0_value;
 		__this->___U3CflowInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CflowInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56108
+// Method Definition Index: 56106
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_flowOut_m9E16FBC4E7F4F7B9D3A01D8C4E7B0B594FDB2CE2_gshared_inline (GetTrackablesUnit_6_t5CCB2F47ECD9360ADBCC2038E60046BB7E753997* __this, ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = ___0_value;
 		__this->___U3CflowOutU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CflowOutU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56110
+// Method Definition Index: 56108
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_managerIn_m85D504E5CB56EAAEF70113A4BDA3073A17B476A4_gshared_inline (GetTrackablesUnit_6_t5CCB2F47ECD9360ADBCC2038E60046BB7E753997* __this, ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = ___0_value;
 		__this->___U3CmanagerInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CmanagerInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56112
+// Method Definition Index: 56110
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_trackablesIn_m74FA744DE65CCF9DB53A194670E9AF382B3620C2_gshared_inline (GetTrackablesUnit_6_t5CCB2F47ECD9360ADBCC2038E60046BB7E753997* __this, ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = ___0_value;
 		__this->___U3CtrackablesInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtrackablesInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56114
+// Method Definition Index: 56112
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_trackablesOut_mC300984A361BA163AB05CF71DC1CFF18CA87EAE5_gshared_inline (GetTrackablesUnit_6_t5CCB2F47ECD9360ADBCC2038E60046BB7E753997* __this, ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = ___0_value;
 		__this->___U3CtrackablesOutU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtrackablesOutU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56109
+// Method Definition Index: 56107
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* GetTrackablesUnit_6_get_managerIn_mB90B9B8D5DFBF1185C730DDA420E12685671716B_gshared_inline (GetTrackablesUnit_6_t5CCB2F47ECD9360ADBCC2038E60046BB7E753997* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = __this->___U3CmanagerInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56105
+// Method Definition Index: 56103
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* GetTrackablesUnit_6_get_flowIn_mBD6157CBCD9C2323ADD234CD79125FF0CAF56712_gshared_inline (GetTrackablesUnit_6_t5CCB2F47ECD9360ADBCC2038E60046BB7E753997* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_0 = __this->___U3CflowInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56111
+// Method Definition Index: 56109
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* GetTrackablesUnit_6_get_trackablesIn_m76CC6C7BCD4AAEA181B6DA77533EE80859B6D5A8_gshared_inline (GetTrackablesUnit_6_t5CCB2F47ECD9360ADBCC2038E60046BB7E753997* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = __this->___U3CtrackablesInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56107
+// Method Definition Index: 56105
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* GetTrackablesUnit_6_get_flowOut_m346EA82E879A5E36C8177DF73BEAD0787FA597DA_gshared_inline (GetTrackablesUnit_6_t5CCB2F47ECD9360ADBCC2038E60046BB7E753997* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = __this->___U3CflowOutU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56113
+// Method Definition Index: 56111
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* GetTrackablesUnit_6_get_trackablesOut_mF7757418BB7F47D19A5C5998A32C49835DD71B87_gshared_inline (GetTrackablesUnit_6_t5CCB2F47ECD9360ADBCC2038E60046BB7E753997* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = __this->___U3CtrackablesOutU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56106
+// Method Definition Index: 56104
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_flowIn_m758EB75C8034B05A6FD9AD957307562F35B33372_gshared_inline (GetTrackablesUnit_6_tEE2BC0E2559CB40B4104C870DF982285700AAA7E* __this, ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_0 = ___0_value;
 		__this->___U3CflowInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CflowInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56108
+// Method Definition Index: 56106
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_flowOut_mB2AF80C0998269C9FA408E9844535FEA8BC69295_gshared_inline (GetTrackablesUnit_6_tEE2BC0E2559CB40B4104C870DF982285700AAA7E* __this, ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = ___0_value;
 		__this->___U3CflowOutU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CflowOutU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56110
+// Method Definition Index: 56108
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_managerIn_m58C9B6B11A663A134E9EAA38325D85CAC22F6FB1_gshared_inline (GetTrackablesUnit_6_tEE2BC0E2559CB40B4104C870DF982285700AAA7E* __this, ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = ___0_value;
 		__this->___U3CmanagerInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CmanagerInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56112
+// Method Definition Index: 56110
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_trackablesIn_m2388425D6E1B12E2AD5526DE4FCB919C499A1A56_gshared_inline (GetTrackablesUnit_6_tEE2BC0E2559CB40B4104C870DF982285700AAA7E* __this, ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = ___0_value;
 		__this->___U3CtrackablesInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtrackablesInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56114
+// Method Definition Index: 56112
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GetTrackablesUnit_6_set_trackablesOut_mB98E80D0950B993C4BBAD70844B966BDC1FD2D37_gshared_inline (GetTrackablesUnit_6_tEE2BC0E2559CB40B4104C870DF982285700AAA7E* __this, ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = ___0_value;
 		__this->___U3CtrackablesOutU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtrackablesOutU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56109
+// Method Definition Index: 56107
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* GetTrackablesUnit_6_get_managerIn_mB9D376B8091ED8DBB23E0B7B686E3B770E83E6CC_gshared_inline (GetTrackablesUnit_6_tEE2BC0E2559CB40B4104C870DF982285700AAA7E* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:63>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = __this->___U3CmanagerInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56105
+// Method Definition Index: 56103
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* GetTrackablesUnit_6_get_flowIn_m23612110CFA3BB689E205548C21FFEB76772A625_gshared_inline (GetTrackablesUnit_6_tEE2BC0E2559CB40B4104C870DF982285700AAA7E* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:49>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_0 = __this->___U3CflowInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56111
+// Method Definition Index: 56109
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* GetTrackablesUnit_6_get_trackablesIn_m7176A85216A816479F293A123596F42B68B31A6C_gshared_inline (GetTrackablesUnit_6_tEE2BC0E2559CB40B4104C870DF982285700AAA7E* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:67>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = __this->___U3CtrackablesInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56107
+// Method Definition Index: 56105
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* GetTrackablesUnit_6_get_flowOut_mA33B202912A7BACF97A4A01BCD146E81B4897D76_gshared_inline (GetTrackablesUnit_6_tEE2BC0E2559CB40B4104C870DF982285700AAA7E* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:56>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = __this->___U3CflowOutU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56113
+// Method Definition Index: 56111
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* GetTrackablesUnit_6_get_trackablesOut_mB4DB31F725DAF04432099F963D52D2891C174B3B_gshared_inline (GetTrackablesUnit_6_tEE2BC0E2559CB40B4104C870DF982285700AAA7E* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/GetTrackablesUnit.cs:74>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = __this->___U3CtrackablesOutU3Ek__BackingField;
 		return L_0;
 	}
@@ -29956,7 +29956,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_get_Cur
 		return L_0;
 	}
 }
-// Method Definition Index: 44208
+// Method Definition Index: 44206
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_get_Current_m139A176CD271A0532D75BE08DA7831C8C45CE28F_gshared_inline (Enumerator_t72556E98D7DDBE118A973D782D523D15A96461C8* __this, const RuntimeMethod* method) 
 {
 	{
@@ -29975,7 +29975,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GraphElement_1_set_graph_m00
 		return;
 	}
 }
-// Method Definition Index: 41456
+// Method Definition Index: 41454
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Enumerable_Empty_TisRuntimeObject_mA90CDE158774C34A28C07CEEA9E9EA2A61618238_gshared_inline (const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -30038,7 +30038,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* KeyedCollection_2_
 		return (RuntimeObject*)L_0;
 	}
 }
-// Method Definition Index: 39501
+// Method Definition Index: 39499
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HasGraph_3_set_enter_m9C6C157CB9D66D578DBB05E51EA59106B2F04BB8_gshared_inline (HasGraph_3_t9769A21D1460CF887917FC23AF55101D899A446E* __this, ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -30049,7 +30049,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HasGraph_3_set_enter_m9C6C15
 		return;
 	}
 }
-// Method Definition Index: 39503
+// Method Definition Index: 39501
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HasGraph_3_set_target_m8AEBFAC29B3E4DAF40A16CF52CAD133685969CCC_gshared_inline (HasGraph_3_t9769A21D1460CF887917FC23AF55101D899A446E* __this, ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -30060,7 +30060,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HasGraph_3_set_target_m8AEBF
 		return;
 	}
 }
-// Method Definition Index: 39502
+// Method Definition Index: 39500
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* HasGraph_3_get_target_m13596B4675991EB20F1A221FCA5A19214A1B3030_gshared_inline (HasGraph_3_t9769A21D1460CF887917FC23AF55101D899A446E* __this, const RuntimeMethod* method) 
 {
 	{
@@ -30069,7 +30069,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C27
 		return L_0;
 	}
 }
-// Method Definition Index: 39505
+// Method Definition Index: 39503
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HasGraph_3_set_graphInput_mD87CD801322161115CB1443976D7A2A5EADEDC5C_gshared_inline (HasGraph_3_t9769A21D1460CF887917FC23AF55101D899A446E* __this, ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -30080,7 +30080,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HasGraph_3_set_graphInput_mD
 		return;
 	}
 }
-// Method Definition Index: 39507
+// Method Definition Index: 39505
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HasGraph_3_set_hasGraphOutput_m92ECC96752C6647C5450BE5C10F6C2D0DDF926CD_gshared_inline (HasGraph_3_t9769A21D1460CF887917FC23AF55101D899A446E* __this, ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -30091,7 +30091,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HasGraph_3_set_hasGraphOutpu
 		return;
 	}
 }
-// Method Definition Index: 39509
+// Method Definition Index: 39507
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HasGraph_3_set_exit_m5D31E31D8984829EAFE5A63221141C7DF58B134F_gshared_inline (HasGraph_3_t9769A21D1460CF887917FC23AF55101D899A446E* __this, ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -30102,7 +30102,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HasGraph_3_set_exit_m5D31E31
 		return;
 	}
 }
-// Method Definition Index: 39504
+// Method Definition Index: 39502
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* HasGraph_3_get_graphInput_m64E9AC74925C98BDBC31DD5AC5E0905D6C0BC447_gshared_inline (HasGraph_3_t9769A21D1460CF887917FC23AF55101D899A446E* __this, const RuntimeMethod* method) 
 {
 	{
@@ -30111,7 +30111,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C27
 		return L_0;
 	}
 }
-// Method Definition Index: 39500
+// Method Definition Index: 39498
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* HasGraph_3_get_enter_mD9621C8D3974BD33239C788794D72EE008711351_gshared_inline (HasGraph_3_t9769A21D1460CF887917FC23AF55101D899A446E* __this, const RuntimeMethod* method) 
 {
 	{
@@ -30120,7 +30120,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlInput_t1AD434958538C865F55
 		return L_0;
 	}
 }
-// Method Definition Index: 39506
+// Method Definition Index: 39504
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* HasGraph_3_get_hasGraphOutput_mC12CB0A7F81C018C1AAD2E63AF91FB4A1677302A_gshared_inline (HasGraph_3_t9769A21D1460CF887917FC23AF55101D899A446E* __this, const RuntimeMethod* method) 
 {
 	{
@@ -30129,7 +30129,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E87
 		return L_0;
 	}
 }
-// Method Definition Index: 39508
+// Method Definition Index: 39506
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* HasGraph_3_get_exit_m76FE479B94F34211C1BC292ACB468BA51D2F362A_gshared_inline (HasGraph_3_t9769A21D1460CF887917FC23AF55101D899A446E* __this, const RuntimeMethod* method) 
 {
 	{
@@ -30168,7 +30168,7 @@ IL_0019:
 		return L_4;
 	}
 }
-// Method Definition Index: 44166
+// Method Definition Index: 44164
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t HashSet_1_get_Count_m1707C2DD29B7A03ABDE7B76B4FE067E39380B0E8_gshared_inline (HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -30182,7 +30182,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Predicate_1_Invoke_m8243A1B2
 	typedef bool (*FunctionPointerType) (RuntimeObject*, Il2CppChar, const RuntimeMethod*);
 	return ((FunctionPointerType)__this->___invoke_impl)((Il2CppObject*)__this->___method_code, ___0_obj, reinterpret_cast<RuntimeMethod*>(__this->___method));
 }
-// Method Definition Index: 44208
+// Method Definition Index: 44206
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Il2CppChar Enumerator_get_Current_m1A0D2BFE90EA2CF8E7EF40C911C1B47CBBD9F5FD_gshared_inline (Enumerator_tC0C7D7D09056A8B57E4419D32DFE7C3748CE720E* __this, const RuntimeMethod* method) 
 {
 	{
@@ -30190,7 +30190,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Il2CppChar Enumerator_get_Current
 		return L_0;
 	}
 }
-// Method Definition Index: 44187
+// Method Definition Index: 44185
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* HashSet_1_get_Comparer_m1FB92328D13ADF4805E8BE63E6512587F52FA437_gshared_inline (HashSet_1_t699860DBA06D8F002CD3C64E462BF860ACAD5E9A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -30198,7 +30198,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* HashSet_1_get_Comp
 		return L_0;
 	}
 }
-// Method Definition Index: 34610
+// Method Definition Index: 34608
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Vector3Int_op_Equality_mB10073AF3B08421C46BF678C8FF64AAD62C83617_inline (Vector3Int_t65CB06F557251D18A37BD71F3655BA836A357376 ___0_lhs, Vector3Int_t65CB06F557251D18A37BD71F3655BA836A357376 ___1_rhs, const RuntimeMethod* method) 
 {
 	int32_t G_B4_0 = 0;
@@ -30249,7 +30249,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m4407E4C
 		return L_0;
 	}
 }
-// Method Definition Index: 35771
+// Method Definition Index: 35769
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t ObjectPool_1_get_CountAll_mF3CDC0B64D5037106573C6CEE921EAF0A8B3C8EB_gshared_inline (ObjectPool_1_t13378E8CD14858BB05EA28BAB9CC49EDB91BA259* __this, const RuntimeMethod* method) 
 {
 	{
@@ -30257,7 +30257,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t ObjectPool_1_get_CountAll
 		return L_0;
 	}
 }
-// Method Definition Index: 35772
+// Method Definition Index: 35770
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ObjectPool_1_set_CountAll_mED1939CDEBB184383799328A0C1AEC9E1D2960D9_gshared_inline (ObjectPool_1_t13378E8CD14858BB05EA28BAB9CC49EDB91BA259* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{

@@ -153,7 +153,7 @@ public class JewelryManager : MonoBehaviour
         // Left
         activeLeftEarring = Instantiate(prefab, leftEarAnchor);
         activeLeftEarring.transform.localPosition = Vector3.zero;
-        activeLeftEarring.transform.localRotation = Quaternion.identity;
+        activeLeftEarring.transform.localRotation = Quaternion.Euler(0f, 180f, 0f);
         // DO NOT force scale (keeps GLB prefab scale)
 
         // Right (mirrored rotation)

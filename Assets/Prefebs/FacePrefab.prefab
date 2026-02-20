@@ -308,21 +308,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EarAttachARCore
   lobeDropFraction: 0.25
-  outwardFraction: 0.03
-  forwardFraction: 0.05
-  usePerEarOverrides: 1
-  leftDropFraction: 0.25
-  leftOutwardFraction: 0.02
-  leftForwardFraction: 0.05
-  rightDropFraction: 0.25
-  rightOutwardFraction: 0
-  rightForwardFraction: 0.05
+  outwardFraction: 0.02
+  forwardFraction: 0.04
   kalmanProcessNoise: 0.01
   kalmanMeasureNoise: 0.1
   rotSmoothing: 16
   angleRealism: 0
-  targetSizeMetres: 0.022
-  autoScale: 1
+  usePerEarOverrides: 1
 --- !u!1 &1576383704744356627
 GameObject:
   m_ObjectHideFlags: 0

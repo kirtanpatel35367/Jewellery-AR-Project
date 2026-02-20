@@ -13,8 +13,20 @@ PrefabInstance:
       value: dimond_earring
       objectReference: {fileID: 0}
     - target: {fileID: 2774220344278030320, guid: 298058437f46a7f408bc1a24c15f4c07, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 2774220344278030320, guid: 298058437f46a7f408bc1a24c15f4c07, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 2774220344278030320, guid: 298058437f46a7f408bc1a24c15f4c07, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 2774220344278030320, guid: 298058437f46a7f408bc1a24c15f4c07, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: 5.1798
       objectReference: {fileID: 0}
     - target: {fileID: 2774220344278030320, guid: 298058437f46a7f408bc1a24c15f4c07, type: 3}
       propertyPath: m_LocalPosition.y
@@ -22,7 +34,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2774220344278030320, guid: 298058437f46a7f408bc1a24c15f4c07, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 6.36395
       objectReference: {fileID: 0}
     - target: {fileID: 2774220344278030320, guid: 298058437f46a7f408bc1a24c15f4c07, type: 3}
       propertyPath: m_LocalRotation.w
