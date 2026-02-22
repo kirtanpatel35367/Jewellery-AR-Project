@@ -689,21 +689,6 @@ MonoBehaviour:
   - categoryName: Nacklace
     type: 1
     items:
-    - itemName: Necklace
-      thumbnailImage: {fileID: 21300000, guid: 760360fddb3e54945bdc46bfc35169de, type: 3}
-      jewelryPrefab: {fileID: 804426986579811739, guid: 0cc442a5c1b83a94b9aeb7983e1c69b4, type: 3}
-      necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
-      necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
-      necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
-    - itemName: Gold Necklace
-      thumbnailImage: {fileID: 21300000, guid: 3aa24c5102c2c6d48ae15675da44a97f, type: 3}
-      jewelryPrefab: {fileID: 5898075654446669484, guid: 31d21521e8a164267a2dfe0f6116c2c1, type: 3}
-      necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
-      necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
-      necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
-    - itemName: Egyptian Necklace
-      thumbnailImage: {fileID: 21300000, guid: 1dc08b8508967204b975d22b870fc1e1, type: 3}
-      jewelryPrefab: {fileID: -6689036041284674117, guid: b1b28ce34077f46edbdd67ea718bb46f, type: 3}
     - itemName: Necklace Gold
       thumbnailImage: {fileID: 21300000, guid: 0748d2e5b29fc42959e476513df6c86f, type: 3}
       jewelryPrefab: {fileID: 98793999804689636, guid: 9a13fcc790d174fc0a07debb89f8402f, type: 3}
