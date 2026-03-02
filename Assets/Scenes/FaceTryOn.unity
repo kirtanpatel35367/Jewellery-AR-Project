@@ -686,6 +686,12 @@ MonoBehaviour:
       necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
       necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
       necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
+    - itemName: Hanging Diamond
+      thumbnailImage: {fileID: 21300000, guid: 803e1442f7d2a564d9ad5e2f682c6a07, type: 3}
+      jewelryPrefab: {fileID: 4668715478663497472, guid: 770ac04128b475344be5589736d7e5e3, type: 3}
+      necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
+      necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
+      necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
   - categoryName: Nacklace
     type: 1
     items:
