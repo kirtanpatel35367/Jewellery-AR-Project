@@ -47,7 +47,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Necklace3Fix
   finalLocalPosition: {x: 0, y: 0.12, z: 0.04}
   finalLocalRotation: {x: 0, y: 0, z: 0}
-  finalUniformScale: 1
+  finalUniformScale: 1.2
+  applyContinuously: 1
   applyForSeconds: 1
 --- !u!1001 &5021847071441621970
 PrefabInstance:
