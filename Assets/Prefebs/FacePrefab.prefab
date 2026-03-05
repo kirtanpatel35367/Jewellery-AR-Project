@@ -164,11 +164,11 @@ GameObject:
   m_Component:
   - component: {fileID: 3892391463180442241}
   - component: {fileID: 2342848427289186338}
-  - component: {fileID: 6762774322756275266}
   - component: {fileID: 5727629131238706964}
   - component: {fileID: 3523128311462860682}
   - component: {fileID: 5958698696350794373}
   - component: {fileID: 4867578517955240944}
+  - component: {fileID: 8424092857782668958}
   m_Layer: 0
   m_Name: FacePrefab
   m_TagString: Untagged
@@ -206,18 +206,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.XR.ARFoundation::UnityEngine.XR.ARFoundation.ARFace
   m_DestroyOnRemoval: 1
---- !u!114 &6762774322756275266
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1086164948141365038}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4aab259b5c35443f9b1d0c15e2ad434, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.XR.ARFoundation::UnityEngine.XR.ARFoundation.ARFaceMeshVisualizer
 --- !u!23 &5727629131238706964
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -315,6 +303,22 @@ MonoBehaviour:
   rotSmoothing: 16
   angleRealism: 0
   usePerEarOverrides: 1
+  targetSizeMetres: 0.022
+  autoScale: 1
+--- !u!114 &8424092857782668958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086164948141365038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7901fbee398ee45cab0975bfd391a9f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ARFaceOccluder
+  depthMaskMaterial: {fileID: 2100000, guid: 523541313ae0c41c78a4d9c11fbed44d, type: 2}
+  inflate: 0.0015
 --- !u!1 &1576383704744356627
 GameObject:
   m_ObjectHideFlags: 0
