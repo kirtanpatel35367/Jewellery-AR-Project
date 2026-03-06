@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/FaceTryOn.unity
+    path: Assets/Scenes/JewelryTryOn.unity
     guid: 09ac00f3a66d4a543b8ecbbd29c91b8e
   - enabled: 0
     path: Assets/MediaPipeUnity/Samples/Scenes/Face Landmark Detection/Face Landmark
@@ -21,4 +21,5 @@ EditorBuildSettings:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 289c1b55c9541489481df5cc06664110, type: 3}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 76ddfd28b2a42f84695f19cd639c3bb2, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: a1a3ece87aa37bf4d8fbb4ddd2aec525, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 2b0c5d885ae5222438625fe34f774080, type: 2}
   m_UseUCBPForAssetBundles: 0
