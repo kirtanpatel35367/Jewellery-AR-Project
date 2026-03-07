@@ -9,7 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1892678883540596560}
-  - component: {fileID: -6395589654802566120}
+  - component: {fileID: 3084179898063070190}
+  - component: {fileID: 5533407948075427524}
+  - component: {fileID: 2938702476943550326}
   m_Layer: 0
   m_Name: necklace_gold
   m_TagString: Untagged
@@ -27,13 +29,13 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: -0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1929173329996838776}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-6395589654802566120
+--- !u!114 &3084179898063070190
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -42,15 +44,40 @@ MonoBehaviour:
   m_GameObject: {fileID: 5898075654446669484}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17158da83dd424943a606ad4527f509f, type: 3}
+  m_Script: {fileID: 11500000, guid: e44a993fa0a884797bf4d786a975c8e1, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NecklaceFitProfile
-  autoScale: 1
-  targetWidthMeters: 0.18
-  scaleMultiplier: 1
-  localPositionOffset: {x: 0, y: -0.02, z: 0.03}
-  localRotationOffsetEuler: {x: 0, y: 180, z: 0}
-  visualRoot: {fileID: 0}
+  m_EditorClassIdentifier: Assembly-CSharp::Necklace3Fix
+  finalLocalPosition: {x: 0, y: -0.04, z: -0.01}
+  finalLocalRotationEuler: {x: 12, y: 0, z: 0}
+  finalUniformScale: 0.4
+  applyContinuously: 1
+  applyForSeconds: 1
+--- !u!114 &5533407948075427524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5898075654446669484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5095a24a755b14db0be24ecf6366b181, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NecklaceMotion
+  swayAmount: 0
+  swaySpeed: 0
+--- !u!114 &2938702476943550326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5898075654446669484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fe3d05a666ee4a1895c89a21b0806b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RuntimeNecklaceFixer
 --- !u!1001 &4343104294124576904
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -116,8 +143,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8922330136166628365, guid: 940f2483358664a05855783f2cc1ad89, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8922330136166628365, guid: 940f2483358664a05855783f2cc1ad89, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8922330136166628365, guid: 940f2483358664a05855783f2cc1ad89, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8922330136166628365, guid: 940f2483358664a05855783f2cc1ad89, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.05
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

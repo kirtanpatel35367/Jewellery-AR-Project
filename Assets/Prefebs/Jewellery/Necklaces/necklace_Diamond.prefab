@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6150774516526758186}
+  - component: {fileID: 5925673442859535746}
+  - component: {fileID: -2765091924114973501}
   m_Layer: 0
   m_Name: necklace_Diamond
   m_TagString: Untagged
@@ -32,6 +34,37 @@ Transform:
   - {fileID: 6693494118538486258}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5925673442859535746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804426986579811739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e44a993fa0a884797bf4d786a975c8e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Necklace3Fix
+  finalLocalPosition: {x: 0, y: 0.025, z: -0.015}
+  finalLocalRotationEuler: {x: 0, y: 0, z: 0}
+  finalUniformScale: 1.15
+  applyContinuously: 1
+  applyForSeconds: 1
+--- !u!114 &-2765091924114973501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804426986579811739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5095a24a755b14db0be24ecf6366b181, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NecklaceMotion
+  swayAmount: 2
+  swaySpeed: 3
 --- !u!1001 &8819195803982476802
 PrefabInstance:
   m_ObjectHideFlags: 0
