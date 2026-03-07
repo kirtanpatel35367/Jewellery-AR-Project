@@ -797,7 +797,7 @@ MonoBehaviour:
       necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
     - itemName: Gold Diamond
       thumbnailImage: {fileID: 21300000, guid: 735e31131b6cfd64387a568dc48dbfb0, type: 3}
-      jewelryPrefab: {fileID: 9004060761068748725, guid: 435ef83418e7c6e4ab9076b48937a69b, type: 3}
+      jewelryPrefab: {fileID: 1086131821472322846, guid: caaaf9f852da258419c5658552ae49c6, type: 3}
       necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
       necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
       necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
@@ -837,12 +837,6 @@ MonoBehaviour:
     - itemName: Gold Necklace
       thumbnailImage: {fileID: 21300000, guid: 3aa24c5102c2c6d48ae15675da44a97f, type: 3}
       jewelryPrefab: {fileID: 5898075654446669484, guid: 31d21521e8a164267a2dfe0f6116c2c1, type: 3}
-      necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
-      necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
-      necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
-    - itemName: Egyptian Necklace
-      thumbnailImage: {fileID: 21300000, guid: 1dc08b8508967204b975d22b870fc1e1, type: 3}
-      jewelryPrefab: {fileID: -6689036041284674117, guid: b1b28ce34077f46edbdd67ea718bb46f, type: 3}
       necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
       necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
       necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
