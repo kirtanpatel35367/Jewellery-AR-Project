@@ -5,8 +5,9 @@ using System.Collections;
 /// JewelryManager — Fixed pending spawn system.
 ///
 /// - Waits for anchors before spawning (handles slow face detection).
-/// - IMPORTANT FIX: Do NOT force localScale = Vector3.one so GLB prefabs keep their correct scale.
-/// - Necklace FIX: If the spawned necklace prefab has NecklaceFitProfile, apply per-model scale/offset/rotation.
+/// - Does NOT force localScale = Vector3.one so GLB/FBX prefabs keep their correct base scale.
+/// - If the spawned necklace prefab has NecklaceFitProfile, apply per-model scale/offset/rotation.
+/// - Also calls RuntimeNecklaceFixer for problematic necklaces that need hard runtime correction.
 /// </summary>
 public class JewelryManager : MonoBehaviour
 {
@@ -154,13 +155,13 @@ public class JewelryManager : MonoBehaviour
         activeLeftEarring = Instantiate(prefab, leftEarAnchor);
         activeLeftEarring.transform.localPosition = Vector3.zero;
         activeLeftEarring.transform.localRotation = Quaternion.Euler(0f, 180f, 0f);
-        // DO NOT force scale (keeps GLB prefab scale)
+        // DO NOT force scale (keeps prefab scale)
 
-        // Right (mirrored rotation)
+        // Right
         activeRightEarring = Instantiate(prefab, rightEarAnchor);
         activeRightEarring.transform.localPosition = Vector3.zero;
         activeRightEarring.transform.localRotation = Quaternion.Euler(0f, 180f, 0f);
-        // DO NOT force scale (keeps GLB prefab scale)
+        // DO NOT force scale (keeps prefab scale)
 
         Debug.Log($"[JewelryManager] Earrings spawned: {prefab.name}");
     }
@@ -172,9 +173,12 @@ public class JewelryManager : MonoBehaviour
         activeNecklace = Instantiate(prefab, necklaceAnchor);
         activeNecklace.transform.localPosition = Vector3.zero;
         activeNecklace.transform.localRotation = Quaternion.identity;
-        // DO NOT force scale (keeps GLB prefab scale)
+        // DO NOT force scale (keeps prefab scale)
 
-        // ✅ Apply per-model fix if present on the prefab
+        // Apply hard runtime fixes for problematic necklaces
+        RuntimeNecklaceFixer.Apply(activeNecklace);
+
+        // Apply per-model fit if present on the prefab
         NecklaceFitProfile fit = activeNecklace.GetComponent<NecklaceFitProfile>();
         if (fit != null)
         {
@@ -192,7 +196,8 @@ public class JewelryManager : MonoBehaviour
     {
         if (activeLeftEarring != null) Destroy(activeLeftEarring);
         if (activeRightEarring != null) Destroy(activeRightEarring);
-        activeLeftEarring = activeRightEarring = null;
+        activeLeftEarring = null;
+        activeRightEarring = null;
     }
 
     void RemoveNecklace()

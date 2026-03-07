@@ -2,39 +2,47 @@ using UnityEngine;
 
 public class NecklaceStableFix : MonoBehaviour
 {
-    [Header("Position")]
-    public Vector3 finalLocalPosition = new Vector3(0f, 0f, 0f);
+    [Header("Final Placement (relative to NecklaceAnchor)")]
+    public Vector3 finalLocalPosition = Vector3.zero;
 
-    [Header("Rotation")]
-    public Vector3 finalLocalRotation = Vector3.zero;
+    [Header("Final Rotation")]
+    public Vector3 finalLocalRotationEuler = Vector3.zero;
 
-    [Header("Scale")]
-    public float finalUniformScale = 1.15f;
+    [Header("Final Size")]
+    public float finalUniformScale = 1f;
 
     [Header("Stability")]
-    public bool applyContinuously = true;   // always override (recommended)
-    public float applyForSeconds = 1.0f;    // fallback if above false
+    [Tooltip("If true, keeps applying every frame so nothing overrides it.")]
+    public bool applyContinuously = true;
 
-    float tEnd;
+    [Tooltip("If applyContinuously is false, apply only for a short time after spawn.")]
+    public float applyForSeconds = 1f;
+
+    float timer;
 
     void OnEnable()
     {
-        tEnd = Time.time + applyForSeconds;
-        Apply();
+        timer = 0f;
+        ApplyNow();
     }
 
     void LateUpdate()
     {
-        if (applyContinuously || Time.time <= tEnd)
+        if (applyContinuously)
         {
-            Apply();
+            ApplyNow();
+            return;
         }
+
+        timer += Time.deltaTime;
+        if (timer <= applyForSeconds)
+            ApplyNow();
     }
 
-    void Apply()
+    public void ApplyNow()
     {
         transform.localPosition = finalLocalPosition;
-        transform.localEulerAngles = finalLocalRotation;
+        transform.localRotation = Quaternion.Euler(finalLocalRotationEuler);
         transform.localScale = Vector3.one * Mathf.Max(0.0001f, finalUniformScale);
     }
 }

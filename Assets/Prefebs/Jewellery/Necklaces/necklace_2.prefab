@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8529536036164164705}
   - component: {fileID: 161951860337897174}
+  - component: {fileID: -1224666217894464836}
   m_Layer: 0
   m_Name: necklace_2
   m_TagString: Untagged
@@ -46,10 +47,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Necklace3Fix
   finalLocalPosition: {x: 0, y: 0.18, z: 0.015}
-  finalLocalRotation: {x: 0, y: 0, z: 0}
+  finalLocalRotationEuler: {x: 0, y: 0, z: 0}
   finalUniformScale: 1.22
   applyContinuously: 1
   applyForSeconds: 1
+--- !u!114 &-1224666217894464836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8269905544744269240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5095a24a755b14db0be24ecf6366b181, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NecklaceMotion
+  swayAmount: 2
+  swaySpeed: 3
 --- !u!1001 &2313169707629100152
 PrefabInstance:
   m_ObjectHideFlags: 0

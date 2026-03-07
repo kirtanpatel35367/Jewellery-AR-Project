@@ -453,6 +453,118 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0a3d6ed9478e464ba4f83a0588d5052, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnableDepthTexture
+--- !u!1 &429898238
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 429898240}
+  - component: {fileID: 429898239}
+  - component: {fileID: 429898241}
+  m_Layer: 0
+  m_Name: ARMainLight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &429898239
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 429898238}
+  m_Enabled: 1
+  serializedVersion: 12
+  m_Type: 1
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize2D: {x: 0.5, y: 0.5}
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ForceVisible: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_LightUnit: 1
+  m_LuxAtDistance: 1
+  m_EnableSpotReflector: 1
+--- !u!4 &429898240
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 429898238}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalPosition: {x: 0, y: 0, z: -20.6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &429898241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 429898238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c86c01f45e79c48e086cb324f4f06094, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ARJewelryLighting
+  cameraManager: {fileID: 1889989209}
+  directionalLight: {fileID: 429898239}
 --- !u!1 &933739666
 GameObject:
   m_ObjectHideFlags: 0
@@ -645,8 +757,9 @@ GameObject:
   - component: {fileID: 954362369}
   - component: {fileID: 954362371}
   - component: {fileID: 954362372}
-  - component: {fileID: 954362374}
   - component: {fileID: 954362375}
+  - component: {fileID: 954362374}
+  - component: {fileID: 954362373}
   m_Layer: 0
   m_Name: JewelryManager
   m_TagString: Untagged
@@ -694,7 +807,7 @@ MonoBehaviour:
       necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
       necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
       necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
-  - categoryName: Nacklace
+  - categoryName: Necklace
     type: 1
     items:
     - itemName: Necklace Gold
@@ -712,6 +825,24 @@ MonoBehaviour:
     - itemName: Necklace Set
       thumbnailImage: {fileID: 21300000, guid: 0cfbe5a7764484bd0b23caaafbef6f4a, type: 3}
       jewelryPrefab: {fileID: 4867846982337360968, guid: ce76fddc1bbab4ebe9c7d31dc55d6278, type: 3}
+      necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
+      necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
+      necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
+    - itemName: Necklace
+      thumbnailImage: {fileID: 21300000, guid: 760360fddb3e54945bdc46bfc35169de, type: 3}
+      jewelryPrefab: {fileID: 804426986579811739, guid: 0cc442a5c1b83a94b9aeb7983e1c69b4, type: 3}
+      necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
+      necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
+      necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
+    - itemName: Gold Necklace
+      thumbnailImage: {fileID: 21300000, guid: 3aa24c5102c2c6d48ae15675da44a97f, type: 3}
+      jewelryPrefab: {fileID: 5898075654446669484, guid: 31d21521e8a164267a2dfe0f6116c2c1, type: 3}
+      necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
+      necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
+      necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
+    - itemName: Egyptian Necklace
+      thumbnailImage: {fileID: 21300000, guid: 1dc08b8508967204b975d22b870fc1e1, type: 3}
+      jewelryPrefab: {fileID: -6689036041284674117, guid: b1b28ce34077f46edbdd67ea718bb46f, type: 3}
       necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
       necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
       necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
@@ -767,7 +898,31 @@ MonoBehaviour:
   lockRoll: 1
   yawFollow: 0.15
   faceMovementDamp: 0.85
---- !u!23 &954362374
+--- !u!114 &954362373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954362368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7901fbee398ee45cab0975bfd391a9f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ARFaceOccluder
+  depthMaskMaterial: {fileID: 2100000, guid: 2fec1a9f7495b46ae8a62cda664bf8ed, type: 2}
+  renderQueue: 2000
+  inflate: 0.0015
+  inflateEveryFrame: 1
+--- !u!33 &954362374
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954362368}
+  m_Mesh: {fileID: 0}
+--- !u!23 &954362375
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -791,8 +946,7 @@ MeshRenderer:
   m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 0}
+  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -816,18 +970,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &954362375
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 954362368}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4aab259b5c35443f9b1d0c15e2ad434, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.XR.ARFoundation::UnityEngine.XR.ARFoundation.ARFaceMeshVisualizer
 --- !u!1 &1889989203
 GameObject:
   m_ObjectHideFlags: 0
@@ -841,6 +983,7 @@ GameObject:
   - component: {fileID: 1889989204}
   - component: {fileID: 1889989208}
   - component: {fileID: 1889989207}
+  - component: {fileID: 1889989209}
   m_Layer: 0
   m_Name: XR Origin
   m_TagString: Untagged
@@ -966,6 +1109,25 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1889989209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889989203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4966719baa26e4b0e8231a24d9bd491a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.ARFoundation::UnityEngine.XR.ARFoundation.ARCameraManager
+  m_FocusMode: -1
+  m_LightEstimationMode: -1
+  m_AutoFocus: 1
+  m_ImageStabilization: 0
+  m_LightEstimation: 11
+  m_FacingDirection: 2
+  m_RenderMode: 0
 --- !u!1 &1900725526
 GameObject:
   m_ObjectHideFlags: 0
@@ -1021,3 +1183,4 @@ SceneRoots:
   - {fileID: 937038387}
   - {fileID: 1900725528}
   - {fileID: 954362370}
+  - {fileID: 429898240}
