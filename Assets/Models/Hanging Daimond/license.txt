@@ -1,0 +1,11 @@
+Model Information:
+* title:	Damond Earrings
+* source:	https://sketchfab.com/3d-models/damond-earrings-537b1b809d69447ab10cd4e93d205b8a
+* author:	nohcc4 (https://sketchfab.com/nohcc4)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Damond Earrings" (https://sketchfab.com/3d-models/damond-earrings-537b1b809d69447ab10cd4e93d205b8a) by nohcc4 (https://sketchfab.com/nohcc4) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

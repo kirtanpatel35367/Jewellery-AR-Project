@@ -19,7 +19,7 @@
           {
             "name": "NavMeshSettings",
             "scenes": [
-              "Assets/Scenes/FaceTryOn.unity"
+              "Assets/Scenes/JewelryTryOn.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -36,7 +36,7 @@
           {
             "name": "Animator",
             "scenes": [
-              "Assets/Scenes/FaceTryOn.unity"
+              "Assets/Scenes/JewelryTryOn.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -67,7 +67,7 @@
           {
             "name": "AudioBehaviour",
             "scenes": [
-              "Assets/Scenes/FaceTryOn.unity"
+              "Assets/Scenes/JewelryTryOn.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -75,7 +75,7 @@
           {
             "name": "AudioClip",
             "scenes": [
-              "Assets/Scenes/FaceTryOn.unity"
+              "Assets/Scenes/JewelryTryOn.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -83,7 +83,7 @@
           {
             "name": "AudioListener",
             "scenes": [
-              "Assets/Scenes/FaceTryOn.unity"
+              "Assets/Scenes/JewelryTryOn.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -97,7 +97,7 @@
           {
             "name": "AudioResource",
             "scenes": [
-              "Assets/Scenes/FaceTryOn.unity"
+              "Assets/Scenes/JewelryTryOn.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -128,7 +128,7 @@
           {
             "name": "Camera",
             "scenes": [
-              "Assets/Scenes/FaceTryOn.unity"
+              "Assets/Scenes/JewelryTryOn.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -148,7 +148,7 @@
           {
             "name": "Cubemap",
             "scenes": [
-              "Assets/Scenes/FaceTryOn.unity"
+              "Assets/Scenes/JewelryTryOn.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -168,7 +168,7 @@
           {
             "name": "EditorExtension",
             "scenes": [
-              "Assets/Scenes/FaceTryOn.unity"
+              "Assets/Scenes/JewelryTryOn.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -182,7 +182,7 @@
           {
             "name": "GameObject",
             "scenes": [
-              "Assets/Scenes/FaceTryOn.unity"
+              "Assets/Scenes/JewelryTryOn.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -208,14 +208,16 @@
           {
             "name": "LevelGameManager",
             "scenes": [
-              "Assets/Scenes/FaceTryOn.unity"
+              "Assets/Scenes/JewelryTryOn.unity"
             ],
             "dependencyType": 1,
             "icon": null
           },
           {
             "name": "Light",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/JewelryTryOn.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
@@ -234,7 +236,7 @@
           {
             "name": "LightmapSettings",
             "scenes": [
-              "Assets/Scenes/FaceTryOn.unity"
+              "Assets/Scenes/JewelryTryOn.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -254,7 +256,7 @@
           {
             "name": "Material",
             "scenes": [
-              "Assets/Scenes/FaceTryOn.unity"
+              "Assets/Scenes/JewelryTryOn.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -262,7 +264,7 @@
           {
             "name": "Mesh",
             "scenes": [
-              "Assets/Scenes/FaceTryOn.unity"
+              "Assets/Scenes/JewelryTryOn.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -270,7 +272,7 @@
           {
             "name": "MeshFilter",
             "scenes": [
-              "Assets/Scenes/FaceTryOn.unity"
+              "Assets/Scenes/JewelryTryOn.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -278,7 +280,7 @@
           {
             "name": "MeshRenderer",
             "scenes": [
-              "Assets/Scenes/FaceTryOn.unity"
+              "Assets/Scenes/JewelryTryOn.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -286,7 +288,7 @@
           {
             "name": "MonoBehaviour",
             "scenes": [
-              "Assets/Scenes/FaceTryOn.unity"
+              "Assets/Scenes/JewelryTryOn.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -300,7 +302,7 @@
           {
             "name": "MonoScript",
             "scenes": [
-              "Assets/Scenes/FaceTryOn.unity"
+              "Assets/Scenes/JewelryTryOn.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -308,7 +310,7 @@
           {
             "name": "NamedObject",
             "scenes": [
-              "Assets/Scenes/FaceTryOn.unity"
+              "Assets/Scenes/JewelryTryOn.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -340,7 +342,7 @@
           {
             "name": "RectTransform",
             "scenes": [
-              "Assets/Scenes/FaceTryOn.unity"
+              "Assets/Scenes/JewelryTryOn.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -354,7 +356,7 @@
           {
             "name": "RenderSettings",
             "scenes": [
-              "Assets/Scenes/FaceTryOn.unity"
+              "Assets/Scenes/JewelryTryOn.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -386,7 +388,7 @@
           {
             "name": "Shader",
             "scenes": [
-              "Assets/Scenes/FaceTryOn.unity"
+              "Assets/Scenes/JewelryTryOn.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -406,7 +408,7 @@
           {
             "name": "Sprite",
             "scenes": [
-              "Assets/Scenes/FaceTryOn.unity"
+              "Assets/Scenes/JewelryTryOn.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -888,7 +890,7 @@
           {
             "name": "BoxCollider",
             "scenes": [
-              "Assets/Scenes/FaceTryOn.unity"
+              "Assets/Scenes/JewelryTryOn.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -1288,7 +1290,7 @@
           {
             "name": "Font",
             "scenes": [
-              "Assets/Scenes/FaceTryOn.unity"
+              "Assets/Scenes/JewelryTryOn.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -1331,7 +1333,7 @@
           {
             "name": "Canvas",
             "scenes": [
-              "Assets/Scenes/FaceTryOn.unity"
+              "Assets/Scenes/JewelryTryOn.unity"
             ],
             "dependencyType": 0,
             "icon": null

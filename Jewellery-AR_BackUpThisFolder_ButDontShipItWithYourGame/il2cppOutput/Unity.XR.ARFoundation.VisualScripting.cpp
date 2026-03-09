@@ -389,7 +389,7 @@ IL2CPP_EXTERN_C RuntimeClass* InvalidOperationException_t5DDE4D49B7405FAAB1E4576
 IL2CPP_EXTERN_C RuntimeClass* Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* SessionStateChangedEventUnit_tB622F7C1B352062C2D5D67A3EA1E1E6DBD910631_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* StringBuilder_t_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_tDDCC949E3B043757E8B2BF5CEA983FB5D64C65A5____574E2DDEC1C2312869349FEED63276EE919A9B15D4FE92EEFD038EF3286B173A_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_tDDCC949E3B043757E8B2BF5CEA983FB5D64C65A5____39AF6A7A193C1679B0AAB05760AE7F932B375F0574C227A48BE78333EB72821C_FieldInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_tDDCC949E3B043757E8B2BF5CEA983FB5D64C65A5____DFB3B4D3E16ED55EEAEBBDD8F2D9D240F41E1A703566AFBBC1BA274D172E25E3_FieldInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral06EC14A22F690FC6FE8BD45F019395DC3FDB742F;
 IL2CPP_EXTERN_C String_t* _stringLiteral0AEA2C46AAEB233C6D2DF0275EF92FB2E56BAFE9;
@@ -2570,7 +2570,7 @@ struct List_1_tF1201F2F725A8AE529D436F38A4771FB6790F3C6_StaticFields
 };
 struct U3CPrivateImplementationDetailsU3E_tDDCC949E3B043757E8B2BF5CEA983FB5D64C65A5_StaticFields
 {
-	__StaticArrayInitTypeSizeU3D8717_t8FE957B967FB6A11999FDAFAAD4A6157F8A0D662 ___574E2DDEC1C2312869349FEED63276EE919A9B15D4FE92EEFD038EF3286B173A;
+	__StaticArrayInitTypeSizeU3D8717_t8FE957B967FB6A11999FDAFAAD4A6157F8A0D662 ___39AF6A7A193C1679B0AAB05760AE7F932B375F0574C227A48BE78333EB72821C;
 	__StaticArrayInitTypeSizeU3D4350_t0D5BBD06085A7FD5AADC4F67B482F42B9FC6DF9A ___DFB3B4D3E16ED55EEAEBBDD8F2D9D240F41E1A703566AFBBC1BA274D172E25E3;
 };
 struct Constants_t52BA4E19D4E4E7D84188778875CA3F198AB036F1_StaticFields
@@ -3470,14 +3470,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Unit__ctor_m7C07A3A00D7777361F4B86B45F40
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 55946
+// Method Definition Index: 72109
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_t536A062DC987E9D49DDC48415C579F63ADB98E92 UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_m5CF7F52D86C5B13E9D6018E08EBFC9FEE68FFD12 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_tDDCC949E3B043757E8B2BF5CEA983FB5D64C65A5____574E2DDEC1C2312869349FEED63276EE919A9B15D4FE92EEFD038EF3286B173A_FieldInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_tDDCC949E3B043757E8B2BF5CEA983FB5D64C65A5____39AF6A7A193C1679B0AAB05760AE7F932B375F0574C227A48BE78333EB72821C_FieldInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_tDDCC949E3B043757E8B2BF5CEA983FB5D64C65A5____DFB3B4D3E16ED55EEAEBBDD8F2D9D240F41E1A703566AFBBC1BA274D172E25E3_FieldInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
@@ -3487,7 +3487,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_t536A062DC987E9D49DDC48415C579
 		il2cpp_codegen_initobj((&V_0), sizeof(MonoScriptData_t536A062DC987E9D49DDC48415C579F63ADB98E92));
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)8717));
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = L_0;
-		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_2 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_tDDCC949E3B043757E8B2BF5CEA983FB5D64C65A5____574E2DDEC1C2312869349FEED63276EE919A9B15D4FE92EEFD038EF3286B173A_FieldInfo_var) };
+		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_2 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_tDDCC949E3B043757E8B2BF5CEA983FB5D64C65A5____39AF6A7A193C1679B0AAB05760AE7F932B375F0574C227A48BE78333EB72821C_FieldInfo_var) };
 		RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B((RuntimeArray*)L_1, L_2, NULL);
 		(&V_0)->___FilePathsData = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___FilePathsData), (void*)L_1);
@@ -3504,7 +3504,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_t536A062DC987E9D49DDC48415C579
 		return L_6;
 	}
 }
-// Method Definition Index: 55947
+// Method Definition Index: 72110
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mC1B4DF333E4618654773D73CC5CCF6106BC4FE2C (UnitySourceGeneratedAssemblyMonoScriptTypes_v1_t8D822E9B7C7E0474CF4A1283070CD2A45E6A5C71* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3590,7 +3590,7 @@ IL2CPP_EXTERN_C void MonoScriptData_t536A062DC987E9D49DDC48415C579F63ADB98E92_ma
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 55948
+// Method Definition Index: 72111
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Constants__cctor_m66D40EC53570516D22DEAD9C464FEFE0B20C7846 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3629,22 +3629,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Constants__cctor_m66D40EC53570516D22DEAD
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Constants.cs:44>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Constants.cs:45>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Constants.cs:46>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Constants.cs:47>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Constants.cs:48>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Constants.cs:49>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Constants.cs:50>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Constants.cs:51>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Constants.cs:52>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Constants.cs:53>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Constants.cs:54>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Constants.cs:55>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Constants.cs:56>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Constants.cs:57>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Constants.cs:58>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Constants.cs:59>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Constants.cs:44>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Constants.cs:45>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Constants.cs:46>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Constants.cs:47>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Constants.cs:48>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Constants.cs:49>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Constants.cs:50>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Constants.cs:51>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Constants.cs:52>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Constants.cs:53>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Constants.cs:54>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Constants.cs:55>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Constants.cs:56>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Constants.cs:57>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Constants.cs:58>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Constants.cs:59>
 		Dictionary_2_tCAAF57FF731CF7E9CEC738A6E8400D208C1066EE* L_0 = (Dictionary_2_tCAAF57FF731CF7E9CEC738A6E8400D208C1066EE*)il2cpp_codegen_object_new(Dictionary_2_tCAAF57FF731CF7E9CEC738A6E8400D208C1066EE_il2cpp_TypeInfo_var);
 		Dictionary_2__ctor_mFAF23CD29002CAB23492293F8C8B56962DE7A0B6(L_0, Dictionary_2__ctor_mFAF23CD29002CAB23492293F8C8B56962DE7A0B6_RuntimeMethod_var);
 		Dictionary_2_tCAAF57FF731CF7E9CEC738A6E8400D208C1066EE* L_1 = L_0;
@@ -3755,7 +3755,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Constants__cctor_m66D40EC53570516D22DEAD
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 55949
+// Method Definition Index: 72112
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARAnchorsChangedEventUnit__ctor_m6DEFC3D8C43E6BDB52269064D04E4A088E15C79C (ARAnchorsChangedEventUnit_t45D4D323512E2548C6C0CB856E587862DF602D62* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3779,7 +3779,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARAnchorsChangedEventUnit__ctor_m6DEFC3D
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 55950
+// Method Definition Index: 72113
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AREnvironmentProbesChangedEventUnit__ctor_m7E899FAF763E7C5531EAED4176F38909F27AEBC3 (AREnvironmentProbesChangedEventUnit_t7002BFC271BF1D50883A97C859F04876478A3657* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3803,7 +3803,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AREnvironmentProbesChangedEventUnit__cto
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 55951
+// Method Definition Index: 72114
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARFacesChangedEventUnit__ctor_m58B236A2DB6D6E04F14D915D58F29342DF68D8AC (ARFacesChangedEventUnit_t5BB0E1176BEB3D654CC08AF977241FAEEDC10DF4* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3827,7 +3827,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARFacesChangedEventUnit__ctor_m58B236A2D
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 55952
+// Method Definition Index: 72115
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARHumanBodiesChangedEventUnit__ctor_m865E3A35BB3627F7EBA908EC29043529279D4F76 (ARHumanBodiesChangedEventUnit_t4EA1422F15A1BF67DC33C8071B20ECC9A22A6F55* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3851,7 +3851,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARHumanBodiesChangedEventUnit__ctor_m865
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 55953
+// Method Definition Index: 72116
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARParticipantsChangedEventUnit__ctor_mEE671E434C510BCC73FE24DC8AF50A838D5091F2 (ARParticipantsChangedEventUnit_tAD9ADE2408C5B04FAE456D86E51834CE88481075* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3875,7 +3875,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARParticipantsChangedEventUnit__ctor_mEE
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 55954
+// Method Definition Index: 72117
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARPlanesChangedEventUnit__ctor_mD207EACCC420958840D1C28F54F2F23F07066607 (ARPlanesChangedEventUnit_t4A4F35221F48B1182946C976176A14BEB481A1F8* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3899,7 +3899,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARPlanesChangedEventUnit__ctor_mD207EACC
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 55955
+// Method Definition Index: 72118
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARPointCloudsChangedEventUnit__ctor_mA87C07867CBD9E537AA7D423392CF5F79DD97733 (ARPointCloudsChangedEventUnit_t9C3A0B0727B88A43A74EF338ADB038DF61509234* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3923,7 +3923,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARPointCloudsChangedEventUnit__ctor_mA87
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 55968
+// Method Definition Index: 72131
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackedImagesChangedEventUnit__ctor_mFF838419A074209278850FCCE1BC5F948BD81C5F (ARTrackedImagesChangedEventUnit_tFEC628A237689A2B8A3DAA41DF9263F3840EB892* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3947,7 +3947,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackedImagesChangedEventUnit__ctor_mF
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 55969
+// Method Definition Index: 72132
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackedObjectsChangedEventUnit__ctor_m696E3C9685008C55C8294CA65F01DAE835B7B11E (ARTrackedObjectsChangedEventUnit_tDB1972587F453B75BB340CAE6C42AA52514F8855* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3971,27 +3971,27 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackedObjectsChangedEventUnit__ctor_m
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 55970
+// Method Definition Index: 72133
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* CameraFrameReceivedEventUnit_get_frameEventArgs_m2CA34906D7D15DDD541EC38B7862B6CB0AB500E8 (CameraFrameReceivedEventUnit_t5C258A06DEEF9DBF3CE6AD4FD0B51313F1DEF858* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/CameraFrameReceivedEventUnit.cs:24>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/CameraFrameReceivedEventUnit.cs:24>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = __this->___U3CframeEventArgsU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 55971
+// Method Definition Index: 72134
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CameraFrameReceivedEventUnit_set_frameEventArgs_m9D477159407F84279F1EF8E7619B871AA4F542FE (CameraFrameReceivedEventUnit_t5C258A06DEEF9DBF3CE6AD4FD0B51313F1DEF858* __this, ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/CameraFrameReceivedEventUnit.cs:24>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/CameraFrameReceivedEventUnit.cs:24>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = ___0_value;
 		__this->___U3CframeEventArgsU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CframeEventArgsU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 55972
+// Method Definition Index: 72135
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CameraFrameReceivedEventUnit_get_hookName_m622599602E2C6D5C5B718B2B08DDAA3563C704C3 (CameraFrameReceivedEventUnit_t5C258A06DEEF9DBF3CE6AD4FD0B51313F1DEF858* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4003,7 +4003,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CameraFrameReceivedEventUnit_get_ho
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/CameraFrameReceivedEventUnit.cs:29>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/CameraFrameReceivedEventUnit.cs:29>
 		il2cpp_codegen_runtime_class_init_inline(Constants_t52BA4E19D4E4E7D84188778875CA3F198AB036F1_il2cpp_TypeInfo_var);
 		Dictionary_2_tCAAF57FF731CF7E9CEC738A6E8400D208C1066EE* L_0 = ((Constants_t52BA4E19D4E4E7D84188778875CA3F198AB036F1_StaticFields*)il2cpp_codegen_static_fields_for(Constants_t52BA4E19D4E4E7D84188778875CA3F198AB036F1_il2cpp_TypeInfo_var))->___EventHookNames;
 		il2cpp_codegen_runtime_class_init_inline(CameraFrameReceivedEventUnit_t5C258A06DEEF9DBF3CE6AD4FD0B51313F1DEF858_il2cpp_TypeInfo_var);
@@ -4014,7 +4014,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CameraFrameReceivedEventUnit_get_ho
 		return L_2;
 	}
 }
-// Method Definition Index: 55973
+// Method Definition Index: 72136
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Type_t* CameraFrameReceivedEventUnit_get_MessageListenerType_mDE66642906108E26851B7CC208C8BCE367B24AEA (CameraFrameReceivedEventUnit_t5C258A06DEEF9DBF3CE6AD4FD0B51313F1DEF858* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4024,7 +4024,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Type_t* CameraFrameReceivedEventUnit_get_Mess
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/CameraFrameReceivedEventUnit.cs:34>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/CameraFrameReceivedEventUnit.cs:34>
 		RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B L_0 = { reinterpret_cast<intptr_t> (ARCameraManagerListener_t9CDC77A2AAA0062BF970292523A3AD20D76BB3AE_0_0_0_var) };
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_defaults.systemtype_class);
 		Type_t* L_1;
@@ -4032,7 +4032,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Type_t* CameraFrameReceivedEventUnit_get_Mess
 		return L_1;
 	}
 }
-// Method Definition Index: 55974
+// Method Definition Index: 72137
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CameraFrameReceivedEventUnit_Definition_m3BA0B54D3F778C2FF3AAA37693C69E54A5836DE2 (CameraFrameReceivedEventUnit_t5C258A06DEEF9DBF3CE6AD4FD0B51313F1DEF858* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4044,17 +4044,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CameraFrameReceivedEventUnit_Definition_
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/CameraFrameReceivedEventUnit.cs:41>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/CameraFrameReceivedEventUnit.cs:41>
 		GameObjectEventUnit_1_Definition_m993A9F33D4AB3731B9BF811F804CA9BA0E75096E(__this, GameObjectEventUnit_1_Definition_m993A9F33D4AB3731B9BF811F804CA9BA0E75096E_RuntimeMethod_var);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/CameraFrameReceivedEventUnit.cs:42>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/CameraFrameReceivedEventUnit.cs:42>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0;
 		L_0 = Unit_ValueOutput_TisARCameraFrameEventArgs_t4060608C37C2B7248AFC908876309CC36D53E0EC_m179CC70EB8D39BBFB29E25C4D83DB538FBF3C6FC(__this, _stringLiteralA8CFAE0A1486E64AE5F73A446DEF27C6B7E9B54F, Unit_ValueOutput_TisARCameraFrameEventArgs_t4060608C37C2B7248AFC908876309CC36D53E0EC_m179CC70EB8D39BBFB29E25C4D83DB538FBF3C6FC_RuntimeMethod_var);
 		CameraFrameReceivedEventUnit_set_frameEventArgs_m9D477159407F84279F1EF8E7619B871AA4F542FE_inline(__this, L_0, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/CameraFrameReceivedEventUnit.cs:43>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/CameraFrameReceivedEventUnit.cs:43>
 		return;
 	}
 }
-// Method Definition Index: 55975
+// Method Definition Index: 72138
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CameraFrameReceivedEventUnit_AssignArguments_m3632CC04DC5E4651074CDF8353FF93DFA5E62330 (CameraFrameReceivedEventUnit_t5C258A06DEEF9DBF3CE6AD4FD0B51313F1DEF858* __this, Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* ___0_flow, ARCameraFrameEventArgs_t4060608C37C2B7248AFC908876309CC36D53E0EC ___1_args, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4064,7 +4064,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CameraFrameReceivedEventUnit_AssignArgum
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/CameraFrameReceivedEventUnit.cs:52>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/CameraFrameReceivedEventUnit.cs:52>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_0 = ___0_flow;
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_1;
 		L_1 = CameraFrameReceivedEventUnit_get_frameEventArgs_m2CA34906D7D15DDD541EC38B7862B6CB0AB500E8_inline(__this, NULL);
@@ -4073,11 +4073,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CameraFrameReceivedEventUnit_AssignArgum
 		RuntimeObject* L_4 = Box(ARCameraFrameEventArgs_t4060608C37C2B7248AFC908876309CC36D53E0EC_il2cpp_TypeInfo_var, &L_3);
 		NullCheck(L_0);
 		Flow_SetValue_m635BAF02F51D7C027C4F85157B80E2AB2DFB48A7(L_0, L_1, L_4, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/CameraFrameReceivedEventUnit.cs:53>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/CameraFrameReceivedEventUnit.cs:53>
 		return;
 	}
 }
-// Method Definition Index: 55976
+// Method Definition Index: 72139
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CameraFrameReceivedEventUnit__ctor_m49D54CB2470E3CB3D522BD5ACA7E13FF47E6CBF6 (CameraFrameReceivedEventUnit_t5C258A06DEEF9DBF3CE6AD4FD0B51313F1DEF858* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4091,7 +4091,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CameraFrameReceivedEventUnit__ctor_m49D5
 		return;
 	}
 }
-// Method Definition Index: 55977
+// Method Definition Index: 72140
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CameraFrameReceivedEventUnit__cctor_mAF027C01FF0E54B838766A29DA44DBADDD7C1379 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4102,7 +4102,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CameraFrameReceivedEventUnit__cctor_mAF0
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/CameraFrameReceivedEventUnit.cs:18>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/CameraFrameReceivedEventUnit.cs:18>
 		RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B L_0 = { reinterpret_cast<intptr_t> (ARCameraFrameEventArgs_t4060608C37C2B7248AFC908876309CC36D53E0EC_0_0_0_var) };
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_defaults.systemtype_class);
 		Type_t* L_1;
@@ -4120,7 +4120,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CameraFrameReceivedEventUnit__cctor_mAF0
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 55978
+// Method Definition Index: 72141
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* AnchorsChangedEventUnit_get_hookName_mD996B5E207C2889FE47E181D78FEF149398426A9 (AnchorsChangedEventUnit_t1CDE435C1ABCADB9DEB2117F2E8C2943E274045F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4130,11 +4130,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* AnchorsChangedEventUnit_get_hookNam
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/AnchorsChangedEventUnit.deprecated.cs:31>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/AnchorsChangedEventUnit.deprecated.cs:31>
 		return _stringLiteralBC7D1F049771153528B6E1B4730B5DD939FF7F47;
 	}
 }
-// Method Definition Index: 55979
+// Method Definition Index: 72142
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AnchorsChangedEventUnit_AssignArguments_m899A2B6F52D8EB9D919CF8FC138FF8DF052AF403 (AnchorsChangedEventUnit_t1CDE435C1ABCADB9DEB2117F2E8C2943E274045F* __this, Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* ___0_flow, ARAnchorsChangedEventArgs_t755E6208C84304CAC448C133B0A8660CD5750A75 ___1_args, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4146,7 +4146,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AnchorsChangedEventUnit_AssignArguments_
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/AnchorsChangedEventUnit.deprecated.cs:40>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/AnchorsChangedEventUnit.deprecated.cs:40>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_0 = ___0_flow;
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_1;
 		L_1 = TrackablesChangedEventUnit_8_get_added_mB590546762CE6A56E4C8B1EB8F24BD6CAA573B17_inline(__this, TrackablesChangedEventUnit_8_get_added_mB590546762CE6A56E4C8B1EB8F24BD6CAA573B17_RuntimeMethod_var);
@@ -4154,7 +4154,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AnchorsChangedEventUnit_AssignArguments_
 		L_2 = ARAnchorsChangedEventArgs_get_added_m5F9CEB4587F9496D0DA28880430B69EFDB550600_inline((&___1_args), NULL);
 		NullCheck(L_0);
 		Flow_SetValue_m635BAF02F51D7C027C4F85157B80E2AB2DFB48A7(L_0, L_1, L_2, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/AnchorsChangedEventUnit.deprecated.cs:41>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/AnchorsChangedEventUnit.deprecated.cs:41>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_3 = ___0_flow;
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_4;
 		L_4 = TrackablesChangedEventUnit_8_get_updated_m4155AE83417E658B126553D3D5BE9E51691A2561_inline(__this, TrackablesChangedEventUnit_8_get_updated_m4155AE83417E658B126553D3D5BE9E51691A2561_RuntimeMethod_var);
@@ -4162,7 +4162,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AnchorsChangedEventUnit_AssignArguments_
 		L_5 = ARAnchorsChangedEventArgs_get_updated_m21039F14E472A75F969EE0BA5CBA9007DC12B593_inline((&___1_args), NULL);
 		NullCheck(L_3);
 		Flow_SetValue_m635BAF02F51D7C027C4F85157B80E2AB2DFB48A7(L_3, L_4, L_5, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/AnchorsChangedEventUnit.deprecated.cs:42>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/AnchorsChangedEventUnit.deprecated.cs:42>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_6 = ___0_flow;
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_7;
 		L_7 = TrackablesChangedEventUnit_8_get_removed_m00993034CD9C3DEBE2D7B5D8BCEF7D1F4AC6BB76_inline(__this, TrackablesChangedEventUnit_8_get_removed_m00993034CD9C3DEBE2D7B5D8BCEF7D1F4AC6BB76_RuntimeMethod_var);
@@ -4170,11 +4170,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AnchorsChangedEventUnit_AssignArguments_
 		L_8 = ARAnchorsChangedEventArgs_get_removed_mF1E9D61E21153018C87DE99722FF8820C351CFD8_inline((&___1_args), NULL);
 		NullCheck(L_6);
 		Flow_SetValue_m635BAF02F51D7C027C4F85157B80E2AB2DFB48A7(L_6, L_7, L_8, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/AnchorsChangedEventUnit.deprecated.cs:43>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/AnchorsChangedEventUnit.deprecated.cs:43>
 		return;
 	}
 }
-// Method Definition Index: 55980
+// Method Definition Index: 72143
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AnchorsChangedEventUnit__ctor_mB3BF0403E6002D1FDA58EFB7F2921E8C07215414 (AnchorsChangedEventUnit_t1CDE435C1ABCADB9DEB2117F2E8C2943E274045F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4196,7 +4196,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AnchorsChangedEventUnit__ctor_mB3BF0403E
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 55981
+// Method Definition Index: 72144
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* EnvironmentProbesChangedEventUnit_get_hookName_m42A4B87F47C4FC4364CA15F859298E8FAF076116 (EnvironmentProbesChangedEventUnit_t9F93FC318A1011F92882E76B8284810D2B98ABE3* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4206,11 +4206,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* EnvironmentProbesChangedEventUnit_g
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/EnvironmentProbesChangedEventUnit.deprecated.cs:32>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/EnvironmentProbesChangedEventUnit.deprecated.cs:32>
 		return _stringLiteral0EAF6D0EBB42EC97177547351019DB3DC3130C07;
 	}
 }
-// Method Definition Index: 55982
+// Method Definition Index: 72145
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnvironmentProbesChangedEventUnit_AssignArguments_m199E25B95E3DC8D3A4E2A3205959366BA8B6B7C6 (EnvironmentProbesChangedEventUnit_t9F93FC318A1011F92882E76B8284810D2B98ABE3* __this, Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* ___0_flow, AREnvironmentProbesChangedEvent_t8757E98E11F3D37F0CFC4589FCA5CD2107F8375C ___1_args, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4222,7 +4222,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnvironmentProbesChangedEventUnit_Assign
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/EnvironmentProbesChangedEventUnit.deprecated.cs:41>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/EnvironmentProbesChangedEventUnit.deprecated.cs:41>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_0 = ___0_flow;
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_1;
 		L_1 = TrackablesChangedEventUnit_8_get_added_mF1D86A14D162BBD5DC42FB80A7C0FA7BC769AF97_inline(__this, TrackablesChangedEventUnit_8_get_added_mF1D86A14D162BBD5DC42FB80A7C0FA7BC769AF97_RuntimeMethod_var);
@@ -4230,7 +4230,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnvironmentProbesChangedEventUnit_Assign
 		L_2 = AREnvironmentProbesChangedEvent_get_added_m5EB8CAE059E5A0F0A84A11866F2343F630B7C997_inline((&___1_args), NULL);
 		NullCheck(L_0);
 		Flow_SetValue_m635BAF02F51D7C027C4F85157B80E2AB2DFB48A7(L_0, L_1, L_2, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/EnvironmentProbesChangedEventUnit.deprecated.cs:42>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/EnvironmentProbesChangedEventUnit.deprecated.cs:42>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_3 = ___0_flow;
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_4;
 		L_4 = TrackablesChangedEventUnit_8_get_updated_m64D143FBFBC17DC316E6C6F700D961D64B9E0AFE_inline(__this, TrackablesChangedEventUnit_8_get_updated_m64D143FBFBC17DC316E6C6F700D961D64B9E0AFE_RuntimeMethod_var);
@@ -4238,7 +4238,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnvironmentProbesChangedEventUnit_Assign
 		L_5 = AREnvironmentProbesChangedEvent_get_updated_mFFE292486A4D2DB4385C70FAE94EB6048CBB99F3_inline((&___1_args), NULL);
 		NullCheck(L_3);
 		Flow_SetValue_m635BAF02F51D7C027C4F85157B80E2AB2DFB48A7(L_3, L_4, L_5, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/EnvironmentProbesChangedEventUnit.deprecated.cs:43>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/EnvironmentProbesChangedEventUnit.deprecated.cs:43>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_6 = ___0_flow;
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_7;
 		L_7 = TrackablesChangedEventUnit_8_get_removed_m0AFD1317BBE14E4A88D0D90E190EA056ABD7DE2B_inline(__this, TrackablesChangedEventUnit_8_get_removed_m0AFD1317BBE14E4A88D0D90E190EA056ABD7DE2B_RuntimeMethod_var);
@@ -4246,11 +4246,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnvironmentProbesChangedEventUnit_Assign
 		L_8 = AREnvironmentProbesChangedEvent_get_removed_m0D5B42BCAD8408B1FC0DF82E24C4EAF1D8ADF40A_inline((&___1_args), NULL);
 		NullCheck(L_6);
 		Flow_SetValue_m635BAF02F51D7C027C4F85157B80E2AB2DFB48A7(L_6, L_7, L_8, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/EnvironmentProbesChangedEventUnit.deprecated.cs:44>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/EnvironmentProbesChangedEventUnit.deprecated.cs:44>
 		return;
 	}
 }
-// Method Definition Index: 55983
+// Method Definition Index: 72146
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnvironmentProbesChangedEventUnit__ctor_m618569E9356D0FAC231385EF74091BD7EF889BE6 (EnvironmentProbesChangedEventUnit_t9F93FC318A1011F92882E76B8284810D2B98ABE3* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4272,7 +4272,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnvironmentProbesChangedEventUnit__ctor_
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 55984
+// Method Definition Index: 72147
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* FacesChangedEventUnit_get_hookName_m25C307FFC3651366618356692EBB21454D2802D8 (FacesChangedEventUnit_tBA9644CD496CD26CC75569DEC718E5E845635BAC* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4282,11 +4282,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* FacesChangedEventUnit_get_hookName_
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/FacesChangedEventUnit.deprecated.cs:32>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/FacesChangedEventUnit.deprecated.cs:32>
 		return _stringLiteral7DC363E2C257BFAA3463F6A31F8F519A7D6E18F3;
 	}
 }
-// Method Definition Index: 55985
+// Method Definition Index: 72148
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FacesChangedEventUnit_AssignArguments_mBD69A01EEA5552FF75E62DA4DE628CD7B0C3FB81 (FacesChangedEventUnit_tBA9644CD496CD26CC75569DEC718E5E845635BAC* __this, Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* ___0_flow, ARFacesChangedEventArgs_tC05D4423CB2096FF5955C3A0A00056EE2B6301AE ___1_args, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4298,7 +4298,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FacesChangedEventUnit_AssignArguments_mB
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/FacesChangedEventUnit.deprecated.cs:41>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/FacesChangedEventUnit.deprecated.cs:41>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_0 = ___0_flow;
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_1;
 		L_1 = TrackablesChangedEventUnit_8_get_added_mD3E5CD7DD84402EC4A7054A36FF7678FB8A067F0_inline(__this, TrackablesChangedEventUnit_8_get_added_mD3E5CD7DD84402EC4A7054A36FF7678FB8A067F0_RuntimeMethod_var);
@@ -4306,7 +4306,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FacesChangedEventUnit_AssignArguments_mB
 		L_2 = ARFacesChangedEventArgs_get_added_m8EA1424F8F262955AFD00664B81C15AB54EFA213_inline((&___1_args), NULL);
 		NullCheck(L_0);
 		Flow_SetValue_m635BAF02F51D7C027C4F85157B80E2AB2DFB48A7(L_0, L_1, L_2, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/FacesChangedEventUnit.deprecated.cs:42>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/FacesChangedEventUnit.deprecated.cs:42>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_3 = ___0_flow;
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_4;
 		L_4 = TrackablesChangedEventUnit_8_get_updated_m2B11703016B3C1EB9A5003ACC43AA9507300A5B5_inline(__this, TrackablesChangedEventUnit_8_get_updated_m2B11703016B3C1EB9A5003ACC43AA9507300A5B5_RuntimeMethod_var);
@@ -4314,7 +4314,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FacesChangedEventUnit_AssignArguments_mB
 		L_5 = ARFacesChangedEventArgs_get_updated_m1D3587AA05E5789F796A71C3C87CD6D11BE0005B_inline((&___1_args), NULL);
 		NullCheck(L_3);
 		Flow_SetValue_m635BAF02F51D7C027C4F85157B80E2AB2DFB48A7(L_3, L_4, L_5, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/FacesChangedEventUnit.deprecated.cs:43>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/FacesChangedEventUnit.deprecated.cs:43>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_6 = ___0_flow;
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_7;
 		L_7 = TrackablesChangedEventUnit_8_get_removed_m1D98456EEB97142B45C4EE15B8443BA8499F97CB_inline(__this, TrackablesChangedEventUnit_8_get_removed_m1D98456EEB97142B45C4EE15B8443BA8499F97CB_RuntimeMethod_var);
@@ -4322,11 +4322,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FacesChangedEventUnit_AssignArguments_mB
 		L_8 = ARFacesChangedEventArgs_get_removed_mC31806DE526D3BECAA26C35DAE321F2DE77C335E_inline((&___1_args), NULL);
 		NullCheck(L_6);
 		Flow_SetValue_m635BAF02F51D7C027C4F85157B80E2AB2DFB48A7(L_6, L_7, L_8, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/FacesChangedEventUnit.deprecated.cs:44>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/FacesChangedEventUnit.deprecated.cs:44>
 		return;
 	}
 }
-// Method Definition Index: 55986
+// Method Definition Index: 72149
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FacesChangedEventUnit__ctor_m33A7C04F6D09F5980669FA57262F17B9AB16E722 (FacesChangedEventUnit_tBA9644CD496CD26CC75569DEC718E5E845635BAC* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4348,7 +4348,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FacesChangedEventUnit__ctor_m33A7C04F6D0
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 55987
+// Method Definition Index: 72150
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HumanBodiesChangedEventUnit_get_hookName_m67E5122D4D2D723303916F0C72BCA472CAF92768 (HumanBodiesChangedEventUnit_t7E27E223B038B0174E95448F4286BD590A46D54F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4358,11 +4358,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HumanBodiesChangedEventUnit_get_hoo
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/HumanBodiesChangedEventUnit.deprecated.cs:31>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/HumanBodiesChangedEventUnit.deprecated.cs:31>
 		return _stringLiteral472B198FF9B13CC3CEB5817E644011EF36F83EF9;
 	}
 }
-// Method Definition Index: 55988
+// Method Definition Index: 72151
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HumanBodiesChangedEventUnit_AssignArguments_mDCA3EF5F7512E95706B68E4DD9F8DB9D253FD1B4 (HumanBodiesChangedEventUnit_t7E27E223B038B0174E95448F4286BD590A46D54F* __this, Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* ___0_flow, ARHumanBodiesChangedEventArgs_t19088E0D3384A22C5D8A542957705222C834720B ___1_args, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4374,7 +4374,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HumanBodiesChangedEventUnit_AssignArgume
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/HumanBodiesChangedEventUnit.deprecated.cs:40>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/HumanBodiesChangedEventUnit.deprecated.cs:40>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_0 = ___0_flow;
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_1;
 		L_1 = TrackablesChangedEventUnit_8_get_added_mB2970C7A1E0D78B2D6C4EE5E9DF55E8FB61F0414_inline(__this, TrackablesChangedEventUnit_8_get_added_mB2970C7A1E0D78B2D6C4EE5E9DF55E8FB61F0414_RuntimeMethod_var);
@@ -4382,7 +4382,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HumanBodiesChangedEventUnit_AssignArgume
 		L_2 = ARHumanBodiesChangedEventArgs_get_added_m6FD862CC8C8281F9377D754BBAB7F3C616955D4C_inline((&___1_args), NULL);
 		NullCheck(L_0);
 		Flow_SetValue_m635BAF02F51D7C027C4F85157B80E2AB2DFB48A7(L_0, L_1, L_2, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/HumanBodiesChangedEventUnit.deprecated.cs:41>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/HumanBodiesChangedEventUnit.deprecated.cs:41>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_3 = ___0_flow;
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_4;
 		L_4 = TrackablesChangedEventUnit_8_get_updated_mD57DCBD8B6B61E09CC5E8AE90F6D728B4B99F008_inline(__this, TrackablesChangedEventUnit_8_get_updated_mD57DCBD8B6B61E09CC5E8AE90F6D728B4B99F008_RuntimeMethod_var);
@@ -4390,7 +4390,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HumanBodiesChangedEventUnit_AssignArgume
 		L_5 = ARHumanBodiesChangedEventArgs_get_updated_mA2FD128E22BDACD09294F107AA3F2A91CFFAA550_inline((&___1_args), NULL);
 		NullCheck(L_3);
 		Flow_SetValue_m635BAF02F51D7C027C4F85157B80E2AB2DFB48A7(L_3, L_4, L_5, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/HumanBodiesChangedEventUnit.deprecated.cs:42>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/HumanBodiesChangedEventUnit.deprecated.cs:42>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_6 = ___0_flow;
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_7;
 		L_7 = TrackablesChangedEventUnit_8_get_removed_m8F35AD75A58329A64455EA693E3AB62EDAA066C9_inline(__this, TrackablesChangedEventUnit_8_get_removed_m8F35AD75A58329A64455EA693E3AB62EDAA066C9_RuntimeMethod_var);
@@ -4398,11 +4398,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HumanBodiesChangedEventUnit_AssignArgume
 		L_8 = ARHumanBodiesChangedEventArgs_get_removed_m613516A989AA48A625C79A3C309D9C1465762BCA_inline((&___1_args), NULL);
 		NullCheck(L_6);
 		Flow_SetValue_m635BAF02F51D7C027C4F85157B80E2AB2DFB48A7(L_6, L_7, L_8, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/HumanBodiesChangedEventUnit.deprecated.cs:43>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/HumanBodiesChangedEventUnit.deprecated.cs:43>
 		return;
 	}
 }
-// Method Definition Index: 55989
+// Method Definition Index: 72152
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HumanBodiesChangedEventUnit__ctor_m67A7804169D1D1C464DE511BB251D2D1852C3C03 (HumanBodiesChangedEventUnit_t7E27E223B038B0174E95448F4286BD590A46D54F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4424,7 +4424,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HumanBodiesChangedEventUnit__ctor_m67A78
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 55990
+// Method Definition Index: 72153
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ParticipantsChangedEventUnit_get_hookName_mA4CDFD4FD4E062B9967AED9A88C976959565C5A6 (ParticipantsChangedEventUnit_tCB5A32ECD288DCDFDC4AC059E40E7552B424D1F8* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4434,11 +4434,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ParticipantsChangedEventUnit_get_ho
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/ParticipantsChangedEventUnit.deprecated.cs:31>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/ParticipantsChangedEventUnit.deprecated.cs:31>
 		return _stringLiteral873B4196DB10C0F07B11703CABABB6C8664BDBF4;
 	}
 }
-// Method Definition Index: 55991
+// Method Definition Index: 72154
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ParticipantsChangedEventUnit_AssignArguments_m39BEEE8BBB7557918AC369100EEBED8441FC3948 (ParticipantsChangedEventUnit_tCB5A32ECD288DCDFDC4AC059E40E7552B424D1F8* __this, Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* ___0_flow, ARParticipantsChangedEventArgs_t2EAD9041A074A7ACEFF280662784747A4E85E527 ___1_args, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4450,7 +4450,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ParticipantsChangedEventUnit_AssignArgum
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/ParticipantsChangedEventUnit.deprecated.cs:40>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/ParticipantsChangedEventUnit.deprecated.cs:40>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_0 = ___0_flow;
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_1;
 		L_1 = TrackablesChangedEventUnit_8_get_added_mC83DA1B5E5EEB690C2E89C2703CADE9E51A740C7_inline(__this, TrackablesChangedEventUnit_8_get_added_mC83DA1B5E5EEB690C2E89C2703CADE9E51A740C7_RuntimeMethod_var);
@@ -4458,7 +4458,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ParticipantsChangedEventUnit_AssignArgum
 		L_2 = ARParticipantsChangedEventArgs_get_added_m06DA0DBF00575BB5D41A8AFE385ADAB9866BA678_inline((&___1_args), NULL);
 		NullCheck(L_0);
 		Flow_SetValue_m635BAF02F51D7C027C4F85157B80E2AB2DFB48A7(L_0, L_1, L_2, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/ParticipantsChangedEventUnit.deprecated.cs:41>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/ParticipantsChangedEventUnit.deprecated.cs:41>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_3 = ___0_flow;
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_4;
 		L_4 = TrackablesChangedEventUnit_8_get_updated_mAE3D67A922C0F1E37CC29792138000F23621BCDD_inline(__this, TrackablesChangedEventUnit_8_get_updated_mAE3D67A922C0F1E37CC29792138000F23621BCDD_RuntimeMethod_var);
@@ -4466,7 +4466,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ParticipantsChangedEventUnit_AssignArgum
 		L_5 = ARParticipantsChangedEventArgs_get_updated_mA0EC697655BDFEEB28064579FDD67DD166A2AE65_inline((&___1_args), NULL);
 		NullCheck(L_3);
 		Flow_SetValue_m635BAF02F51D7C027C4F85157B80E2AB2DFB48A7(L_3, L_4, L_5, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/ParticipantsChangedEventUnit.deprecated.cs:42>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/ParticipantsChangedEventUnit.deprecated.cs:42>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_6 = ___0_flow;
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_7;
 		L_7 = TrackablesChangedEventUnit_8_get_removed_mA9FEE7FB7606E374551FE70A1B72D8199E237F70_inline(__this, TrackablesChangedEventUnit_8_get_removed_mA9FEE7FB7606E374551FE70A1B72D8199E237F70_RuntimeMethod_var);
@@ -4474,11 +4474,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ParticipantsChangedEventUnit_AssignArgum
 		L_8 = ARParticipantsChangedEventArgs_get_removed_m6BBF2ABF2E71DB02A70122927AAD83E3AB35A77F_inline((&___1_args), NULL);
 		NullCheck(L_6);
 		Flow_SetValue_m635BAF02F51D7C027C4F85157B80E2AB2DFB48A7(L_6, L_7, L_8, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/ParticipantsChangedEventUnit.deprecated.cs:43>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/ParticipantsChangedEventUnit.deprecated.cs:43>
 		return;
 	}
 }
-// Method Definition Index: 55992
+// Method Definition Index: 72155
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ParticipantsChangedEventUnit__ctor_m3ACA8D1E560935861985B00AA5BEADC1852420C6 (ParticipantsChangedEventUnit_tCB5A32ECD288DCDFDC4AC059E40E7552B424D1F8* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4500,7 +4500,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ParticipantsChangedEventUnit__ctor_m3ACA
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 55993
+// Method Definition Index: 72156
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* PlanesChangedEventUnit_get_hookName_m48C3C8CD9DE2A31ADDD018D9BC38E58D4A861CDA (PlanesChangedEventUnit_t2FE36340891DD55C64AD4A68C956533AFDB7D116* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4510,11 +4510,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* PlanesChangedEventUnit_get_hookName
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/PlanesChangedEventUnit.deprecated.cs:31>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/PlanesChangedEventUnit.deprecated.cs:31>
 		return _stringLiteral1E79F5F1B507D82BF4BE0B3BC9BE5CCC5A0A1C69;
 	}
 }
-// Method Definition Index: 55994
+// Method Definition Index: 72157
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlanesChangedEventUnit_AssignArguments_m8920B6D4EFA5405677DD7E120F03079EA92C479D (PlanesChangedEventUnit_t2FE36340891DD55C64AD4A68C956533AFDB7D116* __this, Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* ___0_flow, ARPlanesChangedEventArgs_t8D63E0257BF9942EF8F8C0445F2FD46421017872 ___1_args, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4526,7 +4526,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlanesChangedEventUnit_AssignArguments_m
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/PlanesChangedEventUnit.deprecated.cs:40>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/PlanesChangedEventUnit.deprecated.cs:40>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_0 = ___0_flow;
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_1;
 		L_1 = TrackablesChangedEventUnit_8_get_added_m69D43E4E5EE721CF125D2EE3539284002A700B74_inline(__this, TrackablesChangedEventUnit_8_get_added_m69D43E4E5EE721CF125D2EE3539284002A700B74_RuntimeMethod_var);
@@ -4534,7 +4534,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlanesChangedEventUnit_AssignArguments_m
 		L_2 = ARPlanesChangedEventArgs_get_added_m6E00DD5F0B3261BCBAA8A029924A1F3F4179C747_inline((&___1_args), NULL);
 		NullCheck(L_0);
 		Flow_SetValue_m635BAF02F51D7C027C4F85157B80E2AB2DFB48A7(L_0, L_1, L_2, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/PlanesChangedEventUnit.deprecated.cs:41>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/PlanesChangedEventUnit.deprecated.cs:41>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_3 = ___0_flow;
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_4;
 		L_4 = TrackablesChangedEventUnit_8_get_updated_m990FD05AD7C047671F91787AFD37A2C9E856E2F7_inline(__this, TrackablesChangedEventUnit_8_get_updated_m990FD05AD7C047671F91787AFD37A2C9E856E2F7_RuntimeMethod_var);
@@ -4542,7 +4542,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlanesChangedEventUnit_AssignArguments_m
 		L_5 = ARPlanesChangedEventArgs_get_updated_mE979DAD93445C56FF7BEB732528D6CADAF0B6C22_inline((&___1_args), NULL);
 		NullCheck(L_3);
 		Flow_SetValue_m635BAF02F51D7C027C4F85157B80E2AB2DFB48A7(L_3, L_4, L_5, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/PlanesChangedEventUnit.deprecated.cs:42>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/PlanesChangedEventUnit.deprecated.cs:42>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_6 = ___0_flow;
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_7;
 		L_7 = TrackablesChangedEventUnit_8_get_removed_m53656F8942539C9E8684FF4379871CFC068B1A19_inline(__this, TrackablesChangedEventUnit_8_get_removed_m53656F8942539C9E8684FF4379871CFC068B1A19_RuntimeMethod_var);
@@ -4550,11 +4550,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlanesChangedEventUnit_AssignArguments_m
 		L_8 = ARPlanesChangedEventArgs_get_removed_m8CF2AA0278488746F8C55CC6C7DC1870531D63C8_inline((&___1_args), NULL);
 		NullCheck(L_6);
 		Flow_SetValue_m635BAF02F51D7C027C4F85157B80E2AB2DFB48A7(L_6, L_7, L_8, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/PlanesChangedEventUnit.deprecated.cs:43>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/PlanesChangedEventUnit.deprecated.cs:43>
 		return;
 	}
 }
-// Method Definition Index: 55995
+// Method Definition Index: 72158
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlanesChangedEventUnit__ctor_mE065B63E0CE8FEE5F3FAF6751A9FA5081694E9A6 (PlanesChangedEventUnit_t2FE36340891DD55C64AD4A68C956533AFDB7D116* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4576,7 +4576,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlanesChangedEventUnit__ctor_mE065B63E0C
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 55996
+// Method Definition Index: 72159
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* PointCloudsChangedEventUnit_get_hookName_m361A47DC7CE10FBC6D4817EB3C49317C335F2DFE (PointCloudsChangedEventUnit_t70FDC749BF87C070761B2EEC7F80045BCBC542E9* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4586,11 +4586,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* PointCloudsChangedEventUnit_get_hoo
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/PointCloudsChangedEventUnit.deprecated.cs:31>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/PointCloudsChangedEventUnit.deprecated.cs:31>
 		return _stringLiteral3366B219987D5EE59C199D05D8DDF5CACB099288;
 	}
 }
-// Method Definition Index: 55997
+// Method Definition Index: 72160
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PointCloudsChangedEventUnit_AssignArguments_mAA9FA32A721AA48E7643E8EAFE99C859AE4A0E22 (PointCloudsChangedEventUnit_t70FDC749BF87C070761B2EEC7F80045BCBC542E9* __this, Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* ___0_flow, ARPointCloudChangedEventArgs_t7DE4CA4D30D369496221061F89CC4BF84E42CC1B ___1_args, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4602,7 +4602,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PointCloudsChangedEventUnit_AssignArgume
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/PointCloudsChangedEventUnit.deprecated.cs:40>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/PointCloudsChangedEventUnit.deprecated.cs:40>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_0 = ___0_flow;
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_1;
 		L_1 = TrackablesChangedEventUnit_8_get_added_m7BC749EABE3673D303FAB3CAA1C3746AE97E71A3_inline(__this, TrackablesChangedEventUnit_8_get_added_m7BC749EABE3673D303FAB3CAA1C3746AE97E71A3_RuntimeMethod_var);
@@ -4610,7 +4610,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PointCloudsChangedEventUnit_AssignArgume
 		L_2 = ARPointCloudChangedEventArgs_get_added_m74DFD8ED4B3EADB5AC29DD0E748C84C6FA26DDE9_inline((&___1_args), NULL);
 		NullCheck(L_0);
 		Flow_SetValue_m635BAF02F51D7C027C4F85157B80E2AB2DFB48A7(L_0, L_1, L_2, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/PointCloudsChangedEventUnit.deprecated.cs:41>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/PointCloudsChangedEventUnit.deprecated.cs:41>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_3 = ___0_flow;
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_4;
 		L_4 = TrackablesChangedEventUnit_8_get_updated_mB0E1D4283CE77BC4F2A15B4BCF2351BB08321517_inline(__this, TrackablesChangedEventUnit_8_get_updated_mB0E1D4283CE77BC4F2A15B4BCF2351BB08321517_RuntimeMethod_var);
@@ -4618,7 +4618,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PointCloudsChangedEventUnit_AssignArgume
 		L_5 = ARPointCloudChangedEventArgs_get_updated_mD69E67FE8B06AB44B15F42F1D6EFA91F7E58F7C6_inline((&___1_args), NULL);
 		NullCheck(L_3);
 		Flow_SetValue_m635BAF02F51D7C027C4F85157B80E2AB2DFB48A7(L_3, L_4, L_5, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/PointCloudsChangedEventUnit.deprecated.cs:42>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/PointCloudsChangedEventUnit.deprecated.cs:42>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_6 = ___0_flow;
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_7;
 		L_7 = TrackablesChangedEventUnit_8_get_removed_m91B8BEF101F7958D60725FFFA15EF7D255467B59_inline(__this, TrackablesChangedEventUnit_8_get_removed_m91B8BEF101F7958D60725FFFA15EF7D255467B59_RuntimeMethod_var);
@@ -4626,11 +4626,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PointCloudsChangedEventUnit_AssignArgume
 		L_8 = ARPointCloudChangedEventArgs_get_removed_m64321D4F0D902494EE19EFF1B258981DE5C712B0_inline((&___1_args), NULL);
 		NullCheck(L_6);
 		Flow_SetValue_m635BAF02F51D7C027C4F85157B80E2AB2DFB48A7(L_6, L_7, L_8, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/PointCloudsChangedEventUnit.deprecated.cs:43>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/PointCloudsChangedEventUnit.deprecated.cs:43>
 		return;
 	}
 }
-// Method Definition Index: 55998
+// Method Definition Index: 72161
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PointCloudsChangedEventUnit__ctor_m1FE03A5858ADDCF6CA0A326677C183993B91C121 (PointCloudsChangedEventUnit_t70FDC749BF87C070761B2EEC7F80045BCBC542E9* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4652,7 +4652,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PointCloudsChangedEventUnit__ctor_m1FE03
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 56008
+// Method Definition Index: 72171
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* TrackedImagesChangedEventUnit_get_hookName_m71D20EC82716ADA07A7A4E12FF86561556111BEC (TrackedImagesChangedEventUnit_tEDE47E3521D6A7321912CFFCB5C10500CD949D29* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4662,11 +4662,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* TrackedImagesChangedEventUnit_get_h
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackedImagesChangedEventUnit.deprecated.cs:31>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackedImagesChangedEventUnit.deprecated.cs:31>
 		return _stringLiteral241F175A1A7F5FA16826BDB6ABABA5CAF688AF00;
 	}
 }
-// Method Definition Index: 56009
+// Method Definition Index: 72172
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackedImagesChangedEventUnit_AssignArguments_m99F331B5C10B48D05E6243C433A29FF8C2945EF7 (TrackedImagesChangedEventUnit_tEDE47E3521D6A7321912CFFCB5C10500CD949D29* __this, Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* ___0_flow, ARTrackedImagesChangedEventArgs_tD7718E40EE25D22E9143DA4F556C44980E18BE2F ___1_args, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4678,7 +4678,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackedImagesChangedEventUnit_AssignArgu
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackedImagesChangedEventUnit.deprecated.cs:40>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackedImagesChangedEventUnit.deprecated.cs:40>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_0 = ___0_flow;
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_1;
 		L_1 = TrackablesChangedEventUnit_8_get_added_m98C7465E257E576752368FE41D6911A596B9BD08_inline(__this, TrackablesChangedEventUnit_8_get_added_m98C7465E257E576752368FE41D6911A596B9BD08_RuntimeMethod_var);
@@ -4686,7 +4686,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackedImagesChangedEventUnit_AssignArgu
 		L_2 = ARTrackedImagesChangedEventArgs_get_added_m2929CC85141D13AF05C1484AFB47E043C6D3EE35_inline((&___1_args), NULL);
 		NullCheck(L_0);
 		Flow_SetValue_m635BAF02F51D7C027C4F85157B80E2AB2DFB48A7(L_0, L_1, L_2, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackedImagesChangedEventUnit.deprecated.cs:41>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackedImagesChangedEventUnit.deprecated.cs:41>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_3 = ___0_flow;
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_4;
 		L_4 = TrackablesChangedEventUnit_8_get_updated_mDAC4907DBB50BF9C8B7A68F589F2827CB92E054C_inline(__this, TrackablesChangedEventUnit_8_get_updated_mDAC4907DBB50BF9C8B7A68F589F2827CB92E054C_RuntimeMethod_var);
@@ -4694,7 +4694,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackedImagesChangedEventUnit_AssignArgu
 		L_5 = ARTrackedImagesChangedEventArgs_get_updated_m0C896E1C21EF35FF4B31B36563838EC2BA3CDFD1_inline((&___1_args), NULL);
 		NullCheck(L_3);
 		Flow_SetValue_m635BAF02F51D7C027C4F85157B80E2AB2DFB48A7(L_3, L_4, L_5, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackedImagesChangedEventUnit.deprecated.cs:42>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackedImagesChangedEventUnit.deprecated.cs:42>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_6 = ___0_flow;
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_7;
 		L_7 = TrackablesChangedEventUnit_8_get_removed_m0519BF012BE3FC785FF687EA5655A30E7B566A67_inline(__this, TrackablesChangedEventUnit_8_get_removed_m0519BF012BE3FC785FF687EA5655A30E7B566A67_RuntimeMethod_var);
@@ -4702,11 +4702,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackedImagesChangedEventUnit_AssignArgu
 		L_8 = ARTrackedImagesChangedEventArgs_get_removed_m062CBBEF163BEE47A673F7B3BDC0DD1C6EAEA185_inline((&___1_args), NULL);
 		NullCheck(L_6);
 		Flow_SetValue_m635BAF02F51D7C027C4F85157B80E2AB2DFB48A7(L_6, L_7, L_8, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackedImagesChangedEventUnit.deprecated.cs:43>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackedImagesChangedEventUnit.deprecated.cs:43>
 		return;
 	}
 }
-// Method Definition Index: 56010
+// Method Definition Index: 72173
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackedImagesChangedEventUnit__ctor_mD97F8007E5D7D9FB4765DE62295E0646A63C85EF (TrackedImagesChangedEventUnit_tEDE47E3521D6A7321912CFFCB5C10500CD949D29* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4728,7 +4728,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackedImagesChangedEventUnit__ctor_mD97
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 56011
+// Method Definition Index: 72174
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* TrackedObjectsChangedEventUnit_get_hookName_m4CE8FAAAF5FD10E9B4C8B99D9576083C0F11DE6E (TrackedObjectsChangedEventUnit_t8EA5435947DF665B0FC12920629B4E6F1A787CF2* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4738,11 +4738,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* TrackedObjectsChangedEventUnit_get_
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackedObjectsChangedEventUnit.deprecated.cs:31>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackedObjectsChangedEventUnit.deprecated.cs:31>
 		return _stringLiteralE44178F8CBCB7518AC61AD2FF65D32E8798D89A3;
 	}
 }
-// Method Definition Index: 56012
+// Method Definition Index: 72175
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackedObjectsChangedEventUnit_AssignArguments_m5D3602536AD4FF039FDAC2A7F9CD3AFBC50F5ED0 (TrackedObjectsChangedEventUnit_t8EA5435947DF665B0FC12920629B4E6F1A787CF2* __this, Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* ___0_flow, ARTrackedObjectsChangedEventArgs_t378A63B91AD22EA4BA9C68805C72DDA4B7C01509 ___1_args, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4754,7 +4754,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackedObjectsChangedEventUnit_AssignArg
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackedObjectsChangedEventUnit.deprecated.cs:40>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackedObjectsChangedEventUnit.deprecated.cs:40>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_0 = ___0_flow;
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_1;
 		L_1 = TrackablesChangedEventUnit_8_get_added_m12B5AD020EE9860130BC183B984643D5242089D9_inline(__this, TrackablesChangedEventUnit_8_get_added_m12B5AD020EE9860130BC183B984643D5242089D9_RuntimeMethod_var);
@@ -4762,7 +4762,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackedObjectsChangedEventUnit_AssignArg
 		L_2 = ARTrackedObjectsChangedEventArgs_get_added_m71E8E2055C979657273051DE23FCEB938964169A_inline((&___1_args), NULL);
 		NullCheck(L_0);
 		Flow_SetValue_m635BAF02F51D7C027C4F85157B80E2AB2DFB48A7(L_0, L_1, L_2, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackedObjectsChangedEventUnit.deprecated.cs:41>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackedObjectsChangedEventUnit.deprecated.cs:41>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_3 = ___0_flow;
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_4;
 		L_4 = TrackablesChangedEventUnit_8_get_updated_m2C3941B76B820CCC7161CA63CDCB10D6FBA498F1_inline(__this, TrackablesChangedEventUnit_8_get_updated_m2C3941B76B820CCC7161CA63CDCB10D6FBA498F1_RuntimeMethod_var);
@@ -4770,7 +4770,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackedObjectsChangedEventUnit_AssignArg
 		L_5 = ARTrackedObjectsChangedEventArgs_get_updated_m01050D519E6281EECB48200D952FE1E1FFFE1A60_inline((&___1_args), NULL);
 		NullCheck(L_3);
 		Flow_SetValue_m635BAF02F51D7C027C4F85157B80E2AB2DFB48A7(L_3, L_4, L_5, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackedObjectsChangedEventUnit.deprecated.cs:42>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackedObjectsChangedEventUnit.deprecated.cs:42>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_6 = ___0_flow;
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_7;
 		L_7 = TrackablesChangedEventUnit_8_get_removed_m9C8736E9632CDA45DADC1A4FB415361148A8A543_inline(__this, TrackablesChangedEventUnit_8_get_removed_m9C8736E9632CDA45DADC1A4FB415361148A8A543_RuntimeMethod_var);
@@ -4778,11 +4778,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackedObjectsChangedEventUnit_AssignArg
 		L_8 = ARTrackedObjectsChangedEventArgs_get_removed_mDF5FA585D41D4B0D4517D3C5387B254F6EA6DFDA_inline((&___1_args), NULL);
 		NullCheck(L_6);
 		Flow_SetValue_m635BAF02F51D7C027C4F85157B80E2AB2DFB48A7(L_6, L_7, L_8, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackedObjectsChangedEventUnit.deprecated.cs:43>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackedObjectsChangedEventUnit.deprecated.cs:43>
 		return;
 	}
 }
-// Method Definition Index: 56013
+// Method Definition Index: 72176
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackedObjectsChangedEventUnit__ctor_mDBAAA2924F415BB174398367F96C61794310E52C (TrackedObjectsChangedEventUnit_t8EA5435947DF665B0FC12920629B4E6F1A787CF2* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4804,27 +4804,27 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackedObjectsChangedEventUnit__ctor_mDB
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 56014
+// Method Definition Index: 72177
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* FaceUpdatedEventUnit_get_faceOut_m4C064F7BE0FDC5D28BAB8C72683F60B5399B091D (FaceUpdatedEventUnit_tBAF617E9D7CA035FC4D40FDA435F6BC35A39D426* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/FaceUpdatedEventUnit.cs:25>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/FaceUpdatedEventUnit.cs:25>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = __this->___U3CfaceOutU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56015
+// Method Definition Index: 72178
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceUpdatedEventUnit_set_faceOut_mA1675257B969683B3E210624EFADE5F0F24A4811 (FaceUpdatedEventUnit_tBAF617E9D7CA035FC4D40FDA435F6BC35A39D426* __this, ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/FaceUpdatedEventUnit.cs:25>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/FaceUpdatedEventUnit.cs:25>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = ___0_value;
 		__this->___U3CfaceOutU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CfaceOutU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56016
+// Method Definition Index: 72179
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* FaceUpdatedEventUnit_get_hookName_mC91F19ECC90B14DFE7A12AFC261B7904E875F79E (FaceUpdatedEventUnit_tBAF617E9D7CA035FC4D40FDA435F6BC35A39D426* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4836,7 +4836,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* FaceUpdatedEventUnit_get_hookName_m
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/FaceUpdatedEventUnit.cs:30>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/FaceUpdatedEventUnit.cs:30>
 		il2cpp_codegen_runtime_class_init_inline(Constants_t52BA4E19D4E4E7D84188778875CA3F198AB036F1_il2cpp_TypeInfo_var);
 		Dictionary_2_tCAAF57FF731CF7E9CEC738A6E8400D208C1066EE* L_0 = ((Constants_t52BA4E19D4E4E7D84188778875CA3F198AB036F1_StaticFields*)il2cpp_codegen_static_fields_for(Constants_t52BA4E19D4E4E7D84188778875CA3F198AB036F1_il2cpp_TypeInfo_var))->___EventHookNames;
 		il2cpp_codegen_runtime_class_init_inline(FaceUpdatedEventUnit_tBAF617E9D7CA035FC4D40FDA435F6BC35A39D426_il2cpp_TypeInfo_var);
@@ -4847,7 +4847,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* FaceUpdatedEventUnit_get_hookName_m
 		return L_2;
 	}
 }
-// Method Definition Index: 56017
+// Method Definition Index: 72180
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Type_t* FaceUpdatedEventUnit_get_MessageListenerType_m9569E3DA99C317D7979CA8E3DDF3AA80D717601E (FaceUpdatedEventUnit_tBAF617E9D7CA035FC4D40FDA435F6BC35A39D426* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4857,7 +4857,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Type_t* FaceUpdatedEventUnit_get_MessageListe
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/FaceUpdatedEventUnit.cs:35>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/FaceUpdatedEventUnit.cs:35>
 		RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B L_0 = { reinterpret_cast<intptr_t> (ARFaceListener_tCC12AA9BE708DFBC6BE058D621A5B173162E8A59_0_0_0_var) };
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_defaults.systemtype_class);
 		Type_t* L_1;
@@ -4865,7 +4865,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Type_t* FaceUpdatedEventUnit_get_MessageListe
 		return L_1;
 	}
 }
-// Method Definition Index: 56018
+// Method Definition Index: 72181
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceUpdatedEventUnit_Definition_mF72B08663AB57D86B075994731416C5B4B787138 (FaceUpdatedEventUnit_tBAF617E9D7CA035FC4D40FDA435F6BC35A39D426* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4877,21 +4877,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceUpdatedEventUnit_Definition_mF72B086
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/FaceUpdatedEventUnit.cs:42>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/FaceUpdatedEventUnit.cs:42>
 		GameObjectEventUnit_1_Definition_mF8BEB75340AEF0E43AD3F4BC254109BD339F4E09(__this, GameObjectEventUnit_1_Definition_mF8BEB75340AEF0E43AD3F4BC254109BD339F4E09_RuntimeMethod_var);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/FaceUpdatedEventUnit.cs:43>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/FaceUpdatedEventUnit.cs:43>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0;
 		L_0 = Unit_ValueOutput_TisARFace_t73C068C9C8422F79A858EC41C322D399305B8453_mC94C38A35E16A3EA152B5E1D430FC6D2419FD31E(__this, _stringLiteral32EE50C3CB7212B57D1B34DC4D1E5D299F118C16, Unit_ValueOutput_TisARFace_t73C068C9C8422F79A858EC41C322D399305B8453_mC94C38A35E16A3EA152B5E1D430FC6D2419FD31E_RuntimeMethod_var);
 		FaceUpdatedEventUnit_set_faceOut_mA1675257B969683B3E210624EFADE5F0F24A4811_inline(__this, L_0, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/FaceUpdatedEventUnit.cs:44>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/FaceUpdatedEventUnit.cs:44>
 		return;
 	}
 }
-// Method Definition Index: 56019
+// Method Definition Index: 72182
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceUpdatedEventUnit_AssignArguments_m3090FCDC05B47F2147891071BE013E615994E067 (FaceUpdatedEventUnit_tBAF617E9D7CA035FC4D40FDA435F6BC35A39D426* __this, Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* ___0_flow, ARFaceUpdatedEventArgs_tC20D17255858678A1A8230EA32D7C38287221FF6 ___1_args, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/FaceUpdatedEventUnit.cs:53>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/FaceUpdatedEventUnit.cs:53>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_0 = ___0_flow;
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_1;
 		L_1 = FaceUpdatedEventUnit_get_faceOut_m4C064F7BE0FDC5D28BAB8C72683F60B5399B091D_inline(__this, NULL);
@@ -4899,11 +4899,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceUpdatedEventUnit_AssignArguments_m30
 		L_2 = ARFaceUpdatedEventArgs_get_face_mFD21EF59457212494C80FE998D1CA8AC0F057170_inline((&___1_args), NULL);
 		NullCheck(L_0);
 		Flow_SetValue_m635BAF02F51D7C027C4F85157B80E2AB2DFB48A7(L_0, L_1, L_2, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/FaceUpdatedEventUnit.cs:54>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/FaceUpdatedEventUnit.cs:54>
 		return;
 	}
 }
-// Method Definition Index: 56020
+// Method Definition Index: 72183
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceUpdatedEventUnit__ctor_m3B3B46D3477D89D51EE72D0A636B5D982AC94E93 (FaceUpdatedEventUnit_tBAF617E9D7CA035FC4D40FDA435F6BC35A39D426* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4917,7 +4917,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceUpdatedEventUnit__ctor_m3B3B46D3477D
 		return;
 	}
 }
-// Method Definition Index: 56021
+// Method Definition Index: 72184
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceUpdatedEventUnit__cctor_m10F9F7688D3F32958218DEAE6FB56195B651F767 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4928,7 +4928,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceUpdatedEventUnit__cctor_m10F9F7688D3
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/FaceUpdatedEventUnit.cs:18>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/FaceUpdatedEventUnit.cs:18>
 		RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B L_0 = { reinterpret_cast<intptr_t> (ARFaceUpdatedEventArgs_tC20D17255858678A1A8230EA32D7C38287221FF6_0_0_0_var) };
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_defaults.systemtype_class);
 		Type_t* L_1;
@@ -4946,27 +4946,27 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceUpdatedEventUnit__cctor_m10F9F7688D3
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 56022
+// Method Definition Index: 72185
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* SessionStateChangedEventUnit_get_sessionStateOut_m0A6C8851E8BE80C79AEFAE297A6B8A47F68445B9 (SessionStateChangedEventUnit_tB622F7C1B352062C2D5D67A3EA1E1E6DBD910631* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/SessionStateChangedEventUnit.cs:26>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/SessionStateChangedEventUnit.cs:26>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = __this->___U3CsessionStateOutU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56023
+// Method Definition Index: 72186
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SessionStateChangedEventUnit_set_sessionStateOut_mA37AE57139361EFD0003F0FF225B9A917359F04C (SessionStateChangedEventUnit_tB622F7C1B352062C2D5D67A3EA1E1E6DBD910631* __this, ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/SessionStateChangedEventUnit.cs:26>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/SessionStateChangedEventUnit.cs:26>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = ___0_value;
 		__this->___U3CsessionStateOutU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CsessionStateOutU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56024
+// Method Definition Index: 72187
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* SessionStateChangedEventUnit_get_hookName_mAEFA9468C32ABAA500B9EA29659785F58AAED656 (SessionStateChangedEventUnit_tB622F7C1B352062C2D5D67A3EA1E1E6DBD910631* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4978,7 +4978,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* SessionStateChangedEventUnit_get_ho
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/SessionStateChangedEventUnit.cs:31>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/SessionStateChangedEventUnit.cs:31>
 		il2cpp_codegen_runtime_class_init_inline(Constants_t52BA4E19D4E4E7D84188778875CA3F198AB036F1_il2cpp_TypeInfo_var);
 		Dictionary_2_tCAAF57FF731CF7E9CEC738A6E8400D208C1066EE* L_0 = ((Constants_t52BA4E19D4E4E7D84188778875CA3F198AB036F1_StaticFields*)il2cpp_codegen_static_fields_for(Constants_t52BA4E19D4E4E7D84188778875CA3F198AB036F1_il2cpp_TypeInfo_var))->___EventHookNames;
 		il2cpp_codegen_runtime_class_init_inline(SessionStateChangedEventUnit_tB622F7C1B352062C2D5D67A3EA1E1E6DBD910631_il2cpp_TypeInfo_var);
@@ -4989,7 +4989,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* SessionStateChangedEventUnit_get_ho
 		return L_2;
 	}
 }
-// Method Definition Index: 56025
+// Method Definition Index: 72188
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SessionStateChangedEventUnit_StartListening_mCD5FDDF66624175226E58047C04636B183F6E640 (SessionStateChangedEventUnit_tB622F7C1B352062C2D5D67A3EA1E1E6DBD910631* __this, GraphStack_tD9049F5FB5F8D9E9CD80764D18067D0F87343E7C* ___0_stack, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5002,10 +5002,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SessionStateChangedEventUnit_StartListen
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/SessionStateChangedEventUnit.cs:39>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/SessionStateChangedEventUnit.cs:39>
 		GraphStack_tD9049F5FB5F8D9E9CD80764D18067D0F87343E7C* L_0 = ___0_stack;
 		EventUnit_1_StartListening_m988584D9E3245AAED2407FA0A7C0700E827FCAA8(__this, L_0, EventUnit_1_StartListening_m988584D9E3245AAED2407FA0A7C0700E827FCAA8_RuntimeMethod_var);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/SessionStateChangedEventUnit.cs:40>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/SessionStateChangedEventUnit.cs:40>
 		il2cpp_codegen_runtime_class_init_inline(SessionStateChangedEventUnit_tB622F7C1B352062C2D5D67A3EA1E1E6DBD910631_il2cpp_TypeInfo_var);
 		bool L_1 = ((SessionStateChangedEventUnit_tB622F7C1B352062C2D5D67A3EA1E1E6DBD910631_StaticFields*)il2cpp_codegen_static_fields_for(SessionStateChangedEventUnit_tB622F7C1B352062C2D5D67A3EA1E1E6DBD910631_il2cpp_TypeInfo_var))->___s_CallbackIsRegistered;
 		if (!L_1)
@@ -5014,24 +5014,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SessionStateChangedEventUnit_StartListen
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/SessionStateChangedEventUnit.cs:41>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/SessionStateChangedEventUnit.cs:41>
 		return;
 	}
 
 IL_000f:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/SessionStateChangedEventUnit.cs:43>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/SessionStateChangedEventUnit.cs:43>
 		Action_1_t325C602D999E964DB72210E493635E83F8D6CE68* L_2 = (Action_1_t325C602D999E964DB72210E493635E83F8D6CE68*)il2cpp_codegen_object_new(Action_1_t325C602D999E964DB72210E493635E83F8D6CE68_il2cpp_TypeInfo_var);
 		Action_1__ctor_mC9CFD5CBE62E447D22A4A520EB27144DCD47BBDB(L_2, NULL, (intptr_t)((void*)SessionStateChangedEventUnit_HandleStateChange_m59A2A9D8AE5794385BC8A62BFA35EEF1183F4770_RuntimeMethod_var), NULL);
 		ARSession_add_stateChanged_mD40004D1EBE89E6CAC651632ABB8EADBE46692FC(L_2, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/SessionStateChangedEventUnit.cs:44>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/SessionStateChangedEventUnit.cs:44>
 		il2cpp_codegen_runtime_class_init_inline(SessionStateChangedEventUnit_tB622F7C1B352062C2D5D67A3EA1E1E6DBD910631_il2cpp_TypeInfo_var);
 		((SessionStateChangedEventUnit_tB622F7C1B352062C2D5D67A3EA1E1E6DBD910631_StaticFields*)il2cpp_codegen_static_fields_for(SessionStateChangedEventUnit_tB622F7C1B352062C2D5D67A3EA1E1E6DBD910631_il2cpp_TypeInfo_var))->___s_CallbackIsRegistered = (bool)1;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/SessionStateChangedEventUnit.cs:45>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/SessionStateChangedEventUnit.cs:45>
 		return;
 	}
 }
-// Method Definition Index: 56026
+// Method Definition Index: 72189
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SessionStateChangedEventUnit_StopListening_mF5443BFC057623A8AB81E12C257FACB4771EBCB8 (SessionStateChangedEventUnit_tB622F7C1B352062C2D5D67A3EA1E1E6DBD910631* __this, GraphStack_tD9049F5FB5F8D9E9CD80764D18067D0F87343E7C* ___0_stack, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5044,21 +5044,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SessionStateChangedEventUnit_StopListeni
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/SessionStateChangedEventUnit.cs:53>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/SessionStateChangedEventUnit.cs:53>
 		Action_1_t325C602D999E964DB72210E493635E83F8D6CE68* L_0 = (Action_1_t325C602D999E964DB72210E493635E83F8D6CE68*)il2cpp_codegen_object_new(Action_1_t325C602D999E964DB72210E493635E83F8D6CE68_il2cpp_TypeInfo_var);
 		Action_1__ctor_mC9CFD5CBE62E447D22A4A520EB27144DCD47BBDB(L_0, NULL, (intptr_t)((void*)SessionStateChangedEventUnit_HandleStateChange_m59A2A9D8AE5794385BC8A62BFA35EEF1183F4770_RuntimeMethod_var), NULL);
 		ARSession_remove_stateChanged_mDAC5A2DCA86363C495C66FB8CA92F46ABDFE3BE1(L_0, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/SessionStateChangedEventUnit.cs:54>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/SessionStateChangedEventUnit.cs:54>
 		il2cpp_codegen_runtime_class_init_inline(SessionStateChangedEventUnit_tB622F7C1B352062C2D5D67A3EA1E1E6DBD910631_il2cpp_TypeInfo_var);
 		((SessionStateChangedEventUnit_tB622F7C1B352062C2D5D67A3EA1E1E6DBD910631_StaticFields*)il2cpp_codegen_static_fields_for(SessionStateChangedEventUnit_tB622F7C1B352062C2D5D67A3EA1E1E6DBD910631_il2cpp_TypeInfo_var))->___s_CallbackIsRegistered = (bool)0;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/SessionStateChangedEventUnit.cs:55>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/SessionStateChangedEventUnit.cs:55>
 		GraphStack_tD9049F5FB5F8D9E9CD80764D18067D0F87343E7C* L_1 = ___0_stack;
 		EventUnit_1_StopListening_m3291AC7B5A0B2228C69FF95A85772282389B48A6(__this, L_1, EventUnit_1_StopListening_m3291AC7B5A0B2228C69FF95A85772282389B48A6_RuntimeMethod_var);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/SessionStateChangedEventUnit.cs:56>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/SessionStateChangedEventUnit.cs:56>
 		return;
 	}
 }
-// Method Definition Index: 56027
+// Method Definition Index: 72190
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SessionStateChangedEventUnit_HandleStateChange_m59A2A9D8AE5794385BC8A62BFA35EEF1183F4770 (ARSessionStateChangedEventArgs_tC31BD123D6B4F6168FB246762E79AB33962AE822 ___0_args, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5072,7 +5072,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SessionStateChangedEventUnit_HandleState
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/SessionStateChangedEventUnit.cs:60>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/SessionStateChangedEventUnit.cs:60>
 		il2cpp_codegen_runtime_class_init_inline(Constants_t52BA4E19D4E4E7D84188778875CA3F198AB036F1_il2cpp_TypeInfo_var);
 		Dictionary_2_tCAAF57FF731CF7E9CEC738A6E8400D208C1066EE* L_0 = ((Constants_t52BA4E19D4E4E7D84188778875CA3F198AB036F1_StaticFields*)il2cpp_codegen_static_fields_for(Constants_t52BA4E19D4E4E7D84188778875CA3F198AB036F1_il2cpp_TypeInfo_var))->___EventHookNames;
 		il2cpp_codegen_runtime_class_init_inline(SessionStateChangedEventUnit_tB622F7C1B352062C2D5D67A3EA1E1E6DBD910631_il2cpp_TypeInfo_var);
@@ -5086,11 +5086,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SessionStateChangedEventUnit_HandleState
 		L_4 = ARSessionStateChangedEventArgs_get_state_mC0A6FB4AF08C068BFD5D9730F60215BE662A950B_inline((&___0_args), NULL);
 		il2cpp_codegen_runtime_class_init_inline(EventBus_t6457FCB216134244ECE28921407E893BC1D38056_il2cpp_TypeInfo_var);
 		EventBus_Trigger_TisARSessionState_tAAADC649886D67F7134A0D9A665953D764A115D7_mE75403E46DB2EDDF96E1BF00CAB17E2C12C9BE79(L_3, L_4, EventBus_Trigger_TisARSessionState_tAAADC649886D67F7134A0D9A665953D764A115D7_mE75403E46DB2EDDF96E1BF00CAB17E2C12C9BE79_RuntimeMethod_var);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/SessionStateChangedEventUnit.cs:61>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/SessionStateChangedEventUnit.cs:61>
 		return;
 	}
 }
-// Method Definition Index: 56028
+// Method Definition Index: 72191
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SessionStateChangedEventUnit_Definition_m13B3E0C78A229D7390013899679766F1F3D04A6A (SessionStateChangedEventUnit_tB622F7C1B352062C2D5D67A3EA1E1E6DBD910631* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5102,17 +5102,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SessionStateChangedEventUnit_Definition_
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/SessionStateChangedEventUnit.cs:68>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/SessionStateChangedEventUnit.cs:68>
 		EventUnit_1_Definition_m4F542628DD546D8F60E22C3A609D7E4D9A980F8D(__this, EventUnit_1_Definition_m4F542628DD546D8F60E22C3A609D7E4D9A980F8D_RuntimeMethod_var);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/SessionStateChangedEventUnit.cs:69>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/SessionStateChangedEventUnit.cs:69>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0;
 		L_0 = Unit_ValueOutput_TisARSessionState_tAAADC649886D67F7134A0D9A665953D764A115D7_m4BE5C8B6E8E7823F32C58B256BA74C4C5956BF1E(__this, _stringLiteral22841DF93BF106671B9C411695F73A63FA8C4A0A, Unit_ValueOutput_TisARSessionState_tAAADC649886D67F7134A0D9A665953D764A115D7_m4BE5C8B6E8E7823F32C58B256BA74C4C5956BF1E_RuntimeMethod_var);
 		SessionStateChangedEventUnit_set_sessionStateOut_mA37AE57139361EFD0003F0FF225B9A917359F04C_inline(__this, L_0, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/SessionStateChangedEventUnit.cs:70>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/SessionStateChangedEventUnit.cs:70>
 		return;
 	}
 }
-// Method Definition Index: 56029
+// Method Definition Index: 72192
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SessionStateChangedEventUnit_AssignArguments_m112E323BB24EABC6CF7D933169F9A5FEA88F3B56 (SessionStateChangedEventUnit_tB622F7C1B352062C2D5D67A3EA1E1E6DBD910631* __this, Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* ___0_flow, int32_t ___1_state, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5122,7 +5122,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SessionStateChangedEventUnit_AssignArgum
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/SessionStateChangedEventUnit.cs:79>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/SessionStateChangedEventUnit.cs:79>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_0 = ___0_flow;
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_1;
 		L_1 = SessionStateChangedEventUnit_get_sessionStateOut_m0A6C8851E8BE80C79AEFAE297A6B8A47F68445B9_inline(__this, NULL);
@@ -5131,11 +5131,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SessionStateChangedEventUnit_AssignArgum
 		RuntimeObject* L_4 = Box(ARSessionState_tAAADC649886D67F7134A0D9A665953D764A115D7_il2cpp_TypeInfo_var, &L_3);
 		NullCheck(L_0);
 		Flow_SetValue_m635BAF02F51D7C027C4F85157B80E2AB2DFB48A7(L_0, L_1, L_4, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/SessionStateChangedEventUnit.cs:80>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/SessionStateChangedEventUnit.cs:80>
 		return;
 	}
 }
-// Method Definition Index: 56030
+// Method Definition Index: 72193
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SessionStateChangedEventUnit__ctor_m88A0475A1E868228B52D4994A322018EAA9BC80B (SessionStateChangedEventUnit_tB622F7C1B352062C2D5D67A3EA1E1E6DBD910631* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5149,7 +5149,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SessionStateChangedEventUnit__ctor_m88A0
 		return;
 	}
 }
-// Method Definition Index: 56031
+// Method Definition Index: 72194
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SessionStateChangedEventUnit__cctor_m4170FDB206D84D6C9AC2B2E94DB5090ED957EE40 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5160,7 +5160,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SessionStateChangedEventUnit__cctor_m417
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/SessionStateChangedEventUnit.cs:19>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/SessionStateChangedEventUnit.cs:19>
 		RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B L_0 = { reinterpret_cast<intptr_t> (ARSessionStateChangedEventArgs_tC31BD123D6B4F6168FB246762E79AB33962AE822_0_0_0_var) };
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_defaults.systemtype_class);
 		Type_t* L_1;
@@ -5178,7 +5178,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SessionStateChangedEventUnit__cctor_m417
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 56032
+// Method Definition Index: 72195
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARAnchorsChangedListener__ctor_m3EAEA1374885BCA81034C06643C2B530FB59505F (ARAnchorsChangedListener_t3DA4A955916EEF1F931F82DD093BF266ED5A48FD* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5202,7 +5202,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARAnchorsChangedListener__ctor_m3EAEA137
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 56033
+// Method Definition Index: 72196
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARCameraManagerListener_OnEnable_m3FCCA525327452EC89BEB0B6192E785675354BBD (ARCameraManagerListener_t9CDC77A2AAA0062BF970292523A3AD20D76BB3AE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5224,12 +5224,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARCameraManagerListener_OnEnable_m3FCCA5
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/ARCameraManagerListener.cs:24>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/ARCameraManagerListener.cs:24>
 		ARCameraManager_t6E957EA922911B8447D086D9FB1F860EC967BD9F* L_0;
 		L_0 = Component_GetComponent_TisARCameraManager_t6E957EA922911B8447D086D9FB1F860EC967BD9F_mD0C05CBA43EFDC472C6C4BB588C366709A88B182(__this, Component_GetComponent_TisARCameraManager_t6E957EA922911B8447D086D9FB1F860EC967BD9F_mD0C05CBA43EFDC472C6C4BB588C366709A88B182_RuntimeMethod_var);
 		__this->___m_Manager = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_Manager), (void*)L_0);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/ARCameraManagerListener.cs:25>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/ARCameraManagerListener.cs:25>
 		ARCameraManager_t6E957EA922911B8447D086D9FB1F860EC967BD9F* L_1 = __this->___m_Manager;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_2;
@@ -5240,13 +5240,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARCameraManagerListener_OnEnable_m3FCCA5
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/ARCameraManagerListener.cs:27>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/ARCameraManagerListener.cs:27>
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		ARCameraManager_t6E957EA922911B8447D086D9FB1F860EC967BD9F* L_3;
 		L_3 = Object_FindAnyObjectByType_TisARCameraManager_t6E957EA922911B8447D086D9FB1F860EC967BD9F_mE869DA2B3720B68A704C999AC3C8F31C2BEFB04D(Object_FindAnyObjectByType_TisARCameraManager_t6E957EA922911B8447D086D9FB1F860EC967BD9F_mE869DA2B3720B68A704C999AC3C8F31C2BEFB04D_RuntimeMethod_var);
 		__this->___m_Manager = L_3;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_Manager), (void*)L_3);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/ARCameraManagerListener.cs:28>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/ARCameraManagerListener.cs:28>
 		ARCameraManager_t6E957EA922911B8447D086D9FB1F860EC967BD9F* L_4 = __this->___m_Manager;
 		bool L_5;
 		L_5 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_4, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
@@ -5256,8 +5256,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARCameraManagerListener_OnEnable_m3FCCA5
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/ARCameraManagerListener.cs:29>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/ARCameraManagerListener.cs:30>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/ARCameraManagerListener.cs:29>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/ARCameraManagerListener.cs:30>
 		Type_t* L_6;
 		L_6 = Object_GetType_mE10A8FC1E57F3DF29972CCBC026C2DC3942263B3(__this, NULL);
 		NullCheck(L_6);
@@ -5272,7 +5272,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARCameraManagerListener_OnEnable_m3FCCA5
 
 IL_0051:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/ARCameraManagerListener.cs:32>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/ARCameraManagerListener.cs:32>
 		StringBuilder_t* L_10 = __this->___m_LogBuilder;
 		Type_t* L_11;
 		L_11 = Object_GetType_mE10A8FC1E57F3DF29972CCBC026C2DC3942263B3(__this, NULL);
@@ -5284,7 +5284,7 @@ IL_0051:
 		NullCheck(L_10);
 		StringBuilder_t* L_14;
 		L_14 = StringBuilder_Append_m08904D74E0C78E5F36DCD9C9303BDD07886D9F7D(L_10, L_13, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/ARCameraManagerListener.cs:33>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/ARCameraManagerListener.cs:33>
 		StringBuilder_t* L_15 = __this->___m_LogBuilder;
 		String_t* L_16;
 		L_16 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(__this, NULL);
@@ -5293,7 +5293,7 @@ IL_0051:
 		NullCheck(L_15);
 		StringBuilder_t* L_18;
 		L_18 = StringBuilder_Append_m08904D74E0C78E5F36DCD9C9303BDD07886D9F7D(L_15, L_17, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/ARCameraManagerListener.cs:34>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/ARCameraManagerListener.cs:34>
 		StringBuilder_t* L_19 = __this->___m_LogBuilder;
 		ARCameraManager_t6E957EA922911B8447D086D9FB1F860EC967BD9F* L_20 = __this->___m_Manager;
 		NullCheck(L_20);
@@ -5307,7 +5307,7 @@ IL_0051:
 		NullCheck(L_19);
 		StringBuilder_t* L_24;
 		L_24 = StringBuilder_Append_m08904D74E0C78E5F36DCD9C9303BDD07886D9F7D(L_19, L_23, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/ARCameraManagerListener.cs:35>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/ARCameraManagerListener.cs:35>
 		StringBuilder_t* L_25 = __this->___m_LogBuilder;
 		ARCameraManager_t6E957EA922911B8447D086D9FB1F860EC967BD9F* L_26 = __this->___m_Manager;
 		NullCheck(L_26);
@@ -5323,19 +5323,19 @@ IL_0051:
 		NullCheck(L_25);
 		StringBuilder_t* L_31;
 		L_31 = StringBuilder_Append_m08904D74E0C78E5F36DCD9C9303BDD07886D9F7D(L_25, L_30, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/ARCameraManagerListener.cs:36>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/ARCameraManagerListener.cs:36>
 		StringBuilder_t* L_32 = __this->___m_LogBuilder;
 		NullCheck(L_32);
 		StringBuilder_t* L_33;
 		L_33 = StringBuilder_Append_m08904D74E0C78E5F36DCD9C9303BDD07886D9F7D(L_32, _stringLiteral88C714A35938E8B6F0BAFDF2B7AD9DBCB055A63D, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/ARCameraManagerListener.cs:37>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/ARCameraManagerListener.cs:37>
 		StringBuilder_t* L_34 = __this->___m_LogBuilder;
 		NullCheck(L_34);
 		String_t* L_35;
 		L_35 = VirtualFuncInvoker0< String_t* >::Invoke(3, L_34);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9(L_35, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/ARCameraManagerListener.cs:38>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/ARCameraManagerListener.cs:38>
 		StringBuilder_t* L_36 = __this->___m_LogBuilder;
 		NullCheck(L_36);
 		StringBuilder_t* L_37;
@@ -5344,17 +5344,17 @@ IL_0051:
 
 IL_011c:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/ARCameraManagerListener.cs:41>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/ARCameraManagerListener.cs:41>
 		ARCameraManager_t6E957EA922911B8447D086D9FB1F860EC967BD9F* L_38 = __this->___m_Manager;
 		Action_1_t54327BAFA15E24E002EFAE48D1AFFC020D368735* L_39 = (Action_1_t54327BAFA15E24E002EFAE48D1AFFC020D368735*)il2cpp_codegen_object_new(Action_1_t54327BAFA15E24E002EFAE48D1AFFC020D368735_il2cpp_TypeInfo_var);
 		Action_1__ctor_mDFD48034EFC4DF74EEB44B18C74DD7BAF391814E(L_39, __this, (intptr_t)((void*)ARCameraManagerListener_OnFrameReceived_mC4DF9EC830D8147C5E4604BBE32DD5D289C7E901_RuntimeMethod_var), NULL);
 		NullCheck(L_38);
 		ARCameraManager_add_frameReceived_mB30CD73DB7A25A6E7BC486BA289DBB99CBA3B7A1(L_38, L_39, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/ARCameraManagerListener.cs:42>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/ARCameraManagerListener.cs:42>
 		return;
 	}
 }
-// Method Definition Index: 56034
+// Method Definition Index: 72197
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARCameraManagerListener_OnDisable_mE4E3D8277DFBA681900BD3B3F9F2335C2DC7BA27 (ARCameraManagerListener_t9CDC77A2AAA0062BF970292523A3AD20D76BB3AE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5366,7 +5366,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARCameraManagerListener_OnDisable_mE4E3D
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/ARCameraManagerListener.cs:46>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/ARCameraManagerListener.cs:46>
 		ARCameraManager_t6E957EA922911B8447D086D9FB1F860EC967BD9F* L_0 = __this->___m_Manager;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -5377,7 +5377,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARCameraManagerListener_OnDisable_mE4E3D
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/ARCameraManagerListener.cs:47>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/ARCameraManagerListener.cs:47>
 		ARCameraManager_t6E957EA922911B8447D086D9FB1F860EC967BD9F* L_2 = __this->___m_Manager;
 		Action_1_t54327BAFA15E24E002EFAE48D1AFFC020D368735* L_3 = (Action_1_t54327BAFA15E24E002EFAE48D1AFFC020D368735*)il2cpp_codegen_object_new(Action_1_t54327BAFA15E24E002EFAE48D1AFFC020D368735_il2cpp_TypeInfo_var);
 		Action_1__ctor_mDFD48034EFC4DF74EEB44B18C74DD7BAF391814E(L_3, __this, (intptr_t)((void*)ARCameraManagerListener_OnFrameReceived_mC4DF9EC830D8147C5E4604BBE32DD5D289C7E901_RuntimeMethod_var), NULL);
@@ -5387,11 +5387,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARCameraManagerListener_OnDisable_mE4E3D
 
 IL_0025:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/ARCameraManagerListener.cs:48>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/ARCameraManagerListener.cs:48>
 		return;
 	}
 }
-// Method Definition Index: 56035
+// Method Definition Index: 72198
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARCameraManagerListener_OnFrameReceived_mC4DF9EC830D8147C5E4604BBE32DD5D289C7E901 (ARCameraManagerListener_t9CDC77A2AAA0062BF970292523A3AD20D76BB3AE* __this, ARCameraFrameEventArgs_t4060608C37C2B7248AFC908876309CC36D53E0EC ___0_args, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5405,7 +5405,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARCameraManagerListener_OnFrameReceived_
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/ARCameraManagerListener.cs:51>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/ARCameraManagerListener.cs:51>
 		il2cpp_codegen_runtime_class_init_inline(Constants_t52BA4E19D4E4E7D84188778875CA3F198AB036F1_il2cpp_TypeInfo_var);
 		Dictionary_2_tCAAF57FF731CF7E9CEC738A6E8400D208C1066EE* L_0 = ((Constants_t52BA4E19D4E4E7D84188778875CA3F198AB036F1_StaticFields*)il2cpp_codegen_static_fields_for(Constants_t52BA4E19D4E4E7D84188778875CA3F198AB036F1_il2cpp_TypeInfo_var))->___EventHookNames;
 		il2cpp_codegen_runtime_class_init_inline(ARCameraManagerListener_t9CDC77A2AAA0062BF970292523A3AD20D76BB3AE_il2cpp_TypeInfo_var);
@@ -5421,7 +5421,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARCameraManagerListener_OnFrameReceived_
 		return;
 	}
 }
-// Method Definition Index: 56036
+// Method Definition Index: 72199
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARCameraManagerListener__ctor_mAC77E9D72A839372BB3B36491951FBC01AF001E8 (ARCameraManagerListener_t9CDC77A2AAA0062BF970292523A3AD20D76BB3AE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5431,7 +5431,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARCameraManagerListener__ctor_mAC77E9D72
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/ARCameraManagerListener.cs:18>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/ARCameraManagerListener.cs:18>
 		StringBuilder_t* L_0 = (StringBuilder_t*)il2cpp_codegen_object_new(StringBuilder_t_il2cpp_TypeInfo_var);
 		StringBuilder__ctor_m1D99713357DE05DAFA296633639DB55F8C30587D(L_0, NULL);
 		__this->___m_LogBuilder = L_0;
@@ -5440,7 +5440,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARCameraManagerListener__ctor_mAC77E9D72
 		return;
 	}
 }
-// Method Definition Index: 56037
+// Method Definition Index: 72200
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARCameraManagerListener__cctor_mAE40D12AA2D501A28DF20C85AC65D739443DA328 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5451,7 +5451,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARCameraManagerListener__cctor_mAE40D12A
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/ARCameraManagerListener.cs:20>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/ARCameraManagerListener.cs:20>
 		RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B L_0 = { reinterpret_cast<intptr_t> (ARCameraFrameEventArgs_t4060608C37C2B7248AFC908876309CC36D53E0EC_0_0_0_var) };
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_defaults.systemtype_class);
 		Type_t* L_1;
@@ -5469,7 +5469,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARCameraManagerListener__cctor_mAE40D12A
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 56038
+// Method Definition Index: 72201
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AREnvironmentProbesChangedListener__ctor_mB4D3212CE8BF28AE8541D5C96415343475D97D2B (AREnvironmentProbesChangedListener_tBF9B67FF99E6856F428BFAE0EC4066DAA78C33A1* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5493,7 +5493,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AREnvironmentProbesChangedListener__ctor
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 56039
+// Method Definition Index: 72202
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARFaceListener_OnFaceUpdated_mEB4873976DAAC601F816A95E0E36C93CC6C43D51 (ARFaceListener_tCC12AA9BE708DFBC6BE058D621A5B173162E8A59* __this, ARFaceUpdatedEventArgs_tC20D17255858678A1A8230EA32D7C38287221FF6 ___0_args, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5507,7 +5507,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARFaceListener_OnFaceUpdated_mEB4873976D
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/ARFaceListener.cs:20>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/ARFaceListener.cs:20>
 		il2cpp_codegen_runtime_class_init_inline(Constants_t52BA4E19D4E4E7D84188778875CA3F198AB036F1_il2cpp_TypeInfo_var);
 		Dictionary_2_tCAAF57FF731CF7E9CEC738A6E8400D208C1066EE* L_0 = ((Constants_t52BA4E19D4E4E7D84188778875CA3F198AB036F1_StaticFields*)il2cpp_codegen_static_fields_for(Constants_t52BA4E19D4E4E7D84188778875CA3F198AB036F1_il2cpp_TypeInfo_var))->___EventHookNames;
 		il2cpp_codegen_runtime_class_init_inline(ARFaceListener_tCC12AA9BE708DFBC6BE058D621A5B173162E8A59_il2cpp_TypeInfo_var);
@@ -5523,7 +5523,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARFaceListener_OnFaceUpdated_mEB4873976D
 		return;
 	}
 }
-// Method Definition Index: 56040
+// Method Definition Index: 72203
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARFaceListener_OnEnable_mFB7CEACFC165E077636A31D574F41CAEFB2737A1 (ARFaceListener_tCC12AA9BE708DFBC6BE058D621A5B173162E8A59* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5536,12 +5536,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARFaceListener_OnEnable_mFB7CEACFC165E07
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/ARFaceListener.cs:24>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/ARFaceListener.cs:24>
 		ARFace_t73C068C9C8422F79A858EC41C322D399305B8453* L_0;
 		L_0 = Component_GetComponent_TisARFace_t73C068C9C8422F79A858EC41C322D399305B8453_mDBDD6B87463FFFEC97691FFEDD402BE1F8D1BC07(__this, Component_GetComponent_TisARFace_t73C068C9C8422F79A858EC41C322D399305B8453_mDBDD6B87463FFFEC97691FFEDD402BE1F8D1BC07_RuntimeMethod_var);
 		__this->___m_Face = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_Face), (void*)L_0);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/ARFaceListener.cs:25>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/ARFaceListener.cs:25>
 		ARFace_t73C068C9C8422F79A858EC41C322D399305B8453* L_1 = __this->___m_Face;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_2;
@@ -5552,9 +5552,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARFaceListener_OnEnable_mFB7CEACFC165E07
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/ARFaceListener.cs:26>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/ARFaceListener.cs:27>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/ARFaceListener.cs:28>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/ARFaceListener.cs:26>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/ARFaceListener.cs:27>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/ARFaceListener.cs:28>
 		String_t* L_3;
 		L_3 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(__this, NULL);
 		String_t* L_4;
@@ -5566,17 +5566,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARFaceListener_OnEnable_mFB7CEACFC165E07
 
 IL_0035:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/ARFaceListener.cs:30>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/ARFaceListener.cs:30>
 		ARFace_t73C068C9C8422F79A858EC41C322D399305B8453* L_6 = __this->___m_Face;
 		Action_1_t30DB722576CDAD6BB3F09BD60358BF49AA947548* L_7 = (Action_1_t30DB722576CDAD6BB3F09BD60358BF49AA947548*)il2cpp_codegen_object_new(Action_1_t30DB722576CDAD6BB3F09BD60358BF49AA947548_il2cpp_TypeInfo_var);
 		Action_1__ctor_m3A71B4EF8E0C69EED8BBC0BB8AE9856BEA1929D1(L_7, __this, (intptr_t)((void*)ARFaceListener_OnFaceUpdated_mEB4873976DAAC601F816A95E0E36C93CC6C43D51_RuntimeMethod_var), NULL);
 		NullCheck(L_6);
 		ARFace_add_updated_m20975C4A22DDFCC57D15C0205754C3902A699738(L_6, L_7, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/ARFaceListener.cs:31>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/ARFaceListener.cs:31>
 		return;
 	}
 }
-// Method Definition Index: 56041
+// Method Definition Index: 72204
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARFaceListener_OnDisable_m97C2530EC7E803706F1E64CFCCEBAE565D439525 (ARFaceListener_tCC12AA9BE708DFBC6BE058D621A5B173162E8A59* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5587,7 +5587,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARFaceListener_OnDisable_m97C2530EC7E803
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/ARFaceListener.cs:34>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/ARFaceListener.cs:34>
 		ARFace_t73C068C9C8422F79A858EC41C322D399305B8453* L_0 = __this->___m_Face;
 		Action_1_t30DB722576CDAD6BB3F09BD60358BF49AA947548* L_1 = (Action_1_t30DB722576CDAD6BB3F09BD60358BF49AA947548*)il2cpp_codegen_object_new(Action_1_t30DB722576CDAD6BB3F09BD60358BF49AA947548_il2cpp_TypeInfo_var);
 		Action_1__ctor_m3A71B4EF8E0C69EED8BBC0BB8AE9856BEA1929D1(L_1, __this, (intptr_t)((void*)ARFaceListener_OnFaceUpdated_mEB4873976DAAC601F816A95E0E36C93CC6C43D51_RuntimeMethod_var), NULL);
@@ -5596,7 +5596,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARFaceListener_OnDisable_m97C2530EC7E803
 		return;
 	}
 }
-// Method Definition Index: 56042
+// Method Definition Index: 72205
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARFaceListener__ctor_mF6F04669987369D3F349D4E6817E9E84A1C6EC12 (ARFaceListener_tCC12AA9BE708DFBC6BE058D621A5B173162E8A59* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5604,7 +5604,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARFaceListener__ctor_mF6F04669987369D3F3
 		return;
 	}
 }
-// Method Definition Index: 56043
+// Method Definition Index: 72206
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARFaceListener__cctor_m92E8E8CA05E6896F0809E443ADB8481AFF383A4C (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5615,7 +5615,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARFaceListener__cctor_m92E8E8CA05E6896F0
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/ARFaceListener.cs:17>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/ARFaceListener.cs:17>
 		RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B L_0 = { reinterpret_cast<intptr_t> (ARFaceUpdatedEventArgs_tC20D17255858678A1A8230EA32D7C38287221FF6_0_0_0_var) };
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_defaults.systemtype_class);
 		Type_t* L_1;
@@ -5633,7 +5633,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARFaceListener__cctor_m92E8E8CA05E6896F0
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 56044
+// Method Definition Index: 72207
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARFacesChangedListener__ctor_mD1696211567850B656921582E020B568205733F2 (ARFacesChangedListener_tA87EBC51418A4594A025A124B5F286B49D2A13BE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5657,7 +5657,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARFacesChangedListener__ctor_mD169621156
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 56045
+// Method Definition Index: 72208
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARHumanBodiesChangedListener__ctor_m54127A1FDB906CDCA4FC83DA2585DAD080B06972 (ARHumanBodiesChangedListener_tE227FB654593936D2AD7C14DBD4EB43B01DBA8CD* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5681,7 +5681,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARHumanBodiesChangedListener__ctor_m5412
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 56046
+// Method Definition Index: 72209
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARParticipantsChangedListener__ctor_m9A98A76924EF0D0017CA368B8B1FFA4451B04BD1 (ARParticipantsChangedListener_t5B81A6D88F1F6725F32ED35A358A78164F464904* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5705,7 +5705,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARParticipantsChangedListener__ctor_m9A9
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 56047
+// Method Definition Index: 72210
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARPlanesChangedListener__ctor_mEAD977929602BC76E63A39449520806F8F9B6402 (ARPlanesChangedListener_t86A9313859C15948BA8B5C053C5B37F2CF8456CB* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5729,7 +5729,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARPlanesChangedListener__ctor_mEAD977929
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 56048
+// Method Definition Index: 72211
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARPointCloudsChangedListener__ctor_m3502B82C33E25DB191FEAA0D2165590CEACB6E34 (ARPointCloudsChangedListener_tBB75B33C36B292AC3B3D4FBFE8500F245047905F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5753,7 +5753,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARPointCloudsChangedListener__ctor_m3502
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 56054
+// Method Definition Index: 72217
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackedImagesChangedListener__ctor_mA0D1BC73050F7004C6DD9367CF4EDF576E86A6BF (ARTrackedImagesChangedListener_t09C4BB5D0D21CFE96517D3431A24FA2CA31C3452* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5777,7 +5777,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackedImagesChangedListener__ctor_mA0
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 56055
+// Method Definition Index: 72218
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackedObjectsChangedListener__ctor_m457C2A7CAA063DF0D283D8BE8938CA835AC20945 (ARTrackedObjectsChangedListener_t8E2500EBCE04A188176A256EB517D980BEDEB820* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5801,7 +5801,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackedObjectsChangedListener__ctor_m4
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 56056
+// Method Definition Index: 72219
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARAnchorManagerListener_OnTrackablesChanged_m4334EFEB7FF640C2029A8567B7F33FEA2F6012BF (ARAnchorManagerListener_t566E40F47C375A0FCD517AEAF5732FA1E9FB486A* __this, ARAnchorsChangedEventArgs_t755E6208C84304CAC448C133B0A8660CD5750A75 ___0_args, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5813,7 +5813,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARAnchorManagerListener_OnTrackablesChan
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/Deprecated/ARAnchorManagerListener.deprecated.cs:16>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/Deprecated/ARAnchorManagerListener.deprecated.cs:16>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0;
 		L_0 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
 		ARAnchorsChangedEventArgs_t755E6208C84304CAC448C133B0A8660CD5750A75 L_1 = ___0_args;
@@ -5822,7 +5822,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARAnchorManagerListener_OnTrackablesChan
 		return;
 	}
 }
-// Method Definition Index: 56057
+// Method Definition Index: 72220
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARAnchorManagerListener_RegisterTrackablesChangedDelegate_mB98A79FE77937C7B254E99A4DB9280987DF96A3C (ARAnchorManagerListener_t566E40F47C375A0FCD517AEAF5732FA1E9FB486A* __this, ARAnchorManager_tF68C46300BD6F2E83E3360BF9297C3C50F5D6B3E* ___0_manager, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5833,7 +5833,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARAnchorManagerListener_RegisterTrackabl
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/Deprecated/ARAnchorManagerListener.deprecated.cs:20>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/Deprecated/ARAnchorManagerListener.deprecated.cs:20>
 		ARAnchorManager_tF68C46300BD6F2E83E3360BF9297C3C50F5D6B3E* L_0 = ___0_manager;
 		Action_1_t11340E5174173030E076A75316E18A395082F8A5* L_1 = (Action_1_t11340E5174173030E076A75316E18A395082F8A5*)il2cpp_codegen_object_new(Action_1_t11340E5174173030E076A75316E18A395082F8A5_il2cpp_TypeInfo_var);
 		Action_1__ctor_m27F591D84CB51009686E04C84ED35045DB8DC4B1(L_1, __this, (intptr_t)((void*)ARAnchorManagerListener_OnTrackablesChanged_m4334EFEB7FF640C2029A8567B7F33FEA2F6012BF_RuntimeMethod_var), NULL);
@@ -5842,7 +5842,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARAnchorManagerListener_RegisterTrackabl
 		return;
 	}
 }
-// Method Definition Index: 56058
+// Method Definition Index: 72221
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARAnchorManagerListener_UnregisterTrackablesChangedDelegate_mD523B3EE5EBC73350C2121DC8CDC326FAB330B3C (ARAnchorManagerListener_t566E40F47C375A0FCD517AEAF5732FA1E9FB486A* __this, ARAnchorManager_tF68C46300BD6F2E83E3360BF9297C3C50F5D6B3E* ___0_manager, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5853,7 +5853,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARAnchorManagerListener_UnregisterTracka
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/Deprecated/ARAnchorManagerListener.deprecated.cs:24>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/Deprecated/ARAnchorManagerListener.deprecated.cs:24>
 		ARAnchorManager_tF68C46300BD6F2E83E3360BF9297C3C50F5D6B3E* L_0 = ___0_manager;
 		Action_1_t11340E5174173030E076A75316E18A395082F8A5* L_1 = (Action_1_t11340E5174173030E076A75316E18A395082F8A5*)il2cpp_codegen_object_new(Action_1_t11340E5174173030E076A75316E18A395082F8A5_il2cpp_TypeInfo_var);
 		Action_1__ctor_m27F591D84CB51009686E04C84ED35045DB8DC4B1(L_1, __this, (intptr_t)((void*)ARAnchorManagerListener_OnTrackablesChanged_m4334EFEB7FF640C2029A8567B7F33FEA2F6012BF_RuntimeMethod_var), NULL);
@@ -5862,7 +5862,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARAnchorManagerListener_UnregisterTracka
 		return;
 	}
 }
-// Method Definition Index: 56059
+// Method Definition Index: 72222
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARAnchorManagerListener__ctor_m3446119DC76812D6B10825B9E3DF3F54F59F210B (ARAnchorManagerListener_t566E40F47C375A0FCD517AEAF5732FA1E9FB486A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5884,7 +5884,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARAnchorManagerListener__ctor_m3446119DC
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 56060
+// Method Definition Index: 72223
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AREnvironmentProbeManagerListener_OnTrackablesChanged_mFFE922C02832EEF6AC8F645762C471B3BEF8B93D (AREnvironmentProbeManagerListener_t919D09DA2D7FF7958381E8B7494E6C5A1D6D1533* __this, AREnvironmentProbesChangedEvent_t8757E98E11F3D37F0CFC4589FCA5CD2107F8375C ___0_args, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5896,7 +5896,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AREnvironmentProbeManagerListener_OnTrac
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/Deprecated/AREnvironmentProbeManagerListener.deprecated.cs:17>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/Deprecated/AREnvironmentProbeManagerListener.deprecated.cs:17>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0;
 		L_0 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
 		AREnvironmentProbesChangedEvent_t8757E98E11F3D37F0CFC4589FCA5CD2107F8375C L_1 = ___0_args;
@@ -5905,7 +5905,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AREnvironmentProbeManagerListener_OnTrac
 		return;
 	}
 }
-// Method Definition Index: 56061
+// Method Definition Index: 72224
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AREnvironmentProbeManagerListener_RegisterTrackablesChangedDelegate_m872353C32A0321432B32E69E1BC8FF679B046962 (AREnvironmentProbeManagerListener_t919D09DA2D7FF7958381E8B7494E6C5A1D6D1533* __this, AREnvironmentProbeManager_tE457B73006F0D5136D9F2BDDEB072C1A1DB407F8* ___0_manager, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5916,7 +5916,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AREnvironmentProbeManagerListener_Regist
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/Deprecated/AREnvironmentProbeManagerListener.deprecated.cs:20>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/Deprecated/AREnvironmentProbeManagerListener.deprecated.cs:20>
 		AREnvironmentProbeManager_tE457B73006F0D5136D9F2BDDEB072C1A1DB407F8* L_0 = ___0_manager;
 		Action_1_tE3E0B091088607877804833E23BFDBBF5594B830* L_1 = (Action_1_tE3E0B091088607877804833E23BFDBBF5594B830*)il2cpp_codegen_object_new(Action_1_tE3E0B091088607877804833E23BFDBBF5594B830_il2cpp_TypeInfo_var);
 		Action_1__ctor_mD1DD23E09BBCBCDCB59373D479AA93CADF7E5C48(L_1, __this, (intptr_t)((void*)AREnvironmentProbeManagerListener_OnTrackablesChanged_mFFE922C02832EEF6AC8F645762C471B3BEF8B93D_RuntimeMethod_var), NULL);
@@ -5925,7 +5925,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AREnvironmentProbeManagerListener_Regist
 		return;
 	}
 }
-// Method Definition Index: 56062
+// Method Definition Index: 72225
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AREnvironmentProbeManagerListener_UnregisterTrackablesChangedDelegate_m7D1DB80EA456F3BEA9A0D7A4184467B8925478E3 (AREnvironmentProbeManagerListener_t919D09DA2D7FF7958381E8B7494E6C5A1D6D1533* __this, AREnvironmentProbeManager_tE457B73006F0D5136D9F2BDDEB072C1A1DB407F8* ___0_manager, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5936,7 +5936,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AREnvironmentProbeManagerListener_Unregi
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/Deprecated/AREnvironmentProbeManagerListener.deprecated.cs:23>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/Deprecated/AREnvironmentProbeManagerListener.deprecated.cs:23>
 		AREnvironmentProbeManager_tE457B73006F0D5136D9F2BDDEB072C1A1DB407F8* L_0 = ___0_manager;
 		Action_1_tE3E0B091088607877804833E23BFDBBF5594B830* L_1 = (Action_1_tE3E0B091088607877804833E23BFDBBF5594B830*)il2cpp_codegen_object_new(Action_1_tE3E0B091088607877804833E23BFDBBF5594B830_il2cpp_TypeInfo_var);
 		Action_1__ctor_mD1DD23E09BBCBCDCB59373D479AA93CADF7E5C48(L_1, __this, (intptr_t)((void*)AREnvironmentProbeManagerListener_OnTrackablesChanged_mFFE922C02832EEF6AC8F645762C471B3BEF8B93D_RuntimeMethod_var), NULL);
@@ -5945,7 +5945,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AREnvironmentProbeManagerListener_Unregi
 		return;
 	}
 }
-// Method Definition Index: 56063
+// Method Definition Index: 72226
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AREnvironmentProbeManagerListener__ctor_mDDB6426B47643A97BB37711BA5C7031FDDDD9171 (AREnvironmentProbeManagerListener_t919D09DA2D7FF7958381E8B7494E6C5A1D6D1533* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5967,7 +5967,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AREnvironmentProbeManagerListener__ctor_
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 56064
+// Method Definition Index: 72227
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARFaceManagerListener_OnTrackablesChanged_m5F42EC3570B5D34BAE69E833677980E334D97E84 (ARFaceManagerListener_t8043177537F4EAE01597D66B7EB8968FBAA5811A* __this, ARFacesChangedEventArgs_tC05D4423CB2096FF5955C3A0A00056EE2B6301AE ___0_args, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5979,7 +5979,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARFaceManagerListener_OnTrackablesChange
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/Deprecated/ARFaceManagerListener.deprecated.cs:16>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/Deprecated/ARFaceManagerListener.deprecated.cs:16>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0;
 		L_0 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
 		ARFacesChangedEventArgs_tC05D4423CB2096FF5955C3A0A00056EE2B6301AE L_1 = ___0_args;
@@ -5988,7 +5988,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARFaceManagerListener_OnTrackablesChange
 		return;
 	}
 }
-// Method Definition Index: 56065
+// Method Definition Index: 72228
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARFaceManagerListener_RegisterTrackablesChangedDelegate_m1C8CED37ADBCCDE1125F632BCC683C6DF4210E47 (ARFaceManagerListener_t8043177537F4EAE01597D66B7EB8968FBAA5811A* __this, ARFaceManager_tE5955187C9D7C9C4C4139F522DA0DEA69EFCFD8F* ___0_manager, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5999,7 +5999,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARFaceManagerListener_RegisterTrackables
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/Deprecated/ARFaceManagerListener.deprecated.cs:20>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/Deprecated/ARFaceManagerListener.deprecated.cs:20>
 		ARFaceManager_tE5955187C9D7C9C4C4139F522DA0DEA69EFCFD8F* L_0 = ___0_manager;
 		Action_1_t0A16CC637B74FE43A20D2784BCA3172E7D13789C* L_1 = (Action_1_t0A16CC637B74FE43A20D2784BCA3172E7D13789C*)il2cpp_codegen_object_new(Action_1_t0A16CC637B74FE43A20D2784BCA3172E7D13789C_il2cpp_TypeInfo_var);
 		Action_1__ctor_m6B29F8F1F0039A82C7A8CE016F79E8D39054E4D4(L_1, __this, (intptr_t)((void*)ARFaceManagerListener_OnTrackablesChanged_m5F42EC3570B5D34BAE69E833677980E334D97E84_RuntimeMethod_var), NULL);
@@ -6008,7 +6008,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARFaceManagerListener_RegisterTrackables
 		return;
 	}
 }
-// Method Definition Index: 56066
+// Method Definition Index: 72229
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARFaceManagerListener_UnregisterTrackablesChangedDelegate_m98D01C89E58172CBA368330001F3805AB37D2014 (ARFaceManagerListener_t8043177537F4EAE01597D66B7EB8968FBAA5811A* __this, ARFaceManager_tE5955187C9D7C9C4C4139F522DA0DEA69EFCFD8F* ___0_manager, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6019,7 +6019,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARFaceManagerListener_UnregisterTrackabl
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/Deprecated/ARFaceManagerListener.deprecated.cs:24>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/Deprecated/ARFaceManagerListener.deprecated.cs:24>
 		ARFaceManager_tE5955187C9D7C9C4C4139F522DA0DEA69EFCFD8F* L_0 = ___0_manager;
 		Action_1_t0A16CC637B74FE43A20D2784BCA3172E7D13789C* L_1 = (Action_1_t0A16CC637B74FE43A20D2784BCA3172E7D13789C*)il2cpp_codegen_object_new(Action_1_t0A16CC637B74FE43A20D2784BCA3172E7D13789C_il2cpp_TypeInfo_var);
 		Action_1__ctor_m6B29F8F1F0039A82C7A8CE016F79E8D39054E4D4(L_1, __this, (intptr_t)((void*)ARFaceManagerListener_OnTrackablesChanged_m5F42EC3570B5D34BAE69E833677980E334D97E84_RuntimeMethod_var), NULL);
@@ -6028,7 +6028,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARFaceManagerListener_UnregisterTrackabl
 		return;
 	}
 }
-// Method Definition Index: 56067
+// Method Definition Index: 72230
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARFaceManagerListener__ctor_m5FAC77D48D54B77D1AF6767F9CC1A9FD8C47579D (ARFaceManagerListener_t8043177537F4EAE01597D66B7EB8968FBAA5811A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6050,7 +6050,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARFaceManagerListener__ctor_m5FAC77D48D5
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 56068
+// Method Definition Index: 72231
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARHumanBodyManagerListener_OnTrackablesChanged_mC8B24E64F660D8C4F29C2567E233795C7905E8D8 (ARHumanBodyManagerListener_tD428DC6513EF466039758E70361DF5E6F429589A* __this, ARHumanBodiesChangedEventArgs_t19088E0D3384A22C5D8A542957705222C834720B ___0_args, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6062,7 +6062,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARHumanBodyManagerListener_OnTrackablesC
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/Deprecated/ARHumanBodyManagerListener.deprecated.cs:16>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/Deprecated/ARHumanBodyManagerListener.deprecated.cs:16>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0;
 		L_0 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
 		ARHumanBodiesChangedEventArgs_t19088E0D3384A22C5D8A542957705222C834720B L_1 = ___0_args;
@@ -6071,7 +6071,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARHumanBodyManagerListener_OnTrackablesC
 		return;
 	}
 }
-// Method Definition Index: 56069
+// Method Definition Index: 72232
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARHumanBodyManagerListener_RegisterTrackablesChangedDelegate_mC4B68B78F1C8A14D91BB47766F0D9CFBC3E76665 (ARHumanBodyManagerListener_tD428DC6513EF466039758E70361DF5E6F429589A* __this, ARHumanBodyManager_tA5246205B817A3D4A87BFC54FC018FB513867BFB* ___0_manager, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6082,7 +6082,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARHumanBodyManagerListener_RegisterTrack
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/Deprecated/ARHumanBodyManagerListener.deprecated.cs:20>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/Deprecated/ARHumanBodyManagerListener.deprecated.cs:20>
 		ARHumanBodyManager_tA5246205B817A3D4A87BFC54FC018FB513867BFB* L_0 = ___0_manager;
 		Action_1_t78DC7DD8CB74A1B21E4419996B784C6E51821247* L_1 = (Action_1_t78DC7DD8CB74A1B21E4419996B784C6E51821247*)il2cpp_codegen_object_new(Action_1_t78DC7DD8CB74A1B21E4419996B784C6E51821247_il2cpp_TypeInfo_var);
 		Action_1__ctor_mCFC45AE4A743ED62D221EC7E1918738EE0C00B60(L_1, __this, (intptr_t)((void*)ARHumanBodyManagerListener_OnTrackablesChanged_mC8B24E64F660D8C4F29C2567E233795C7905E8D8_RuntimeMethod_var), NULL);
@@ -6091,7 +6091,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARHumanBodyManagerListener_RegisterTrack
 		return;
 	}
 }
-// Method Definition Index: 56070
+// Method Definition Index: 72233
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARHumanBodyManagerListener_UnregisterTrackablesChangedDelegate_mF252B1724CB1EE3FB8C778EA76B178D1189D9A6F (ARHumanBodyManagerListener_tD428DC6513EF466039758E70361DF5E6F429589A* __this, ARHumanBodyManager_tA5246205B817A3D4A87BFC54FC018FB513867BFB* ___0_manager, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6102,7 +6102,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARHumanBodyManagerListener_UnregisterTra
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/Deprecated/ARHumanBodyManagerListener.deprecated.cs:24>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/Deprecated/ARHumanBodyManagerListener.deprecated.cs:24>
 		ARHumanBodyManager_tA5246205B817A3D4A87BFC54FC018FB513867BFB* L_0 = ___0_manager;
 		Action_1_t78DC7DD8CB74A1B21E4419996B784C6E51821247* L_1 = (Action_1_t78DC7DD8CB74A1B21E4419996B784C6E51821247*)il2cpp_codegen_object_new(Action_1_t78DC7DD8CB74A1B21E4419996B784C6E51821247_il2cpp_TypeInfo_var);
 		Action_1__ctor_mCFC45AE4A743ED62D221EC7E1918738EE0C00B60(L_1, __this, (intptr_t)((void*)ARHumanBodyManagerListener_OnTrackablesChanged_mC8B24E64F660D8C4F29C2567E233795C7905E8D8_RuntimeMethod_var), NULL);
@@ -6111,7 +6111,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARHumanBodyManagerListener_UnregisterTra
 		return;
 	}
 }
-// Method Definition Index: 56071
+// Method Definition Index: 72234
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARHumanBodyManagerListener__ctor_m1C30D9B89578DFD325B5670B6864480FEA735595 (ARHumanBodyManagerListener_tD428DC6513EF466039758E70361DF5E6F429589A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6133,7 +6133,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARHumanBodyManagerListener__ctor_m1C30D9
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 56072
+// Method Definition Index: 72235
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARParticipantManagerListener_OnTrackablesChanged_mFBD305D70AFFBB9ADDE54456B499CEE28B7586F0 (ARParticipantManagerListener_tD1B316B50151D4E2F897C85D37E9EA0CE76DD180* __this, ARParticipantsChangedEventArgs_t2EAD9041A074A7ACEFF280662784747A4E85E527 ___0_args, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6145,7 +6145,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARParticipantManagerListener_OnTrackable
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/Deprecated/ARParticipantManagerListener.deprecated.cs:16>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/Deprecated/ARParticipantManagerListener.deprecated.cs:16>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0;
 		L_0 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
 		ARParticipantsChangedEventArgs_t2EAD9041A074A7ACEFF280662784747A4E85E527 L_1 = ___0_args;
@@ -6154,7 +6154,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARParticipantManagerListener_OnTrackable
 		return;
 	}
 }
-// Method Definition Index: 56073
+// Method Definition Index: 72236
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARParticipantManagerListener_RegisterTrackablesChangedDelegate_m4299A76DBAD136E3E3008B0E13A5C59986C70F25 (ARParticipantManagerListener_tD1B316B50151D4E2F897C85D37E9EA0CE76DD180* __this, ARParticipantManager_t759CB1A6961D7C7F99E47B8AFFF7BCA4761C99C4* ___0_manager, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6165,7 +6165,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARParticipantManagerListener_RegisterTra
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/Deprecated/ARParticipantManagerListener.deprecated.cs:20>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/Deprecated/ARParticipantManagerListener.deprecated.cs:20>
 		ARParticipantManager_t759CB1A6961D7C7F99E47B8AFFF7BCA4761C99C4* L_0 = ___0_manager;
 		Action_1_tE5F1AC110E5F6610E8B460B753F57ACC9B4524E3* L_1 = (Action_1_tE5F1AC110E5F6610E8B460B753F57ACC9B4524E3*)il2cpp_codegen_object_new(Action_1_tE5F1AC110E5F6610E8B460B753F57ACC9B4524E3_il2cpp_TypeInfo_var);
 		Action_1__ctor_m0C34C0D8022B4CB26E739D328681C24E65FC460C(L_1, __this, (intptr_t)((void*)ARParticipantManagerListener_OnTrackablesChanged_mFBD305D70AFFBB9ADDE54456B499CEE28B7586F0_RuntimeMethod_var), NULL);
@@ -6174,7 +6174,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARParticipantManagerListener_RegisterTra
 		return;
 	}
 }
-// Method Definition Index: 56074
+// Method Definition Index: 72237
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARParticipantManagerListener_UnregisterTrackablesChangedDelegate_mCF7B6C59B0BE204CF23E8AD061B1FB5B8A91FA4A (ARParticipantManagerListener_tD1B316B50151D4E2F897C85D37E9EA0CE76DD180* __this, ARParticipantManager_t759CB1A6961D7C7F99E47B8AFFF7BCA4761C99C4* ___0_manager, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6185,7 +6185,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARParticipantManagerListener_UnregisterT
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/Deprecated/ARParticipantManagerListener.deprecated.cs:24>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/Deprecated/ARParticipantManagerListener.deprecated.cs:24>
 		ARParticipantManager_t759CB1A6961D7C7F99E47B8AFFF7BCA4761C99C4* L_0 = ___0_manager;
 		Action_1_tE5F1AC110E5F6610E8B460B753F57ACC9B4524E3* L_1 = (Action_1_tE5F1AC110E5F6610E8B460B753F57ACC9B4524E3*)il2cpp_codegen_object_new(Action_1_tE5F1AC110E5F6610E8B460B753F57ACC9B4524E3_il2cpp_TypeInfo_var);
 		Action_1__ctor_m0C34C0D8022B4CB26E739D328681C24E65FC460C(L_1, __this, (intptr_t)((void*)ARParticipantManagerListener_OnTrackablesChanged_mFBD305D70AFFBB9ADDE54456B499CEE28B7586F0_RuntimeMethod_var), NULL);
@@ -6194,7 +6194,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARParticipantManagerListener_UnregisterT
 		return;
 	}
 }
-// Method Definition Index: 56075
+// Method Definition Index: 72238
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARParticipantManagerListener__ctor_m49FD1669DE44469CC5E5588DFB5673EB92D35D66 (ARParticipantManagerListener_tD1B316B50151D4E2F897C85D37E9EA0CE76DD180* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6216,7 +6216,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARParticipantManagerListener__ctor_m49FD
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 56076
+// Method Definition Index: 72239
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARPlaneManagerListener_OnTrackablesChanged_mB2C63B0FEA0C321CE64E042C4CC659F3858F7406 (ARPlaneManagerListener_t48EF97E316472A73C564EB0B7A71B067D0BBCE76* __this, ARPlanesChangedEventArgs_t8D63E0257BF9942EF8F8C0445F2FD46421017872 ___0_args, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6228,7 +6228,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARPlaneManagerListener_OnTrackablesChang
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/Deprecated/ARPlaneManagerListener.deprecated.cs:16>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/Deprecated/ARPlaneManagerListener.deprecated.cs:16>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0;
 		L_0 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
 		ARPlanesChangedEventArgs_t8D63E0257BF9942EF8F8C0445F2FD46421017872 L_1 = ___0_args;
@@ -6237,7 +6237,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARPlaneManagerListener_OnTrackablesChang
 		return;
 	}
 }
-// Method Definition Index: 56077
+// Method Definition Index: 72240
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARPlaneManagerListener_RegisterTrackablesChangedDelegate_m41E2E4D926F04FA4902C694C68832508349C47AF (ARPlaneManagerListener_t48EF97E316472A73C564EB0B7A71B067D0BBCE76* __this, ARPlaneManager_t9DA6C512BDCFFBEE8B3DAA7170EB3BFFDE26A928* ___0_manager, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6248,7 +6248,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARPlaneManagerListener_RegisterTrackable
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/Deprecated/ARPlaneManagerListener.deprecated.cs:20>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/Deprecated/ARPlaneManagerListener.deprecated.cs:20>
 		ARPlaneManager_t9DA6C512BDCFFBEE8B3DAA7170EB3BFFDE26A928* L_0 = ___0_manager;
 		Action_1_t009680BF19017ECA60753C7F605CBD85C56C6560* L_1 = (Action_1_t009680BF19017ECA60753C7F605CBD85C56C6560*)il2cpp_codegen_object_new(Action_1_t009680BF19017ECA60753C7F605CBD85C56C6560_il2cpp_TypeInfo_var);
 		Action_1__ctor_mBEDDD2BF96A8A407FBB833F764447E82E3D50BCF(L_1, __this, (intptr_t)((void*)ARPlaneManagerListener_OnTrackablesChanged_mB2C63B0FEA0C321CE64E042C4CC659F3858F7406_RuntimeMethod_var), NULL);
@@ -6257,7 +6257,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARPlaneManagerListener_RegisterTrackable
 		return;
 	}
 }
-// Method Definition Index: 56078
+// Method Definition Index: 72241
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARPlaneManagerListener_UnregisterTrackablesChangedDelegate_m8E80A7CE9E87E8FCB787B341E5F1B34D8AFC8B0A (ARPlaneManagerListener_t48EF97E316472A73C564EB0B7A71B067D0BBCE76* __this, ARPlaneManager_t9DA6C512BDCFFBEE8B3DAA7170EB3BFFDE26A928* ___0_manager, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6268,7 +6268,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARPlaneManagerListener_UnregisterTrackab
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/Deprecated/ARPlaneManagerListener.deprecated.cs:24>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/Deprecated/ARPlaneManagerListener.deprecated.cs:24>
 		ARPlaneManager_t9DA6C512BDCFFBEE8B3DAA7170EB3BFFDE26A928* L_0 = ___0_manager;
 		Action_1_t009680BF19017ECA60753C7F605CBD85C56C6560* L_1 = (Action_1_t009680BF19017ECA60753C7F605CBD85C56C6560*)il2cpp_codegen_object_new(Action_1_t009680BF19017ECA60753C7F605CBD85C56C6560_il2cpp_TypeInfo_var);
 		Action_1__ctor_mBEDDD2BF96A8A407FBB833F764447E82E3D50BCF(L_1, __this, (intptr_t)((void*)ARPlaneManagerListener_OnTrackablesChanged_mB2C63B0FEA0C321CE64E042C4CC659F3858F7406_RuntimeMethod_var), NULL);
@@ -6277,7 +6277,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARPlaneManagerListener_UnregisterTrackab
 		return;
 	}
 }
-// Method Definition Index: 56079
+// Method Definition Index: 72242
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARPlaneManagerListener__ctor_mC0BA10E19292774E8F44C7BAB23725C169A0F5BD (ARPlaneManagerListener_t48EF97E316472A73C564EB0B7A71B067D0BBCE76* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6299,7 +6299,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARPlaneManagerListener__ctor_mC0BA10E192
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 56080
+// Method Definition Index: 72243
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARPointCloudManagerListener_OnTrackablesChanged_m37F4B0894E58642522DD88A5B70B2D6425D171F2 (ARPointCloudManagerListener_t79362431A1598431A74D9AB30FF9CAC2C7D6FB40* __this, ARPointCloudChangedEventArgs_t7DE4CA4D30D369496221061F89CC4BF84E42CC1B ___0_args, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6311,7 +6311,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARPointCloudManagerListener_OnTrackables
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/Deprecated/ARPointCloudManagerListener.deprecated.cs:16>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/Deprecated/ARPointCloudManagerListener.deprecated.cs:16>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0;
 		L_0 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
 		ARPointCloudChangedEventArgs_t7DE4CA4D30D369496221061F89CC4BF84E42CC1B L_1 = ___0_args;
@@ -6320,7 +6320,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARPointCloudManagerListener_OnTrackables
 		return;
 	}
 }
-// Method Definition Index: 56081
+// Method Definition Index: 72244
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARPointCloudManagerListener_RegisterTrackablesChangedDelegate_m8FDD10C3610B31F4C6755847ABFF706E74EEA786 (ARPointCloudManagerListener_t79362431A1598431A74D9AB30FF9CAC2C7D6FB40* __this, ARPointCloudManager_t28D1833BCE1A48657E504109A89A3B75D0AD7D9F* ___0_manager, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6331,7 +6331,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARPointCloudManagerListener_RegisterTrac
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/Deprecated/ARPointCloudManagerListener.deprecated.cs:20>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/Deprecated/ARPointCloudManagerListener.deprecated.cs:20>
 		ARPointCloudManager_t28D1833BCE1A48657E504109A89A3B75D0AD7D9F* L_0 = ___0_manager;
 		Action_1_t053CCF2809F9B0B61EA8298154533C5FACB724F0* L_1 = (Action_1_t053CCF2809F9B0B61EA8298154533C5FACB724F0*)il2cpp_codegen_object_new(Action_1_t053CCF2809F9B0B61EA8298154533C5FACB724F0_il2cpp_TypeInfo_var);
 		Action_1__ctor_m8C819B4CABAFC405C1DEBA65B1E220746F258AB6(L_1, __this, (intptr_t)((void*)ARPointCloudManagerListener_OnTrackablesChanged_m37F4B0894E58642522DD88A5B70B2D6425D171F2_RuntimeMethod_var), NULL);
@@ -6340,7 +6340,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARPointCloudManagerListener_RegisterTrac
 		return;
 	}
 }
-// Method Definition Index: 56082
+// Method Definition Index: 72245
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARPointCloudManagerListener_UnregisterTrackablesChangedDelegate_m211D23F127AE987796DD35083C3BBDB15ED63928 (ARPointCloudManagerListener_t79362431A1598431A74D9AB30FF9CAC2C7D6FB40* __this, ARPointCloudManager_t28D1833BCE1A48657E504109A89A3B75D0AD7D9F* ___0_manager, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6351,7 +6351,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARPointCloudManagerListener_UnregisterTr
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/Deprecated/ARPointCloudManagerListener.deprecated.cs:24>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/Deprecated/ARPointCloudManagerListener.deprecated.cs:24>
 		ARPointCloudManager_t28D1833BCE1A48657E504109A89A3B75D0AD7D9F* L_0 = ___0_manager;
 		Action_1_t053CCF2809F9B0B61EA8298154533C5FACB724F0* L_1 = (Action_1_t053CCF2809F9B0B61EA8298154533C5FACB724F0*)il2cpp_codegen_object_new(Action_1_t053CCF2809F9B0B61EA8298154533C5FACB724F0_il2cpp_TypeInfo_var);
 		Action_1__ctor_m8C819B4CABAFC405C1DEBA65B1E220746F258AB6(L_1, __this, (intptr_t)((void*)ARPointCloudManagerListener_OnTrackablesChanged_m37F4B0894E58642522DD88A5B70B2D6425D171F2_RuntimeMethod_var), NULL);
@@ -6360,7 +6360,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARPointCloudManagerListener_UnregisterTr
 		return;
 	}
 }
-// Method Definition Index: 56083
+// Method Definition Index: 72246
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARPointCloudManagerListener__ctor_mAC662B594114A7F330A910B4DF50C7D489B0C0D8 (ARPointCloudManagerListener_t79362431A1598431A74D9AB30FF9CAC2C7D6FB40* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6382,7 +6382,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARPointCloudManagerListener__ctor_mAC662
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 56084
+// Method Definition Index: 72247
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackedImageManagerListener_OnTrackablesChanged_mB7342F42759F03B7495C3863A66339D21A50B229 (ARTrackedImageManagerListener_t41A4A505BF375F0C883703891EB4C03EE271F4E1* __this, ARTrackedImagesChangedEventArgs_tD7718E40EE25D22E9143DA4F556C44980E18BE2F ___0_args, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6394,7 +6394,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackedImageManagerListener_OnTrackabl
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/Deprecated/ARTrackedImageManagerListener.deprecated.cs:16>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/Deprecated/ARTrackedImageManagerListener.deprecated.cs:16>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0;
 		L_0 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
 		ARTrackedImagesChangedEventArgs_tD7718E40EE25D22E9143DA4F556C44980E18BE2F L_1 = ___0_args;
@@ -6403,7 +6403,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackedImageManagerListener_OnTrackabl
 		return;
 	}
 }
-// Method Definition Index: 56085
+// Method Definition Index: 72248
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackedImageManagerListener_RegisterTrackablesChangedDelegate_m012C380AFF5DD189E5AD3C059C3783B6AE369DF2 (ARTrackedImageManagerListener_t41A4A505BF375F0C883703891EB4C03EE271F4E1* __this, ARTrackedImageManager_tCBA77F0B8A7172CC6508CA29176EAE1DE5DC4BD4* ___0_manager, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6414,7 +6414,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackedImageManagerListener_RegisterTr
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/Deprecated/ARTrackedImageManagerListener.deprecated.cs:20>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/Deprecated/ARTrackedImageManagerListener.deprecated.cs:20>
 		ARTrackedImageManager_tCBA77F0B8A7172CC6508CA29176EAE1DE5DC4BD4* L_0 = ___0_manager;
 		Action_1_tE7B3D1070B99EFDFA92BD4DBEF95BF881DEB591F* L_1 = (Action_1_tE7B3D1070B99EFDFA92BD4DBEF95BF881DEB591F*)il2cpp_codegen_object_new(Action_1_tE7B3D1070B99EFDFA92BD4DBEF95BF881DEB591F_il2cpp_TypeInfo_var);
 		Action_1__ctor_m55BF5EC44D8DEC74D367B749B5B29C8F2A9CB957(L_1, __this, (intptr_t)((void*)ARTrackedImageManagerListener_OnTrackablesChanged_mB7342F42759F03B7495C3863A66339D21A50B229_RuntimeMethod_var), NULL);
@@ -6423,7 +6423,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackedImageManagerListener_RegisterTr
 		return;
 	}
 }
-// Method Definition Index: 56086
+// Method Definition Index: 72249
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackedImageManagerListener_UnregisterTrackablesChangedDelegate_m47ABAAD0DD04A2519A59F2F0F98C01BDB4D8DD98 (ARTrackedImageManagerListener_t41A4A505BF375F0C883703891EB4C03EE271F4E1* __this, ARTrackedImageManager_tCBA77F0B8A7172CC6508CA29176EAE1DE5DC4BD4* ___0_manager, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6434,7 +6434,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackedImageManagerListener_Unregister
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/Deprecated/ARTrackedImageManagerListener.deprecated.cs:24>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/Deprecated/ARTrackedImageManagerListener.deprecated.cs:24>
 		ARTrackedImageManager_tCBA77F0B8A7172CC6508CA29176EAE1DE5DC4BD4* L_0 = ___0_manager;
 		Action_1_tE7B3D1070B99EFDFA92BD4DBEF95BF881DEB591F* L_1 = (Action_1_tE7B3D1070B99EFDFA92BD4DBEF95BF881DEB591F*)il2cpp_codegen_object_new(Action_1_tE7B3D1070B99EFDFA92BD4DBEF95BF881DEB591F_il2cpp_TypeInfo_var);
 		Action_1__ctor_m55BF5EC44D8DEC74D367B749B5B29C8F2A9CB957(L_1, __this, (intptr_t)((void*)ARTrackedImageManagerListener_OnTrackablesChanged_mB7342F42759F03B7495C3863A66339D21A50B229_RuntimeMethod_var), NULL);
@@ -6443,7 +6443,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackedImageManagerListener_Unregister
 		return;
 	}
 }
-// Method Definition Index: 56087
+// Method Definition Index: 72250
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackedImageManagerListener__ctor_m80CAF9FEAA38FDC8ADF8789E1DEE5F51E899D556 (ARTrackedImageManagerListener_t41A4A505BF375F0C883703891EB4C03EE271F4E1* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6465,7 +6465,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackedImageManagerListener__ctor_m80C
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 56088
+// Method Definition Index: 72251
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackedObjectManagerListener_OnTrackablesChanged_m63FB84E742A86FFC4D163A0B17B8989491A51EE6 (ARTrackedObjectManagerListener_t67F1931020F75B64E0AEF23B15F033285A6D3A7A* __this, ARTrackedObjectsChangedEventArgs_t378A63B91AD22EA4BA9C68805C72DDA4B7C01509 ___0_args, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6477,7 +6477,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackedObjectManagerListener_OnTrackab
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/Deprecated/ARTrackedObjectManagerListener.deprecated.cs:16>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/Deprecated/ARTrackedObjectManagerListener.deprecated.cs:16>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0;
 		L_0 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
 		ARTrackedObjectsChangedEventArgs_t378A63B91AD22EA4BA9C68805C72DDA4B7C01509 L_1 = ___0_args;
@@ -6486,7 +6486,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackedObjectManagerListener_OnTrackab
 		return;
 	}
 }
-// Method Definition Index: 56089
+// Method Definition Index: 72252
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackedObjectManagerListener_RegisterTrackablesChangedDelegate_m23EA19D74EBB109B2B74AF9DB9D8597FEA16A0E7 (ARTrackedObjectManagerListener_t67F1931020F75B64E0AEF23B15F033285A6D3A7A* __this, ARTrackedObjectManager_tD667E7CCD95E9D25449BD578F256F728D8619FC7* ___0_manager, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6497,7 +6497,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackedObjectManagerListener_RegisterT
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/Deprecated/ARTrackedObjectManagerListener.deprecated.cs:20>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/Deprecated/ARTrackedObjectManagerListener.deprecated.cs:20>
 		ARTrackedObjectManager_tD667E7CCD95E9D25449BD578F256F728D8619FC7* L_0 = ___0_manager;
 		Action_1_t34AAB95B35DF66496184F8421A8AC5F317B7D8AB* L_1 = (Action_1_t34AAB95B35DF66496184F8421A8AC5F317B7D8AB*)il2cpp_codegen_object_new(Action_1_t34AAB95B35DF66496184F8421A8AC5F317B7D8AB_il2cpp_TypeInfo_var);
 		Action_1__ctor_mBF52FA156452295382976743FE99EF09B9D21823(L_1, __this, (intptr_t)((void*)ARTrackedObjectManagerListener_OnTrackablesChanged_m63FB84E742A86FFC4D163A0B17B8989491A51EE6_RuntimeMethod_var), NULL);
@@ -6506,7 +6506,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackedObjectManagerListener_RegisterT
 		return;
 	}
 }
-// Method Definition Index: 56090
+// Method Definition Index: 72253
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackedObjectManagerListener_UnregisterTrackablesChangedDelegate_m95CD86B38632CF9A9E1C50D027E3727F90ED7EF3 (ARTrackedObjectManagerListener_t67F1931020F75B64E0AEF23B15F033285A6D3A7A* __this, ARTrackedObjectManager_tD667E7CCD95E9D25449BD578F256F728D8619FC7* ___0_manager, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6517,7 +6517,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackedObjectManagerListener_Unregiste
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/MessageListeners/Deprecated/ARTrackedObjectManagerListener.deprecated.cs:24>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/MessageListeners/Deprecated/ARTrackedObjectManagerListener.deprecated.cs:24>
 		ARTrackedObjectManager_tD667E7CCD95E9D25449BD578F256F728D8619FC7* L_0 = ___0_manager;
 		Action_1_t34AAB95B35DF66496184F8421A8AC5F317B7D8AB* L_1 = (Action_1_t34AAB95B35DF66496184F8421A8AC5F317B7D8AB*)il2cpp_codegen_object_new(Action_1_t34AAB95B35DF66496184F8421A8AC5F317B7D8AB_il2cpp_TypeInfo_var);
 		Action_1__ctor_mBF52FA156452295382976743FE99EF09B9D21823(L_1, __this, (intptr_t)((void*)ARTrackedObjectManagerListener_OnTrackablesChanged_m63FB84E742A86FFC4D163A0B17B8989491A51EE6_RuntimeMethod_var), NULL);
@@ -6526,7 +6526,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackedObjectManagerListener_Unregiste
 		return;
 	}
 }
-// Method Definition Index: 56091
+// Method Definition Index: 72254
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackedObjectManagerListener__ctor_mF863E16AC8DDCE13BD309673BD24A4B10EDD5AA7 (ARTrackedObjectManagerListener_t67F1931020F75B64E0AEF23B15F033285A6D3A7A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6548,7 +6548,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackedObjectManagerListener__ctor_mF8
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 56097
+// Method Definition Index: 72260
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetAnchorsUnit__ctor_mE0D0675CC37CA1DA87C83FC0BA153B0E0462B4D2 (GetAnchorsUnit_tFD7107C908473E8F1558046830DD41C686447CEE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6572,7 +6572,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetAnchorsUnit__ctor_mE0D0675CC37CA1DA87
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 56098
+// Method Definition Index: 72261
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetEnvironmentProbesUnit__ctor_m99D12CCEB247C2FA0DF000C258C9D001B1596C63 (GetEnvironmentProbesUnit_tD69DF71B014B1CA82754C08D6A7233473D6E6C8C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6596,7 +6596,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetEnvironmentProbesUnit__ctor_m99D12CCE
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 56099
+// Method Definition Index: 72262
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetFacesUnit__ctor_mAED50CDA1039DE45158B1F90E10AD3B9C2270121 (GetFacesUnit_t58BA2C20DC7900EE832A781F627CB24B4C73F541* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6620,7 +6620,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetFacesUnit__ctor_mAED50CDA1039DE45158B
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 56100
+// Method Definition Index: 72263
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetHumanBodiesUnit__ctor_m91BE6AF7CFBE7B218BB781F65F17E88224DA4CFF (GetHumanBodiesUnit_t4DB36755728EF8A8E329590C254060A3A1604B65* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6644,7 +6644,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetHumanBodiesUnit__ctor_m91BE6AF7CFBE7B
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 56101
+// Method Definition Index: 72264
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetParticipantsUnit__ctor_m0D8567DF8B8285D04B1A590EEF7E70346015A416 (GetParticipantsUnit_t573F6B1CED19A0DD19FA4BDF729BDACCCDBEF062* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6668,7 +6668,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetParticipantsUnit__ctor_m0D8567DF8B828
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 56102
+// Method Definition Index: 72265
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetPlanesUnit__ctor_mD0526AD4E7F72FEEACEB9502815B5FA3CC989966 (GetPlanesUnit_t0D6951EA13B7C5AB100439F6E16959FF7F229D80* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6692,7 +6692,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetPlanesUnit__ctor_mD0526AD4E7F72FEEACE
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 56103
+// Method Definition Index: 72266
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetPointCloudsUnit__ctor_mCCE4B499918A3416C73072C13E9F7FCBC37B5261 (GetPointCloudsUnit_tE8EBA3C1C2C0250EBA3D742FC6D2EDEAE6100AB3* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6716,7 +6716,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetPointCloudsUnit__ctor_mCCE4B499918A34
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 56104
+// Method Definition Index: 72267
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetRaycastsUnit__ctor_mE784813F0C8D8392C75C397DED11DC88B52CF77E (GetRaycastsUnit_t9B59D89C15171736A9685CADE27468DF2787A886* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6740,7 +6740,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetRaycastsUnit__ctor_mE784813F0C8D8392C
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 56119
+// Method Definition Index: 72282
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackedImagesUnit__ctor_m2007F922FF32CD8AB54CB65F3FE4A6B30934A808 (GetTrackedImagesUnit_tA4BCED5E1DC9EFA11B9BE049594D085A71B44239* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6764,7 +6764,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackedImagesUnit__ctor_m2007F922FF32
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 56120
+// Method Definition Index: 72283
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackedObjectsUnit__ctor_m7178E4143A9C53B511F82A696C70672E0C88160A (GetTrackedObjectsUnit_t06C3877B12306C2ED474293DD059EEB537795E42* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6788,207 +6788,207 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTrackedObjectsUnit__ctor_m7178E4143A9
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 56121
+// Method Definition Index: 72284
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* SessionStateSwitchUnit_get_flowIn_m667548B27056B2F6F27B63DFCF4412BBAE6637A5 (SessionStateSwitchUnit_t20FE0233ACF3B7C4EE2306768E7176E70AC6C1C8* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:23>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:23>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_0 = __this->___U3CflowInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56122
+// Method Definition Index: 72285
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SessionStateSwitchUnit_set_flowIn_mD8F159479E3884269A7D2057D7F3E8C52B2923D5 (SessionStateSwitchUnit_t20FE0233ACF3B7C4EE2306768E7176E70AC6C1C8* __this, ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:23>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:23>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_0 = ___0_value;
 		__this->___U3CflowInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CflowInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56123
+// Method Definition Index: 72286
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* SessionStateSwitchUnit_get_sessionStateIn_m4E966BABF18BE40C7178158088CC8DEA31893939 (SessionStateSwitchUnit_t20FE0233ACF3B7C4EE2306768E7176E70AC6C1C8* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:30>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:30>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = __this->___U3CsessionStateInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56124
+// Method Definition Index: 72287
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SessionStateSwitchUnit_set_sessionStateIn_m39EB7D50DFEE0306E0C4F690E06D8B6D246B1AFB (SessionStateSwitchUnit_t20FE0233ACF3B7C4EE2306768E7176E70AC6C1C8* __this, ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:30>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:30>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = ___0_value;
 		__this->___U3CsessionStateInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CsessionStateInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56125
+// Method Definition Index: 72288
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* SessionStateSwitchUnit_get_none_mCDA812C5D868B12D04C020ED27ED0F886EE0963E (SessionStateSwitchUnit_t20FE0233ACF3B7C4EE2306768E7176E70AC6C1C8* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:36>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:36>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = __this->___U3CnoneU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56126
+// Method Definition Index: 72289
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SessionStateSwitchUnit_set_none_mE058B6C1A72B0BD0DC6BAEA629EC6C8A55BD273C (SessionStateSwitchUnit_t20FE0233ACF3B7C4EE2306768E7176E70AC6C1C8* __this, ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:36>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:36>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = ___0_value;
 		__this->___U3CnoneU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CnoneU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56127
+// Method Definition Index: 72290
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* SessionStateSwitchUnit_get_unsupported_m911986D3ADF69617D9E6DFFB367926BBA3639439 (SessionStateSwitchUnit_t20FE0233ACF3B7C4EE2306768E7176E70AC6C1C8* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:42>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:42>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = __this->___U3CunsupportedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56128
+// Method Definition Index: 72291
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SessionStateSwitchUnit_set_unsupported_m683621DAFF0725F51FAB5D0FB9CB63F5731E53A1 (SessionStateSwitchUnit_t20FE0233ACF3B7C4EE2306768E7176E70AC6C1C8* __this, ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:42>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:42>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = ___0_value;
 		__this->___U3CunsupportedU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CunsupportedU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56129
+// Method Definition Index: 72292
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* SessionStateSwitchUnit_get_checkingAvailability_m3EF1098F57D30B08B8C7587F9D94B64A4E650ED9 (SessionStateSwitchUnit_t20FE0233ACF3B7C4EE2306768E7176E70AC6C1C8* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:48>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:48>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = __this->___U3CcheckingAvailabilityU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56130
+// Method Definition Index: 72293
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SessionStateSwitchUnit_set_checkingAvailability_m0D10A7BFD1348E9694B381482E90F5974E3CF246 (SessionStateSwitchUnit_t20FE0233ACF3B7C4EE2306768E7176E70AC6C1C8* __this, ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:48>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:48>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = ___0_value;
 		__this->___U3CcheckingAvailabilityU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CcheckingAvailabilityU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56131
+// Method Definition Index: 72294
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* SessionStateSwitchUnit_get_needsInstall_mDBE283471C7F3B8C8A1D6962DAFECBC81CC7071E (SessionStateSwitchUnit_t20FE0233ACF3B7C4EE2306768E7176E70AC6C1C8* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:54>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:54>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = __this->___U3CneedsInstallU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56132
+// Method Definition Index: 72295
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SessionStateSwitchUnit_set_needsInstall_m6C03848DA29361417CBE17AAC6EF641AE4946A95 (SessionStateSwitchUnit_t20FE0233ACF3B7C4EE2306768E7176E70AC6C1C8* __this, ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:54>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:54>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = ___0_value;
 		__this->___U3CneedsInstallU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CneedsInstallU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56133
+// Method Definition Index: 72296
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* SessionStateSwitchUnit_get_installing_mAB1C0C05D8CAD09DE7EA9177806621D1263E120F (SessionStateSwitchUnit_t20FE0233ACF3B7C4EE2306768E7176E70AC6C1C8* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:60>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:60>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = __this->___U3CinstallingU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56134
+// Method Definition Index: 72297
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SessionStateSwitchUnit_set_installing_m91BC0E0D467AB4CDE4A9E87F43ABA98874D7BAF4 (SessionStateSwitchUnit_t20FE0233ACF3B7C4EE2306768E7176E70AC6C1C8* __this, ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:60>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:60>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = ___0_value;
 		__this->___U3CinstallingU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CinstallingU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56135
+// Method Definition Index: 72298
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* SessionStateSwitchUnit_get_ready_m5FDBB155FE257620F68167B4A7A1DEEB597491D2 (SessionStateSwitchUnit_t20FE0233ACF3B7C4EE2306768E7176E70AC6C1C8* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:66>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:66>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = __this->___U3CreadyU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56136
+// Method Definition Index: 72299
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SessionStateSwitchUnit_set_ready_m4CF3C56F9F24CDCFE9678F22BBAA988BF7AA6FD3 (SessionStateSwitchUnit_t20FE0233ACF3B7C4EE2306768E7176E70AC6C1C8* __this, ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:66>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:66>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = ___0_value;
 		__this->___U3CreadyU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CreadyU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56137
+// Method Definition Index: 72300
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* SessionStateSwitchUnit_get_sessionInitializing_mDAB4A059DA69D91C4A7E3ED9B207A31F64040746 (SessionStateSwitchUnit_t20FE0233ACF3B7C4EE2306768E7176E70AC6C1C8* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:72>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:72>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = __this->___U3CsessionInitializingU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56138
+// Method Definition Index: 72301
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SessionStateSwitchUnit_set_sessionInitializing_mB3A2FF70C33664AFF792B183A2E39252DDFDACB2 (SessionStateSwitchUnit_t20FE0233ACF3B7C4EE2306768E7176E70AC6C1C8* __this, ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:72>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:72>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = ___0_value;
 		__this->___U3CsessionInitializingU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CsessionInitializingU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56139
+// Method Definition Index: 72302
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* SessionStateSwitchUnit_get_sessionTracking_m46B500F7B3F7276E269EC893E52EE71478554365 (SessionStateSwitchUnit_t20FE0233ACF3B7C4EE2306768E7176E70AC6C1C8* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:78>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:78>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = __this->___U3CsessionTrackingU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56140
+// Method Definition Index: 72303
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SessionStateSwitchUnit_set_sessionTracking_mA270750450E8D31E271811C785AE730FB61AACF0 (SessionStateSwitchUnit_t20FE0233ACF3B7C4EE2306768E7176E70AC6C1C8* __this, ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:78>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:78>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = ___0_value;
 		__this->___U3CsessionTrackingU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CsessionTrackingU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56141
+// Method Definition Index: 72304
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SessionStateSwitchUnit_Definition_m51005D8BC9A2A714696B3D883AB3391DEFB9477D (SessionStateSwitchUnit_t20FE0233ACF3B7C4EE2306768E7176E70AC6C1C8* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7010,107 +7010,107 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SessionStateSwitchUnit_Definition_m51005
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:85>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:85>
 		Func_2_tE299C631F0CB2E8E61444D749D446C27349C90B8* L_0 = (Func_2_tE299C631F0CB2E8E61444D749D446C27349C90B8*)il2cpp_codegen_object_new(Func_2_tE299C631F0CB2E8E61444D749D446C27349C90B8_il2cpp_TypeInfo_var);
 		Func_2__ctor_m36A365D852CA6BD70A68A3A26FF683FB3369DDF4(L_0, __this, (intptr_t)((void*)SessionStateSwitchUnit_ProcessFlow_m57E488DEC7E1E2F26E074FB49BB7F19DA905C410_RuntimeMethod_var), NULL);
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_1;
 		L_1 = Unit_ControlInput_mF730DABA4FE60423D39B8EADE5DA72F51E6166A5(__this, _stringLiteral8A8FE283442D993E502B69A3252F69EFFAE40786, L_0, NULL);
 		SessionStateSwitchUnit_set_flowIn_mD8F159479E3884269A7D2057D7F3E8C52B2923D5_inline(__this, L_1, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:86>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:86>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_2;
 		L_2 = Unit_ValueInput_TisARSessionState_tAAADC649886D67F7134A0D9A665953D764A115D7_mBD32544DF033F6AA05190E690F3F77D3420E6CF4(__this, _stringLiteral37D6BA2FAF7F2FCCC8DD58518A3048E66432C10B, Unit_ValueInput_TisARSessionState_tAAADC649886D67F7134A0D9A665953D764A115D7_mBD32544DF033F6AA05190E690F3F77D3420E6CF4_RuntimeMethod_var);
 		SessionStateSwitchUnit_set_sessionStateIn_m39EB7D50DFEE0306E0C4F690E06D8B6D246B1AFB_inline(__this, L_2, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:87>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:87>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_3;
 		L_3 = Unit_ControlOutput_mCD76724DFB6AAE10C099E9984A39A5E0FC2824FE(__this, _stringLiteral0AEA2C46AAEB233C6D2DF0275EF92FB2E56BAFE9, NULL);
 		SessionStateSwitchUnit_set_none_mE058B6C1A72B0BD0DC6BAEA629EC6C8A55BD273C_inline(__this, L_3, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:88>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:88>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_4;
 		L_4 = Unit_ControlOutput_mCD76724DFB6AAE10C099E9984A39A5E0FC2824FE(__this, _stringLiteral43452BBEA0638F454FF0D37B4FD3C2DEBA3C06FF, NULL);
 		SessionStateSwitchUnit_set_unsupported_m683621DAFF0725F51FAB5D0FB9CB63F5731E53A1_inline(__this, L_4, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:89>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:89>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_5;
 		L_5 = Unit_ControlOutput_mCD76724DFB6AAE10C099E9984A39A5E0FC2824FE(__this, _stringLiteralA783A5CEF05EBCA80DF7AA6E558B8F8514ED24EC, NULL);
 		SessionStateSwitchUnit_set_checkingAvailability_m0D10A7BFD1348E9694B381482E90F5974E3CF246_inline(__this, L_5, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:90>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:90>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_6;
 		L_6 = Unit_ControlOutput_mCD76724DFB6AAE10C099E9984A39A5E0FC2824FE(__this, _stringLiteral7B82EC15E841121B1695710D448FAF4971871672, NULL);
 		SessionStateSwitchUnit_set_needsInstall_m6C03848DA29361417CBE17AAC6EF641AE4946A95_inline(__this, L_6, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:91>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:91>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_7;
 		L_7 = Unit_ControlOutput_mCD76724DFB6AAE10C099E9984A39A5E0FC2824FE(__this, _stringLiteralA0AC1B410D80766301FC82938739173E5BCB79A1, NULL);
 		SessionStateSwitchUnit_set_installing_m91BC0E0D467AB4CDE4A9E87F43ABA98874D7BAF4_inline(__this, L_7, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:92>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:92>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_8;
 		L_8 = Unit_ControlOutput_mCD76724DFB6AAE10C099E9984A39A5E0FC2824FE(__this, _stringLiteral1B610611D3BE45C25E5133155F9D83AF5F3832ED, NULL);
 		SessionStateSwitchUnit_set_ready_m4CF3C56F9F24CDCFE9678F22BBAA988BF7AA6FD3_inline(__this, L_8, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:93>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:93>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_9;
 		L_9 = Unit_ControlOutput_mCD76724DFB6AAE10C099E9984A39A5E0FC2824FE(__this, _stringLiteral2CFD1985F0B0EF58F786512B364283578445FAC5, NULL);
 		SessionStateSwitchUnit_set_sessionInitializing_mB3A2FF70C33664AFF792B183A2E39252DDFDACB2_inline(__this, L_9, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:94>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:94>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_10;
 		L_10 = Unit_ControlOutput_mCD76724DFB6AAE10C099E9984A39A5E0FC2824FE(__this, _stringLiteral699D09C7B53816C9B0927B8BD5FA1AE027F1C3C1, NULL);
 		SessionStateSwitchUnit_set_sessionTracking_mA270750450E8D31E271811C785AE730FB61AACF0_inline(__this, L_10, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:96>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:96>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_11;
 		L_11 = SessionStateSwitchUnit_get_sessionStateIn_m4E966BABF18BE40C7178158088CC8DEA31893939_inline(__this, NULL);
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_12;
 		L_12 = SessionStateSwitchUnit_get_flowIn_m667548B27056B2F6F27B63DFCF4412BBAE6637A5_inline(__this, NULL);
 		Unit_Requirement_m9F929AD842C0E254FA9AD48E9200C63B43BFE64A(__this, L_11, L_12, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:97>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:97>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_13;
 		L_13 = SessionStateSwitchUnit_get_flowIn_m667548B27056B2F6F27B63DFCF4412BBAE6637A5_inline(__this, NULL);
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_14;
 		L_14 = SessionStateSwitchUnit_get_none_mCDA812C5D868B12D04C020ED27ED0F886EE0963E_inline(__this, NULL);
 		Unit_Succession_m202BB700D861D65B85102AD7B3119AD1B2FF2158(__this, L_13, L_14, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:98>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:98>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_15;
 		L_15 = SessionStateSwitchUnit_get_flowIn_m667548B27056B2F6F27B63DFCF4412BBAE6637A5_inline(__this, NULL);
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_16;
 		L_16 = SessionStateSwitchUnit_get_unsupported_m911986D3ADF69617D9E6DFFB367926BBA3639439_inline(__this, NULL);
 		Unit_Succession_m202BB700D861D65B85102AD7B3119AD1B2FF2158(__this, L_15, L_16, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:99>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:99>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_17;
 		L_17 = SessionStateSwitchUnit_get_flowIn_m667548B27056B2F6F27B63DFCF4412BBAE6637A5_inline(__this, NULL);
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_18;
 		L_18 = SessionStateSwitchUnit_get_checkingAvailability_m3EF1098F57D30B08B8C7587F9D94B64A4E650ED9_inline(__this, NULL);
 		Unit_Succession_m202BB700D861D65B85102AD7B3119AD1B2FF2158(__this, L_17, L_18, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:100>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:100>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_19;
 		L_19 = SessionStateSwitchUnit_get_flowIn_m667548B27056B2F6F27B63DFCF4412BBAE6637A5_inline(__this, NULL);
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_20;
 		L_20 = SessionStateSwitchUnit_get_needsInstall_mDBE283471C7F3B8C8A1D6962DAFECBC81CC7071E_inline(__this, NULL);
 		Unit_Succession_m202BB700D861D65B85102AD7B3119AD1B2FF2158(__this, L_19, L_20, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:101>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:101>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_21;
 		L_21 = SessionStateSwitchUnit_get_flowIn_m667548B27056B2F6F27B63DFCF4412BBAE6637A5_inline(__this, NULL);
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_22;
 		L_22 = SessionStateSwitchUnit_get_installing_mAB1C0C05D8CAD09DE7EA9177806621D1263E120F_inline(__this, NULL);
 		Unit_Succession_m202BB700D861D65B85102AD7B3119AD1B2FF2158(__this, L_21, L_22, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:102>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:102>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_23;
 		L_23 = SessionStateSwitchUnit_get_flowIn_m667548B27056B2F6F27B63DFCF4412BBAE6637A5_inline(__this, NULL);
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_24;
 		L_24 = SessionStateSwitchUnit_get_ready_m5FDBB155FE257620F68167B4A7A1DEEB597491D2_inline(__this, NULL);
 		Unit_Succession_m202BB700D861D65B85102AD7B3119AD1B2FF2158(__this, L_23, L_24, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:103>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:103>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_25;
 		L_25 = SessionStateSwitchUnit_get_flowIn_m667548B27056B2F6F27B63DFCF4412BBAE6637A5_inline(__this, NULL);
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_26;
 		L_26 = SessionStateSwitchUnit_get_sessionInitializing_mDAB4A059DA69D91C4A7E3ED9B207A31F64040746_inline(__this, NULL);
 		Unit_Succession_m202BB700D861D65B85102AD7B3119AD1B2FF2158(__this, L_25, L_26, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:104>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:104>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_27;
 		L_27 = SessionStateSwitchUnit_get_flowIn_m667548B27056B2F6F27B63DFCF4412BBAE6637A5_inline(__this, NULL);
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_28;
 		L_28 = SessionStateSwitchUnit_get_sessionTracking_m46B500F7B3F7276E269EC893E52EE71478554365_inline(__this, NULL);
 		Unit_Succession_m202BB700D861D65B85102AD7B3119AD1B2FF2158(__this, L_27, L_28, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:105>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:105>
 		return;
 	}
 }
-// Method Definition Index: 56142
+// Method Definition Index: 72305
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* SessionStateSwitchUnit_ProcessFlow_m57E488DEC7E1E2F26E074FB49BB7F19DA905C410 (SessionStateSwitchUnit_t20FE0233ACF3B7C4EE2306768E7176E70AC6C1C8* __this, Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* ___0_flow, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7123,7 +7123,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E7
 	RuntimeObject* V_1 = NULL;
 	ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* V_2 = NULL;
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:109>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:109>
 		Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* L_0 = ___0_flow;
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_1;
 		L_1 = SessionStateSwitchUnit_get_sessionStateIn_m4E966BABF18BE40C7178158088CC8DEA31893939_inline(__this, NULL);
@@ -7145,7 +7145,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E7
 
 IL_001e:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:110>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:110>
 		ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263* L_5 = (ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263_il2cpp_TypeInfo_var)));
 		ArgumentException__ctor_m026938A67AF9D36BB7ED27F80425D7194B514465(L_5, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral6E449B10A312A589CEC8243A12BBA89445ED50DE)), NULL);
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_5, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&SessionStateSwitchUnit_ProcessFlow_m57E488DEC7E1E2F26E074FB49BB7F19DA905C410_RuntimeMethod_var)));
@@ -7153,18 +7153,18 @@ IL_001e:
 
 IL_0029:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:112>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:113>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:114>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:115>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:116>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:117>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:118>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:119>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:120>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:121>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:122>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:123>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:112>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:113>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:114>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:115>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:116>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:117>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:118>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:119>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:120>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:121>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:122>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:123>
 		int32_t L_6 = V_0;
 		switch (L_6)
 		{
@@ -7208,7 +7208,7 @@ IL_0029:
 
 IL_0051:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:114>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:114>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_7;
 		L_7 = SessionStateSwitchUnit_get_none_mCDA812C5D868B12D04C020ED27ED0F886EE0963E_inline(__this, NULL);
 		V_2 = L_7;
@@ -7217,7 +7217,7 @@ IL_0051:
 
 IL_005a:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:115>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:115>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_8;
 		L_8 = SessionStateSwitchUnit_get_unsupported_m911986D3ADF69617D9E6DFFB367926BBA3639439_inline(__this, NULL);
 		V_2 = L_8;
@@ -7226,7 +7226,7 @@ IL_005a:
 
 IL_0063:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:116>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:116>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_9;
 		L_9 = SessionStateSwitchUnit_get_checkingAvailability_m3EF1098F57D30B08B8C7587F9D94B64A4E650ED9_inline(__this, NULL);
 		V_2 = L_9;
@@ -7235,7 +7235,7 @@ IL_0063:
 
 IL_006c:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:117>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:117>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_10;
 		L_10 = SessionStateSwitchUnit_get_needsInstall_mDBE283471C7F3B8C8A1D6962DAFECBC81CC7071E_inline(__this, NULL);
 		V_2 = L_10;
@@ -7244,7 +7244,7 @@ IL_006c:
 
 IL_0075:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:118>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:118>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_11;
 		L_11 = SessionStateSwitchUnit_get_installing_mAB1C0C05D8CAD09DE7EA9177806621D1263E120F_inline(__this, NULL);
 		V_2 = L_11;
@@ -7253,7 +7253,7 @@ IL_0075:
 
 IL_007e:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:119>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:119>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_12;
 		L_12 = SessionStateSwitchUnit_get_ready_m5FDBB155FE257620F68167B4A7A1DEEB597491D2_inline(__this, NULL);
 		V_2 = L_12;
@@ -7262,7 +7262,7 @@ IL_007e:
 
 IL_0087:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:120>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:120>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_13;
 		L_13 = SessionStateSwitchUnit_get_sessionInitializing_mDAB4A059DA69D91C4A7E3ED9B207A31F64040746_inline(__this, NULL);
 		V_2 = L_13;
@@ -7271,7 +7271,7 @@ IL_0087:
 
 IL_0090:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:121>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:121>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_14;
 		L_14 = SessionStateSwitchUnit_get_sessionTracking_m46B500F7B3F7276E269EC893E52EE71478554365_inline(__this, NULL);
 		V_2 = L_14;
@@ -7280,7 +7280,7 @@ IL_0090:
 
 IL_0099:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:122>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:122>
 		ArgumentOutOfRangeException_tEA2822DAF62B10EEED00E0E3A341D4BAF78CF85F* L_15 = (ArgumentOutOfRangeException_tEA2822DAF62B10EEED00E0E3A341D4BAF78CF85F*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ArgumentOutOfRangeException_tEA2822DAF62B10EEED00E0E3A341D4BAF78CF85F_il2cpp_TypeInfo_var)));
 		ArgumentOutOfRangeException__ctor_mB596C51BFA864B65C2CED275458FAE90F7CD29C9(L_15, NULL);
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_15, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&SessionStateSwitchUnit_ProcessFlow_m57E488DEC7E1E2F26E074FB49BB7F19DA905C410_RuntimeMethod_var)));
@@ -7292,7 +7292,7 @@ IL_009f:
 		return L_16;
 	}
 }
-// Method Definition Index: 56143
+// Method Definition Index: 72306
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SessionStateSwitchUnit__ctor_m93E299F5D4B3285000E037D77A034C454C564F68 (SessionStateSwitchUnit_t20FE0233ACF3B7C4EE2306768E7176E70AC6C1C8* __this, const RuntimeMethod* method) 
 {
 	{
@@ -7327,766 +7327,766 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SessionStateSwitchUnit__ctor_m93E299F5D4
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-// Method Definition Index: 55971
+// Method Definition Index: 72134
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void CameraFrameReceivedEventUnit_set_frameEventArgs_m9D477159407F84279F1EF8E7619B871AA4F542FE_inline (CameraFrameReceivedEventUnit_t5C258A06DEEF9DBF3CE6AD4FD0B51313F1DEF858* __this, ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/CameraFrameReceivedEventUnit.cs:24>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/CameraFrameReceivedEventUnit.cs:24>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = ___0_value;
 		__this->___U3CframeEventArgsU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CframeEventArgsU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 55970
+// Method Definition Index: 72133
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* CameraFrameReceivedEventUnit_get_frameEventArgs_m2CA34906D7D15DDD541EC38B7862B6CB0AB500E8_inline (CameraFrameReceivedEventUnit_t5C258A06DEEF9DBF3CE6AD4FD0B51313F1DEF858* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/CameraFrameReceivedEventUnit.cs:24>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/CameraFrameReceivedEventUnit.cs:24>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = __this->___U3CframeEventArgsU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 49193
+// Method Definition Index: 64303
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR List_1_t5C2EBF017989E44F3D1D11AF502E10F6F8D9AB53* ARAnchorsChangedEventArgs_get_added_m5F9CEB4587F9496D0DA28880430B69EFDB550600_inline (ARAnchorsChangedEventArgs_t755E6208C84304CAC448C133B0A8660CD5750A75* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/Deprecated/ARAnchorsChangedEventArgs.deprecated.cs:15>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/Deprecated/ARAnchorsChangedEventArgs.deprecated.cs:15>
 		List_1_t5C2EBF017989E44F3D1D11AF502E10F6F8D9AB53* L_0 = __this->___U3CaddedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 49195
+// Method Definition Index: 64305
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR List_1_t5C2EBF017989E44F3D1D11AF502E10F6F8D9AB53* ARAnchorsChangedEventArgs_get_updated_m21039F14E472A75F969EE0BA5CBA9007DC12B593_inline (ARAnchorsChangedEventArgs_t755E6208C84304CAC448C133B0A8660CD5750A75* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/Deprecated/ARAnchorsChangedEventArgs.deprecated.cs:20>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/Deprecated/ARAnchorsChangedEventArgs.deprecated.cs:20>
 		List_1_t5C2EBF017989E44F3D1D11AF502E10F6F8D9AB53* L_0 = __this->___U3CupdatedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 49197
+// Method Definition Index: 64307
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR List_1_t5C2EBF017989E44F3D1D11AF502E10F6F8D9AB53* ARAnchorsChangedEventArgs_get_removed_mF1E9D61E21153018C87DE99722FF8820C351CFD8_inline (ARAnchorsChangedEventArgs_t755E6208C84304CAC448C133B0A8660CD5750A75* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/Deprecated/ARAnchorsChangedEventArgs.deprecated.cs:27>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/Deprecated/ARAnchorsChangedEventArgs.deprecated.cs:27>
 		List_1_t5C2EBF017989E44F3D1D11AF502E10F6F8D9AB53* L_0 = __this->___U3CremovedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 49206
+// Method Definition Index: 64316
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR List_1_t6F14EE6179A9A8E042C5D65E902F72E24597029B* AREnvironmentProbesChangedEvent_get_added_m5EB8CAE059E5A0F0A84A11866F2343F630B7C997_inline (AREnvironmentProbesChangedEvent_t8757E98E11F3D37F0CFC4589FCA5CD2107F8375C* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/Deprecated/AREnvironmentProbesChangedEvent.deprecated.cs:15>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/Deprecated/AREnvironmentProbesChangedEvent.deprecated.cs:15>
 		List_1_t6F14EE6179A9A8E042C5D65E902F72E24597029B* L_0 = __this->___U3CaddedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 49208
+// Method Definition Index: 64318
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR List_1_t6F14EE6179A9A8E042C5D65E902F72E24597029B* AREnvironmentProbesChangedEvent_get_updated_mFFE292486A4D2DB4385C70FAE94EB6048CBB99F3_inline (AREnvironmentProbesChangedEvent_t8757E98E11F3D37F0CFC4589FCA5CD2107F8375C* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/Deprecated/AREnvironmentProbesChangedEvent.deprecated.cs:20>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/Deprecated/AREnvironmentProbesChangedEvent.deprecated.cs:20>
 		List_1_t6F14EE6179A9A8E042C5D65E902F72E24597029B* L_0 = __this->___U3CupdatedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 49210
+// Method Definition Index: 64320
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR List_1_t6F14EE6179A9A8E042C5D65E902F72E24597029B* AREnvironmentProbesChangedEvent_get_removed_m0D5B42BCAD8408B1FC0DF82E24C4EAF1D8ADF40A_inline (AREnvironmentProbesChangedEvent_t8757E98E11F3D37F0CFC4589FCA5CD2107F8375C* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/Deprecated/AREnvironmentProbesChangedEvent.deprecated.cs:25>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/Deprecated/AREnvironmentProbesChangedEvent.deprecated.cs:25>
 		List_1_t6F14EE6179A9A8E042C5D65E902F72E24597029B* L_0 = __this->___U3CremovedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 49219
+// Method Definition Index: 64329
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR List_1_tA11EBED64210DD13BB4303415D948E6CD964AAF9* ARFacesChangedEventArgs_get_added_m8EA1424F8F262955AFD00664B81C15AB54EFA213_inline (ARFacesChangedEventArgs_tC05D4423CB2096FF5955C3A0A00056EE2B6301AE* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/Deprecated/ARFacesChangedEventArgs.deprecated.cs:15>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/Deprecated/ARFacesChangedEventArgs.deprecated.cs:15>
 		List_1_tA11EBED64210DD13BB4303415D948E6CD964AAF9* L_0 = __this->___U3CaddedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 49221
+// Method Definition Index: 64331
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR List_1_tA11EBED64210DD13BB4303415D948E6CD964AAF9* ARFacesChangedEventArgs_get_updated_m1D3587AA05E5789F796A71C3C87CD6D11BE0005B_inline (ARFacesChangedEventArgs_tC05D4423CB2096FF5955C3A0A00056EE2B6301AE* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/Deprecated/ARFacesChangedEventArgs.deprecated.cs:20>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/Deprecated/ARFacesChangedEventArgs.deprecated.cs:20>
 		List_1_tA11EBED64210DD13BB4303415D948E6CD964AAF9* L_0 = __this->___U3CupdatedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 49223
+// Method Definition Index: 64333
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR List_1_tA11EBED64210DD13BB4303415D948E6CD964AAF9* ARFacesChangedEventArgs_get_removed_mC31806DE526D3BECAA26C35DAE321F2DE77C335E_inline (ARFacesChangedEventArgs_tC05D4423CB2096FF5955C3A0A00056EE2B6301AE* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/Deprecated/ARFacesChangedEventArgs.deprecated.cs:25>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/Deprecated/ARFacesChangedEventArgs.deprecated.cs:25>
 		List_1_tA11EBED64210DD13BB4303415D948E6CD964AAF9* L_0 = __this->___U3CremovedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 49232
+// Method Definition Index: 64342
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR List_1_t64B1B4ABB789350AE017F3EAF4D3647AF59244C7* ARHumanBodiesChangedEventArgs_get_added_m6FD862CC8C8281F9377D754BBAB7F3C616955D4C_inline (ARHumanBodiesChangedEventArgs_t19088E0D3384A22C5D8A542957705222C834720B* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/Deprecated/ARHumanBodiesChangedEventArgs.deprecated.cs:15>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/Deprecated/ARHumanBodiesChangedEventArgs.deprecated.cs:15>
 		List_1_t64B1B4ABB789350AE017F3EAF4D3647AF59244C7* L_0 = __this->___U3CaddedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 49234
+// Method Definition Index: 64344
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR List_1_t64B1B4ABB789350AE017F3EAF4D3647AF59244C7* ARHumanBodiesChangedEventArgs_get_updated_mA2FD128E22BDACD09294F107AA3F2A91CFFAA550_inline (ARHumanBodiesChangedEventArgs_t19088E0D3384A22C5D8A542957705222C834720B* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/Deprecated/ARHumanBodiesChangedEventArgs.deprecated.cs:20>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/Deprecated/ARHumanBodiesChangedEventArgs.deprecated.cs:20>
 		List_1_t64B1B4ABB789350AE017F3EAF4D3647AF59244C7* L_0 = __this->___U3CupdatedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 49236
+// Method Definition Index: 64346
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR List_1_t64B1B4ABB789350AE017F3EAF4D3647AF59244C7* ARHumanBodiesChangedEventArgs_get_removed_m613516A989AA48A625C79A3C309D9C1465762BCA_inline (ARHumanBodiesChangedEventArgs_t19088E0D3384A22C5D8A542957705222C834720B* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/Deprecated/ARHumanBodiesChangedEventArgs.deprecated.cs:25>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/Deprecated/ARHumanBodiesChangedEventArgs.deprecated.cs:25>
 		List_1_t64B1B4ABB789350AE017F3EAF4D3647AF59244C7* L_0 = __this->___U3CremovedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 49245
+// Method Definition Index: 64355
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR List_1_t87D9AC2D6B4A4860E01575669DEB0D164D4B33B3* ARParticipantsChangedEventArgs_get_added_m06DA0DBF00575BB5D41A8AFE385ADAB9866BA678_inline (ARParticipantsChangedEventArgs_t2EAD9041A074A7ACEFF280662784747A4E85E527* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/Deprecated/ARParticipantsChangedEventArgs.deprecated.cs:15>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/Deprecated/ARParticipantsChangedEventArgs.deprecated.cs:15>
 		List_1_t87D9AC2D6B4A4860E01575669DEB0D164D4B33B3* L_0 = __this->___U3CaddedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 49247
+// Method Definition Index: 64357
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR List_1_t87D9AC2D6B4A4860E01575669DEB0D164D4B33B3* ARParticipantsChangedEventArgs_get_updated_mA0EC697655BDFEEB28064579FDD67DD166A2AE65_inline (ARParticipantsChangedEventArgs_t2EAD9041A074A7ACEFF280662784747A4E85E527* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/Deprecated/ARParticipantsChangedEventArgs.deprecated.cs:20>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/Deprecated/ARParticipantsChangedEventArgs.deprecated.cs:20>
 		List_1_t87D9AC2D6B4A4860E01575669DEB0D164D4B33B3* L_0 = __this->___U3CupdatedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 49249
+// Method Definition Index: 64359
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR List_1_t87D9AC2D6B4A4860E01575669DEB0D164D4B33B3* ARParticipantsChangedEventArgs_get_removed_m6BBF2ABF2E71DB02A70122927AAD83E3AB35A77F_inline (ARParticipantsChangedEventArgs_t2EAD9041A074A7ACEFF280662784747A4E85E527* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/Deprecated/ARParticipantsChangedEventArgs.deprecated.cs:25>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/Deprecated/ARParticipantsChangedEventArgs.deprecated.cs:25>
 		List_1_t87D9AC2D6B4A4860E01575669DEB0D164D4B33B3* L_0 = __this->___U3CremovedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 49263
+// Method Definition Index: 64373
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR List_1_t10BA05B555C92BD54800DFF82DCAAFC9DE44A077* ARPlanesChangedEventArgs_get_added_m6E00DD5F0B3261BCBAA8A029924A1F3F4179C747_inline (ARPlanesChangedEventArgs_t8D63E0257BF9942EF8F8C0445F2FD46421017872* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/Deprecated/ARPlanesChangedEventArgs.deprecated.cs:15>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/Deprecated/ARPlanesChangedEventArgs.deprecated.cs:15>
 		List_1_t10BA05B555C92BD54800DFF82DCAAFC9DE44A077* L_0 = __this->___U3CaddedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 49265
+// Method Definition Index: 64375
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR List_1_t10BA05B555C92BD54800DFF82DCAAFC9DE44A077* ARPlanesChangedEventArgs_get_updated_mE979DAD93445C56FF7BEB732528D6CADAF0B6C22_inline (ARPlanesChangedEventArgs_t8D63E0257BF9942EF8F8C0445F2FD46421017872* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/Deprecated/ARPlanesChangedEventArgs.deprecated.cs:20>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/Deprecated/ARPlanesChangedEventArgs.deprecated.cs:20>
 		List_1_t10BA05B555C92BD54800DFF82DCAAFC9DE44A077* L_0 = __this->___U3CupdatedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 49267
+// Method Definition Index: 64377
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR List_1_t10BA05B555C92BD54800DFF82DCAAFC9DE44A077* ARPlanesChangedEventArgs_get_removed_m8CF2AA0278488746F8C55CC6C7DC1870531D63C8_inline (ARPlanesChangedEventArgs_t8D63E0257BF9942EF8F8C0445F2FD46421017872* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/Deprecated/ARPlanesChangedEventArgs.deprecated.cs:25>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/Deprecated/ARPlanesChangedEventArgs.deprecated.cs:25>
 		List_1_t10BA05B555C92BD54800DFF82DCAAFC9DE44A077* L_0 = __this->___U3CremovedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 49276
+// Method Definition Index: 64386
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR List_1_tB9CD639EB4FE5EA0A8B417168BB9BD2D29AEE271* ARPointCloudChangedEventArgs_get_added_m74DFD8ED4B3EADB5AC29DD0E748C84C6FA26DDE9_inline (ARPointCloudChangedEventArgs_t7DE4CA4D30D369496221061F89CC4BF84E42CC1B* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/Deprecated/ARPointCloudChangedEventArgs.deprecated.cs:15>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/Deprecated/ARPointCloudChangedEventArgs.deprecated.cs:15>
 		List_1_tB9CD639EB4FE5EA0A8B417168BB9BD2D29AEE271* L_0 = __this->___U3CaddedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 49278
+// Method Definition Index: 64388
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR List_1_tB9CD639EB4FE5EA0A8B417168BB9BD2D29AEE271* ARPointCloudChangedEventArgs_get_updated_mD69E67FE8B06AB44B15F42F1D6EFA91F7E58F7C6_inline (ARPointCloudChangedEventArgs_t7DE4CA4D30D369496221061F89CC4BF84E42CC1B* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/Deprecated/ARPointCloudChangedEventArgs.deprecated.cs:20>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/Deprecated/ARPointCloudChangedEventArgs.deprecated.cs:20>
 		List_1_tB9CD639EB4FE5EA0A8B417168BB9BD2D29AEE271* L_0 = __this->___U3CupdatedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 49280
+// Method Definition Index: 64390
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR List_1_tB9CD639EB4FE5EA0A8B417168BB9BD2D29AEE271* ARPointCloudChangedEventArgs_get_removed_m64321D4F0D902494EE19EFF1B258981DE5C712B0_inline (ARPointCloudChangedEventArgs_t7DE4CA4D30D369496221061F89CC4BF84E42CC1B* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/Deprecated/ARPointCloudChangedEventArgs.deprecated.cs:25>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/Deprecated/ARPointCloudChangedEventArgs.deprecated.cs:25>
 		List_1_tB9CD639EB4FE5EA0A8B417168BB9BD2D29AEE271* L_0 = __this->___U3CremovedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 49289
+// Method Definition Index: 64399
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR List_1_tFA730335FF46512E4245B2F46892CA318B394FAE* ARTrackedImagesChangedEventArgs_get_added_m2929CC85141D13AF05C1484AFB47E043C6D3EE35_inline (ARTrackedImagesChangedEventArgs_tD7718E40EE25D22E9143DA4F556C44980E18BE2F* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/Deprecated/ARTrackedImagesChangedEventArgs.deprecated.cs:15>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/Deprecated/ARTrackedImagesChangedEventArgs.deprecated.cs:15>
 		List_1_tFA730335FF46512E4245B2F46892CA318B394FAE* L_0 = __this->___U3CaddedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 49291
+// Method Definition Index: 64401
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR List_1_tFA730335FF46512E4245B2F46892CA318B394FAE* ARTrackedImagesChangedEventArgs_get_updated_m0C896E1C21EF35FF4B31B36563838EC2BA3CDFD1_inline (ARTrackedImagesChangedEventArgs_tD7718E40EE25D22E9143DA4F556C44980E18BE2F* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/Deprecated/ARTrackedImagesChangedEventArgs.deprecated.cs:20>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/Deprecated/ARTrackedImagesChangedEventArgs.deprecated.cs:20>
 		List_1_tFA730335FF46512E4245B2F46892CA318B394FAE* L_0 = __this->___U3CupdatedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 49293
+// Method Definition Index: 64403
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR List_1_tFA730335FF46512E4245B2F46892CA318B394FAE* ARTrackedImagesChangedEventArgs_get_removed_m062CBBEF163BEE47A673F7B3BDC0DD1C6EAEA185_inline (ARTrackedImagesChangedEventArgs_tD7718E40EE25D22E9143DA4F556C44980E18BE2F* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/Deprecated/ARTrackedImagesChangedEventArgs.deprecated.cs:25>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/Deprecated/ARTrackedImagesChangedEventArgs.deprecated.cs:25>
 		List_1_tFA730335FF46512E4245B2F46892CA318B394FAE* L_0 = __this->___U3CremovedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 49302
+// Method Definition Index: 64412
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR List_1_tF1201F2F725A8AE529D436F38A4771FB6790F3C6* ARTrackedObjectsChangedEventArgs_get_added_m71E8E2055C979657273051DE23FCEB938964169A_inline (ARTrackedObjectsChangedEventArgs_t378A63B91AD22EA4BA9C68805C72DDA4B7C01509* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/Deprecated/ARTrackedObjectsChangedEventArgs.deprecated.cs:15>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/Deprecated/ARTrackedObjectsChangedEventArgs.deprecated.cs:15>
 		List_1_tF1201F2F725A8AE529D436F38A4771FB6790F3C6* L_0 = __this->___U3CaddedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 49304
+// Method Definition Index: 64414
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR List_1_tF1201F2F725A8AE529D436F38A4771FB6790F3C6* ARTrackedObjectsChangedEventArgs_get_updated_m01050D519E6281EECB48200D952FE1E1FFFE1A60_inline (ARTrackedObjectsChangedEventArgs_t378A63B91AD22EA4BA9C68805C72DDA4B7C01509* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/Deprecated/ARTrackedObjectsChangedEventArgs.deprecated.cs:20>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/Deprecated/ARTrackedObjectsChangedEventArgs.deprecated.cs:20>
 		List_1_tF1201F2F725A8AE529D436F38A4771FB6790F3C6* L_0 = __this->___U3CupdatedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 49306
+// Method Definition Index: 64416
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR List_1_tF1201F2F725A8AE529D436F38A4771FB6790F3C6* ARTrackedObjectsChangedEventArgs_get_removed_mDF5FA585D41D4B0D4517D3C5387B254F6EA6DFDA_inline (ARTrackedObjectsChangedEventArgs_t378A63B91AD22EA4BA9C68805C72DDA4B7C01509* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/Deprecated/ARTrackedObjectsChangedEventArgs.deprecated.cs:25>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/Deprecated/ARTrackedObjectsChangedEventArgs.deprecated.cs:25>
 		List_1_tF1201F2F725A8AE529D436F38A4771FB6790F3C6* L_0 = __this->___U3CremovedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56015
+// Method Definition Index: 72178
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void FaceUpdatedEventUnit_set_faceOut_mA1675257B969683B3E210624EFADE5F0F24A4811_inline (FaceUpdatedEventUnit_tBAF617E9D7CA035FC4D40FDA435F6BC35A39D426* __this, ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/FaceUpdatedEventUnit.cs:25>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/FaceUpdatedEventUnit.cs:25>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = ___0_value;
 		__this->___U3CfaceOutU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CfaceOutU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56014
+// Method Definition Index: 72177
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* FaceUpdatedEventUnit_get_faceOut_m4C064F7BE0FDC5D28BAB8C72683F60B5399B091D_inline (FaceUpdatedEventUnit_tBAF617E9D7CA035FC4D40FDA435F6BC35A39D426* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/FaceUpdatedEventUnit.cs:25>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/FaceUpdatedEventUnit.cs:25>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = __this->___U3CfaceOutU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 48696
+// Method Definition Index: 63806
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ARFace_t73C068C9C8422F79A858EC41C322D399305B8453* ARFaceUpdatedEventArgs_get_face_mFD21EF59457212494C80FE998D1CA8AC0F057170_inline (ARFaceUpdatedEventArgs_tC20D17255858678A1A8230EA32D7C38287221FF6* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/ARFaceUpdatedEventArgs.cs:13>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/ARFaceUpdatedEventArgs.cs:13>
 		ARFace_t73C068C9C8422F79A858EC41C322D399305B8453* L_0 = __this->___U3CfaceU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 49075
+// Method Definition Index: 64185
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t ARSessionStateChangedEventArgs_get_state_mC0A6FB4AF08C068BFD5D9730F60215BE662A950B_inline (ARSessionStateChangedEventArgs_tC31BD123D6B4F6168FB246762E79AB33962AE822* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/ARSessionStateChangedEventArgs.cs:13>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/ARSessionStateChangedEventArgs.cs:13>
 		int32_t L_0 = __this->___U3CstateU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56023
+// Method Definition Index: 72186
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void SessionStateChangedEventUnit_set_sessionStateOut_mA37AE57139361EFD0003F0FF225B9A917359F04C_inline (SessionStateChangedEventUnit_tB622F7C1B352062C2D5D67A3EA1E1E6DBD910631* __this, ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/SessionStateChangedEventUnit.cs:26>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/SessionStateChangedEventUnit.cs:26>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = ___0_value;
 		__this->___U3CsessionStateOutU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CsessionStateOutU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56022
+// Method Definition Index: 72185
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* SessionStateChangedEventUnit_get_sessionStateOut_m0A6C8851E8BE80C79AEFAE297A6B8A47F68445B9_inline (SessionStateChangedEventUnit_tB622F7C1B352062C2D5D67A3EA1E1E6DBD910631* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/SessionStateChangedEventUnit.cs:26>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/SessionStateChangedEventUnit.cs:26>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = __this->___U3CsessionStateOutU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56122
+// Method Definition Index: 72285
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void SessionStateSwitchUnit_set_flowIn_mD8F159479E3884269A7D2057D7F3E8C52B2923D5_inline (SessionStateSwitchUnit_t20FE0233ACF3B7C4EE2306768E7176E70AC6C1C8* __this, ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:23>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:23>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_0 = ___0_value;
 		__this->___U3CflowInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CflowInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56124
+// Method Definition Index: 72287
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void SessionStateSwitchUnit_set_sessionStateIn_m39EB7D50DFEE0306E0C4F690E06D8B6D246B1AFB_inline (SessionStateSwitchUnit_t20FE0233ACF3B7C4EE2306768E7176E70AC6C1C8* __this, ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:30>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:30>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = ___0_value;
 		__this->___U3CsessionStateInU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CsessionStateInU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56126
+// Method Definition Index: 72289
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void SessionStateSwitchUnit_set_none_mE058B6C1A72B0BD0DC6BAEA629EC6C8A55BD273C_inline (SessionStateSwitchUnit_t20FE0233ACF3B7C4EE2306768E7176E70AC6C1C8* __this, ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:36>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:36>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = ___0_value;
 		__this->___U3CnoneU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CnoneU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56128
+// Method Definition Index: 72291
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void SessionStateSwitchUnit_set_unsupported_m683621DAFF0725F51FAB5D0FB9CB63F5731E53A1_inline (SessionStateSwitchUnit_t20FE0233ACF3B7C4EE2306768E7176E70AC6C1C8* __this, ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:42>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:42>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = ___0_value;
 		__this->___U3CunsupportedU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CunsupportedU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56130
+// Method Definition Index: 72293
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void SessionStateSwitchUnit_set_checkingAvailability_m0D10A7BFD1348E9694B381482E90F5974E3CF246_inline (SessionStateSwitchUnit_t20FE0233ACF3B7C4EE2306768E7176E70AC6C1C8* __this, ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:48>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:48>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = ___0_value;
 		__this->___U3CcheckingAvailabilityU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CcheckingAvailabilityU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56132
+// Method Definition Index: 72295
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void SessionStateSwitchUnit_set_needsInstall_m6C03848DA29361417CBE17AAC6EF641AE4946A95_inline (SessionStateSwitchUnit_t20FE0233ACF3B7C4EE2306768E7176E70AC6C1C8* __this, ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:54>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:54>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = ___0_value;
 		__this->___U3CneedsInstallU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CneedsInstallU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56134
+// Method Definition Index: 72297
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void SessionStateSwitchUnit_set_installing_m91BC0E0D467AB4CDE4A9E87F43ABA98874D7BAF4_inline (SessionStateSwitchUnit_t20FE0233ACF3B7C4EE2306768E7176E70AC6C1C8* __this, ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:60>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:60>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = ___0_value;
 		__this->___U3CinstallingU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CinstallingU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56136
+// Method Definition Index: 72299
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void SessionStateSwitchUnit_set_ready_m4CF3C56F9F24CDCFE9678F22BBAA988BF7AA6FD3_inline (SessionStateSwitchUnit_t20FE0233ACF3B7C4EE2306768E7176E70AC6C1C8* __this, ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:66>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:66>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = ___0_value;
 		__this->___U3CreadyU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CreadyU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56138
+// Method Definition Index: 72301
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void SessionStateSwitchUnit_set_sessionInitializing_mB3A2FF70C33664AFF792B183A2E39252DDFDACB2_inline (SessionStateSwitchUnit_t20FE0233ACF3B7C4EE2306768E7176E70AC6C1C8* __this, ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:72>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:72>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = ___0_value;
 		__this->___U3CsessionInitializingU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CsessionInitializingU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56140
+// Method Definition Index: 72303
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void SessionStateSwitchUnit_set_sessionTracking_mA270750450E8D31E271811C785AE730FB61AACF0_inline (SessionStateSwitchUnit_t20FE0233ACF3B7C4EE2306768E7176E70AC6C1C8* __this, ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:78>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:78>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = ___0_value;
 		__this->___U3CsessionTrackingU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CsessionTrackingU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 56123
+// Method Definition Index: 72286
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* SessionStateSwitchUnit_get_sessionStateIn_m4E966BABF18BE40C7178158088CC8DEA31893939_inline (SessionStateSwitchUnit_t20FE0233ACF3B7C4EE2306768E7176E70AC6C1C8* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:30>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:30>
 		ValueInput_t2F9A2AA29F683A1C27C273BF8AABA4C2D9851392* L_0 = __this->___U3CsessionStateInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56121
+// Method Definition Index: 72284
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* SessionStateSwitchUnit_get_flowIn_m667548B27056B2F6F27B63DFCF4412BBAE6637A5_inline (SessionStateSwitchUnit_t20FE0233ACF3B7C4EE2306768E7176E70AC6C1C8* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:23>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:23>
 		ControlInput_t1AD434958538C865F55A62C66B9C24DA82AD31FE* L_0 = __this->___U3CflowInU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56125
+// Method Definition Index: 72288
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* SessionStateSwitchUnit_get_none_mCDA812C5D868B12D04C020ED27ED0F886EE0963E_inline (SessionStateSwitchUnit_t20FE0233ACF3B7C4EE2306768E7176E70AC6C1C8* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:36>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:36>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = __this->___U3CnoneU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56127
+// Method Definition Index: 72290
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* SessionStateSwitchUnit_get_unsupported_m911986D3ADF69617D9E6DFFB367926BBA3639439_inline (SessionStateSwitchUnit_t20FE0233ACF3B7C4EE2306768E7176E70AC6C1C8* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:42>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:42>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = __this->___U3CunsupportedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56129
+// Method Definition Index: 72292
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* SessionStateSwitchUnit_get_checkingAvailability_m3EF1098F57D30B08B8C7587F9D94B64A4E650ED9_inline (SessionStateSwitchUnit_t20FE0233ACF3B7C4EE2306768E7176E70AC6C1C8* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:48>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:48>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = __this->___U3CcheckingAvailabilityU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56131
+// Method Definition Index: 72294
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* SessionStateSwitchUnit_get_needsInstall_mDBE283471C7F3B8C8A1D6962DAFECBC81CC7071E_inline (SessionStateSwitchUnit_t20FE0233ACF3B7C4EE2306768E7176E70AC6C1C8* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:54>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:54>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = __this->___U3CneedsInstallU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56133
+// Method Definition Index: 72296
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* SessionStateSwitchUnit_get_installing_mAB1C0C05D8CAD09DE7EA9177806621D1263E120F_inline (SessionStateSwitchUnit_t20FE0233ACF3B7C4EE2306768E7176E70AC6C1C8* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:60>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:60>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = __this->___U3CinstallingU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56135
+// Method Definition Index: 72298
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* SessionStateSwitchUnit_get_ready_m5FDBB155FE257620F68167B4A7A1DEEB597491D2_inline (SessionStateSwitchUnit_t20FE0233ACF3B7C4EE2306768E7176E70AC6C1C8* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:66>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:66>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = __this->___U3CreadyU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56137
+// Method Definition Index: 72300
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* SessionStateSwitchUnit_get_sessionInitializing_mDAB4A059DA69D91C4A7E3ED9B207A31F64040746_inline (SessionStateSwitchUnit_t20FE0233ACF3B7C4EE2306768E7176E70AC6C1C8* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:72>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:72>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = __this->___U3CsessionInitializingU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56139
+// Method Definition Index: 72302
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* SessionStateSwitchUnit_get_sessionTracking_m46B500F7B3F7276E269EC893E52EE71478554365_inline (SessionStateSwitchUnit_t20FE0233ACF3B7C4EE2306768E7176E70AC6C1C8* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:78>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/SessionStateSwitchUnit.cs:78>
 		ControlOutput_t478B71A736EFBCE24B532F0279A9E701C9CDD8B9* L_0 = __this->___U3CsessionTrackingU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 55999
+// Method Definition Index: 72162
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* TrackablesChangedEventUnit_8_get_added_mA5EB9599698C839DF1B830628E9AA712D2BAA239_gshared_inline (TrackablesChangedEventUnit_8_t1733B9D53AC7A75201E66A3C4299F9EEAF6D9AC9* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackablesChangedEventUnit.deprecated.cs:38>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackablesChangedEventUnit.deprecated.cs:38>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = __this->___U3CaddedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56001
+// Method Definition Index: 72164
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* TrackablesChangedEventUnit_8_get_updated_m0E9C84C6478DC8A8EC77951533068775F7773D47_gshared_inline (TrackablesChangedEventUnit_8_t1733B9D53AC7A75201E66A3C4299F9EEAF6D9AC9* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackablesChangedEventUnit.deprecated.cs:44>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackablesChangedEventUnit.deprecated.cs:44>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = __this->___U3CupdatedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56003
+// Method Definition Index: 72166
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* TrackablesChangedEventUnit_8_get_removed_mFA20D5CC71D33EF2AD69130EE9B6DFC53C57826E_gshared_inline (TrackablesChangedEventUnit_8_t1733B9D53AC7A75201E66A3C4299F9EEAF6D9AC9* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackablesChangedEventUnit.deprecated.cs:50>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackablesChangedEventUnit.deprecated.cs:50>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = __this->___U3CremovedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 55999
+// Method Definition Index: 72162
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* TrackablesChangedEventUnit_8_get_added_m227082B23BA194D4F4D78E344F92D69797149EF2_gshared_inline (TrackablesChangedEventUnit_8_t32C53D3043B80B877FC2C13D865611AE1870707B* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackablesChangedEventUnit.deprecated.cs:38>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackablesChangedEventUnit.deprecated.cs:38>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = __this->___U3CaddedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56001
+// Method Definition Index: 72164
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* TrackablesChangedEventUnit_8_get_updated_m92262CE776B63637F7622CDECF3F5D1284E380E8_gshared_inline (TrackablesChangedEventUnit_8_t32C53D3043B80B877FC2C13D865611AE1870707B* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackablesChangedEventUnit.deprecated.cs:44>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackablesChangedEventUnit.deprecated.cs:44>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = __this->___U3CupdatedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56003
+// Method Definition Index: 72166
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* TrackablesChangedEventUnit_8_get_removed_m3681946A08131E0DA77641ED3161001F7EC45ED0_gshared_inline (TrackablesChangedEventUnit_8_t32C53D3043B80B877FC2C13D865611AE1870707B* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackablesChangedEventUnit.deprecated.cs:50>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackablesChangedEventUnit.deprecated.cs:50>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = __this->___U3CremovedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 55999
+// Method Definition Index: 72162
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* TrackablesChangedEventUnit_8_get_added_m1C11AC657CA855142D543432ABC974CCADE0B3B0_gshared_inline (TrackablesChangedEventUnit_8_t3ED65845C697D5F6365D653761D50033F9DEA043* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackablesChangedEventUnit.deprecated.cs:38>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackablesChangedEventUnit.deprecated.cs:38>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = __this->___U3CaddedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56001
+// Method Definition Index: 72164
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* TrackablesChangedEventUnit_8_get_updated_m934BC27B2518C2AF1097361B2834B91346245905_gshared_inline (TrackablesChangedEventUnit_8_t3ED65845C697D5F6365D653761D50033F9DEA043* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackablesChangedEventUnit.deprecated.cs:44>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackablesChangedEventUnit.deprecated.cs:44>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = __this->___U3CupdatedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56003
+// Method Definition Index: 72166
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* TrackablesChangedEventUnit_8_get_removed_mB2360A7E90332B148E3297E1D32F6031E3E8DEFB_gshared_inline (TrackablesChangedEventUnit_8_t3ED65845C697D5F6365D653761D50033F9DEA043* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackablesChangedEventUnit.deprecated.cs:50>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackablesChangedEventUnit.deprecated.cs:50>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = __this->___U3CremovedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 55999
+// Method Definition Index: 72162
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* TrackablesChangedEventUnit_8_get_added_m33DF3083F2E514B2F73286CA73AE45BA5A181D54_gshared_inline (TrackablesChangedEventUnit_8_tAD7DEECE198B73643980718B72E5D18B9AE18A29* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackablesChangedEventUnit.deprecated.cs:38>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackablesChangedEventUnit.deprecated.cs:38>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = __this->___U3CaddedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56001
+// Method Definition Index: 72164
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* TrackablesChangedEventUnit_8_get_updated_m92AC4CE3FFB5D2CD7EF4EFEC9FCBA7BD5429FA18_gshared_inline (TrackablesChangedEventUnit_8_tAD7DEECE198B73643980718B72E5D18B9AE18A29* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackablesChangedEventUnit.deprecated.cs:44>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackablesChangedEventUnit.deprecated.cs:44>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = __this->___U3CupdatedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56003
+// Method Definition Index: 72166
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* TrackablesChangedEventUnit_8_get_removed_m730B768E99F9428C523540CFEAFD4ADC88B3DCBB_gshared_inline (TrackablesChangedEventUnit_8_tAD7DEECE198B73643980718B72E5D18B9AE18A29* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackablesChangedEventUnit.deprecated.cs:50>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackablesChangedEventUnit.deprecated.cs:50>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = __this->___U3CremovedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 55999
+// Method Definition Index: 72162
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* TrackablesChangedEventUnit_8_get_added_mE06A697E13C4142D6E80237E44FF471D37AA81A8_gshared_inline (TrackablesChangedEventUnit_8_tE5B851C314A74199250431CA9EF82851FE17AF1E* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackablesChangedEventUnit.deprecated.cs:38>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackablesChangedEventUnit.deprecated.cs:38>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = __this->___U3CaddedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56001
+// Method Definition Index: 72164
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* TrackablesChangedEventUnit_8_get_updated_mD5811FDA361D62C2B442A29B4271C140BD68FD4D_gshared_inline (TrackablesChangedEventUnit_8_tE5B851C314A74199250431CA9EF82851FE17AF1E* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackablesChangedEventUnit.deprecated.cs:44>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackablesChangedEventUnit.deprecated.cs:44>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = __this->___U3CupdatedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56003
+// Method Definition Index: 72166
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* TrackablesChangedEventUnit_8_get_removed_mA5A75FD646439C5DF03447808BAC63B942DDE510_gshared_inline (TrackablesChangedEventUnit_8_tE5B851C314A74199250431CA9EF82851FE17AF1E* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackablesChangedEventUnit.deprecated.cs:50>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackablesChangedEventUnit.deprecated.cs:50>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = __this->___U3CremovedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 55999
+// Method Definition Index: 72162
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* TrackablesChangedEventUnit_8_get_added_mBC80FDCEB43A815F5C1E00246B3A0A76BEBF6A55_gshared_inline (TrackablesChangedEventUnit_8_t80ACB5EC468FCE7380B5D1FFB60D34852FDDECEB* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackablesChangedEventUnit.deprecated.cs:38>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackablesChangedEventUnit.deprecated.cs:38>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = __this->___U3CaddedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56001
+// Method Definition Index: 72164
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* TrackablesChangedEventUnit_8_get_updated_mE28D5A4C9A9AC30D6587B7C701797F9D89EC4D3C_gshared_inline (TrackablesChangedEventUnit_8_t80ACB5EC468FCE7380B5D1FFB60D34852FDDECEB* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackablesChangedEventUnit.deprecated.cs:44>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackablesChangedEventUnit.deprecated.cs:44>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = __this->___U3CupdatedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56003
+// Method Definition Index: 72166
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* TrackablesChangedEventUnit_8_get_removed_m72E4C6109F83CDAFC1C03A9E7FA7F9F421F40D2D_gshared_inline (TrackablesChangedEventUnit_8_t80ACB5EC468FCE7380B5D1FFB60D34852FDDECEB* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackablesChangedEventUnit.deprecated.cs:50>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackablesChangedEventUnit.deprecated.cs:50>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = __this->___U3CremovedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 55999
+// Method Definition Index: 72162
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* TrackablesChangedEventUnit_8_get_added_mDFD7A4FA5EE6EE922E003F4F32AF1E97E8532D0B_gshared_inline (TrackablesChangedEventUnit_8_t2B87F30FA4D65ECE396E4A074036A8F6A0F95654* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackablesChangedEventUnit.deprecated.cs:38>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackablesChangedEventUnit.deprecated.cs:38>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = __this->___U3CaddedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56001
+// Method Definition Index: 72164
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* TrackablesChangedEventUnit_8_get_updated_mF386F24BC1B82AD93FDFA090C7A6032FD1835BC9_gshared_inline (TrackablesChangedEventUnit_8_t2B87F30FA4D65ECE396E4A074036A8F6A0F95654* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackablesChangedEventUnit.deprecated.cs:44>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackablesChangedEventUnit.deprecated.cs:44>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = __this->___U3CupdatedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56003
+// Method Definition Index: 72166
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* TrackablesChangedEventUnit_8_get_removed_mD34EBC8EA96EFAA5E5B3BB3A5CD9E63F45C8F46C_gshared_inline (TrackablesChangedEventUnit_8_t2B87F30FA4D65ECE396E4A074036A8F6A0F95654* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackablesChangedEventUnit.deprecated.cs:50>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackablesChangedEventUnit.deprecated.cs:50>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = __this->___U3CremovedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 55999
+// Method Definition Index: 72162
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* TrackablesChangedEventUnit_8_get_added_m875B59231345FF1E6FBFE1E5EFF593995A2EF71C_gshared_inline (TrackablesChangedEventUnit_8_t9D9E1B534664684D3799239F14EA6394D5EA7102* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackablesChangedEventUnit.deprecated.cs:38>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackablesChangedEventUnit.deprecated.cs:38>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = __this->___U3CaddedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56001
+// Method Definition Index: 72164
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* TrackablesChangedEventUnit_8_get_updated_m362E1C8FE77AB6DF95D605D202C2F2D2E51EBDA2_gshared_inline (TrackablesChangedEventUnit_8_t9D9E1B534664684D3799239F14EA6394D5EA7102* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackablesChangedEventUnit.deprecated.cs:44>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackablesChangedEventUnit.deprecated.cs:44>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = __this->___U3CupdatedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56003
+// Method Definition Index: 72166
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* TrackablesChangedEventUnit_8_get_removed_m81EDFBA98C36006A10B4B9EB3DC52C4E073EE35F_gshared_inline (TrackablesChangedEventUnit_8_t9D9E1B534664684D3799239F14EA6394D5EA7102* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackablesChangedEventUnit.deprecated.cs:50>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackablesChangedEventUnit.deprecated.cs:50>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = __this->___U3CremovedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 55999
+// Method Definition Index: 72162
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* TrackablesChangedEventUnit_8_get_added_m56E2AAE2F7EB5F918BCA351928FA830CFC40B00C_gshared_inline (TrackablesChangedEventUnit_8_t65F4F7BA35861764870385ED28CF9DA4366517DB* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackablesChangedEventUnit.deprecated.cs:38>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackablesChangedEventUnit.deprecated.cs:38>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = __this->___U3CaddedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56001
+// Method Definition Index: 72164
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* TrackablesChangedEventUnit_8_get_updated_mB47F00BDB8F28A8C052BF4525824557AA2D0E5F2_gshared_inline (TrackablesChangedEventUnit_8_t65F4F7BA35861764870385ED28CF9DA4366517DB* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackablesChangedEventUnit.deprecated.cs:44>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackablesChangedEventUnit.deprecated.cs:44>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = __this->___U3CupdatedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 56003
+// Method Definition Index: 72166
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* TrackablesChangedEventUnit_8_get_removed_m0F3958FFA505957614CEE2F8AAD2A1BBA5641D5C_gshared_inline (TrackablesChangedEventUnit_8_t65F4F7BA35861764870385ED28CF9DA4366517DB* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackablesChangedEventUnit.deprecated.cs:50>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/VisualScripting/Units/Events/EventUnits/Deprecated/TrackablesChangedEventUnit.deprecated.cs:50>
 		ValueOutput_tADDC9DBF6515A1572E876C3881B5F110DC5EBE1B* L_0 = __this->___U3CremovedU3Ek__BackingField;
 		return L_0;
 	}

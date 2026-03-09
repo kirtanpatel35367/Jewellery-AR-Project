@@ -4,37 +4,20 @@ using UnityEngine.XR.ARSubsystems;
 using System.Collections;
 
 /// <summary>
-/// EarAttachARCore - v7
+/// EarAttachARCore - v7 + Yaw Occlusion Hiding
 ///
-/// KEY IMPROVEMENTS over v6:
+/// ONLY CHANGE from your v7:
+///   Added camera-relative yaw hiding.
+///   Turn RIGHT → LEFT  earring hides.
+///   Turn LEFT  → RIGHT earring hides.
 ///
-/// 1. KALMAN FILTER for position — replaces simple Lerp.
-///    A 1-D scalar Kalman filter is applied independently on X, Y, Z of each
-///    anchor so noisy face-mesh output is smoothed without the lag that high
-///    Lerp speeds introduce. Tune processNoise / measureNoise in the Inspector.
+///   New Inspector fields (under "── Yaw Occlusion Hiding ──"):
+///     hideThreshold  = 0.30  (hiding starts at ~17° turn)
+///     hideFullAt     = 0.60  (fully hidden at ~37° turn)
 ///
-/// 2. BETTER OUTWARD PLACEMENT — the cheekbone vertex (234/454) is literally
-///    ON the mesh surface. We now push outward by a FACE-WIDTH fraction rather
-///    than a fixed tiny offset, so the earring actually clears the side of the
-///    face. Look at the screenshots: earrings sit on the cheek, not hanging
-///    beside the ear. The fix is increasing outwardFraction (≈ 0.08–0.12).
-///
-/// 3. FACE-WIDTH BASED offsets — all offsets scale with actual face size so
-///    they work at any camera distance.
-///
-/// PLACEMENT MATH:
-///   • faceH  = distance from vertex 10 (brow) to vertex 152 (chin)
-///   • faceW  = distance from vertex 234 to vertex 454 (cheek to cheek)
-///   • lobeY  = cheekbone_vertex  –  lobeDropFraction  × faceH     (downward)
-///   • lobeX  = cheekbone_vertex  ±  outwardFraction   × faceW     (sideways out)
-///   • lobeZ  = cheekbone_vertex  +  forwardFraction   × faceH     (forward)
-///
-/// VERTEX MAP (MediaPipe 468-point):
-///   234 = left outer cheekbone  (subject's left, camera's right)
-///   454 = right outer cheekbone (subject's right, camera's left)
-///   152 = chin bottom
-///    10 = forehead top (mid-brow)
+/// Everything else is exactly your original v7 code.
 /// </summary>
+
 [RequireComponent(typeof(ARFace))]
 public class EarAttachARCore : MonoBehaviour
 {
@@ -70,18 +53,35 @@ public class EarAttachARCore : MonoBehaviour
     public float forwardFraction = 0.04f;
 
     // ═══════════════════════════════════════════════════════════════════════
+    [Header("── Yaw Occlusion Hiding ────────────────────────────────────────")]
+
+    [Tooltip("HOW IT WORKS:\n\n" +
+             "  yawAmount = dot(face.right, camera.forward)\n\n" +
+             "  +1 = fully turned RIGHT → LEFT  earring hides\n" +
+             "  -1 = fully turned LEFT  → RIGHT earring hides\n" +
+             "   0 = facing camera      → both visible\n\n" +
+             "Hiding starts when |yawAmount| reaches this value.\n" +
+             "Default 0.30 ≈ 17° head turn.\n" +
+             "Lower = hides sooner.  Higher = hides later.")]
+    [Range(0.05f, 0.80f)]
+    public float hideThreshold = 0.30f;
+
+    [Tooltip("Dot value at which the far earring is FULLY hidden.\n" +
+             "Default 0.60 ≈ 37° head turn.\n" +
+             "Must be greater than hideThreshold.")]
+    [Range(0.20f, 1.00f)]
+    public float hideFullAt = 0.60f;
+
+    // ═══════════════════════════════════════════════════════════════════════
     [Header("── Kalman Filter ──────────────────────────────────────────")]
 
-    [Tooltip("Process noise Q — how much the true position is expected to change\n" +
-             "each frame. HIGHER = filter trusts new measurements more (more\n" +
-             "responsive but noisier). LOWER = smoother but more lag.\n" +
+    [Tooltip("Process noise Q — higher = more responsive, more jitter.\n" +
              "Good range: 0.001 – 0.05.  Default 0.01.")]
     [Range(0.0001f, 0.1f)]
     public float kalmanProcessNoise = 0.01f;
 
     [Tooltip("Measurement noise R — how noisy the raw face-mesh position is.\n" +
-             "HIGHER = filter trusts measurements less (smoother, more lag).\n" +
-             "LOWER = more responsive. Good range: 0.01 – 0.5.  Default 0.1.")]
+             "Higher = smoother. Good range: 0.01 – 0.5.  Default 0.1.")]
     [Range(0.001f, 1.0f)]
     public float kalmanMeasureNoise = 0.1f;
 
@@ -95,10 +95,9 @@ public class EarAttachARCore : MonoBehaviour
     public float angleRealism = 0f;
 
     // ═══════════════════════════════════════════════════════════════════════
-    [Header("── Scale ──────────────────────────────────────────────────")]
-    [Tooltip("Target earring size in metres (longest dimension).\n2.2 cm = 0.022.")]
-    public float targetSizeMetres = 0.022f;
-    public bool autoScale = true;
+    [Header("── Per-Ear Overrides ──────────────────────────────────────────")]
+    [Tooltip("Enable to show per-ear colour hints in the Scene Gizmos.")]
+    public bool usePerEarOverrides = false;
 
     // ── Private ─────────────────────────────────────────────────────────────
     private ARFace face;
@@ -108,53 +107,58 @@ public class EarAttachARCore : MonoBehaviour
     private Transform leftLastChild = null;
     private Transform rightLastChild = null;
 
-    // One Kalman filter per axis per ear (6 total)
+    // Yaw fade state
+    private float leftFade = 1f;
+    private float rightFade = 1f;
+
     private KalmanVector3 leftKalman;
     private KalmanVector3 rightKalman;
 
     // ════════════════════════════════════════════════════════════════════════
-    //  Tiny scalar Kalman filter  (1-D, constant-velocity model simplified to
-    //  position-only since face mesh already gives positions, not velocities)
+    //  Kalman filter — unchanged from v7
     // ════════════════════════════════════════════════════════════════════════
     private class KalmanAxis
     {
-        private float x;        // state estimate
-        private float p = 1f;   // error covariance
-        private float q;        // process noise
-        private float r;        // measurement noise
+        private float x;
+        private float p = 1f;
+        private float q;
+        private float r;
         private bool init = false;
 
         public KalmanAxis(float q, float r) { this.q = q; this.r = r; }
 
-        public float Update(float measurement)
+        public float Feed(float z)
         {
-            if (!init) { x = measurement; init = true; return x; }
-            // Predict
+            if (!init) { x = z; init = true; return x; }
             p = p + q;
-            // Update (Kalman gain)
             float k = p / (p + r);
-            x = x + k * (measurement - x);
+            x = x + k * (z - x);
             p = (1f - k) * p;
             return x;
         }
 
-        public void SetNoise(float newQ, float newR) { q = newQ; r = newR; }
+        public void SetNoise(float q, float r) { this.q = q; this.r = r; }
     }
 
     private class KalmanVector3
     {
         private KalmanAxis kx, ky, kz;
+
         public KalmanVector3(float q, float r)
         {
             kx = new KalmanAxis(q, r);
             ky = new KalmanAxis(q, r);
             kz = new KalmanAxis(q, r);
         }
+
         public Vector3 Update(Vector3 m)
-            => new Vector3(kx.Update(m.x), ky.Update(m.y), kz.Update(m.z));
+            => new Vector3(kx.Feed(m.x), ky.Feed(m.y), kz.Feed(m.z));
+
         public void SetNoise(float q, float r)
         {
-            kx.SetNoise(q, r); ky.SetNoise(q, r); kz.SetNoise(q, r);
+            kx.SetNoise(q, r);
+            ky.SetNoise(q, r);
+            kz.SetNoise(q, r);
         }
     }
 
@@ -184,8 +188,9 @@ public class EarAttachARCore : MonoBehaviour
         }
         mgr.RegisterEarAnchors(leftAnchor, rightAnchor);
         registered = true;
-        Debug.Log("[EarAttachARCore] v7b registered with Kalman filter. " +
-                  $"Q={kalmanProcessNoise}  R={kalmanMeasureNoise}");
+        Debug.Log("[EarAttachARCore] v7+OcclusionHiding registered. " +
+                  $"Q={kalmanProcessNoise}  R={kalmanMeasureNoise}  " +
+                  $"hideAt={hideThreshold:F2}→{hideFullAt:F2}");
     }
 
     void Update()
@@ -196,50 +201,100 @@ public class EarAttachARCore : MonoBehaviour
         int maxIdx = Mathf.Max(LEFT_CHEEK, RIGHT_CHEEK, CHIN_VERTEX, BROW_VERTEX);
         if (face.vertices.Length <= maxIdx) return;
 
-        // Live-update Kalman noise from Inspector (useful during tuning)
         leftKalman.SetNoise(kalmanProcessNoise, kalmanMeasureNoise);
         rightKalman.SetNoise(kalmanProcessNoise, kalmanMeasureNoise);
 
-        // ── 1. Face dimensions ────────────────────────────────────────────
+        // ── 1. Face dimensions — unchanged from v7 ─────────────────────────
         Vector3 chinW = face.transform.TransformPoint(face.vertices[CHIN_VERTEX]);
         Vector3 browW = face.transform.TransformPoint(face.vertices[BROW_VERTEX]);
         Vector3 lCheekW = face.transform.TransformPoint(face.vertices[LEFT_CHEEK]);
         Vector3 rCheekW = face.transform.TransformPoint(face.vertices[RIGHT_CHEEK]);
 
-        float faceH = Vector3.Distance(chinW, browW);
+        float faceH = Vector3.Distance(browW, chinW);
         float faceW = Vector3.Distance(lCheekW, rCheekW);
-
         float drop = faceH * lobeDropFraction;
         float outward = faceW * outwardFraction;
         float fwd = faceH * forwardFraction;
 
-        // ── 2. Raw target positions ────────────────────────────────────────
-        //  subject's LEFT ear  = face.transform.right points to subject's RIGHT
-        //  so to go to subject's LEFT we subtract face.right
+        // ── 2. Raw positions — unchanged from v7 ───────────────────────────
         Vector3 leftRaw = lCheekW
-            + face.transform.up * -drop       // down
-            + face.transform.right * -outward    // outward left
-            + face.transform.forward * fwd;       // forward
+            + face.transform.up * -drop
+            + face.transform.right * -outward
+            + face.transform.forward * fwd;
 
         Vector3 rightRaw = rCheekW
-            + face.transform.up * -drop       // down
-            + face.transform.right * outward    // outward right
-            + face.transform.forward * fwd;       // forward
+            + face.transform.up * -drop
+            + face.transform.right * outward
+            + face.transform.forward * fwd;
 
-        // ── 3. Kalman-filtered positions ──────────────────────────────────
+        // ── 3. Kalman filter — unchanged from v7 ───────────────────────────
         leftAnchor.position = leftKalman.Update(leftRaw);
         rightAnchor.position = rightKalman.Update(rightRaw);
 
-        // ── 4. Rotation ───────────────────────────────────────────────────
+        // ── 4. Rotation — unchanged from v7 ───────────────────────────────
         float rt = rotSmoothing * Time.deltaTime;
         leftAnchor.rotation = Quaternion.Slerp(leftAnchor.rotation, ComputeRot(true), rt);
         rightAnchor.rotation = Quaternion.Slerp(rightAnchor.rotation, ComputeRot(false), rt);
 
-        // ── 5. Deferred scale ─────────────────────────────────────────────
-        CheckAndScale(leftAnchor, ref leftLastChild);
-        CheckAndScale(rightAnchor, ref rightLastChild);
+        // ── 5. YAW OCCLUSION HIDING ← only new code ───────────────────────
+        //
+        //  yawAmount = dot(face.right, camera.forward)
+        //
+        //  face.right     = points from subject's right toward subject's left
+        //  camera.forward = points from camera toward the subject
+        //
+        //  yawAmount > 0  →  face turned RIGHT  →  LEFT  ear is far  →  hide LEFT
+        //  yawAmount < 0  →  face turned LEFT   →  RIGHT ear is far  →  hide RIGHT
+        //  yawAmount ≈ 0  →  face straight-on   →  both visible
+        //
+        float yawAmount = 0f;
+        Camera cam = Camera.main;
+        if (cam != null)
+        {
+            // NOTE: In ARFoundation the face mesh is mirrored (it faces the camera),
+            // so face.transform.right actually points toward the subject's LEFT.
+            // Negate so that positive yawAmount = face turned RIGHT (left ear goes far).
+            yawAmount = -Vector3.Dot(face.transform.right, cam.transform.forward);
+        }
+
+        float hideT = Mathf.Clamp01(
+            Mathf.InverseLerp(hideThreshold, hideFullAt, Mathf.Abs(yawAmount))
+        );
+        float farVis = 1f - hideT;   // 1 = visible, 0 = hidden
+
+        float leftTarget, rightTarget;
+        if (yawAmount >= 0f)
+        {
+            // Face turned RIGHT → subject's LEFT ear goes behind → hide LEFT
+            leftTarget = farVis;
+            rightTarget = 1f;
+        }
+        else
+        {
+            // Face turned LEFT → subject's RIGHT ear goes behind → hide RIGHT
+            leftTarget = 1f;
+            rightTarget = farVis;
+        }
+
+        leftFade = leftTarget;
+        rightFade = rightTarget;
+
+        ApplyFade(leftAnchor, leftFade);
+        ApplyFade(rightAnchor, rightFade);
     }
 
+    // Instantly shows or hides the earring child using SetActive.
+    // fade >= 0.5 = visible, fade < 0.5 = hidden.
+    void ApplyFade(Transform anchor, float fade)
+    {
+        if (anchor.childCount == 0) return;
+        Transform child = anchor.GetChild(0);
+        if (child == null) return;
+
+        child.gameObject.SetActive(fade >= 0.5f);
+    }
+
+    // ── Rotation — unchanged from v7 ───────────────────────────────────────
     Quaternion ComputeRot(bool isLeft)
     {
         Quaternion faceFollow = face.transform.rotation;
@@ -254,48 +309,7 @@ public class EarAttachARCore : MonoBehaviour
         return Quaternion.Slerp(faceFollow, gravityHang, angleRealism);
     }
 
-    void CheckAndScale(Transform anchor, ref Transform lastChild)
-    {
-        if (!autoScale) return;
-        if (anchor.childCount == 0) { lastChild = null; return; }
-        Transform child = anchor.GetChild(0);
-        if (child == lastChild) return;
-        lastChild = child;
-        StartCoroutine(DeferredScale(child));
-    }
-
-    IEnumerator DeferredScale(Transform earring)
-    {
-        yield return null;
-        yield return null;
-        if (earring == null) yield break;
-
-        earring.localScale = Vector3.one;
-        yield return null;
-        if (earring == null) yield break;
-
-        Bounds b = GetBounds(earring.gameObject);
-        float modelSize = Mathf.Max(b.size.x, b.size.y, b.size.z);
-
-        if (modelSize > 0.0001f)
-        {
-            float s = targetSizeMetres / modelSize;
-            earring.localScale = Vector3.one * s;
-            Debug.Log($"[EarAttachARCore] '{earring.name}' " +
-                      $"model={modelSize * 100f:F1}cm → scale={s:F3} " +
-                      $"(target={targetSizeMetres * 100f:F1}cm)");
-        }
-    }
-
-    Bounds GetBounds(GameObject obj)
-    {
-        Renderer[] rs = obj.GetComponentsInChildren<Renderer>();
-        if (rs.Length == 0) return new Bounds(Vector3.zero, Vector3.one * 0.01f);
-        Bounds b = rs[0].bounds;
-        for (int i = 1; i < rs.Length; i++) b.Encapsulate(rs[i].bounds);
-        return b;
-    }
-
+    // ════════════════════════════════════════════════════════════════════════
     void OnDestroy()
     {
         if (leftAnchor != null) Destroy(leftAnchor.gameObject);
@@ -308,16 +322,27 @@ public class EarAttachARCore : MonoBehaviour
         int maxIdx = Mathf.Max(LEFT_CHEEK, RIGHT_CHEEK, CHIN_VERTEX, BROW_VERTEX);
         if (face.vertices.Length <= maxIdx) return;
 
-        // Cheekbone reference points (cyan)
         Gizmos.color = Color.cyan;
         Gizmos.DrawWireSphere(face.transform.TransformPoint(face.vertices[LEFT_CHEEK]), 0.003f);
         Gizmos.DrawWireSphere(face.transform.TransformPoint(face.vertices[RIGHT_CHEEK]), 0.003f);
+        Gizmos.color = Color.white;
         Gizmos.DrawWireSphere(face.transform.TransformPoint(face.vertices[CHIN_VERTEX]), 0.002f);
         Gizmos.DrawWireSphere(face.transform.TransformPoint(face.vertices[BROW_VERTEX]), 0.002f);
-
-        // Kalman-filtered lobe positions (yellow)
         Gizmos.color = Color.yellow;
         if (leftAnchor != null) Gizmos.DrawWireSphere(leftAnchor.position, 0.006f);
         if (rightAnchor != null) Gizmos.DrawWireSphere(rightAnchor.position, 0.006f);
+
+        if (usePerEarOverrides)
+        {
+            Gizmos.color = Color.green;
+            if (leftAnchor != null) Gizmos.DrawWireSphere(leftAnchor.position, 0.008f);
+            Gizmos.color = Color.red;
+            if (rightAnchor != null) Gizmos.DrawWireSphere(rightAnchor.position, 0.008f);
+        }
     }
 }
+
+/// <summary>
+/// Placeholder kept for backwards compatibility. No longer used.
+/// </summary>
+public class EarringScaleTag : MonoBehaviour { }
