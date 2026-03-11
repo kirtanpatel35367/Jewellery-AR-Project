@@ -1,0 +1,3 @@
+/Users/shivaj/Documents/GitHub/Jewellery-AR-Project/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/CMakeLists.txt
+/Users/shivaj/Documents/GitHub/Jewellery-AR-Project/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/FramePacing/CMakeLists.txt
+/Users/shivaj/Documents/GitHub/Jewellery-AR-Project/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/CMakeLists.txt

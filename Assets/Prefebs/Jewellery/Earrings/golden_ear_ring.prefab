@@ -40,10 +40,18 @@ PrefabInstance:
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4842247352466424969, guid: 5bdee6034db6c2f4d9815ac32d433837, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cbd6fcc5ccd219444b4d296209f19c3c, type: 2}
     - target: {fileID: 5522415683823228492, guid: 5bdee6034db6c2f4d9815ac32d433837, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7181636257854348158, guid: 5bdee6034db6c2f4d9815ac32d433837, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cbd6fcc5ccd219444b4d296209f19c3c, type: 2}
     - target: {fileID: 8128668236925612103, guid: 5bdee6034db6c2f4d9815ac32d433837, type: 3}
       propertyPath: m_Name
       value: golden_ear_ring
