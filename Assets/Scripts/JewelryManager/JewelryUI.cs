@@ -60,25 +60,33 @@ public class JewelryUI : MonoBehaviour
             new Vector2(0.5f, 1), new Vector2(0, 130));
         SetColor(topBar, new Color(0.1f, 0.1f, 0.15f, 1));
 
-        // Category buttons in top bar
-        float catW = 540f - 20f; // half width minus gap
+        // Category buttons in top bar - equal width using anchors
+        int catCount = Mathf.Min(jewelryManager.CategoryCount, 2);
         Color[] catColors = new Color[]
         {
             new Color(0.82f,0.62f,0.10f,1),  // gold (selected)
             new Color(0.25f,0.25f,0.35f,1)   // dark (unselected)
         };
 
-        for (int i = 0; i < Mathf.Min(jewelryManager.CategoryCount, 2); i++)
+        for (int i = 0; i < catCount; i++)
         {
             int ci = i;
             string nm = jewelryManager.categories[i].categoryName;
-            float xPos = 20f + i * (catW + 20f);
 
-            GameObject catBtn = MakeBox("CatBtn_" + i, topBar.GetComponent<RectTransform>(),
-                new Vector2(0, 0), new Vector2(0, 1),
-                new Vector2(0, 0.5f), new Vector2(catW, -20));
-            catBtn.GetComponent<RectTransform>().anchoredPosition = new Vector2(xPos, 0);
-            SetColor(catBtn, catColors[i]);
+            // Divide top bar into equal slices using anchors — works on any screen width
+            float anchorLeft = (float)i / catCount;
+            float anchorRight = (float)(i + 1) / catCount;
+
+            GameObject catBtn = new GameObject("CatBtn_" + i, typeof(RectTransform));
+            catBtn.transform.SetParent(topBar.GetComponent<RectTransform>(), false);
+            RectTransform rt = catBtn.GetComponent<RectTransform>();
+            rt.anchorMin = new Vector2(anchorLeft, 0f);
+            rt.anchorMax = new Vector2(anchorRight, 1f);
+            rt.pivot = new Vector2(0.5f, 0.5f);
+            rt.offsetMin = new Vector2(6f, 8f);   // 6px gap each side, 8px top/bottom
+            rt.offsetMax = new Vector2(-6f, -8f);
+
+            catBtn.AddComponent<Image>().color = catColors[i];
             AddText(catBtn, nm, 36, Color.white);
 
             Button b = catBtn.AddComponent<Button>();

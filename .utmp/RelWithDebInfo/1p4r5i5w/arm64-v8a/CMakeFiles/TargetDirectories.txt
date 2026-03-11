@@ -1,0 +1,8 @@
+/Users/shivaj/Documents/GitHub/Jewellery-AR-Project/.utmp/RelWithDebInfo/1p4r5i5w/arm64-v8a/CMakeFiles/edit_cache.dir
+/Users/shivaj/Documents/GitHub/Jewellery-AR-Project/.utmp/RelWithDebInfo/1p4r5i5w/arm64-v8a/CMakeFiles/rebuild_cache.dir
+/Users/shivaj/Documents/GitHub/Jewellery-AR-Project/.utmp/RelWithDebInfo/1p4r5i5w/arm64-v8a/GameActivity/CMakeFiles/game.dir
+/Users/shivaj/Documents/GitHub/Jewellery-AR-Project/.utmp/RelWithDebInfo/1p4r5i5w/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+/Users/shivaj/Documents/GitHub/Jewellery-AR-Project/.utmp/RelWithDebInfo/1p4r5i5w/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir
+/Users/shivaj/Documents/GitHub/Jewellery-AR-Project/.utmp/RelWithDebInfo/1p4r5i5w/arm64-v8a/FramePacing/CMakeFiles/swappywrapper.dir
+/Users/shivaj/Documents/GitHub/Jewellery-AR-Project/.utmp/RelWithDebInfo/1p4r5i5w/arm64-v8a/FramePacing/CMakeFiles/edit_cache.dir
+/Users/shivaj/Documents/GitHub/Jewellery-AR-Project/.utmp/RelWithDebInfo/1p4r5i5w/arm64-v8a/FramePacing/CMakeFiles/rebuild_cache.dir

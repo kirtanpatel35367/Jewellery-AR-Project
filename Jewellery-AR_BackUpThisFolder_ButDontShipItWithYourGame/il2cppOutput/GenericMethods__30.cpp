@@ -13940,7 +13940,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* RuntimePropertyInfo_StaticGett
 		return L_2;
 	}
 }
-// Method Definition Index: 35152
+// Method Definition Index: 35155
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ScriptableObject_CreateInstance_TisRuntimeObject_mC07BE383F5EF546F4191035A679930852BC19BDA_gshared (const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -14021,7 +14021,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Serialization_CloneViaSerializationInto_
 		return;
 	}
 }
-// Method Definition Index: 37285
+// Method Definition Index: 37288
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SetPropertyUtility_SetClass_TisRuntimeObject_m01819E5BCB283FECD09F412899624B68D23D408F_gshared (RuntimeObject** ___0_currentValue, RuntimeObject* ___1_newValue, const RuntimeMethod* method) 
 {
 	{
@@ -14079,7 +14079,7 @@ IL_0038:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 37283
+// Method Definition Index: 37286
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SetPropertyUtility_SetEquatableStruct_TisIl2CppFullySharedGenericAny_m46B9D6D20F31E6CD9CA6AEBE837E7124D0FCED6F_gshared (Il2CppFullySharedGenericAny* ___0_currentValue, Il2CppFullySharedGenericAny ___1_newValue, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -14114,7 +14114,7 @@ IL_0011:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 37284
+// Method Definition Index: 37287
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SetPropertyUtility_SetStruct_TisBoolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_mFC5853627DE5D7B57CA91271BE9B87C37468C5B0_gshared (bool* ___0_currentValue, bool ___1_newValue, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -14147,7 +14147,7 @@ IL_0016:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 37284
+// Method Definition Index: 37287
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SetPropertyUtility_SetStruct_TisChar_t521A6F19B456D956AF452D926C32709DC03D6B17_m092CE7A99757F329A043C95552E8B3B423FCCC3C_gshared (Il2CppChar* ___0_currentValue, Il2CppChar ___1_newValue, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -14180,7 +14180,7 @@ IL_0016:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 37284
+// Method Definition Index: 37287
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SetPropertyUtility_SetStruct_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_mE6315CF1CE5FA8F8C0132CCC9F41080CF201D0AB_gshared (int32_t* ___0_currentValue, int32_t ___1_newValue, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -14212,7 +14212,7 @@ IL_0016:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 37284
+// Method Definition Index: 37287
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SetPropertyUtility_SetStruct_TisInt32Enum_tCBAC8BA2BFF3A845FA599F303093BBBA374B6F0C_m6625DA5A19FE58FF1A311A17DF1531C080135BF4_gshared (int32_t* ___0_currentValue, int32_t ___1_newValue, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -14245,7 +14245,7 @@ IL_0016:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 37284
+// Method Definition Index: 37287
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SetPropertyUtility_SetStruct_TisSingle_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_m1695F711101D5AC5A1F63CE010CF455DDA1627CC_gshared (float* ___0_currentValue, float ___1_newValue, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -14277,7 +14277,7 @@ IL_0016:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 37284
+// Method Definition Index: 37287
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SetPropertyUtility_SetStruct_TisIl2CppFullySharedGenericStruct_m02A4246793C5C70B3AEE28C1B34979AE4CF52035_gshared (Il2CppFullySharedGenericStruct* ___0_currentValue, Il2CppFullySharedGenericStruct ___1_newValue, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -14313,7 +14313,7 @@ IL_0016:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 46286
+// Method Definition Index: 46289
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SetPropertyUtility_SetClass_TisRuntimeObject_m0AB9B5D3D06FCB75E487FA73ADF780D2A90F22DC_gshared (RuntimeObject** ___0_currentValue, RuntimeObject* ___1_newValue, const RuntimeMethod* method) 
 {
 	{
@@ -14371,7 +14371,7 @@ IL_0038:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 46285
+// Method Definition Index: 46288
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SetPropertyUtility_SetStruct_TisBoolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_m8D96C8077BB7384F3CE2D22D7F7432CD43DDDC77_gshared (bool* ___0_currentValue, bool ___1_newValue, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -14405,7 +14405,7 @@ IL_0015:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 46285
+// Method Definition Index: 46288
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SetPropertyUtility_SetStruct_TisChar_t521A6F19B456D956AF452D926C32709DC03D6B17_m18A822ED66C0EDFFF967DD2EE9848945B34E87B5_gshared (Il2CppChar* ___0_currentValue, Il2CppChar ___1_newValue, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -14439,7 +14439,7 @@ IL_0015:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 46285
+// Method Definition Index: 46288
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SetPropertyUtility_SetStruct_TisColorBlock_tDD7C62E7AFE442652FC98F8D058CE8AE6BFD7C11_m9C058D0B8344122080B4EA792AD0A489EB927099_gshared (ColorBlock_tDD7C62E7AFE442652FC98F8D058CE8AE6BFD7C11* ___0_currentValue, ColorBlock_tDD7C62E7AFE442652FC98F8D058CE8AE6BFD7C11 ___1_newValue, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -14473,7 +14473,7 @@ IL_0015:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 46285
+// Method Definition Index: 46288
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SetPropertyUtility_SetStruct_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_m2ED6D8023FCEE74764642E262219A183C576362A_gshared (int32_t* ___0_currentValue, int32_t ___1_newValue, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -14507,7 +14507,7 @@ IL_0015:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 46285
+// Method Definition Index: 46288
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SetPropertyUtility_SetStruct_TisInt32Enum_tCBAC8BA2BFF3A845FA599F303093BBBA374B6F0C_m25D8BCECB38D1D07CD8BCEDE0739A0F7EF955150_gshared (int32_t* ___0_currentValue, int32_t ___1_newValue, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -14541,7 +14541,7 @@ IL_0015:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 46285
+// Method Definition Index: 46288
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SetPropertyUtility_SetStruct_TisNavigation_t4D2E201D65749CF4E104E8AC1232CF1D6F14795C_m3647C557CFFC5721FAAC342AC4C9613B69F15F6B_gshared (Navigation_t4D2E201D65749CF4E104E8AC1232CF1D6F14795C* ___0_currentValue, Navigation_t4D2E201D65749CF4E104E8AC1232CF1D6F14795C ___1_newValue, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -14585,7 +14585,7 @@ IL_0015:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 46285
+// Method Definition Index: 46288
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SetPropertyUtility_SetStruct_TisSingle_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_mEF97FFCC58933AFC108E72BFF17641AA1305A628_gshared (float* ___0_currentValue, float ___1_newValue, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -14619,7 +14619,7 @@ IL_0015:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 46285
+// Method Definition Index: 46288
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SetPropertyUtility_SetStruct_TisSpriteState_tC8199570BE6337FB5C49347C97892B4222E5AACD_mE16632C284B9E24D8747A1D0A25CE4C3D5B102EC_gshared (SpriteState_tC8199570BE6337FB5C49347C97892B4222E5AACD* ___0_currentValue, SpriteState_tC8199570BE6337FB5C49347C97892B4222E5AACD ___1_newValue, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -14663,7 +14663,7 @@ IL_0015:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 46285
+// Method Definition Index: 46288
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SetPropertyUtility_SetStruct_TisIl2CppFullySharedGenericStruct_m53D5867BC66A8AE3BF6ED2A7515C83C8EA8DB375_gshared (Il2CppFullySharedGenericStruct* ___0_currentValue, Il2CppFullySharedGenericStruct ___1_newValue, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -17720,7 +17720,7 @@ IL_028b:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 42395
+// Method Definition Index: 42398
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StackGuard_RunOnEmptyStack_TisRuntimeObject_TisRuntimeObject_mC23100B698AB9A1B11BFEE5A72D03A209CCC0D11_gshared (StackGuard_t6F37D81861288F2039A29A88A6287419F220E849* __this, Action_2_t156C43F079E7E68155FCDCD12DC77DD11AEF7E3C* ___0_action, RuntimeObject* ___1_arg1, RuntimeObject* ___2_arg2, const RuntimeMethod* method) 
 {
 	if (!il2cpp_rgctx_is_initialized(method))
@@ -17771,7 +17771,7 @@ IL_0020:
 		return;
 	}
 }
-// Method Definition Index: 42395
+// Method Definition Index: 42398
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StackGuard_RunOnEmptyStack_TisIl2CppFullySharedGenericAny_TisIl2CppFullySharedGenericAny_m42C4C26F7654B2912AA14A7D05145D7E2CB1A73E_gshared (StackGuard_t6F37D81861288F2039A29A88A6287419F220E849* __this, Action_2_t1D42C7D8DCD2DEB7C556FB3783F0EDAFF694E5E8* ___0_action, Il2CppFullySharedGenericAny ___1_arg1, Il2CppFullySharedGenericAny ___2_arg2, const RuntimeMethod* method) 
 {
 	if (!il2cpp_rgctx_is_initialized(method))
@@ -17826,7 +17826,7 @@ IL_0020:
 		return;
 	}
 }
-// Method Definition Index: 42396
+// Method Definition Index: 42399
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* StackGuard_RunOnEmptyStackCore_TisRuntimeObject_m3E82B5CE8F4D3419B7B2926F61607D2901037384_gshared (StackGuard_t6F37D81861288F2039A29A88A6287419F220E849* __this, Func_2_tACBF5A1656250800CE861707354491F0611F6624* ___0_action, RuntimeObject* ___1_state, const RuntimeMethod* method) 
 {
 	if (!il2cpp_rgctx_is_initialized(method))
@@ -17916,7 +17916,7 @@ IL_005b:
 		return L_15;
 	}
 }
-// Method Definition Index: 42396
+// Method Definition Index: 42399
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StackGuard_RunOnEmptyStackCore_TisIl2CppFullySharedGenericAny_m99455F2A5D798D61FF08E150B8841AC821D862D4_gshared (StackGuard_t6F37D81861288F2039A29A88A6287419F220E849* __this, Func_2_t288DA7A3E2791C58B262D9D1F46FF6BB6F6D31F9* ___0_action, RuntimeObject* ___1_state, Il2CppFullySharedGenericAny* il2cppRetVal, const RuntimeMethod* method) 
 {
 	if (!il2cpp_rgctx_is_initialized(method))
@@ -25274,7 +25274,7 @@ IL_0038:
 		return L_11;
 	}
 }
-// Method Definition Index: 57582
+// Method Definition Index: 57671
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SubsystemDescriptorStore_AddDescriptorSubset_TisRuntimeObject_TisRuntimeObject_mCCBF36707A9EBC41884E99AF9701432B10CD6FE4_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* ___0_copyFrom, List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* ___1_copyTo, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -25374,7 +25374,7 @@ IL_005d:
 		return;
 	}
 }
-// Method Definition Index: 57582
+// Method Definition Index: 57671
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SubsystemDescriptorStore_AddDescriptorSubset_TisIl2CppFullySharedGenericAny_TisIl2CppFullySharedGenericAny_m87BCF82A12A3B90E9D48AD10D4A7DC916E54994A_gshared (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A* ___0_copyFrom, List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A* ___1_copyTo, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -25487,7 +25487,7 @@ IL_005d:
 		return;
 	}
 }
-// Method Definition Index: 57581
+// Method Definition Index: 57670
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SubsystemDescriptorStore_GetSubsystemDescriptors_TisRuntimeObject_mAF894EE2CC2C3001A3FB3DEF57B73DE4C2D2209B_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* ___0_descriptors, const RuntimeMethod* method) 
 {
 	if (!il2cpp_rgctx_is_initialized(method))
@@ -25512,7 +25512,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SubsystemDescriptorStore_GetSubsystemDes
 		return;
 	}
 }
-// Method Definition Index: 57581
+// Method Definition Index: 57670
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SubsystemDescriptorStore_GetSubsystemDescriptors_TisIl2CppFullySharedGenericAny_mF034C214B1E3ADA044B3DB872935AD093DC2FD28_gshared (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A* ___0_descriptors, const RuntimeMethod* method) 
 {
 	if (!il2cpp_rgctx_is_initialized(method))
@@ -25537,7 +25537,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SubsystemDescriptorStore_GetSubsystemDes
 		return;
 	}
 }
-// Method Definition Index: 57583
+// Method Definition Index: 57672
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SubsystemDescriptorStore_RegisterDescriptor_TisRuntimeObject_TisRuntimeObject_mBDA60AD66ED0AB222060E8F6FB6A09E504B7AD0E_gshared (RuntimeObject* ___0_descriptor, List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* ___1_storeInList, const RuntimeMethod* method) 
 {
 	if (!il2cpp_rgctx_is_initialized(method))
@@ -25639,7 +25639,7 @@ IL_00a0:
 		return;
 	}
 }
-// Method Definition Index: 57583
+// Method Definition Index: 57672
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SubsystemDescriptorStore_RegisterDescriptor_TisIl2CppFullySharedGenericAny_TisIl2CppFullySharedGenericAny_m54CF4787564658EB36D548FCF6EC4B67BE3E6471_gshared (Il2CppFullySharedGenericAny ___0_descriptor, List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A* ___1_storeInList, const RuntimeMethod* method) 
 {
 	if (!il2cpp_rgctx_is_initialized(method))
@@ -25751,7 +25751,7 @@ IL_00a0:
 		return;
 	}
 }
-// Method Definition Index: 57570
+// Method Definition Index: 57659
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SubsystemManager_AddSubsystemSubset_TisRuntimeObject_TisRuntimeObject_mE0A3F055C2BC001EC9DCA45BAFEE378F24D91C35_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* ___0_copyFrom, List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* ___1_copyTo, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -25851,7 +25851,7 @@ IL_005d:
 		return;
 	}
 }
-// Method Definition Index: 57570
+// Method Definition Index: 57659
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SubsystemManager_AddSubsystemSubset_TisIl2CppFullySharedGenericAny_TisIl2CppFullySharedGenericAny_mBB785EC5DC9F588641388CCA88A69D071D65DD0E_gshared (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A* ___0_copyFrom, List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A* ___1_copyTo, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -25964,7 +25964,7 @@ IL_005d:
 		return;
 	}
 }
-// Method Definition Index: 57568
+// Method Definition Index: 57657
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SubsystemManager_GetSubsystemDescriptors_TisRuntimeObject_mE17654C43AF736B8A23F50FEBBD6657CB983907F_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* ___0_descriptors, const RuntimeMethod* method) 
 {
 	if (!il2cpp_rgctx_is_initialized(method))
@@ -25979,7 +25979,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SubsystemManager_GetSubsystemDescriptors
 		return;
 	}
 }
-// Method Definition Index: 57568
+// Method Definition Index: 57657
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SubsystemManager_GetSubsystemDescriptors_TisIl2CppFullySharedGenericAny_m873C9ADB090EABC797BEE42551449D778167C205_gshared (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A* ___0_descriptors, const RuntimeMethod* method) 
 {
 	if (!il2cpp_rgctx_is_initialized(method))
@@ -25994,7 +25994,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SubsystemManager_GetSubsystemDescriptors
 		return;
 	}
 }
-// Method Definition Index: 57569
+// Method Definition Index: 57658
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SubsystemManager_GetSubsystems_TisRuntimeObject_mB633541A66EAE1B89E7819DD3468958B65E38FD4_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* ___0_subsystems, const RuntimeMethod* method) 
 {
 	if (!il2cpp_rgctx_is_initialized(method))
@@ -26019,7 +26019,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SubsystemManager_GetSubsystems_TisRuntim
 		return;
 	}
 }
-// Method Definition Index: 57569
+// Method Definition Index: 57658
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SubsystemManager_GetSubsystems_TisIl2CppFullySharedGenericAny_mAC539612EF8F2CF81BC2B36B0A2CCF20FDC8840E_gshared (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A* ___0_subsystems, const RuntimeMethod* method) 
 {
 	if (!il2cpp_rgctx_is_initialized(method))
@@ -26044,7 +26044,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SubsystemManager_GetSubsystems_TisIl2Cpp
 		return;
 	}
 }
-// Method Definition Index: 58254
+// Method Definition Index: 58272
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SubsystemUtils_TryGetLoadedIntegratedSubsystem_TisRuntimeObject_m0DD34D9C8F2962E3E9FCB50F6FC8578341A96FA4_gshared (RuntimeObject** ___0_subsystem, const RuntimeMethod* method) 
 {
 	if (!il2cpp_rgctx_is_initialized(method))
@@ -26060,7 +26060,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SubsystemUtils_TryGetLoadedIntegratedSub
 	RuntimeObject* G_B6_0 = NULL;
 	RuntimeObject** G_B6_1 = NULL;
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/InternalUtils/SubsystemUtils.cs:65>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/InternalUtils/SubsystemUtils.cs:65>
 		il2cpp_codegen_runtime_class_init_inline(XRGeneralSettings_t8F8D096944606B5AD845D010706BF7094ADEC8CE_il2cpp_TypeInfo_var);
 		XRGeneralSettings_t8F8D096944606B5AD845D010706BF7094ADEC8CE* L_0;
 		L_0 = XRGeneralSettings_get_Instance_m9F222F982E62E066E119754858D8E73CFE42048C_inline(NULL);
@@ -26090,16 +26090,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SubsystemUtils_TryGetLoadedIntegratedSub
 
 IL_001f:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/InternalUtils/SubsystemUtils.cs:67>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/InternalUtils/SubsystemUtils.cs:67>
 		RuntimeObject** L_5 = ___0_subsystem;
 		il2cpp_codegen_initobj(L_5, sizeof(RuntimeObject*));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/InternalUtils/SubsystemUtils.cs:68>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/InternalUtils/SubsystemUtils.cs:68>
 		return (bool)0;
 	}
 
 IL_0028:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/InternalUtils/SubsystemUtils.cs:71>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/InternalUtils/SubsystemUtils.cs:71>
 		il2cpp_codegen_runtime_class_init_inline(XRGeneralSettings_t8F8D096944606B5AD845D010706BF7094ADEC8CE_il2cpp_TypeInfo_var);
 		XRGeneralSettings_t8F8D096944606B5AD845D010706BF7094ADEC8CE* L_6;
 		L_6 = XRGeneralSettings_get_Instance_m9F222F982E62E066E119754858D8E73CFE42048C_inline(NULL);
@@ -26110,7 +26110,7 @@ IL_0028:
 		XRLoader_t80B1B1934C40561C5352ABC95D567DC2A7C9C976* L_8;
 		L_8 = XRManagerSettings_get_activeLoader_mFB3B679005792D3DF871EAA7120DD86DCA1D5DEA_inline(L_7, NULL);
 		V_0 = L_8;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/InternalUtils/SubsystemUtils.cs:72>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/InternalUtils/SubsystemUtils.cs:72>
 		RuntimeObject** L_9 = ___0_subsystem;
 		XRLoader_t80B1B1934C40561C5352ABC95D567DC2A7C9C976* L_10 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
@@ -26145,13 +26145,13 @@ IL_0053:
 	{
 		*(RuntimeObject**)G_B6_1 = G_B6_0;
 		Il2CppCodeGenWriteBarrier((void**)(RuntimeObject**)G_B6_1, (void*)G_B6_0);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/InternalUtils/SubsystemUtils.cs:73>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/InternalUtils/SubsystemUtils.cs:73>
 		RuntimeObject** L_15 = ___0_subsystem;
 		RuntimeObject* L_16 = (*(RuntimeObject**)L_15);
 		return (bool)((!(((RuntimeObject*)(RuntimeObject*)L_16) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0);
 	}
 }
-// Method Definition Index: 58253
+// Method Definition Index: 58271
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SubsystemUtils_TryGetLoadedSubsystem_TisRuntimeObject_m2DC020A5ADA660967E36DE5F7EC0A5E06CF8EA01_gshared (RuntimeObject** ___0_subsystem, const RuntimeMethod* method) 
 {
 	if (!il2cpp_rgctx_is_initialized(method))
@@ -26167,7 +26167,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SubsystemUtils_TryGetLoadedSubsystem_Tis
 	RuntimeObject* G_B6_0 = NULL;
 	RuntimeObject** G_B6_1 = NULL;
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/InternalUtils/SubsystemUtils.cs:43>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/InternalUtils/SubsystemUtils.cs:43>
 		il2cpp_codegen_runtime_class_init_inline(XRGeneralSettings_t8F8D096944606B5AD845D010706BF7094ADEC8CE_il2cpp_TypeInfo_var);
 		XRGeneralSettings_t8F8D096944606B5AD845D010706BF7094ADEC8CE* L_0;
 		L_0 = XRGeneralSettings_get_Instance_m9F222F982E62E066E119754858D8E73CFE42048C_inline(NULL);
@@ -26197,16 +26197,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SubsystemUtils_TryGetLoadedSubsystem_Tis
 
 IL_001f:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/InternalUtils/SubsystemUtils.cs:45>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/InternalUtils/SubsystemUtils.cs:45>
 		RuntimeObject** L_5 = ___0_subsystem;
 		il2cpp_codegen_initobj(L_5, sizeof(RuntimeObject*));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/InternalUtils/SubsystemUtils.cs:46>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/InternalUtils/SubsystemUtils.cs:46>
 		return (bool)0;
 	}
 
 IL_0028:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/InternalUtils/SubsystemUtils.cs:49>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/InternalUtils/SubsystemUtils.cs:49>
 		il2cpp_codegen_runtime_class_init_inline(XRGeneralSettings_t8F8D096944606B5AD845D010706BF7094ADEC8CE_il2cpp_TypeInfo_var);
 		XRGeneralSettings_t8F8D096944606B5AD845D010706BF7094ADEC8CE* L_6;
 		L_6 = XRGeneralSettings_get_Instance_m9F222F982E62E066E119754858D8E73CFE42048C_inline(NULL);
@@ -26217,7 +26217,7 @@ IL_0028:
 		XRLoader_t80B1B1934C40561C5352ABC95D567DC2A7C9C976* L_8;
 		L_8 = XRManagerSettings_get_activeLoader_mFB3B679005792D3DF871EAA7120DD86DCA1D5DEA_inline(L_7, NULL);
 		V_0 = L_8;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/InternalUtils/SubsystemUtils.cs:50>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/InternalUtils/SubsystemUtils.cs:50>
 		RuntimeObject** L_9 = ___0_subsystem;
 		XRLoader_t80B1B1934C40561C5352ABC95D567DC2A7C9C976* L_10 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
@@ -26252,33 +26252,33 @@ IL_0053:
 	{
 		*(RuntimeObject**)G_B6_1 = G_B6_0;
 		Il2CppCodeGenWriteBarrier((void**)(RuntimeObject**)G_B6_1, (void*)G_B6_0);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/InternalUtils/SubsystemUtils.cs:51>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/InternalUtils/SubsystemUtils.cs:51>
 		RuntimeObject** L_15 = ___0_subsystem;
 		RuntimeObject* L_16 = (*(RuntimeObject**)L_15);
 		return (bool)((!(((RuntimeObject*)(RuntimeObject*)L_16) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0);
 	}
 }
-// Method Definition Index: 58252
+// Method Definition Index: 58270
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SubsystemUtils_TryGetLoadedSubsystem_TisRuntimeObject_TisRuntimeObject_mB5A1FCD1D3E9F575223C41DA46FB8BC67F6E4259_gshared (RuntimeObject** ___0_subsystem, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
 	RuntimeObject* V_0 = NULL;
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/InternalUtils/SubsystemUtils.cs:25>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/InternalUtils/SubsystemUtils.cs:25>
 		bool L_0;
 		L_0 = SubsystemUtils_TryGetLoadedSubsystem_TisRuntimeObject_m2DC020A5ADA660967E36DE5F7EC0A5E06CF8EA01((&V_0), il2cpp_rgctx_method(method->rgctx_data, 0));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/InternalUtils/SubsystemUtils.cs:26>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/InternalUtils/SubsystemUtils.cs:26>
 		RuntimeObject** L_1 = ___0_subsystem;
 		RuntimeObject* L_2 = V_0;
 		*(RuntimeObject**)L_1 = ((RuntimeObject*)IsInst((RuntimeObject*)L_2, il2cpp_rgctx_data(method->rgctx_data, 4)));
 		Il2CppCodeGenWriteBarrier((void**)(RuntimeObject**)L_1, (void*)((RuntimeObject*)IsInst((RuntimeObject*)L_2, il2cpp_rgctx_data(method->rgctx_data, 4))));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/InternalUtils/SubsystemUtils.cs:27>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/InternalUtils/SubsystemUtils.cs:27>
 		RuntimeObject** L_3 = ___0_subsystem;
 		RuntimeObject* L_4 = (*(RuntimeObject**)L_3);
 		return (bool)((!(((RuntimeObject*)(RuntimeObject*)L_4) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0);
 	}
 }
-// Method Definition Index: 36690
+// Method Definition Index: 36693
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TMP_DefaultControls_AddComponent_TisRuntimeObject_mBB6602BF0A15A8C7E63D33960BD29BBEF2AACFF4_gshared (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___0_go, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -26291,7 +26291,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TMP_DefaultControls_AddCompone
 		return L_1;
 	}
 }
-// Method Definition Index: 36727
+// Method Definition Index: 36730
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TMP_Dropdown_GetOrAddComponent_TisRuntimeObject_mEE615131CB73F60A9F062D8532FA4157851DBD4D_gshared (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___0_go, const RuntimeMethod* method) 
 {
 	if (!il2cpp_rgctx_is_initialized(method))
@@ -26333,7 +26333,7 @@ IL_001b:
 		return L_6;
 	}
 }
-// Method Definition Index: 36903
+// Method Definition Index: 36906
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_FontAsset_CopyListDataToArray_TisIl2CppFullySharedGenericAny_m5A9451649F10F9D5FF203E99B8D942B5E989482E_gshared (TMP_FontAsset_t923BF2F78D7C5AC36376E168A1193B7CB4855160* __this, List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A* ___0_srcList, __Il2CppFullySharedGenericTypeU5BU5D_tCAB6D060972DD49223A834B7EEFEB9FE2D003BEC** ___1_dstArray, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -26414,7 +26414,7 @@ IL_0033:
 		return;
 	}
 }
-// Method Definition Index: 37823
+// Method Definition Index: 37826
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_Text_ResizeInternalArray_TisIl2CppFullySharedGenericAny_m6A65A1F7128F22BC9628E624F781BB1E45848003_gshared (TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* __this, __Il2CppFullySharedGenericTypeU5BU5D_tCAB6D060972DD49223A834B7EEFEB9FE2D003BEC** ___0_array, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -26435,7 +26435,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_Text_ResizeInternalArray_TisIl2CppFu
 		return;
 	}
 }
-// Method Definition Index: 37823
+// Method Definition Index: 37826
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_Text_ResizeInternalArray_TisTextProcessingElement_t112DA2367B8DCCFC278C42DC49D5C832FF415002_m6C54EF848B7A82C9661EA31AD0C00B1BB8B88D8D_gshared (TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* __this, TextProcessingElementU5BU5D_tC3E97D1672C8DB6E1F91DB2C0987D0ED9A2E7113** ___0_array, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -26456,7 +26456,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_Text_ResizeInternalArray_TisTextProc
 		return;
 	}
 }
-// Method Definition Index: 37824
+// Method Definition Index: 37827
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_Text_ResizeInternalArray_TisIl2CppFullySharedGenericAny_m631D1339B49720E1EFABDE1057357706C7DB08FD_gshared (TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* __this, __Il2CppFullySharedGenericTypeU5BU5D_tCAB6D060972DD49223A834B7EEFEB9FE2D003BEC** ___0_array, int32_t ___1_size, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -26474,7 +26474,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_Text_ResizeInternalArray_TisIl2CppFu
 		return;
 	}
 }
-// Method Definition Index: 37824
+// Method Definition Index: 37827
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_Text_ResizeInternalArray_TisTextProcessingElement_t112DA2367B8DCCFC278C42DC49D5C832FF415002_m6AB3087479D45C2F881BB0E41B7CBA1ACF82D4CD_gshared (TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* __this, TextProcessingElementU5BU5D_tC3E97D1672C8DB6E1F91DB2C0987D0ED9A2E7113** ___0_array, int32_t ___1_size, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -26492,7 +26492,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_Text_ResizeInternalArray_TisTextProc
 		return;
 	}
 }
-// Method Definition Index: 37939
+// Method Definition Index: 37942
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextInfo_Resize_TisRuntimeObject_m21A8BC59ECC3E42812AE85CF84824044450CBF01_gshared (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918** ___0_array, int32_t ___1_size, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -26531,7 +26531,7 @@ IL_0017:
 		return;
 	}
 }
-// Method Definition Index: 37939
+// Method Definition Index: 37942
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextInfo_Resize_TisTMP_LinkInfo_t9DC08E8BF8C5E8094AFF8C9FB3C251AF88B92DA6_m8FFB7A047A39033B809EBE3DC8756EF04721A6B3_gshared (TMP_LinkInfoU5BU5D_tE11BE54A5923BD2148E716289F44EA465E06536E** ___0_array, int32_t ___1_size, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -26570,7 +26570,7 @@ IL_0017:
 		return;
 	}
 }
-// Method Definition Index: 37939
+// Method Definition Index: 37942
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextInfo_Resize_TisTMP_WordInfo_t825112AF0B76E4461F9C7DD336A02CC6A090A983_mD1697D16231084129C06B47748C8793C5CDD40A5_gshared (TMP_WordInfoU5BU5D_tD1759E5A84DCCCD42B718D79E953E72A432BB4DC** ___0_array, int32_t ___1_size, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -26609,7 +26609,7 @@ IL_0017:
 		return;
 	}
 }
-// Method Definition Index: 37939
+// Method Definition Index: 37942
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextInfo_Resize_TisIl2CppFullySharedGenericAny_m6A029F02497D3D378AB2DCC88EA094CD3AEA97CF_gshared (__Il2CppFullySharedGenericTypeU5BU5D_tCAB6D060972DD49223A834B7EEFEB9FE2D003BEC** ___0_array, int32_t ___1_size, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -26648,7 +26648,7 @@ IL_0017:
 		return;
 	}
 }
-// Method Definition Index: 37940
+// Method Definition Index: 37943
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextInfo_Resize_TisRuntimeObject_mB99B4C2492D4CFF412AED934A25AC7876CE75CAC_gshared (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918** ___0_array, int32_t ___1_size, bool ___2_isBlockAllocated, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -26715,7 +26715,7 @@ IL_0024:
 		return;
 	}
 }
-// Method Definition Index: 37940
+// Method Definition Index: 37943
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextInfo_Resize_TisTMP_CharacterInfo_t8B8FF32D6AACE251F2E7835AA5BC6608D535D9F8_mF962B72CD728FA592734F9D9E31FA3176903BED4_gshared (TMP_CharacterInfoU5BU5D_t297D56FCF66DAA99D8FEA7C30F9F3926902C5B99** ___0_array, int32_t ___1_size, bool ___2_isBlockAllocated, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -26782,7 +26782,7 @@ IL_0024:
 		return;
 	}
 }
-// Method Definition Index: 37940
+// Method Definition Index: 37943
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextInfo_Resize_TisTMP_MeshInfo_t320C52212E9D672EBB5F5C18C3E0700AA33DD76B_m59D209F02F467A051FACA545D8DCF00CC8724B57_gshared (TMP_MeshInfoU5BU5D_t3549EA3B9F542558E0DB1EDFAB98C612FE4231D7** ___0_array, int32_t ___1_size, bool ___2_isBlockAllocated, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -26849,7 +26849,7 @@ IL_0024:
 		return;
 	}
 }
-// Method Definition Index: 37940
+// Method Definition Index: 37943
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextInfo_Resize_TisTMP_PageInfo_t062E56948480FAB066C168E14DC79CC83CC369B4_m2A5C121053D091AFFFBF48BA9BAF7C7FAC0FD9C5_gshared (TMP_PageInfoU5BU5D_tE3DAAA8E2E9147F97C424A9034F677A516E8DAF9** ___0_array, int32_t ___1_size, bool ___2_isBlockAllocated, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -26916,7 +26916,7 @@ IL_0024:
 		return;
 	}
 }
-// Method Definition Index: 37940
+// Method Definition Index: 37943
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextInfo_Resize_TisIl2CppFullySharedGenericAny_mC23865F57EDE30A40BA9F34E67B5829FAEEB9598_gshared (__Il2CppFullySharedGenericTypeU5BU5D_tCAB6D060972DD49223A834B7EEFEB9FE2D003BEC** ___0_array, int32_t ___1_size, bool ___2_isBlockAllocated, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -26983,7 +26983,7 @@ IL_0024:
 		return;
 	}
 }
-// Method Definition Index: 36555
+// Method Definition Index: 36558
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t TMPro_ExtensionMethods_FindInstanceID_TisRuntimeObject_m0246812121613D224A5F93E295B2E8927AD9710C_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* ___0_list, RuntimeObject* ___1_target, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -27398,7 +27398,7 @@ IL_0057:
 		return L_17;
 	}
 }
-// Method Definition Index: 44906
+// Method Definition Index: 44909
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextGeneratorUtilities_ResizeInternalArray_TisTextProcessingElement_tDCD1EAF9D54829E796F4F9726D63B205344C7698_m6782229814169B966E0C9A291CDB9DBCCB5067D4_gshared (TextProcessingElementU5BU5D_t24A1E4C8745577D794FE856B4236875595E7FD22** ___0_array, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -27416,7 +27416,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextGeneratorUtilities_ResizeInternalArr
 		return;
 	}
 }
-// Method Definition Index: 44906
+// Method Definition Index: 44909
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextGeneratorUtilities_ResizeInternalArray_TisIl2CppFullySharedGenericAny_m6DA80337B38B359E2C0ED89B0491833F56AAC546_gshared (__Il2CppFullySharedGenericTypeU5BU5D_tCAB6D060972DD49223A834B7EEFEB9FE2D003BEC** ___0_array, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -27434,7 +27434,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextGeneratorUtilities_ResizeInternalArr
 		return;
 	}
 }
-// Method Definition Index: 44907
+// Method Definition Index: 44910
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextGeneratorUtilities_ResizeInternalArray_TisTextProcessingElement_tDCD1EAF9D54829E796F4F9726D63B205344C7698_mFA5A6BF0BC051A85069AE66C8647C10B5049CE3D_gshared (TextProcessingElementU5BU5D_t24A1E4C8745577D794FE856B4236875595E7FD22** ___0_array, int32_t ___1_size, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -27449,7 +27449,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextGeneratorUtilities_ResizeInternalArr
 		return;
 	}
 }
-// Method Definition Index: 44907
+// Method Definition Index: 44910
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextGeneratorUtilities_ResizeInternalArray_TisIl2CppFullySharedGenericAny_mCF3CE030276460690AC28FBCC7DAAD9337DAD265_gshared (__Il2CppFullySharedGenericTypeU5BU5D_tCAB6D060972DD49223A834B7EEFEB9FE2D003BEC** ___0_array, int32_t ___1_size, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -27464,7 +27464,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextGeneratorUtilities_ResizeInternalArr
 		return;
 	}
 }
-// Method Definition Index: 45002
+// Method Definition Index: 45005
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextHandle_InitArray_TisRuntimeObject_mB230DAC5386E2D5AC4418C4208EE6D030573B250_gshared (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918** ___0_array, Func_1_tD5C081AE11746B200C711DD48DBEB00E3A9276D4* ___1_createInstance, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -27530,7 +27530,7 @@ IL_003c:
 		return;
 	}
 }
-// Method Definition Index: 45002
+// Method Definition Index: 45005
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextHandle_InitArray_TisIl2CppFullySharedGenericAny_mB6E6F4CBD320F8B2398EAFC5D029728B0CF56DFF_gshared (__Il2CppFullySharedGenericTypeU5BU5D_tCAB6D060972DD49223A834B7EEFEB9FE2D003BEC** ___0_array, Func_1_tBB8824FA8746333BFFF3AB3CE4A41B58450AF431* ___1_createInstance, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -27598,7 +27598,7 @@ IL_003c:
 		return;
 	}
 }
-// Method Definition Index: 45100
+// Method Definition Index: 45103
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextInfo_Resize_TisLinkInfo_tE85DDAFDFBDA635E6405C88EE4FD5941A9243DD8_m69E901740AA5A1BA1DB56BF6E903819E8360A6F9_gshared (LinkInfoU5BU5D_tB7EB23E47AF29CCBEC884F9D0DB95BC97F62AE51** ___0_array, int32_t ___1_size, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -27634,7 +27634,7 @@ IL_0018:
 		return;
 	}
 }
-// Method Definition Index: 45100
+// Method Definition Index: 45103
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextInfo_Resize_TisWordInfo_tA466206097891A5A2590896EE164AFC406EB060D_m979FAC74E1ACB2C4A59ED1F2C66707E97688D48D_gshared (WordInfoU5BU5D_tAD74C9720883D7BB229A20FFAE9EFD2CF9963F7B** ___0_array, int32_t ___1_size, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -27670,7 +27670,7 @@ IL_0018:
 		return;
 	}
 }
-// Method Definition Index: 45100
+// Method Definition Index: 45103
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextInfo_Resize_TisIl2CppFullySharedGenericAny_m2C45260716FF60199EEDC9435E8545C1A8AC5E27_gshared (__Il2CppFullySharedGenericTypeU5BU5D_tCAB6D060972DD49223A834B7EEFEB9FE2D003BEC** ___0_array, int32_t ___1_size, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -27706,7 +27706,7 @@ IL_0018:
 		return;
 	}
 }
-// Method Definition Index: 45101
+// Method Definition Index: 45104
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextInfo_Resize_TisMeshInfo_tE55C4A8846CC2C399CCC3FE989476D987B86AB2F_m12C1214F381EE3DE1ABDDCD67922D47344C093CA_gshared (MeshInfoU5BU5D_t3DF8B75BF4A213334EED197AD25E432212894AC6** ___0_array, int32_t ___1_size, bool ___2_isBlockAllocated, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -27777,7 +27777,7 @@ IL_0034:
 		return;
 	}
 }
-// Method Definition Index: 45101
+// Method Definition Index: 45104
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextInfo_Resize_TisTextElementInfo_tDD7A12E319505510E0B350E342BD55F32AB5F976_mA6966A5218C8D7A4AD10F39BA419E598E283C4DD_gshared (TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E** ___0_array, int32_t ___1_size, bool ___2_isBlockAllocated, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -27848,7 +27848,7 @@ IL_0034:
 		return;
 	}
 }
-// Method Definition Index: 45101
+// Method Definition Index: 45104
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextInfo_Resize_TisIl2CppFullySharedGenericAny_m7096ECDB11995E143D4B39166A45E07091C6D15B_gshared (__Il2CppFullySharedGenericTypeU5BU5D_tCAB6D060972DD49223A834B7EEFEB9FE2D003BEC** ___0_array, int32_t ___1_size, bool ___2_isBlockAllocated, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -27919,7 +27919,7 @@ IL_0034:
 		return;
 	}
 }
-// Method Definition Index: 34022
+// Method Definition Index: 34024
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NativeArray_1_t81F55263465517B73C455D3400CF67B4BADD85CF Texture2D_GetRawTextureData_TisByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_m225198C8CEB0AB84CF9FE0B40337778AA4C75608_gshared (Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* __this, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -27994,7 +27994,7 @@ IL_0056:
 		return L_14;
 	}
 }
-// Method Definition Index: 34022
+// Method Definition Index: 34024
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NativeArray_1_t6AE72D578EEA854475A487A2795F8C90FD258D8D Texture2D_GetRawTextureData_TisColor_tD001788D726C3A7F1379BEED0260B9591F440C1F_m3B133F38C7E43266DCD025BC599C24C187E779B3_gshared (Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* __this, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -28069,7 +28069,7 @@ IL_0056:
 		return L_14;
 	}
 }
-// Method Definition Index: 34022
+// Method Definition Index: 34024
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NativeArray_1_t0783F5E3C7AF6C600A6A20DA7A32D82CA836528D Texture2D_GetRawTextureData_TisColor32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B_m3F258FE3486B29D798DCFECF41E9845382EF5CC2_gshared (Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* __this, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -28144,7 +28144,7 @@ IL_0056:
 		return L_14;
 	}
 }
-// Method Definition Index: 34022
+// Method Definition Index: 34024
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NativeArray_1_tDB8B8DC66CC8E16ED6D9A8C75D2C1AFC80AC1E18 Texture2D_GetRawTextureData_TisIl2CppFullySharedGenericStruct_mDC6FE57DC7D62BAC05E6231541767FA81448490E_gshared (Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* __this, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -32522,7 +32522,7 @@ IL_0019:
 		return;
 	}
 }
-// Method Definition Index: 49576
+// Method Definition Index: 49579
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TrackableSpawner_CreateOrUpdateTrackable_TisRuntimeObject_TisBoundedPlane_tF51C315A8961EB42F0A1B60D47158646E5AF75CE_m507BEA2341C376B017710E46980ACCC4E3EC6277_gshared (TrackableSpawner_tD75278064758420D002C75B533FA81BA908494D8* __this, BoundedPlane_tF51C315A8961EB42F0A1B60D47158646E5AF75CE ___0_sessionRelativeData, GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___1_prefab, String_t* ___2_namePrefix, const RuntimeMethod* method) 
 {
 	if (!il2cpp_rgctx_is_initialized(method))
@@ -32546,8 +32546,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TrackableSpawner_CreateOrUpdat
 	bool V_9 = false;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* V_10 = NULL;
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:114>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:115>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:114>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:115>
 		Dictionary_2_tE8E66DC1159FA14A3DAAE3F49280A03069F81739* L_0 = __this->___m_EntriesByTrackableId;
 		il2cpp_codegen_runtime_class_init_inline(BoundedPlane_tF51C315A8961EB42F0A1B60D47158646E5AF75CE_il2cpp_TypeInfo_var);
 		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_1;
@@ -32574,24 +32574,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TrackableSpawner_CreateOrUpdat
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:117>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:117>
 		TrackableEntry_t7D1AD6C6EACF16F18BBAB5A83B474205B2FBBCA5* L_7 = V_1;
 		NullCheck(L_7);
 		ARTrackable_t1D98417758C08E98A333CDEC0C2C1688CE10B2E0* L_8;
 		L_8 = TrackableEntry_get_trackable_m089EC3F21809C1089F181A2DDEF2FABFEB6FEF8B_inline(L_7, NULL);
 		V_7 = ((RuntimeObject*)IsInst((RuntimeObject*)L_8, il2cpp_rgctx_data(method->rgctx_data, 3)));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:118>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:118>
 		RuntimeObject* L_9 = V_7;
 		BoundedPlane_tF51C315A8961EB42F0A1B60D47158646E5AF75CE L_10 = ___0_sessionRelativeData;
 		TrackableSpawner_SetSessionRelativeDataAndPose_TisRuntimeObject_TisBoundedPlane_tF51C315A8961EB42F0A1B60D47158646E5AF75CE_mDB2A65DD881F4CB410B2950EE22FF3E5EBC8FEF3(__this, L_9, L_10, il2cpp_rgctx_method(method->rgctx_data, 4));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:119>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:119>
 		RuntimeObject* L_11 = V_7;
 		return L_11;
 	}
 
 IL_004e:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:123>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:123>
 		String_t* L_12 = ___2_namePrefix;
 		il2cpp_codegen_runtime_class_init_inline(BoundedPlane_tF51C315A8961EB42F0A1B60D47158646E5AF75CE_il2cpp_TypeInfo_var);
 		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_13;
@@ -32599,7 +32599,7 @@ IL_004e:
 		String_t* L_14;
 		L_14 = TrackableSpawner_GenerateTrackableName_m855A5BCC16BC450785E43319BB0B2BC4F59566AA(L_12, L_13, NULL);
 		V_3 = L_14;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:127>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:127>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_15 = ___1_prefab;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_16;
@@ -32610,16 +32610,16 @@ IL_004e:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:129>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:129>
 		String_t* L_17 = V_3;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_18 = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)il2cpp_codegen_object_new(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var);
 		GameObject__ctor_m37D512B05D292F954792225E6C6EEE95293A9B88(L_18, L_17, NULL);
 		V_8 = L_18;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:130>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:130>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_19 = V_8;
 		NullCheck(L_19);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_19, (bool)0, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:131>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:131>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_20 = V_8;
 		NullCheck(L_20);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_21;
@@ -32630,36 +32630,36 @@ IL_004e:
 		L_23 = XROrigin_get_TrackablesParent_m6F7933DF03A5376C31D328F865F77D28EEC18E9C_inline(L_22, NULL);
 		NullCheck(L_21);
 		Transform_set_parent_m9BD5E563B539DD5BEC342736B03F97B38A243234(L_21, L_23, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:132>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:132>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_24 = V_8;
 		BoundedPlane_tF51C315A8961EB42F0A1B60D47158646E5AF75CE L_25 = ___0_sessionRelativeData;
 		RuntimeObject* L_26;
 		L_26 = TrackableSpawner_GetOrAddTrackableComponent_TisRuntimeObject_TisBoundedPlane_tF51C315A8961EB42F0A1B60D47158646E5AF75CE_m3A9D515772B1F59F4C6CD7B4445D8E232D4D5231(__this, L_24, L_25, il2cpp_rgctx_method(method->rgctx_data, 5));
 		V_2 = L_26;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:133>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:133>
 		RuntimeObject* L_27 = V_2;
 		NullCheck((Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)L_27);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_28;
 		L_28 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B((Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)L_27, NULL);
 		V_4 = L_28;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:134>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:134>
 		V_5 = (bool)1;
 		goto IL_00f2;
 	}
 
 IL_00ae:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:138>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:138>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_29 = ___1_prefab;
 		NullCheck(L_29);
 		bool L_30;
 		L_30 = GameObject_get_activeSelf_m4F3E5240E138B66AAA080EA30759A3D0517DA368(L_29, NULL);
 		V_9 = L_30;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:139>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:139>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_31 = ___1_prefab;
 		NullCheck(L_31);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_31, (bool)0, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:140>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:140>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_32 = ___1_prefab;
 		XROrigin_t5E534A6D886991AF3C1C64127E19A3A510009CFE* L_33 = __this->___m_Origin;
 		NullCheck(L_33);
@@ -32669,55 +32669,55 @@ IL_00ae:
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_35;
 		L_35 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m58C654F1134533E29502629CA67645682B404811(L_32, L_34, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m58C654F1134533E29502629CA67645682B404811_RuntimeMethod_var);
 		V_10 = L_35;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:141>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:141>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_36 = V_10;
 		String_t* L_37 = V_3;
 		NullCheck((Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)L_36);
 		Object_set_name_mC79E6DC8FFD72479C90F0C4CC7F42A0FEAF5AE47((Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)L_36, L_37, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:142>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:142>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_38 = ___1_prefab;
 		bool L_39 = V_9;
 		NullCheck(L_38);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_38, L_39, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:143>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:144>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:143>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:144>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_40 = V_10;
 		BoundedPlane_tF51C315A8961EB42F0A1B60D47158646E5AF75CE L_41 = ___0_sessionRelativeData;
 		RuntimeObject* L_42;
 		L_42 = TrackableSpawner_GetOrAddTrackableComponent_TisRuntimeObject_TisBoundedPlane_tF51C315A8961EB42F0A1B60D47158646E5AF75CE_m3A9D515772B1F59F4C6CD7B4445D8E232D4D5231(__this, L_40, L_41, il2cpp_rgctx_method(method->rgctx_data, 5));
 		V_2 = L_42;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:145>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:145>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_43 = V_10;
 		V_4 = L_43;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:146>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:146>
 		bool L_44 = V_9;
 		V_5 = L_44;
 	}
 
 IL_00f2:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:149>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:149>
 		RuntimeObject* L_45 = V_2;
 		TrackableEntry_t7D1AD6C6EACF16F18BBAB5A83B474205B2FBBCA5* L_46;
 		L_46 = TrackableSpawner_RegisterCreatedTrackable_m7529E9B30FCF63A3EAFD364D76902D72879FE2CD(__this, (ARTrackable_t1D98417758C08E98A333CDEC0C2C1688CE10B2E0*)L_45, NULL);
 		V_6 = L_46;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:150>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:150>
 		TrackableEntry_t7D1AD6C6EACF16F18BBAB5A83B474205B2FBBCA5* L_47 = V_6;
 		TrackableSpawner_PopulateParent_m5BA222DB83B3DC546169FCFA8A5D811BD8E4C400(__this, L_47, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:151>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:151>
 		TrackableEntry_t7D1AD6C6EACF16F18BBAB5A83B474205B2FBBCA5* L_48 = V_6;
 		TrackableSpawner_ResolveOrphans_m5597D8ABF711B2141D5B2AEAF4943423EBB13EF8(__this, L_48, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:153>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:153>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_49 = V_4;
 		bool L_50 = V_5;
 		NullCheck(L_49);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_49, L_50, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:154>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:154>
 		RuntimeObject* L_51 = V_2;
 		return L_51;
 	}
 }
-// Method Definition Index: 49576
+// Method Definition Index: 49579
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TrackableSpawner_CreateOrUpdateTrackable_TisRuntimeObject_TisXRAnchor_tDD427E66CAA09DE7B058EA76223EF7DC3880FE82_m70346BC443176DC709F333A69E61A1FBBF51719A_gshared (TrackableSpawner_tD75278064758420D002C75B533FA81BA908494D8* __this, XRAnchor_tDD427E66CAA09DE7B058EA76223EF7DC3880FE82 ___0_sessionRelativeData, GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___1_prefab, String_t* ___2_namePrefix, const RuntimeMethod* method) 
 {
 	if (!il2cpp_rgctx_is_initialized(method))
@@ -32741,8 +32741,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TrackableSpawner_CreateOrUpdat
 	bool V_9 = false;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* V_10 = NULL;
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:114>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:115>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:114>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:115>
 		Dictionary_2_tE8E66DC1159FA14A3DAAE3F49280A03069F81739* L_0 = __this->___m_EntriesByTrackableId;
 		il2cpp_codegen_runtime_class_init_inline(XRAnchor_tDD427E66CAA09DE7B058EA76223EF7DC3880FE82_il2cpp_TypeInfo_var);
 		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_1;
@@ -32769,24 +32769,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TrackableSpawner_CreateOrUpdat
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:117>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:117>
 		TrackableEntry_t7D1AD6C6EACF16F18BBAB5A83B474205B2FBBCA5* L_7 = V_1;
 		NullCheck(L_7);
 		ARTrackable_t1D98417758C08E98A333CDEC0C2C1688CE10B2E0* L_8;
 		L_8 = TrackableEntry_get_trackable_m089EC3F21809C1089F181A2DDEF2FABFEB6FEF8B_inline(L_7, NULL);
 		V_7 = ((RuntimeObject*)IsInst((RuntimeObject*)L_8, il2cpp_rgctx_data(method->rgctx_data, 3)));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:118>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:118>
 		RuntimeObject* L_9 = V_7;
 		XRAnchor_tDD427E66CAA09DE7B058EA76223EF7DC3880FE82 L_10 = ___0_sessionRelativeData;
 		TrackableSpawner_SetSessionRelativeDataAndPose_TisRuntimeObject_TisXRAnchor_tDD427E66CAA09DE7B058EA76223EF7DC3880FE82_m20FC3BCAA44E998E186153265EA249C3B38BDC35(__this, L_9, L_10, il2cpp_rgctx_method(method->rgctx_data, 4));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:119>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:119>
 		RuntimeObject* L_11 = V_7;
 		return L_11;
 	}
 
 IL_004e:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:123>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:123>
 		String_t* L_12 = ___2_namePrefix;
 		il2cpp_codegen_runtime_class_init_inline(XRAnchor_tDD427E66CAA09DE7B058EA76223EF7DC3880FE82_il2cpp_TypeInfo_var);
 		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_13;
@@ -32794,7 +32794,7 @@ IL_004e:
 		String_t* L_14;
 		L_14 = TrackableSpawner_GenerateTrackableName_m855A5BCC16BC450785E43319BB0B2BC4F59566AA(L_12, L_13, NULL);
 		V_3 = L_14;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:127>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:127>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_15 = ___1_prefab;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_16;
@@ -32805,16 +32805,16 @@ IL_004e:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:129>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:129>
 		String_t* L_17 = V_3;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_18 = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)il2cpp_codegen_object_new(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var);
 		GameObject__ctor_m37D512B05D292F954792225E6C6EEE95293A9B88(L_18, L_17, NULL);
 		V_8 = L_18;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:130>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:130>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_19 = V_8;
 		NullCheck(L_19);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_19, (bool)0, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:131>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:131>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_20 = V_8;
 		NullCheck(L_20);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_21;
@@ -32825,36 +32825,36 @@ IL_004e:
 		L_23 = XROrigin_get_TrackablesParent_m6F7933DF03A5376C31D328F865F77D28EEC18E9C_inline(L_22, NULL);
 		NullCheck(L_21);
 		Transform_set_parent_m9BD5E563B539DD5BEC342736B03F97B38A243234(L_21, L_23, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:132>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:132>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_24 = V_8;
 		XRAnchor_tDD427E66CAA09DE7B058EA76223EF7DC3880FE82 L_25 = ___0_sessionRelativeData;
 		RuntimeObject* L_26;
 		L_26 = TrackableSpawner_GetOrAddTrackableComponent_TisRuntimeObject_TisXRAnchor_tDD427E66CAA09DE7B058EA76223EF7DC3880FE82_m29A21790A1CC27A01FF882162252071FA4CDB050(__this, L_24, L_25, il2cpp_rgctx_method(method->rgctx_data, 5));
 		V_2 = L_26;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:133>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:133>
 		RuntimeObject* L_27 = V_2;
 		NullCheck((Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)L_27);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_28;
 		L_28 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B((Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)L_27, NULL);
 		V_4 = L_28;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:134>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:134>
 		V_5 = (bool)1;
 		goto IL_00f2;
 	}
 
 IL_00ae:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:138>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:138>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_29 = ___1_prefab;
 		NullCheck(L_29);
 		bool L_30;
 		L_30 = GameObject_get_activeSelf_m4F3E5240E138B66AAA080EA30759A3D0517DA368(L_29, NULL);
 		V_9 = L_30;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:139>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:139>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_31 = ___1_prefab;
 		NullCheck(L_31);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_31, (bool)0, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:140>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:140>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_32 = ___1_prefab;
 		XROrigin_t5E534A6D886991AF3C1C64127E19A3A510009CFE* L_33 = __this->___m_Origin;
 		NullCheck(L_33);
@@ -32864,55 +32864,55 @@ IL_00ae:
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_35;
 		L_35 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m58C654F1134533E29502629CA67645682B404811(L_32, L_34, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m58C654F1134533E29502629CA67645682B404811_RuntimeMethod_var);
 		V_10 = L_35;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:141>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:141>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_36 = V_10;
 		String_t* L_37 = V_3;
 		NullCheck((Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)L_36);
 		Object_set_name_mC79E6DC8FFD72479C90F0C4CC7F42A0FEAF5AE47((Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)L_36, L_37, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:142>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:142>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_38 = ___1_prefab;
 		bool L_39 = V_9;
 		NullCheck(L_38);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_38, L_39, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:143>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:144>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:143>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:144>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_40 = V_10;
 		XRAnchor_tDD427E66CAA09DE7B058EA76223EF7DC3880FE82 L_41 = ___0_sessionRelativeData;
 		RuntimeObject* L_42;
 		L_42 = TrackableSpawner_GetOrAddTrackableComponent_TisRuntimeObject_TisXRAnchor_tDD427E66CAA09DE7B058EA76223EF7DC3880FE82_m29A21790A1CC27A01FF882162252071FA4CDB050(__this, L_40, L_41, il2cpp_rgctx_method(method->rgctx_data, 5));
 		V_2 = L_42;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:145>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:145>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_43 = V_10;
 		V_4 = L_43;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:146>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:146>
 		bool L_44 = V_9;
 		V_5 = L_44;
 	}
 
 IL_00f2:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:149>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:149>
 		RuntimeObject* L_45 = V_2;
 		TrackableEntry_t7D1AD6C6EACF16F18BBAB5A83B474205B2FBBCA5* L_46;
 		L_46 = TrackableSpawner_RegisterCreatedTrackable_m7529E9B30FCF63A3EAFD364D76902D72879FE2CD(__this, (ARTrackable_t1D98417758C08E98A333CDEC0C2C1688CE10B2E0*)L_45, NULL);
 		V_6 = L_46;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:150>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:150>
 		TrackableEntry_t7D1AD6C6EACF16F18BBAB5A83B474205B2FBBCA5* L_47 = V_6;
 		TrackableSpawner_PopulateParent_m5BA222DB83B3DC546169FCFA8A5D811BD8E4C400(__this, L_47, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:151>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:151>
 		TrackableEntry_t7D1AD6C6EACF16F18BBAB5A83B474205B2FBBCA5* L_48 = V_6;
 		TrackableSpawner_ResolveOrphans_m5597D8ABF711B2141D5B2AEAF4943423EBB13EF8(__this, L_48, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:153>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:153>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_49 = V_4;
 		bool L_50 = V_5;
 		NullCheck(L_49);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_49, L_50, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:154>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:154>
 		RuntimeObject* L_51 = V_2;
 		return L_51;
 	}
 }
-// Method Definition Index: 49576
+// Method Definition Index: 49579
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TrackableSpawner_CreateOrUpdateTrackable_TisRuntimeObject_TisXRBoundingBox_tF12DE2409AC158AA9821C5F37C76716468FA6F85_mEF837BE5CD662123C00EB33DE80C189E7B9521AF_gshared (TrackableSpawner_tD75278064758420D002C75B533FA81BA908494D8* __this, XRBoundingBox_tF12DE2409AC158AA9821C5F37C76716468FA6F85 ___0_sessionRelativeData, GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___1_prefab, String_t* ___2_namePrefix, const RuntimeMethod* method) 
 {
 	if (!il2cpp_rgctx_is_initialized(method))
@@ -32935,8 +32935,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TrackableSpawner_CreateOrUpdat
 	bool V_9 = false;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* V_10 = NULL;
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:114>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:115>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:114>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:115>
 		Dictionary_2_tE8E66DC1159FA14A3DAAE3F49280A03069F81739* L_0 = __this->___m_EntriesByTrackableId;
 		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_1;
 		L_1 = XRBoundingBox_get_trackableId_mF5CD5DB3F259DE8F7153195F3AF90638D741867A_inline((&___0_sessionRelativeData), il2cpp_rgctx_method(method->rgctx_data, 1));
@@ -32962,31 +32962,31 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TrackableSpawner_CreateOrUpdat
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:117>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:117>
 		TrackableEntry_t7D1AD6C6EACF16F18BBAB5A83B474205B2FBBCA5* L_7 = V_1;
 		NullCheck(L_7);
 		ARTrackable_t1D98417758C08E98A333CDEC0C2C1688CE10B2E0* L_8;
 		L_8 = TrackableEntry_get_trackable_m089EC3F21809C1089F181A2DDEF2FABFEB6FEF8B_inline(L_7, NULL);
 		V_7 = ((RuntimeObject*)IsInst((RuntimeObject*)L_8, il2cpp_rgctx_data(method->rgctx_data, 3)));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:118>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:118>
 		RuntimeObject* L_9 = V_7;
 		XRBoundingBox_tF12DE2409AC158AA9821C5F37C76716468FA6F85 L_10 = ___0_sessionRelativeData;
 		TrackableSpawner_SetSessionRelativeDataAndPose_TisRuntimeObject_TisXRBoundingBox_tF12DE2409AC158AA9821C5F37C76716468FA6F85_m41127AFDC422E9A20E2FB75BE1A3B97F3200B675(__this, L_9, L_10, il2cpp_rgctx_method(method->rgctx_data, 4));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:119>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:119>
 		RuntimeObject* L_11 = V_7;
 		return L_11;
 	}
 
 IL_004e:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:123>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:123>
 		String_t* L_12 = ___2_namePrefix;
 		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_13;
 		L_13 = XRBoundingBox_get_trackableId_mF5CD5DB3F259DE8F7153195F3AF90638D741867A_inline((&___0_sessionRelativeData), il2cpp_rgctx_method(method->rgctx_data, 1));
 		String_t* L_14;
 		L_14 = TrackableSpawner_GenerateTrackableName_m855A5BCC16BC450785E43319BB0B2BC4F59566AA(L_12, L_13, NULL);
 		V_3 = L_14;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:127>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:127>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_15 = ___1_prefab;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_16;
@@ -32997,16 +32997,16 @@ IL_004e:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:129>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:129>
 		String_t* L_17 = V_3;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_18 = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)il2cpp_codegen_object_new(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var);
 		GameObject__ctor_m37D512B05D292F954792225E6C6EEE95293A9B88(L_18, L_17, NULL);
 		V_8 = L_18;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:130>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:130>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_19 = V_8;
 		NullCheck(L_19);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_19, (bool)0, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:131>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:131>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_20 = V_8;
 		NullCheck(L_20);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_21;
@@ -33017,36 +33017,36 @@ IL_004e:
 		L_23 = XROrigin_get_TrackablesParent_m6F7933DF03A5376C31D328F865F77D28EEC18E9C_inline(L_22, NULL);
 		NullCheck(L_21);
 		Transform_set_parent_m9BD5E563B539DD5BEC342736B03F97B38A243234(L_21, L_23, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:132>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:132>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_24 = V_8;
 		XRBoundingBox_tF12DE2409AC158AA9821C5F37C76716468FA6F85 L_25 = ___0_sessionRelativeData;
 		RuntimeObject* L_26;
 		L_26 = TrackableSpawner_GetOrAddTrackableComponent_TisRuntimeObject_TisXRBoundingBox_tF12DE2409AC158AA9821C5F37C76716468FA6F85_mA47FDDC0936C08F3984C57B1816F01BB9AB480B3(__this, L_24, L_25, il2cpp_rgctx_method(method->rgctx_data, 5));
 		V_2 = L_26;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:133>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:133>
 		RuntimeObject* L_27 = V_2;
 		NullCheck((Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)L_27);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_28;
 		L_28 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B((Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)L_27, NULL);
 		V_4 = L_28;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:134>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:134>
 		V_5 = (bool)1;
 		goto IL_00f2;
 	}
 
 IL_00ae:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:138>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:138>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_29 = ___1_prefab;
 		NullCheck(L_29);
 		bool L_30;
 		L_30 = GameObject_get_activeSelf_m4F3E5240E138B66AAA080EA30759A3D0517DA368(L_29, NULL);
 		V_9 = L_30;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:139>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:139>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_31 = ___1_prefab;
 		NullCheck(L_31);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_31, (bool)0, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:140>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:140>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_32 = ___1_prefab;
 		XROrigin_t5E534A6D886991AF3C1C64127E19A3A510009CFE* L_33 = __this->___m_Origin;
 		NullCheck(L_33);
@@ -33056,55 +33056,55 @@ IL_00ae:
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_35;
 		L_35 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m58C654F1134533E29502629CA67645682B404811(L_32, L_34, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m58C654F1134533E29502629CA67645682B404811_RuntimeMethod_var);
 		V_10 = L_35;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:141>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:141>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_36 = V_10;
 		String_t* L_37 = V_3;
 		NullCheck((Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)L_36);
 		Object_set_name_mC79E6DC8FFD72479C90F0C4CC7F42A0FEAF5AE47((Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)L_36, L_37, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:142>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:142>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_38 = ___1_prefab;
 		bool L_39 = V_9;
 		NullCheck(L_38);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_38, L_39, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:143>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:144>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:143>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:144>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_40 = V_10;
 		XRBoundingBox_tF12DE2409AC158AA9821C5F37C76716468FA6F85 L_41 = ___0_sessionRelativeData;
 		RuntimeObject* L_42;
 		L_42 = TrackableSpawner_GetOrAddTrackableComponent_TisRuntimeObject_TisXRBoundingBox_tF12DE2409AC158AA9821C5F37C76716468FA6F85_mA47FDDC0936C08F3984C57B1816F01BB9AB480B3(__this, L_40, L_41, il2cpp_rgctx_method(method->rgctx_data, 5));
 		V_2 = L_42;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:145>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:145>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_43 = V_10;
 		V_4 = L_43;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:146>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:146>
 		bool L_44 = V_9;
 		V_5 = L_44;
 	}
 
 IL_00f2:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:149>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:149>
 		RuntimeObject* L_45 = V_2;
 		TrackableEntry_t7D1AD6C6EACF16F18BBAB5A83B474205B2FBBCA5* L_46;
 		L_46 = TrackableSpawner_RegisterCreatedTrackable_m7529E9B30FCF63A3EAFD364D76902D72879FE2CD(__this, (ARTrackable_t1D98417758C08E98A333CDEC0C2C1688CE10B2E0*)L_45, NULL);
 		V_6 = L_46;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:150>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:150>
 		TrackableEntry_t7D1AD6C6EACF16F18BBAB5A83B474205B2FBBCA5* L_47 = V_6;
 		TrackableSpawner_PopulateParent_m5BA222DB83B3DC546169FCFA8A5D811BD8E4C400(__this, L_47, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:151>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:151>
 		TrackableEntry_t7D1AD6C6EACF16F18BBAB5A83B474205B2FBBCA5* L_48 = V_6;
 		TrackableSpawner_ResolveOrphans_m5597D8ABF711B2141D5B2AEAF4943423EBB13EF8(__this, L_48, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:153>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:153>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_49 = V_4;
 		bool L_50 = V_5;
 		NullCheck(L_49);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_49, L_50, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:154>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:154>
 		RuntimeObject* L_51 = V_2;
 		return L_51;
 	}
 }
-// Method Definition Index: 49576
+// Method Definition Index: 49579
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TrackableSpawner_CreateOrUpdateTrackable_TisRuntimeObject_TisXREnvironmentProbe_tAA657FAB648E2599B519F9FD66A1CEED65034DD9_m86BFC79AB245975F4C3B6864AA4ECE2ABC8E255E_gshared (TrackableSpawner_tD75278064758420D002C75B533FA81BA908494D8* __this, XREnvironmentProbe_tAA657FAB648E2599B519F9FD66A1CEED65034DD9 ___0_sessionRelativeData, GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___1_prefab, String_t* ___2_namePrefix, const RuntimeMethod* method) 
 {
 	if (!il2cpp_rgctx_is_initialized(method))
@@ -33128,8 +33128,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TrackableSpawner_CreateOrUpdat
 	bool V_9 = false;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* V_10 = NULL;
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:114>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:115>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:114>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:115>
 		Dictionary_2_tE8E66DC1159FA14A3DAAE3F49280A03069F81739* L_0 = __this->___m_EntriesByTrackableId;
 		il2cpp_codegen_runtime_class_init_inline(XREnvironmentProbe_tAA657FAB648E2599B519F9FD66A1CEED65034DD9_il2cpp_TypeInfo_var);
 		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_1;
@@ -33156,24 +33156,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TrackableSpawner_CreateOrUpdat
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:117>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:117>
 		TrackableEntry_t7D1AD6C6EACF16F18BBAB5A83B474205B2FBBCA5* L_7 = V_1;
 		NullCheck(L_7);
 		ARTrackable_t1D98417758C08E98A333CDEC0C2C1688CE10B2E0* L_8;
 		L_8 = TrackableEntry_get_trackable_m089EC3F21809C1089F181A2DDEF2FABFEB6FEF8B_inline(L_7, NULL);
 		V_7 = ((RuntimeObject*)IsInst((RuntimeObject*)L_8, il2cpp_rgctx_data(method->rgctx_data, 3)));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:118>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:118>
 		RuntimeObject* L_9 = V_7;
 		XREnvironmentProbe_tAA657FAB648E2599B519F9FD66A1CEED65034DD9 L_10 = ___0_sessionRelativeData;
 		TrackableSpawner_SetSessionRelativeDataAndPose_TisRuntimeObject_TisXREnvironmentProbe_tAA657FAB648E2599B519F9FD66A1CEED65034DD9_m57D15494F6FBE3F87A2C29F0392367E8943ABB36(__this, L_9, L_10, il2cpp_rgctx_method(method->rgctx_data, 4));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:119>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:119>
 		RuntimeObject* L_11 = V_7;
 		return L_11;
 	}
 
 IL_004e:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:123>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:123>
 		String_t* L_12 = ___2_namePrefix;
 		il2cpp_codegen_runtime_class_init_inline(XREnvironmentProbe_tAA657FAB648E2599B519F9FD66A1CEED65034DD9_il2cpp_TypeInfo_var);
 		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_13;
@@ -33181,7 +33181,7 @@ IL_004e:
 		String_t* L_14;
 		L_14 = TrackableSpawner_GenerateTrackableName_m855A5BCC16BC450785E43319BB0B2BC4F59566AA(L_12, L_13, NULL);
 		V_3 = L_14;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:127>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:127>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_15 = ___1_prefab;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_16;
@@ -33192,16 +33192,16 @@ IL_004e:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:129>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:129>
 		String_t* L_17 = V_3;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_18 = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)il2cpp_codegen_object_new(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var);
 		GameObject__ctor_m37D512B05D292F954792225E6C6EEE95293A9B88(L_18, L_17, NULL);
 		V_8 = L_18;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:130>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:130>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_19 = V_8;
 		NullCheck(L_19);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_19, (bool)0, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:131>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:131>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_20 = V_8;
 		NullCheck(L_20);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_21;
@@ -33212,36 +33212,36 @@ IL_004e:
 		L_23 = XROrigin_get_TrackablesParent_m6F7933DF03A5376C31D328F865F77D28EEC18E9C_inline(L_22, NULL);
 		NullCheck(L_21);
 		Transform_set_parent_m9BD5E563B539DD5BEC342736B03F97B38A243234(L_21, L_23, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:132>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:132>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_24 = V_8;
 		XREnvironmentProbe_tAA657FAB648E2599B519F9FD66A1CEED65034DD9 L_25 = ___0_sessionRelativeData;
 		RuntimeObject* L_26;
 		L_26 = TrackableSpawner_GetOrAddTrackableComponent_TisRuntimeObject_TisXREnvironmentProbe_tAA657FAB648E2599B519F9FD66A1CEED65034DD9_m95E14EBB06DD5E7908191A8C824697E88A871B6B(__this, L_24, L_25, il2cpp_rgctx_method(method->rgctx_data, 5));
 		V_2 = L_26;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:133>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:133>
 		RuntimeObject* L_27 = V_2;
 		NullCheck((Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)L_27);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_28;
 		L_28 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B((Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)L_27, NULL);
 		V_4 = L_28;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:134>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:134>
 		V_5 = (bool)1;
 		goto IL_00f2;
 	}
 
 IL_00ae:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:138>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:138>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_29 = ___1_prefab;
 		NullCheck(L_29);
 		bool L_30;
 		L_30 = GameObject_get_activeSelf_m4F3E5240E138B66AAA080EA30759A3D0517DA368(L_29, NULL);
 		V_9 = L_30;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:139>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:139>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_31 = ___1_prefab;
 		NullCheck(L_31);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_31, (bool)0, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:140>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:140>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_32 = ___1_prefab;
 		XROrigin_t5E534A6D886991AF3C1C64127E19A3A510009CFE* L_33 = __this->___m_Origin;
 		NullCheck(L_33);
@@ -33251,55 +33251,55 @@ IL_00ae:
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_35;
 		L_35 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m58C654F1134533E29502629CA67645682B404811(L_32, L_34, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m58C654F1134533E29502629CA67645682B404811_RuntimeMethod_var);
 		V_10 = L_35;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:141>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:141>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_36 = V_10;
 		String_t* L_37 = V_3;
 		NullCheck((Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)L_36);
 		Object_set_name_mC79E6DC8FFD72479C90F0C4CC7F42A0FEAF5AE47((Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)L_36, L_37, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:142>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:142>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_38 = ___1_prefab;
 		bool L_39 = V_9;
 		NullCheck(L_38);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_38, L_39, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:143>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:144>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:143>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:144>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_40 = V_10;
 		XREnvironmentProbe_tAA657FAB648E2599B519F9FD66A1CEED65034DD9 L_41 = ___0_sessionRelativeData;
 		RuntimeObject* L_42;
 		L_42 = TrackableSpawner_GetOrAddTrackableComponent_TisRuntimeObject_TisXREnvironmentProbe_tAA657FAB648E2599B519F9FD66A1CEED65034DD9_m95E14EBB06DD5E7908191A8C824697E88A871B6B(__this, L_40, L_41, il2cpp_rgctx_method(method->rgctx_data, 5));
 		V_2 = L_42;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:145>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:145>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_43 = V_10;
 		V_4 = L_43;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:146>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:146>
 		bool L_44 = V_9;
 		V_5 = L_44;
 	}
 
 IL_00f2:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:149>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:149>
 		RuntimeObject* L_45 = V_2;
 		TrackableEntry_t7D1AD6C6EACF16F18BBAB5A83B474205B2FBBCA5* L_46;
 		L_46 = TrackableSpawner_RegisterCreatedTrackable_m7529E9B30FCF63A3EAFD364D76902D72879FE2CD(__this, (ARTrackable_t1D98417758C08E98A333CDEC0C2C1688CE10B2E0*)L_45, NULL);
 		V_6 = L_46;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:150>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:150>
 		TrackableEntry_t7D1AD6C6EACF16F18BBAB5A83B474205B2FBBCA5* L_47 = V_6;
 		TrackableSpawner_PopulateParent_m5BA222DB83B3DC546169FCFA8A5D811BD8E4C400(__this, L_47, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:151>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:151>
 		TrackableEntry_t7D1AD6C6EACF16F18BBAB5A83B474205B2FBBCA5* L_48 = V_6;
 		TrackableSpawner_ResolveOrphans_m5597D8ABF711B2141D5B2AEAF4943423EBB13EF8(__this, L_48, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:153>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:153>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_49 = V_4;
 		bool L_50 = V_5;
 		NullCheck(L_49);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_49, L_50, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:154>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:154>
 		RuntimeObject* L_51 = V_2;
 		return L_51;
 	}
 }
-// Method Definition Index: 49576
+// Method Definition Index: 49579
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TrackableSpawner_CreateOrUpdateTrackable_TisRuntimeObject_TisXRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB_m2156E81823980AF1CDAD8F6BE4889C1E194DA594_gshared (TrackableSpawner_tD75278064758420D002C75B533FA81BA908494D8* __this, XRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB ___0_sessionRelativeData, GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___1_prefab, String_t* ___2_namePrefix, const RuntimeMethod* method) 
 {
 	if (!il2cpp_rgctx_is_initialized(method))
@@ -33323,8 +33323,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TrackableSpawner_CreateOrUpdat
 	bool V_9 = false;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* V_10 = NULL;
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:114>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:115>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:114>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:115>
 		Dictionary_2_tE8E66DC1159FA14A3DAAE3F49280A03069F81739* L_0 = __this->___m_EntriesByTrackableId;
 		il2cpp_codegen_runtime_class_init_inline(XRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB_il2cpp_TypeInfo_var);
 		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_1;
@@ -33351,24 +33351,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TrackableSpawner_CreateOrUpdat
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:117>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:117>
 		TrackableEntry_t7D1AD6C6EACF16F18BBAB5A83B474205B2FBBCA5* L_7 = V_1;
 		NullCheck(L_7);
 		ARTrackable_t1D98417758C08E98A333CDEC0C2C1688CE10B2E0* L_8;
 		L_8 = TrackableEntry_get_trackable_m089EC3F21809C1089F181A2DDEF2FABFEB6FEF8B_inline(L_7, NULL);
 		V_7 = ((RuntimeObject*)IsInst((RuntimeObject*)L_8, il2cpp_rgctx_data(method->rgctx_data, 3)));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:118>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:118>
 		RuntimeObject* L_9 = V_7;
 		XRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB L_10 = ___0_sessionRelativeData;
 		TrackableSpawner_SetSessionRelativeDataAndPose_TisRuntimeObject_TisXRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB_mDA62E72DCE7328D77F9D6FF8E1528F84D0E1129D(__this, L_9, L_10, il2cpp_rgctx_method(method->rgctx_data, 4));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:119>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:119>
 		RuntimeObject* L_11 = V_7;
 		return L_11;
 	}
 
 IL_004e:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:123>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:123>
 		String_t* L_12 = ___2_namePrefix;
 		il2cpp_codegen_runtime_class_init_inline(XRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB_il2cpp_TypeInfo_var);
 		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_13;
@@ -33376,7 +33376,7 @@ IL_004e:
 		String_t* L_14;
 		L_14 = TrackableSpawner_GenerateTrackableName_m855A5BCC16BC450785E43319BB0B2BC4F59566AA(L_12, L_13, NULL);
 		V_3 = L_14;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:127>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:127>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_15 = ___1_prefab;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_16;
@@ -33387,16 +33387,16 @@ IL_004e:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:129>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:129>
 		String_t* L_17 = V_3;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_18 = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)il2cpp_codegen_object_new(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var);
 		GameObject__ctor_m37D512B05D292F954792225E6C6EEE95293A9B88(L_18, L_17, NULL);
 		V_8 = L_18;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:130>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:130>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_19 = V_8;
 		NullCheck(L_19);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_19, (bool)0, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:131>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:131>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_20 = V_8;
 		NullCheck(L_20);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_21;
@@ -33407,36 +33407,36 @@ IL_004e:
 		L_23 = XROrigin_get_TrackablesParent_m6F7933DF03A5376C31D328F865F77D28EEC18E9C_inline(L_22, NULL);
 		NullCheck(L_21);
 		Transform_set_parent_m9BD5E563B539DD5BEC342736B03F97B38A243234(L_21, L_23, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:132>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:132>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_24 = V_8;
 		XRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB L_25 = ___0_sessionRelativeData;
 		RuntimeObject* L_26;
 		L_26 = TrackableSpawner_GetOrAddTrackableComponent_TisRuntimeObject_TisXRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB_mE62BB7E768415C80007C447F05C5175A76852AEF(__this, L_24, L_25, il2cpp_rgctx_method(method->rgctx_data, 5));
 		V_2 = L_26;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:133>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:133>
 		RuntimeObject* L_27 = V_2;
 		NullCheck((Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)L_27);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_28;
 		L_28 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B((Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)L_27, NULL);
 		V_4 = L_28;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:134>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:134>
 		V_5 = (bool)1;
 		goto IL_00f2;
 	}
 
 IL_00ae:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:138>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:138>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_29 = ___1_prefab;
 		NullCheck(L_29);
 		bool L_30;
 		L_30 = GameObject_get_activeSelf_m4F3E5240E138B66AAA080EA30759A3D0517DA368(L_29, NULL);
 		V_9 = L_30;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:139>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:139>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_31 = ___1_prefab;
 		NullCheck(L_31);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_31, (bool)0, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:140>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:140>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_32 = ___1_prefab;
 		XROrigin_t5E534A6D886991AF3C1C64127E19A3A510009CFE* L_33 = __this->___m_Origin;
 		NullCheck(L_33);
@@ -33446,55 +33446,55 @@ IL_00ae:
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_35;
 		L_35 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m58C654F1134533E29502629CA67645682B404811(L_32, L_34, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m58C654F1134533E29502629CA67645682B404811_RuntimeMethod_var);
 		V_10 = L_35;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:141>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:141>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_36 = V_10;
 		String_t* L_37 = V_3;
 		NullCheck((Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)L_36);
 		Object_set_name_mC79E6DC8FFD72479C90F0C4CC7F42A0FEAF5AE47((Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)L_36, L_37, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:142>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:142>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_38 = ___1_prefab;
 		bool L_39 = V_9;
 		NullCheck(L_38);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_38, L_39, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:143>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:144>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:143>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:144>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_40 = V_10;
 		XRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB L_41 = ___0_sessionRelativeData;
 		RuntimeObject* L_42;
 		L_42 = TrackableSpawner_GetOrAddTrackableComponent_TisRuntimeObject_TisXRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB_mE62BB7E768415C80007C447F05C5175A76852AEF(__this, L_40, L_41, il2cpp_rgctx_method(method->rgctx_data, 5));
 		V_2 = L_42;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:145>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:145>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_43 = V_10;
 		V_4 = L_43;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:146>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:146>
 		bool L_44 = V_9;
 		V_5 = L_44;
 	}
 
 IL_00f2:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:149>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:149>
 		RuntimeObject* L_45 = V_2;
 		TrackableEntry_t7D1AD6C6EACF16F18BBAB5A83B474205B2FBBCA5* L_46;
 		L_46 = TrackableSpawner_RegisterCreatedTrackable_m7529E9B30FCF63A3EAFD364D76902D72879FE2CD(__this, (ARTrackable_t1D98417758C08E98A333CDEC0C2C1688CE10B2E0*)L_45, NULL);
 		V_6 = L_46;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:150>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:150>
 		TrackableEntry_t7D1AD6C6EACF16F18BBAB5A83B474205B2FBBCA5* L_47 = V_6;
 		TrackableSpawner_PopulateParent_m5BA222DB83B3DC546169FCFA8A5D811BD8E4C400(__this, L_47, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:151>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:151>
 		TrackableEntry_t7D1AD6C6EACF16F18BBAB5A83B474205B2FBBCA5* L_48 = V_6;
 		TrackableSpawner_ResolveOrphans_m5597D8ABF711B2141D5B2AEAF4943423EBB13EF8(__this, L_48, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:153>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:153>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_49 = V_4;
 		bool L_50 = V_5;
 		NullCheck(L_49);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_49, L_50, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:154>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:154>
 		RuntimeObject* L_51 = V_2;
 		return L_51;
 	}
 }
-// Method Definition Index: 49576
+// Method Definition Index: 49579
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TrackableSpawner_CreateOrUpdateTrackable_TisRuntimeObject_TisXRHumanBody_t88EF91F599A4F22EABB233F85DE7782EE8B86692_m5857264F65CECFDBBF1BDC3096875F6CDD237A6E_gshared (TrackableSpawner_tD75278064758420D002C75B533FA81BA908494D8* __this, XRHumanBody_t88EF91F599A4F22EABB233F85DE7782EE8B86692 ___0_sessionRelativeData, GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___1_prefab, String_t* ___2_namePrefix, const RuntimeMethod* method) 
 {
 	if (!il2cpp_rgctx_is_initialized(method))
@@ -33518,8 +33518,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TrackableSpawner_CreateOrUpdat
 	bool V_9 = false;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* V_10 = NULL;
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:114>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:115>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:114>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:115>
 		Dictionary_2_tE8E66DC1159FA14A3DAAE3F49280A03069F81739* L_0 = __this->___m_EntriesByTrackableId;
 		il2cpp_codegen_runtime_class_init_inline(XRHumanBody_t88EF91F599A4F22EABB233F85DE7782EE8B86692_il2cpp_TypeInfo_var);
 		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_1;
@@ -33546,24 +33546,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TrackableSpawner_CreateOrUpdat
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:117>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:117>
 		TrackableEntry_t7D1AD6C6EACF16F18BBAB5A83B474205B2FBBCA5* L_7 = V_1;
 		NullCheck(L_7);
 		ARTrackable_t1D98417758C08E98A333CDEC0C2C1688CE10B2E0* L_8;
 		L_8 = TrackableEntry_get_trackable_m089EC3F21809C1089F181A2DDEF2FABFEB6FEF8B_inline(L_7, NULL);
 		V_7 = ((RuntimeObject*)IsInst((RuntimeObject*)L_8, il2cpp_rgctx_data(method->rgctx_data, 3)));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:118>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:118>
 		RuntimeObject* L_9 = V_7;
 		XRHumanBody_t88EF91F599A4F22EABB233F85DE7782EE8B86692 L_10 = ___0_sessionRelativeData;
 		TrackableSpawner_SetSessionRelativeDataAndPose_TisRuntimeObject_TisXRHumanBody_t88EF91F599A4F22EABB233F85DE7782EE8B86692_mE1788B78699BA9AF91B78E770107F3156482FE7A(__this, L_9, L_10, il2cpp_rgctx_method(method->rgctx_data, 4));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:119>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:119>
 		RuntimeObject* L_11 = V_7;
 		return L_11;
 	}
 
 IL_004e:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:123>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:123>
 		String_t* L_12 = ___2_namePrefix;
 		il2cpp_codegen_runtime_class_init_inline(XRHumanBody_t88EF91F599A4F22EABB233F85DE7782EE8B86692_il2cpp_TypeInfo_var);
 		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_13;
@@ -33571,7 +33571,7 @@ IL_004e:
 		String_t* L_14;
 		L_14 = TrackableSpawner_GenerateTrackableName_m855A5BCC16BC450785E43319BB0B2BC4F59566AA(L_12, L_13, NULL);
 		V_3 = L_14;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:127>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:127>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_15 = ___1_prefab;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_16;
@@ -33582,16 +33582,16 @@ IL_004e:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:129>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:129>
 		String_t* L_17 = V_3;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_18 = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)il2cpp_codegen_object_new(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var);
 		GameObject__ctor_m37D512B05D292F954792225E6C6EEE95293A9B88(L_18, L_17, NULL);
 		V_8 = L_18;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:130>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:130>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_19 = V_8;
 		NullCheck(L_19);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_19, (bool)0, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:131>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:131>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_20 = V_8;
 		NullCheck(L_20);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_21;
@@ -33602,36 +33602,36 @@ IL_004e:
 		L_23 = XROrigin_get_TrackablesParent_m6F7933DF03A5376C31D328F865F77D28EEC18E9C_inline(L_22, NULL);
 		NullCheck(L_21);
 		Transform_set_parent_m9BD5E563B539DD5BEC342736B03F97B38A243234(L_21, L_23, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:132>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:132>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_24 = V_8;
 		XRHumanBody_t88EF91F599A4F22EABB233F85DE7782EE8B86692 L_25 = ___0_sessionRelativeData;
 		RuntimeObject* L_26;
 		L_26 = TrackableSpawner_GetOrAddTrackableComponent_TisRuntimeObject_TisXRHumanBody_t88EF91F599A4F22EABB233F85DE7782EE8B86692_mD4CF5245C2AC49A1451C71C2B1229AA284DB7AB8(__this, L_24, L_25, il2cpp_rgctx_method(method->rgctx_data, 5));
 		V_2 = L_26;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:133>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:133>
 		RuntimeObject* L_27 = V_2;
 		NullCheck((Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)L_27);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_28;
 		L_28 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B((Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)L_27, NULL);
 		V_4 = L_28;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:134>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:134>
 		V_5 = (bool)1;
 		goto IL_00f2;
 	}
 
 IL_00ae:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:138>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:138>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_29 = ___1_prefab;
 		NullCheck(L_29);
 		bool L_30;
 		L_30 = GameObject_get_activeSelf_m4F3E5240E138B66AAA080EA30759A3D0517DA368(L_29, NULL);
 		V_9 = L_30;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:139>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:139>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_31 = ___1_prefab;
 		NullCheck(L_31);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_31, (bool)0, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:140>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:140>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_32 = ___1_prefab;
 		XROrigin_t5E534A6D886991AF3C1C64127E19A3A510009CFE* L_33 = __this->___m_Origin;
 		NullCheck(L_33);
@@ -33641,55 +33641,55 @@ IL_00ae:
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_35;
 		L_35 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m58C654F1134533E29502629CA67645682B404811(L_32, L_34, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m58C654F1134533E29502629CA67645682B404811_RuntimeMethod_var);
 		V_10 = L_35;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:141>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:141>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_36 = V_10;
 		String_t* L_37 = V_3;
 		NullCheck((Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)L_36);
 		Object_set_name_mC79E6DC8FFD72479C90F0C4CC7F42A0FEAF5AE47((Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)L_36, L_37, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:142>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:142>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_38 = ___1_prefab;
 		bool L_39 = V_9;
 		NullCheck(L_38);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_38, L_39, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:143>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:144>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:143>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:144>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_40 = V_10;
 		XRHumanBody_t88EF91F599A4F22EABB233F85DE7782EE8B86692 L_41 = ___0_sessionRelativeData;
 		RuntimeObject* L_42;
 		L_42 = TrackableSpawner_GetOrAddTrackableComponent_TisRuntimeObject_TisXRHumanBody_t88EF91F599A4F22EABB233F85DE7782EE8B86692_mD4CF5245C2AC49A1451C71C2B1229AA284DB7AB8(__this, L_40, L_41, il2cpp_rgctx_method(method->rgctx_data, 5));
 		V_2 = L_42;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:145>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:145>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_43 = V_10;
 		V_4 = L_43;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:146>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:146>
 		bool L_44 = V_9;
 		V_5 = L_44;
 	}
 
 IL_00f2:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:149>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:149>
 		RuntimeObject* L_45 = V_2;
 		TrackableEntry_t7D1AD6C6EACF16F18BBAB5A83B474205B2FBBCA5* L_46;
 		L_46 = TrackableSpawner_RegisterCreatedTrackable_m7529E9B30FCF63A3EAFD364D76902D72879FE2CD(__this, (ARTrackable_t1D98417758C08E98A333CDEC0C2C1688CE10B2E0*)L_45, NULL);
 		V_6 = L_46;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:150>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:150>
 		TrackableEntry_t7D1AD6C6EACF16F18BBAB5A83B474205B2FBBCA5* L_47 = V_6;
 		TrackableSpawner_PopulateParent_m5BA222DB83B3DC546169FCFA8A5D811BD8E4C400(__this, L_47, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:151>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:151>
 		TrackableEntry_t7D1AD6C6EACF16F18BBAB5A83B474205B2FBBCA5* L_48 = V_6;
 		TrackableSpawner_ResolveOrphans_m5597D8ABF711B2141D5B2AEAF4943423EBB13EF8(__this, L_48, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:153>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:153>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_49 = V_4;
 		bool L_50 = V_5;
 		NullCheck(L_49);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_49, L_50, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:154>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:154>
 		RuntimeObject* L_51 = V_2;
 		return L_51;
 	}
 }
-// Method Definition Index: 49576
+// Method Definition Index: 49579
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TrackableSpawner_CreateOrUpdateTrackable_TisRuntimeObject_TisXRParticipant_t3885B841862D28B0509433D566F00FA3C3CD79E1_m5672C0240284F16E27ADB7B158853C3672A049FA_gshared (TrackableSpawner_tD75278064758420D002C75B533FA81BA908494D8* __this, XRParticipant_t3885B841862D28B0509433D566F00FA3C3CD79E1 ___0_sessionRelativeData, GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___1_prefab, String_t* ___2_namePrefix, const RuntimeMethod* method) 
 {
 	if (!il2cpp_rgctx_is_initialized(method))
@@ -33713,8 +33713,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TrackableSpawner_CreateOrUpdat
 	bool V_9 = false;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* V_10 = NULL;
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:114>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:115>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:114>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:115>
 		Dictionary_2_tE8E66DC1159FA14A3DAAE3F49280A03069F81739* L_0 = __this->___m_EntriesByTrackableId;
 		il2cpp_codegen_runtime_class_init_inline(XRParticipant_t3885B841862D28B0509433D566F00FA3C3CD79E1_il2cpp_TypeInfo_var);
 		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_1;
@@ -33741,24 +33741,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TrackableSpawner_CreateOrUpdat
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:117>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:117>
 		TrackableEntry_t7D1AD6C6EACF16F18BBAB5A83B474205B2FBBCA5* L_7 = V_1;
 		NullCheck(L_7);
 		ARTrackable_t1D98417758C08E98A333CDEC0C2C1688CE10B2E0* L_8;
 		L_8 = TrackableEntry_get_trackable_m089EC3F21809C1089F181A2DDEF2FABFEB6FEF8B_inline(L_7, NULL);
 		V_7 = ((RuntimeObject*)IsInst((RuntimeObject*)L_8, il2cpp_rgctx_data(method->rgctx_data, 3)));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:118>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:118>
 		RuntimeObject* L_9 = V_7;
 		XRParticipant_t3885B841862D28B0509433D566F00FA3C3CD79E1 L_10 = ___0_sessionRelativeData;
 		TrackableSpawner_SetSessionRelativeDataAndPose_TisRuntimeObject_TisXRParticipant_t3885B841862D28B0509433D566F00FA3C3CD79E1_m55924E9CEFC77B5BB95545D83B5B0AF02B6F5769(__this, L_9, L_10, il2cpp_rgctx_method(method->rgctx_data, 4));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:119>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:119>
 		RuntimeObject* L_11 = V_7;
 		return L_11;
 	}
 
 IL_004e:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:123>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:123>
 		String_t* L_12 = ___2_namePrefix;
 		il2cpp_codegen_runtime_class_init_inline(XRParticipant_t3885B841862D28B0509433D566F00FA3C3CD79E1_il2cpp_TypeInfo_var);
 		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_13;
@@ -33766,7 +33766,7 @@ IL_004e:
 		String_t* L_14;
 		L_14 = TrackableSpawner_GenerateTrackableName_m855A5BCC16BC450785E43319BB0B2BC4F59566AA(L_12, L_13, NULL);
 		V_3 = L_14;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:127>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:127>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_15 = ___1_prefab;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_16;
@@ -33777,16 +33777,16 @@ IL_004e:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:129>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:129>
 		String_t* L_17 = V_3;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_18 = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)il2cpp_codegen_object_new(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var);
 		GameObject__ctor_m37D512B05D292F954792225E6C6EEE95293A9B88(L_18, L_17, NULL);
 		V_8 = L_18;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:130>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:130>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_19 = V_8;
 		NullCheck(L_19);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_19, (bool)0, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:131>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:131>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_20 = V_8;
 		NullCheck(L_20);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_21;
@@ -33797,36 +33797,36 @@ IL_004e:
 		L_23 = XROrigin_get_TrackablesParent_m6F7933DF03A5376C31D328F865F77D28EEC18E9C_inline(L_22, NULL);
 		NullCheck(L_21);
 		Transform_set_parent_m9BD5E563B539DD5BEC342736B03F97B38A243234(L_21, L_23, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:132>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:132>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_24 = V_8;
 		XRParticipant_t3885B841862D28B0509433D566F00FA3C3CD79E1 L_25 = ___0_sessionRelativeData;
 		RuntimeObject* L_26;
 		L_26 = TrackableSpawner_GetOrAddTrackableComponent_TisRuntimeObject_TisXRParticipant_t3885B841862D28B0509433D566F00FA3C3CD79E1_m868624FB3E070C662528F02016FDAFF75CAFFA32(__this, L_24, L_25, il2cpp_rgctx_method(method->rgctx_data, 5));
 		V_2 = L_26;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:133>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:133>
 		RuntimeObject* L_27 = V_2;
 		NullCheck((Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)L_27);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_28;
 		L_28 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B((Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)L_27, NULL);
 		V_4 = L_28;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:134>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:134>
 		V_5 = (bool)1;
 		goto IL_00f2;
 	}
 
 IL_00ae:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:138>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:138>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_29 = ___1_prefab;
 		NullCheck(L_29);
 		bool L_30;
 		L_30 = GameObject_get_activeSelf_m4F3E5240E138B66AAA080EA30759A3D0517DA368(L_29, NULL);
 		V_9 = L_30;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:139>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:139>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_31 = ___1_prefab;
 		NullCheck(L_31);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_31, (bool)0, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:140>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:140>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_32 = ___1_prefab;
 		XROrigin_t5E534A6D886991AF3C1C64127E19A3A510009CFE* L_33 = __this->___m_Origin;
 		NullCheck(L_33);
@@ -33836,55 +33836,55 @@ IL_00ae:
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_35;
 		L_35 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m58C654F1134533E29502629CA67645682B404811(L_32, L_34, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m58C654F1134533E29502629CA67645682B404811_RuntimeMethod_var);
 		V_10 = L_35;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:141>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:141>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_36 = V_10;
 		String_t* L_37 = V_3;
 		NullCheck((Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)L_36);
 		Object_set_name_mC79E6DC8FFD72479C90F0C4CC7F42A0FEAF5AE47((Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)L_36, L_37, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:142>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:142>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_38 = ___1_prefab;
 		bool L_39 = V_9;
 		NullCheck(L_38);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_38, L_39, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:143>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:144>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:143>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:144>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_40 = V_10;
 		XRParticipant_t3885B841862D28B0509433D566F00FA3C3CD79E1 L_41 = ___0_sessionRelativeData;
 		RuntimeObject* L_42;
 		L_42 = TrackableSpawner_GetOrAddTrackableComponent_TisRuntimeObject_TisXRParticipant_t3885B841862D28B0509433D566F00FA3C3CD79E1_m868624FB3E070C662528F02016FDAFF75CAFFA32(__this, L_40, L_41, il2cpp_rgctx_method(method->rgctx_data, 5));
 		V_2 = L_42;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:145>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:145>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_43 = V_10;
 		V_4 = L_43;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:146>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:146>
 		bool L_44 = V_9;
 		V_5 = L_44;
 	}
 
 IL_00f2:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:149>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:149>
 		RuntimeObject* L_45 = V_2;
 		TrackableEntry_t7D1AD6C6EACF16F18BBAB5A83B474205B2FBBCA5* L_46;
 		L_46 = TrackableSpawner_RegisterCreatedTrackable_m7529E9B30FCF63A3EAFD364D76902D72879FE2CD(__this, (ARTrackable_t1D98417758C08E98A333CDEC0C2C1688CE10B2E0*)L_45, NULL);
 		V_6 = L_46;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:150>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:150>
 		TrackableEntry_t7D1AD6C6EACF16F18BBAB5A83B474205B2FBBCA5* L_47 = V_6;
 		TrackableSpawner_PopulateParent_m5BA222DB83B3DC546169FCFA8A5D811BD8E4C400(__this, L_47, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:151>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:151>
 		TrackableEntry_t7D1AD6C6EACF16F18BBAB5A83B474205B2FBBCA5* L_48 = V_6;
 		TrackableSpawner_ResolveOrphans_m5597D8ABF711B2141D5B2AEAF4943423EBB13EF8(__this, L_48, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:153>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:153>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_49 = V_4;
 		bool L_50 = V_5;
 		NullCheck(L_49);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_49, L_50, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:154>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:154>
 		RuntimeObject* L_51 = V_2;
 		return L_51;
 	}
 }
-// Method Definition Index: 49576
+// Method Definition Index: 49579
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TrackableSpawner_CreateOrUpdateTrackable_TisRuntimeObject_TisXRPointCloud_t99DB921A9C92F53CEA3EB29A64E2DECDA6EA7D8C_m4CBB6D036D567934F59BAEC3E79F39A6410620B0_gshared (TrackableSpawner_tD75278064758420D002C75B533FA81BA908494D8* __this, XRPointCloud_t99DB921A9C92F53CEA3EB29A64E2DECDA6EA7D8C ___0_sessionRelativeData, GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___1_prefab, String_t* ___2_namePrefix, const RuntimeMethod* method) 
 {
 	if (!il2cpp_rgctx_is_initialized(method))
@@ -33908,8 +33908,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TrackableSpawner_CreateOrUpdat
 	bool V_9 = false;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* V_10 = NULL;
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:114>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:115>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:114>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:115>
 		Dictionary_2_tE8E66DC1159FA14A3DAAE3F49280A03069F81739* L_0 = __this->___m_EntriesByTrackableId;
 		il2cpp_codegen_runtime_class_init_inline(XRPointCloud_t99DB921A9C92F53CEA3EB29A64E2DECDA6EA7D8C_il2cpp_TypeInfo_var);
 		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_1;
@@ -33936,24 +33936,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TrackableSpawner_CreateOrUpdat
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:117>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:117>
 		TrackableEntry_t7D1AD6C6EACF16F18BBAB5A83B474205B2FBBCA5* L_7 = V_1;
 		NullCheck(L_7);
 		ARTrackable_t1D98417758C08E98A333CDEC0C2C1688CE10B2E0* L_8;
 		L_8 = TrackableEntry_get_trackable_m089EC3F21809C1089F181A2DDEF2FABFEB6FEF8B_inline(L_7, NULL);
 		V_7 = ((RuntimeObject*)IsInst((RuntimeObject*)L_8, il2cpp_rgctx_data(method->rgctx_data, 3)));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:118>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:118>
 		RuntimeObject* L_9 = V_7;
 		XRPointCloud_t99DB921A9C92F53CEA3EB29A64E2DECDA6EA7D8C L_10 = ___0_sessionRelativeData;
 		TrackableSpawner_SetSessionRelativeDataAndPose_TisRuntimeObject_TisXRPointCloud_t99DB921A9C92F53CEA3EB29A64E2DECDA6EA7D8C_m8D4E7E9463F6A4D97E47C77E8F05E78575185880(__this, L_9, L_10, il2cpp_rgctx_method(method->rgctx_data, 4));
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:119>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:119>
 		RuntimeObject* L_11 = V_7;
 		return L_11;
 	}
 
 IL_004e:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:123>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:123>
 		String_t* L_12 = ___2_namePrefix;
 		il2cpp_codegen_runtime_class_init_inline(XRPointCloud_t99DB921A9C92F53CEA3EB29A64E2DECDA6EA7D8C_il2cpp_TypeInfo_var);
 		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_13;
@@ -33961,7 +33961,7 @@ IL_004e:
 		String_t* L_14;
 		L_14 = TrackableSpawner_GenerateTrackableName_m855A5BCC16BC450785E43319BB0B2BC4F59566AA(L_12, L_13, NULL);
 		V_3 = L_14;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:127>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:127>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_15 = ___1_prefab;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_16;
@@ -33972,16 +33972,16 @@ IL_004e:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:129>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:129>
 		String_t* L_17 = V_3;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_18 = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)il2cpp_codegen_object_new(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var);
 		GameObject__ctor_m37D512B05D292F954792225E6C6EEE95293A9B88(L_18, L_17, NULL);
 		V_8 = L_18;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:130>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:130>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_19 = V_8;
 		NullCheck(L_19);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_19, (bool)0, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:131>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:131>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_20 = V_8;
 		NullCheck(L_20);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_21;
@@ -33992,36 +33992,36 @@ IL_004e:
 		L_23 = XROrigin_get_TrackablesParent_m6F7933DF03A5376C31D328F865F77D28EEC18E9C_inline(L_22, NULL);
 		NullCheck(L_21);
 		Transform_set_parent_m9BD5E563B539DD5BEC342736B03F97B38A243234(L_21, L_23, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:132>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:132>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_24 = V_8;
 		XRPointCloud_t99DB921A9C92F53CEA3EB29A64E2DECDA6EA7D8C L_25 = ___0_sessionRelativeData;
 		RuntimeObject* L_26;
 		L_26 = TrackableSpawner_GetOrAddTrackableComponent_TisRuntimeObject_TisXRPointCloud_t99DB921A9C92F53CEA3EB29A64E2DECDA6EA7D8C_mDF80778BCD1A8123D1503F7E9EFEA403B99F2DC7(__this, L_24, L_25, il2cpp_rgctx_method(method->rgctx_data, 5));
 		V_2 = L_26;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:133>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:133>
 		RuntimeObject* L_27 = V_2;
 		NullCheck((Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)L_27);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_28;
 		L_28 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B((Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)L_27, NULL);
 		V_4 = L_28;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:134>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:134>
 		V_5 = (bool)1;
 		goto IL_00f2;
 	}
 
 IL_00ae:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:138>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:138>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_29 = ___1_prefab;
 		NullCheck(L_29);
 		bool L_30;
 		L_30 = GameObject_get_activeSelf_m4F3E5240E138B66AAA080EA30759A3D0517DA368(L_29, NULL);
 		V_9 = L_30;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:139>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:139>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_31 = ___1_prefab;
 		NullCheck(L_31);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_31, (bool)0, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:140>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:140>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_32 = ___1_prefab;
 		XROrigin_t5E534A6D886991AF3C1C64127E19A3A510009CFE* L_33 = __this->___m_Origin;
 		NullCheck(L_33);
@@ -34031,50 +34031,50 @@ IL_00ae:
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_35;
 		L_35 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m58C654F1134533E29502629CA67645682B404811(L_32, L_34, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m58C654F1134533E29502629CA67645682B404811_RuntimeMethod_var);
 		V_10 = L_35;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:141>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:141>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_36 = V_10;
 		String_t* L_37 = V_3;
 		NullCheck((Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)L_36);
 		Object_set_name_mC79E6DC8FFD72479C90F0C4CC7F42A0FEAF5AE47((Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)L_36, L_37, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:142>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:142>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_38 = ___1_prefab;
 		bool L_39 = V_9;
 		NullCheck(L_38);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_38, L_39, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:143>
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:144>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:143>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:144>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_40 = V_10;
 		XRPointCloud_t99DB921A9C92F53CEA3EB29A64E2DECDA6EA7D8C L_41 = ___0_sessionRelativeData;
 		RuntimeObject* L_42;
 		L_42 = TrackableSpawner_GetOrAddTrackableComponent_TisRuntimeObject_TisXRPointCloud_t99DB921A9C92F53CEA3EB29A64E2DECDA6EA7D8C_mDF80778BCD1A8123D1503F7E9EFEA403B99F2DC7(__this, L_40, L_41, il2cpp_rgctx_method(method->rgctx_data, 5));
 		V_2 = L_42;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:145>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:145>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_43 = V_10;
 		V_4 = L_43;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:146>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:146>
 		bool L_44 = V_9;
 		V_5 = L_44;
 	}
 
 IL_00f2:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:149>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:149>
 		RuntimeObject* L_45 = V_2;
 		TrackableEntry_t7D1AD6C6EACF16F18BBAB5A83B474205B2FBBCA5* L_46;
 		L_46 = TrackableSpawner_RegisterCreatedTrackable_m7529E9B30FCF63A3EAFD364D76902D72879FE2CD(__this, (ARTrackable_t1D98417758C08E98A333CDEC0C2C1688CE10B2E0*)L_45, NULL);
 		V_6 = L_46;
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:150>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:150>
 		TrackableEntry_t7D1AD6C6EACF16F18BBAB5A83B474205B2FBBCA5* L_47 = V_6;
 		TrackableSpawner_PopulateParent_m5BA222DB83B3DC546169FCFA8A5D811BD8E4C400(__this, L_47, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:151>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:151>
 		TrackableEntry_t7D1AD6C6EACF16F18BBAB5A83B474205B2FBBCA5* L_48 = V_6;
 		TrackableSpawner_ResolveOrphans_m5597D8ABF711B2141D5B2AEAF4943423EBB13EF8(__this, L_48, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:153>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:153>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_49 = V_4;
 		bool L_50 = V_5;
 		NullCheck(L_49);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_49, L_50, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:154>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableSpawner.cs:154>
 		RuntimeObject* L_51 = V_2;
 		return L_51;
 	}
@@ -34129,7 +34129,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t String_get_Length_m42625D
 		return L_0;
 	}
 }
-// Method Definition Index: 57970
+// Method Definition Index: 57988
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR XRGeneralSettings_t8F8D096944606B5AD845D010706BF7094ADEC8CE* XRGeneralSettings_get_Instance_m9F222F982E62E066E119754858D8E73CFE42048C_inline (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -34145,7 +34145,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR XRGeneralSettings_t8F8D096944606B
 		return L_0;
 	}
 }
-// Method Definition Index: 57968
+// Method Definition Index: 57986
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR XRManagerSettings_t7923B66EB3FEE58C7B9F85FF61749B774D3B9E52* XRGeneralSettings_get_Manager_m112FEB4E6DFB7B5F5C4A2DEC4E975CF2EBD51B42_inline (XRGeneralSettings_t8F8D096944606B5AD845D010706BF7094ADEC8CE* __this, const RuntimeMethod* method) 
 {
 	{
@@ -34154,7 +34154,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR XRManagerSettings_t7923B66EB3FEE5
 		return L_0;
 	}
 }
-// Method Definition Index: 58011
+// Method Definition Index: 58029
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR XRLoader_t80B1B1934C40561C5352ABC95D567DC2A7C9C976* XRManagerSettings_get_activeLoader_mFB3B679005792D3DF871EAA7120DD86DCA1D5DEA_inline (XRManagerSettings_t7923B66EB3FEE58C7B9F85FF61749B774D3B9E52* __this, const RuntimeMethod* method) 
 {
 	{
@@ -34163,7 +34163,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR XRLoader_t80B1B1934C40561C5352ABC
 		return L_0;
 	}
 }
-// Method Definition Index: 34532
+// Method Definition Index: 34535
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Mathf_NextPowerOfTwo_mA1CE7F3EEF9B0B07AB2D586C030ED236D578F485_inline (int32_t ___0_value, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
@@ -34255,25 +34255,25 @@ IL_0031:
 		return L_8;
 	}
 }
-// Method Definition Index: 50880
+// Method Definition Index: 50883
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 BoundedPlane_get_trackableId_m7AA7FD63EA8F8A903300EFDF15616315ACFDA8AA_inline (BoundedPlane_tF51C315A8961EB42F0A1B60D47158646E5AF75CE* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARSubsystems/PlaneTracking/BoundedPlane.cs:159>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARSubsystems/PlaneTracking/BoundedPlane.cs:159>
 		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_0 = __this->___m_TrackableId;
 		return L_0;
 	}
 }
-// Method Definition Index: 49554
+// Method Definition Index: 49557
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ARTrackable_t1D98417758C08E98A333CDEC0C2C1688CE10B2E0* TrackableEntry_get_trackable_m089EC3F21809C1089F181A2DDEF2FABFEB6FEF8B_inline (TrackableEntry_t7D1AD6C6EACF16F18BBAB5A83B474205B2FBBCA5* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARFoundation/TrackableSpawner/TrackableEntry.cs:8>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARFoundation/TrackableSpawner/TrackableEntry.cs:8>
 		ARTrackable_t1D98417758C08E98A333CDEC0C2C1688CE10B2E0* L_0 = __this->___U3CtrackableU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 53914
+// Method Definition Index: 53917
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* XROrigin_get_TrackablesParent_m6F7933DF03A5376C31D328F865F77D28EEC18E9C_inline (XROrigin_t5E534A6D886991AF3C1C64127E19A3A510009CFE* __this, const RuntimeMethod* method) 
 {
 	{
@@ -34282,65 +34282,65 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A
 		return L_0;
 	}
 }
-// Method Definition Index: 49611
+// Method Definition Index: 49614
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 XRAnchor_get_trackableId_m0F50E81D0152D0BA4152EF9B66F648EF9FC664AE_inline (XRAnchor_tDD427E66CAA09DE7B058EA76223EF7DC3880FE82* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARSubsystems/AnchorSubsystem/XRAnchor.cs:23>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARSubsystems/AnchorSubsystem/XRAnchor.cs:23>
 		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_0 = __this->___m_Id;
 		return L_0;
 	}
 }
-// Method Definition Index: 49716
+// Method Definition Index: 49719
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 XRBoundingBox_get_trackableId_mF5CD5DB3F259DE8F7153195F3AF90638D741867A_inline (XRBoundingBox_tF12DE2409AC158AA9821C5F37C76716468FA6F85* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARSubsystems/BoundingBoxSubsystem/XRBoundingBox.cs:16>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARSubsystems/BoundingBoxSubsystem/XRBoundingBox.cs:16>
 		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_0 = __this->___U3CtrackableIdU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 50138
+// Method Definition Index: 50141
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 XREnvironmentProbe_get_trackableId_m7B20AFD8D153397E7270F72C81B32043DA83C57F_inline (XREnvironmentProbe_tAA657FAB648E2599B519F9FD66A1CEED65034DD9* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARSubsystems/EnvironmentProbeSubsystem/XREnvironmentProbe.cs:91>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARSubsystems/EnvironmentProbeSubsystem/XREnvironmentProbe.cs:91>
 		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_0 = __this->___m_TrackableId;
 		return L_0;
 	}
 }
-// Method Definition Index: 50244
+// Method Definition Index: 50247
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 XRFace_get_trackableId_m9FC29FB643FFBAB989AB8179F57CDB52D14737B3_inline (XRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARSubsystems/FaceSubsystem/XRFace.cs:42>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARSubsystems/FaceSubsystem/XRFace.cs:42>
 		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_0 = __this->___m_TrackableId;
 		return L_0;
 	}
 }
-// Method Definition Index: 50363
+// Method Definition Index: 50366
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 XRHumanBody_get_trackableId_m7CC5B8BB5179303ED1424ACDC46FBFA16C30B2FD_inline (XRHumanBody_t88EF91F599A4F22EABB233F85DE7782EE8B86692* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARSubsystems/HumanBodySubsystem/XRHumanBody.cs:20>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARSubsystems/HumanBodySubsystem/XRHumanBody.cs:20>
 		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_0 = __this->___m_TrackableId;
 		return L_0;
 	}
 }
-// Method Definition Index: 50843
+// Method Definition Index: 50846
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 XRParticipant_get_trackableId_mA33D6F01E0C98B53E73D3AE91E9D27637D3EDCF1_inline (XRParticipant_t3885B841862D28B0509433D566F00FA3C3CD79E1* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARSubsystems/ParticipantSubsystem/XRParticipant.cs:82>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARSubsystems/ParticipantSubsystem/XRParticipant.cs:82>
 		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_0 = __this->___m_TrackableId;
 		return L_0;
 	}
 }
-// Method Definition Index: 51001
+// Method Definition Index: 51004
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 XRPointCloud_get_trackableId_m3AFB6026E205E26C8B7A3209696F566FB686144D_inline (XRPointCloud_t99DB921A9C92F53CEA3EB29A64E2DECDA6EA7D8C* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@758da01db0fe/Runtime/ARSubsystems/PointCloudSubsystem/XRPointCloud.cs:75>
+		//<source_info:./Library/PackageCache/com.unity.xr.arfoundation@7ee87c4f5245/Runtime/ARSubsystems/PointCloudSubsystem/XRPointCloud.cs:75>
 		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_0 = __this->___m_TrackableId;
 		return L_0;
 	}

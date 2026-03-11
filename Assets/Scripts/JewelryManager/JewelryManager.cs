@@ -4,10 +4,10 @@ using System.Collections;
 /// <summary>
 /// JewelryManager — Fixed pending spawn system.
 ///
-/// FIX: Instead of spawning once on RegisterEarAnchors(), a coroutine
-/// polls every frame until the anchor is non-null, then spawns.
-/// This handles the case where the user taps an earring item but the
-/// face mesh arrives several seconds later (common on Xiaomi).
+/// - Waits for anchors before spawning (handles slow face detection).
+/// - Does NOT force localScale = Vector3.one so GLB/FBX prefabs keep their correct base scale.
+/// - If the spawned necklace prefab has NecklaceFitProfile, apply per-model scale/offset/rotation.
+/// - Also calls RuntimeNecklaceFixer for problematic necklaces that need hard runtime correction.
 /// </summary>
 public class JewelryManager : MonoBehaviour
 {
@@ -56,12 +56,14 @@ public class JewelryManager : MonoBehaviour
     public void EquipJewelryByIndex(int catIdx, int itemIdx)
     {
         if (categories == null || catIdx < 0 || catIdx >= categories.Length) return;
+
         JewelryCategory cat = categories[catIdx];
         if (cat.items == null || itemIdx < 0 || itemIdx >= cat.items.Length) return;
+
         JewelryItem item = cat.items[itemIdx];
-        if (item.jewelryPrefab == null)
+        if (item == null || item.jewelryPrefab == null)
         {
-            Debug.LogWarning($"[JewelryManager] No prefab on '{item.itemName}'");
+            Debug.LogWarning($"[JewelryManager] No prefab on '{(item != null ? item.itemName : "NULL ITEM")}'");
             return;
         }
 
@@ -69,7 +71,6 @@ public class JewelryManager : MonoBehaviour
         {
             if (leftEarAnchor == null || rightEarAnchor == null)
             {
-                // Store and start a coroutine that waits for anchors
                 pendingEarPrefab = item.jewelryPrefab;
                 pendingNecklacePrefab = null;
                 Debug.Log("[JewelryManager] Ear anchors not ready — waiting...");
@@ -80,7 +81,7 @@ public class JewelryManager : MonoBehaviour
                 SpawnEarrings(item.jewelryPrefab);
             }
         }
-        else
+        else // Necklace
         {
             if (necklaceAnchor == null)
             {
@@ -96,11 +97,12 @@ public class JewelryManager : MonoBehaviour
         }
     }
 
-    // Polls every frame until ear anchors are available, then spawns
+    // ── Wait coroutines ───────────────────────────────────────────────────
     IEnumerator WaitAndSpawnEarrings(GameObject prefab)
     {
-        float timeout = 30f;   // give up after 30 s if face never detected
+        float timeout = 30f;
         float elapsed = 0f;
+
         while ((leftEarAnchor == null || rightEarAnchor == null) && elapsed < timeout)
         {
             elapsed += Time.deltaTime;
@@ -113,7 +115,6 @@ public class JewelryManager : MonoBehaviour
             yield break;
         }
 
-        // Only spawn if this is still the most recent request
         if (pendingEarPrefab == prefab || pendingEarPrefab == null)
         {
             SpawnEarrings(prefab);
@@ -125,6 +126,7 @@ public class JewelryManager : MonoBehaviour
     {
         float timeout = 30f;
         float elapsed = 0f;
+
         while (necklaceAnchor == null && elapsed < timeout)
         {
             elapsed += Time.deltaTime;
@@ -148,15 +150,18 @@ public class JewelryManager : MonoBehaviour
     void SpawnEarrings(GameObject prefab)
     {
         RemoveEarrings();
+
+        // Left
         activeLeftEarring = Instantiate(prefab, leftEarAnchor);
         activeLeftEarring.transform.localPosition = Vector3.zero;
-        activeLeftEarring.transform.localRotation = Quaternion.identity;
-        activeLeftEarring.transform.localScale = Vector3.one;
+        activeLeftEarring.transform.localRotation = Quaternion.Euler(0f, 180f, 0f);
+        // DO NOT force scale (keeps prefab scale)
 
+        // Right
         activeRightEarring = Instantiate(prefab, rightEarAnchor);
         activeRightEarring.transform.localPosition = Vector3.zero;
         activeRightEarring.transform.localRotation = Quaternion.Euler(0f, 180f, 0f);
-        activeRightEarring.transform.localScale = Vector3.one;
+        // DO NOT force scale (keeps prefab scale)
 
         Debug.Log($"[JewelryManager] Earrings spawned: {prefab.name}");
     }
@@ -164,12 +169,26 @@ public class JewelryManager : MonoBehaviour
     void SpawnNecklace(GameObject prefab)
     {
         RemoveNecklace();
+
         activeNecklace = Instantiate(prefab, necklaceAnchor);
         activeNecklace.transform.localPosition = Vector3.zero;
         activeNecklace.transform.localRotation = Quaternion.identity;
-        activeNecklace.transform.localScale = Vector3.one;
+        // DO NOT force scale (keeps prefab scale)
 
-        Debug.Log($"[JewelryManager] Necklace spawned: {prefab.name}");
+        // Apply hard runtime fixes for problematic necklaces
+        RuntimeNecklaceFixer.Apply(activeNecklace);
+
+        // Apply per-model fit if present on the prefab
+        NecklaceFitProfile fit = activeNecklace.GetComponent<NecklaceFitProfile>();
+        if (fit != null)
+        {
+            fit.Apply();
+            Debug.Log($"[JewelryManager] Necklace spawned + fitted: {prefab.name}");
+        }
+        else
+        {
+            Debug.LogWarning($"[JewelryManager] Necklace spawned but NO NecklaceFitProfile found on prefab: {prefab.name}");
+        }
     }
 
     // ── Remove ────────────────────────────────────────────────────────────
@@ -177,7 +196,8 @@ public class JewelryManager : MonoBehaviour
     {
         if (activeLeftEarring != null) Destroy(activeLeftEarring);
         if (activeRightEarring != null) Destroy(activeRightEarring);
-        activeLeftEarring = activeRightEarring = null;
+        activeLeftEarring = null;
+        activeRightEarring = null;
     }
 
     void RemoveNecklace()

@@ -405,7 +405,9 @@
           },
           {
             "name": "Sprite",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/FaceTryOn.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
