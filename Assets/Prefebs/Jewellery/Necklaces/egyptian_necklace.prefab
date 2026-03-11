@@ -47,9 +47,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e44a993fa0a884797bf4d786a975c8e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Necklace3Fix
-  finalLocalPosition: {x: 0, y: -0.055, z: -0.01}
+  finalLocalPosition: {x: 0, y: -0.095, z: -0.01}
   finalLocalRotationEuler: {x: 8, y: 0, z: 0}
-  finalUniformScale: 0.82
+  finalUniformScale: 1
   applyContinuously: 1
   applyForSeconds: 1
 --- !u!114 &8341085495344723274

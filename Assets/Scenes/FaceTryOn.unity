@@ -854,7 +854,7 @@ MonoBehaviour:
       necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
     - itemName: Egyptian Necklace
       thumbnailImage: {fileID: 21300000, guid: 1dc08b8508967204b975d22b870fc1e1, type: 3}
-      jewelryPrefab: {fileID: -6689036041284674117, guid: b1b28ce34077f46edbdd67ea718bb46f, type: 3}
+      jewelryPrefab: {fileID: 4571443474771549143, guid: 0cb660374fb804641b39c9bc16d59b47, type: 3}
       necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
       necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
       necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
