@@ -21,7 +21,6 @@
     "postpack": "rm -rf $(npm prefix)/Samples~"
   },
   "dependencies": {
-    "com.unity.ugui": "1.0.0",
     "com.unity.test-framework": "1.0.0"
   },
   "license": "MIT",
