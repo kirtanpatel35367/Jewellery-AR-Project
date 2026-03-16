@@ -1,0 +1,12 @@
+# ninja log v5
+259	1810	7953521528921719	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	2f7e2bfc50940acb
+1813	2589	7953521536205448	D:/Jewellery-AR-Project/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/k5i306e7/obj/arm64-v8a/libswappywrapper.so	673ef6c31eff731f
+145	6869	7953521579501412	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	4e0165f86274a151
+113	6950	7953521580150563	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	729d37834408f48b
+78	7025	7953521581123101	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	640950875884b3bf
+228	7075	7953521581591019	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	698d10ea2cbb3933
+3	7285	7953521583689947	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	83c0719742281ffe
+206	7775	7953521588667682	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	2f2b9de7fcb89c2
+175	7860	7953521589581723	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	7cd43aab7139a6b5
+43	8076	7953521591554956	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	a4799cb94a43d5cd
+8077	8595	7953521596750004	D:/Jewellery-AR-Project/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/k5i306e7/obj/arm64-v8a/libgame.so	2b5be1bd2b81fb76
