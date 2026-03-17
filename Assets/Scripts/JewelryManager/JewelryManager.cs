@@ -2,12 +2,13 @@ using UnityEngine;
 using System.Collections;
 
 /// <summary>
-/// JewelryManager — Fixed pending spawn system.
+/// JewelryManager — Supports face jewelry (Earrings, Necklace) AND
+/// hand jewelry (Bangle) in the same scene.
 ///
-/// - Waits for anchors before spawning (handles slow face detection).
-/// - Does NOT force localScale = Vector3.one so GLB/FBX prefabs keep their correct base scale.
-/// - If the spawned necklace prefab has NecklaceFitProfile, apply per-model scale/offset/rotation.
-/// - Also calls RuntimeNecklaceFixer for problematic necklaces that need hard runtime correction.
+/// - Face jewelry uses AR face anchors registered at runtime.
+/// - Bangle jewelry uses BanglePlacer which reads hand landmarks
+///   via JewelleryLandmarkReader / HandLandmarkBroadcaster.
+/// - Both systems coexist without interfering with each other.
 /// </summary>
 public class JewelryManager : MonoBehaviour
 {
@@ -19,6 +20,12 @@ public class JewelryManager : MonoBehaviour
     public Transform rightEarAnchor;
     public Transform necklaceAnchor;
 
+    // ── Bangle support ───────────────────────────────────────────────────
+    [Header("Bangle (Hand AR) — assign BanglePlacer in scene")]
+    [Tooltip("Drag the BanglePlacer component from your BangleAnchor GameObject here")]
+    public BanglePlacer banglePlacer;
+
+    // ── Face jewelry state ───────────────────────────────────────────────
     private GameObject activeLeftEarring;
     private GameObject activeRightEarring;
     private GameObject activeNecklace;
@@ -67,33 +74,63 @@ public class JewelryManager : MonoBehaviour
             return;
         }
 
-        if (cat.type == JewelryType.Earrings)
+        // ── Route to correct system based on JewelryType ──────────────
+        if (cat.type == JewelryType.Bangle)
         {
-            if (leftEarAnchor == null || rightEarAnchor == null)
-            {
-                pendingEarPrefab = item.jewelryPrefab;
-                pendingNecklacePrefab = null;
-                Debug.Log("[JewelryManager] Ear anchors not ready — waiting...");
-                StartCoroutine(WaitAndSpawnEarrings(item.jewelryPrefab));
-            }
-            else
-            {
-                SpawnEarrings(item.jewelryPrefab);
-            }
+            EquipBangle(item);
+        }
+        else if (cat.type == JewelryType.Earrings)
+        {
+            EquipEarrings(item);
         }
         else // Necklace
         {
-            if (necklaceAnchor == null)
-            {
-                pendingNecklacePrefab = item.jewelryPrefab;
-                pendingEarPrefab = null;
-                Debug.Log("[JewelryManager] Necklace anchor not ready — waiting...");
-                StartCoroutine(WaitAndSpawnNecklace(item.jewelryPrefab));
-            }
-            else
-            {
-                SpawnNecklace(item.jewelryPrefab);
-            }
+            EquipNecklace(item);
+        }
+    }
+
+    // ── Bangle ────────────────────────────────────────────────────────────
+    void EquipBangle(JewelryItem item)
+    {
+        if (banglePlacer == null)
+        {
+            Debug.LogError("[JewelryManager] BanglePlacer not assigned! " +
+                           "Drag BanglePlacer component into the Inspector.");
+            return;
+        }
+        banglePlacer.SetBanglePrefab(item.jewelryPrefab);
+        Debug.Log($"[JewelryManager] Bangle set: {item.itemName}");
+    }
+
+    // ── Earrings ──────────────────────────────────────────────────────────
+    void EquipEarrings(JewelryItem item)
+    {
+        if (leftEarAnchor == null || rightEarAnchor == null)
+        {
+            pendingEarPrefab = item.jewelryPrefab;
+            pendingNecklacePrefab = null;
+            Debug.Log("[JewelryManager] Ear anchors not ready — waiting...");
+            StartCoroutine(WaitAndSpawnEarrings(item.jewelryPrefab));
+        }
+        else
+        {
+            SpawnEarrings(item.jewelryPrefab);
+        }
+    }
+
+    // ── Necklace ──────────────────────────────────────────────────────────
+    void EquipNecklace(JewelryItem item)
+    {
+        if (necklaceAnchor == null)
+        {
+            pendingNecklacePrefab = item.jewelryPrefab;
+            pendingEarPrefab = null;
+            Debug.Log("[JewelryManager] Necklace anchor not ready — waiting...");
+            StartCoroutine(WaitAndSpawnNecklace(item.jewelryPrefab));
+        }
+        else
+        {
+            SpawnNecklace(item.jewelryPrefab);
         }
     }
 
@@ -151,17 +188,13 @@ public class JewelryManager : MonoBehaviour
     {
         RemoveEarrings();
 
-        // Left
         activeLeftEarring = Instantiate(prefab, leftEarAnchor);
         activeLeftEarring.transform.localPosition = Vector3.zero;
         activeLeftEarring.transform.localRotation = Quaternion.Euler(0f, 180f, 0f);
-        // DO NOT force scale (keeps prefab scale)
 
-        // Right
         activeRightEarring = Instantiate(prefab, rightEarAnchor);
         activeRightEarring.transform.localPosition = Vector3.zero;
         activeRightEarring.transform.localRotation = Quaternion.Euler(0f, 180f, 0f);
-        // DO NOT force scale (keeps prefab scale)
 
         Debug.Log($"[JewelryManager] Earrings spawned: {prefab.name}");
     }
@@ -173,12 +206,9 @@ public class JewelryManager : MonoBehaviour
         activeNecklace = Instantiate(prefab, necklaceAnchor);
         activeNecklace.transform.localPosition = Vector3.zero;
         activeNecklace.transform.localRotation = Quaternion.identity;
-        // DO NOT force scale (keeps prefab scale)
 
-        // Apply hard runtime fixes for problematic necklaces
         RuntimeNecklaceFixer.Apply(activeNecklace);
 
-        // Apply per-model fit if present on the prefab
         NecklaceFitProfile fit = activeNecklace.GetComponent<NecklaceFitProfile>();
         if (fit != null)
         {
@@ -206,10 +236,17 @@ public class JewelryManager : MonoBehaviour
         activeNecklace = null;
     }
 
+    void RemoveBangle()
+    {
+        if (banglePlacer != null)
+            banglePlacer.ClearBangle();
+    }
+
     public void RemoveAll()
     {
         RemoveEarrings();
         RemoveNecklace();
+        RemoveBangle();
         pendingEarPrefab = null;
         pendingNecklacePrefab = null;
         Debug.Log("[JewelryManager] All removed.");
