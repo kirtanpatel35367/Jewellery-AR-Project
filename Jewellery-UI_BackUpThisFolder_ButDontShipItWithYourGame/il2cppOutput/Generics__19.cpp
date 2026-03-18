@@ -2958,7 +2958,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DictionaryEnumerator_Reset_mB5B330221AC0
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 60432
+// Method Definition Index: 60433
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DictionaryEnumerator__ctor_m5D8E1C4C5F7474BBE41D65286C2E572A1F75E223_gshared (DictionaryEnumerator_t5C4C82D7925A73D39548FBFB9F29A1214402FFB2* __this, RuntimeObject* ___0_enumerator, const RuntimeMethod* method) 
 {
 	{
@@ -2969,7 +2969,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DictionaryEnumerator__ctor_m5D8E1C4C5F74
 		return;
 	}
 }
-// Method Definition Index: 60433
+// Method Definition Index: 60434
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DictionaryEnumerator_MoveNext_m9099DD027E2C14CF07051DFE28F8950DB05625F9_gshared (DictionaryEnumerator_t5C4C82D7925A73D39548FBFB9F29A1214402FFB2* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2986,7 +2986,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DictionaryEnumerator_MoveNext_m9099DD027
 		return L_1;
 	}
 }
-// Method Definition Index: 60434
+// Method Definition Index: 60435
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DictionaryEnumerator_Reset_m1BF2D2F373504CF8AB292EB7916AB7C2131201DF_gshared (DictionaryEnumerator_t5C4C82D7925A73D39548FBFB9F29A1214402FFB2* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3002,7 +3002,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DictionaryEnumerator_Reset_m1BF2D2F37350
 		return;
 	}
 }
-// Method Definition Index: 60435
+// Method Definition Index: 60436
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* DictionaryEnumerator_get_Current_m056BA07FF9DF54FC0595041F71F08DC025F10875_gshared (DictionaryEnumerator_t5C4C82D7925A73D39548FBFB9F29A1214402FFB2* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3019,7 +3019,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* DictionaryEnumerator_get_Curre
 		return L_2;
 	}
 }
-// Method Definition Index: 60436
+// Method Definition Index: 60437
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DictionaryEntry_t171080F37B311C25AA9E75888F9C9D703FA721BB DictionaryEnumerator_get_Entry_mE53008710EAFC493A067EDFE390AE9E73F5D586A_gshared (DictionaryEnumerator_t5C4C82D7925A73D39548FBFB9F29A1214402FFB2* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3033,7 +3033,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DictionaryEntry_t171080F37B311C25AA9E75888F9C
 		return L_2;
 	}
 }
-// Method Definition Index: 60437
+// Method Definition Index: 60438
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* DictionaryEnumerator_get_Key_m5093ED5C08F810F3F4288712146E1A92C9202B82_gshared (DictionaryEnumerator_t5C4C82D7925A73D39548FBFB9F29A1214402FFB2* __this, const RuntimeMethod* method) 
 {
 	KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230 V_0;
@@ -3049,7 +3049,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* DictionaryEnumerator_get_Key_m
 		return L_2;
 	}
 }
-// Method Definition Index: 60438
+// Method Definition Index: 60439
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* DictionaryEnumerator_get_Value_mD1FCDF0A4295FA3CE4489FEBCD9825C2D862258A_gshared (DictionaryEnumerator_t5C4C82D7925A73D39548FBFB9F29A1214402FFB2* __this, const RuntimeMethod* method) 
 {
 	KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230 V_0;
@@ -3405,7 +3405,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DictionaryEnumerator_Reset_mBAC7702D03B6
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 60432
+// Method Definition Index: 60433
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DictionaryEnumerator__ctor_m155B6C23E7522C89BEE5AEBE55F683F41B012AA4_gshared (DictionaryEnumerator_t8F2927DE1F87A7AF47844223EC1898B5E994527E* __this, RuntimeObject* ___0_enumerator, const RuntimeMethod* method) 
 {
 	{
@@ -3416,7 +3416,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DictionaryEnumerator__ctor_m155B6C23E752
 		return;
 	}
 }
-// Method Definition Index: 60433
+// Method Definition Index: 60434
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DictionaryEnumerator_MoveNext_mE621B0FE316725BCC196FD251FE44D1A5AD7D658_gshared (DictionaryEnumerator_t8F2927DE1F87A7AF47844223EC1898B5E994527E* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3433,7 +3433,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DictionaryEnumerator_MoveNext_mE621B0FE3
 		return L_1;
 	}
 }
-// Method Definition Index: 60434
+// Method Definition Index: 60435
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DictionaryEnumerator_Reset_m0957B3C68CCD744B79445C007866F0E82BDC0D90_gshared (DictionaryEnumerator_t8F2927DE1F87A7AF47844223EC1898B5E994527E* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3449,7 +3449,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DictionaryEnumerator_Reset_m0957B3C68CCD
 		return;
 	}
 }
-// Method Definition Index: 60435
+// Method Definition Index: 60436
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* DictionaryEnumerator_get_Current_mC1A7410A5D25765A15829AA6D33DCFEB78EDF92D_gshared (DictionaryEnumerator_t8F2927DE1F87A7AF47844223EC1898B5E994527E* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3466,7 +3466,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* DictionaryEnumerator_get_Curre
 		return L_2;
 	}
 }
-// Method Definition Index: 60436
+// Method Definition Index: 60437
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DictionaryEntry_t171080F37B311C25AA9E75888F9C9D703FA721BB DictionaryEnumerator_get_Entry_m6BEE763F1FF3506CAB6B4FE780F92369AFA2F41E_gshared (DictionaryEnumerator_t8F2927DE1F87A7AF47844223EC1898B5E994527E* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3480,7 +3480,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DictionaryEntry_t171080F37B311C25AA9E75888F9C
 		return L_2;
 	}
 }
-// Method Definition Index: 60437
+// Method Definition Index: 60438
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* DictionaryEnumerator_get_Key_mD429ABDAE5B9056BD855F794F24B11309703D822_gshared (DictionaryEnumerator_t8F2927DE1F87A7AF47844223EC1898B5E994527E* __this, const RuntimeMethod* method) 
 {
 	const uint32_t SizeOf_KeyValuePair_2_tF66064423ECA916578B68A8F8B9C68BD19B0883E = il2cpp_codegen_sizeof(il2cpp_rgctx_data_no_init(method->klass->rgctx_data, 6));
@@ -3499,7 +3499,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* DictionaryEnumerator_get_Key_m
 		return L_3;
 	}
 }
-// Method Definition Index: 60438
+// Method Definition Index: 60439
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* DictionaryEnumerator_get_Value_mDAAA7AF34C09E1BBC599E7900C4CA8DB15AFD270_gshared (DictionaryEnumerator_t8F2927DE1F87A7AF47844223EC1898B5E994527E* __this, const RuntimeMethod* method) 
 {
 	const uint32_t SizeOf_KeyValuePair_2_tF66064423ECA916578B68A8F8B9C68BD19B0883E = il2cpp_codegen_sizeof(il2cpp_rgctx_data_no_init(method->klass->rgctx_data, 6));
@@ -4050,14 +4050,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DictionaryPool_2__cctor_m374DEE6D38114B3
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 72110
+// Method Definition Index: 72124
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t DictionaryPropertyBag_2_get_InstantiationKind_m641573CD1323CD15A7F099323BA1B2546F063182_gshared (DictionaryPropertyBag_2_tB597C417CF7505B25BF7B87BA095BDE4F999B934* __this, const RuntimeMethod* method) 
 {
 	{
 		return (int32_t)(1);
 	}
 }
-// Method Definition Index: 72111
+// Method Definition Index: 72125
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Dictionary_2_t5C32AF17A5801FB3109E5B0E622BA8402A04E08E* DictionaryPropertyBag_2_Instantiate_m7778199CDF045586687AB5A9F377D8FB3786C1E0_gshared (DictionaryPropertyBag_2_tB597C417CF7505B25BF7B87BA095BDE4F999B934* __this, const RuntimeMethod* method) 
 {
 	{
@@ -4066,7 +4066,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Dictionary_2_t5C32AF17A5801FB3109E5B0E622BA84
 		return L_0;
 	}
 }
-// Method Definition Index: 72112
+// Method Definition Index: 72126
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DictionaryPropertyBag_2__ctor_m8FC636BBC54135160381FA25CF825CCC925E5E33_gshared (DictionaryPropertyBag_2_tB597C417CF7505B25BF7B87BA095BDE4F999B934* __this, const RuntimeMethod* method) 
 {
 	{

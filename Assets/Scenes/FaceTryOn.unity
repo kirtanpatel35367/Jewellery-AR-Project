@@ -863,10 +863,21 @@ MonoBehaviour:
       necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
       necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
       necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
+  - categoryName: Ring
+    type: 3
+    items:
+    - itemName: Ring
+      thumbnailImage: {fileID: 0}
+      jewelryPrefab: {fileID: 8306998610349388954, guid: d5bc89730c0643140a0bb33950b13362, type: 3}
+      necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
+      necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
+      necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
   leftEarAnchor: {fileID: 0}
   rightEarAnchor: {fileID: 0}
   necklaceAnchor: {fileID: 0}
   banglePlacer: {fileID: 964915048}
+  ringPlacer: {fileID: 0}
+  arCameraManager: {fileID: 0}
 --- !u!4 &954362370
 Transform:
   m_ObjectHideFlags: 0
@@ -1050,11 +1061,11 @@ MonoBehaviour:
   banglePrefab: {fileID: 0}
   imageSourceBehaviour: {fileID: 0}
   baseDepth: 0.5
-  depthZScale: 0.1
-  wristBias: 0.05
-  bangleDiameter: 0.065
+  targetDiameterM: 0.065
+  wristOffsetFactor: 0
   posSmooth: 18
   rotSmooth: 14
+  minDetectionFrames: 3
 --- !u!1 &1064799459
 GameObject:
   m_ObjectHideFlags: 0
@@ -1103,6 +1114,74 @@ MonoBehaviour:
   screen: {fileID: 0}
   runningMode: 0
   _handLandmarkerResultAnnotationController: {fileID: 0}
+--- !u!1 &1284825132
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1284825135}
+  - component: {fileID: 1284825134}
+  - component: {fileID: 1284825133}
+  m_Layer: 0
+  m_Name: RingAnchor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1284825133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284825132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f86f8f37e1e5ecf48b0beffdac81dedf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::JewelleryLandmarkReader
+--- !u!114 &1284825134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284825132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 044cef7e57eb07a43aaa04d76ef63714, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RingPlacer
+  landmarkReader: {fileID: 1284825133}
+  arCamera: {fileID: 77988582}
+  ringPrefab: {fileID: 0}
+  imageSourceBehaviour: {fileID: 0}
+  finger: 2
+  fingerBias: 0.35
+  baseDepth: 0.65
+  targetDiameterM: 0.019
+  posSmooth: 22
+  rotSmooth: 16
+  minDetectionFrames: 3
+--- !u!4 &1284825135
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284825132}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.00002}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1889989203
 GameObject:
   m_ObjectHideFlags: 0
@@ -1351,3 +1430,4 @@ SceneRoots:
   - {fileID: 429898240}
   - {fileID: 2041899631}
   - {fileID: 964915046}
+  - {fileID: 1284825135}

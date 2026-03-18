@@ -1,41 +1,38 @@
-// LandmarkToWorld.cs
-// CORRECT viewport-aware MediaPipe → Unity world space conversion.
+// LandmarkToWorld_Hand.cs — v6 FINAL
 //
-// ROOT CAUSE OF ALL PREVIOUS ERRORS:
-//   The AR camera image (e.g. 480x640 after 90° rotation) is rendered on the
-//   phone screen (1080x2340) using FILL mode — it gets scaled up and CROPPED.
-//   Naive mapping (nx * screenWidth) ignores this crop and produces wrong positions.
+// FORMULA DERIVATION (confirmed from video n_003.png):
 //
-// CORRECT ALGORITHM:
-//   1. Compute how ARCameraBackground fills the screen (scale + crop offset)
-//   2. Map MediaPipe normalized coords through that exact same transform
-//   3. Use ScreenToWorldPoint with the corrected screen position
+// Observation: Y direction is correct (fingers top, wrist bottom) ✓
+//              X direction is MIRRORED (thumb/pinky sides swapped) ✗
+//
+// Fix: nx = 1 - lm.x  (flip X to un-mirror)
+//      ny = lm.y       (keep Y as-is, already correct)
+//
+// WHY X is mirrored:
+//   The 90°CCW rotation in ARCameraImageSource maps landscape→portrait such that
+//   the raw camera X axis ends up reversed in portrait X.
+//   MediaPipe outputs lm.x increasing left→right in the texture,
+//   but that texture left = actual screen RIGHT after the rotation.
+//   So we flip: nx = 1 - lm.x.
+//
+// WHY Y needs no flip:
+//   Unity Texture2D stores rows bottom-up (OpenGL convention).
+//   MediaPipe lm.y=0 → bottom of texture → wrist area → screen bottom.
+//   Unity ScreenToWorldPoint y=0 → screen bottom. Directions match. No flip.
 
 using UnityEngine;
-using UnityEngine.XR.ARFoundation;
 
-public static class LandmarkToWorld
+public static class LandmarkToWorld_Hand
 {
-    // Cache viewport params — recomputed if texture size changes
-    private static int   _lastTexW, _lastTexH, _lastScrW, _lastScrH;
+    private static int _lastTexW, _lastTexH, _lastScrW, _lastScrH;
     private static float _scaleX, _scaleY, _offsetX, _offsetY;
 
-    /// <summary>
-    /// Convert MediaPipe normalized landmark to Unity world position.
-    /// Pass the ARCameraImageSource texture dimensions for correct crop mapping.
-    /// </summary>
-    /// <param name="lm">Normalized landmark: x,y in [0,1], z is depth hint</param>
-    /// <param name="cam">AR camera</param>
-    /// <param name="texW">Width of texture sent to MediaPipe (after rotation)</param>
-    /// <param name="texH">Height of texture sent to MediaPipe (after rotation)</param>
-    /// <param name="depthScale">How much MediaPipe Z affects world depth</param>
     public static Vector3 Convert(Vector3 lm, Camera cam,
-        int texW, int texH, float depthScale = 0.15f)
+        int texW, int texH, float worldDepth = 0.6f)
     {
         int scrW = Screen.width;
         int scrH = Screen.height;
 
-        // Recompute viewport mapping if anything changed
         if (texW != _lastTexW || texH != _lastTexH ||
             scrW != _lastScrW || scrH != _lastScrH)
         {
@@ -44,50 +41,32 @@ public static class LandmarkToWorld
             _lastScrW = scrW; _lastScrH = scrH;
         }
 
-        // MediaPipe back camera: X is mirrored, Y is flipped relative to screen
-        float nx = 1f - lm.x;   // mirror X for back camera
-        float ny = 1f - lm.y;   // flip Y (MediaPipe 0=top, Unity screen 0=bottom)
+        // X is mirrored due to 90°CCW rotation → flip it
+        // Y is correct (texture bottom-up convention matches screen) → keep it
+        float nx = 1f - lm.x;   // un-mirror X
+        float ny = lm.y;         // Y already correct, no flip
 
-        // Apply viewport transform: scale to rendered image size, then subtract crop
         float sx = nx * _scaleX - _offsetX;
         float sy = ny * _scaleY - _offsetY;
 
-        // Clamp to screen bounds
         sx = Mathf.Clamp(sx, 0, scrW);
         sy = Mathf.Clamp(sy, 0, scrH);
 
-        // Depth: base distance + MediaPipe Z hint
-        float depth = Mathf.Clamp(
-            cam.nearClipPlane + 0.45f + lm.z * depthScale,
-            cam.nearClipPlane + 0.05f, 3.0f);
-
+        float depth = Mathf.Clamp(worldDepth, cam.nearClipPlane + 0.05f, 3f);
         return cam.ScreenToWorldPoint(new Vector3(sx, sy, depth));
-    }
-
-    /// <summary>Legacy overload — uses screen dimensions directly (less accurate)</summary>
-    public static Vector3 Convert(Vector3 lm, Camera cam, float depthScale = 0.15f)
-    {
-        // Fallback: assume texture fills screen (no crop correction)
-        return Convert(lm, cam, Screen.width, Screen.height, depthScale);
     }
 
     private static void ComputeViewport(int texW, int texH, int scrW, int scrH)
     {
-        // ARCameraBackground uses FILL: scale uniformly so image covers entire screen
-        float scaleToFill = Mathf.Max((float)scrW / texW, (float)scrH / texH);
+        float fill = Mathf.Max((float)scrW / texW, (float)scrH / texH);
+        float rndW = texW * fill;
+        float rndH = texH * fill;
+        _offsetX = (rndW - scrW) * 0.5f;
+        _offsetY = (rndH - scrH) * 0.5f;
+        _scaleX = rndW;
+        _scaleY = rndH;
 
-        float renderedW = texW * scaleToFill;
-        float renderedH = texH * scaleToFill;
-
-        // Crop offset = how many pixels of the rendered image fall outside screen
-        _offsetX = (renderedW - scrW) * 0.5f;
-        _offsetY = (renderedH - scrH) * 0.5f;
-        _scaleX  = renderedW;
-        _scaleY  = renderedH;
-
-        Debug.Log($"[LandmarkToWorld] Viewport: tex={texW}x{texH} " +
-                  $"screen={scrW}x{scrH} " +
-                  $"rendered={renderedW:F0}x{renderedH:F0} " +
-                  $"crop=({_offsetX:F1},{_offsetY:F1})");
+        Debug.Log($"[LandmarkToWorld] tex={texW}x{texH} screen={scrW}x{scrH} " +
+                  $"rendered={rndW:F0}x{rndH:F0} offset=({_offsetX:F1},{_offsetY:F1})");
     }
 }
