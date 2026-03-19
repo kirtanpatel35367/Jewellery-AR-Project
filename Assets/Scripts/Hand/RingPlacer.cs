@@ -1,7 +1,12 @@
-// RingPlacer.cs — v11 SELF-CALIBRATING SCALE
-// Same auto-calibration fix as BanglePlacer v18.
+// RingPlacer.cs — v12 CAMERA-AWARE LANDMARK MAPPING
+//
+// FIX: Pass isBackCamera to LandmarkToWorld_Hand.Convert so that
+// landmark X/Y are correctly un-mirrored for the back (World-facing) camera.
+// The flag is read from ARCameraManager each frame so it stays in sync
+// with JewelryManager's camera switching.
 
 using UnityEngine;
+using UnityEngine.XR.ARFoundation;
 
 public class RingPlacer : MonoBehaviour
 {
@@ -12,6 +17,10 @@ public class RingPlacer : MonoBehaviour
     public Camera arCamera;
     public GameObject ringPrefab;
     public ARCameraImageSourceBehaviour imageSourceBehaviour;
+
+    [Header("Camera Reference (for back-camera landmark fix)")]
+    [Tooltip("Assign the same ARCameraManager used by JewelryManager.")]
+    public ARCameraManager arCameraManager;
 
     [Header("Finger")]
     public FingerTarget finger = FingerTarget.Ring;
@@ -81,6 +90,13 @@ public class RingPlacer : MonoBehaviour
         return dxz > 0.0001f ? dxz : b.size.y;
     }
 
+    /// <summary>Returns true when ARCameraManager is set to World (back camera).</summary>
+    bool IsBackCamera()
+    {
+        if (arCameraManager == null) return false;
+        return arCameraManager.currentFacingDirection == CameraFacingDirection.World;
+    }
+
     void LateUpdate()
     {
         if (!_ready || !_ring) return;
@@ -89,8 +105,10 @@ public class RingPlacer : MonoBehaviour
         { _frames = 0; _ring.SetActive(false); _first = true; return; }
         if (++_frames < minDetectionFrames) { _ring.SetActive(false); return; }
 
+        bool backCam = IsBackCamera();
+
         int fi = (int)finger;
-        Vector3 mcp = C(FL[fi, 0]), pip = C(FL[fi, 1]);
+        Vector3 mcp = C(FL[fi, 0], backCam), pip = C(FL[fi, 1], backCam);
         Vector3 tPos = Vector3.Lerp(mcp, pip, fingerBias);
         Vector3 fAxis = (pip - mcp).normalized;
         if (fAxis.sqrMagnitude < 0.001f) { _ring.SetActive(false); return; }
@@ -112,7 +130,8 @@ public class RingPlacer : MonoBehaviour
         _ring.SetActive(true);
     }
 
-    Vector3 C(int i) => LandmarkToWorld_Hand.Convert(landmarkReader.GetLandmark(i), arCamera, _texW, _texH, baseDepth);
+    Vector3 C(int i, bool backCam) => LandmarkToWorld_Hand.Convert(
+        landmarkReader.GetLandmark(i), arCamera, _texW, _texH, baseDepth, backCam);
 
     void UpdateTex()
     {

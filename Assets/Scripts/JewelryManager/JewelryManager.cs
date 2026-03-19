@@ -8,6 +8,13 @@ using UnityEngine.XR.ARFoundation;
 ///
 /// Face jewelry (Earrings/Necklace) → front/face AR camera
 /// Hand jewelry (Bangle/Ring)       → back camera
+///
+/// FIX v2:
+///  - Camera switches on CATEGORY selection (not per-item click).
+///  - RemoveAll() no longer forces front camera — it stays on whatever
+///    camera mode was last used by the active category.
+///  - _currentCameraIsBack tracks actual camera state so repeated
+///    same-direction switches are no-ops.
 /// </summary>
 public class JewelryManager : MonoBehaviour
 {
@@ -38,7 +45,8 @@ public class JewelryManager : MonoBehaviour
     private GameObject pendingNecklacePrefab;
 
     // ── Current camera mode ───────────────────────────────────────────
-    private bool _isBackCamera = false;
+    // Starts as front camera (face AR default).
+    private bool _currentCameraIsBack = false;
 
     // ── Anchor registration ───────────────────────────────────────────
 
@@ -55,8 +63,28 @@ public class JewelryManager : MonoBehaviour
         if (pendingNecklacePrefab != null) { SpawnNecklace(pendingNecklacePrefab); pendingNecklacePrefab = null; }
     }
 
-    // ── Main entry point from JewelryUI ──────────────────────────────
+    // ── Called by JewelryUI when user taps a CATEGORY tab ────────────
+    /// <summary>
+    /// Switch camera based on category type.
+    /// Call this from JewelryUI.OnCategoryTapped BEFORE spawning items.
+    /// </summary>
+    public void OnCategorySelected(int catIdx)
+    {
+        if (categories == null || catIdx < 0 || catIdx >= categories.Length) return;
+        JewelryCategory cat = categories[catIdx];
 
+        bool needsBack = (cat.type == JewelryType.Bangle || cat.type == JewelryType.Ring);
+        if (needsBack)
+            SwitchToBackCamera();
+        else
+            SwitchToFaceCamera();
+    }
+
+    // ── Main entry point from JewelryUI (item click) ─────────────────
+    /// <summary>
+    /// Equip the selected item. Camera is already correct from OnCategorySelected.
+    /// This method no longer switches cameras.
+    /// </summary>
     public void EquipJewelryByIndex(int catIdx, int itemIdx)
     {
         if (categories == null || catIdx < 0 || catIdx >= categories.Length) return;
@@ -71,22 +99,10 @@ public class JewelryManager : MonoBehaviour
 
         switch (cat.type)
         {
-            case JewelryType.Earrings:
-                SwitchToFaceCamera();
-                EquipEarrings(item);
-                break;
-            case JewelryType.Necklace:
-                SwitchToFaceCamera();
-                EquipNecklace(item);
-                break;
-            case JewelryType.Bangle:
-                SwitchToBackCamera();
-                EquipBangle(item);
-                break;
-            case JewelryType.Ring:
-                SwitchToBackCamera();
-                EquipRing(item);
-                break;
+            case JewelryType.Earrings: EquipEarrings(item); break;
+            case JewelryType.Necklace: EquipNecklace(item); break;
+            case JewelryType.Bangle: EquipBangle(item); break;
+            case JewelryType.Ring: EquipRing(item); break;
         }
     }
 
@@ -94,21 +110,21 @@ public class JewelryManager : MonoBehaviour
 
     private void SwitchToBackCamera()
     {
-        if (_isBackCamera) return;
-        _isBackCamera = true;
-        SetCameraFacing(UnityEngine.XR.ARFoundation.CameraFacingDirection.World);
+        if (_currentCameraIsBack) return;           // already back — no-op
+        _currentCameraIsBack = true;
+        SetCameraFacing(CameraFacingDirection.World);
         Debug.Log("[JewelryManager] Switched to BACK camera.");
     }
 
     private void SwitchToFaceCamera()
     {
-        if (!_isBackCamera) return;
-        _isBackCamera = false;
-        SetCameraFacing(UnityEngine.XR.ARFoundation.CameraFacingDirection.User);
+        if (!_currentCameraIsBack) return;          // already front — no-op
+        _currentCameraIsBack = false;
+        SetCameraFacing(CameraFacingDirection.User);
         Debug.Log("[JewelryManager] Switched to FACE camera.");
     }
 
-    private void SetCameraFacing(UnityEngine.XR.ARFoundation.CameraFacingDirection direction)
+    private void SetCameraFacing(CameraFacingDirection direction)
     {
         if (arCameraManager == null)
         {
@@ -213,6 +229,11 @@ public class JewelryManager : MonoBehaviour
         activeNecklace = null;
     }
 
+    /// <summary>
+    /// Removes all active jewelry.
+    /// Camera is NOT switched — it stays on whatever the active category needed.
+    /// If no hand jewelry was active, it was already on front camera anyway.
+    /// </summary>
     public void RemoveAll()
     {
         RemoveEarrings();
@@ -221,8 +242,11 @@ public class JewelryManager : MonoBehaviour
         if (ringPlacer != null) ringPlacer.ClearRing();
         pendingEarPrefab = null;
         pendingNecklacePrefab = null;
-        SwitchToFaceCamera();
-        Debug.Log("[JewelryManager] All removed.");
+        // ── NO camera switch here ──────────────────────────────────────
+        // The camera stays on whatever mode the last selected category needed.
+        // This prevents unwanted flipping to front camera when user taps
+        // "Remove All" while in Bangle/Ring (back-camera) mode.
+        Debug.Log("[JewelryManager] All jewelry removed. Camera unchanged.");
     }
 
     public int CategoryCount => categories != null ? categories.Length : 0;

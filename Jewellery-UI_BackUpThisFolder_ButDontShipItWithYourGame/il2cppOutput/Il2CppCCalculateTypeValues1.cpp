@@ -6451,7 +6451,7 @@ struct U3CU3Ec_tCD56AB78F754E1F40C57AAD27D667EED16220EA6  : public RuntimeObject
 struct U3CU3Ec_tDCC44DCE4125DB4DB61E7553729ECA6384481B2B  : public RuntimeObject
 {
 };
-struct U3CWaitAndSpawnEarringsU3Ed__23_t66D5BEE473728396955122AD9B103C2DB34B9A3E  : public RuntimeObject
+struct U3CWaitAndSpawnEarringsU3Ed__24_t23F2F9BC1FC3804401D39814C7A4B17279BB1DEC  : public RuntimeObject
 {
 	int32_t ___U3CU3E1__state;
 	RuntimeObject* ___U3CU3E2__current;
@@ -6459,7 +6459,7 @@ struct U3CWaitAndSpawnEarringsU3Ed__23_t66D5BEE473728396955122AD9B103C2DB34B9A3E
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___prefab;
 	float ___U3CtU3E5__2;
 };
-struct U3CWaitAndSpawnNecklaceU3Ed__24_tBC5C3DD9D536EDEC8EBDA2F33C5090B36311CB3F  : public RuntimeObject
+struct U3CWaitAndSpawnNecklaceU3Ed__25_t56972FFD88CA5869E2F6B1391E4AB6A02DAD8220  : public RuntimeObject
 {
 	int32_t ___U3CU3E1__state;
 	RuntimeObject* ___U3CU3E2__current;
@@ -35478,6 +35478,7 @@ struct BanglePlacer_tA1AFD0A5196E38DA544DC9B475ACB3A1B415AF9A  : public MonoBeha
 	Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ___arCamera;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___banglePrefab;
 	ARCameraImageSourceBehaviour_t96267AD17B80324968D58FC71842BC456F7AB2B0* ___imageSourceBehaviour;
+	ARCameraManager_t6E957EA922911B8447D086D9FB1F860EC967BD9F* ___arCameraManager;
 	float ___baseDepth;
 	float ___targetDiameterM;
 	float ___wristOffsetFactor;
@@ -35713,7 +35714,7 @@ struct JewelryManager_t4D46089BC77D683C7E4DABBD20CA3CBC36FF6A6F  : public MonoBe
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___activeNecklace;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___pendingEarPrefab;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___pendingNecklacePrefab;
-	bool ____isBackCamera;
+	bool ____currentCameraIsBack;
 };
 struct JewelryPlacementOverride_tBE2AAFAF737F34982243617EAE0266674730AB2D  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -36014,6 +36015,7 @@ struct RingPlacer_t612E6F043A82061D57E306D336BF433D906183D3  : public MonoBehavi
 	Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ___arCamera;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___ringPrefab;
 	ARCameraImageSourceBehaviour_t96267AD17B80324968D58FC71842BC456F7AB2B0* ___imageSourceBehaviour;
+	ARCameraManager_t6E957EA922911B8447D086D9FB1F860EC967BD9F* ___arCameraManager;
 	int32_t ___finger;
 	float ___fingerBias;
 	float ___baseDepth;
@@ -52098,9 +52100,9 @@ const Il2CppTypeDefinitionSizes g_typeDefinitionSize9134 = { sizeof(JewelryCateg
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize9135;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize9135 = { sizeof(JewelryItem_t073CF8F905DCA98DB8591EE515859059824C0109), -1, 0, 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize9136;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize9136 = { sizeof(U3CWaitAndSpawnEarringsU3Ed__23_t66D5BEE473728396955122AD9B103C2DB34B9A3E), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize9136 = { sizeof(U3CWaitAndSpawnEarringsU3Ed__24_t23F2F9BC1FC3804401D39814C7A4B17279BB1DEC), -1, 0, 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize9137;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize9137 = { sizeof(U3CWaitAndSpawnNecklaceU3Ed__24_tBC5C3DD9D536EDEC8EBDA2F33C5090B36311CB3F), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize9137 = { sizeof(U3CWaitAndSpawnNecklaceU3Ed__25_t56972FFD88CA5869E2F6B1391E4AB6A02DAD8220), -1, 0, 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize9138;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize9138 = { sizeof(JewelryManager_t4D46089BC77D683C7E4DABBD20CA3CBC36FF6A6F), -1, 0, 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize9139;

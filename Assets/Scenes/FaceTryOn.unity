@@ -876,8 +876,8 @@ MonoBehaviour:
   rightEarAnchor: {fileID: 0}
   necklaceAnchor: {fileID: 0}
   banglePlacer: {fileID: 964915048}
-  ringPlacer: {fileID: 0}
-  arCameraManager: {fileID: 0}
+  ringPlacer: {fileID: 1284825134}
+  arCameraManager: {fileID: 77988580}
 --- !u!4 &954362370
 Transform:
   m_ObjectHideFlags: 0
@@ -1060,6 +1060,7 @@ MonoBehaviour:
   arCamera: {fileID: 77988582}
   banglePrefab: {fileID: 0}
   imageSourceBehaviour: {fileID: 0}
+  arCameraManager: {fileID: 77988580}
   baseDepth: 0.5
   targetDiameterM: 0.065
   wristOffsetFactor: 0
@@ -1160,6 +1161,7 @@ MonoBehaviour:
   arCamera: {fileID: 77988582}
   ringPrefab: {fileID: 0}
   imageSourceBehaviour: {fileID: 0}
+  arCameraManager: {fileID: 77988580}
   finger: 2
   fingerBias: 0.35
   baseDepth: 0.65

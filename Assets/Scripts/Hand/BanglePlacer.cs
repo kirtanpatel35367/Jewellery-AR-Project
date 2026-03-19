@@ -1,26 +1,12 @@
-// BanglePlacer.cs — v18 SELF-CALIBRATING SCALE
+// BanglePlacer.cs — v19 CAMERA-AWARE LANDMARK MAPPING
 //
-// ROOT CAUSE (confirmed from video measurement):
-//   The bracelet prefab's world-space size is ~10x too large.
-//   (It fills 100% of screen width = ~0.64m at 0.5m depth.
-//    A real bracelet needs to be ~0.065m = 6.5cm.)
-//
-//   Previous attempts all failed because:
-//   - Manual sizeMultiplier → user can't know what number to enter
-//   - prefabDiameterUnits → same problem, requires measuring the model
-//   - "preserve prefab scale" → the prefab scale is already wrong for AR world coords
-//
-// DEFINITIVE FIX:
-//   At spawn time, measure the prefab's ACTUAL rendered world-space diameter
-//   using Renderer.bounds (works on any mesh, any scale).
-//   Then compute exactly: localScale = (targetDiameterM / measuredDiameter) * prefabScale
-//   This is fully automatic — works with any prefab, zero manual tuning.
-//
-// ONLY THING TO TUNE:
-//   targetDiameterM  — the physical bracelet diameter you want (default 0.065 = 6.5cm)
-//   baseDepth        — how far the hand is from camera (default 0.5m)
+// FIX: Pass isBackCamera to LandmarkToWorld_Hand.Convert so that
+// landmark X/Y are correctly un-mirrored for the back (World-facing) camera.
+// The flag is read from ARCameraManager each frame so it stays in sync
+// with JewelryManager's camera switching.
 
 using UnityEngine;
+using UnityEngine.XR.ARFoundation;
 
 public class BanglePlacer : MonoBehaviour
 {
@@ -29,6 +15,10 @@ public class BanglePlacer : MonoBehaviour
     public Camera arCamera;
     public GameObject banglePrefab;
     public ARCameraImageSourceBehaviour imageSourceBehaviour;
+
+    [Header("Camera Reference (for back-camera landmark fix)")]
+    [Tooltip("Assign the same ARCameraManager used by JewelryManager.")]
+    public ARCameraManager arCameraManager;
 
     [Header("Depth — metres from camera to hand")]
     [Tooltip("How far the hand is from the phone.\n" +
@@ -58,7 +48,7 @@ public class BanglePlacer : MonoBehaviour
 
     // ── private ──────────────────────────────────────────────────────
     private GameObject _bangle;
-    private Vector3 _calibratedScale;  // auto-computed at spawn, never changes
+    private Vector3 _calibratedScale;
     private Vector3 _smoothPos;
     private Quaternion _smoothRot = Quaternion.identity;
     private Vector3 _posVelocity;
@@ -93,18 +83,13 @@ public class BanglePlacer : MonoBehaviour
     {
         if (_bangle) Destroy(_bangle);
 
-        // Instantiate at origin with identity so bounds are unaffected by scene transform
         _bangle = Instantiate(prefab, Vector3.zero, Quaternion.identity, transform);
-        _bangle.SetActive(true); // must be active to get renderer bounds
+        _bangle.SetActive(true);
 
-        // ── SELF-CALIBRATING SCALE ────────────────────────────────────
-        // Measure the prefab's actual rendered world-space size right now.
-        // We use the largest horizontal extent (X or Z) as the "diameter".
         float measuredDiameter = MeasurePrefabDiameter(_bangle);
 
         if (measuredDiameter > 0.0001f)
         {
-            // Compute exactly how much to scale so world diameter = targetDiameterM
             float scaleFactor = targetDiameterM / measuredDiameter;
             _calibratedScale = _bangle.transform.localScale * scaleFactor;
             _bangle.transform.localScale = _calibratedScale;
@@ -117,7 +102,6 @@ public class BanglePlacer : MonoBehaviour
         }
         else
         {
-            // Fallback: no renderer found, keep prefab scale as-is
             _calibratedScale = _bangle.transform.localScale;
             Debug.LogWarning("[BanglePlacer] Could not measure prefab bounds — " +
                              "keeping prefab scale. Add a Renderer to the prefab.");
@@ -128,26 +112,22 @@ public class BanglePlacer : MonoBehaviour
         _frames = 0;
     }
 
-    // Measures the largest horizontal diameter of the prefab's rendered mesh bounds.
-    // Works regardless of how the prefab was modelled or what scale it has.
     static float MeasurePrefabDiameter(GameObject go)
     {
-        // Collect all renderers including children
         var renderers = go.GetComponentsInChildren<Renderer>();
         if (renderers.Length == 0) return 0f;
-
-        // Encapsulate all renderer bounds into one
         Bounds total = renderers[0].bounds;
         for (int i = 1; i < renderers.Length; i++)
             total.Encapsulate(renderers[i].bounds);
-
-        // Use the max of X and Z size as the "diameter" (bracelet lies flat on XZ plane)
-        // This handles both horizontal and vertical prefab orientations
         float diamXZ = Mathf.Max(total.size.x, total.size.z);
-        // Fallback to Y if X and Z are both tiny (vertical torus orientation)
-        float diam = diamXZ > 0.0001f ? diamXZ : total.size.y;
+        return diamXZ > 0.0001f ? diamXZ : total.size.y;
+    }
 
-        return diam;
+    /// <summary>Returns true when ARCameraManager is set to World (back camera).</summary>
+    bool IsBackCamera()
+    {
+        if (arCameraManager == null) return false;
+        return arCameraManager.currentFacingDirection == CameraFacingDirection.World;
     }
 
     void LateUpdate()
@@ -160,29 +140,27 @@ public class BanglePlacer : MonoBehaviour
 
         if (++_frames < minDetectionFrames) { _bangle.SetActive(false); return; }
 
-        // World positions of key landmarks at baseDepth from camera
-        Vector3 wristW = C(0);
-        Vector3 indexW = C(5);
-        Vector3 midW = C(9);
-        Vector3 ringW = C(13);
-        Vector3 pinkyW = C(17);
+        bool backCam = IsBackCamera();
+
+        Vector3 wristW = C(0, backCam);
+        Vector3 indexW = C(5, backCam);
+        Vector3 midW = C(9, backCam);
+        Vector3 ringW = C(13, backCam);
+        Vector3 pinkyW = C(17, backCam);
 
         Vector3 knuckleCenter = (indexW + midW + ringW + pinkyW) * 0.25f;
         Vector3 wristToKnuckle = (knuckleCenter - wristW).normalized;
         if (wristToKnuckle.sqrMagnitude < 0.001f) { _bangle.SetActive(false); return; }
 
-        // Bracelet sits at wrist, with optional offset
         float armLen = Vector3.Distance(wristW, knuckleCenter);
         Vector3 targetPos = wristW + wristToKnuckle * (armLen * wristOffsetFactor);
 
-        // Orientation: ring plane perpendicular to wrist axis
         Vector3 palmAcross = (pinkyW - indexW).normalized;
         Vector3 palmNormal = Vector3.Cross(wristToKnuckle, palmAcross).normalized;
         if (landmarkReader.IsLeftHand) palmNormal = -palmNormal;
         if (palmNormal.sqrMagnitude < 0.001f) palmNormal = arCamera.transform.forward;
         Quaternion targetRot = Quaternion.LookRotation(wristToKnuckle, palmNormal);
 
-        // Smooth position and rotation — scale is fixed (calibrated at spawn)
         float dt = Time.deltaTime;
         if (_firstFrame)
         {
@@ -199,14 +177,13 @@ public class BanglePlacer : MonoBehaviour
         }
 
         _bangle.transform.SetPositionAndRotation(_smoothPos, _smoothRot);
-        // Scale is already set at spawn — do NOT touch it here
         _bangle.SetActive(true);
 
         _logT += dt;
         if (_logT >= 2f)
         {
             _logT = 0f;
-            Debug.Log($"[BanglePlacer] " +
+            Debug.Log($"[BanglePlacer] backCam={backCam}  " +
                       $"baseDepth={baseDepth:F2}m  " +
                       $"targetDiam={targetDiameterM * 100:F1}cm  " +
                       $"calibScale={_calibratedScale}  " +
@@ -215,8 +192,8 @@ public class BanglePlacer : MonoBehaviour
         }
     }
 
-    Vector3 C(int i) => LandmarkToWorld_Hand.Convert(
-        landmarkReader.GetLandmark(i), arCamera, _texW, _texH, baseDepth);
+    Vector3 C(int i, bool backCam) => LandmarkToWorld_Hand.Convert(
+        landmarkReader.GetLandmark(i), arCamera, _texW, _texH, baseDepth, backCam);
 
     void UpdateTex()
     {

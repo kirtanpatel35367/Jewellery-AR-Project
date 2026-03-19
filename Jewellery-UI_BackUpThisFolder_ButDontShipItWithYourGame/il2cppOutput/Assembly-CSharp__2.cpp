@@ -1598,7 +1598,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfigWindow_SetNumFaces_m9
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 71853
+// Method Definition Index: 71856
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t FaceLandmarkDetectionConfig_get_Delegate_mCAB7905CFC4FAA30957630FFFAB3BC62E0FBECFF (FaceLandmarkDetectionConfig_t7A6146A131FB576E78697CB9B4D7ACF1799B4A45* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1607,7 +1607,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t FaceLandmarkDetectionConfig_get_Deleg
 		return L_0;
 	}
 }
-// Method Definition Index: 71854
+// Method Definition Index: 71857
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfig_set_Delegate_m0102FE42E155E29C0CB2DD7692BE3E6CA7C62F70 (FaceLandmarkDetectionConfig_t7A6146A131FB576E78697CB9B4D7ACF1799B4A45* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -1617,7 +1617,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfig_set_Delegate
 		return;
 	}
 }
-// Method Definition Index: 71855
+// Method Definition Index: 71858
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t FaceLandmarkDetectionConfig_get_ImageReadMode_m1496D5FB093F1D02BC6920B71CAA490F39DF0730 (FaceLandmarkDetectionConfig_t7A6146A131FB576E78697CB9B4D7ACF1799B4A45* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1626,7 +1626,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t FaceLandmarkDetectionConfig_get_Image
 		return L_0;
 	}
 }
-// Method Definition Index: 71856
+// Method Definition Index: 71859
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfig_set_ImageReadMode_m12BEC106FE8D47B2C7035537564904B2691F9C17 (FaceLandmarkDetectionConfig_t7A6146A131FB576E78697CB9B4D7ACF1799B4A45* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -1636,7 +1636,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfig_set_ImageRea
 		return;
 	}
 }
-// Method Definition Index: 71857
+// Method Definition Index: 71860
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t FaceLandmarkDetectionConfig_get_RunningMode_m2723F0ECF7E0BE8AD1F429ED7DA713AA8FD52BC6 (FaceLandmarkDetectionConfig_t7A6146A131FB576E78697CB9B4D7ACF1799B4A45* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1645,7 +1645,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t FaceLandmarkDetectionConfig_get_Runni
 		return L_0;
 	}
 }
-// Method Definition Index: 71858
+// Method Definition Index: 71861
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfig_set_RunningMode_mFDA76D272C7D5C3BDAA0B135E004886DCC1188C5 (FaceLandmarkDetectionConfig_t7A6146A131FB576E78697CB9B4D7ACF1799B4A45* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -1655,7 +1655,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfig_set_RunningM
 		return;
 	}
 }
-// Method Definition Index: 71859
+// Method Definition Index: 71862
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t FaceLandmarkDetectionConfig_get_NumFaces_mE9279B5DE5977D1019FC1A9F790D6CFD48E6D382 (FaceLandmarkDetectionConfig_t7A6146A131FB576E78697CB9B4D7ACF1799B4A45* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1664,7 +1664,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t FaceLandmarkDetectionConfig_get_NumFa
 		return L_0;
 	}
 }
-// Method Definition Index: 71860
+// Method Definition Index: 71863
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfig_set_NumFaces_mA5F502F45D5C6180A819865007908231357A2AB0 (FaceLandmarkDetectionConfig_t7A6146A131FB576E78697CB9B4D7ACF1799B4A45* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -1674,7 +1674,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfig_set_NumFaces
 		return;
 	}
 }
-// Method Definition Index: 71861
+// Method Definition Index: 71864
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float FaceLandmarkDetectionConfig_get_MinFaceDetectionConfidence_m54753531182A15CE6E67E9912FAD3DFB2CEA5CD0 (FaceLandmarkDetectionConfig_t7A6146A131FB576E78697CB9B4D7ACF1799B4A45* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1683,7 +1683,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float FaceLandmarkDetectionConfig_get_MinFace
 		return L_0;
 	}
 }
-// Method Definition Index: 71862
+// Method Definition Index: 71865
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfig_set_MinFaceDetectionConfidence_m80B91BEBB3963CF1C9BC61DCE143146A4455372B (FaceLandmarkDetectionConfig_t7A6146A131FB576E78697CB9B4D7ACF1799B4A45* __this, float ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -1693,7 +1693,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfig_set_MinFaceD
 		return;
 	}
 }
-// Method Definition Index: 71863
+// Method Definition Index: 71866
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float FaceLandmarkDetectionConfig_get_MinFacePresenceConfidence_mD1D7812C8ED602CD0C997152F35A968EB8ED6BB9 (FaceLandmarkDetectionConfig_t7A6146A131FB576E78697CB9B4D7ACF1799B4A45* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1702,7 +1702,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float FaceLandmarkDetectionConfig_get_MinFace
 		return L_0;
 	}
 }
-// Method Definition Index: 71864
+// Method Definition Index: 71867
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfig_set_MinFacePresenceConfidence_m402D4960F1B70CEF3FA38F900EA0B8740975B80E (FaceLandmarkDetectionConfig_t7A6146A131FB576E78697CB9B4D7ACF1799B4A45* __this, float ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -1712,7 +1712,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfig_set_MinFaceP
 		return;
 	}
 }
-// Method Definition Index: 71865
+// Method Definition Index: 71868
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float FaceLandmarkDetectionConfig_get_MinTrackingConfidence_m5C5A6CF5D7CAFB30728A644D5309D5694A337CAD (FaceLandmarkDetectionConfig_t7A6146A131FB576E78697CB9B4D7ACF1799B4A45* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1721,7 +1721,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float FaceLandmarkDetectionConfig_get_MinTrac
 		return L_0;
 	}
 }
-// Method Definition Index: 71866
+// Method Definition Index: 71869
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfig_set_MinTrackingConfidence_m7AB84309D3C91E1581ED29F4C216E7A10347CD2E (FaceLandmarkDetectionConfig_t7A6146A131FB576E78697CB9B4D7ACF1799B4A45* __this, float ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -1731,7 +1731,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfig_set_MinTrack
 		return;
 	}
 }
-// Method Definition Index: 71867
+// Method Definition Index: 71870
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool FaceLandmarkDetectionConfig_get_OutputFaceBlendshapes_mB5C70DF7500C8972B4BF38C12574A9CF4D315051 (FaceLandmarkDetectionConfig_t7A6146A131FB576E78697CB9B4D7ACF1799B4A45* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1740,7 +1740,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool FaceLandmarkDetectionConfig_get_OutputFa
 		return L_0;
 	}
 }
-// Method Definition Index: 71868
+// Method Definition Index: 71871
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfig_set_OutputFaceBlendshapes_m07AEBD01C00C8C7EA437463D32C9AFB3FCD3D3FE (FaceLandmarkDetectionConfig_t7A6146A131FB576E78697CB9B4D7ACF1799B4A45* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -1750,7 +1750,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfig_set_OutputFa
 		return;
 	}
 }
-// Method Definition Index: 71869
+// Method Definition Index: 71872
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool FaceLandmarkDetectionConfig_get_OutputFacialTransformationMatrixes_m1C0EF14F62049BA5FACA721349A28C983ADC99A3 (FaceLandmarkDetectionConfig_t7A6146A131FB576E78697CB9B4D7ACF1799B4A45* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1759,7 +1759,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool FaceLandmarkDetectionConfig_get_OutputFa
 		return L_0;
 	}
 }
-// Method Definition Index: 71870
+// Method Definition Index: 71873
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfig_set_OutputFacialTransformationMatrixes_m07F091BD09EC8963091A6A464C35DB12967BA05E (FaceLandmarkDetectionConfig_t7A6146A131FB576E78697CB9B4D7ACF1799B4A45* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -1769,7 +1769,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfig_set_OutputFa
 		return;
 	}
 }
-// Method Definition Index: 71871
+// Method Definition Index: 71874
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* FaceLandmarkDetectionConfig_get_ModelPath_mAAA2DC17C8E07D281242EB5A6914CDC017BC25B3 (FaceLandmarkDetectionConfig_t7A6146A131FB576E78697CB9B4D7ACF1799B4A45* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1797,7 +1797,7 @@ IL_000e:
 		return _stringLiteral1DA92CCDA7B3705D7C85A8CBCBE0EA5B8AB8F0B7;
 	}
 }
-// Method Definition Index: 71872
+// Method Definition Index: 71875
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR FaceLandmarkerOptions_t728243DDED872306716A85289ED7177855FC3F8A* FaceLandmarkDetectionConfig_GetFaceLandmarkerOptions_m26B43569DD2F5A3E57328C2C285920587938BC1E (FaceLandmarkDetectionConfig_t7A6146A131FB576E78697CB9B4D7ACF1799B4A45* __this, ResultCallback_t2229D7821CBE1D58E1929C6B07A63A29E9663391* ___0_resultCallback, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1845,7 +1845,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR FaceLandmarkerOptions_t728243DDED872306716A85
 		return L_11;
 	}
 }
-// Method Definition Index: 71873
+// Method Definition Index: 71876
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfig__ctor_mECB9D31AB5FC2D132B56540DD71B5725F884224B (FaceLandmarkDetectionConfig_t7A6146A131FB576E78697CB9B4D7ACF1799B4A45* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1879,7 +1879,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfig__ctor_mECB9D
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 71874
+// Method Definition Index: 71877
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkerRunner_Stop_m8D4B3210CCC39838435E3EA4AD00370600AE37E1 (FaceLandmarkerRunner_t427CB4444D7B7C4083EAC8DC2E7200DAC8B46261* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1922,7 +1922,7 @@ IL_0017:
 		return;
 	}
 }
-// Method Definition Index: 71875
+// Method Definition Index: 71878
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* FaceLandmarkerRunner_Run_mEF8810CC6B35529FE58D433D0DDABD16CB324D77 (FaceLandmarkerRunner_t427CB4444D7B7C4083EAC8DC2E7200DAC8B46261* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1941,7 +1941,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* FaceLandmarkerRunner_Run_mEF88
 		return L_1;
 	}
 }
-// Method Definition Index: 71876
+// Method Definition Index: 71879
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkerRunner_OnFaceLandmarkDetectionOutput_mA8D72791A21A0C0864B3991AA403F7E2E3759582 (FaceLandmarkerRunner_t427CB4444D7B7C4083EAC8DC2E7200DAC8B46261* __this, FaceLandmarkerResult_tC8B502B03EB2EB0D4FC29452194B8B189E1BF555 ___0_result, Image_t026C428F310716EFA51D08D35F26B4D2616224EC* ___1_image, int64_t ___2_timestamp, const RuntimeMethod* method) 
 {
 	{
@@ -1954,7 +1954,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkerRunner_OnFaceLandmarkDetec
 		return;
 	}
 }
-// Method Definition Index: 71877
+// Method Definition Index: 71880
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkerRunner__ctor_mA6088CABA12920F1A4FE0FCB449CCEF017A3C711 (FaceLandmarkerRunner_t427CB4444D7B7C4083EAC8DC2E7200DAC8B46261* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1982,7 +1982,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkerRunner__ctor_mA6088CABA129
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 71878
+// Method Definition Index: 71881
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass4_0__ctor_m7A757D2CF740BDBF041CD79B14258A4356AA217D (U3CU3Ec__DisplayClass4_0_tF935D81B12659D68DAFEE838E498E33A72E0958B* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1990,7 +1990,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass4_0__ctor_m7A757D2C
 		return;
 	}
 }
-// Method Definition Index: 71879
+// Method Definition Index: 71882
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass4_0_U3CRunU3Eb__0_m0AFCCEC06FB1C6DDD2AE6B6858F87FA43814DCDB (U3CU3Ec__DisplayClass4_0_tF935D81B12659D68DAFEE838E498E33A72E0958B* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2001,7 +2001,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass4_0_U3CRunU3Eb__0_m
 		return L_1;
 	}
 }
-// Method Definition Index: 71880
+// Method Definition Index: 71883
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass4_0_U3CRunU3Eb__1_mD41A99357F31C035750B818E4A508D0858647BBD (U3CU3Ec__DisplayClass4_0_tF935D81B12659D68DAFEE838E498E33A72E0958B* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2020,7 +2020,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass4_0_U3CRunU3Eb__1_m
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 71881
+// Method Definition Index: 71884
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRunU3Ed__4__ctor_m99F38951277B58E206AA6282E578D1148DF55829 (U3CRunU3Ed__4_t5A74CC7AB0D19B1D3F2250FEBC25B558102E49BC* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	{
@@ -2030,7 +2030,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRunU3Ed__4__ctor_m99F38951277B58E206A
 		return;
 	}
 }
-// Method Definition Index: 71882
+// Method Definition Index: 71885
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRunU3Ed__4_System_IDisposable_Dispose_m5032F940C2B6E0C01587A3262EF72CF2B7CF9BDF (U3CRunU3Ed__4_t5A74CC7AB0D19B1D3F2250FEBC25B558102E49BC* __this, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
@@ -2079,7 +2079,7 @@ IL_001c:
 		return;
 	}
 }
-// Method Definition Index: 71883
+// Method Definition Index: 71886
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CRunU3Ed__4_MoveNext_mF6FBD54730CDE0A55CEC78CF07936216E90433BC (U3CRunU3Ed__4_t5A74CC7AB0D19B1D3F2250FEBC25B558102E49BC* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3029,7 +3029,7 @@ IL_0666:
 		return L_209;
 	}
 }
-// Method Definition Index: 71884
+// Method Definition Index: 71887
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRunU3Ed__4_U3CU3Em__Finally1_mF60F3E85372025B24B10F73668140C55AB4C4704 (U3CRunU3Ed__4_t5A74CC7AB0D19B1D3F2250FEBC25B558102E49BC* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3057,7 +3057,7 @@ IL_001a:
 		return;
 	}
 }
-// Method Definition Index: 71885
+// Method Definition Index: 71888
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CRunU3Ed__4_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m9D5610CA4D4EE929611F18AED95952B27E19067C (U3CRunU3Ed__4_t5A74CC7AB0D19B1D3F2250FEBC25B558102E49BC* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3065,7 +3065,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CRunU3Ed__4_System_Collectio
 		return L_0;
 	}
 }
-// Method Definition Index: 71886
+// Method Definition Index: 71889
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRunU3Ed__4_System_Collections_IEnumerator_Reset_mF768C3BB2855235B4E9A9EE2E866BE4F3A742D21 (U3CRunU3Ed__4_t5A74CC7AB0D19B1D3F2250FEBC25B558102E49BC* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3074,7 +3074,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRunU3Ed__4_System_Collections_IEnumer
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CRunU3Ed__4_System_Collections_IEnumerator_Reset_mF768C3BB2855235B4E9A9EE2E866BE4F3A742D21_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 71887
+// Method Definition Index: 71890
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CRunU3Ed__4_System_Collections_IEnumerator_get_Current_m5E7751F281C32F31B55D481574AA6B79D1190CB3 (U3CRunU3Ed__4_t5A74CC7AB0D19B1D3F2250FEBC25B558102E49BC* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3090,7 +3090,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CRunU3Ed__4_System_Collectio
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 71888
+// Method Definition Index: 71891
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_Start_m8651C767E4122DC78574AFE4FCF828A7D21C9EAD (FaceLandmarkDetectionConfigWindow_t881AE396E70E69897BD00C8DAD6A41BE16669FF1* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3117,7 +3117,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_Start_
 		return;
 	}
 }
-// Method Definition Index: 71889
+// Method Definition Index: 71892
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_Exit_m2F35C4478D5C8B565331D7D456A3FE2458BE0DE2 (FaceLandmarkDetectionConfigWindow_t881AE396E70E69897BD00C8DAD6A41BE16669FF1* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3131,7 +3131,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_Exit_m
 		return;
 	}
 }
-// Method Definition Index: 71890
+// Method Definition Index: 71893
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_SwitchDelegate_m21A6079EE81209F1C3FB70DFBCF58506491C47F3 (FaceLandmarkDetectionConfigWindow_t881AE396E70E69897BD00C8DAD6A41BE16669FF1* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3149,7 +3149,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_Switch
 		return;
 	}
 }
-// Method Definition Index: 71891
+// Method Definition Index: 71894
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_SwitchImageReadMode_m13D4BB6B50283E60D3BAA47D2FCD39B079D1B230 (FaceLandmarkDetectionConfigWindow_t881AE396E70E69897BD00C8DAD6A41BE16669FF1* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3167,7 +3167,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_Switch
 		return;
 	}
 }
-// Method Definition Index: 71892
+// Method Definition Index: 71895
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_SwitchRunningMode_mE2A6658661834FC8922706350A85406D9EDA8E26 (FaceLandmarkDetectionConfigWindow_t881AE396E70E69897BD00C8DAD6A41BE16669FF1* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3185,7 +3185,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_Switch
 		return;
 	}
 }
-// Method Definition Index: 71893
+// Method Definition Index: 71896
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_SetNumFaces_mD7867D81BE0E3D4FF98DC09BA5B74DA7E9522111 (FaceLandmarkDetectionConfigWindow_t881AE396E70E69897BD00C8DAD6A41BE16669FF1* __this, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
@@ -3218,7 +3218,7 @@ IL_0027:
 		return;
 	}
 }
-// Method Definition Index: 71894
+// Method Definition Index: 71897
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_SetMinFaceDetectionConfidence_mA2C1BE255629C865F64105BC3EA3A14922631F4D (FaceLandmarkDetectionConfigWindow_t881AE396E70E69897BD00C8DAD6A41BE16669FF1* __this, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
@@ -3251,7 +3251,7 @@ IL_0027:
 		return;
 	}
 }
-// Method Definition Index: 71895
+// Method Definition Index: 71898
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_SetMinFacePresenceConfidence_mE062328EB223753DA902B562323B245621112AA0 (FaceLandmarkDetectionConfigWindow_t881AE396E70E69897BD00C8DAD6A41BE16669FF1* __this, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
@@ -3284,7 +3284,7 @@ IL_0027:
 		return;
 	}
 }
-// Method Definition Index: 71896
+// Method Definition Index: 71899
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_SetMinTrackingConfidence_mF368A664A44AF53499F27F20168A756F89A00B27 (FaceLandmarkDetectionConfigWindow_t881AE396E70E69897BD00C8DAD6A41BE16669FF1* __this, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
@@ -3317,7 +3317,7 @@ IL_0027:
 		return;
 	}
 }
-// Method Definition Index: 71897
+// Method Definition Index: 71900
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_ToggleOutputFaceBlendshapes_m7130A9FFB80E069C63BAF309A9C4CC6289776F77 (FaceLandmarkDetectionConfigWindow_t881AE396E70E69897BD00C8DAD6A41BE16669FF1* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3335,7 +3335,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_Toggle
 		return;
 	}
 }
-// Method Definition Index: 71898
+// Method Definition Index: 71901
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_ToggleOutputFacialTransformationMatrixes_mBE4869DDCE83C8F3F01F3C4F1EEFBB3734AF0851 (FaceLandmarkDetectionConfigWindow_t881AE396E70E69897BD00C8DAD6A41BE16669FF1* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3353,7 +3353,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_Toggle
 		return;
 	}
 }
-// Method Definition Index: 71899
+// Method Definition Index: 71902
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_InitializeContents_mC2504942C7D930B7B417D532AA504F02411133DF (FaceLandmarkDetectionConfigWindow_t881AE396E70E69897BD00C8DAD6A41BE16669FF1* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3379,7 +3379,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_Initia
 		return;
 	}
 }
-// Method Definition Index: 71900
+// Method Definition Index: 71903
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_InitializeDelegate_m6F752BE1A1F8D183EDF35CDBD52C9EF28F48D4D2 (FaceLandmarkDetectionConfigWindow_t881AE396E70E69897BD00C8DAD6A41BE16669FF1* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3418,7 +3418,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_Initia
 		return;
 	}
 }
-// Method Definition Index: 71901
+// Method Definition Index: 71904
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_InitializeImageReadMode_mBE47276ED934BCA3EE693F22C84CBD47A71725D5 (FaceLandmarkDetectionConfigWindow_t881AE396E70E69897BD00C8DAD6A41BE16669FF1* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3456,7 +3456,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_Initia
 		return;
 	}
 }
-// Method Definition Index: 71902
+// Method Definition Index: 71905
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_InitializeRunningMode_m940B4AA6518312A5A762310E8EF3FE33E590E3B2 (FaceLandmarkDetectionConfigWindow_t881AE396E70E69897BD00C8DAD6A41BE16669FF1* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3495,7 +3495,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_Initia
 		return;
 	}
 }
-// Method Definition Index: 71903
+// Method Definition Index: 71906
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_InitializeNumFaces_m5121243DCB2559E9138C2DB6B0DE8FC12ACA625D (FaceLandmarkDetectionConfigWindow_t881AE396E70E69897BD00C8DAD6A41BE16669FF1* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3532,7 +3532,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_Initia
 		return;
 	}
 }
-// Method Definition Index: 71904
+// Method Definition Index: 71907
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_InitializeMinFaceDetectionConfidence_m1AC2E7D8AFB4109289EEB557683036B05435A993 (FaceLandmarkDetectionConfigWindow_t881AE396E70E69897BD00C8DAD6A41BE16669FF1* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3569,7 +3569,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_Initia
 		return;
 	}
 }
-// Method Definition Index: 71905
+// Method Definition Index: 71908
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_InitializeMinFacePresenceConfidence_m3958383ED932CB15F5CBC1C9B1346AE7D4399E49 (FaceLandmarkDetectionConfigWindow_t881AE396E70E69897BD00C8DAD6A41BE16669FF1* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3606,7 +3606,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_Initia
 		return;
 	}
 }
-// Method Definition Index: 71906
+// Method Definition Index: 71909
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_InitializeMinTrackingConfidence_mD49A557F38131C8B080CB67EFABD7B7523480531 (FaceLandmarkDetectionConfigWindow_t881AE396E70E69897BD00C8DAD6A41BE16669FF1* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3643,7 +3643,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_Initia
 		return;
 	}
 }
-// Method Definition Index: 71907
+// Method Definition Index: 71910
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_InitializeOutputFaceBlendshapes_m1BB710FCCE28C31A2A3249D4CB28A716376E8DB9 (FaceLandmarkDetectionConfigWindow_t881AE396E70E69897BD00C8DAD6A41BE16669FF1* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3675,7 +3675,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_Initia
 		return;
 	}
 }
-// Method Definition Index: 71908
+// Method Definition Index: 71911
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_InitializeOutputFacialTransformationMatrixes_mEA65C548EC3033176B4022DDB9C9B772CFA4A1D0 (FaceLandmarkDetectionConfigWindow_t881AE396E70E69897BD00C8DAD6A41BE16669FF1* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3707,7 +3707,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_Initia
 		return;
 	}
 }
-// Method Definition Index: 71909
+// Method Definition Index: 71912
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow__ctor_m515EAD1AE50D0D735CB5DA8EBE58A6B961DDD696 (FaceLandmarkDetectionConfigWindow_t881AE396E70E69897BD00C8DAD6A41BE16669FF1* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3715,7 +3715,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow__ctor_
 		return;
 	}
 }
-// Method Definition Index: 71910
+// Method Definition Index: 71913
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_U3CInitializeDelegateU3Eb__23_0_m9DBDAD0F6E39392630F5BC58F6E1F9620BD4D606 (FaceLandmarkDetectionConfigWindow_t881AE396E70E69897BD00C8DAD6A41BE16669FF1* __this, int32_t ___0_U3Cp0U3E, const RuntimeMethod* method) 
 {
 	{
@@ -3725,7 +3725,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_U3CIni
 		return;
 	}
 }
-// Method Definition Index: 71911
+// Method Definition Index: 71914
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_U3CInitializeImageReadModeU3Eb__24_0_m2BA58FCE4E5DF1F728BD7C39C52055C39AF017E6 (FaceLandmarkDetectionConfigWindow_t881AE396E70E69897BD00C8DAD6A41BE16669FF1* __this, int32_t ___0_U3Cp0U3E, const RuntimeMethod* method) 
 {
 	{
@@ -3735,7 +3735,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_U3CIni
 		return;
 	}
 }
-// Method Definition Index: 71912
+// Method Definition Index: 71915
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_U3CInitializeRunningModeU3Eb__25_0_mD3584A277FD1DCA72F0B935E680891C28990B35E (FaceLandmarkDetectionConfigWindow_t881AE396E70E69897BD00C8DAD6A41BE16669FF1* __this, int32_t ___0_U3Cp0U3E, const RuntimeMethod* method) 
 {
 	{
@@ -3745,7 +3745,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_U3CIni
 		return;
 	}
 }
-// Method Definition Index: 71913
+// Method Definition Index: 71916
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_U3CInitializeNumFacesU3Eb__26_0_mD9B4153577F16D2D8AAE85AD53C9534481CEC8D3 (FaceLandmarkDetectionConfigWindow_t881AE396E70E69897BD00C8DAD6A41BE16669FF1* __this, String_t* ___0_U3Cp0U3E, const RuntimeMethod* method) 
 {
 	{
@@ -3755,7 +3755,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_U3CIni
 		return;
 	}
 }
-// Method Definition Index: 71914
+// Method Definition Index: 71917
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_U3CInitializeMinFaceDetectionConfidenceU3Eb__27_0_m9CE61826BA18AA49DECA70B44A159BA8012B2CAE (FaceLandmarkDetectionConfigWindow_t881AE396E70E69897BD00C8DAD6A41BE16669FF1* __this, String_t* ___0_U3Cp0U3E, const RuntimeMethod* method) 
 {
 	{
@@ -3765,7 +3765,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_U3CIni
 		return;
 	}
 }
-// Method Definition Index: 71915
+// Method Definition Index: 71918
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_U3CInitializeMinFacePresenceConfidenceU3Eb__28_0_m465F83220F2CD6A7ACC572C2A3F1D56C6882AA45 (FaceLandmarkDetectionConfigWindow_t881AE396E70E69897BD00C8DAD6A41BE16669FF1* __this, String_t* ___0_U3Cp0U3E, const RuntimeMethod* method) 
 {
 	{
@@ -3775,7 +3775,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_U3CIni
 		return;
 	}
 }
-// Method Definition Index: 71916
+// Method Definition Index: 71919
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_U3CInitializeMinTrackingConfidenceU3Eb__29_0_m54C5238D3FEC63E587CDF8DA7D82DAACBA88C27A (FaceLandmarkDetectionConfigWindow_t881AE396E70E69897BD00C8DAD6A41BE16669FF1* __this, String_t* ___0_U3Cp0U3E, const RuntimeMethod* method) 
 {
 	{
@@ -3785,7 +3785,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_U3CIni
 		return;
 	}
 }
-// Method Definition Index: 71917
+// Method Definition Index: 71920
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_U3CInitializeOutputFaceBlendshapesU3Eb__30_0_m76AF07609D6F2C7B73518476F1CC0D4FB35E01FF (FaceLandmarkDetectionConfigWindow_t881AE396E70E69897BD00C8DAD6A41BE16669FF1* __this, bool ___0_U3Cp0U3E, const RuntimeMethod* method) 
 {
 	{
@@ -3795,7 +3795,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_U3CIni
 		return;
 	}
 }
-// Method Definition Index: 71918
+// Method Definition Index: 71921
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_U3CInitializeOutputFacialTransformationMatrixesU3Eb__31_0_mAC4B0BB1F12905F7EB689F04186FD0E9A3C4EB72 (FaceLandmarkDetectionConfigWindow_t881AE396E70E69897BD00C8DAD6A41BE16669FF1* __this, bool ___0_U3Cp0U3E, const RuntimeMethod* method) 
 {
 	{
@@ -3821,7 +3821,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfigWindow_U3CIni
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 71919
+// Method Definition Index: 71922
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t FaceDetectionConfig_get_Delegate_m9A9C9B0F410D8A69F95F09C5783B32221AC9344E (FaceDetectionConfig_t8FA0084BD4B8C7AD34E64E3498A84F0A866C9128* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3830,7 +3830,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t FaceDetectionConfig_get_Delegate_m9A9
 		return L_0;
 	}
 }
-// Method Definition Index: 71920
+// Method Definition Index: 71923
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfig_set_Delegate_mF06C5FB26AFEC0BBF63AC7D2831750889047CB52 (FaceDetectionConfig_t8FA0084BD4B8C7AD34E64E3498A84F0A866C9128* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -3840,7 +3840,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfig_set_Delegate_mF06C5F
 		return;
 	}
 }
-// Method Definition Index: 71921
+// Method Definition Index: 71924
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t FaceDetectionConfig_get_ImageReadMode_mB63CE331282124872217305A508F9948B554919D (FaceDetectionConfig_t8FA0084BD4B8C7AD34E64E3498A84F0A866C9128* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3849,7 +3849,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t FaceDetectionConfig_get_ImageReadMode
 		return L_0;
 	}
 }
-// Method Definition Index: 71922
+// Method Definition Index: 71925
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfig_set_ImageReadMode_m1D47609F927B74B87CE96CDBFEF5F500912ED462 (FaceDetectionConfig_t8FA0084BD4B8C7AD34E64E3498A84F0A866C9128* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -3859,7 +3859,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfig_set_ImageReadMode_m1
 		return;
 	}
 }
-// Method Definition Index: 71923
+// Method Definition Index: 71926
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t FaceDetectionConfig_get_Model_m19670A9ADB8F2EA365145E11AFDE85BD280F1C86 (FaceDetectionConfig_t8FA0084BD4B8C7AD34E64E3498A84F0A866C9128* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3868,7 +3868,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t FaceDetectionConfig_get_Model_m19670A
 		return L_0;
 	}
 }
-// Method Definition Index: 71924
+// Method Definition Index: 71927
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfig_set_Model_mD5747F27AFE2A67327A2BEFC09B8E69696B6E3B1 (FaceDetectionConfig_t8FA0084BD4B8C7AD34E64E3498A84F0A866C9128* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -3878,7 +3878,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfig_set_Model_mD5747F27A
 		return;
 	}
 }
-// Method Definition Index: 71925
+// Method Definition Index: 71928
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t FaceDetectionConfig_get_RunningMode_mAB292D89EA1FB3A243FDA27E84C0DE58E5FD0D70 (FaceDetectionConfig_t8FA0084BD4B8C7AD34E64E3498A84F0A866C9128* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3887,7 +3887,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t FaceDetectionConfig_get_RunningMode_m
 		return L_0;
 	}
 }
-// Method Definition Index: 71926
+// Method Definition Index: 71929
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfig_set_RunningMode_mE54307DF10EB5B690ECE42E053BDE2068708F6A1 (FaceDetectionConfig_t8FA0084BD4B8C7AD34E64E3498A84F0A866C9128* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -3897,7 +3897,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfig_set_RunningMode_mE54
 		return;
 	}
 }
-// Method Definition Index: 71927
+// Method Definition Index: 71930
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float FaceDetectionConfig_get_MinDetectionConfidence_m545A49ED4BCDCFF5B14076AF0DDEE2456FC8F766 (FaceDetectionConfig_t8FA0084BD4B8C7AD34E64E3498A84F0A866C9128* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3906,7 +3906,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float FaceDetectionConfig_get_MinDetectionCon
 		return L_0;
 	}
 }
-// Method Definition Index: 71928
+// Method Definition Index: 71931
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfig_set_MinDetectionConfidence_m5655428D9472B3E45363A8EF14C52C9B043FEE8B (FaceDetectionConfig_t8FA0084BD4B8C7AD34E64E3498A84F0A866C9128* __this, float ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -3916,7 +3916,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfig_set_MinDetectionConf
 		return;
 	}
 }
-// Method Definition Index: 71929
+// Method Definition Index: 71932
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float FaceDetectionConfig_get_MinSuppressionThreshold_m3805D6BBE7CD40DDDBFDF4DBC102F9699B10C655 (FaceDetectionConfig_t8FA0084BD4B8C7AD34E64E3498A84F0A866C9128* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3925,7 +3925,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float FaceDetectionConfig_get_MinSuppressionT
 		return L_0;
 	}
 }
-// Method Definition Index: 71930
+// Method Definition Index: 71933
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfig_set_MinSuppressionThreshold_m73997F9B7E51299978ADE3EB64C780434723B5E4 (FaceDetectionConfig_t8FA0084BD4B8C7AD34E64E3498A84F0A866C9128* __this, float ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -3935,7 +3935,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfig_set_MinSuppressionTh
 		return;
 	}
 }
-// Method Definition Index: 71931
+// Method Definition Index: 71934
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t FaceDetectionConfig_get_NumFaces_mC92CB37402D592740BFDAC5C9C75D44C6660F680 (FaceDetectionConfig_t8FA0084BD4B8C7AD34E64E3498A84F0A866C9128* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3944,7 +3944,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t FaceDetectionConfig_get_NumFaces_mC92
 		return L_0;
 	}
 }
-// Method Definition Index: 71932
+// Method Definition Index: 71935
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfig_set_NumFaces_m02AC7C4ED29E9E7CA774EAD6C8CFAD0BA74A966E (FaceDetectionConfig_t8FA0084BD4B8C7AD34E64E3498A84F0A866C9128* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -3954,7 +3954,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfig_set_NumFaces_m02AC7C
 		return;
 	}
 }
-// Method Definition Index: 71933
+// Method Definition Index: 71936
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* FaceDetectionConfig_get_ModelName_m3B4F7DD48A05E40DC6E7A5060FF79D4FA0C4A1B9 (FaceDetectionConfig_t8FA0084BD4B8C7AD34E64E3498A84F0A866C9128* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3997,7 +3997,7 @@ IL_0028:
 		return G_B2_0;
 	}
 }
-// Method Definition Index: 71934
+// Method Definition Index: 71937
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* FaceDetectionConfig_get_ModelPath_m638C2BF3FFC6D7C8132C9ED5C9C10621B3CAB8F3 (FaceDetectionConfig_t8FA0084BD4B8C7AD34E64E3498A84F0A866C9128* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4026,7 +4026,7 @@ IL_000e:
 		return (String_t*)NULL;
 	}
 }
-// Method Definition Index: 71935
+// Method Definition Index: 71938
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR FaceDetectorOptions_tE440C5D5EEC8E7004143F3C65D85DBAA259E4C0C* FaceDetectionConfig_GetFaceDetectorOptions_m34FF4A3AE02CDF50DD3FF149D6F3FF577F2494D4 (FaceDetectionConfig_t8FA0084BD4B8C7AD34E64E3498A84F0A866C9128* __this, ResultCallback_tFD854EB45167B6C3E7CDEC8681CF99F11A54559E* ___0_resultCallback, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4065,7 +4065,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR FaceDetectorOptions_tE440C5D5EEC8E7004143F3C6
 		return L_8;
 	}
 }
-// Method Definition Index: 71936
+// Method Definition Index: 71939
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfig__ctor_mC2A509438FE061530574A97F4471755285140E02 (FaceDetectionConfig_t8FA0084BD4B8C7AD34E64E3498A84F0A866C9128* __this, const RuntimeMethod* method) 
 {
 	{
@@ -4093,7 +4093,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfig__ctor_mC2A509438FE06
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 71937
+// Method Definition Index: 71940
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectorRunner_Stop_m668263FE623B963E7B5EE53F6179E7CA84416E1C (FaceDetectorRunner_tDDDA49B86634F2B3C0EE11AD0F97ECC5AC7ACBB7* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4136,7 +4136,7 @@ IL_0017:
 		return;
 	}
 }
-// Method Definition Index: 71938
+// Method Definition Index: 71941
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* FaceDetectorRunner_Run_m7716360E5800741417083D7A189E062DBA264484 (FaceDetectorRunner_tDDDA49B86634F2B3C0EE11AD0F97ECC5AC7ACBB7* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4155,7 +4155,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* FaceDetectorRunner_Run_m771636
 		return L_1;
 	}
 }
-// Method Definition Index: 71939
+// Method Definition Index: 71942
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectorRunner_OnFaceDetectionsOutput_m15B301B14666A0A8395C293082BC54DF073FF001 (FaceDetectorRunner_tDDDA49B86634F2B3C0EE11AD0F97ECC5AC7ACBB7* __this, DetectionResult_tA886F2E61487229629E3AFBA64E8417E42F5FD58 ___0_result, Image_t026C428F310716EFA51D08D35F26B4D2616224EC* ___1_image, int64_t ___2_timestamp, const RuntimeMethod* method) 
 {
 	{
@@ -4168,7 +4168,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectorRunner_OnFaceDetectionsOutpu
 		return;
 	}
 }
-// Method Definition Index: 71940
+// Method Definition Index: 71943
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectorRunner__ctor_m6F5C254E1E073FFECDAD0360D75A5BAB1987DFC9 (FaceDetectorRunner_tDDDA49B86634F2B3C0EE11AD0F97ECC5AC7ACBB7* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4196,7 +4196,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectorRunner__ctor_m6F5C254E1E073F
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 71941
+// Method Definition Index: 71944
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass4_0__ctor_mCAB40BC5A4E8DAEA3279D54F7190A007DD5949F1 (U3CU3Ec__DisplayClass4_0_tA4370681067E43C4AC7C8B0D2DD9B72A1A4A6BF8* __this, const RuntimeMethod* method) 
 {
 	{
@@ -4204,7 +4204,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass4_0__ctor_mCAB40BC5
 		return;
 	}
 }
-// Method Definition Index: 71942
+// Method Definition Index: 71945
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass4_0_U3CRunU3Eb__0_mA3103F9764279A6EA44A92DC7C44D8864C246411 (U3CU3Ec__DisplayClass4_0_tA4370681067E43C4AC7C8B0D2DD9B72A1A4A6BF8* __this, const RuntimeMethod* method) 
 {
 	{
@@ -4215,7 +4215,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass4_0_U3CRunU3Eb__0_m
 		return L_1;
 	}
 }
-// Method Definition Index: 71943
+// Method Definition Index: 71946
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass4_0_U3CRunU3Eb__1_mFD2FCBF79BAFAC788E1BB2754792495EB2CF3A29 (U3CU3Ec__DisplayClass4_0_tA4370681067E43C4AC7C8B0D2DD9B72A1A4A6BF8* __this, const RuntimeMethod* method) 
 {
 	{
@@ -4234,7 +4234,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass4_0_U3CRunU3Eb__1_m
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 71944
+// Method Definition Index: 71947
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRunU3Ed__4__ctor_m651059F7353250AA581155111EAFFB94C3A82A46 (U3CRunU3Ed__4_tDC638BFEE7BF66BC5950426456DC9DFD5BC3D82A* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	{
@@ -4244,7 +4244,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRunU3Ed__4__ctor_m651059F7353250AA581
 		return;
 	}
 }
-// Method Definition Index: 71945
+// Method Definition Index: 71948
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRunU3Ed__4_System_IDisposable_Dispose_m66E72DE29E0780497F58DFEC6D0B88ED110DD5CB (U3CRunU3Ed__4_tDC638BFEE7BF66BC5950426456DC9DFD5BC3D82A* __this, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
@@ -4293,7 +4293,7 @@ IL_001c:
 		return;
 	}
 }
-// Method Definition Index: 71946
+// Method Definition Index: 71949
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CRunU3Ed__4_MoveNext_m0A137047681F23E91CFC0DD6ABF59E57861BE0B5 (U3CRunU3Ed__4_tDC638BFEE7BF66BC5950426456DC9DFD5BC3D82A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5209,7 +5209,7 @@ IL_0621:
 		return L_195;
 	}
 }
-// Method Definition Index: 71947
+// Method Definition Index: 71950
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRunU3Ed__4_U3CU3Em__Finally1_m7D610678D784C878FA179A0B7300A6D2553B99DB (U3CRunU3Ed__4_tDC638BFEE7BF66BC5950426456DC9DFD5BC3D82A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5237,7 +5237,7 @@ IL_001a:
 		return;
 	}
 }
-// Method Definition Index: 71948
+// Method Definition Index: 71951
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CRunU3Ed__4_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m2F4D05CB5452CE6860051EA023FB3924B6304405 (U3CRunU3Ed__4_tDC638BFEE7BF66BC5950426456DC9DFD5BC3D82A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5245,7 +5245,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CRunU3Ed__4_System_Collectio
 		return L_0;
 	}
 }
-// Method Definition Index: 71949
+// Method Definition Index: 71952
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRunU3Ed__4_System_Collections_IEnumerator_Reset_m539908691F2A6C5E8983DAA598026A182E52E0D8 (U3CRunU3Ed__4_tDC638BFEE7BF66BC5950426456DC9DFD5BC3D82A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5254,7 +5254,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRunU3Ed__4_System_Collections_IEnumer
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CRunU3Ed__4_System_Collections_IEnumerator_Reset_m539908691F2A6C5E8983DAA598026A182E52E0D8_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 71950
+// Method Definition Index: 71953
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CRunU3Ed__4_System_Collections_IEnumerator_get_Current_m573BC79485264CAD546AF76DC7A6D6248EF87CCA (U3CRunU3Ed__4_tDC638BFEE7BF66BC5950426456DC9DFD5BC3D82A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5270,7 +5270,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CRunU3Ed__4_System_Collectio
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 71951
+// Method Definition Index: 71954
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfigWindow_Start_mD4824CB4C2E29FEF16CDF6F23697FC4E47D36152 (FaceDetectionConfigWindow_t2931BEA53336AD136ABD821118720F3910A125D9* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5297,7 +5297,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfigWindow_Start_mD4824CB
 		return;
 	}
 }
-// Method Definition Index: 71952
+// Method Definition Index: 71955
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfigWindow_Exit_mA619451DDE76308C2400027E32DAFA3AC285AC20 (FaceDetectionConfigWindow_t2931BEA53336AD136ABD821118720F3910A125D9* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5311,7 +5311,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfigWindow_Exit_mA619451D
 		return;
 	}
 }
-// Method Definition Index: 71953
+// Method Definition Index: 71956
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfigWindow_SwitchDelegate_mE52C916EEE3C0FB4DAB479BC3D7EC5F1497B40D2 (FaceDetectionConfigWindow_t2931BEA53336AD136ABD821118720F3910A125D9* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5329,7 +5329,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfigWindow_SwitchDelegate
 		return;
 	}
 }
-// Method Definition Index: 71954
+// Method Definition Index: 71957
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfigWindow_SwitchImageReadMode_mF98E754D9C52E6BFAAEF2CB9104F921AAE72F7D0 (FaceDetectionConfigWindow_t2931BEA53336AD136ABD821118720F3910A125D9* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5347,7 +5347,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfigWindow_SwitchImageRea
 		return;
 	}
 }
-// Method Definition Index: 71955
+// Method Definition Index: 71958
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfigWindow_SwitchModelType_m88E307EB0AA41D1A59701B2DF16525ACF2373DAF (FaceDetectionConfigWindow_t2931BEA53336AD136ABD821118720F3910A125D9* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5365,7 +5365,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfigWindow_SwitchModelTyp
 		return;
 	}
 }
-// Method Definition Index: 71956
+// Method Definition Index: 71959
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfigWindow_SwitchRunningMode_mCA659A522CC83A67143E9BA9623D940FB975B749 (FaceDetectionConfigWindow_t2931BEA53336AD136ABD821118720F3910A125D9* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5383,7 +5383,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfigWindow_SwitchRunningM
 		return;
 	}
 }
-// Method Definition Index: 71957
+// Method Definition Index: 71960
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfigWindow_SetMinDetectionConfidence_m2B8C9E226CEE99520CB9E6543B73D66D14A082D3 (FaceDetectionConfigWindow_t2931BEA53336AD136ABD821118720F3910A125D9* __this, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
@@ -5416,7 +5416,7 @@ IL_0027:
 		return;
 	}
 }
-// Method Definition Index: 71958
+// Method Definition Index: 71961
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfigWindow_SetMinSuppressionThreshold_m765346D753E2C98FC8B32516181A99189F3A6060 (FaceDetectionConfigWindow_t2931BEA53336AD136ABD821118720F3910A125D9* __this, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
@@ -5449,7 +5449,7 @@ IL_0027:
 		return;
 	}
 }
-// Method Definition Index: 71959
+// Method Definition Index: 71962
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfigWindow_SetNumFaces_m9AF6890FE43547E2E09772BA61CC1F8843222E75 (FaceDetectionConfigWindow_t2931BEA53336AD136ABD821118720F3910A125D9* __this, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
@@ -5482,7 +5482,7 @@ IL_0027:
 		return;
 	}
 }
-// Method Definition Index: 71960
+// Method Definition Index: 71963
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfigWindow_InitializeContents_m0AEEA659A30C9B1F609B4910FB5C612A7EC58EC8 (FaceDetectionConfigWindow_t2931BEA53336AD136ABD821118720F3910A125D9* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5504,7 +5504,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfigWindow_InitializeCont
 		return;
 	}
 }
-// Method Definition Index: 71961
+// Method Definition Index: 71964
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfigWindow_InitializeDelegate_m0D53DE41C28BB9A04168CC80C17C9D07C3A7E573 (FaceDetectionConfigWindow_t2931BEA53336AD136ABD821118720F3910A125D9* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5543,7 +5543,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfigWindow_InitializeDele
 		return;
 	}
 }
-// Method Definition Index: 71962
+// Method Definition Index: 71965
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfigWindow_InitializeImageReadMode_mB92FB5EDF6ED7DB9B901E8751A033DAFE3AC5C6A (FaceDetectionConfigWindow_t2931BEA53336AD136ABD821118720F3910A125D9* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5581,7 +5581,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfigWindow_InitializeImag
 		return;
 	}
 }
-// Method Definition Index: 71963
+// Method Definition Index: 71966
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfigWindow_InitializeModelSelection_mC0272AD27056DF88543CC7816F134B8442754FF8 (FaceDetectionConfigWindow_t2931BEA53336AD136ABD821118720F3910A125D9* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5614,7 +5614,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfigWindow_InitializeMode
 		return;
 	}
 }
-// Method Definition Index: 71964
+// Method Definition Index: 71967
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfigWindow_InitializeRunningMode_m6CFCB134F9971AE67A8BD394AB8389F864574FD0 (FaceDetectionConfigWindow_t2931BEA53336AD136ABD821118720F3910A125D9* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5653,7 +5653,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfigWindow_InitializeRunn
 		return;
 	}
 }
-// Method Definition Index: 71965
+// Method Definition Index: 71968
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfigWindow_InitializeMinDetectionConfidence_m08725A15310486B57FDB5126FE0AB0F56C513DAD (FaceDetectionConfigWindow_t2931BEA53336AD136ABD821118720F3910A125D9* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5690,7 +5690,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfigWindow_InitializeMinD
 		return;
 	}
 }
-// Method Definition Index: 71966
+// Method Definition Index: 71969
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfigWindow_InitializeMinSuppressionThreshold_m6E356454975F30536FAF7BA60C449AF67AC8D2A9 (FaceDetectionConfigWindow_t2931BEA53336AD136ABD821118720F3910A125D9* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5727,7 +5727,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfigWindow_InitializeMinS
 		return;
 	}
 }
-// Method Definition Index: 71967
+// Method Definition Index: 71970
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfigWindow_InitializeNumFaces_m26A5EAD80892C17E759786F01606D5920DE38ADD (FaceDetectionConfigWindow_t2931BEA53336AD136ABD821118720F3910A125D9* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5764,7 +5764,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfigWindow_InitializeNumF
 		return;
 	}
 }
-// Method Definition Index: 71968
+// Method Definition Index: 71971
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfigWindow__ctor_mF3024F16E167949EB3F546F2491695E823E67AF2 (FaceDetectionConfigWindow_t2931BEA53336AD136ABD821118720F3910A125D9* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5772,7 +5772,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfigWindow__ctor_mF3024F1
 		return;
 	}
 }
-// Method Definition Index: 71969
+// Method Definition Index: 71972
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfigWindow_U3CInitializeDelegateU3Eb__19_0_m6DEA3CBAD167F8364961DD4A8B59938D85D3C521 (FaceDetectionConfigWindow_t2931BEA53336AD136ABD821118720F3910A125D9* __this, int32_t ___0_U3Cp0U3E, const RuntimeMethod* method) 
 {
 	{
@@ -5782,7 +5782,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfigWindow_U3CInitializeD
 		return;
 	}
 }
-// Method Definition Index: 71970
+// Method Definition Index: 71973
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfigWindow_U3CInitializeImageReadModeU3Eb__20_0_m03B52E73C596F3BCBBAACE7F3ECEA4133472019A (FaceDetectionConfigWindow_t2931BEA53336AD136ABD821118720F3910A125D9* __this, int32_t ___0_U3Cp0U3E, const RuntimeMethod* method) 
 {
 	{
@@ -5792,7 +5792,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfigWindow_U3CInitializeI
 		return;
 	}
 }
-// Method Definition Index: 71971
+// Method Definition Index: 71974
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfigWindow_U3CInitializeModelSelectionU3Eb__21_0_mE5E241685DD888307188119A9BD05DBB124F0DB0 (FaceDetectionConfigWindow_t2931BEA53336AD136ABD821118720F3910A125D9* __this, int32_t ___0_U3Cp0U3E, const RuntimeMethod* method) 
 {
 	{
@@ -5802,7 +5802,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfigWindow_U3CInitializeM
 		return;
 	}
 }
-// Method Definition Index: 71972
+// Method Definition Index: 71975
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfigWindow_U3CInitializeRunningModeU3Eb__22_0_mA92B45C309680E52FB7582EA1DF2BE8DF8933326 (FaceDetectionConfigWindow_t2931BEA53336AD136ABD821118720F3910A125D9* __this, int32_t ___0_U3Cp0U3E, const RuntimeMethod* method) 
 {
 	{
@@ -5812,7 +5812,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfigWindow_U3CInitializeR
 		return;
 	}
 }
-// Method Definition Index: 71973
+// Method Definition Index: 71976
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfigWindow_U3CInitializeMinDetectionConfidenceU3Eb__23_0_m31E2C78577D731BD83E7BFAF90983D334C3B417E (FaceDetectionConfigWindow_t2931BEA53336AD136ABD821118720F3910A125D9* __this, String_t* ___0_U3Cp0U3E, const RuntimeMethod* method) 
 {
 	{
@@ -5822,7 +5822,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfigWindow_U3CInitializeM
 		return;
 	}
 }
-// Method Definition Index: 71974
+// Method Definition Index: 71977
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfigWindow_U3CInitializeMinSuppressionThresholdU3Eb__24_0_m64F24E9C1B82A7EE96A82CBA76531ABD028F8B6A (FaceDetectionConfigWindow_t2931BEA53336AD136ABD821118720F3910A125D9* __this, String_t* ___0_U3Cp0U3E, const RuntimeMethod* method) 
 {
 	{
@@ -5832,7 +5832,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfigWindow_U3CInitializeM
 		return;
 	}
 }
-// Method Definition Index: 71975
+// Method Definition Index: 71978
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfigWindow_U3CInitializeNumFacesU3Eb__25_0_m4622CA4893D10D647FC146F141377B2D8F516F82 (FaceDetectionConfigWindow_t2931BEA53336AD136ABD821118720F3910A125D9* __this, String_t* ___0_U3Cp0U3E, const RuntimeMethod* method) 
 {
 	{
@@ -5893,7 +5893,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceDetectionConfigWindow_U3CInitializeN
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-// Method Definition Index: 71867
+// Method Definition Index: 71870
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool FaceLandmarkDetectionConfig_get_OutputFaceBlendshapes_mB5C70DF7500C8972B4BF38C12574A9CF4D315051_inline (FaceLandmarkDetectionConfig_t7A6146A131FB576E78697CB9B4D7ACF1799B4A45* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5902,7 +5902,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool FaceLandmarkDetectionConfig_
 		return L_0;
 	}
 }
-// Method Definition Index: 71853
+// Method Definition Index: 71856
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t FaceLandmarkDetectionConfig_get_Delegate_mCAB7905CFC4FAA30957630FFFAB3BC62E0FBECFF_inline (FaceLandmarkDetectionConfig_t7A6146A131FB576E78697CB9B4D7ACF1799B4A45* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5911,7 +5911,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t FaceLandmarkDetectionConf
 		return L_0;
 	}
 }
-// Method Definition Index: 71857
+// Method Definition Index: 71860
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t FaceLandmarkDetectionConfig_get_RunningMode_m2723F0ECF7E0BE8AD1F429ED7DA713AA8FD52BC6_inline (FaceLandmarkDetectionConfig_t7A6146A131FB576E78697CB9B4D7ACF1799B4A45* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5920,7 +5920,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t FaceLandmarkDetectionConf
 		return L_0;
 	}
 }
-// Method Definition Index: 71859
+// Method Definition Index: 71862
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t FaceLandmarkDetectionConfig_get_NumFaces_mE9279B5DE5977D1019FC1A9F790D6CFD48E6D382_inline (FaceLandmarkDetectionConfig_t7A6146A131FB576E78697CB9B4D7ACF1799B4A45* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5929,7 +5929,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t FaceLandmarkDetectionConf
 		return L_0;
 	}
 }
-// Method Definition Index: 71861
+// Method Definition Index: 71864
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float FaceLandmarkDetectionConfig_get_MinFaceDetectionConfidence_m54753531182A15CE6E67E9912FAD3DFB2CEA5CD0_inline (FaceLandmarkDetectionConfig_t7A6146A131FB576E78697CB9B4D7ACF1799B4A45* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5938,7 +5938,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float FaceLandmarkDetectionConfig
 		return L_0;
 	}
 }
-// Method Definition Index: 71863
+// Method Definition Index: 71866
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float FaceLandmarkDetectionConfig_get_MinFacePresenceConfidence_mD1D7812C8ED602CD0C997152F35A968EB8ED6BB9_inline (FaceLandmarkDetectionConfig_t7A6146A131FB576E78697CB9B4D7ACF1799B4A45* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5947,7 +5947,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float FaceLandmarkDetectionConfig
 		return L_0;
 	}
 }
-// Method Definition Index: 71865
+// Method Definition Index: 71868
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float FaceLandmarkDetectionConfig_get_MinTrackingConfidence_m5C5A6CF5D7CAFB30728A644D5309D5694A337CAD_inline (FaceLandmarkDetectionConfig_t7A6146A131FB576E78697CB9B4D7ACF1799B4A45* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5956,7 +5956,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float FaceLandmarkDetectionConfig
 		return L_0;
 	}
 }
-// Method Definition Index: 71869
+// Method Definition Index: 71872
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool FaceLandmarkDetectionConfig_get_OutputFacialTransformationMatrixes_m1C0EF14F62049BA5FACA721349A28C983ADC99A3_inline (FaceLandmarkDetectionConfig_t7A6146A131FB576E78697CB9B4D7ACF1799B4A45* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5965,7 +5965,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool FaceLandmarkDetectionConfig_
 		return L_0;
 	}
 }
-// Method Definition Index: 71855
+// Method Definition Index: 71858
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t FaceLandmarkDetectionConfig_get_ImageReadMode_m1496D5FB093F1D02BC6920B71CAA490F39DF0730_inline (FaceLandmarkDetectionConfig_t7A6146A131FB576E78697CB9B4D7ACF1799B4A45* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5990,7 +5990,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR GpuResources_tAEED7E437F937835BC1
 		return L_0;
 	}
 }
-// Method Definition Index: 71366
+// Method Definition Index: 71369
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ImageSource_t7FD9F4B757BDC1604743C6D7B278401464C479BA* ImageSourceProvider_get_ImageSource_m15D529C6AC21C8509B8151AA91621F69B7C98DD2_inline (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6032,7 +6032,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Dropdown_get_value_m38691
 		return L_0;
 	}
 }
-// Method Definition Index: 71854
+// Method Definition Index: 71857
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfig_set_Delegate_m0102FE42E155E29C0CB2DD7692BE3E6CA7C62F70_inline (FaceLandmarkDetectionConfig_t7A6146A131FB576E78697CB9B4D7ACF1799B4A45* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -6042,7 +6042,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfig_
 		return;
 	}
 }
-// Method Definition Index: 71856
+// Method Definition Index: 71859
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfig_set_ImageReadMode_m12BEC106FE8D47B2C7035537564904B2691F9C17_inline (FaceLandmarkDetectionConfig_t7A6146A131FB576E78697CB9B4D7ACF1799B4A45* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -6052,7 +6052,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfig_
 		return;
 	}
 }
-// Method Definition Index: 71858
+// Method Definition Index: 71861
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfig_set_RunningMode_mFDA76D272C7D5C3BDAA0B135E004886DCC1188C5_inline (FaceLandmarkDetectionConfig_t7A6146A131FB576E78697CB9B4D7ACF1799B4A45* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -6071,7 +6071,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* InputField_get_text_m6E
 		return L_0;
 	}
 }
-// Method Definition Index: 71860
+// Method Definition Index: 71863
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfig_set_NumFaces_mA5F502F45D5C6180A819865007908231357A2AB0_inline (FaceLandmarkDetectionConfig_t7A6146A131FB576E78697CB9B4D7ACF1799B4A45* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -6081,7 +6081,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfig_
 		return;
 	}
 }
-// Method Definition Index: 71862
+// Method Definition Index: 71865
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfig_set_MinFaceDetectionConfidence_m80B91BEBB3963CF1C9BC61DCE143146A4455372B_inline (FaceLandmarkDetectionConfig_t7A6146A131FB576E78697CB9B4D7ACF1799B4A45* __this, float ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -6091,7 +6091,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfig_
 		return;
 	}
 }
-// Method Definition Index: 71864
+// Method Definition Index: 71867
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfig_set_MinFacePresenceConfidence_m402D4960F1B70CEF3FA38F900EA0B8740975B80E_inline (FaceLandmarkDetectionConfig_t7A6146A131FB576E78697CB9B4D7ACF1799B4A45* __this, float ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -6101,7 +6101,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfig_
 		return;
 	}
 }
-// Method Definition Index: 71866
+// Method Definition Index: 71869
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfig_set_MinTrackingConfidence_m7AB84309D3C91E1581ED29F4C216E7A10347CD2E_inline (FaceLandmarkDetectionConfig_t7A6146A131FB576E78697CB9B4D7ACF1799B4A45* __this, float ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -6120,7 +6120,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Toggle_get_isOn_m89A609E936C
 		return L_0;
 	}
 }
-// Method Definition Index: 71868
+// Method Definition Index: 71871
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfig_set_OutputFaceBlendshapes_m07AEBD01C00C8C7EA437463D32C9AFB3FCD3D3FE_inline (FaceLandmarkDetectionConfig_t7A6146A131FB576E78697CB9B4D7ACF1799B4A45* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -6130,7 +6130,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfig_
 		return;
 	}
 }
-// Method Definition Index: 71870
+// Method Definition Index: 71873
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void FaceLandmarkDetectionConfig_set_OutputFacialTransformationMatrixes_m07F091BD09EC8963091A6A464C35DB12967BA05E_inline (FaceLandmarkDetectionConfig_t7A6146A131FB576E78697CB9B4D7ACF1799B4A45* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -6158,7 +6158,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR OnChangeEvent_tE4829F88300B0E0E0D
 		return L_0;
 	}
 }
-// Method Definition Index: 71923
+// Method Definition Index: 71926
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t FaceDetectionConfig_get_Model_m19670A9ADB8F2EA365145E11AFDE85BD280F1C86_inline (FaceDetectionConfig_t8FA0084BD4B8C7AD34E64E3498A84F0A866C9128* __this, const RuntimeMethod* method) 
 {
 	{
@@ -6167,7 +6167,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t FaceDetectionConfig_get_M
 		return L_0;
 	}
 }
-// Method Definition Index: 71919
+// Method Definition Index: 71922
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t FaceDetectionConfig_get_Delegate_m9A9C9B0F410D8A69F95F09C5783B32221AC9344E_inline (FaceDetectionConfig_t8FA0084BD4B8C7AD34E64E3498A84F0A866C9128* __this, const RuntimeMethod* method) 
 {
 	{
@@ -6176,7 +6176,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t FaceDetectionConfig_get_D
 		return L_0;
 	}
 }
-// Method Definition Index: 71925
+// Method Definition Index: 71928
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t FaceDetectionConfig_get_RunningMode_mAB292D89EA1FB3A243FDA27E84C0DE58E5FD0D70_inline (FaceDetectionConfig_t8FA0084BD4B8C7AD34E64E3498A84F0A866C9128* __this, const RuntimeMethod* method) 
 {
 	{
@@ -6185,7 +6185,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t FaceDetectionConfig_get_R
 		return L_0;
 	}
 }
-// Method Definition Index: 71927
+// Method Definition Index: 71930
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float FaceDetectionConfig_get_MinDetectionConfidence_m545A49ED4BCDCFF5B14076AF0DDEE2456FC8F766_inline (FaceDetectionConfig_t8FA0084BD4B8C7AD34E64E3498A84F0A866C9128* __this, const RuntimeMethod* method) 
 {
 	{
@@ -6194,7 +6194,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float FaceDetectionConfig_get_Min
 		return L_0;
 	}
 }
-// Method Definition Index: 71929
+// Method Definition Index: 71932
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float FaceDetectionConfig_get_MinSuppressionThreshold_m3805D6BBE7CD40DDDBFDF4DBC102F9699B10C655_inline (FaceDetectionConfig_t8FA0084BD4B8C7AD34E64E3498A84F0A866C9128* __this, const RuntimeMethod* method) 
 {
 	{
@@ -6203,7 +6203,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float FaceDetectionConfig_get_Min
 		return L_0;
 	}
 }
-// Method Definition Index: 71931
+// Method Definition Index: 71934
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t FaceDetectionConfig_get_NumFaces_mC92CB37402D592740BFDAC5C9C75D44C6660F680_inline (FaceDetectionConfig_t8FA0084BD4B8C7AD34E64E3498A84F0A866C9128* __this, const RuntimeMethod* method) 
 {
 	{
@@ -6212,7 +6212,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t FaceDetectionConfig_get_N
 		return L_0;
 	}
 }
-// Method Definition Index: 71921
+// Method Definition Index: 71924
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t FaceDetectionConfig_get_ImageReadMode_mB63CE331282124872217305A508F9948B554919D_inline (FaceDetectionConfig_t8FA0084BD4B8C7AD34E64E3498A84F0A866C9128* __this, const RuntimeMethod* method) 
 {
 	{
@@ -6230,7 +6230,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t FaceDetectorOptions_get_n
 		return L_0;
 	}
 }
-// Method Definition Index: 71920
+// Method Definition Index: 71923
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void FaceDetectionConfig_set_Delegate_mF06C5FB26AFEC0BBF63AC7D2831750889047CB52_inline (FaceDetectionConfig_t8FA0084BD4B8C7AD34E64E3498A84F0A866C9128* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -6240,7 +6240,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void FaceDetectionConfig_set_Dele
 		return;
 	}
 }
-// Method Definition Index: 71922
+// Method Definition Index: 71925
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void FaceDetectionConfig_set_ImageReadMode_m1D47609F927B74B87CE96CDBFEF5F500912ED462_inline (FaceDetectionConfig_t8FA0084BD4B8C7AD34E64E3498A84F0A866C9128* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -6250,7 +6250,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void FaceDetectionConfig_set_Imag
 		return;
 	}
 }
-// Method Definition Index: 71924
+// Method Definition Index: 71927
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void FaceDetectionConfig_set_Model_mD5747F27AFE2A67327A2BEFC09B8E69696B6E3B1_inline (FaceDetectionConfig_t8FA0084BD4B8C7AD34E64E3498A84F0A866C9128* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -6260,7 +6260,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void FaceDetectionConfig_set_Mode
 		return;
 	}
 }
-// Method Definition Index: 71926
+// Method Definition Index: 71929
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void FaceDetectionConfig_set_RunningMode_mE54307DF10EB5B690ECE42E053BDE2068708F6A1_inline (FaceDetectionConfig_t8FA0084BD4B8C7AD34E64E3498A84F0A866C9128* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -6270,7 +6270,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void FaceDetectionConfig_set_Runn
 		return;
 	}
 }
-// Method Definition Index: 71928
+// Method Definition Index: 71931
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void FaceDetectionConfig_set_MinDetectionConfidence_m5655428D9472B3E45363A8EF14C52C9B043FEE8B_inline (FaceDetectionConfig_t8FA0084BD4B8C7AD34E64E3498A84F0A866C9128* __this, float ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -6280,7 +6280,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void FaceDetectionConfig_set_MinD
 		return;
 	}
 }
-// Method Definition Index: 71930
+// Method Definition Index: 71933
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void FaceDetectionConfig_set_MinSuppressionThreshold_m73997F9B7E51299978ADE3EB64C780434723B5E4_inline (FaceDetectionConfig_t8FA0084BD4B8C7AD34E64E3498A84F0A866C9128* __this, float ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -6290,7 +6290,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void FaceDetectionConfig_set_MinS
 		return;
 	}
 }
-// Method Definition Index: 71932
+// Method Definition Index: 71935
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void FaceDetectionConfig_set_NumFaces_m02AC7C4ED29E9E7CA774EAD6C8CFAD0BA74A966E_inline (FaceDetectionConfig_t8FA0084BD4B8C7AD34E64E3498A84F0A866C9128* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
