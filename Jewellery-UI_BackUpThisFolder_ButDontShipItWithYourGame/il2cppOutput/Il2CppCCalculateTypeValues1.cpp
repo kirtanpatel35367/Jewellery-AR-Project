@@ -35486,6 +35486,7 @@ struct BanglePlacer_tA1AFD0A5196E38DA544DC9B475ACB3A1B415AF9A  : public MonoBeha
 	float ___baseDepth;
 	float ___targetDiameterM;
 	float ___wristOffsetFactor;
+	float ___wristDepthOffset;
 	float ___bboxYCorrection;
 	float ___posSmooth;
 	float ___rotSmooth;
@@ -35496,6 +35497,7 @@ struct BanglePlacer_tA1AFD0A5196E38DA544DC9B475ACB3A1B415AF9A  : public MonoBeha
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____smoothPos;
 	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ____smoothRot;
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____posVelocity;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____smoothPalmNormal;
 	bool ____firstFrame;
 	bool ____ready;
 	int32_t ____detFrames;
@@ -36042,6 +36044,7 @@ struct RingPlacer_t612E6F043A82061D57E306D336BF433D906183D3  : public MonoBehavi
 	float ___fingerBias;
 	float ___baseDepth;
 	float ___targetDiameterM;
+	float ___fingerDepthOffset;
 	float ___bboxYCorrection;
 	float ___posSmooth;
 	float ___rotSmooth;
@@ -36052,6 +36055,7 @@ struct RingPlacer_t612E6F043A82061D57E306D336BF433D906183D3  : public MonoBehavi
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____sp;
 	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ____sr;
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____sv;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____smoothFingerNormal;
 	bool ____first;
 	bool ____ready;
 	int32_t ____detFrames;

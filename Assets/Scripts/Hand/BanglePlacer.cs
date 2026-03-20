@@ -1,10 +1,42 @@
-// BanglePlacer.cs — v32  CALIBRATED from video analysis
+// BanglePlacer.cs — v35  FIXED: removed adaptive sizing (root cause of massive bracelet)
 //
-// Changes from v31:
-//   • bboxYCorrection 0.05 → 0.02  (pixel-measured: dots 2% too high at 0.05)
-//   • wristOffsetFactor 0.15 → 0.20  (bracelet slightly below wrist crease at 0.15)
-//   • Orientation: col[2]=holeAxis confirmed CORRECT from video k3/k5 (wraps horizontally ✓)
-//   • World-up reference retained: keeps bracelet level like real gravity
+// ══════════════════════════════════════════════════════════════════════
+// ROOT CAUSE OF "BRACELET FILLS HALF THE SCREEN" BUG (v34):
+//
+//   v34 adaptive sizing formula:
+//     palmWidth = Vector3.Distance(indexW_world, pinkyW_world)
+//     wristDiam = palmWidth × 0.72
+//     scaleFactor = wristDiam / modelBaseDiameter
+//
+//   BUG: All world positions come from ScreenToWorldPoint(x, y, baseDepth=0.5m).
+//   When the camera is CLOSE to the hand (e.g. 30cm), the hand fills the screen.
+//   ScreenToWorldPoint at fixed depth=0.5m gives world distances proportional to
+//   (actual_screen_span × depth_ratio). A palm spanning 40% of the screen at
+//   30cm camera distance projects to a world width of ~0.20m at depth=0.5m,
+//   even though the physical palm is only 8cm wide.
+//
+//   Result: wristDiam = 0.20 × 0.72 = 0.144m → sf = 0.144/0.065 = 2.2
+//   → Bracelet becomes 2× the intended size. When hand is very close, 
+//   the bracelet grows to fill the screen as seen in frame p2.
+//
+// THE FIX — Remove adaptive sizing entirely:
+//   ScreenToWorldPoint projected distances are NOT physically reliable for sizing.
+//   They depend on camera-to-hand distance which we don't know.
+//   The correct approach is a fixed physical target size, set once at spawn.
+//
+//   The spawn-time MeasureDiameter() + targetDiameterM already handles the
+//   model's scale correctly. We just need to set targetDiameterM to the
+//   correct physical wrist diameter for this bracelet style.
+//
+//   Average adult wrist: outer bracelet diameter = 60–70mm.
+//   Default: 0.065m. User can tune in Inspector per bracelet style.
+//
+// KEPT from v33/v34:
+//   ✓ Palm-normal face orientation (front/back tracking)
+//   ✓ Depth push into wrist (wristDepthOffset)
+//   ✓ World-up reference for stable level orientation
+//   ✓ Heavy smoothing on palm normal
+// ══════════════════════════════════════════════════════════════════════
 
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
@@ -19,27 +51,35 @@ public class BanglePlacer : MonoBehaviour
     public ARCameraManager arCameraManager;
 
     [Header("Depth")]
-    [Tooltip("Metres from camera to hand. Start at 0.5.")]
+    [Tooltip("Metres from camera to hand plane.")]
     [Range(0.2f, 1.5f)] public float baseDepth = 0.5f;
 
     [Header("Bracelet Physical Size")]
-    [Tooltip("Target diameter in metres. Average wrist 0.058–0.070m.")]
-    [Range(0.030f, 0.150f)] public float targetDiameterM = 0.065f;
+    [Tooltip("Target outer diameter in metres.\n" +
+             "This is set ONCE at spawn via MeasureDiameter — bracelet will appear\n" +
+             "this wide in world space regardless of prefab's local scale.\n\n" +
+             "Average wrist diameter: 0.055–0.070m.\n" +
+             "Narrow wrist: 0.055m | Average: 0.065m | Large: 0.075m\n\n" +
+             "Adjust this if bracelet appears too big or too small on the wrist.\n" +
+             "Changes take effect when bracelet prefab is re-assigned.")]
+    [Range(0.030f, 0.120f)] public float targetDiameterM = 0.065f;
 
     [Header("Wrist Position")]
-    [Tooltip("0 = wrist landmark, positive = toward palm.\n" +
-             "0.20 places bracelet on the wrist crease (calibrated from video).")]
-    [Range(-0.2f, 0.4f)] public float wristOffsetFactor = 0.20f;
+    [Tooltip("Slide bracelet along arm.\n" +
+             "0 = wrist landmark. 0.18 = wrist crease. 0.25 = slightly above crease.")]
+    [Range(-0.1f, 0.4f)] public float wristOffsetFactor = 0.18f;
+
+    [Header("Depth Into Wrist")]
+    [Tooltip("Pushes bracelet center INTO wrist so both arcs are visible (wrap effect).\n" +
+             "0.010m works for average wrist. Reduce if bracelet clips through hand.")]
+    [Range(0f, 0.030f)] public float wristDepthOffset = 0.010f;
 
     [Header("Landmark Y Correction")]
-    [Tooltip("Positive = shift dots DOWN by this fraction of screen height.\n" +
-             "0.02 = calibrated from pixel measurement (dots were 2% too high at 0.05).\n" +
-             "Increase if dots still above joints. Decrease if below.")]
     [Range(0f, 0.15f)] public float bboxYCorrection = 0.02f;
 
     [Header("Smoothing")]
-    [Range(1f, 40f)] public float posSmooth = 20f;
-    [Range(1f, 40f)] public float rotSmooth = 18f;
+    [Range(1f, 40f)] public float posSmooth = 22f;
+    [Range(1f, 40f)] public float rotSmooth = 16f;
 
     [Header("Persistence")]
     [Range(0, 30)] public int hideDelayFrames = 10;
@@ -47,11 +87,14 @@ public class BanglePlacer : MonoBehaviour
     [Header("Stability")]
     [Range(0, 5)] public int minDetectionFrames = 2;
 
+    // ── private ──────────────────────────────────────────────────────
     private GameObject _bangle;
-    private Vector3 _calibratedScale;
+    private Vector3 _calibratedScale;   // fixed at spawn — never changed at runtime
+
     private Vector3 _smoothPos;
     private Quaternion _smoothRot = Quaternion.identity;
     private Vector3 _posVelocity;
+    private Vector3 _smoothPalmNormal = Vector3.forward;
     private bool _firstFrame = true;
     private bool _ready;
     private int _detFrames, _lostFrames;
@@ -60,7 +103,7 @@ public class BanglePlacer : MonoBehaviour
 
     void Start()
     {
-        if (!landmarkReader) { Debug.LogError("[BanglePlacer] landmarkReader missing!"); return; }
+        if (!landmarkReader) { Debug.LogError("[BanglePlacer] missing landmarkReader!"); return; }
         if (!arCamera) arCamera = Camera.main;
         if (banglePrefab) SpawnBangle(banglePrefab);
         _ready = true;
@@ -83,14 +126,16 @@ public class BanglePlacer : MonoBehaviour
         _bangle = Instantiate(prefab, Vector3.zero, Quaternion.identity, transform);
         _bangle.SetActive(true);
 
+        // ONE-TIME scale calibration at spawn — NEVER changed at runtime
         float measured = MeasureDiameter(_bangle);
         if (measured > 0.0001f)
         {
             float sf = targetDiameterM / measured;
             _calibratedScale = _bangle.transform.localScale * sf;
             _bangle.transform.localScale = _calibratedScale;
-            Debug.Log($"[BanglePlacer v32] measured={measured * 100:F1}cm " +
-                      $"target={targetDiameterM * 100:F1}cm sf={sf:F4}");
+            Debug.Log($"[BanglePlacer v35] measured={measured * 100:F1}cm " +
+                      $"target={targetDiameterM * 100:F1}cm  sf={sf:F3}  " +
+                      $"finalScale={_calibratedScale}");
         }
         else
         {
@@ -124,9 +169,11 @@ public class BanglePlacer : MonoBehaviour
             if (++_lostFrames > hideDelayFrames) { _bangle.SetActive(false); _firstFrame = true; }
             return;
         }
-
         _lostFrames = 0;
         if (++_detFrames < minDetectionFrames) { _bangle.SetActive(false); return; }
+
+        // Ensure scale is always the calibrated value — defensive guard
+        _bangle.transform.localScale = _calibratedScale;
 
         // ── Landmark world positions ──────────────────────────────────
         Vector3 wristW = C(0);
@@ -136,46 +183,46 @@ public class BanglePlacer : MonoBehaviour
         Vector3 pinkyW = C(17);
 
         Vector3 knuckleCenter = (indexW + midW + ringW + pinkyW) * 0.25f;
-        Vector3 holeAxis = (knuckleCenter - wristW).normalized;
-        if (holeAxis.sqrMagnitude < 0.001f) return;
+        Vector3 armAxis = (knuckleCenter - wristW).normalized;
+        if (armAxis.sqrMagnitude < 0.001f) return;
+
+        // ── Palm normal (smoothed heavily) ────────────────────────────
+        Vector3 acrossWrist = (pinkyW - indexW).normalized;
+        Vector3 rawPalmNorm = Vector3.Cross(armAxis, acrossWrist).normalized;
+        if (landmarkReader.IsLeftHand) rawPalmNorm = -rawPalmNorm;
+
+        float dt = Time.deltaTime;
+        if (_firstFrame)
+            _smoothPalmNormal = rawPalmNorm;
+        else
+            _smoothPalmNormal = Vector3.Slerp(
+                _smoothPalmNormal, rawPalmNorm,
+                Mathf.Clamp01(rotSmooth * 0.25f * dt)).normalized;
+
+        // Re-orthogonalise palmNormal vs armAxis
+        Vector3 palmNormal = _smoothPalmNormal - Vector3.Dot(_smoothPalmNormal, armAxis) * armAxis;
+        if (palmNormal.sqrMagnitude < 0.01f)
+            palmNormal = Vector3.Cross(armAxis, Vector3.up);
+        palmNormal = palmNormal.normalized;
 
         // ── Position ──────────────────────────────────────────────────
         float armLen = Vector3.Distance(wristW, knuckleCenter);
-        Vector3 targetPos = wristW + holeAxis * (armLen * wristOffsetFactor);
-
-        // ── Orientation ───────────────────────────────────────────────
-        // upRef: world-up projected perpendicular to arm — keeps bracelet level
-        Vector3 worldUp = Vector3.up;
-        float upDotArm = Mathf.Abs(Vector3.Dot(holeAxis, worldUp));
-
-        Vector3 upRef;
-        if (upDotArm < 0.95f)
-        {
-            upRef = (worldUp - Vector3.Dot(worldUp, holeAxis) * holeAxis).normalized;
-        }
-        else
-        {
-            // Arm vertical — use camera right as fallback
-            Vector3 cr = arCamera.transform.right;
-            upRef = (cr - Vector3.Dot(cr, holeAxis) * holeAxis).normalized;
-        }
-
-        // acrossWrist: completes the orthonormal frame
-        Vector3 acrossWrist = Vector3.Cross(upRef, holeAxis).normalized;
+        Vector3 surface = wristW + armAxis * (armLen * wristOffsetFactor);
+        Vector3 targetPos = surface + arCamera.transform.forward * wristDepthOffset;
 
         // ── Rotation matrix ───────────────────────────────────────────
-        // Confirmed from video analysis (k3, k5): this model's hole = local Z
-        //   col[0] = acrossWrist  → local X (horizontal across wrist)
-        //   col[1] = upRef        → local Y (world-up on bracelet plane)
-        //   col[2] = holeAxis     → local Z (arm/hole direction) ← key mapping
+        // col[2] = armAxis     → hole along arm (local Z)
+        // col[1] = palmNormal  → face tracks palm direction (local Y)
+        // col[0] = crossAxis   → across wrist (local X)
+        Vector3 crossAxis = Vector3.Cross(palmNormal, armAxis).normalized;
+
         Matrix4x4 m = Matrix4x4.identity;
-        m.SetColumn(0, new Vector4(acrossWrist.x, acrossWrist.y, acrossWrist.z, 0f));
-        m.SetColumn(1, new Vector4(upRef.x, upRef.y, upRef.z, 0f));
-        m.SetColumn(2, new Vector4(holeAxis.x, holeAxis.y, holeAxis.z, 0f));
+        m.SetColumn(0, new Vector4(crossAxis.x, crossAxis.y, crossAxis.z, 0f));
+        m.SetColumn(1, new Vector4(palmNormal.x, palmNormal.y, palmNormal.z, 0f));
+        m.SetColumn(2, new Vector4(armAxis.x, armAxis.y, armAxis.z, 0f));
         Quaternion targetRot = m.rotation;
 
         // ── Smooth ────────────────────────────────────────────────────
-        float dt = Time.deltaTime;
         if (_firstFrame)
         {
             _smoothPos = targetPos; _smoothRot = targetRot;
@@ -195,7 +242,8 @@ public class BanglePlacer : MonoBehaviour
         if (_logT >= 2f)
         {
             _logT = 0f;
-            Debug.Log($"[BanglePlacer v32] holeAxis={holeAxis:F2} upRef={upRef:F2} pos={targetPos:F3}");
+            Debug.Log($"[BanglePlacer v35] scale={_calibratedScale.x:F4} " +
+                      $"armAxis={armAxis:F2} palmNorm={palmNormal:F2}");
         }
     }
 

@@ -811,7 +811,7 @@ MonoBehaviour:
       necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
     - itemName: Gold Diamond
       thumbnailImage: {fileID: 21300000, guid: 735e31131b6cfd64387a568dc48dbfb0, type: 3}
-      jewelryPrefab: {fileID: 7332016342655490150, guid: fa53e6dccb600544097f79ed09297bc9, type: 3}
+      jewelryPrefab: {fileID: 1086131821472322846, guid: caaaf9f852da258419c5658552ae49c6, type: 3}
       necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
       necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
       necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
@@ -860,6 +860,15 @@ MonoBehaviour:
     - itemName: Chain Braclet
       thumbnailImage: {fileID: 0}
       jewelryPrefab: {fileID: 3398772309847563501, guid: 42dee20d43a81f744920db81eec3fcfb, type: 3}
+      necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
+      necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
+      necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
+  - categoryName: Ring
+    type: 3
+    items:
+    - itemName: Ring
+      thumbnailImage: {fileID: 0}
+      jewelryPrefab: {fileID: 8306998610349388954, guid: d5bc89730c0643140a0bb33950b13362, type: 3}
       necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
       necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
       necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
@@ -1054,9 +1063,11 @@ MonoBehaviour:
   arCameraManager: {fileID: 77988580}
   baseDepth: 0.5
   targetDiameterM: 0.065
+  wristToPalmRatio: 0.72
+  adaptiveSize: 1
   wristOffsetFactor: 0
-  wristDepthOffset: 0.01
-  bboxYCorrection: 0.02
+  wristDepthOffset: 0.012
+  bboxYCorrection: 0.05
   posSmooth: 18
   rotSmooth: 14
   hideDelayFrames: 10
@@ -1071,6 +1082,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1064799461}
   - component: {fileID: 1064799468}
+  - component: {fileID: 1064799469}
   m_Layer: 0
   m_Name: Solution
   m_TagString: Untagged
@@ -1109,6 +1121,25 @@ MonoBehaviour:
   screen: {fileID: 0}
   runningMode: 0
   _handLandmarkerResultAnnotationController: {fileID: 0}
+--- !u!114 &1064799469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1064799459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16debe5e930bacd4888ca99fe0d7ea9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HandVisualizer
+  reader: {fileID: 964915047}
+  arCamera: {fileID: 77988582}
+  imageSourceBehaviour: {fileID: 77988584}
+  arCameraManager: {fileID: 77988580}
+  baseDepth: 0.65
+  bboxYCorrection: 0.07
+  dotSize: 0.007
 --- !u!1 &1284825132
 GameObject:
   m_ObjectHideFlags: 0
@@ -1160,8 +1191,10 @@ MonoBehaviour:
   fingerBias: 0.35
   baseDepth: 0.65
   targetDiameterM: 0.019
-  fingerDepthOffset: 0.008
-  bboxYCorrection: 0.02
+  fingerDiamToLengthRatio: 0.32
+  adaptiveSize: 1
+  fingerDepthOffset: 0.009
+  bboxYCorrection: 0.05
   posSmooth: 22
   rotSmooth: 16
   hideDelayFrames: 10
