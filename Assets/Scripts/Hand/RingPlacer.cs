@@ -1,9 +1,8 @@
-// RingPlacer.cs — v12 CAMERA-AWARE LANDMARK MAPPING
+// RingPlacer.cs — v22  DEFINITIVE: col[2]=fingerAxis + Y correction calibrated
 //
-// FIX: Pass isBackCamera to LandmarkToWorld_Hand.Convert so that
-// landmark X/Y are correctly un-mirrored for the back (World-facing) camera.
-// The flag is read from ARCameraManager each frame so it stays in sync
-// with JewelryManager's camera switching.
+// Same root-cause fix as BanglePlacer v31:
+//   Ring model's hole axis = LOCAL Z → put fingerAxis in col[2].
+//   bboxYCorrection = 0.05 with MINUS sign (LandmarkToWorld v17).
 
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
@@ -17,48 +16,74 @@ public class RingPlacer : MonoBehaviour
     public Camera arCamera;
     public GameObject ringPrefab;
     public ARCameraImageSourceBehaviour imageSourceBehaviour;
-
-    [Header("Camera Reference (for back-camera landmark fix)")]
-    [Tooltip("Assign the same ARCameraManager used by JewelryManager.")]
     public ARCameraManager arCameraManager;
 
     [Header("Finger")]
     public FingerTarget finger = FingerTarget.Ring;
 
     [Header("Placement")]
-    [Tooltip("0=knuckle (MCP), 1=first joint (PIP). Ring ≈ 0.35")]
-    [Range(0f, 1f)] public float fingerBias = 0.35f;
+    [Tooltip("0 = MCP knuckle, 1 = PIP joint. Ring finger: 0.40.")]
+    [Range(0f, 1f)] public float fingerBias = 0.40f;
 
     [Header("Depth")]
     [Range(0.2f, 1.5f)] public float baseDepth = 0.5f;
 
     [Header("Ring Physical Size")]
-    [Tooltip("The real-world inner diameter of the ring.\n" +
-             "Average finger inner diameter: 0.017–0.022m (17–22mm)")]
+    [Tooltip("Target inner diameter in metres. Average finger: 0.017–0.022m.")]
     [Range(0.010f, 0.040f)] public float targetDiameterM = 0.019f;
 
+    [Header("Landmark Y Correction")]
+    [Tooltip("Positive = shift dots DOWN (with MINUS formula in LandmarkToWorld v17).\n" +
+             "Default 0.05. Increase if dots above joints. Decrease if below.")]
+    [Range(0f, 0.20f)] public float bboxYCorrection = 0.05f;
+
     [Header("Smoothing")]
-    [Range(1f, 40f)] public float posSmooth = 20f, rotSmooth = 14f;
+    [Range(1f, 40f)] public float posSmooth = 22f, rotSmooth = 18f;
+
+    [Header("Persistence")]
+    [Range(0, 30)] public int hideDelayFrames = 10;
+
+    [Header("Stability")]
     [Range(0, 5)] public int minDetectionFrames = 2;
+
+    // [MCP, PIP, DIP, TIP] per finger
+    static readonly int[,] FL =
+    {
+        {  5,  6,  7,  8 },
+        {  9, 10, 11, 12 },
+        { 13, 14, 15, 16 },
+        { 17, 18, 19, 20 },
+    };
 
     private GameObject _ring;
     private Vector3 _calibratedScale;
-    private Vector3 _sp; private Quaternion _sr = Quaternion.identity;
-    private Vector3 _sv; private bool _first = true, _ready;
-    private int _texW, _texH, _frames;
 
-    static readonly int[,] FL = { { 5, 6, 7, 8 }, { 9, 10, 11, 12 }, { 13, 14, 15, 16 }, { 17, 18, 19, 20 } };
+    private Vector3 _sp;
+    private Quaternion _sr = Quaternion.identity;
+    private Vector3 _sv;
+    private bool _first = true, _ready;
+    private int _detFrames, _lostFrames;
+
+    private int _rawTexW, _rawTexH, _texW, _texH;
 
     void Start()
     {
-        if (!landmarkReader) { Debug.LogError("[RingPlacer] missing!"); return; }
+        if (!landmarkReader) { Debug.LogError("[RingPlacer] landmarkReader missing!"); return; }
         if (!arCamera) arCamera = Camera.main;
         if (ringPrefab) SpawnRing(ringPrefab);
         _ready = true;
     }
 
-    public void SetRingPrefab(GameObject p) { if (p) { ringPrefab = p; SpawnRing(p); } else ClearRing(); }
-    public void ClearRing() { if (_ring) { Destroy(_ring); _ring = null; } _first = true; _frames = 0; ringPrefab = null; }
+    public void SetRingPrefab(GameObject p)
+    {
+        if (p) { ringPrefab = p; SpawnRing(p); } else ClearRing();
+    }
+
+    public void ClearRing()
+    {
+        if (_ring) { Destroy(_ring); _ring = null; }
+        _first = true; _detFrames = 0; _lostFrames = 0; ringPrefab = null;
+    }
 
     void SpawnRing(GameObject prefab)
     {
@@ -72,12 +97,17 @@ public class RingPlacer : MonoBehaviour
             float sf = targetDiameterM / measured;
             _calibratedScale = _ring.transform.localScale * sf;
             _ring.transform.localScale = _calibratedScale;
-            Debug.Log($"[RingPlacer] measured={measured:F4}m target={targetDiameterM:F4}m sf={sf:F4}");
+            Debug.Log($"[RingPlacer] measured={measured * 1000:F0}mm " +
+                      $"target={targetDiameterM * 1000:F0}mm sf={sf:F4}");
         }
-        else _calibratedScale = _ring.transform.localScale;
+        else
+        {
+            _calibratedScale = _ring.transform.localScale;
+            Debug.LogWarning("[RingPlacer] No renderer bounds — using prefab scale.");
+        }
 
         _ring.SetActive(false);
-        _first = true; _frames = 0;
+        _first = true; _detFrames = 0; _lostFrames = 0;
     }
 
     static float MeasureDiameter(GameObject go)
@@ -90,52 +120,92 @@ public class RingPlacer : MonoBehaviour
         return dxz > 0.0001f ? dxz : b.size.y;
     }
 
-    /// <summary>Returns true when ARCameraManager is set to World (back camera).</summary>
-    bool IsBackCamera()
-    {
-        if (arCameraManager == null) return false;
-        return arCameraManager.currentFacingDirection == CameraFacingDirection.World;
-    }
-
     void LateUpdate()
     {
         if (!_ready || !_ring) return;
         UpdateTex();
-        if (!landmarkReader.HandDetected || landmarkReader.LandmarkCount < 21)
-        { _frames = 0; _ring.SetActive(false); _first = true; return; }
-        if (++_frames < minDetectionFrames) { _ring.SetActive(false); return; }
 
-        bool backCam = IsBackCamera();
+        bool detected = landmarkReader.HandDetected && landmarkReader.LandmarkCount >= 21;
+
+        if (!detected)
+        {
+            _detFrames = 0;
+            if (++_lostFrames > hideDelayFrames)
+            { _ring.SetActive(false); _first = true; }
+            return;
+        }
+
+        _lostFrames = 0;
+        if (++_detFrames < minDetectionFrames) { _ring.SetActive(false); return; }
 
         int fi = (int)finger;
-        Vector3 mcp = C(FL[fi, 0], backCam), pip = C(FL[fi, 1], backCam);
-        Vector3 tPos = Vector3.Lerp(mcp, pip, fingerBias);
-        Vector3 fAxis = (pip - mcp).normalized;
-        if (fAxis.sqrMagnitude < 0.001f) { _ring.SetActive(false); return; }
+        Vector3 mcp = C(FL[fi, 0]);
+        Vector3 pip = C(FL[fi, 1]);
 
-        Vector3 toCam = (arCamera.transform.position - mcp).normalized;
-        Vector3 norm = Vector3.Cross(fAxis, toCam).normalized;
-        if (landmarkReader.IsLeftHand) norm = -norm;
-        if (norm.sqrMagnitude < 0.001f) norm = arCamera.transform.up;
-        Quaternion tRot = Quaternion.LookRotation(fAxis, norm);
+        // Finger axis: MCP → PIP (= hole axis for ring, mapped to local Z)
+        Vector3 fingerAxis = (pip - mcp).normalized;
+        if (fingerAxis.sqrMagnitude < 0.001f) { _ring.SetActive(false); return; }
+
+        // Position along finger
+        Vector3 tPos = Vector3.Lerp(mcp, pip, fingerBias);
+
+        // upRef: world-up projected perpendicular to finger axis
+        Vector3 worldUp = Vector3.up;
+        float upDotFinger = Mathf.Abs(Vector3.Dot(fingerAxis, worldUp));
+
+        Vector3 upRef;
+        if (upDotFinger < 0.95f)
+        {
+            upRef = (worldUp - Vector3.Dot(worldUp, fingerAxis) * fingerAxis).normalized;
+        }
+        else
+        {
+            // Finger pointing straight up → use camera right as reference
+            Vector3 camRight = arCamera.transform.right;
+            upRef = (camRight - Vector3.Dot(camRight, fingerAxis) * fingerAxis).normalized;
+        }
+
+        // acrossRing: completes orthonormal frame
+        Vector3 acrossRing = Vector3.Cross(upRef, fingerAxis).normalized;
+
+        // Build rotation matrix — model's local Z = hole axis = finger axis
+        //   col[0] = acrossRing  (local X = across ring)
+        //   col[1] = upRef       (local Y = upward)
+        //   col[2] = fingerAxis  (local Z = hole = finger direction)
+        Matrix4x4 m = Matrix4x4.identity;
+        m.SetColumn(0, new Vector4(acrossRing.x, acrossRing.y, acrossRing.z, 0f));
+        m.SetColumn(1, new Vector4(upRef.x, upRef.y, upRef.z, 0f));
+        m.SetColumn(2, new Vector4(fingerAxis.x, fingerAxis.y, fingerAxis.z, 0f));
+        Quaternion tRot = m.rotation;
 
         float dt = Time.deltaTime;
-        if (_first) { _sp = tPos; _sr = tRot; _sv = Vector3.zero; _first = false; }
+        if (_first)
+        { _sp = tPos; _sr = tRot; _sv = Vector3.zero; _first = false; }
         else
         {
             _sp = Vector3.SmoothDamp(_sp, tPos, ref _sv, 1f / posSmooth, Mathf.Infinity, dt);
             _sr = Quaternion.Slerp(_sr, tRot, rotSmooth * dt);
         }
+
         _ring.transform.SetPositionAndRotation(_sp, _sr);
         _ring.SetActive(true);
     }
 
-    Vector3 C(int i, bool backCam) => LandmarkToWorld_Hand.Convert(
-        landmarkReader.GetLandmark(i), arCamera, _texW, _texH, baseDepth, backCam);
+    Vector3 C(int i) => LandmarkToWorld_Hand.Convert(
+        landmarkReader.GetLandmark(i), arCamera,
+        _texW, _texH, baseDepth, false, bboxYCorrection);
 
     void UpdateTex()
     {
-        if (imageSourceBehaviour != null) { var s = imageSourceBehaviour.GetImageSource(); if (s != null && s.isPrepared) { _texW = s.textureWidth; _texH = s.textureHeight; return; } }
-        if (_texW == 0) { _texW = 720; _texH = 1280; }
+        bool got = false;
+        if (imageSourceBehaviour != null)
+        {
+            var src = imageSourceBehaviour.GetImageSource();
+            if (src != null && src.isPrepared)
+            { _rawTexW = src.textureWidth; _rawTexH = src.textureHeight; got = true; }
+        }
+        if (!got && _rawTexW == 0) { _rawTexW = 720; _rawTexH = 1280; }
+        _texW = _rawTexW;
+        _texH = _rawTexH;
     }
 }

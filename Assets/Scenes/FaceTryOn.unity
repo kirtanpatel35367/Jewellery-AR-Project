@@ -1077,6 +1077,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1064799461}
   - component: {fileID: 1064799468}
+  - component: {fileID: 1064799469}
   m_Layer: 0
   m_Name: Solution
   m_TagString: Untagged
@@ -1115,6 +1116,24 @@ MonoBehaviour:
   screen: {fileID: 0}
   runningMode: 0
   _handLandmarkerResultAnnotationController: {fileID: 0}
+--- !u!114 &1064799469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1064799459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16debe5e930bacd4888ca99fe0d7ea9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HandVisualizer
+  reader: {fileID: 964915047}
+  arCamera: {fileID: 77988582}
+  imageSourceBehaviour: {fileID: 77988584}
+  arCameraManager: {fileID: 77988580}
+  baseDepth: 0.65
+  dotSize: 0.007
 --- !u!1 &1284825132
 GameObject:
   m_ObjectHideFlags: 0
