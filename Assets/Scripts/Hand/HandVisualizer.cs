@@ -1,5 +1,7 @@
-// HandVisualizer.cs — v7 DEBUG  (remove before release)
-// Fixed: no dim swap, nx = 1-lm.x for all cameras (matches LandmarkToWorld v14)
+// HandVisualizer.cs — v8  CALIBRATED: bboxYCorrection = 0.02
+// Updated to match LandmarkToWorld v18 calibration.
+// Positive bboxYCorrection = shifts dots DOWN (MINUS sign in formula).
+// Default 0.02 = pixel-measured correct position.
 
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
@@ -12,7 +14,10 @@ public class HandVisualizer : MonoBehaviour
     public ARCameraManager arCameraManager;
 
     [Range(0.3f, 1.5f)] public float baseDepth = 0.5f;
-    [Range(0f, 0.25f)] public float bboxYCorrection = 0.07f;
+
+    [Tooltip("Positive = shift dots DOWN. Default 0.02 (calibrated from pixel measurement).")]
+    [Range(0f, 0.15f)] public float bboxYCorrection = 0.02f;
+
     [Range(0.003f, 0.02f)] public float dotSize = 0.007f;
 
     private const int N = 21;
@@ -31,8 +36,8 @@ public class HandVisualizer : MonoBehaviour
             var col = _dots[i].GetComponent<Collider>();
             if (col) col.enabled = false;
             var mat = _dots[i].GetComponent<Renderer>().material;
-            mat.color = i == 0 ? Color.red   // wrist
-                      : IsGreen(i) ? Color.green  // MCP knuckles
+            mat.color = i == 0 ? Color.red
+                      : IsGreen(i) ? Color.green
                       : Color.white;
             _dots[i].SetActive(false);
         }
@@ -54,7 +59,6 @@ public class HandVisualizer : MonoBehaviour
 
     void UpdateTex()
     {
-        // No dim swap — ARCameraImageSource outputs portrait texture already
         bool got = false;
         if (imageSourceBehaviour != null)
         {
@@ -69,4 +73,4 @@ public class HandVisualizer : MonoBehaviour
 
     static bool IsGreen(int i)
     { foreach (int g in GREEN_LM) if (i == g) return true; return false; }
-}   
+}

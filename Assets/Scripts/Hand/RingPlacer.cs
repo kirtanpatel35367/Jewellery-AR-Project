@@ -1,8 +1,11 @@
-// RingPlacer.cs — v22  DEFINITIVE: col[2]=fingerAxis + Y correction calibrated
+// RingPlacer.cs — v23  CALIBRATED from video analysis
 //
-// Same root-cause fix as BanglePlacer v31:
-//   Ring model's hole axis = LOCAL Z → put fingerAxis in col[2].
-//   bboxYCorrection = 0.05 with MINUS sign (LandmarkToWorld v17).
+// Changes from v22:
+//   • bboxYCorrection 0.05 → 0.02  (pixel-measured calibration, dots 2% too high)
+//   • fingerBias 0.40 → 0.50  (ring was sitting too close to MCP knuckle; 
+//                               0.50 places it mid-way on the finger shaft ✓)
+//   • Orientation: col[2]=fingerAxis confirmed CORRECT from video k5 (small oval ✓)
+//   • World-up reference retained for stable level orientation
 
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
@@ -22,8 +25,10 @@ public class RingPlacer : MonoBehaviour
     public FingerTarget finger = FingerTarget.Ring;
 
     [Header("Placement")]
-    [Tooltip("0 = MCP knuckle, 1 = PIP joint. Ring finger: 0.40.")]
-    [Range(0f, 1f)] public float fingerBias = 0.40f;
+    [Tooltip("0 = MCP knuckle, 1 = PIP joint.\n" +
+             "0.50 = mid shaft between knuckle and PIP (calibrated from video).\n" +
+             "Increase toward 0.6–0.7 to move ring up the finger.")]
+    [Range(0f, 1f)] public float fingerBias = 0.50f;
 
     [Header("Depth")]
     [Range(0.2f, 1.5f)] public float baseDepth = 0.5f;
@@ -33,9 +38,10 @@ public class RingPlacer : MonoBehaviour
     [Range(0.010f, 0.040f)] public float targetDiameterM = 0.019f;
 
     [Header("Landmark Y Correction")]
-    [Tooltip("Positive = shift dots DOWN (with MINUS formula in LandmarkToWorld v17).\n" +
-             "Default 0.05. Increase if dots above joints. Decrease if below.")]
-    [Range(0f, 0.20f)] public float bboxYCorrection = 0.05f;
+    [Tooltip("Positive = shift dots DOWN by this fraction of screen height.\n" +
+             "0.02 = calibrated from pixel measurement.\n" +
+             "Increase if dots above joints. Decrease if below.")]
+    [Range(0f, 0.15f)] public float bboxYCorrection = 0.02f;
 
     [Header("Smoothing")]
     [Range(1f, 40f)] public float posSmooth = 22f, rotSmooth = 18f;
@@ -57,13 +63,11 @@ public class RingPlacer : MonoBehaviour
 
     private GameObject _ring;
     private Vector3 _calibratedScale;
-
     private Vector3 _sp;
     private Quaternion _sr = Quaternion.identity;
     private Vector3 _sv;
     private bool _first = true, _ready;
     private int _detFrames, _lostFrames;
-
     private int _rawTexW, _rawTexH, _texW, _texH;
 
     void Start()
@@ -97,7 +101,7 @@ public class RingPlacer : MonoBehaviour
             float sf = targetDiameterM / measured;
             _calibratedScale = _ring.transform.localScale * sf;
             _ring.transform.localScale = _calibratedScale;
-            Debug.Log($"[RingPlacer] measured={measured * 1000:F0}mm " +
+            Debug.Log($"[RingPlacer v23] measured={measured * 1000:F0}mm " +
                       $"target={targetDiameterM * 1000:F0}mm sf={sf:F4}");
         }
         else
@@ -126,12 +130,10 @@ public class RingPlacer : MonoBehaviour
         UpdateTex();
 
         bool detected = landmarkReader.HandDetected && landmarkReader.LandmarkCount >= 21;
-
         if (!detected)
         {
             _detFrames = 0;
-            if (++_lostFrames > hideDelayFrames)
-            { _ring.SetActive(false); _first = true; }
+            if (++_lostFrames > hideDelayFrames) { _ring.SetActive(false); _first = true; }
             return;
         }
 
@@ -142,11 +144,11 @@ public class RingPlacer : MonoBehaviour
         Vector3 mcp = C(FL[fi, 0]);
         Vector3 pip = C(FL[fi, 1]);
 
-        // Finger axis: MCP → PIP (= hole axis for ring, mapped to local Z)
+        // Finger axis MCP → PIP
         Vector3 fingerAxis = (pip - mcp).normalized;
         if (fingerAxis.sqrMagnitude < 0.001f) { _ring.SetActive(false); return; }
 
-        // Position along finger
+        // Position: 50% between MCP and PIP (mid finger shaft)
         Vector3 tPos = Vector3.Lerp(mcp, pip, fingerBias);
 
         // upRef: world-up projected perpendicular to finger axis
@@ -160,18 +162,17 @@ public class RingPlacer : MonoBehaviour
         }
         else
         {
-            // Finger pointing straight up → use camera right as reference
-            Vector3 camRight = arCamera.transform.right;
-            upRef = (camRight - Vector3.Dot(camRight, fingerAxis) * fingerAxis).normalized;
+            Vector3 cr = arCamera.transform.right;
+            upRef = (cr - Vector3.Dot(cr, fingerAxis) * fingerAxis).normalized;
         }
 
         // acrossRing: completes orthonormal frame
         Vector3 acrossRing = Vector3.Cross(upRef, fingerAxis).normalized;
 
-        // Build rotation matrix — model's local Z = hole axis = finger axis
-        //   col[0] = acrossRing  (local X = across ring)
-        //   col[1] = upRef       (local Y = upward)
-        //   col[2] = fingerAxis  (local Z = hole = finger direction)
+        // Rotation matrix — ring model's hole = local Z (confirmed from video k5)
+        //   col[0] = acrossRing  → local X
+        //   col[1] = upRef       → local Y
+        //   col[2] = fingerAxis  → local Z = hole = finger direction
         Matrix4x4 m = Matrix4x4.identity;
         m.SetColumn(0, new Vector4(acrossRing.x, acrossRing.y, acrossRing.z, 0f));
         m.SetColumn(1, new Vector4(upRef.x, upRef.y, upRef.z, 0f));
@@ -192,8 +193,7 @@ public class RingPlacer : MonoBehaviour
     }
 
     Vector3 C(int i) => LandmarkToWorld_Hand.Convert(
-        landmarkReader.GetLandmark(i), arCamera,
-        _texW, _texH, baseDepth, false, bboxYCorrection);
+        landmarkReader.GetLandmark(i), arCamera, _texW, _texH, baseDepth, false, bboxYCorrection);
 
     void UpdateTex()
     {
@@ -205,7 +205,6 @@ public class RingPlacer : MonoBehaviour
             { _rawTexW = src.textureWidth; _rawTexH = src.textureHeight; got = true; }
         }
         if (!got && _rawTexW == 0) { _rawTexW = 720; _rawTexH = 1280; }
-        _texW = _rawTexW;
-        _texH = _rawTexH;
+        _texW = _rawTexW; _texH = _rawTexH;
     }
 }

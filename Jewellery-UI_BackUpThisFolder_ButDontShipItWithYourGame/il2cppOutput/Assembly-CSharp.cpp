@@ -454,7 +454,6 @@ IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____B60CE6F86E76FC1967BFB4A2D89838E64E157DB161568C239146B1B94BFF8D19_FieldInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____DA2587A6C6ED3D0EAE5F8D8008CE0436C35D8F443D3C77874F63D2C5651AE7B7_FieldInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____FB1B0009684807A9FDEB0CF312114A53E0F71D83316C1B515A1A03EE64D46623_FieldInfo_var;
-IL2CPP_EXTERN_C String_t* _stringLiteral00A2136769B9888568317C31F70DAFD63B3BD010;
 IL2CPP_EXTERN_C String_t* _stringLiteral0269E910B7E7CB7FB1AA7785CA49F27AF5EB8691;
 IL2CPP_EXTERN_C String_t* _stringLiteral028A0B789368013F67464E0AC8CFDA88D7AD97B3;
 IL2CPP_EXTERN_C String_t* _stringLiteral028FACF80E052870874038642F78B9BF75689F99;
@@ -467,12 +466,12 @@ IL2CPP_EXTERN_C String_t* _stringLiteral0AC5102B8563C2A6F33DCB436EFBBD0B67B4246A
 IL2CPP_EXTERN_C String_t* _stringLiteral0AEBB8FF60640456605EF6CE5280C8C284F95374;
 IL2CPP_EXTERN_C String_t* _stringLiteral10F8B081E62B39BF00294A286CCA1C53BDC694EF;
 IL2CPP_EXTERN_C String_t* _stringLiteral116A0013A2D7823BBA7E6C7636BAB4D2A31BC1A0;
-IL2CPP_EXTERN_C String_t* _stringLiteral1299D8E978ABC62DE6BBFF06C82B04D177B3A18E;
 IL2CPP_EXTERN_C String_t* _stringLiteral19E54301D9863BEE779540DA82AF8B9BB6BACBAC;
 IL2CPP_EXTERN_C String_t* _stringLiteral1A70FCD52E9E44F32DAB41EF51BB032A2C77CD8D;
 IL2CPP_EXTERN_C String_t* _stringLiteral1C67AB63ED2D0FAA2CF85092CD46D8442CE679EF;
 IL2CPP_EXTERN_C String_t* _stringLiteral1CA08B2C59D9A313D75D47F66BC27C8446B68DDD;
 IL2CPP_EXTERN_C String_t* _stringLiteral1D4034E051228E0A2B11C3A96B9CEC03197CCFFC;
+IL2CPP_EXTERN_C String_t* _stringLiteral1FAAFFACC632E035EEB2F2E586347274F5818996;
 IL2CPP_EXTERN_C String_t* _stringLiteral234B0A1F067D010D6ECF2A19F3E5EC2F72A5951B;
 IL2CPP_EXTERN_C String_t* _stringLiteral2B41A49B63047146AAD0AC6199665F8155413E91;
 IL2CPP_EXTERN_C String_t* _stringLiteral2E7D26CEE451D90C1C956B735738FCA45A737C81;
@@ -509,6 +508,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral67746CA6CAC3D14E8126EE04E9FE9B20C76064BC
 IL2CPP_EXTERN_C String_t* _stringLiteral6AA2EC8A802729B454929440E54531B0B5E305C8;
 IL2CPP_EXTERN_C String_t* _stringLiteral6BF046704A31F6D1B997FBDEB4933FD9C4588FB3;
 IL2CPP_EXTERN_C String_t* _stringLiteral70921FD844B61A9162A047E99BFAFC3D9C19EB34;
+IL2CPP_EXTERN_C String_t* _stringLiteral7644B751B61075AE0B80A7D505B3665F1BE4B909;
 IL2CPP_EXTERN_C String_t* _stringLiteral7A85A049CE275425B130E77AFFDD6682228D4D08;
 IL2CPP_EXTERN_C String_t* _stringLiteral7AC7A9FC959F48A6C72D27C9992CD7351FDFB89E;
 IL2CPP_EXTERN_C String_t* _stringLiteral7B18F301A198B83778B5E546729B0539A0D4E758;
@@ -522,17 +522,17 @@ IL2CPP_EXTERN_C String_t* _stringLiteral85854D21F273A756078468B1F896F112B0E08118
 IL2CPP_EXTERN_C String_t* _stringLiteral86FADB31129B6F40C720A97600D69389EA3567E3;
 IL2CPP_EXTERN_C String_t* _stringLiteral8CD323CA4FCC80B856ED999517207C70D219279C;
 IL2CPP_EXTERN_C String_t* _stringLiteral8CE363F89AD6783DCBBC9D14A81FE760B48C671E;
+IL2CPP_EXTERN_C String_t* _stringLiteral8EBC3B7B72E7391763E2BD3BBF559E98F1A5FD26;
 IL2CPP_EXTERN_C String_t* _stringLiteral900D858FE9ABCD2ED2B25CD27110A78ADCC6EC6B;
 IL2CPP_EXTERN_C String_t* _stringLiteral91EABC919E48AAD7331BDBE21DBB8D4C623A4A25;
 IL2CPP_EXTERN_C String_t* _stringLiteral96435C53480C60F4A97A505CA0B748881D1CC7FB;
-IL2CPP_EXTERN_C String_t* _stringLiteral9A14B14E4E943C0D54A33D7B5398922A408985B0;
+IL2CPP_EXTERN_C String_t* _stringLiteral99BEBFA1A3494149884D4E6425EFF45F5B6ACF67;
 IL2CPP_EXTERN_C String_t* _stringLiteral9B59A80AABEDAEB1497ACCB7F4227F80C6F155B0;
 IL2CPP_EXTERN_C String_t* _stringLiteral9C1D78AD062E5B5DA0A0A3B81540B373D28D2321;
 IL2CPP_EXTERN_C String_t* _stringLiteral9EFDBCA57E3F579D35C4323ACD7655984927C018;
 IL2CPP_EXTERN_C String_t* _stringLiteral9F34D3E112CFE9EBA043FA0F7C9E889BD680D5C4;
 IL2CPP_EXTERN_C String_t* _stringLiteralA336BF3E3DAD88EB647971060D605102239C6330;
 IL2CPP_EXTERN_C String_t* _stringLiteralAAC4586E83A8C6C7920362EBF05AC5EA31761F25;
-IL2CPP_EXTERN_C String_t* _stringLiteralAB8E793E75672358CBD441DCDE9856D9D4CD8829;
 IL2CPP_EXTERN_C String_t* _stringLiteralAC0FEBC23DE9DBA147A09CD63486F59B62DAC256;
 IL2CPP_EXTERN_C String_t* _stringLiteralAC71D8B2CEF8E2962626333821AB649B94AE53A7;
 IL2CPP_EXTERN_C String_t* _stringLiteralADBFEBE296E1C5F0326A373C775B4AB0F204C705;
@@ -5031,6 +5031,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Matrix4x4_SetColumn_mC1CBEB2
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Matrix4x4_get_rotation_m7E2C29FCB2AAFAE4D7B4FBD3563E9EDB53F5A8BB_inline (Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_SmoothDamp_mAF61EA22D4906BF87DD00A91FB4F6AC0C54C495A (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_current, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_target, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___2_currentVelocity, float ___3_smoothTime, float ___4_maxSpeed, float ___5_deltaTime, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_SetPositionAndRotation_m418859BF59086EEAA084FFD6F258A43FAB408F5A (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_position, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___1_rotation, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Format_mA0534D6E2AE4D67A6BD8D45B3321323930EB930C (String_t* ___0_format, RuntimeObject* ___1_arg0, RuntimeObject* ___2_arg1, RuntimeObject* ___3_arg2, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 JewelleryLandmarkReader_GetLandmark_m24AF4E5FD5DB4E697985983B6D48CF9321BA5FAB (JewelleryLandmarkReader_t4F615276AACEBC7EBCCD801F08036AE58B7A501B* __this, int32_t ___0_index, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 LandmarkToWorld_Hand_Convert_m62B54C89CA9F65109CB9AAFC862C1318A0F6D56C (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_lm, Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ___1_cam, int32_t ___2_texW, int32_t ___3_texH, float ___4_worldDepth, bool ___5_isBackCamera, float ___6_bboxYCorrection, float ___7_bboxXOffset, float ___8_bboxXScale, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ARCameraImageSource_t3BB18BA1EF236E15D8282CA871653A67EA42A1FC* ARCameraImageSourceBehaviour_GetImageSource_mCB8C09A19995EFFD1D6B7FC274FDFBC54869242E_inline (ARCameraImageSourceBehaviour_t96267AD17B80324968D58FC71842BC456F7AB2B0* __this, const RuntimeMethod* method) ;
@@ -5067,7 +5068,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp_mEB9AEA827D27D2
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Camera_get_nearClipPlane_m5E8FAF84326E3192CB036BD29DCCDAF6A9861013 (Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Camera_ScreenToWorldPoint_m5EA3148F070985EC72127AAC3448D8D6ABE6E7E5 (Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_position, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Format_m918500C1EFB475181349A79989BB79BB36102894 (String_t* ___0_format, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___1_args, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Format_mA0534D6E2AE4D67A6BD8D45B3321323930EB930C (String_t* ___0_format, RuntimeObject* ___1_arg0, RuntimeObject* ___2_arg1, RuntimeObject* ___3_arg2, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RingPlacer_SpawnRing_mCA9846C97A1B68B22D915945E182585EAB3D75A7 (RingPlacer_t612E6F043A82061D57E306D336BF433D906183D3* __this, GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___0_prefab, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RingPlacer_ClearRing_m53D8DA4ABF81F7571E7FBB12391AC80BD18076C3 (RingPlacer_t612E6F043A82061D57E306D336BF433D906183D3* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float RingPlacer_MeasureDiameter_mA298FDCA73795227EFD5ABF88D426CB1B707ECFC (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___0_go, const RuntimeMethod* method) ;
@@ -9701,7 +9701,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BanglePlacer_Start_m9BC832C24D58D38EBFDE
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:94>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:63>
 		JewelleryLandmarkReader_t4F615276AACEBC7EBCCD801F08036AE58B7A501B* L_0 = __this->___landmarkReader;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -9712,16 +9712,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BanglePlacer_Start_m9BC832C24D58D38EBFDE
 		}
 	}
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:94>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:63>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2(_stringLiteral40E5DFE2F4AB5DDD5FAD727726FD46076B702267, NULL);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:94>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:63>
 		return;
 	}
 
 IL_0018:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:95>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:64>
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_2 = __this->___arCamera;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_3;
@@ -9732,7 +9732,7 @@ IL_0018:
 		}
 	}
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:95>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:64>
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_4;
 		L_4 = Camera_get_main_m52C992F18E05355ABB9EEB64A4BF2215E12762DF(NULL);
 		__this->___arCamera = L_4;
@@ -9741,7 +9741,7 @@ IL_0018:
 
 IL_0030:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:96>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:65>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___banglePrefab;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_6;
@@ -9752,16 +9752,16 @@ IL_0030:
 		}
 	}
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:96>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:65>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = __this->___banglePrefab;
 		BanglePlacer_SpawnBangle_m168BF2DFEA5A914E38E94D29B929BD3E33E4E9B5(__this, L_7, NULL);
 	}
 
 IL_0049:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:97>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:66>
 		__this->____ready = (bool)1;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:98>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:67>
 		return;
 	}
 }
@@ -9775,7 +9775,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BanglePlacer_SetBanglePrefab_m3C0EFBDE00
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:102>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:71>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = ___0_p;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -9786,11 +9786,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BanglePlacer_SetBanglePrefab_m3C0EFBDE00
 		}
 	}
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:102>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:71>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = ___0_p;
 		__this->___banglePrefab = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___banglePrefab), (void*)L_2);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:102>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:71>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = ___0_p;
 		BanglePlacer_SpawnBangle_m168BF2DFEA5A914E38E94D29B929BD3E33E4E9B5(__this, L_3, NULL);
 		return;
@@ -9798,9 +9798,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BanglePlacer_SetBanglePrefab_m3C0EFBDE00
 
 IL_0017:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:102>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:71>
 		BanglePlacer_ClearBangle_m10DF857003F797733AD245A56436A323602ABDF4(__this, NULL);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:103>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:72>
 		return;
 	}
 }
@@ -9814,7 +9814,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BanglePlacer_ClearBangle_m10DF857003F797
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:107>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:76>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->____bangle;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -9825,27 +9825,27 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BanglePlacer_ClearBangle_m10DF857003F797
 		}
 	}
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:107>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:76>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->____bangle;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB(L_2, NULL);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:107>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:76>
 		__this->____bangle = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____bangle), (void*)(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)NULL);
 	}
 
 IL_001f:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:108>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:77>
 		__this->____firstFrame = (bool)1;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:108>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:77>
 		__this->____detFrames = 0;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:108>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:77>
 		__this->____lostFrames = 0;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:108>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:77>
 		__this->___banglePrefab = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___banglePrefab), (void*)(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)NULL);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:109>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:78>
 		return;
 	}
 }
@@ -9859,14 +9859,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BanglePlacer_SpawnBangle_m168BF2DFEA5A91
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_mD136E37F696C00A3A1D4F65724ACAE903E385181_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral10F8B081E62B39BF00294A286CCA1C53BDC694EF);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9A14B14E4E943C0D54A33D7B5398922A408985B0);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1FAAFFACC632E035EEB2F2E586347274F5818996);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE415267892514E3409F412CD5FEBF4D451375E52);
 		s_Il2CppMethodInitialized = true;
 	}
 	float V_0 = 0.0f;
 	float V_1 = 0.0f;
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:113>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:82>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->____bangle;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -9877,7 +9877,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BanglePlacer_SpawnBangle_m168BF2DFEA5A91
 		}
 	}
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:113>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:82>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->____bangle;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB(L_2, NULL);
@@ -9885,7 +9885,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BanglePlacer_SpawnBangle_m168BF2DFEA5A91
 
 IL_0018:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:114>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:83>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = ___0_prefab;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4;
 		L_4 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
@@ -9898,16 +9898,16 @@ IL_0018:
 		L_7 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_mD136E37F696C00A3A1D4F65724ACAE903E385181(L_3, L_4, L_5, L_6, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_mD136E37F696C00A3A1D4F65724ACAE903E385181_RuntimeMethod_var);
 		__this->____bangle = L_7;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____bangle), (void*)L_7);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:115>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:84>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_8 = __this->____bangle;
 		NullCheck(L_8);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_8, (bool)1, NULL);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:117>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:86>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9 = __this->____bangle;
 		float L_10;
 		L_10 = BanglePlacer_MeasureDiameter_m1FE8BD9DD4652671F1AF13B29A5F9EC633CCA42E(L_9, NULL);
 		V_0 = L_10;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:118>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:87>
 		float L_11 = V_0;
 		if ((!(((float)L_11) > ((float)(9.99999975E-05f)))))
 		{
@@ -9915,11 +9915,11 @@ IL_0018:
 		}
 	}
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:120>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:89>
 		float L_12 = __this->___targetDiameterM;
 		float L_13 = V_0;
 		V_1 = ((float)(L_12/L_13));
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:121>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:90>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_14 = __this->____bangle;
 		NullCheck(L_14);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_15;
@@ -9931,7 +9931,7 @@ IL_0018:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_18;
 		L_18 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_16, L_17, NULL);
 		__this->____calibratedScale = L_18;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:122>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:91>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_19 = __this->____bangle;
 		NullCheck(L_19);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_20;
@@ -9939,13 +9939,13 @@ IL_0018:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_21 = __this->____calibratedScale;
 		NullCheck(L_20);
 		Transform_set_localScale_mBA79E811BAF6C47B80FF76414C12B47B3CD03633(L_20, L_21, NULL);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:123>
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:124>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:92>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:93>
 		float L_22 = V_0;
 		float L_23 = ((float)il2cpp_codegen_multiply(L_22, (100.0f)));
 		RuntimeObject* L_24 = Box(il2cpp_defaults.single_class, &L_23);
 		String_t* L_25;
-		L_25 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral9A14B14E4E943C0D54A33D7B5398922A408985B0, L_24, NULL);
+		L_25 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral1FAAFFACC632E035EEB2F2E586347274F5818996, L_24, NULL);
 		float L_26 = __this->___targetDiameterM;
 		float L_27 = ((float)il2cpp_codegen_multiply(L_26, (100.0f)));
 		RuntimeObject* L_28 = Box(il2cpp_defaults.single_class, &L_27);
@@ -9963,7 +9963,7 @@ IL_0018:
 
 IL_00d2:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:128>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:97>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_34 = __this->____bangle;
 		NullCheck(L_34);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_35;
@@ -9972,24 +9972,24 @@ IL_00d2:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_36;
 		L_36 = Transform_get_localScale_m804A002A53A645CDFCD15BB0F37209162720363F(L_35, NULL);
 		__this->____calibratedScale = L_36;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:129>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:98>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9(_stringLiteral10F8B081E62B39BF00294A286CCA1C53BDC694EF, NULL);
 	}
 
 IL_00f2:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:132>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:101>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_37 = __this->____bangle;
 		NullCheck(L_37);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_37, (bool)0, NULL);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:133>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:102>
 		__this->____firstFrame = (bool)1;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:133>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:102>
 		__this->____detFrames = 0;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:133>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:102>
 		__this->____lostFrames = 0;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:134>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:103>
 		return;
 	}
 }
@@ -10008,13 +10008,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float BanglePlacer_MeasureDiameter_m1FE8BD9DD
 	float V_2 = 0.0f;
 	int32_t V_3 = 0;
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:138>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:107>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = ___0_go;
 		NullCheck(L_0);
 		RendererU5BU5D_t32FDD782F67917B2291EA4FF242719877440A02A* L_1;
 		L_1 = GameObject_GetComponentsInChildren_TisRenderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF_mA2746088DB45856FD76C725AB403CEF5A8997734(L_0, GameObject_GetComponentsInChildren_TisRenderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF_mA2746088DB45856FD76C725AB403CEF5A8997734_RuntimeMethod_var);
 		V_0 = L_1;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:139>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:108>
 		RendererU5BU5D_t32FDD782F67917B2291EA4FF242719877440A02A* L_2 = V_0;
 		NullCheck(L_2);
 		if ((((RuntimeArray*)L_2)->max_length))
@@ -10023,13 +10023,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float BanglePlacer_MeasureDiameter_m1FE8BD9DD
 		}
 	}
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:139>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:108>
 		return (0.0f);
 	}
 
 IL_0011:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:140>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:109>
 		RendererU5BU5D_t32FDD782F67917B2291EA4FF242719877440A02A* L_3 = V_0;
 		NullCheck(L_3);
 		int32_t L_4 = 0;
@@ -10038,14 +10038,14 @@ IL_0011:
 		Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3 L_6;
 		L_6 = Renderer_get_bounds_m390CF334730C3C34E45CE59F1D08C3B9F3109C7C(L_5, NULL);
 		V_1 = L_6;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:141>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:110>
 		V_3 = 1;
 		goto IL_0031;
 	}
 
 IL_001e:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:141>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:110>
 		RendererU5BU5D_t32FDD782F67917B2291EA4FF242719877440A02A* L_7 = V_0;
 		int32_t L_8 = V_3;
 		NullCheck(L_7);
@@ -10055,14 +10055,14 @@ IL_001e:
 		Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3 L_11;
 		L_11 = Renderer_get_bounds_m390CF334730C3C34E45CE59F1D08C3B9F3109C7C(L_10, NULL);
 		Bounds_Encapsulate_m7C70C382B9380A8C962074C78E189B53CE8F7A22_inline((&V_1), L_11, NULL);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:141>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:110>
 		int32_t L_12 = V_3;
 		V_3 = ((int32_t)il2cpp_codegen_add(L_12, 1));
 	}
 
 IL_0031:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:141>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:110>
 		int32_t L_13 = V_3;
 		RendererU5BU5D_t32FDD782F67917B2291EA4FF242719877440A02A* L_14 = V_0;
 		NullCheck(L_14);
@@ -10072,7 +10072,7 @@ IL_0031:
 		}
 	}
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:142>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:111>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_15;
 		L_15 = Bounds_get_size_m0699A53A55A78B3201D7270D6F338DFA91B6FAD4_inline((&V_1), NULL);
 		float L_16 = L_15.___x;
@@ -10082,7 +10082,7 @@ IL_0031:
 		float L_19;
 		L_19 = Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline(L_16, L_18, NULL);
 		V_2 = L_19;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:143>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:112>
 		float L_20 = V_2;
 		if ((((float)L_20) > ((float)(9.99999975E-05f))))
 		{
@@ -10111,7 +10111,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BanglePlacer_LateUpdate_m0779CCF3B66E0F9
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1299D8E978ABC62DE6BBFF06C82B04D177B3A18E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral99BEBFA1A3494149884D4E6425EFF45F5B6ACF67);
 		s_Il2CppMethodInitialized = true;
 	}
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -10145,7 +10145,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BanglePlacer_LateUpdate_m0779CCF3B66E0F9
 	memset((&V_15), 0, sizeof(V_15));
 	int32_t G_B6_0 = 0;
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:148>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:117>
 		bool L_0 = __this->____ready;
 		if (!L_0)
 		{
@@ -10165,15 +10165,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BanglePlacer_LateUpdate_m0779CCF3B66E0F9
 
 IL_0015:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:148>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:117>
 		return;
 	}
 
 IL_0016:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:149>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:118>
 		BanglePlacer_UpdateTex_m7ECD141FF87C33E770F378B362659721E6BB62FB(__this, NULL);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:151>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:120>
 		JewelleryLandmarkReader_t4F615276AACEBC7EBCCD801F08036AE58B7A501B* L_3 = __this->___landmarkReader;
 		NullCheck(L_3);
 		bool L_4;
@@ -10199,16 +10199,16 @@ IL_003d:
 
 IL_003e:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:153>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:121>
 		if (G_B6_0)
 		{
 			goto IL_0077;
 		}
 	}
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:155>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:123>
 		__this->____detFrames = 0;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:156>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:124>
 		int32_t L_7 = __this->____lostFrames;
 		V_14 = ((int32_t)il2cpp_codegen_add(L_7, 1));
 		int32_t L_8 = V_14;
@@ -10221,25 +10221,25 @@ IL_003e:
 		}
 	}
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:157>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:124>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_11 = __this->____bangle;
 		NullCheck(L_11);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_11, (bool)0, NULL);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:157>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:124>
 		__this->____firstFrame = (bool)1;
 	}
 
 IL_0076:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:158>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:125>
 		return;
 	}
 
 IL_0077:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:161>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:128>
 		__this->____lostFrames = 0;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:162>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:129>
 		int32_t L_12 = __this->____detFrames;
 		V_14 = ((int32_t)il2cpp_codegen_add(L_12, 1));
 		int32_t L_13 = V_14;
@@ -10252,36 +10252,36 @@ IL_0077:
 		}
 	}
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:162>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:129>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_16 = __this->____bangle;
 		NullCheck(L_16);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_16, (bool)0, NULL);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:162>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:129>
 		return;
 	}
 
 IL_00a7:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:165>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:132>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_17;
 		L_17 = BanglePlacer_C_m64716B8F112797B8B42470C21671CF028EDED5E6(__this, 0, NULL);
 		V_0 = L_17;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:166>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:133>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_18;
 		L_18 = BanglePlacer_C_m64716B8F112797B8B42470C21671CF028EDED5E6(__this, 5, NULL);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:167>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:134>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19;
 		L_19 = BanglePlacer_C_m64716B8F112797B8B42470C21671CF028EDED5E6(__this, ((int32_t)9), NULL);
 		V_1 = L_19;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:168>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:135>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_20;
 		L_20 = BanglePlacer_C_m64716B8F112797B8B42470C21671CF028EDED5E6(__this, ((int32_t)13), NULL);
 		V_2 = L_20;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:169>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:136>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_21;
 		L_21 = BanglePlacer_C_m64716B8F112797B8B42470C21671CF028EDED5E6(__this, ((int32_t)17), NULL);
 		V_3 = L_21;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:171>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:138>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_22 = V_1;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_23;
 		L_23 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_18, L_22, NULL);
@@ -10294,7 +10294,7 @@ IL_00a7:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_28;
 		L_28 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_27, (0.25f), NULL);
 		V_4 = L_28;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:172>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:139>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_29 = V_4;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_30 = V_0;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_31;
@@ -10303,7 +10303,7 @@ IL_00a7:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_32;
 		L_32 = Vector3_get_normalized_m736BBF65D5CDA7A18414370D15B4DFCC1E466F07_inline((&V_15), NULL);
 		V_5 = L_32;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:173>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:140>
 		float L_33;
 		L_33 = Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline((&V_5), NULL);
 		if ((!(((float)L_33) < ((float)(0.00100000005f)))))
@@ -10312,19 +10312,19 @@ IL_00a7:
 		}
 	}
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:173>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:140>
 		return;
 	}
 
 IL_0111:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:176>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:143>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_34 = V_0;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_35 = V_4;
 		float L_36;
 		L_36 = Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline(L_34, L_35, NULL);
 		V_6 = L_36;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:177>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:144>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_37 = V_0;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_38 = V_5;
 		float L_39 = V_6;
@@ -10334,25 +10334,25 @@ IL_0111:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_42;
 		L_42 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_37, L_41, NULL);
 		V_7 = L_42;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:182>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:148>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_43;
 		L_43 = Vector3_get_up_m128AF3FDC820BF59D5DE86D973E7DE3F20C3AEBA_inline(NULL);
 		V_8 = L_43;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:183>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:149>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_44 = V_5;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_45 = V_8;
 		float L_46;
 		L_46 = Vector3_Dot_mBB86BB940AA0A32FA7D3C02AC42E5BC7095A5D52_inline(L_44, L_45, NULL);
 		float L_47;
 		L_47 = fabsf(L_46);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:186>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:152>
 		if ((!(((float)L_47) < ((float)(0.949999988f)))))
 		{
 			goto IL_0173;
 		}
 	}
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:189>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:154>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_48 = V_8;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_49 = V_8;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_50 = V_5;
@@ -10367,12 +10367,12 @@ IL_0111:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_55;
 		L_55 = Vector3_get_normalized_m736BBF65D5CDA7A18414370D15B4DFCC1E466F07_inline((&V_15), NULL);
 		V_9 = L_55;
-		goto IL_01a7;
+		goto IL_01a2;
 	}
 
 IL_0173:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:194>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:159>
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_56 = __this->___arCamera;
 		NullCheck(L_56);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_57;
@@ -10380,170 +10380,171 @@ IL_0173:
 		NullCheck(L_57);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_58;
 		L_58 = Transform_get_right_mC6DC057C23313802E2186A9E0DB760D795A758A4(L_57, NULL);
-		V_9 = L_58;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:195>
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_59 = V_9;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_60 = V_9;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_61 = V_5;
-		float L_62;
-		L_62 = Vector3_Dot_mBB86BB940AA0A32FA7D3C02AC42E5BC7095A5D52_inline(L_60, L_61, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_63 = V_5;
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:160>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_59 = L_58;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_60 = V_5;
+		float L_61;
+		L_61 = Vector3_Dot_mBB86BB940AA0A32FA7D3C02AC42E5BC7095A5D52_inline(L_59, L_60, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_62 = V_5;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_63;
+		L_63 = Vector3_op_Multiply_m7F3B0FA9256CE368D7636558EFEFC4AB0E1A0F41_inline(L_61, L_62, NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_64;
-		L_64 = Vector3_op_Multiply_m7F3B0FA9256CE368D7636558EFEFC4AB0E1A0F41_inline(L_62, L_63, NULL);
+		L_64 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_59, L_63, NULL);
+		V_15 = L_64;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_65;
-		L_65 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_59, L_64, NULL);
-		V_15 = L_65;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_66;
-		L_66 = Vector3_get_normalized_m736BBF65D5CDA7A18414370D15B4DFCC1E466F07_inline((&V_15), NULL);
-		V_9 = L_66;
+		L_65 = Vector3_get_normalized_m736BBF65D5CDA7A18414370D15B4DFCC1E466F07_inline((&V_15), NULL);
+		V_9 = L_65;
 	}
 
-IL_01a7:
+IL_01a2:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:199>
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_67 = V_9;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_68 = V_5;
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:164>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_66 = V_9;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_67 = V_5;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_68;
+		L_68 = Vector3_Cross_mF93A280558BCE756D13B6CC5DCD7DE8A43148987_inline(L_66, L_67, NULL);
+		V_15 = L_68;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_69;
-		L_69 = Vector3_Cross_mF93A280558BCE756D13B6CC5DCD7DE8A43148987_inline(L_67, L_68, NULL);
-		V_15 = L_69;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_70;
-		L_70 = Vector3_get_normalized_m736BBF65D5CDA7A18414370D15B4DFCC1E466F07_inline((&V_15), NULL);
-		V_10 = L_70;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:218>
-		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 L_71;
-		L_71 = Matrix4x4_get_identity_m6568A73831F3E2D587420D20FF423959D7D8AB56_inline(NULL);
-		V_11 = L_71;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:219>
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_72 = V_10;
-		float L_73 = L_72.___x;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_74 = V_10;
-		float L_75 = L_74.___y;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_76 = V_10;
-		float L_77 = L_76.___z;
-		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_78;
-		memset((&L_78), 0, sizeof(L_78));
-		Vector4__ctor_m96B2CD8B862B271F513AF0BDC2EABD58E4DBC813_inline((&L_78), L_73, L_75, L_77, (0.0f), NULL);
-		Matrix4x4_SetColumn_mC1CBEB2C29C0A9F1434C601786CE1B6DED1E1234_inline((&V_11), 0, L_78, NULL);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:220>
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_79 = V_9;
-		float L_80 = L_79.___x;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_81 = V_9;
-		float L_82 = L_81.___y;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_83 = V_9;
-		float L_84 = L_83.___z;
-		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_85;
-		memset((&L_85), 0, sizeof(L_85));
-		Vector4__ctor_m96B2CD8B862B271F513AF0BDC2EABD58E4DBC813_inline((&L_85), L_80, L_82, L_84, (0.0f), NULL);
-		Matrix4x4_SetColumn_mC1CBEB2C29C0A9F1434C601786CE1B6DED1E1234_inline((&V_11), 1, L_85, NULL);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:221>
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_86 = V_5;
-		float L_87 = L_86.___x;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_88 = V_5;
-		float L_89 = L_88.___y;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_90 = V_5;
-		float L_91 = L_90.___z;
-		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_92;
-		memset((&L_92), 0, sizeof(L_92));
-		Vector4__ctor_m96B2CD8B862B271F513AF0BDC2EABD58E4DBC813_inline((&L_92), L_87, L_89, L_91, (0.0f), NULL);
-		Matrix4x4_SetColumn_mC1CBEB2C29C0A9F1434C601786CE1B6DED1E1234_inline((&V_11), 2, L_92, NULL);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:222>
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_93;
-		L_93 = Matrix4x4_get_rotation_m7E2C29FCB2AAFAE4D7B4FBD3563E9EDB53F5A8BB_inline((&V_11), NULL);
-		V_12 = L_93;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:225>
-		float L_94;
-		L_94 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
-		V_13 = L_94;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:226>
-		bool L_95 = __this->____firstFrame;
-		if (!L_95)
+		L_69 = Vector3_get_normalized_m736BBF65D5CDA7A18414370D15B4DFCC1E466F07_inline((&V_15), NULL);
+		V_10 = L_69;
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:171>
+		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 L_70;
+		L_70 = Matrix4x4_get_identity_m6568A73831F3E2D587420D20FF423959D7D8AB56_inline(NULL);
+		V_11 = L_70;
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:172>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_71 = V_10;
+		float L_72 = L_71.___x;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_73 = V_10;
+		float L_74 = L_73.___y;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_75 = V_10;
+		float L_76 = L_75.___z;
+		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_77;
+		memset((&L_77), 0, sizeof(L_77));
+		Vector4__ctor_m96B2CD8B862B271F513AF0BDC2EABD58E4DBC813_inline((&L_77), L_72, L_74, L_76, (0.0f), NULL);
+		Matrix4x4_SetColumn_mC1CBEB2C29C0A9F1434C601786CE1B6DED1E1234_inline((&V_11), 0, L_77, NULL);
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:173>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_78 = V_9;
+		float L_79 = L_78.___x;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_80 = V_9;
+		float L_81 = L_80.___y;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_82 = V_9;
+		float L_83 = L_82.___z;
+		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_84;
+		memset((&L_84), 0, sizeof(L_84));
+		Vector4__ctor_m96B2CD8B862B271F513AF0BDC2EABD58E4DBC813_inline((&L_84), L_79, L_81, L_83, (0.0f), NULL);
+		Matrix4x4_SetColumn_mC1CBEB2C29C0A9F1434C601786CE1B6DED1E1234_inline((&V_11), 1, L_84, NULL);
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:174>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_85 = V_5;
+		float L_86 = L_85.___x;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_87 = V_5;
+		float L_88 = L_87.___y;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_89 = V_5;
+		float L_90 = L_89.___z;
+		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_91;
+		memset((&L_91), 0, sizeof(L_91));
+		Vector4__ctor_m96B2CD8B862B271F513AF0BDC2EABD58E4DBC813_inline((&L_91), L_86, L_88, L_90, (0.0f), NULL);
+		Matrix4x4_SetColumn_mC1CBEB2C29C0A9F1434C601786CE1B6DED1E1234_inline((&V_11), 2, L_91, NULL);
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:175>
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_92;
+		L_92 = Matrix4x4_get_rotation_m7E2C29FCB2AAFAE4D7B4FBD3563E9EDB53F5A8BB_inline((&V_11), NULL);
+		V_12 = L_92;
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:178>
+		float L_93;
+		L_93 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		V_13 = L_93;
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:179>
+		bool L_94 = __this->____firstFrame;
+		if (!L_94)
 		{
-			goto IL_0273;
+			goto IL_026e;
 		}
 	}
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:228>
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_96 = V_7;
-		__this->____smoothPos = L_96;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:228>
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_97 = V_12;
-		__this->____smoothRot = L_97;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:229>
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_98;
-		L_98 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
-		__this->____posVelocity = L_98;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:229>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:181>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_95 = V_7;
+		__this->____smoothPos = L_95;
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:181>
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_96 = V_12;
+		__this->____smoothRot = L_96;
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:182>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_97;
+		L_97 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
+		__this->____posVelocity = L_97;
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:182>
 		__this->____firstFrame = (bool)0;
-		goto IL_02bb;
+		goto IL_02b6;
 	}
 
-IL_0273:
+IL_026e:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:233>
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:234>
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_99 = __this->____smoothPos;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_100 = V_7;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_101 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->____posVelocity);
-		float L_102 = __this->___posSmooth;
-		float L_103 = V_13;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_104;
-		L_104 = Vector3_SmoothDamp_mAF61EA22D4906BF87DD00A91FB4F6AC0C54C495A(L_99, L_100, L_101, ((float)((1.0f)/L_102)), (std::numeric_limits<float>::infinity()), L_103, NULL);
-		__this->____smoothPos = L_104;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:235>
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_105 = __this->____smoothRot;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_106 = V_12;
-		float L_107 = __this->___rotSmooth;
-		float L_108 = V_13;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_109;
-		L_109 = Quaternion_Slerp_m0A9969F500E7716EA4F6BC4E7D5464372D8E9E15_inline(L_105, L_106, ((float)il2cpp_codegen_multiply(L_107, L_108)), NULL);
-		__this->____smoothRot = L_109;
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:186>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:187>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_98 = __this->____smoothPos;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_99 = V_7;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_100 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->____posVelocity);
+		float L_101 = __this->___posSmooth;
+		float L_102 = V_13;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_103;
+		L_103 = Vector3_SmoothDamp_mAF61EA22D4906BF87DD00A91FB4F6AC0C54C495A(L_98, L_99, L_100, ((float)((1.0f)/L_101)), (std::numeric_limits<float>::infinity()), L_102, NULL);
+		__this->____smoothPos = L_103;
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:188>
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_104 = __this->____smoothRot;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_105 = V_12;
+		float L_106 = __this->___rotSmooth;
+		float L_107 = V_13;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_108;
+		L_108 = Quaternion_Slerp_m0A9969F500E7716EA4F6BC4E7D5464372D8E9E15_inline(L_104, L_105, ((float)il2cpp_codegen_multiply(L_106, L_107)), NULL);
+		__this->____smoothRot = L_108;
 	}
 
-IL_02bb:
+IL_02b6:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:238>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_110 = __this->____bangle;
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:191>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_109 = __this->____bangle;
+		NullCheck(L_109);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_110;
+		L_110 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_109, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_111 = __this->____smoothPos;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_112 = __this->____smoothRot;
 		NullCheck(L_110);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_111;
-		L_111 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_110, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_112 = __this->____smoothPos;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_113 = __this->____smoothRot;
-		NullCheck(L_111);
-		Transform_SetPositionAndRotation_m418859BF59086EEAA084FFD6F258A43FAB408F5A(L_111, L_112, L_113, NULL);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:239>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_114 = __this->____bangle;
-		NullCheck(L_114);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_114, (bool)1, NULL);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:241>
-		float L_115 = __this->____logT;
-		float L_116 = V_13;
-		__this->____logT = ((float)il2cpp_codegen_add(L_115, L_116));
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:242>
-		float L_117 = __this->____logT;
-		if ((!(((float)L_117) >= ((float)(2.0f)))))
+		Transform_SetPositionAndRotation_m418859BF59086EEAA084FFD6F258A43FAB408F5A(L_110, L_111, L_112, NULL);
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:192>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_113 = __this->____bangle;
+		NullCheck(L_113);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_113, (bool)1, NULL);
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:194>
+		float L_114 = __this->____logT;
+		float L_115 = V_13;
+		__this->____logT = ((float)il2cpp_codegen_add(L_114, L_115));
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:195>
+		float L_116 = __this->____logT;
+		if ((!(((float)L_116) >= ((float)(2.0f)))))
 		{
-			goto IL_0327;
+			goto IL_0329;
 		}
 	}
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:244>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:197>
 		__this->____logT = (0.0f);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:245>
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_118 = V_5;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_119 = L_118;
-		RuntimeObject* L_120 = Box(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var, &L_119);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_121 = V_9;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_122 = L_121;
-		RuntimeObject* L_123 = Box(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var, &L_122);
-		String_t* L_124;
-		L_124 = String_Format_mFB7DA489BD99F4670881FF50EC017BFB0A5C0987(_stringLiteral1299D8E978ABC62DE6BBFF06C82B04D177B3A18E, L_120, L_123, NULL);
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:198>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_117 = V_5;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_118 = L_117;
+		RuntimeObject* L_119 = Box(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var, &L_118);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_120 = V_9;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_121 = L_120;
+		RuntimeObject* L_122 = Box(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var, &L_121);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_123 = V_7;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_124 = L_123;
+		RuntimeObject* L_125 = Box(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var, &L_124);
+		String_t* L_126;
+		L_126 = String_Format_mA0534D6E2AE4D67A6BD8D45B3321323930EB930C(_stringLiteral99BEBFA1A3494149884D4E6425EFF45F5B6ACF67, L_119, L_122, L_125, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_124, NULL);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_126, NULL);
 	}
 
-IL_0327:
+IL_0329:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:247>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:200>
 		return;
 	}
 }
@@ -10551,9 +10552,8 @@ IL_0327:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 BanglePlacer_C_m64716B8F112797B8B42470C21671CF028EDED5E6 (BanglePlacer_tA1AFD0A5196E38DA544DC9B475ACB3A1B415AF9A* __this, int32_t ___0_i, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:249>
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:250>
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:251>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:202>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:203>
 		JewelleryLandmarkReader_t4F615276AACEBC7EBCCD801F08036AE58B7A501B* L_0 = __this->___landmarkReader;
 		int32_t L_1 = ___0_i;
 		NullCheck(L_0);
@@ -10581,9 +10581,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BanglePlacer_UpdateTex_m7ECD141FF87C33E7
 	bool V_0 = false;
 	ARCameraImageSource_t3BB18BA1EF236E15D8282CA871653A67EA42A1FC* V_1 = NULL;
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:255>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:207>
 		V_0 = (bool)0;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:256>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:208>
 		ARCameraImageSourceBehaviour_t96267AD17B80324968D58FC71842BC456F7AB2B0* L_0 = __this->___imageSourceBehaviour;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -10594,13 +10594,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BanglePlacer_UpdateTex_m7ECD141FF87C33E7
 		}
 	}
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:258>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:210>
 		ARCameraImageSourceBehaviour_t96267AD17B80324968D58FC71842BC456F7AB2B0* L_2 = __this->___imageSourceBehaviour;
 		NullCheck(L_2);
 		ARCameraImageSource_t3BB18BA1EF236E15D8282CA871653A67EA42A1FC* L_3;
 		L_3 = ARCameraImageSourceBehaviour_GetImageSource_mCB8C09A19995EFFD1D6B7FC274FDFBC54869242E_inline(L_2, NULL);
 		V_1 = L_3;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:259>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:211>
 		ARCameraImageSource_t3BB18BA1EF236E15D8282CA871653A67EA42A1FC* L_4 = V_1;
 		if (!L_4)
 		{
@@ -10618,25 +10618,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BanglePlacer_UpdateTex_m7ECD141FF87C33E7
 		}
 	}
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:260>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:212>
 		ARCameraImageSource_t3BB18BA1EF236E15D8282CA871653A67EA42A1FC* L_7 = V_1;
 		NullCheck(L_7);
 		int32_t L_8;
 		L_8 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_7);
 		__this->____rawTexW = L_8;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:260>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:212>
 		ARCameraImageSource_t3BB18BA1EF236E15D8282CA871653A67EA42A1FC* L_9 = V_1;
 		NullCheck(L_9);
 		int32_t L_10;
 		L_10 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_9);
 		__this->____rawTexH = L_10;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:260>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:212>
 		V_0 = (bool)1;
 	}
 
 IL_0041:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:262>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:214>
 		bool L_11 = V_0;
 		if (L_11)
 		{
@@ -10651,21 +10651,21 @@ IL_0041:
 		}
 	}
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:262>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:214>
 		__this->____rawTexW = ((int32_t)720);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:262>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:214>
 		__this->____rawTexH = ((int32_t)1280);
 	}
 
 IL_0062:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:263>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:215>
 		int32_t L_13 = __this->____rawTexW;
 		__this->____texW = L_13;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:264>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:215>
 		int32_t L_14 = __this->____rawTexH;
 		__this->____texH = L_14;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:265>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:216>
 		return;
 	}
 }
@@ -10673,27 +10673,27 @@ IL_0062:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BanglePlacer__ctor_m704475A92ABE484A8324F019BAEB7E59C4805A6E (BanglePlacer_tA1AFD0A5196E38DA544DC9B475ACB3A1B415AF9A* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:50>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:23>
 		__this->___baseDepth = (0.5f);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:54>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:27>
 		__this->___targetDiameterM = (0.0649999976f);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:58>
-		__this->___wristOffsetFactor = (0.150000006f);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:64>
-		__this->___bboxYCorrection = (0.0500000007f);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:67>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:32>
+		__this->___wristOffsetFactor = (0.200000003f);
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:38>
+		__this->___bboxYCorrection = (0.0199999996f);
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:41>
 		__this->___posSmooth = (20.0f);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:68>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:42>
 		__this->___rotSmooth = (18.0f);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:71>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:45>
 		__this->___hideDelayFrames = ((int32_t)10);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:74>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:48>
 		__this->___minDetectionFrames = 2;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:81>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:53>
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_0;
 		L_0 = Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline(NULL);
 		__this->____smoothRot = L_0;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:83>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/BanglePlacer.cs:55>
 		__this->____firstFrame = (bool)1;
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
@@ -10729,21 +10729,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandVisualizer_Start_m4FD58E5C016DF1BCB9
 	memset((&G_B8_0), 0, sizeof(G_B8_0));
 	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* G_B8_1 = NULL;
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:26>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:31>
 		V_0 = 0;
 		goto IL_00b3;
 	}
 
 IL_0007:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:28>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:33>
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_0 = __this->____dots;
 		int32_t L_1 = V_0;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2;
 		L_2 = GameObject_CreatePrimitive_m13C0A691E679A83DD595913200A1DD9A906EB47B(0, NULL);
 		NullCheck(L_0);
 		(L_0)->SetAt(static_cast<il2cpp_array_size_t>(L_1), (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)L_2);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:29>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:34>
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_3 = __this->____dots;
 		int32_t L_4 = V_0;
 		NullCheck(L_3);
@@ -10756,7 +10756,7 @@ IL_0007:
 		L_8 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
 		NullCheck(L_7);
 		Transform_SetParent_m6677538B60246D958DD91F931C50F969CCBB5250(L_7, L_8, NULL);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:30>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:35>
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_9 = __this->____dots;
 		int32_t L_10 = V_0;
 		NullCheck(L_9);
@@ -10772,7 +10772,7 @@ IL_0007:
 		L_16 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_14, L_15, NULL);
 		NullCheck(L_13);
 		Transform_set_localScale_mBA79E811BAF6C47B80FF76414C12B47B3CD03633(L_13, L_16, NULL);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:31>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:36>
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_17 = __this->____dots;
 		int32_t L_18 = V_0;
 		NullCheck(L_17);
@@ -10782,7 +10782,7 @@ IL_0007:
 		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_21;
 		L_21 = GameObject_GetComponent_TisCollider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76_m4CB0FC4E59CE6C91F1106739EF364208A63E2597(L_20, GameObject_GetComponent_TisCollider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76_m4CB0FC4E59CE6C91F1106739EF364208A63E2597_RuntimeMethod_var);
 		V_1 = L_21;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:32>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:37>
 		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_22 = V_1;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_23;
@@ -10793,7 +10793,7 @@ IL_0007:
 		}
 	}
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:32>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:37>
 		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_24 = V_1;
 		NullCheck(L_24);
 		Collider_set_enabled_m8D5C3B5047592D227A52560FC9723D176E209F70(L_24, (bool)0, NULL);
@@ -10801,7 +10801,7 @@ IL_0007:
 
 IL_006c:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:33>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:38>
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_25 = __this->____dots;
 		int32_t L_26 = V_0;
 		NullCheck(L_25);
@@ -10813,9 +10813,9 @@ IL_006c:
 		NullCheck(L_29);
 		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_30;
 		L_30 = Renderer_get_material_m5BA2A00816C4CC66580D4B2E409CF10718C15656(L_29, NULL);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:34>
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:35>
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:36>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:39>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:40>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:41>
 		int32_t L_31 = V_0;
 		if (!L_31)
 		{
@@ -10865,7 +10865,7 @@ IL_009c:
 	{
 		NullCheck(G_B8_1);
 		Material_set_color_m5C32DEBB215FF9EE35E7B575297D8C2F29CC2A2D(G_B8_1, G_B8_0, NULL);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:37>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:42>
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_37 = __this->____dots;
 		int32_t L_38 = V_0;
 		NullCheck(L_37);
@@ -10873,14 +10873,14 @@ IL_009c:
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_40 = (L_37)->GetAt(static_cast<il2cpp_array_size_t>(L_39));
 		NullCheck(L_40);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_40, (bool)0, NULL);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:26>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:31>
 		int32_t L_41 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_41, 1));
 	}
 
 IL_00b3:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:26>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:31>
 		int32_t L_42 = V_0;
 		if ((((int32_t)L_42) < ((int32_t)((int32_t)21))))
 		{
@@ -10888,7 +10888,7 @@ IL_00b3:
 		}
 	}
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:39>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:44>
 		return;
 	}
 }
@@ -10905,9 +10905,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandVisualizer_Update_mEBFC154804C66464F
 	int32_t V_1 = 0;
 	int32_t G_B4_0 = 0;
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:43>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:48>
 		HandVisualizer_UpdateTex_m1A46519B0666D0A4C460698732280D91769BB62F(__this, NULL);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:44>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:49>
 		JewelleryLandmarkReader_t4F615276AACEBC7EBCCD801F08036AE58B7A501B* L_0 = __this->___reader;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -10944,14 +10944,14 @@ IL_0032:
 IL_0033:
 	{
 		V_0 = (bool)G_B4_0;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:45>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:50>
 		V_1 = 0;
 		goto IL_0099;
 	}
 
 IL_0038:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:47>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:52>
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_6 = __this->____dots;
 		int32_t L_7 = V_1;
 		NullCheck(L_6);
@@ -10960,7 +10960,7 @@ IL_0038:
 		bool L_10 = V_0;
 		NullCheck(L_9);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_9, L_10, NULL);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:48>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:53>
 		bool L_11 = V_0;
 		if (!L_11)
 		{
@@ -10968,9 +10968,9 @@ IL_0038:
 		}
 	}
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:49>
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:50>
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:51>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:54>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:55>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:56>
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_12 = __this->____dots;
 		int32_t L_13 = V_1;
 		NullCheck(L_12);
@@ -10997,14 +10997,14 @@ IL_0038:
 
 IL_0095:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:45>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:50>
 		int32_t L_26 = V_1;
 		V_1 = ((int32_t)il2cpp_codegen_add(L_26, 1));
 	}
 
 IL_0099:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:45>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:50>
 		int32_t L_27 = V_1;
 		if ((((int32_t)L_27) < ((int32_t)((int32_t)21))))
 		{
@@ -11012,7 +11012,7 @@ IL_0099:
 		}
 	}
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:53>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:58>
 		return;
 	}
 }
@@ -11028,9 +11028,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandVisualizer_UpdateTex_m1A46519B0666D0
 	bool V_0 = false;
 	ARCameraImageSource_t3BB18BA1EF236E15D8282CA871653A67EA42A1FC* V_1 = NULL;
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:58>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:62>
 		V_0 = (bool)0;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:59>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:63>
 		ARCameraImageSourceBehaviour_t96267AD17B80324968D58FC71842BC456F7AB2B0* L_0 = __this->___imageSourceBehaviour;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -11041,13 +11041,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandVisualizer_UpdateTex_m1A46519B0666D0
 		}
 	}
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:61>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:65>
 		ARCameraImageSourceBehaviour_t96267AD17B80324968D58FC71842BC456F7AB2B0* L_2 = __this->___imageSourceBehaviour;
 		NullCheck(L_2);
 		ARCameraImageSource_t3BB18BA1EF236E15D8282CA871653A67EA42A1FC* L_3;
 		L_3 = ARCameraImageSourceBehaviour_GetImageSource_mCB8C09A19995EFFD1D6B7FC274FDFBC54869242E_inline(L_2, NULL);
 		V_1 = L_3;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:62>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:66>
 		ARCameraImageSource_t3BB18BA1EF236E15D8282CA871653A67EA42A1FC* L_4 = V_1;
 		if (!L_4)
 		{
@@ -11065,25 +11065,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandVisualizer_UpdateTex_m1A46519B0666D0
 		}
 	}
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:63>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:67>
 		ARCameraImageSource_t3BB18BA1EF236E15D8282CA871653A67EA42A1FC* L_7 = V_1;
 		NullCheck(L_7);
 		int32_t L_8;
 		L_8 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_7);
 		__this->____texW = L_8;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:63>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:67>
 		ARCameraImageSource_t3BB18BA1EF236E15D8282CA871653A67EA42A1FC* L_9 = V_1;
 		NullCheck(L_9);
 		int32_t L_10;
 		L_10 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_9);
 		__this->____texH = L_10;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:63>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:67>
 		V_0 = (bool)1;
 	}
 
 IL_0041:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:65>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:69>
 		bool L_11 = V_0;
 		if (L_11)
 		{
@@ -11098,15 +11098,15 @@ IL_0041:
 		}
 	}
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:65>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:69>
 		__this->____texW = ((int32_t)720);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:65>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:69>
 		__this->____texH = ((int32_t)1280);
 	}
 
 IL_0062:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:66>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:70>
 		return;
 	}
 }
@@ -11123,7 +11123,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandVisualizer_OnDestroy_mC93450C8691DB8
 	int32_t V_1 = 0;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* V_2 = NULL;
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:68>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:72>
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_0 = __this->____dots;
 		V_0 = L_0;
 		V_1 = 0;
@@ -11132,14 +11132,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandVisualizer_OnDestroy_mC93450C8691DB8
 
 IL_000b:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:68>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:72>
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_1 = V_0;
 		int32_t L_2 = V_1;
 		NullCheck(L_1);
 		int32_t L_3 = L_2;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = (L_1)->GetAt(static_cast<il2cpp_array_size_t>(L_3));
 		V_2 = L_4;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:68>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:72>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = V_2;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_6;
@@ -11150,7 +11150,7 @@ IL_000b:
 		}
 	}
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:68>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:72>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = V_2;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB(L_7, NULL);
@@ -11164,7 +11164,7 @@ IL_001d:
 
 IL_0021:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:68>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:72>
 		int32_t L_9 = V_1;
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_10 = V_0;
 		NullCheck(L_10);
@@ -11174,7 +11174,7 @@ IL_0021:
 		}
 	}
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:68>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:72>
 		return;
 	}
 }
@@ -11191,7 +11191,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HandVisualizer_IsGreen_mFDD09FD8F17DED93
 	int32_t V_1 = 0;
 	int32_t V_2 = 0;
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:71>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:75>
 		il2cpp_codegen_runtime_class_init_inline(HandVisualizer_tAA42026401B0F2205B7F8C90ABDEC266CE9AAC81_il2cpp_TypeInfo_var);
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_0 = ((HandVisualizer_tAA42026401B0F2205B7F8C90ABDEC266CE9AAC81_StaticFields*)il2cpp_codegen_static_fields_for(HandVisualizer_tAA42026401B0F2205B7F8C90ABDEC266CE9AAC81_il2cpp_TypeInfo_var))->___GREEN_LM;
 		V_0 = L_0;
@@ -11201,14 +11201,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HandVisualizer_IsGreen_mFDD09FD8F17DED93
 
 IL_000a:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:71>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:75>
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_1 = V_0;
 		int32_t L_2 = V_1;
 		NullCheck(L_1);
 		int32_t L_3 = L_2;
 		int32_t L_4 = (L_1)->GetAt(static_cast<il2cpp_array_size_t>(L_3));
 		V_2 = L_4;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:71>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:75>
 		int32_t L_5 = ___0_i;
 		int32_t L_6 = V_2;
 		if ((!(((uint32_t)L_5) == ((uint32_t)L_6))))
@@ -11217,7 +11217,7 @@ IL_000a:
 		}
 	}
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:71>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:75>
 		return (bool)1;
 	}
 
@@ -11229,7 +11229,7 @@ IL_0014:
 
 IL_0018:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:71>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:75>
 		int32_t L_8 = V_1;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_9 = V_0;
 		NullCheck(L_9);
@@ -11239,7 +11239,7 @@ IL_0018:
 		}
 	}
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:71>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:75>
 		return (bool)0;
 	}
 }
@@ -11253,13 +11253,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandVisualizer__ctor_m321B2319E72A586742
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:14>
-		__this->___baseDepth = (0.5f);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:15>
-		__this->___bboxYCorrection = (0.0700000003f);
 		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:16>
-		__this->___dotSize = (0.00700000022f);
+		__this->___baseDepth = (0.5f);
 		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:19>
+		__this->___bboxYCorrection = (0.0199999996f);
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:21>
+		__this->___dotSize = (0.00700000022f);
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:24>
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_0 = (GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF*)(GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF*)SZArrayNew(GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF_il2cpp_TypeInfo_var, (uint32_t)((int32_t)21));
 		__this->____dots = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dots), (void*)L_0);
@@ -11279,7 +11279,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandVisualizer__cctor_m3D7F2FE21FB504825
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:20>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/HandVisualizer.cs:25>
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_0 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)4);
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_1 = L_0;
 		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_2 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____DA2587A6C6ED3D0EAE5F8D8008CE0436C35D8F443D3C77874F63D2C5651AE7B7_FieldInfo_var) };
@@ -11463,16 +11463,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 	float V_4 = 0.0f;
 	float V_5 = 0.0f;
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:62>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:51>
 		int32_t L_0;
 		L_0 = Screen_get_width_mF608FF3252213E7EFA1F0D2F744C28110E9E5AC9(NULL);
 		V_0 = L_0;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:63>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:52>
 		int32_t L_1;
 		L_1 = Screen_get_height_m01A3102DE71EE1FBEA51D09D6B0261CF864FE8F9(NULL);
 		V_1 = L_1;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:65>
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:66>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:54>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:55>
 		int32_t L_2 = ___2_texW;
 		int32_t L_3 = ((LandmarkToWorld_Hand_t7B00FAE758E63CB8FB5D036811BEFB5363ADD790_StaticFields*)il2cpp_codegen_static_fields_for(LandmarkToWorld_Hand_t7B00FAE758E63CB8FB5D036811BEFB5363ADD790_il2cpp_TypeInfo_var))->____lastTexW;
 		if ((!(((uint32_t)L_2) == ((uint32_t)L_3))))
@@ -11507,59 +11507,59 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 
 IL_002c:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:68>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:57>
 		int32_t L_10 = ___2_texW;
 		int32_t L_11 = ___3_texH;
 		int32_t L_12 = V_0;
 		int32_t L_13 = V_1;
 		LandmarkToWorld_Hand_ComputeViewport_m358B1A353BF5A6AFAE238E07ED4FA900C3F1395E(L_10, L_11, L_12, L_13, NULL);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:69>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:58>
 		int32_t L_14 = ___2_texW;
 		((LandmarkToWorld_Hand_t7B00FAE758E63CB8FB5D036811BEFB5363ADD790_StaticFields*)il2cpp_codegen_static_fields_for(LandmarkToWorld_Hand_t7B00FAE758E63CB8FB5D036811BEFB5363ADD790_il2cpp_TypeInfo_var))->____lastTexW = L_14;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:69>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:58>
 		int32_t L_15 = ___3_texH;
 		((LandmarkToWorld_Hand_t7B00FAE758E63CB8FB5D036811BEFB5363ADD790_StaticFields*)il2cpp_codegen_static_fields_for(LandmarkToWorld_Hand_t7B00FAE758E63CB8FB5D036811BEFB5363ADD790_il2cpp_TypeInfo_var))->____lastTexH = L_15;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:70>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:59>
 		int32_t L_16 = V_0;
 		((LandmarkToWorld_Hand_t7B00FAE758E63CB8FB5D036811BEFB5363ADD790_StaticFields*)il2cpp_codegen_static_fields_for(LandmarkToWorld_Hand_t7B00FAE758E63CB8FB5D036811BEFB5363ADD790_il2cpp_TypeInfo_var))->____lastScrW = L_16;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:70>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:59>
 		int32_t L_17 = V_1;
 		((LandmarkToWorld_Hand_t7B00FAE758E63CB8FB5D036811BEFB5363ADD790_StaticFields*)il2cpp_codegen_static_fields_for(LandmarkToWorld_Hand_t7B00FAE758E63CB8FB5D036811BEFB5363ADD790_il2cpp_TypeInfo_var))->____lastScrH = L_17;
 	}
 
 IL_004d:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:74>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:62>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_18 = ___0_lm;
 		float L_19 = L_18.___x;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:76>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:63>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_20 = ___0_lm;
 		float L_21 = L_20.___y;
 		V_2 = ((float)il2cpp_codegen_subtract((1.0f), L_21));
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:81>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:65>
 		float L_22 = ((LandmarkToWorld_Hand_t7B00FAE758E63CB8FB5D036811BEFB5363ADD790_StaticFields*)il2cpp_codegen_static_fields_for(LandmarkToWorld_Hand_t7B00FAE758E63CB8FB5D036811BEFB5363ADD790_il2cpp_TypeInfo_var))->____scaleX;
 		float L_23 = ((LandmarkToWorld_Hand_t7B00FAE758E63CB8FB5D036811BEFB5363ADD790_StaticFields*)il2cpp_codegen_static_fields_for(LandmarkToWorld_Hand_t7B00FAE758E63CB8FB5D036811BEFB5363ADD790_il2cpp_TypeInfo_var))->____offsetX;
 		V_3 = ((float)il2cpp_codegen_subtract(((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_subtract((1.0f), L_19)), L_22)), L_23));
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:82>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:66>
 		float L_24 = V_2;
 		float L_25 = ((LandmarkToWorld_Hand_t7B00FAE758E63CB8FB5D036811BEFB5363ADD790_StaticFields*)il2cpp_codegen_static_fields_for(LandmarkToWorld_Hand_t7B00FAE758E63CB8FB5D036811BEFB5363ADD790_il2cpp_TypeInfo_var))->____scaleY;
 		float L_26 = ((LandmarkToWorld_Hand_t7B00FAE758E63CB8FB5D036811BEFB5363ADD790_StaticFields*)il2cpp_codegen_static_fields_for(LandmarkToWorld_Hand_t7B00FAE758E63CB8FB5D036811BEFB5363ADD790_il2cpp_TypeInfo_var))->____offsetY;
 		int32_t L_27 = V_1;
 		float L_28 = ___6_bboxYCorrection;
 		V_4 = ((float)il2cpp_codegen_subtract(((float)il2cpp_codegen_subtract(((float)il2cpp_codegen_multiply(L_24, L_25)), L_26)), ((float)il2cpp_codegen_multiply(((float)L_27), L_28))));
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:84>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:68>
 		float L_29 = V_3;
 		int32_t L_30 = V_0;
 		float L_31;
 		L_31 = Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline(L_29, (0.0f), ((float)L_30), NULL);
 		V_3 = L_31;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:85>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:69>
 		float L_32 = V_4;
 		int32_t L_33 = V_1;
 		float L_34;
 		L_34 = Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline(L_32, (0.0f), ((float)L_33), NULL);
 		V_4 = L_34;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:87>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:71>
 		float L_35 = ___4_worldDepth;
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_36 = ___1_cam;
 		NullCheck(L_36);
@@ -11568,7 +11568,7 @@ IL_004d:
 		float L_38;
 		L_38 = Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline(L_35, ((float)il2cpp_codegen_add(L_37, (0.0500000007f))), (3.0f), NULL);
 		V_5 = L_38;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:88>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:72>
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_39 = ___1_cam;
 		float L_40 = V_3;
 		float L_41 = V_4;
@@ -11591,7 +11591,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LandmarkToWorld_Hand_ComputeViewport_m35
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LandmarkToWorld_Hand_t7B00FAE758E63CB8FB5D036811BEFB5363ADD790_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralAB8E793E75672358CBD441DCDE9856D9D4CD8829);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7644B751B61075AE0B80A7D505B3665F1BE4B909);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralCEB8AAC7897AE3B916F6AD4D74A50F281F9C53F6);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE7AF2D47C43F7EC339910888A0B61B87C3E451DE);
 		s_Il2CppMethodInitialized = true;
@@ -11600,7 +11600,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LandmarkToWorld_Hand_ComputeViewport_m35
 	float V_1 = 0.0f;
 	float V_2 = 0.0f;
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:93>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:77>
 		int32_t L_0 = ___2_scrW;
 		int32_t L_1 = ___0_texW;
 		int32_t L_2 = ___3_scrH;
@@ -11608,31 +11608,31 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LandmarkToWorld_Hand_ComputeViewport_m35
 		float L_4;
 		L_4 = Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline(((float)(((float)L_0)/((float)L_1))), ((float)(((float)L_2)/((float)L_3))), NULL);
 		V_0 = L_4;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:94>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:78>
 		int32_t L_5 = ___0_texW;
 		float L_6 = V_0;
 		V_1 = ((float)il2cpp_codegen_multiply(((float)L_5), L_6));
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:95>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:79>
 		int32_t L_7 = ___1_texH;
 		float L_8 = V_0;
 		V_2 = ((float)il2cpp_codegen_multiply(((float)L_7), L_8));
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:96>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:80>
 		float L_9 = V_1;
 		int32_t L_10 = ___2_scrW;
 		((LandmarkToWorld_Hand_t7B00FAE758E63CB8FB5D036811BEFB5363ADD790_StaticFields*)il2cpp_codegen_static_fields_for(LandmarkToWorld_Hand_t7B00FAE758E63CB8FB5D036811BEFB5363ADD790_il2cpp_TypeInfo_var))->____offsetX = ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_subtract(L_9, ((float)L_10))), (0.5f)));
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:97>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:81>
 		float L_11 = V_2;
 		int32_t L_12 = ___3_scrH;
 		((LandmarkToWorld_Hand_t7B00FAE758E63CB8FB5D036811BEFB5363ADD790_StaticFields*)il2cpp_codegen_static_fields_for(LandmarkToWorld_Hand_t7B00FAE758E63CB8FB5D036811BEFB5363ADD790_il2cpp_TypeInfo_var))->____offsetY = ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_subtract(L_11, ((float)L_12))), (0.5f)));
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:98>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:82>
 		float L_13 = V_1;
 		((LandmarkToWorld_Hand_t7B00FAE758E63CB8FB5D036811BEFB5363ADD790_StaticFields*)il2cpp_codegen_static_fields_for(LandmarkToWorld_Hand_t7B00FAE758E63CB8FB5D036811BEFB5363ADD790_il2cpp_TypeInfo_var))->____scaleX = L_13;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:99>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:83>
 		float L_14 = V_2;
 		((LandmarkToWorld_Hand_t7B00FAE758E63CB8FB5D036811BEFB5363ADD790_StaticFields*)il2cpp_codegen_static_fields_for(LandmarkToWorld_Hand_t7B00FAE758E63CB8FB5D036811BEFB5363ADD790_il2cpp_TypeInfo_var))->____scaleY = L_14;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:100>
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:101>
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:102>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:84>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:85>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:86>
 		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_15 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var, (uint32_t)4);
 		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_16 = L_15;
 		int32_t L_17 = ___0_texW;
@@ -11663,7 +11663,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LandmarkToWorld_Hand_ComputeViewport_m35
 		ArrayElementTypeCheck (L_28, L_31);
 		(L_28)->SetAt(static_cast<il2cpp_array_size_t>(3), (RuntimeObject*)L_31);
 		String_t* L_32;
-		L_32 = String_Format_m918500C1EFB475181349A79989BB79BB36102894(_stringLiteralAB8E793E75672358CBD441DCDE9856D9D4CD8829, L_28, NULL);
+		L_32 = String_Format_m918500C1EFB475181349A79989BB79BB36102894(_stringLiteral7644B751B61075AE0B80A7D505B3665F1BE4B909, L_28, NULL);
 		float L_33 = V_0;
 		float L_34 = L_33;
 		RuntimeObject* L_35 = Box(il2cpp_defaults.single_class, &L_34);
@@ -11687,7 +11687,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LandmarkToWorld_Hand_ComputeViewport_m35
 		L_50 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(L_32, L_42, L_49, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_50, NULL);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:103>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/LandmarkToWorld.cs:87>
 		return;
 	}
 }
@@ -11711,7 +11711,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RingPlacer_Start_m4CBC4CB7DA37D3E25EA59F
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:71>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:75>
 		JewelleryLandmarkReader_t4F615276AACEBC7EBCCD801F08036AE58B7A501B* L_0 = __this->___landmarkReader;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -11722,16 +11722,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RingPlacer_Start_m4CBC4CB7DA37D3E25EA59F
 		}
 	}
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:71>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:75>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2(_stringLiteral2E7D26CEE451D90C1C956B735738FCA45A737C81, NULL);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:71>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:75>
 		return;
 	}
 
 IL_0018:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:72>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:76>
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_2 = __this->___arCamera;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_3;
@@ -11742,7 +11742,7 @@ IL_0018:
 		}
 	}
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:72>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:76>
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_4;
 		L_4 = Camera_get_main_m52C992F18E05355ABB9EEB64A4BF2215E12762DF(NULL);
 		__this->___arCamera = L_4;
@@ -11751,7 +11751,7 @@ IL_0018:
 
 IL_0030:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:73>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:77>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___ringPrefab;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_6;
@@ -11762,16 +11762,16 @@ IL_0030:
 		}
 	}
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:73>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:77>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = __this->___ringPrefab;
 		RingPlacer_SpawnRing_mCA9846C97A1B68B22D915945E182585EAB3D75A7(__this, L_7, NULL);
 	}
 
 IL_0049:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:74>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:78>
 		__this->____ready = (bool)1;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:75>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:79>
 		return;
 	}
 }
@@ -11785,7 +11785,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RingPlacer_SetRingPrefab_m12DE4F9C4F250B
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:79>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:83>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = ___0_p;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -11796,11 +11796,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RingPlacer_SetRingPrefab_m12DE4F9C4F250B
 		}
 	}
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:79>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:83>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = ___0_p;
 		__this->___ringPrefab = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___ringPrefab), (void*)L_2);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:79>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:83>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = ___0_p;
 		RingPlacer_SpawnRing_mCA9846C97A1B68B22D915945E182585EAB3D75A7(__this, L_3, NULL);
 		return;
@@ -11808,9 +11808,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RingPlacer_SetRingPrefab_m12DE4F9C4F250B
 
 IL_0017:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:79>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:83>
 		RingPlacer_ClearRing_m53D8DA4ABF81F7571E7FBB12391AC80BD18076C3(__this, NULL);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:80>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:84>
 		return;
 	}
 }
@@ -11824,7 +11824,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RingPlacer_ClearRing_m53D8DA4ABF81F7571E
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:84>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:88>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->____ring;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -11835,27 +11835,27 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RingPlacer_ClearRing_m53D8DA4ABF81F7571E
 		}
 	}
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:84>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:88>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->____ring;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB(L_2, NULL);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:84>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:88>
 		__this->____ring = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____ring), (void*)(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)NULL);
 	}
 
 IL_001f:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:85>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:89>
 		__this->____first = (bool)1;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:85>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:89>
 		__this->____detFrames = 0;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:85>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:89>
 		__this->____lostFrames = 0;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:85>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:89>
 		__this->___ringPrefab = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___ringPrefab), (void*)(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)NULL);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:86>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:90>
 		return;
 	}
 }
@@ -11869,15 +11869,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RingPlacer_SpawnRing_mCA9846C97A1B68B22D
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_mD136E37F696C00A3A1D4F65724ACAE903E385181_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RingPlacer_t612E6F043A82061D57E306D336BF433D906183D3_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral00A2136769B9888568317C31F70DAFD63B3BD010);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral5136796FAA5FB1959F0453F9C2925D5C39AEFB7F);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8EBC3B7B72E7391763E2BD3BBF559E98F1A5FD26);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC94993E5B2C5F771114A51C6DDBD1DA6E436C068);
 		s_Il2CppMethodInitialized = true;
 	}
 	float V_0 = 0.0f;
 	float V_1 = 0.0f;
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:90>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:94>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->____ring;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -11888,7 +11888,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RingPlacer_SpawnRing_mCA9846C97A1B68B22D
 		}
 	}
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:90>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:94>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->____ring;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB(L_2, NULL);
@@ -11896,7 +11896,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RingPlacer_SpawnRing_mCA9846C97A1B68B22D
 
 IL_0018:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:91>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:95>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = ___0_prefab;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4;
 		L_4 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
@@ -11909,17 +11909,17 @@ IL_0018:
 		L_7 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_mD136E37F696C00A3A1D4F65724ACAE903E385181(L_3, L_4, L_5, L_6, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_mD136E37F696C00A3A1D4F65724ACAE903E385181_RuntimeMethod_var);
 		__this->____ring = L_7;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____ring), (void*)L_7);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:92>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:96>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_8 = __this->____ring;
 		NullCheck(L_8);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_8, (bool)1, NULL);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:94>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:98>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9 = __this->____ring;
 		il2cpp_codegen_runtime_class_init_inline(RingPlacer_t612E6F043A82061D57E306D336BF433D906183D3_il2cpp_TypeInfo_var);
 		float L_10;
 		L_10 = RingPlacer_MeasureDiameter_mA298FDCA73795227EFD5ABF88D426CB1B707ECFC(L_9, NULL);
 		V_0 = L_10;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:95>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:99>
 		float L_11 = V_0;
 		if ((!(((float)L_11) > ((float)(9.99999975E-05f)))))
 		{
@@ -11927,11 +11927,11 @@ IL_0018:
 		}
 	}
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:97>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:101>
 		float L_12 = __this->___targetDiameterM;
 		float L_13 = V_0;
 		V_1 = ((float)(L_12/L_13));
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:98>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:102>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_14 = __this->____ring;
 		NullCheck(L_14);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_15;
@@ -11943,7 +11943,7 @@ IL_0018:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_18;
 		L_18 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_16, L_17, NULL);
 		__this->____calibratedScale = L_18;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:99>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:103>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_19 = __this->____ring;
 		NullCheck(L_19);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_20;
@@ -11951,13 +11951,13 @@ IL_0018:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_21 = __this->____calibratedScale;
 		NullCheck(L_20);
 		Transform_set_localScale_mBA79E811BAF6C47B80FF76414C12B47B3CD03633(L_20, L_21, NULL);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:100>
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:101>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:104>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:105>
 		float L_22 = V_0;
 		float L_23 = ((float)il2cpp_codegen_multiply(L_22, (1000.0f)));
 		RuntimeObject* L_24 = Box(il2cpp_defaults.single_class, &L_23);
 		String_t* L_25;
-		L_25 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral00A2136769B9888568317C31F70DAFD63B3BD010, L_24, NULL);
+		L_25 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral8EBC3B7B72E7391763E2BD3BBF559E98F1A5FD26, L_24, NULL);
 		float L_26 = __this->___targetDiameterM;
 		float L_27 = ((float)il2cpp_codegen_multiply(L_26, (1000.0f)));
 		RuntimeObject* L_28 = Box(il2cpp_defaults.single_class, &L_27);
@@ -11975,7 +11975,7 @@ IL_0018:
 
 IL_00d2:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:105>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:109>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_34 = __this->____ring;
 		NullCheck(L_34);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_35;
@@ -11984,24 +11984,24 @@ IL_00d2:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_36;
 		L_36 = Transform_get_localScale_m804A002A53A645CDFCD15BB0F37209162720363F(L_35, NULL);
 		__this->____calibratedScale = L_36;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:106>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:110>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9(_stringLiteralC94993E5B2C5F771114A51C6DDBD1DA6E436C068, NULL);
 	}
 
 IL_00f2:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:109>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:113>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_37 = __this->____ring;
 		NullCheck(L_37);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_37, (bool)0, NULL);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:110>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:114>
 		__this->____first = (bool)1;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:110>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:114>
 		__this->____detFrames = 0;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:110>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:114>
 		__this->____lostFrames = 0;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:111>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:115>
 		return;
 	}
 }
@@ -12020,13 +12020,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float RingPlacer_MeasureDiameter_mA298FDCA737
 	float V_2 = 0.0f;
 	int32_t V_3 = 0;
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:115>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:119>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = ___0_go;
 		NullCheck(L_0);
 		RendererU5BU5D_t32FDD782F67917B2291EA4FF242719877440A02A* L_1;
 		L_1 = GameObject_GetComponentsInChildren_TisRenderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF_mA2746088DB45856FD76C725AB403CEF5A8997734(L_0, GameObject_GetComponentsInChildren_TisRenderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF_mA2746088DB45856FD76C725AB403CEF5A8997734_RuntimeMethod_var);
 		V_0 = L_1;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:116>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:120>
 		RendererU5BU5D_t32FDD782F67917B2291EA4FF242719877440A02A* L_2 = V_0;
 		NullCheck(L_2);
 		if ((((RuntimeArray*)L_2)->max_length))
@@ -12035,13 +12035,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float RingPlacer_MeasureDiameter_mA298FDCA737
 		}
 	}
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:116>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:120>
 		return (0.0f);
 	}
 
 IL_0011:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:117>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:121>
 		RendererU5BU5D_t32FDD782F67917B2291EA4FF242719877440A02A* L_3 = V_0;
 		NullCheck(L_3);
 		int32_t L_4 = 0;
@@ -12050,14 +12050,14 @@ IL_0011:
 		Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3 L_6;
 		L_6 = Renderer_get_bounds_m390CF334730C3C34E45CE59F1D08C3B9F3109C7C(L_5, NULL);
 		V_1 = L_6;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:118>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:122>
 		V_3 = 1;
 		goto IL_0031;
 	}
 
 IL_001e:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:118>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:122>
 		RendererU5BU5D_t32FDD782F67917B2291EA4FF242719877440A02A* L_7 = V_0;
 		int32_t L_8 = V_3;
 		NullCheck(L_7);
@@ -12067,14 +12067,14 @@ IL_001e:
 		Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3 L_11;
 		L_11 = Renderer_get_bounds_m390CF334730C3C34E45CE59F1D08C3B9F3109C7C(L_10, NULL);
 		Bounds_Encapsulate_m7C70C382B9380A8C962074C78E189B53CE8F7A22_inline((&V_1), L_11, NULL);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:118>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:122>
 		int32_t L_12 = V_3;
 		V_3 = ((int32_t)il2cpp_codegen_add(L_12, 1));
 	}
 
 IL_0031:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:118>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:122>
 		int32_t L_13 = V_3;
 		RendererU5BU5D_t32FDD782F67917B2291EA4FF242719877440A02A* L_14 = V_0;
 		NullCheck(L_14);
@@ -12084,7 +12084,7 @@ IL_0031:
 		}
 	}
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:119>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:123>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_15;
 		L_15 = Bounds_get_size_m0699A53A55A78B3201D7270D6F338DFA91B6FAD4_inline((&V_1), NULL);
 		float L_16 = L_15.___x;
@@ -12094,7 +12094,7 @@ IL_0031:
 		float L_19;
 		L_19 = Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline(L_16, L_18, NULL);
 		V_2 = L_19;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:120>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:124>
 		float L_20 = V_2;
 		if ((((float)L_20) > ((float)(9.99999975E-05f))))
 		{
@@ -12149,7 +12149,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RingPlacer_LateUpdate_m5AE03A6BA39FD782F
 	memset((&V_12), 0, sizeof(V_12));
 	int32_t G_B6_0 = 0;
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:125>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:129>
 		bool L_0 = __this->____ready;
 		if (!L_0)
 		{
@@ -12169,15 +12169,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RingPlacer_LateUpdate_m5AE03A6BA39FD782F
 
 IL_0015:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:125>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:129>
 		return;
 	}
 
 IL_0016:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:126>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:130>
 		RingPlacer_UpdateTex_mE502C2C91A6B33F714FEC3DBF529691DC894A7E9(__this, NULL);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:128>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:132>
 		JewelleryLandmarkReader_t4F615276AACEBC7EBCCD801F08036AE58B7A501B* L_3 = __this->___landmarkReader;
 		NullCheck(L_3);
 		bool L_4;
@@ -12203,16 +12203,16 @@ IL_003d:
 
 IL_003e:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:130>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:133>
 		if (G_B6_0)
 		{
 			goto IL_0077;
 		}
 	}
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:132>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:135>
 		__this->____detFrames = 0;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:133>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:136>
 		int32_t L_7 = __this->____lostFrames;
 		V_11 = ((int32_t)il2cpp_codegen_add(L_7, 1));
 		int32_t L_8 = V_11;
@@ -12225,25 +12225,25 @@ IL_003e:
 		}
 	}
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:134>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:136>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_11 = __this->____ring;
 		NullCheck(L_11);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_11, (bool)0, NULL);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:134>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:136>
 		__this->____first = (bool)1;
 	}
 
 IL_0076:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:135>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:137>
 		return;
 	}
 
 IL_0077:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:138>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:140>
 		__this->____lostFrames = 0;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:139>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:141>
 		int32_t L_12 = __this->____detFrames;
 		V_11 = ((int32_t)il2cpp_codegen_add(L_12, 1));
 		int32_t L_13 = V_11;
@@ -12256,20 +12256,20 @@ IL_0077:
 		}
 	}
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:139>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:141>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_16 = __this->____ring;
 		NullCheck(L_16);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_16, (bool)0, NULL);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:139>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:141>
 		return;
 	}
 
 IL_00a7:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:141>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:143>
 		int32_t L_17 = __this->___finger;
 		V_0 = L_17;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:142>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:144>
 		il2cpp_codegen_runtime_class_init_inline(RingPlacer_t612E6F043A82061D57E306D336BF433D906183D3_il2cpp_TypeInfo_var);
 		Int32U5BU2CU5D_t46F2694E7DAD7B2B05C940EC5B9DE04E40D0516F* L_18 = ((RingPlacer_t612E6F043A82061D57E306D336BF433D906183D3_StaticFields*)il2cpp_codegen_static_fields_for(RingPlacer_t612E6F043A82061D57E306D336BF433D906183D3_il2cpp_TypeInfo_var))->___FL;
 		int32_t L_19 = V_0;
@@ -12279,7 +12279,7 @@ IL_00a7:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_21;
 		L_21 = RingPlacer_C_mCE4927E5DD1C1D99F22957175C805AAA7D145B0A(__this, L_20, NULL);
 		V_1 = L_21;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:143>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:145>
 		Int32U5BU2CU5D_t46F2694E7DAD7B2B05C940EC5B9DE04E40D0516F* L_22 = ((RingPlacer_t612E6F043A82061D57E306D336BF433D906183D3_StaticFields*)il2cpp_codegen_static_fields_for(RingPlacer_t612E6F043A82061D57E306D336BF433D906183D3_il2cpp_TypeInfo_var))->___FL;
 		int32_t L_23 = V_0;
 		NullCheck(L_22);
@@ -12288,7 +12288,7 @@ IL_00a7:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_25;
 		L_25 = RingPlacer_C_mCE4927E5DD1C1D99F22957175C805AAA7D145B0A(__this, L_24, NULL);
 		V_2 = L_25;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:146>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:148>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_26 = V_2;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_27 = V_1;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_28;
@@ -12297,7 +12297,7 @@ IL_00a7:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_29;
 		L_29 = Vector3_get_normalized_m736BBF65D5CDA7A18414370D15B4DFCC1E466F07_inline((&V_12), NULL);
 		V_3 = L_29;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:147>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:149>
 		float L_30;
 		L_30 = Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline((&V_3), NULL);
 		if ((!(((float)L_30) < ((float)(0.00100000005f)))))
@@ -12306,42 +12306,42 @@ IL_00a7:
 		}
 	}
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:147>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:149>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_31 = __this->____ring;
 		NullCheck(L_31);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_31, (bool)0, NULL);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:147>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:149>
 		return;
 	}
 
 IL_0100:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:150>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:152>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_32 = V_1;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_33 = V_2;
 		float L_34 = __this->___fingerBias;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_35;
 		L_35 = Vector3_Lerp_m3A906D0530A94FAABB94F0F905E84D99BE85C3F8_inline(L_32, L_33, L_34, NULL);
 		V_4 = L_35;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:153>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:155>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_36;
 		L_36 = Vector3_get_up_m128AF3FDC820BF59D5DE86D973E7DE3F20C3AEBA_inline(NULL);
 		V_5 = L_36;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:154>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:156>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_37 = V_3;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_38 = V_5;
 		float L_39;
 		L_39 = Vector3_Dot_mBB86BB940AA0A32FA7D3C02AC42E5BC7095A5D52_inline(L_37, L_38, NULL);
 		float L_40;
 		L_40 = fabsf(L_39);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:157>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:159>
 		if ((!(((float)L_40) < ((float)(0.949999988f)))))
 		{
 			goto IL_014c;
 		}
 	}
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:159>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:161>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_41 = V_5;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_42 = V_5;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_43 = V_3;
@@ -12361,7 +12361,7 @@ IL_0100:
 
 IL_014c:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:164>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:165>
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_49 = __this->___arCamera;
 		NullCheck(L_49);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_50;
@@ -12369,7 +12369,7 @@ IL_014c:
 		NullCheck(L_50);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_51;
 		L_51 = Transform_get_right_mC6DC057C23313802E2186A9E0DB760D795A758A4(L_50, NULL);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:165>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:166>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_52 = L_51;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_53 = V_3;
 		float L_54;
@@ -12387,7 +12387,7 @@ IL_014c:
 
 IL_0179:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:169>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:170>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_59 = V_6;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_60 = V_3;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_61;
@@ -12396,11 +12396,11 @@ IL_0179:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_62;
 		L_62 = Vector3_get_normalized_m736BBF65D5CDA7A18414370D15B4DFCC1E466F07_inline((&V_12), NULL);
 		V_7 = L_62;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:175>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:176>
 		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 L_63;
 		L_63 = Matrix4x4_get_identity_m6568A73831F3E2D587420D20FF423959D7D8AB56_inline(NULL);
 		V_8 = L_63;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:176>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:177>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_64 = V_7;
 		float L_65 = L_64.___x;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_66 = V_7;
@@ -12411,7 +12411,7 @@ IL_0179:
 		memset((&L_70), 0, sizeof(L_70));
 		Vector4__ctor_m96B2CD8B862B271F513AF0BDC2EABD58E4DBC813_inline((&L_70), L_65, L_67, L_69, (0.0f), NULL);
 		Matrix4x4_SetColumn_mC1CBEB2C29C0A9F1434C601786CE1B6DED1E1234_inline((&V_8), 0, L_70, NULL);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:177>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:178>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_71 = V_6;
 		float L_72 = L_71.___x;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_73 = V_6;
@@ -12422,7 +12422,7 @@ IL_0179:
 		memset((&L_77), 0, sizeof(L_77));
 		Vector4__ctor_m96B2CD8B862B271F513AF0BDC2EABD58E4DBC813_inline((&L_77), L_72, L_74, L_76, (0.0f), NULL);
 		Matrix4x4_SetColumn_mC1CBEB2C29C0A9F1434C601786CE1B6DED1E1234_inline((&V_8), 1, L_77, NULL);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:178>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:179>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_78 = V_3;
 		float L_79 = L_78.___x;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_80 = V_3;
@@ -12433,15 +12433,15 @@ IL_0179:
 		memset((&L_84), 0, sizeof(L_84));
 		Vector4__ctor_m96B2CD8B862B271F513AF0BDC2EABD58E4DBC813_inline((&L_84), L_79, L_81, L_83, (0.0f), NULL);
 		Matrix4x4_SetColumn_mC1CBEB2C29C0A9F1434C601786CE1B6DED1E1234_inline((&V_8), 2, L_84, NULL);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:179>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:180>
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_85;
 		L_85 = Matrix4x4_get_rotation_m7E2C29FCB2AAFAE4D7B4FBD3563E9EDB53F5A8BB_inline((&V_8), NULL);
 		V_9 = L_85;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:181>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:182>
 		float L_86;
 		L_86 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
 		V_10 = L_86;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:182>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:183>
 		bool L_87 = __this->____first;
 		if (!L_87)
 		{
@@ -12449,24 +12449,24 @@ IL_0179:
 		}
 	}
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:183>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:184>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_88 = V_4;
 		__this->____sp = L_88;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:183>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:184>
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_89 = V_9;
 		__this->____sr = L_89;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:183>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:184>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_90;
 		L_90 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
 		__this->____sv = L_90;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:183>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:184>
 		__this->____first = (bool)0;
 		goto IL_0289;
 	}
 
 IL_0241:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:186>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:187>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_91 = __this->____sp;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_92 = V_4;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_93 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->____sv);
@@ -12475,7 +12475,7 @@ IL_0241:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_96;
 		L_96 = Vector3_SmoothDamp_mAF61EA22D4906BF87DD00A91FB4F6AC0C54C495A(L_91, L_92, L_93, ((float)((1.0f)/L_94)), (std::numeric_limits<float>::infinity()), L_95, NULL);
 		__this->____sp = L_96;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:187>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:188>
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_97 = __this->____sr;
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_98 = V_9;
 		float L_99 = __this->___rotSmooth;
@@ -12487,7 +12487,7 @@ IL_0241:
 
 IL_0289:
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:190>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:191>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_102 = __this->____ring;
 		NullCheck(L_102);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_103;
@@ -12496,11 +12496,11 @@ IL_0289:
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_105 = __this->____sr;
 		NullCheck(L_103);
 		Transform_SetPositionAndRotation_m418859BF59086EEAA084FFD6F258A43FAB408F5A(L_103, L_104, L_105, NULL);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:191>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:192>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_106 = __this->____ring;
 		NullCheck(L_106);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_106, (bool)1, NULL);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:192>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:193>
 		return;
 	}
 }
@@ -12508,7 +12508,6 @@ IL_0289:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 RingPlacer_C_mCE4927E5DD1C1D99F22957175C805AAA7D145B0A (RingPlacer_t612E6F043A82061D57E306D336BF433D906183D3* __this, int32_t ___0_i, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:194>
 		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:195>
 		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:196>
 		JewelleryLandmarkReader_t4F615276AACEBC7EBCCD801F08036AE58B7A501B* L_0 = __this->___landmarkReader;
@@ -12619,10 +12618,10 @@ IL_0062:
 		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:208>
 		int32_t L_13 = __this->____rawTexW;
 		__this->____texW = L_13;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:209>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:208>
 		int32_t L_14 = __this->____rawTexH;
 		__this->____texH = L_14;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:210>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:209>
 		return;
 	}
 }
@@ -12630,29 +12629,29 @@ IL_0062:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RingPlacer__ctor_m7403A6305E51243F4F809AB0BF4EAAAA7D008D9A (RingPlacer_t612E6F043A82061D57E306D336BF433D906183D3* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:22>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:25>
 		__this->___finger = 2;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:26>
-		__this->___fingerBias = (0.400000006f);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:29>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:31>
+		__this->___fingerBias = (0.5f);
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:34>
 		__this->___baseDepth = (0.5f);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:33>
-		__this->___targetDiameterM = (0.0189999994f);
 		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:38>
-		__this->___bboxYCorrection = (0.0500000007f);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:41>
-		__this->___posSmooth = (22.0f);
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:41>
-		__this->___rotSmooth = (18.0f);
+		__this->___targetDiameterM = (0.0189999994f);
 		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:44>
-		__this->___hideDelayFrames = ((int32_t)10);
+		__this->___bboxYCorrection = (0.0199999996f);
 		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:47>
+		__this->___posSmooth = (22.0f);
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:47>
+		__this->___rotSmooth = (18.0f);
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:50>
+		__this->___hideDelayFrames = ((int32_t)10);
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:53>
 		__this->___minDetectionFrames = 2;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:62>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:67>
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_0;
 		L_0 = Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline(NULL);
 		__this->____sr = L_0;
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:64>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:69>
 		__this->____first = (bool)1;
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
@@ -12670,13 +12669,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RingPlacer__cctor_m7124D0CFC0515C01762B4
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:50>
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:51>
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:52>
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:53>
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:54>
-		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:55>
 		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:56>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:57>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:58>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:59>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:60>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:61>
+		//<source_info:D:/Jewellery-AR-Project/Assets/Scripts/Hand/RingPlacer.cs:62>
 		il2cpp_array_size_t L_1[] = { (il2cpp_array_size_t)4, (il2cpp_array_size_t)4 };
 		Int32U5BU2CU5D_t46F2694E7DAD7B2B05C940EC5B9DE04E40D0516F* L_0 = (Int32U5BU2CU5D_t46F2694E7DAD7B2B05C940EC5B9DE04E40D0516F*)GenArrayNew(Int32U5BU2CU5D_t46F2694E7DAD7B2B05C940EC5B9DE04E40D0516F_il2cpp_TypeInfo_var, L_1);
 		Int32U5BU2CU5D_t46F2694E7DAD7B2B05C940EC5B9DE04E40D0516F* L_2 = L_0;
