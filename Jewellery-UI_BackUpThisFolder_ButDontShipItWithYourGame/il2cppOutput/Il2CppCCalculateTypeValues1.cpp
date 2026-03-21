@@ -35483,16 +35483,22 @@ struct BanglePlacer_tA1AFD0A5196E38DA544DC9B475ACB3A1B415AF9A  : public MonoBeha
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___banglePrefab;
 	ARCameraImageSourceBehaviour_t96267AD17B80324968D58FC71842BC456F7AB2B0* ___imageSourceBehaviour;
 	ARCameraManager_t6E957EA922911B8447D086D9FB1F860EC967BD9F* ___arCameraManager;
-	float ___baseDepth;
 	float ___targetDiameterM;
+	float ___baseDepth;
 	float ___wristOffsetFactor;
-	float ___wristDepthOffset;
+	float ___inwardOffset;
+	float ___sideFadeWidth;
+	float ___hiddenAlpha;
 	float ___bboxYCorrection;
 	float ___posSmooth;
 	float ___rotSmooth;
 	int32_t ___hideDelayFrames;
 	int32_t ___minDetectionFrames;
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ____bangle;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ____root;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ____front;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ____back;
+	MaterialU5BU5D_t2B1D11C42DB07A4400C0535F92DBB87A2E346D3D* ____frontMats;
+	MaterialU5BU5D_t2B1D11C42DB07A4400C0535F92DBB87A2E346D3D* ____backMats;
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____calibratedScale;
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____smoothPos;
 	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ____smoothRot;
@@ -44389,6 +44395,10 @@ struct ARShaderOcclusion_tD5FA644EA0C028333838EC44E8B00E2A78C3B253_StaticFields
 	Action_1_tFF0F3D982F6CEB68CBA322555CBBEE6AE1D2519C* ___shaderOcclusionComponentEnabled;
 	Action_1_tFF0F3D982F6CEB68CBA322555CBBEE6AE1D2519C* ___shaderOcclusionComponentDisabled;
 };
+struct BanglePlacer_tA1AFD0A5196E38DA544DC9B475ACB3A1B415AF9A_StaticFields
+{
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___ColourProps;
+};
 struct BaseRunner_tA83067D585DF1A1E7A7441E38279BD2FB4EFF114_StaticFields
 {
 	String_t* ____BootstrapName;
@@ -52116,7 +52126,7 @@ const Il2CppTypeDefinitionSizes g_typeDefinitionSize9124 = { sizeof(U3CStartCapt
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize9125;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize9125 = { sizeof(ARCameraImageSourceBehaviour_t96267AD17B80324968D58FC71842BC456F7AB2B0), -1, 0, 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize9126;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize9126 = { sizeof(BanglePlacer_tA1AFD0A5196E38DA544DC9B475ACB3A1B415AF9A), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize9126 = { sizeof(BanglePlacer_tA1AFD0A5196E38DA544DC9B475ACB3A1B415AF9A), -1, sizeof(BanglePlacer_tA1AFD0A5196E38DA544DC9B475ACB3A1B415AF9A_StaticFields), 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize9127;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize9127 = { sizeof(HandVisualizer_tAA42026401B0F2205B7F8C90ABDEC266CE9AAC81), -1, sizeof(HandVisualizer_tAA42026401B0F2205B7F8C90ABDEC266CE9AAC81_StaticFields), 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize9128;

@@ -858,7 +858,7 @@ MonoBehaviour:
     type: 2
     items:
     - itemName: Chain Braclet
-      thumbnailImage: {fileID: 0}
+      thumbnailImage: {fileID: 21300000, guid: 5cfe1ad1a970aae46b40c290eb151998, type: 3}
       jewelryPrefab: {fileID: 3398772309847563501, guid: 42dee20d43a81f744920db81eec3fcfb, type: 3}
       necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
       necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
@@ -1052,10 +1052,12 @@ MonoBehaviour:
   banglePrefab: {fileID: 0}
   imageSourceBehaviour: {fileID: 0}
   arCameraManager: {fileID: 77988580}
-  baseDepth: 0.5
   targetDiameterM: 0.065
+  baseDepth: 0.5
   wristOffsetFactor: 0
-  wristDepthOffset: 0.01
+  inwardOffset: 0.006
+  sideFadeWidth: 0.25
+  hiddenAlpha: 0
   bboxYCorrection: 0.02
   posSmooth: 18
   rotSmooth: 14
