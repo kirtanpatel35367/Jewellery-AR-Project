@@ -298,9 +298,6 @@ public class JewelryUI : MonoBehaviour
         activeCat = idx;
         var cat = jewelryManager.categories[idx];
 
-        // ── Switch camera HERE (category level), not per-item ──────────
-        jewelryManager.OnCategorySelected(idx);
-
         Debug.Log($"[JewelryUI] Tapped: {cat.categoryName}");
 
         // 1. Update label

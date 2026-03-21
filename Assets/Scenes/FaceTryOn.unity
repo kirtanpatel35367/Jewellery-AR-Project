@@ -226,7 +226,6 @@ GameObject:
   - component: {fileID: 77988579}
   - component: {fileID: 77988578}
   - component: {fileID: 77988583}
-  - component: {fileID: 77988584}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -454,19 +453,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0a3d6ed9478e464ba4f83a0588d5052, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnableDepthTexture
---- !u!114 &77988584
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 77988576}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e22653e392d547b40a16aa7dae7d51c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ARCameraImageSourceBehaviour
-  arCameraManager: {fileID: 77988580}
 --- !u!1 &429898238
 GameObject:
   m_ObjectHideFlags: 0
@@ -854,30 +840,9 @@ MonoBehaviour:
       necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
       necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
       necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
-  - categoryName: Braclet
-    type: 2
-    items:
-    - itemName: Chain Braclet
-      thumbnailImage: {fileID: 0}
-      jewelryPrefab: {fileID: 3398772309847563501, guid: 42dee20d43a81f744920db81eec3fcfb, type: 3}
-      necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
-      necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
-      necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
-  - categoryName: Ring
-    type: 3
-    items:
-    - itemName: Ring
-      thumbnailImage: {fileID: 0}
-      jewelryPrefab: {fileID: 8306998610349388954, guid: d5bc89730c0643140a0bb33950b13362, type: 3}
-      necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
-      necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
-      necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
   leftEarAnchor: {fileID: 0}
   rightEarAnchor: {fileID: 0}
   necklaceAnchor: {fileID: 0}
-  banglePlacer: {fileID: 964915048}
-  ringPlacer: {fileID: 1284825134}
-  arCameraManager: {fileID: 77988580}
 --- !u!4 &954362370
 Transform:
   m_ObjectHideFlags: 0
@@ -999,191 +964,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &964915045
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 964915046}
-  - component: {fileID: 964915048}
-  - component: {fileID: 964915047}
-  m_Layer: 0
-  m_Name: BangleAnchor
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &964915046
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 964915045}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &964915047
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 964915045}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f86f8f37e1e5ecf48b0beffdac81dedf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::JewelleryLandmarkReader
---- !u!114 &964915048
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 964915045}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3052d1b688364e9409cfc9bb0619c53e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BanglePlacer
-  landmarkReader: {fileID: 964915047}
-  arCamera: {fileID: 77988582}
-  banglePrefab: {fileID: 0}
-  imageSourceBehaviour: {fileID: 0}
-  arCameraManager: {fileID: 77988580}
-  baseDepth: 0.5
-  targetDiameterM: 0.065
-  wristOffsetFactor: 0
-  posSmooth: 18
-  rotSmooth: 14
-  minDetectionFrames: 3
---- !u!1 &1064799459
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1064799461}
-  - component: {fileID: 1064799468}
-  m_Layer: 0
-  m_Name: Solution
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1064799461
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1064799459}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2041899631}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1064799468
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1064799459}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20f2fd61d43b483ba93442eb6cfc37cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _bootstrapPrefab: {fileID: 968918444066301895, guid: 1146a9de09159a948b683e94fb3d3c95, type: 3}
-  screen: {fileID: 0}
-  runningMode: 0
-  _handLandmarkerResultAnnotationController: {fileID: 0}
---- !u!1 &1284825132
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1284825135}
-  - component: {fileID: 1284825134}
-  - component: {fileID: 1284825133}
-  m_Layer: 0
-  m_Name: RingAnchor
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1284825133
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1284825132}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f86f8f37e1e5ecf48b0beffdac81dedf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::JewelleryLandmarkReader
---- !u!114 &1284825134
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1284825132}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 044cef7e57eb07a43aaa04d76ef63714, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RingPlacer
-  landmarkReader: {fileID: 1284825133}
-  arCamera: {fileID: 77988582}
-  ringPrefab: {fileID: 0}
-  imageSourceBehaviour: {fileID: 0}
-  arCameraManager: {fileID: 77988580}
-  finger: 2
-  fingerBias: 0.35
-  baseDepth: 0.65
-  targetDiameterM: 0.019
-  posSmooth: 22
-  rotSmooth: 16
-  minDetectionFrames: 3
---- !u!4 &1284825135
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1284825132}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.00002}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1889989203
 GameObject:
   m_ObjectHideFlags: 0
@@ -1387,38 +1167,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2041899629
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2041899631}
-  m_Layer: 0
-  m_Name: HandLandmarkerRoot
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2041899631
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2041899629}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1064799461}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1430,6 +1178,3 @@ SceneRoots:
   - {fileID: 1900725528}
   - {fileID: 954362370}
   - {fileID: 429898240}
-  - {fileID: 2041899631}
-  - {fileID: 964915046}
-  - {fileID: 1284825135}
