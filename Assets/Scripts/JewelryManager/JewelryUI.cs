@@ -3,314 +3,455 @@ using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 
+/// <summary>
+/// JEWELRY UI v5
+///
+/// FIXES:
+///  1. POPUP NOT CLOSING — single root popup GO, rows are direct children.
+///  2. ITEMS NOT VISIBLE — cards use FIXED pixel height (CARD_H), no anchor-stretching.
+/// </summary>
 public class JewelryUI : MonoBehaviour
 {
     [Header("Required")]
     public JewelryManager jewelryManager;
 
+    // ── Layout (ref 1080 x 1920) ────────────────────────────────────
+    private const float TOP_H = 140f;
+    private const float MENU_W = 170f;   // menu button width
+    private const float STRIP_H = 300f;   // bottom strip height
+    private const float REMOVE_H = 72f;
+    private const float CARD_W = 245f;
+    private const float CARD_H = 265f;   // FIXED height — avoids anchor stretch bug
+    private const float CARD_GAP = 10f;
+    private const float POPUP_W = 500f;
+    private const float ROW_H = 88f;
+    private const float ROW_GAP = 5f;
+
+    // ── Colors ──────────────────────────────────────────────────────
+    private static readonly Color C_TOP = new Color(0.08f, 0.08f, 0.11f, 0.97f);
+    private static readonly Color C_STRIP_BG = new Color(0.06f, 0.06f, 0.09f, 0.97f);
+    private static readonly Color C_REMOVE = new Color(0.58f, 0.10f, 0.10f, 1.00f);
+    private static readonly Color C_GOLD = new Color(0.95f, 0.80f, 0.25f, 1.00f);
+    private static readonly Color C_MENU_BG = new Color(0.20f, 0.20f, 0.28f, 1.00f);
+    private static readonly Color C_LABEL_BG = new Color(0.13f, 0.13f, 0.18f, 1.00f);
+    private static readonly Color C_POPUP_BG = new Color(0.10f, 0.10f, 0.14f, 0.99f);
+    private static readonly Color C_POPUP_BDR = new Color(0.90f, 0.75f, 0.20f, 1.00f);
+    private static readonly Color C_ROW_OFF = new Color(0.18f, 0.18f, 0.25f, 1.00f);
+    private static readonly Color C_ROW_ON = new Color(0.88f, 0.65f, 0.10f, 1.00f);
+    private static readonly Color C_CARD_BG = new Color(0.14f, 0.14f, 0.20f, 1.00f);
+    private static readonly Color C_CARD_SEL = new Color(0.90f, 0.70f, 0.15f, 1.00f);
+    private static readonly Color C_OVERLAY = new Color(0.00f, 0.00f, 0.00f, 0.45f);
+
+    private static readonly Color[] ACCENTS = {
+        new Color(0.95f,0.70f,0.10f), new Color(0.70f,0.30f,0.90f),
+        new Color(0.15f,0.60f,0.95f), new Color(0.90f,0.30f,0.45f),
+        new Color(0.20f,0.80f,0.45f), new Color(0.80f,0.65f,0.20f),
+    };
+
+    // ── Runtime ─────────────────────────────────────────────────────
     private Font font;
-    private int activeCat = 0;
-    private List<GameObject> itemObjects = new List<GameObject>();
-    private List<GameObject> catObjects = new List<GameObject>();
+    private Text topLabel;
+    private RectTransform stripContent;
+    private GameObject popupRoot;      // single root that gets SetActive
+    private GameObject overlay;
+    private bool popupOpen;
+    private int activeCat = -1;
+    private List<Image> rowBgImgs = new List<Image>();
+    private List<Text> rowTxts = new List<Text>();
+    private List<GameObject> itemCards = new List<GameObject>();
 
-    // We build everything on ONE new canvas we create ourselves
-    private Canvas uiCanvas;
-    private GameObject bottomPanel;
-    private GameObject itemGrid;
-
+    // ════════════════════════════════════════════════════════════════
     void Start()
     {
         if (jewelryManager == null)
         {
-            Debug.LogError("[JewelryUI] Assign JewelryManager!");
+            Debug.LogError("[JewelryUI] JewelryManager NOT assigned in Inspector!");
             return;
         }
-        StartCoroutine(Init());
+        StartCoroutine(Build());
     }
 
-    IEnumerator Init()
+    IEnumerator Build()
     {
-        yield return new WaitForSeconds(0.5f); // let AR scene finish loading
+        yield return new WaitForSeconds(0.2f);
         font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
-        BuildEverything();
+        if (font == null) { Debug.LogError("[JewelryUI] Font not found!"); yield break; }
+
+        // Canvas
+        var cgo = new GameObject("JewelryCanvas");
+        DontDestroyOnLoad(cgo);
+        var cvs = cgo.AddComponent<Canvas>();
+        cvs.renderMode = RenderMode.ScreenSpaceOverlay;
+        cvs.sortingOrder = 30000;
+        var sc = cgo.AddComponent<CanvasScaler>();
+        sc.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
+        sc.referenceResolution = new Vector2(1080, 1920);
+        sc.matchWidthOrHeight = 0.5f;
+        cgo.AddComponent<GraphicRaycaster>();
+
+        var cv = cvs.GetComponent<RectTransform>();
+        BuildTopBar(cv);
+        BuildRemoveBar(cv);
+        BuildItemStrip(cv);
+        BuildOverlay(cv);
+        BuildPopup(cv);
+
+        Debug.Log("[JewelryUI] Built OK.");
     }
 
-    void BuildEverything()
+    // ════════════════════════════════════════════════════════════════
+    //  TOP BAR
+    // ════════════════════════════════════════════════════════════════
+    void BuildTopBar(RectTransform cv)
     {
-        // ── Create a brand-new canvas ────────────────────────────────────
-        GameObject canvasGO = new GameObject("JEWELRY_UI_CANVAS");
-        DontDestroyOnLoad(canvasGO);
+        var bar = MkPanel("TopBar", cv, C_TOP,
+            ancMin: new Vector2(0, 1), ancMax: new Vector2(1, 1),
+            pivot: new Vector2(0.5f, 1),
+            size: new Vector2(0, TOP_H), pos: Vector2.zero);
 
-        uiCanvas = canvasGO.AddComponent<Canvas>();
-        uiCanvas.renderMode = RenderMode.ScreenSpaceOverlay;
-        uiCanvas.sortingOrder = 32767; // maximum possible — on top of everything
+        // Menu button
+        var mb = MkPanel("MenuBtn", Rt(bar), C_MENU_BG,
+            ancMin: new Vector2(0, 0), ancMax: new Vector2(0, 1),
+            pivot: new Vector2(0, 0.5f),
+            size: new Vector2(MENU_W, 0), pos: Vector2.zero);
+        MkText(mb, "= MENU", 27, FontStyle.Bold, Color.white, TextAnchor.MiddleCenter);
+        MkBtn(mb, TogglePopup);
 
-        CanvasScaler scaler = canvasGO.AddComponent<CanvasScaler>();
-        scaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
-        scaler.referenceResolution = new Vector2(1080, 1920);
-        scaler.matchWidthOrHeight = 0.5f;
-
-        canvasGO.AddComponent<GraphicRaycaster>();
-
-        RectTransform canvasRT = canvasGO.GetComponent<RectTransform>();
-
-        // ── TOP BAR ──────────────────────────────────────────────────────
-        GameObject topBar = MakeBox("TopBar", canvasRT,
-            new Vector2(0, 1), new Vector2(1, 1),
-            new Vector2(0.5f, 1), new Vector2(0, 130));
-        SetColor(topBar, new Color(0.1f, 0.1f, 0.15f, 1));
-
-        // Category buttons in top bar - equal width using anchors
-        int catCount = Mathf.Min(jewelryManager.CategoryCount, 2);
-        Color[] catColors = new Color[]
-        {
-            new Color(0.82f,0.62f,0.10f,1),  // gold (selected)
-            new Color(0.25f,0.25f,0.35f,1)   // dark (unselected)
-        };
-
-        for (int i = 0; i < catCount; i++)
-        {
-            int ci = i;
-            string nm = jewelryManager.categories[i].categoryName;
-
-            // Divide top bar into equal slices using anchors — works on any screen width
-            float anchorLeft = (float)i / catCount;
-            float anchorRight = (float)(i + 1) / catCount;
-
-            GameObject catBtn = new GameObject("CatBtn_" + i, typeof(RectTransform));
-            catBtn.transform.SetParent(topBar.GetComponent<RectTransform>(), false);
-            RectTransform rt = catBtn.GetComponent<RectTransform>();
-            rt.anchorMin = new Vector2(anchorLeft, 0f);
-            rt.anchorMax = new Vector2(anchorRight, 1f);
-            rt.pivot = new Vector2(0.5f, 0.5f);
-            rt.offsetMin = new Vector2(6f, 8f);   // 6px gap each side, 8px top/bottom
-            rt.offsetMax = new Vector2(-6f, -8f);
-
-            catBtn.AddComponent<Image>().color = catColors[i];
-            AddText(catBtn, nm, 36, Color.white);
-
-            Button b = catBtn.AddComponent<Button>();
-            b.transition = Selectable.Transition.None;
-            b.onClick.AddListener(() => SelectCat(ci));
-            catObjects.Add(catBtn);
-        }
-
-        // ── BOTTOM PANEL ─────────────────────────────────────────────────
-        bottomPanel = MakeBox("BottomPanel", canvasRT,
-            new Vector2(0, 0), new Vector2(1, 0),
-            new Vector2(0.5f, 0), new Vector2(0, 450));
-        SetColor(bottomPanel, new Color(0.12f, 0.12f, 0.18f, 1));
-
-        // Item grid inside bottom panel (vertical scroll via manual layout)
-        itemGrid = MakeBox("ItemGrid", bottomPanel.GetComponent<RectTransform>(),
-            new Vector2(0, 0), new Vector2(1, 1),
-            new Vector2(0, 1), new Vector2(0, 0));
-        itemGrid.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
-        // No Image on itemGrid so it's transparent
-        Object.Destroy(itemGrid.GetComponent<Image>());
-
-        // Add GridLayoutGroup
-        GridLayoutGroup g = itemGrid.AddComponent<GridLayoutGroup>();
-        g.cellSize = new Vector2(320, 300);
-        g.spacing = new Vector2(15, 15);
-        g.padding = new RectOffset(20, 20, 20, 20);
-        g.constraint = GridLayoutGroup.Constraint.FixedColumnCount;
-        g.constraintCount = 3;
-        g.childAlignment = TextAnchor.UpperCenter;
-
-        ContentSizeFitter cf = itemGrid.AddComponent<ContentSizeFitter>();
-        cf.verticalFit = ContentSizeFitter.FitMode.PreferredSize;
-
-        // Wrap in ScrollRect
-        ScrollRect sr = bottomPanel.AddComponent<ScrollRect>();
-        sr.content = itemGrid.GetComponent<RectTransform>();
-        sr.viewport = bottomPanel.GetComponent<RectTransform>();
-        sr.horizontal = false;
-        sr.vertical = true;
-
-        // ── REMOVE BUTTON ─────────────────────────────────────────────────
-        GameObject remBtn = MakeBox("RemoveBtn", canvasRT,
-            new Vector2(1, 0), new Vector2(1, 0),
-            new Vector2(1, 0), new Vector2(300, 75));
-        remBtn.GetComponent<RectTransform>().anchoredPosition = new Vector2(-20, 470);
-        SetColor(remBtn, new Color(0.8f, 0.15f, 0.15f, 1));
-        AddText(remBtn, "X Remove All", 26, Color.white);
-        Button rb = remBtn.AddComponent<Button>();
-        rb.transition = Selectable.Transition.None;
-        rb.onClick.AddListener(() => jewelryManager.RemoveAll());
-
-        // ── Show first category ───────────────────────────────────────────
-        SelectCat(0);
+        // Category label
+        var lb = MkPanel("LabelBg", Rt(bar), C_LABEL_BG,
+            ancMin: new Vector2(0, 0), ancMax: new Vector2(1, 1),
+            pivot: new Vector2(0, 0.5f),
+            size: Vector2.zero, pos: Vector2.zero);
+        Rt(lb).offsetMin = new Vector2(MENU_W + 8f, 10f);
+        Rt(lb).offsetMax = new Vector2(-8f, -10f);
+        topLabel = MkText(lb, "", 38, FontStyle.Bold, C_GOLD, TextAnchor.MiddleLeft, pad: 16f);
     }
 
-    void SelectCat(int idx)
+    // ════════════════════════════════════════════════════════════════
+    //  REMOVE BAR
+    // ════════════════════════════════════════════════════════════════
+    void BuildRemoveBar(RectTransform cv)
     {
-        activeCat = idx;
+        var bar = MkPanel("RemoveBar", cv, C_REMOVE,
+            ancMin: new Vector2(0, 0), ancMax: new Vector2(1, 0),
+            pivot: new Vector2(0.5f, 0),
+            size: new Vector2(0, REMOVE_H), pos: new Vector2(0, STRIP_H));
+        MkText(bar, "X   REMOVE ALL", 32, FontStyle.Bold, Color.white, TextAnchor.MiddleCenter);
+        MkBtn(bar, () => jewelryManager.RemoveAll());
+    }
 
-        // Update category button colors
-        for (int i = 0; i < catObjects.Count; i++)
+    // ════════════════════════════════════════════════════════════════
+    //  ITEM STRIP (horizontal scroll)
+    // ════════════════════════════════════════════════════════════════
+    void BuildItemStrip(RectTransform cv)
+    {
+        // Outer container — bottom of screen
+        var strip = MkPanel("Strip", cv, C_STRIP_BG,
+            ancMin: new Vector2(0, 0), ancMax: new Vector2(1, 0),
+            pivot: new Vector2(0.5f, 0),
+            size: new Vector2(0, STRIP_H), pos: Vector2.zero);
+        var srt = Rt(strip);
+
+        var sr = strip.AddComponent<ScrollRect>();
+        sr.horizontal = true; sr.vertical = false;
+        sr.inertia = true; sr.decelerationRate = 0.12f;
+        sr.scrollSensitivity = 60f;
+
+        // Viewport — plain RectTransform, no Image needed; RectMask2D handles clipping
+        var vpGo = new GameObject("VP", typeof(RectTransform));
+        vpGo.transform.SetParent(srt, false);
+        var vpRt = vpGo.GetComponent<RectTransform>();
+        vpRt.anchorMin = Vector2.zero; vpRt.anchorMax = Vector2.one;
+        vpRt.pivot = new Vector2(0, 0);
+        vpRt.sizeDelta = Vector2.zero;
+        vpRt.anchoredPosition = Vector2.zero;
+        vpRt.offsetMin = new Vector2(6, 6);
+        vpRt.offsetMax = new Vector2(-6, -6);
+        vpGo.AddComponent<RectMask2D>();
+        var vp = vpGo;
+
+        // Content — anchored left, fixed height = CARD_H, width set per-load
+        var cgo = new GameObject("Content", typeof(RectTransform));
+        cgo.transform.SetParent(vp.transform, false);
+        stripContent = cgo.GetComponent<RectTransform>();
+        stripContent.anchorMin = new Vector2(0, 0.5f);  // left-centre anchor
+        stripContent.anchorMax = new Vector2(0, 0.5f);
+        stripContent.pivot = new Vector2(0, 0.5f);
+        stripContent.anchoredPosition = Vector2.zero;
+        stripContent.sizeDelta = new Vector2(0, CARD_H);  // fixed height
+
+        sr.content = stripContent;
+        sr.viewport = vpRt;
+    }
+
+    // ════════════════════════════════════════════════════════════════
+    //  OVERLAY
+    // ════════════════════════════════════════════════════════════════
+    void BuildOverlay(RectTransform cv)
+    {
+        overlay = MkPanel("Overlay", cv, C_OVERLAY,
+            ancMin: Vector2.zero, ancMax: Vector2.one,
+            pivot: new Vector2(0.5f, 0.5f),
+            size: Vector2.zero, pos: Vector2.zero);
+        MkBtn(overlay, ClosePopup);
+        overlay.SetActive(false);
+    }
+
+    // ════════════════════════════════════════════════════════════════
+    //  POPUP — single root GO, all rows inside it directly
+    // ════════════════════════════════════════════════════════════════
+    void BuildPopup(RectTransform cv)
+    {
+        int n = jewelryManager.categories?.Length ?? 0;
+        float totalH = ROW_GAP + n * (ROW_H + ROW_GAP);
+
+        // Single root panel — THIS is what gets hidden/shown
+        popupRoot = MkPanel("PopupRoot", cv, C_POPUP_BDR,
+            ancMin: new Vector2(0, 1), ancMax: new Vector2(0, 1),
+            pivot: new Vector2(0, 1),
+            size: new Vector2(POPUP_W, totalH + 4f),
+            pos: new Vector2(2f, -TOP_H - 2f));
+
+        // Inner background (2px inset for gold border effect)
+        var inner = MkPanel("PopupInner", Rt(popupRoot), C_POPUP_BG,
+            ancMin: Vector2.zero, ancMax: Vector2.one,
+            pivot: new Vector2(0.5f, 0.5f),
+            size: Vector2.zero, pos: Vector2.zero);
+        Rt(inner).offsetMin = new Vector2(2, 2);
+        Rt(inner).offsetMax = new Vector2(-2, -2);
+
+        rowBgImgs.Clear();
+        rowTxts.Clear();
+
+        for (int i = 0; i < n; i++)
         {
-            Image img = catObjects[i].GetComponent<Image>();
-            if (img != null)
-                img.color = (i == idx)
-                    ? new Color(0.82f, 0.62f, 0.10f, 1)
-                    : new Color(0.25f, 0.25f, 0.35f, 1);
-        }
+            var cat = jewelryManager.categories[i];
+            if (cat == null) continue;
 
-        // Clear old items
-        foreach (var ob in itemObjects)
-            if (ob != null) Destroy(ob);
-        itemObjects.Clear();
-
-        JewelryItem[] items = jewelryManager.categories[idx].items;
-        if (items == null || items.Length == 0)
-        {
-            Debug.LogWarning("[JewelryUI] No items in category " + idx);
-            return;
-        }
-
-        // Spawn item buttons
-        for (int i = 0; i < items.Length; i++)
-        {
-            if (items[i] == null) continue;
             int ci = i;
-            GameObject cell = SpawnCell(items[i]);
-            Button b = cell.AddComponent<Button>();
-            b.transition = Selectable.Transition.None;
-            b.onClick.AddListener(() =>
+            Color accent = ACCENTS[i % ACCENTS.Length];
+            // Y position from top of inner panel
+            float yPos = -(ROW_GAP + i * (ROW_H + ROW_GAP));
+
+            // Row — child of inner panel
+            var row = MkPanel("Row" + i, Rt(inner), C_ROW_OFF,
+                ancMin: new Vector2(0, 1), ancMax: new Vector2(1, 1),
+                pivot: new Vector2(0.5f, 1),
+                size: new Vector2(0, ROW_H), pos: new Vector2(0, yPos));
+
+            // Accent stripe
+            MkPanel("Ac", Rt(row), accent,
+                ancMin: new Vector2(0, 0), ancMax: new Vector2(0, 1),
+                pivot: new Vector2(0, 0.5f),
+                size: new Vector2(10, 0), pos: Vector2.zero);
+
+            // Text label
+            var txt = MkText(row, cat.categoryName.ToUpper(),
+                             34, FontStyle.Bold, Color.white,
+                             TextAnchor.MiddleLeft, pad: 24f);
+
+            rowBgImgs.Add(row.GetComponent<Image>());
+            rowTxts.Add(txt);
+
+            // Click — IMPORTANT: listener references ci (captured), not i
+            MkBtn(row, () =>
             {
-                jewelryManager.EquipJewelryByIndex(activeCat, ci);
-                HighlightCell(ci);
+                OnCategoryTapped(ci);
+                ClosePopup();
             });
-            itemObjects.Add(cell);
         }
 
-        LayoutRebuilder.ForceRebuildLayoutImmediate(
-            itemGrid.GetComponent<RectTransform>());
+        popupRoot.SetActive(false);
     }
 
-    GameObject SpawnCell(JewelryItem item)
+    // ════════════════════════════════════════════════════════════════
+    //  POPUP TOGGLE
+    // ════════════════════════════════════════════════════════════════
+    void TogglePopup()
     {
-        // Outer cell (border)
-        GameObject cell = new GameObject(item.itemName, typeof(RectTransform));
-        cell.transform.SetParent(itemGrid.transform, false);
-        Image border = cell.AddComponent<Image>();
-        border.color = new Color(0.7f, 0.7f, 0.9f, 1f); // light blue-grey border
-
-        // Inner background (inset 4px)
-        GameObject inner = new GameObject("Inner", typeof(RectTransform));
-        inner.transform.SetParent(cell.transform, false);
-        RectTransform irt = inner.GetComponent<RectTransform>();
-        irt.anchorMin = Vector2.zero;
-        irt.anchorMax = Vector2.one;
-        irt.offsetMin = new Vector2(4, 4);
-        irt.offsetMax = new Vector2(-4, -4);
-        Image bg = inner.AddComponent<Image>();
-
-        // If thumbnail exists, show it; otherwise show a purple box
-        if (item.thumbnailImage != null)
-        {
-            bg.sprite = item.thumbnailImage;
-            bg.color = Color.white;
-            bg.preserveAspect = true;
-        }
-        else
-        {
-            bg.color = new Color(0.30f, 0.28f, 0.48f, 1f); // visible purple
-        }
-
-        // Name label at bottom
-        GameObject labelGO = new GameObject("Label", typeof(RectTransform));
-        labelGO.transform.SetParent(inner.transform, false);
-        RectTransform lrt = labelGO.GetComponent<RectTransform>();
-        lrt.anchorMin = new Vector2(0, 0);
-        lrt.anchorMax = new Vector2(1, 0);
-        lrt.pivot = new Vector2(0.5f, 0);
-        lrt.sizeDelta = new Vector2(0, 80);
-        lrt.anchoredPosition = Vector2.zero;
-
-        // Dark strip behind text
-        Image labelBg = labelGO.AddComponent<Image>();
-        labelBg.color = new Color(0, 0, 0, 0.85f);
-
-        // Text
-        GameObject textGO = new GameObject("Text", typeof(RectTransform));
-        textGO.transform.SetParent(labelGO.transform, false);
-        RectTransform trt = textGO.GetComponent<RectTransform>();
-        trt.anchorMin = Vector2.zero;
-        trt.anchorMax = Vector2.one;
-        trt.offsetMin = new Vector2(4, 2);
-        trt.offsetMax = new Vector2(-4, -2);
-        Text t = textGO.AddComponent<Text>();
-        t.text = item.itemName;
-        t.font = font;
-        t.fontSize = 24;
-        t.fontStyle = FontStyle.Bold;
-        t.color = Color.white;
-        t.alignment = TextAnchor.MiddleCenter;
-        t.horizontalOverflow = HorizontalWrapMode.Wrap;
-        t.verticalOverflow = VerticalWrapMode.Truncate;
-        t.raycastTarget = false;
-
-        return cell;
+        if (popupOpen) ClosePopup();
+        else OpenPopup();
     }
 
-    void HighlightCell(int idx)
+    void OpenPopup()
     {
-        for (int i = 0; i < itemObjects.Count; i++)
-        {
-            Image img = itemObjects[i].GetComponent<Image>();
-            if (img != null)
-                img.color = (i == idx)
-                    ? new Color(0.82f, 0.62f, 0.10f, 1f)
-                    : new Color(0.7f, 0.7f, 0.9f, 1f);
-        }
+        popupOpen = true;
+        overlay.SetActive(true);
+        popupRoot.SetActive(true);
     }
 
-    // ── Helpers ───────────────────────────────────────────────────────────
-
-    // Makes a RectTransform box with an Image
-    GameObject MakeBox(string name, RectTransform parent,
-                       Vector2 ancMin, Vector2 ancMax,
-                       Vector2 pivot, Vector2 sizeDelta)
+    void ClosePopup()
     {
-        GameObject go = new GameObject(name, typeof(RectTransform));
+        popupOpen = false;
+        popupRoot.SetActive(false);
+        overlay.SetActive(false);
+    }
+
+    // ════════════════════════════════════════════════════════════════
+    //  CATEGORY TAPPED
+    // ════════════════════════════════════════════════════════════════
+    void OnCategoryTapped(int idx)
+    {
+        if (jewelryManager.categories == null ||
+            idx < 0 || idx >= jewelryManager.categories.Length) return;
+
+        activeCat = idx;
+        var cat = jewelryManager.categories[idx];
+
+        // ── Switch camera HERE (category level), not per-item ──────────
+        jewelryManager.OnCategorySelected(idx);
+
+        Debug.Log($"[JewelryUI] Tapped: {cat.categoryName}");
+
+        // 1. Update label
+        if (topLabel != null) topLabel.text = cat.categoryName.ToUpper();
+
+        // 3. Highlight selected row
+        for (int i = 0; i < rowBgImgs.Count; i++)
+        {
+            bool on = (i == idx);
+            if (rowBgImgs[i] != null) rowBgImgs[i].color = on ? C_ROW_ON : C_ROW_OFF;
+            if (rowTxts[i] != null) rowTxts[i].color = on
+                ? new Color(0.05f, 0.05f, 0.05f) : Color.white;
+        }
+
+        // 4. Load items after 2-frame layout delay
+        StartCoroutine(SpawnCards(cat));
+    }
+
+    // ════════════════════════════════════════════════════════════════
+    //  SPAWN ITEM CARDS
+    // ════════════════════════════════════════════════════════════════
+    IEnumerator SpawnCards(JewelryCategory cat)
+    {
+        // Destroy previous cards
+        foreach (var c in itemCards) if (c) Destroy(c);
+        itemCards.Clear();
+        stripContent.sizeDelta = new Vector2(0, CARD_H);
+
+        yield return null; // wait one frame
+
+        if (cat.items == null || cat.items.Length == 0)
+        {
+            Debug.LogWarning($"[JewelryUI] '{cat.categoryName}' has no items.");
+            yield break;
+        }
+
+        // Count valid items (prefab required to equip, but show card regardless)
+        int count = cat.items.Length;
+
+        if (count == 0) { Debug.LogWarning($"[JewelryUI] No items in category."); yield break; }
+
+        // Set content width
+        float totalW = count * CARD_W + (count + 1) * CARD_GAP;
+        stripContent.sizeDelta = new Vector2(totalW, CARD_H);
+
+        yield return null; // wait for layout
+
+        int col = 0;
+        for (int i = 0; i < cat.items.Length; i++)
+        {
+            var item = cat.items[i];
+            if (item == null) continue;
+            if (item.jewelryPrefab == null)
+                Debug.LogWarning($"[JewelryUI] Item '{item.itemName}' has no prefab assigned!");
+            int ci = i;
+
+            float xPos = CARD_GAP + col * (CARD_W + CARD_GAP);
+
+            // ── Card root — FIXED size, positioned from left ──────────
+            var card = MkPanel("Card" + i, stripContent, C_CARD_BG,
+                ancMin: new Vector2(0, 0.5f),   // left-centre anchor
+                ancMax: new Vector2(0, 0.5f),
+                pivot: new Vector2(0, 0.5f),
+                size: new Vector2(CARD_W, CARD_H),
+                pos: new Vector2(xPos, 0));
+
+            // ── Thumbnail (fills card minus 50px name strip at bottom) ─
+            var thumb = MkPanel("Thumb", Rt(card), C_CARD_BG,
+                ancMin: Vector2.zero, ancMax: Vector2.one,
+                pivot: new Vector2(0.5f, 0.5f),
+                size: Vector2.zero, pos: Vector2.zero);
+            Rt(thumb).offsetMin = new Vector2(4, 50);
+            Rt(thumb).offsetMax = new Vector2(-4, -4);
+
+            if (item.thumbnailImage != null)
+            {
+                var img = thumb.GetComponent<Image>();
+                img.sprite = item.thumbnailImage;
+                img.color = Color.white;
+                img.preserveAspect = true;
+                img.type = Image.Type.Simple;
+            }
+
+            // ── Name strip at card bottom — fixed 48px height ─────────
+            var ns = MkPanel("NS", Rt(card), new Color(0, 0, 0, 0.88f),
+                ancMin: new Vector2(0, 0), ancMax: new Vector2(1, 0),
+                pivot: new Vector2(0.5f, 0),
+                size: new Vector2(0, 48), pos: Vector2.zero);
+            MkText(ns, item.itemName, 19, FontStyle.Bold,
+                   Color.white, TextAnchor.MiddleCenter);
+
+            // ── Click ─────────────────────────────────────────────────
+            Image cardImg = card.GetComponent<Image>();
+            MkBtn(card, () =>
+            {
+                foreach (var cc in itemCards)
+                    if (cc) cc.GetComponent<Image>().color = C_CARD_BG;
+                cardImg.color = C_CARD_SEL;
+                jewelryManager.EquipJewelryByIndex(activeCat, ci);
+            });
+
+            itemCards.Add(card);
+            col++;
+        }
+
+        Debug.Log($"[JewelryUI] {itemCards.Count} cards for '{cat.categoryName}'");
+    }
+
+    // ════════════════════════════════════════════════════════════════
+    //  HELPERS
+    // ════════════════════════════════════════════════════════════════
+
+    RectTransform Rt(GameObject go) => go.GetComponent<RectTransform>();
+
+    GameObject MkPanel(string name, RectTransform parent, Color color,
+        Vector2 ancMin, Vector2 ancMax, Vector2 pivot, Vector2 size, Vector2 pos)
+    {
+        var go = new GameObject(name, typeof(RectTransform));
         go.transform.SetParent(parent, false);
-        RectTransform rt = go.GetComponent<RectTransform>();
-        rt.anchorMin = ancMin;
-        rt.anchorMax = ancMax;
-        rt.pivot = pivot;
-        rt.sizeDelta = sizeDelta;
-        rt.anchoredPosition = Vector2.zero;
-        go.AddComponent<Image>().raycastTarget = true;
+        var rt = go.GetComponent<RectTransform>();
+        rt.anchorMin = ancMin; rt.anchorMax = ancMax;
+        rt.pivot = pivot; rt.sizeDelta = size; rt.anchoredPosition = pos;
+        go.AddComponent<Image>().color = color;
         return go;
     }
 
-    void SetColor(GameObject go, Color c)
+    Text MkText(GameObject parent, string text, int size, FontStyle style,
+                Color color, TextAnchor align, float pad = 0f)
     {
-        Image img = go.GetComponent<Image>();
-        if (img == null) img = go.AddComponent<Image>();
-        img.color = c;
+        var go = new GameObject("T", typeof(RectTransform));
+        go.transform.SetParent(parent.transform, false);
+        var rt = go.GetComponent<RectTransform>();
+        rt.anchorMin = Vector2.zero; rt.anchorMax = Vector2.one;
+        rt.offsetMin = new Vector2(pad, 2f); rt.offsetMax = new Vector2(-4f, -2f);
+        var t = go.AddComponent<Text>();
+        t.text = text; t.font = font; t.fontSize = size; t.fontStyle = style;
+        t.color = color; t.alignment = align; t.raycastTarget = false;
+        t.horizontalOverflow = HorizontalWrapMode.Overflow;
+        t.verticalOverflow = VerticalWrapMode.Truncate;
+        return t;
     }
 
-    void AddText(GameObject go, string txt, int size, Color col)
+    void MkBtn(GameObject go, UnityEngine.Events.UnityAction fn)
     {
-        GameObject tgo = new GameObject("Lbl", typeof(RectTransform));
-        tgo.transform.SetParent(go.transform, false);
-        RectTransform rt = tgo.GetComponent<RectTransform>();
-        rt.anchorMin = Vector2.zero;
-        rt.anchorMax = Vector2.one;
-        rt.offsetMin = new Vector2(4, 2);
-        rt.offsetMax = new Vector2(-4, -2);
-        Text t = tgo.AddComponent<Text>();
-        t.text = txt;
-        t.font = font;
-        t.fontSize = size;
-        t.fontStyle = FontStyle.Bold;
-        t.color = col;
-        t.alignment = TextAnchor.MiddleCenter;
-        t.horizontalOverflow = HorizontalWrapMode.Wrap;
-        t.verticalOverflow = VerticalWrapMode.Truncate;
-        t.raycastTarget = false;
+        var btn = go.AddComponent<Button>();
+        btn.transition = Selectable.Transition.ColorTint;
+        var cb = btn.colors;
+        cb.normalColor = Color.white;
+        cb.highlightedColor = new Color(1.15f, 1.15f, 1.15f);
+        cb.pressedColor = new Color(0.75f, 0.75f, 0.75f);
+        btn.colors = cb;
+        btn.onClick.AddListener(fn);
     }
 }

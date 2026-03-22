@@ -1,4 +1,4 @@
-Library: D:\SDS\Jewellery-AR-Project\Temp\BurstOutput\tempburstlibs\arm64-v8a\lib_burst_generated
+Library: D:\Jewellery-AR-Project\Temp\BurstOutput\tempburstlibs\arm64-v8a\lib_burst_generated
 --platform=Android
 --minimum-os-version=
 --backend=burst-llvm-19
@@ -9,10 +9,10 @@ Library: D:\SDS\Jewellery-AR-Project\Temp\BurstOutput\tempburstlibs\arm64-v8a\li
 --float-precision=Standard
 --target-framework=NetFramework
 --generate-link-xml=Temp\burst.link.xml
---temp-folder=D:\SDS\Jewellery-AR-Project\Temp\Burst
+--temp-folder=D:\Jewellery-AR-Project\Temp\Burst
 --key-folder=C:/Program Files/Unity/Hub/Editor/6000.3.2f1-x86_64/Editor/Data/PlaybackEngines/AndroidPlayer
---decode-folder=D:\SDS\Jewellery-AR-Project\Library\Burst
---output=D:\SDS\Jewellery-AR-Project\Temp\BurstOutput\tempburstlibs\arm64-v8a\lib_burst_generated
+--decode-folder=D:\Jewellery-AR-Project\Library\Burst
+--output=D:\Jewellery-AR-Project\Temp\BurstOutput\tempburstlibs\arm64-v8a\lib_burst_generated
 --pdb-search-paths=Temp/ManagedSymbols/
 
 

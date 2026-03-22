@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -6689036041284674117, guid: fb907724601b7ed469cdf6016650e896, type: 3}
       propertyPath: m_Name
-      value: Handing Diamond
+      value: Hanging Diamond
       objectReference: {fileID: 0}
     - target: {fileID: 2774220344278030320, guid: fb907724601b7ed469cdf6016650e896, type: 3}
       propertyPath: m_LocalScale.x
@@ -63,6 +63,14 @@ PrefabInstance:
     - target: {fileID: 2774220344278030320, guid: fb907724601b7ed469cdf6016650e896, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2936483111911040555, guid: fb907724601b7ed469cdf6016650e896, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6569145876919134859, guid: fb907724601b7ed469cdf6016650e896, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.09
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

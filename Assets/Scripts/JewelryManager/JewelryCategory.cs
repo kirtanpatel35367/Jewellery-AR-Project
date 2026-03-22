@@ -1,29 +1,21 @@
 using UnityEngine;
 
-/// <summary>
-/// Jewelry type — used by JewelryManager to know
-/// where to attach the jewelry (ears vs neck).
-/// </summary>
 public enum JewelryType
 {
-    Earrings,
-    Necklace
+    Earrings,   // face camera
+    Necklace,   // face camera
+    Bangle,     // back camera (wrist)
+    Ring        // back camera (finger)
 }
 
-/// <summary>
-/// One category tab (e.g. "Earring" or "Necklace").
-/// Contains an array of JewelryItem entries.
-/// Fill these fields in the JewelryManager Inspector.
-/// </summary>
 [System.Serializable]
 public class JewelryCategory
 {
-    [Tooltip("Name shown on the tab button, e.g. 'Earring'")]
+    [Tooltip("Name shown on the tab button")]
     public string categoryName;
 
-    [Tooltip("Earrings or Necklace")]
+    [Tooltip("Earrings/Necklace = face camera | Bangle/Ring = back camera")]
     public JewelryType type;
 
-    [Tooltip("All items inside this category")]
     public JewelryItem[] items;
 }

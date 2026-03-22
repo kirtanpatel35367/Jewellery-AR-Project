@@ -13,12 +13,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material_5
-    second: {fileID: -1297869518082289475, guid: 1e454b5f0ca84b748bd8f005ebc3bfb1, type: 3}
+    second: {fileID: 6416926393663402262, guid: fb907724601b7ed469cdf6016650e896, type: 3}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: White Gold-14k
-    second: {fileID: -5629337934274034732, guid: 3873ad3f9ba143e409a38c89343c6a14, type: 3}
+    second: {fileID: 2100000, guid: cbd6fcc5ccd219444b4d296209f19c3c, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
