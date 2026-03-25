@@ -5,11 +5,11 @@ using System.Collections.Generic;
 
 public class PlacementManager : MonoBehaviour
 {
-    public GameObject jewelleryPrefab;
-
+    // Removed: public GameObject jewelleryPrefab (single prefab)
+    // Now set dynamically from SelectionUIManager
+    private GameObject activePrefab;
     private ARRaycastManager raycastManager;
     private GameObject spawnedObject;
-
     static List<ARRaycastHit> hits = new List<ARRaycastHit>();
 
     void Awake()
@@ -17,36 +17,40 @@ public class PlacementManager : MonoBehaviour
         raycastManager = GetComponent<ARRaycastManager>();
     }
 
+    // Called by SelectionUIManager when the user picks an item
+    public void SetActivePrefab(GameObject prefab)
+    {
+        activePrefab = prefab;
+
+        // Destroy previously placed object so the new selection spawns fresh
+        if (spawnedObject != null)
+        {
+            Destroy(spawnedObject);
+            spawnedObject = null;
+        }
+    }
+
     void Update()
-{
-    if (Input.touchCount == 0) return;
-
-    Touch touch = Input.GetTouch(0);
-
-    if (touch.phase != TouchPhase.Began) return;
-
-    Debug.Log("Touch detected");
-
-    if (raycastManager.Raycast(touch.position, hits, TrackableType.PlaneWithinPolygon))
     {
-        Debug.Log("Raycast HIT plane");
+        // Don't raycast if no prefab is selected yet
+        if (activePrefab == null) return;
+        if (Input.touchCount == 0) return;
 
-        Pose pose = hits[0].pose;
+        Touch touch = Input.GetTouch(0);
+        if (touch.phase != TouchPhase.Began) return;
 
-        if (spawnedObject == null)
+        if (raycastManager.Raycast(touch.position, hits, TrackableType.PlaneWithinPolygon))
         {
-            Debug.Log("Spawning object");
-            spawnedObject = Instantiate(jewelleryPrefab, pose.position, pose.rotation);
-        }
-        else
-        {
-            Debug.Log("Moving object");
-            spawnedObject.transform.SetPositionAndRotation(pose.position, pose.rotation);
+            Pose pose = hits[0].pose;
+
+            if (spawnedObject == null)
+            {
+                spawnedObject = Instantiate(activePrefab, pose.position, pose.rotation);
+            }
+            else
+            {
+                spawnedObject.transform.SetPositionAndRotation(pose.position, pose.rotation);
+            }
         }
     }
-    else
-    {
-        Debug.Log("Raycast MISS");
-    }
-}
 }

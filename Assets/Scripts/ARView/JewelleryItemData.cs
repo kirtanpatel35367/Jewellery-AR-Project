@@ -1,9 +1,9 @@
 using UnityEngine;
 
 [System.Serializable]
-public class JewelleryItemData
+public class JewelleryItem
 {
     public string itemName;
     public GameObject prefab;
-    public Sprite icon;
+    public Sprite thumbnail; // match your UI code
 }

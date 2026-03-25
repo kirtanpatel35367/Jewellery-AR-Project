@@ -1,7 +1,9 @@
-using System.Collections.Generic;
+// JewelleryDatabase.cs
 using UnityEngine;
+using System.Collections.Generic;
 
-public class JewelleryDatabase : MonoBehaviour
+[CreateAssetMenu(fileName = "JewelleryDatabase", menuName = "AR/Jewellery Database")]
+public class JewelleryDatabase : ScriptableObject
 {
-    public List<JewelleryItemData> items = new List<JewelleryItemData>();
+    public List<JewelleryItem> items = new List<JewelleryItem>();
 }
