@@ -8,9 +8,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5644133064174452605, guid: 546bef74acb9bc14780c7298b1a74efe, type: 3}
+      propertyPath: m_AnimatePhysics
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5644133064174452605, guid: 546bef74acb9bc14780c7298b1a74efe, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8128668236925612103, guid: 546bef74acb9bc14780c7298b1a74efe, type: 3}
       propertyPath: m_Name
       value: Ring
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897093224900880590, guid: 546bef74acb9bc14780c7298b1a74efe, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897093224900880590, guid: 546bef74acb9bc14780c7298b1a74efe, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897093224900880590, guid: 546bef74acb9bc14780c7298b1a74efe, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 8897093224900880590, guid: 546bef74acb9bc14780c7298b1a74efe, type: 3}
       propertyPath: m_LocalPosition.x
@@ -51,6 +71,10 @@ PrefabInstance:
     - target: {fileID: 8897093224900880590, guid: 546bef74acb9bc14780c7298b1a74efe, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897093224900880590, guid: 546bef74acb9bc14780c7298b1a74efe, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

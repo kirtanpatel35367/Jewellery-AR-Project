@@ -863,6 +863,21 @@ MonoBehaviour:
       necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
       necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
       necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
+    - itemName: Braclet Gold
+      thumbnailImage: {fileID: 0}
+      jewelryPrefab: {fileID: 3368076468150510327, guid: 77ac802b7b7008d42a3df87a0a44e203, type: 3}
+      necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
+      necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
+      necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
+  - categoryName: Ring
+    type: 3
+    items:
+    - itemName: Ring
+      thumbnailImage: {fileID: 0}
+      jewelryPrefab: {fileID: 8306998610349388954, guid: d5bc89730c0643140a0bb33950b13362, type: 3}
+      necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
+      necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
+      necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
   leftEarAnchor: {fileID: 0}
   rightEarAnchor: {fileID: 0}
   necklaceAnchor: {fileID: 0}
@@ -1052,23 +1067,18 @@ MonoBehaviour:
   banglePrefab: {fileID: 0}
   imageSourceBehaviour: {fileID: 0}
   arCameraManager: {fileID: 77988580}
-  cardMetallicThreshold: 0.05
-  forceCardRendererIndex: -1
-  debugLogMaterials: 1
   baseDepth: 0.5
-  wristOffsetFactor: 0
   targetDiameterM: 0.065
+  wristOffsetFactor: 0
   bboxYCorrection: 0.02
-  wrapSeparation: 0.008
-  edgeCurvature: 0.85
+  wrapSeparation: 0.01
+  edgeCurvature: 0.8
   curvePow: 0.65
-  switchHysteresis: 0.08
-  occluderWidthMult: 1.3
-  occluderHeightMult: 1.2
+  switchHysteresis: 0.1
   enableAdaptiveScale: 1
   referencePixelDist: 180
-  scaleSmooth: 10
-  minScaleMult: 0.4
+  scaleSmooth: 8
+  minScaleMult: 0.5
   maxScaleMult: 3
   posSmooth: 18
   rotSmooth: 14
@@ -1168,17 +1178,17 @@ MonoBehaviour:
   arCamera: {fileID: 77988582}
   ringPrefab: {fileID: 0}
   imageSourceBehaviour: {fileID: 0}
-  arCameraManager: {fileID: 77988580}
   finger: 2
   fingerBias: 0.35
   baseDepth: 0.65
-  targetDiameterM: 0.019
-  fingerDepthOffset: 0.008
-  bboxYCorrection: 0.02
+  depthZScale: 0.12
+  sizeMultiplier: 2.07
   posSmooth: 22
   rotSmooth: 16
-  hideDelayFrames: 10
+  scaleSmooth: 8
   minDetectionFrames: 3
+  occluderMaterial: {fileID: 0}
+  occluderRadiusFraction: 0.38
 --- !u!4 &1284825135
 Transform:
   m_ObjectHideFlags: 0
@@ -1381,7 +1391,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 944374c26f0cc1e40bde173f6e0bdf02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::JewelryUI
+  sceneMode: 2
+  sceneTitle: Try On
   jewelryManager: {fileID: 954362369}
+  mainMenuSceneName: MainMenuScene
+  captureCamera: {fileID: 0}
 --- !u!4 &1900725528
 Transform:
   m_ObjectHideFlags: 0
