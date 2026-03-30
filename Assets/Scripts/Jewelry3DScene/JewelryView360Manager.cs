@@ -24,12 +24,18 @@ public class JewelryView360Manager : MonoBehaviour
     [Tooltip("Degrees per second auto-spin on Y when no touch")]
     public float autoSpinSpeed = 18f;
 
+    [Header("Normalization")]
+    [Tooltip("Every prefab is scaled so its longest axis equals this world-unit size")]
+    public float normalizedSize = 0.5f;
+
     [Header("Zoom Settings")]
     public float zoomSensitivity = 0.02f;
-    public float minZoomDistance = 0.5f;
-    public float maxZoomDistance = 5f;
-    [Tooltip("Default camera distance from pivot")]
-    public float defaultZoomDistance = 2.0f;
+    [Tooltip("Closest the camera can get — relative to normalizedSize")]
+    public float minZoomDistance = 0.4f;
+    [Tooltip("Furthest the camera can get")]
+    public float maxZoomDistance = 3.0f;
+    [Tooltip("Starting camera distance after a model is loaded")]
+    public float defaultZoomDistance = 1.2f;
 
     [Header("Lighting")]
     [Tooltip("Optional directional light to set colour matching the UI gold theme")]
@@ -84,21 +90,33 @@ public class JewelryView360Manager : MonoBehaviour
 
     void CentreModel(GameObject go)
     {
-        // Calculate combined bounds and offset so the model is centred
         Renderer[] renderers = go.GetComponentsInChildren<Renderer>();
         if (renderers.Length == 0) return;
 
+        // ── Step 1: measure raw bounds at scale = 1 ──────────────
         Bounds bounds = renderers[0].bounds;
         foreach (var r in renderers) bounds.Encapsulate(r.bounds);
 
-        // Move the pivot child so the model centre is at pivot origin
+        // ── Step 2: normalise scale so the longest axis == normalizedSize ──
+        // bounds.size is in world space, so we derive the scale factor
+        float longestAxis = Mathf.Max(bounds.size.x, bounds.size.y, bounds.size.z);
+        if (longestAxis > 0.0001f)
+        {
+            float scaleFactor = normalizedSize / longestAxis;
+            go.transform.localScale = go.transform.localScale * scaleFactor;
+        }
+
+        // ── Step 3: re-measure bounds after rescale ───────────────
+        bounds = renderers[0].bounds;
+        foreach (var r in renderers) bounds.Encapsulate(r.bounds);
+
+        // ── Step 4: centre the model at the pivot origin ──────────
         Vector3 offset = displayPivot.position - bounds.center;
         go.transform.position += offset;
 
-        // Auto-fit zoom to model size
-        float modelSize = bounds.extents.magnitude;
-        currentZoom = Mathf.Clamp(modelSize * 3f, minZoomDistance, maxZoomDistance);
-        defaultZoomDistance = currentZoom;
+        // ── Step 5: set camera to the fixed default distance ──────
+        // (same for every model — zoom in/out from here)
+        currentZoom = defaultZoomDistance;
         UpdateCameraPosition();
     }
 

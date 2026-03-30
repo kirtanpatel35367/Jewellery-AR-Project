@@ -123,6 +123,12 @@
             "icon": null
           },
           {
+            "name": "AudioSource",
+            "scenes": [],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
             "name": "BaseVideoTexture",
             "scenes": [],
             "dependencyType": 1,
@@ -272,6 +278,12 @@
               "Assets/Scenes/Jewelry3DScene.unity",
               "Assets/Scenes/JewelryARScene.unity"
             ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "LightProbeProxyVolume",
+            "scenes": [],
             "dependencyType": 0,
             "icon": null
           },
@@ -484,6 +496,12 @@
             "name": "ShaderNameRegistry",
             "scenes": [],
             "dependencyType": 1,
+            "icon": null
+          },
+          {
+            "name": "SkinnedMeshRenderer",
+            "scenes": [],
+            "dependencyType": 0,
             "icon": null
           },
           {
@@ -1038,6 +1056,12 @@
             "icon": null
           },
           {
+            "name": "CapsuleCollider",
+            "scenes": [],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
             "name": "CharacterController",
             "scenes": [],
             "dependencyType": 0,
@@ -1051,7 +1075,9 @@
           },
           {
             "name": "MeshCollider",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/JewelryARScene.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
@@ -1059,6 +1085,18 @@
             "name": "PhysicsManager",
             "scenes": [],
             "dependencyType": 1,
+            "icon": null
+          },
+          {
+            "name": "Rigidbody",
+            "scenes": [],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "SphereCollider",
+            "scenes": [],
+            "dependencyType": 0,
             "icon": null
           },
           {
