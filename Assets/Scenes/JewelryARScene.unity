@@ -1029,6 +1029,7 @@ GameObject:
   - component: {fileID: 1982304905}
   - component: {fileID: 1982304904}
   - component: {fileID: 1982304903}
+  - component: {fileID: 1982304906}
   m_Layer: 0
   m_Name: AR Session
   m_TagString: Untagged
@@ -1078,6 +1079,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1982304906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1982304899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c7038d03249e2b40a0fd602ad232ef5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ARSessionResetter
+  initialFacingDirection: 1
+  arCameraManager: {fileID: 1400792844}
 --- !u!1 &2135903692
 GameObject:
   m_ObjectHideFlags: 0
@@ -1111,7 +1126,7 @@ MonoBehaviour:
   sceneTitle: Place On Room
   jewelryManager: {fileID: 838395359}
   mainMenuSceneName: MainMenuScene
-  captureCamera: {fileID: 0}
+  captureCamera: {fileID: 1400792846}
 --- !u!4 &2135903694
 Transform:
   m_ObjectHideFlags: 0

@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.XR.ARFoundation;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -23,7 +24,8 @@ using System.Collections.Generic;
 ///   • Screenshot/Capture button (top-right corner)
 ///   • 360 View mode hides Remove All (stateless view)
 ///   • Auto-hides Bangle/Ring categories in 360 View (no hand tracking there)
-///   • DontDestroyOnLoad so UI persists during scene transitions (optional)
+///   • AR session is reset/stopped when user taps Back, so the next AR scene
+///     always starts with a clean camera state (no back-camera bleed-over).
 /// </summary>
 public class SharedJewelryUI : MonoBehaviour
 {
@@ -490,9 +492,39 @@ public class SharedJewelryUI : MonoBehaviour
 
     // ═════════════════════════════════════════════════════════════════
     //  BACK → MAIN MENU
+    //
+    //  UPDATED: Resets and stops the AR session before loading the main
+    //  menu so the next AR scene always starts with a clean camera state.
+    //  Without this, back-camera state from JewelryARScene would bleed
+    //  into FaceTryOn (and vice-versa).
     // ═════════════════════════════════════════════════════════════════
     void GoToMainMenu()
     {
+        // 1. Clean up all active jewelry / pending coroutines.
+        if (jewelryManager != null)
+            jewelryManager.RemoveAll();
+
+        // 2. Reset & stop the AR session BEFORE loading the new scene.
+        //    Priority: use ARSessionResetter if present (recommended),
+        //    otherwise fall back to direct ARSession manipulation.
+        var resetter = FindObjectOfType<ARSessionResetter>();
+        if (resetter != null)
+        {
+            resetter.ResetAndStopSession();
+        }
+        else
+        {
+            // Fallback path — works even without ARSessionResetter attached.
+            var arSession = FindObjectOfType<ARSession>();
+            if (arSession != null)
+            {
+                arSession.Reset();
+                arSession.enabled = false;
+                Debug.Log("[SharedJewelryUI] ARSession reset on Back (fallback path).");
+            }
+        }
+
+        // 3. Load the main menu.
         SceneManager.LoadScene(mainMenuSceneName);
     }
 

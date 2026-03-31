@@ -31,6 +31,12 @@ extern void ARNecklaceSnapFit_LateUpdate_mD9DAE8697745BDE1D024689E1376D161AA0E0C
 extern void ARNecklaceSnapFit_SafeVert_mD17B32551EAE63FAAFC9EDD16B187377CC47E3D1 (void);
 extern void ARNecklaceSnapFit_Bezier_m6CDFC75A8F49BC703ED4EED36081647DAF94AD71 (void);
 extern void ARNecklaceSnapFit__ctor_m074F6BB889014BF7598E53A52427EEE0B3EA2F89 (void);
+extern void ARSessionResetter_Awake_m1EF55CD83A832E9788AEA3AB4F7134E065BC5CE6 (void);
+extern void ARSessionResetter_OnEnable_m3AB370AF66FD982A043064642D1879C36FDDEED6 (void);
+extern void ARSessionResetter_OnDestroy_mF6D1BC4E858622E11A418423E9646A9E9D9156D1 (void);
+extern void ARSessionResetter_ResetAndStopSession_mDE0AE1C07FC266050E05F6BD43838AFC1FB5492E (void);
+extern void ARSessionResetter_ApplyCameraFacing_m08E4757C524C26FABE9CD34490A3507F4434B752 (void);
+extern void ARSessionResetter__ctor_mFBEF63C3348D3A6190228B054DD9A813233E08B5 (void);
 extern void ARJewelleryManager_SelectItem_m07BAC919E2CC058E83B38FA81054723A09E3130B (void);
 extern void ARJewelleryManager_PlaceOrMove_mC8E01959A9B4E8A1C8DD1E094E77E804B3CB1FEB (void);
 extern void ARJewelleryManager_HasSelection_m6E4BD5D21617F5995DD7B674179A098B4ACC2DA5 (void);
@@ -1324,7 +1330,7 @@ extern void FaceDetectionConfigWindow_U3CInitializeRunningModeU3Eb__22_0_mA92B45
 extern void FaceDetectionConfigWindow_U3CInitializeMinDetectionConfidenceU3Eb__23_0_m31E2C78577D731BD83E7BFAF90983D334C3B417E (void);
 extern void FaceDetectionConfigWindow_U3CInitializeMinSuppressionThresholdU3Eb__24_0_m64F24E9C1B82A7EE96A82CBA76531ABD028F8B6A (void);
 extern void FaceDetectionConfigWindow_U3CInitializeNumFacesU3Eb__25_0_m4622CA4893D10D647FC146F141377B2D8F516F82 (void);
-static Il2CppMethodPointer s_methodPointers[1387] = 
+static Il2CppMethodPointer s_methodPointers[1393] = 
 {
 	UnicodeInlineText_OnPopulateMesh_m494236F236211061859A497C7A1091C5A2C5BD6D,
 	UnicodeInlineText_Decode_m3D8FBEDB0EA494CD7D1E0AF967D3BA6A545DDB1B,
@@ -1350,6 +1356,12 @@ static Il2CppMethodPointer s_methodPointers[1387] =
 	ARNecklaceSnapFit_SafeVert_mD17B32551EAE63FAAFC9EDD16B187377CC47E3D1,
 	ARNecklaceSnapFit_Bezier_m6CDFC75A8F49BC703ED4EED36081647DAF94AD71,
 	ARNecklaceSnapFit__ctor_m074F6BB889014BF7598E53A52427EEE0B3EA2F89,
+	ARSessionResetter_Awake_m1EF55CD83A832E9788AEA3AB4F7134E065BC5CE6,
+	ARSessionResetter_OnEnable_m3AB370AF66FD982A043064642D1879C36FDDEED6,
+	ARSessionResetter_OnDestroy_mF6D1BC4E858622E11A418423E9646A9E9D9156D1,
+	ARSessionResetter_ResetAndStopSession_mDE0AE1C07FC266050E05F6BD43838AFC1FB5492E,
+	ARSessionResetter_ApplyCameraFacing_m08E4757C524C26FABE9CD34490A3507F4434B752,
+	ARSessionResetter__ctor_mFBEF63C3348D3A6190228B054DD9A813233E08B5,
 	ARJewelleryManager_SelectItem_m07BAC919E2CC058E83B38FA81054723A09E3130B,
 	ARJewelleryManager_PlaceOrMove_mC8E01959A9B4E8A1C8DD1E094E77E804B3CB1FEB,
 	ARJewelleryManager_HasSelection_m6E4BD5D21617F5995DD7B674179A098B4ACC2DA5,
@@ -2725,17 +2737,17 @@ extern void U3CWaitNextAsyncU3Ed__58_MoveNext_mF1A0A4EA9DAB41F1835BB33B8C9DBDD74
 extern void U3CWaitNextAsyncU3Ed__58_SetStateMachine_m35F545E125DBD2A10337A5A8DE39562F787E0969_AdjustorThunk (void);
 static Il2CppTokenAdjustorThunkPair s_adjustorThunks[9] = 
 {
-	{ 0x060001C0, ResolutionStruct__ctor_mE369C9144160B88E2BF577642F69F4516CEAC3D6_AdjustorThunk },
-	{ 0x060001C1, ResolutionStruct__ctor_m813873DE8AFC6A291335D52E0FE801A0A4F3ED3F_AdjustorThunk },
-	{ 0x060001C2, ResolutionStruct_ToResolution_m7D3150BCB50AC715F5576C7EA1D08626D9F4B8BE_AdjustorThunk },
-	{ 0x060001C3, ResolutionStruct_ToString_m7EF2314E11C11102CA4AAE2DC684F913AEBD75AE_AdjustorThunk },
-	{ 0x060003F1, U3CWaitNextAsyncU3Ed__12_MoveNext_mAE2EC29E66A3F81D91DE3FF015124D75EDE7EFB7_AdjustorThunk },
-	{ 0x060003F2, U3CWaitNextAsyncU3Ed__12_SetStateMachine_mDE3328A73B7222B8EF6F818BDD130C171E62E313_AdjustorThunk },
-	{ 0x0600040F, HolisticTrackingResult__ctor_m3FC6BB8336C944A3752E0DB01D9D526A08645B20_AdjustorThunk },
-	{ 0x0600043A, U3CWaitNextAsyncU3Ed__58_MoveNext_mF1A0A4EA9DAB41F1835BB33B8C9DBDD7473F9F9E_AdjustorThunk },
-	{ 0x0600043B, U3CWaitNextAsyncU3Ed__58_SetStateMachine_m35F545E125DBD2A10337A5A8DE39562F787E0969_AdjustorThunk },
+	{ 0x060001C6, ResolutionStruct__ctor_mE369C9144160B88E2BF577642F69F4516CEAC3D6_AdjustorThunk },
+	{ 0x060001C7, ResolutionStruct__ctor_m813873DE8AFC6A291335D52E0FE801A0A4F3ED3F_AdjustorThunk },
+	{ 0x060001C8, ResolutionStruct_ToResolution_m7D3150BCB50AC715F5576C7EA1D08626D9F4B8BE_AdjustorThunk },
+	{ 0x060001C9, ResolutionStruct_ToString_m7EF2314E11C11102CA4AAE2DC684F913AEBD75AE_AdjustorThunk },
+	{ 0x060003F7, U3CWaitNextAsyncU3Ed__12_MoveNext_mAE2EC29E66A3F81D91DE3FF015124D75EDE7EFB7_AdjustorThunk },
+	{ 0x060003F8, U3CWaitNextAsyncU3Ed__12_SetStateMachine_mDE3328A73B7222B8EF6F818BDD130C171E62E313_AdjustorThunk },
+	{ 0x06000415, HolisticTrackingResult__ctor_m3FC6BB8336C944A3752E0DB01D9D526A08645B20_AdjustorThunk },
+	{ 0x06000440, U3CWaitNextAsyncU3Ed__58_MoveNext_mF1A0A4EA9DAB41F1835BB33B8C9DBDD7473F9F9E_AdjustorThunk },
+	{ 0x06000441, U3CWaitNextAsyncU3Ed__58_SetStateMachine_m35F545E125DBD2A10337A5A8DE39562F787E0969_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[1387] = 
+static const int32_t s_InvokerIndices[1393] = 
 {
 	10258,
 	8816,
@@ -2760,6 +2772,12 @@ static const int32_t s_InvokerIndices[1387] =
 	12932,
 	9170,
 	1493,
+	12932,
+	12932,
+	12932,
+	12932,
+	12932,
+	10181,
 	12932,
 	10181,
 	5405,
@@ -4127,38 +4145,38 @@ static const int32_t s_InvokerIndices[1387] =
 };
 static const Il2CppTokenRangePair s_rgctxIndices[32] = 
 {
-	{ 0x0200006A, { 0, 3 } },
-	{ 0x02000080, { 180, 16 } },
-	{ 0x02000081, { 196, 19 } },
-	{ 0x02000082, { 215, 22 } },
-	{ 0x02000083, { 237, 25 } },
-	{ 0x02000084, { 262, 28 } },
-	{ 0x02000085, { 290, 31 } },
-	{ 0x02000086, { 321, 36 } },
-	{ 0x02000088, { 357, 3 } },
-	{ 0x0200008B, { 363, 3 } },
-	{ 0x02000095, { 381, 4 } },
-	{ 0x02000096, { 385, 1 } },
-	{ 0x060002D2, { 3, 2 } },
-	{ 0x060002D4, { 5, 5 } },
-	{ 0x060002D5, { 10, 1 } },
-	{ 0x060002D6, { 11, 5 } },
-	{ 0x060002D7, { 16, 7 } },
-	{ 0x060002D8, { 23, 9 } },
-	{ 0x060002D9, { 32, 11 } },
-	{ 0x060002DA, { 43, 13 } },
-	{ 0x060002DB, { 56, 15 } },
-	{ 0x060002DC, { 71, 18 } },
-	{ 0x060002DD, { 89, 10 } },
-	{ 0x060002DE, { 99, 11 } },
-	{ 0x060002DF, { 110, 12 } },
-	{ 0x060002E0, { 122, 13 } },
-	{ 0x060002E1, { 135, 14 } },
-	{ 0x060002E2, { 149, 15 } },
-	{ 0x060002E3, { 164, 16 } },
-	{ 0x06000316, { 360, 3 } },
-	{ 0x0600032E, { 366, 3 } },
-	{ 0x06000352, { 369, 12 } },
+	{ 0x0200006B, { 0, 3 } },
+	{ 0x02000081, { 180, 16 } },
+	{ 0x02000082, { 196, 19 } },
+	{ 0x02000083, { 215, 22 } },
+	{ 0x02000084, { 237, 25 } },
+	{ 0x02000085, { 262, 28 } },
+	{ 0x02000086, { 290, 31 } },
+	{ 0x02000087, { 321, 36 } },
+	{ 0x02000089, { 357, 3 } },
+	{ 0x0200008C, { 363, 3 } },
+	{ 0x02000096, { 381, 4 } },
+	{ 0x02000097, { 385, 1 } },
+	{ 0x060002D8, { 3, 2 } },
+	{ 0x060002DA, { 5, 5 } },
+	{ 0x060002DB, { 10, 1 } },
+	{ 0x060002DC, { 11, 5 } },
+	{ 0x060002DD, { 16, 7 } },
+	{ 0x060002DE, { 23, 9 } },
+	{ 0x060002DF, { 32, 11 } },
+	{ 0x060002E0, { 43, 13 } },
+	{ 0x060002E1, { 56, 15 } },
+	{ 0x060002E2, { 71, 18 } },
+	{ 0x060002E3, { 89, 10 } },
+	{ 0x060002E4, { 99, 11 } },
+	{ 0x060002E5, { 110, 12 } },
+	{ 0x060002E6, { 122, 13 } },
+	{ 0x060002E7, { 135, 14 } },
+	{ 0x060002E8, { 149, 15 } },
+	{ 0x060002E9, { 164, 16 } },
+	{ 0x0600031C, { 360, 3 } },
+	{ 0x06000334, { 366, 3 } },
+	{ 0x06000358, { 369, 12 } },
 };
 extern const uint32_t g_rgctx_WaitForResult_1_t23BC6C1D71B6134FA44D619601A58861228B8C7C;
 extern const uint32_t g_rgctx_T_t7BF18128D0A7F7BA6FA6114E05C6482DA4D0F6B7;
@@ -4939,7 +4957,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	1387,
+	1393,
 	s_methodPointers,
 	9,
 	s_adjustorThunks,
