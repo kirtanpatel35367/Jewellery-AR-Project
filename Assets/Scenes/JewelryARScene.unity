@@ -238,6 +238,7 @@ MonoBehaviour:
   dragThresholdPx: 14
   minScaleFactor: 0.2
   maxScaleFactor: 5
+  planeFillAlpha: 0
 --- !u!1 &413645671
 GameObject:
   m_ObjectHideFlags: 0
