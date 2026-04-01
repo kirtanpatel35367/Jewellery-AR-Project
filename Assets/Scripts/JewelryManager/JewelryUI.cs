@@ -6,50 +6,58 @@ using System.Collections;
 using System.Collections.Generic;
 
 /// <summary>
-/// SharedJewelryUI — A single UI prefab that works across ALL three scenes:
-///   • 360 View     (Jewelry3DScene)
-///   • Place on Room (JewelryARScene)
-///   • Try-On        (FaceTryOn)
+/// SharedJewelryUI — single UI script that works across all three scenes.
 ///
-/// HOW TO SET UP:
-///   1. Create an empty GameObject called "SharedUI" in EACH of your 3 scenes.
-///   2. Attach this script to it.
-///   3. Set SceneMode to the correct enum value in each scene's Inspector.
-///   4. Assign JewelryManager (only needed in PlaceOnRoom + TryOn scenes).
-///   5. Optionally assign a Capture Camera for screenshot button.
+///   Scene360      → 360 View  (Jewelry3DScene)
+///   PlaceOnRoom   → AR plane placement (JewelryARScene)
+///   TryOn         → Face / hand AR (FaceTryOnScene)
 ///
-/// FEATURES:
-///   • Top bar: Back → Main Menu button + dynamic scene title + SDS brand
-///   • Bottom panel: Category dropdown + horizontal item scroll + Remove All
-///   • Screenshot/Capture button (top-right corner)
-///   • 360 View mode hides Remove All (stateless view)
-///   • Auto-hides Bangle/Ring categories in 360 View (no hand tracking there)
-///   • AR session is reset/stopped when user taps Back, so the next AR scene
-///     always starts with a clean camera state (no back-camera bleed-over).
+/// ── BUG FIX v4 ──────────────────────────────────────────────────────
+///   Root cause of AR scene showing no UI: IsCategoryVisibleInMode() for
+///   PlaceOnRoom mode ONLY showed JewelryType.PlaceOnRoom categories.
+///   If your categories used any other JewelryType they were silently
+///   filtered out, leaving the popup with zero rows.
+///
+///   FIX: PlaceOnRoom mode now shows ALL category types. The JewelryManager
+///   and PlacementManager handle placement regardless of JewelryType in
+///   that scene. You can optionally restrict this per-project by setting
+///   restrictARSceneToPlaceOnRoomType = true in the Inspector.
+///
+/// ── HOW TO SET UP ───────────────────────────────────────────────────
+///   1. Add an empty GameObject called "SharedUI" in each of your 3 scenes.
+///   2. Attach this script and set SceneMode in the Inspector.
+///   3. Assign JewelryManager (required in PlaceOnRoom + TryOn scenes).
+///   4. (Optional) assign a CaptureCamera for screenshot.
+///
+/// ── FEATURES ────────────────────────────────────────────────────────
+///   • Top bar: Back button + scene title + SDS brand + screenshot button
+///   • Bottom strip: horizontal item card scroll (per selected category)
+///   • Category popup (side drawer): tap "SELECT JEWELLERY ▼" to open
+///   • Remove All button (hidden in 360 mode)
+///   • Remove Selected button (PlaceOnRoom mode only — shown when item selected)
+///   • Placement hint banner ("Tap a surface to place") fades after first place
+///   • AR scanning overlay ("Scanning for surfaces…") fades once plane found
 /// </summary>
 public class SharedJewelryUI : MonoBehaviour
 {
-    // ── Scene identity ────────────────────────────────────────────────
+    // ── Scene identity ─────────────────────────────────────────────────
     public enum Mode { Scene360, PlaceOnRoom, TryOn }
 
     [Header("Scene Setup")]
-    [Tooltip("Which scene is this UI instance running in?")]
     public Mode sceneMode = Mode.TryOn;
-
-    [Tooltip("Human-readable title shown in the top bar")]
     public string sceneTitle = "Try-On";
 
-    [Header("References (assign in Inspector)")]
-    [Tooltip("Required for PlaceOnRoom and TryOn scenes")]
+    [Header("References")]
     public JewelryManager jewelryManager;
-
-    [Tooltip("Main Menu scene name — used by Back button")]
     public string mainMenuSceneName = "MainMenuScene";
-
-    [Tooltip("Optional: camera used for screenshot. Falls back to Camera.main")]
     public Camera captureCamera;
 
-    // ── Layout constants (ref 1080×1920) ─────────────────────────────
+    [Header("PlaceOnRoom Options")]
+    [Tooltip("If true, the AR scene popup only shows categories with JewelryType.PlaceOnRoom.\n" +
+             "If false (default), ALL categories are shown and all route to PlacementManager.")]
+    public bool restrictARSceneToPlaceOnRoomType = false;
+
+    // ── Layout constants (ref 1080×1920) ──────────────────────────────
     private const float TOP_H = 130f;
     private const float STRIP_H = 300f;
     private const float REMOVE_H = 72f;
@@ -59,23 +67,26 @@ public class SharedJewelryUI : MonoBehaviour
     private const float POPUP_W = 500f;
     private const float ROW_H = 88f;
     private const float ROW_GAP = 5f;
-    private const float BTN_SIDE = 90f;   // square back/capture buttons
+    private const float BTN_SIDE = 90f;
+    private const float HINT_H = 80f;
 
-    // ── Brand colors ──────────────────────────────────────────────────
+    // ── Colors ─────────────────────────────────────────────────────────
     private static readonly Color C_TOP = new Color(0.06f, 0.06f, 0.09f, 0.97f);
     private static readonly Color C_STRIP = new Color(0.06f, 0.06f, 0.09f, 0.97f);
     private static readonly Color C_GOLD = new Color(0.95f, 0.80f, 0.25f, 1.00f);
     private static readonly Color C_LABEL = new Color(0.13f, 0.13f, 0.18f, 1.00f);
     private static readonly Color C_BTN = new Color(0.18f, 0.18f, 0.26f, 1.00f);
     private static readonly Color C_REMOVE = new Color(0.58f, 0.10f, 0.10f, 1.00f);
+    private static readonly Color C_REM_SEL = new Color(0.80f, 0.40f, 0.05f, 1.00f);
     private static readonly Color C_POPUP_BG = new Color(0.10f, 0.10f, 0.14f, 0.99f);
     private static readonly Color C_ROW_OFF = new Color(0.18f, 0.18f, 0.25f, 1.00f);
     private static readonly Color C_ROW_ON = new Color(0.88f, 0.65f, 0.10f, 1.00f);
     private static readonly Color C_CARD_BG = new Color(0.14f, 0.14f, 0.20f, 1.00f);
     private static readonly Color C_CARD_SEL = new Color(0.90f, 0.70f, 0.15f, 1.00f);
     private static readonly Color C_OVERLAY = new Color(0.00f, 0.00f, 0.00f, 0.50f);
+    private static readonly Color C_HINT_BG = new Color(0.05f, 0.05f, 0.08f, 0.90f);
 
-    // ── Runtime ───────────────────────────────────────────────────────
+    // ── Runtime state ──────────────────────────────────────────────────
     private Font _font;
     private Text _catLabel;
     private RectTransform _stripContent;
@@ -88,121 +99,122 @@ public class SharedJewelryUI : MonoBehaviour
     private List<Text> _rowTxts = new List<Text>();
     private List<GameObject> _cards = new List<GameObject>();
 
-    // Categories visible in this scene (360 hides Bangle/Ring)
     private List<int> _visibleCatIndices = new List<int>();
 
+    // PlaceOnRoom extras
+    private GameObject _hintBanner;
+    private Text _hintText;
+    private bool _hintDismissed;
+    private GameObject _removeSel;
+
     // ═════════════════════════════════════════════════════════════════
-    void Start()
-    {
-        StartCoroutine(Build());
-    }
+    //  BUILD
+    // ═════════════════════════════════════════════════════════════════
+
+    void Start() => StartCoroutine(Build());
 
     IEnumerator Build()
     {
         yield return new WaitForSeconds(0.15f);
 
         _font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
-        if (_font == null) { Debug.LogError("[SharedJewelryUI] Font missing!"); yield break; }
+        if (_font == null) { Debug.LogError("[SharedJewelryUI] Built-in font not found!"); yield break; }
 
-        // ── Canvas ────────────────────────────────────────────────────
         var cgo = new GameObject("SharedJewelryCanvas");
         var cvs = cgo.AddComponent<Canvas>();
         cvs.renderMode = RenderMode.ScreenSpaceOverlay;
         cvs.sortingOrder = 30000;
+
         var sc = cgo.AddComponent<CanvasScaler>();
         sc.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
         sc.referenceResolution = new Vector2(1080, 1920);
         sc.matchWidthOrHeight = 0.5f;
-        cgo.AddComponent<GraphicRaycaster>();
 
+        cgo.AddComponent<GraphicRaycaster>();
         var cv = cvs.GetComponent<RectTransform>();
 
         BuildTopBar(cv);
         BuildItemStrip(cv);
-        if (sceneMode != Mode.Scene360)
-            BuildRemoveBar(cv);
+        if (sceneMode != Mode.Scene360) BuildRemoveBar(cv);
         BuildOverlay(cv);
         BuildPopup(cv);
         BuildVisibleCategoryList();
 
-        Debug.Log($"[SharedJewelryUI] Built for mode: {sceneMode}");
+        if (sceneMode == Mode.PlaceOnRoom)
+        {
+            BuildHintBanner(cv);
+            WireUpPlacementEvents();
+        }
+
+        Debug.Log("[SharedJewelryUI] Built for mode: " + sceneMode +
+                  " | visible categories: " + _visibleCatIndices.Count);
     }
 
     // ═════════════════════════════════════════════════════════════════
     //  TOP BAR
     // ═════════════════════════════════════════════════════════════════
+
     void BuildTopBar(RectTransform cv)
     {
         var bar = MkPanel("TopBar", cv, C_TOP,
             new Vector2(0, 1), new Vector2(1, 1), new Vector2(0.5f, 1),
             new Vector2(0, TOP_H), Vector2.zero);
 
-        // ── Back button (left) ─────────────────────────────────────
         var back = MkPanel("BackBtn", Rt(bar), C_BTN,
             new Vector2(0, 0), new Vector2(0, 1), new Vector2(0, 0.5f),
             new Vector2(BTN_SIDE, 0), Vector2.zero);
         MkText(back, "< BACK", 22, FontStyle.Bold, Color.white, TextAnchor.MiddleCenter);
         MkBtn(back, GoToMainMenu);
 
-        // ── Capture button (right) ──────────────────────────────────
-        var cap = MkPanel("CaptureBtn", Rt(bar), C_BTN,
-            new Vector2(1, 0), new Vector2(1, 1), new Vector2(1, 0.5f),
-            new Vector2(BTN_SIDE, 0), Vector2.zero);
-        MkText(cap, "[ ]", 28, FontStyle.Bold, C_GOLD, TextAnchor.MiddleCenter);
-        MkBtn(cap, TakeScreenshot);
+        // Screenshot button removed
 
-        // ── Scene title + category label (centre) ───────────────────
         var centre = MkPanel("Centre", Rt(bar), new Color(0, 0, 0, 0),
             new Vector2(0, 0), new Vector2(1, 1), new Vector2(0.5f, 0.5f),
             Vector2.zero, Vector2.zero);
         Rt(centre).offsetMin = new Vector2(BTN_SIDE + 4f, 0);
-        Rt(centre).offsetMax = new Vector2(-(BTN_SIDE + 4f), 0);
+        Rt(centre).offsetMax = new Vector2(-4f, 0);
 
-        // Brand tag top-right of centre area
         var brand = MkPanel("Brand", Rt(centre), new Color(0, 0, 0, 0),
             new Vector2(1, 0.5f), new Vector2(1, 1), new Vector2(1, 0.5f),
             new Vector2(120, 0), Vector2.zero);
         MkText(brand, "SDS", 24, FontStyle.Bold, C_GOLD, TextAnchor.MiddleRight);
 
-        // Scene title (top half)
         var titleGo = MkPanel("Title", Rt(centre), new Color(0, 0, 0, 0),
             new Vector2(0, 0.5f), new Vector2(1, 1), new Vector2(0.5f, 0.5f),
             Vector2.zero, Vector2.zero);
-        Rt(titleGo).offsetMax = new Vector2(-130, 0); // leave room for SDS brand
+        Rt(titleGo).offsetMax = new Vector2(-130, 0);
         MkText(titleGo, sceneTitle.ToUpper(), 28, FontStyle.Bold,
                new Color(0.85f, 0.85f, 0.85f), TextAnchor.MiddleLeft, pad: 12f);
 
-        // Category label (bottom half) — "SELECT JEWELLERY  ▼  Earrings"
         var catRow = MkPanel("CatRow", Rt(centre), C_LABEL,
             new Vector2(0, 0), new Vector2(1, 0.5f), new Vector2(0.5f, 0.5f),
-            Vector2.zero, new Vector2(0, 0));
+            Vector2.zero, Vector2.zero);
         Rt(catRow).offsetMin = new Vector2(0, 6);
         Rt(catRow).offsetMax = new Vector2(0, -2);
 
-        // "SELECT JEWELLERY" label + dropdown arrow
-        MkText(catRow, "SELECT JEWELLERY  ▼", 20, FontStyle.Normal,
+        MkText(catRow, "SELECT JEWELLERY  \u25BC", 20, FontStyle.Normal,
                new Color(0.60f, 0.60f, 0.65f), TextAnchor.MiddleLeft, pad: 12f);
         MkBtn(catRow, TogglePopup);
 
-        // active category name shown right-side
         var catNameGo = MkPanel("CatName", Rt(catRow), new Color(0, 0, 0, 0),
             new Vector2(0.4f, 0), new Vector2(1, 1), new Vector2(1, 0.5f),
             Vector2.zero, Vector2.zero);
-        _catLabel = MkText(catNameGo, "— tap to select —", 20, FontStyle.Bold,
+        _catLabel = MkText(catNameGo, "\u2014 tap to select \u2014", 20, FontStyle.Bold,
                            C_GOLD, TextAnchor.MiddleRight, pad: 12f);
     }
 
     // ═════════════════════════════════════════════════════════════════
-    //  BOTTOM ITEM STRIP (horizontal scroll)
+    //  BOTTOM ITEM STRIP
     // ═════════════════════════════════════════════════════════════════
+
     void BuildItemStrip(RectTransform cv)
     {
         float bottomOffset = (sceneMode != Mode.Scene360) ? REMOVE_H : 0f;
+        if (sceneMode == Mode.PlaceOnRoom) bottomOffset += HINT_H;
 
         var strip = MkPanel("ItemStrip", cv, C_STRIP,
             new Vector2(0, 0), new Vector2(1, 0), new Vector2(0.5f, 0),
             new Vector2(0, STRIP_H), new Vector2(0, bottomOffset));
-        var srt = Rt(strip);
 
         var sr = strip.AddComponent<ScrollRect>();
         sr.horizontal = true; sr.vertical = false;
@@ -210,11 +222,10 @@ public class SharedJewelryUI : MonoBehaviour
         sr.scrollSensitivity = 60f;
 
         var vpGo = new GameObject("VP", typeof(RectTransform));
-        vpGo.transform.SetParent(srt, false);
+        vpGo.transform.SetParent(Rt(strip), false);
         var vpRt = vpGo.GetComponent<RectTransform>();
         vpRt.anchorMin = Vector2.zero; vpRt.anchorMax = Vector2.one;
-        vpRt.pivot = Vector2.zero;
-        vpRt.sizeDelta = Vector2.zero;
+        vpRt.pivot = Vector2.zero; vpRt.sizeDelta = Vector2.zero;
         vpRt.offsetMin = new Vector2(6, 6);
         vpRt.offsetMax = new Vector2(-6, -6);
         vpGo.AddComponent<RectMask2D>();
@@ -233,23 +244,114 @@ public class SharedJewelryUI : MonoBehaviour
     }
 
     // ═════════════════════════════════════════════════════════════════
-    //  REMOVE ALL BAR (hidden in 360 mode)
+    //  REMOVE BARS
     // ═════════════════════════════════════════════════════════════════
+
     void BuildRemoveBar(RectTransform cv)
     {
+        // Remove All
+        float removeAllY = (sceneMode == Mode.PlaceOnRoom) ? HINT_H : 0f;
         var bar = MkPanel("RemoveBar", cv, C_REMOVE,
             new Vector2(0, 0), new Vector2(1, 0), new Vector2(0.5f, 0),
-            new Vector2(0, REMOVE_H), Vector2.zero);
-        MkText(bar, "✕  REMOVE ALL", 32, FontStyle.Bold, Color.white, TextAnchor.MiddleCenter);
-        MkBtn(bar, () =>
+            new Vector2(0, REMOVE_H), new Vector2(0, removeAllY));
+
+        if (sceneMode == Mode.PlaceOnRoom)
         {
-            if (jewelryManager != null) jewelryManager.RemoveAll();
-        });
+            // Split: left = Remove Selected, right = Remove All
+            var remSelGo = MkPanel("RemSel", Rt(bar), C_REM_SEL,
+                Vector2.zero, new Vector2(0.5f, 1), new Vector2(0, 0.5f),
+                Vector2.zero, Vector2.zero);
+            Rt(remSelGo).offsetMax = new Vector2(-1, 0);
+            MkText(remSelGo, "\u2715 Remove Selected", 26, FontStyle.Bold, Color.white, TextAnchor.MiddleCenter);
+            MkBtn(remSelGo, RemoveSelected);
+            _removeSel = remSelGo;
+
+            var remAllGo = MkPanel("RemAll", Rt(bar), C_REMOVE,
+                new Vector2(0.5f, 0), Vector2.one, new Vector2(1, 0.5f),
+                Vector2.zero, Vector2.zero);
+            MkText(remAllGo, "\u2715 Remove All", 26, FontStyle.Bold, Color.white, TextAnchor.MiddleCenter);
+            MkBtn(remAllGo, () => { if (jewelryManager != null) jewelryManager.RemoveAll(); });
+        }
+        else
+        {
+            MkText(bar, "\u2715  REMOVE ALL", 32, FontStyle.Bold, Color.white, TextAnchor.MiddleCenter);
+            MkBtn(bar, () => { if (jewelryManager != null) jewelryManager.RemoveAll(); });
+        }
+    }
+
+    void RemoveSelected()
+    {
+        if (jewelryManager != null && jewelryManager.placementManager != null)
+            jewelryManager.placementManager.RemoveSelected();
     }
 
     // ═════════════════════════════════════════════════════════════════
-    //  OVERLAY
+    //  PLACEMENT HINT BANNER  (PlaceOnRoom only)
     // ═════════════════════════════════════════════════════════════════
+
+    void BuildHintBanner(RectTransform cv)
+    {
+        _hintBanner = MkPanel("HintBanner", cv, C_HINT_BG,
+            new Vector2(0, 0), new Vector2(1, 0), new Vector2(0.5f, 0),
+            new Vector2(0, HINT_H), Vector2.zero);
+        _hintText = MkText(_hintBanner,
+            "\U0001F4F1 Scanning for surfaces... move your device slowly",
+            24, FontStyle.Normal, new Color(0.75f, 0.75f, 0.80f),
+            TextAnchor.MiddleCenter);
+    }
+
+    void WireUpPlacementEvents()
+    {
+        if (jewelryManager == null || jewelryManager.placementManager == null) return;
+        var pm = jewelryManager.placementManager;
+        pm.OnItemPlaced += () =>
+        {
+            if (!_hintDismissed)
+            {
+                _hintDismissed = true;
+                StartCoroutine(FadeOutHint());
+            }
+        };
+    }
+
+    IEnumerator FadeOutHint()
+    {
+        if (_hintBanner == null) yield break;
+        var img = _hintBanner.GetComponent<Image>();
+        float t = 0f;
+        float dur = 0.6f;
+        Color startC = img.color;
+        Color startT = _hintText.color;
+        while (t < dur)
+        {
+            t += Time.deltaTime;
+            float a = 1f - (t / dur);
+            img.color = new Color(startC.r, startC.g, startC.b, startC.a * a);
+            _hintText.color = new Color(startT.r, startT.g, startT.b, startT.a * a);
+            yield return null;
+        }
+        _hintBanner.SetActive(false);
+    }
+
+    /// <summary>
+    /// Call from ARPlaneManager.planesChanged to update the scanning hint text.
+    /// Wire this up in your ARScene controller script.
+    /// </summary>
+    public void NotifyPlanesDetected(int count)
+    {
+        if (_hintText == null || _hintDismissed) return;
+        _hintText.text = count > 0
+            ? "\u2713 Surface ready — tap to place jewelry"
+            : "\U0001F4F1 Scanning for surfaces... move your device slowly";
+        _hintText.color = count > 0
+            ? new Color(0.55f, 0.90f, 0.55f)
+            : new Color(0.75f, 0.75f, 0.80f);
+    }
+
+    // ═════════════════════════════════════════════════════════════════
+    //  OVERLAY + POPUP
+    // ═════════════════════════════════════════════════════════════════
+
     void BuildOverlay(RectTransform cv)
     {
         _overlay = MkPanel("Overlay", cv, C_OVERLAY,
@@ -259,9 +361,6 @@ public class SharedJewelryUI : MonoBehaviour
         MkBtn(_overlay, ClosePopup);
     }
 
-    // ═════════════════════════════════════════════════════════════════
-    //  CATEGORY POPUP
-    // ═════════════════════════════════════════════════════════════════
     void BuildPopup(RectTransform cv)
     {
         _popupRoot = MkPanel("Popup", cv, C_POPUP_BG,
@@ -270,73 +369,91 @@ public class SharedJewelryUI : MonoBehaviour
         Rt(_popupRoot).offsetMin = new Vector2(0, STRIP_H);
         Rt(_popupRoot).offsetMax = new Vector2(POPUP_W, -TOP_H);
 
-        // Gold left-border accent
-        var bdr = MkPanel("Border", Rt(_popupRoot), C_GOLD,
+        MkPanel("Border", Rt(_popupRoot), C_GOLD,
             new Vector2(1, 0), new Vector2(1, 1), new Vector2(1, 0.5f),
             new Vector2(4, 0), Vector2.zero);
-        bdr.GetComponent<Button>()?.onClick.RemoveAllListeners();
 
         if (jewelryManager == null || jewelryManager.categories == null)
-        {
-            _popupRoot.SetActive(false);
-            return;
-        }
+        { _popupRoot.SetActive(false); return; }
 
-        // Build a row per category
         float y = -ROW_GAP;
         for (int i = 0; i < jewelryManager.categories.Length; i++)
         {
             var cat = jewelryManager.categories[i];
             int ci = i;
 
-            // 360 View skips hand-jewelry categories
-            if (sceneMode == Mode.Scene360 &&
-                (cat.type == JewelryType.Bangle || cat.type == JewelryType.Ring))
-                continue;
+            // ── BUG FIX: use the corrected filter ──
+            if (!IsCategoryVisibleInMode(cat.type)) continue;
 
             var row = MkPanel("Row_" + i, Rt(_popupRoot), C_ROW_OFF,
                 new Vector2(0, 1), new Vector2(1, 1), new Vector2(0.5f, 1),
-                new Vector2(-12, ROW_H), new Vector2(0, y));
+                new Vector2(0, ROW_H), new Vector2(0, y));
             Rt(row).offsetMin = new Vector2(8, 0);
             Rt(row).offsetMax = new Vector2(-12, 0);
             Rt(row).anchoredPosition = new Vector2(0, y);
             Rt(row).sizeDelta = new Vector2(0, ROW_H);
 
             _rowBgs.Add(row.GetComponent<Image>());
-
-            var txt = MkText(row, cat.categoryName, 30, FontStyle.Bold,
-                             Color.white, TextAnchor.MiddleLeft, pad: 20f);
-            _rowTxts.Add(txt);
-
+            _rowTxts.Add(MkText(row, cat.categoryName, 30, FontStyle.Bold,
+                                Color.white, TextAnchor.MiddleLeft, pad: 20f));
             MkBtn(row, () => OnCategoryTapped(ci));
 
-            y -= (ROW_H + ROW_GAP);
+            y -= ROW_H + ROW_GAP;
+        }
+
+        // Warn if no categories were shown
+        if (_rowBgs.Count == 0)
+        {
+            Debug.LogWarning("[SharedJewelryUI] No categories visible for mode: " + sceneMode +
+                "\nCheck that your JewelryCategory types match the scene mode, " +
+                "or set 'restrictARSceneToPlaceOnRoomType = false'.");
         }
 
         _popupRoot.SetActive(false);
     }
 
-    // ═════════════════════════════════════════════════════════════════
-    //  Compute which category indices are visible for THIS scene mode
-    // ═════════════════════════════════════════════════════════════════
+    // ── Category visibility filter ─────────────────────────────────────
+    //
+    //  ROOT BUG FIX IS HERE:
+    //  PlaceOnRoom mode previously returned true ONLY for JewelryType.PlaceOnRoom.
+    //  Default is now to show ALL categories and let PlacementManager handle placement.
+    //  Toggle restrictARSceneToPlaceOnRoomType = true in Inspector to opt back in.
+    //
+    bool IsCategoryVisibleInMode(JewelryType type)
+    {
+        switch (sceneMode)
+        {
+            case Mode.Scene360:
+                return type == JewelryType.Earrings || type == JewelryType.Necklace;
+
+            case Mode.PlaceOnRoom:
+                // FIX: show all categories unless explicitly restricted
+                if (restrictARSceneToPlaceOnRoomType)
+                    return type == JewelryType.PlaceOnRoom;
+                return true;   // ← was 'return type == JewelryType.PlaceOnRoom;' — this was the bug
+
+            case Mode.TryOn:
+            default:
+                return type == JewelryType.Earrings
+                    || type == JewelryType.Necklace
+                    || type == JewelryType.Bangle
+                    || type == JewelryType.Ring;
+        }
+    }
+
     void BuildVisibleCategoryList()
     {
         _visibleCatIndices.Clear();
         if (jewelryManager == null || jewelryManager.categories == null) return;
-
         for (int i = 0; i < jewelryManager.categories.Length; i++)
-        {
-            var type = jewelryManager.categories[i].type;
-            if (sceneMode == Mode.Scene360 &&
-                (type == JewelryType.Bangle || type == JewelryType.Ring))
-                continue;
-            _visibleCatIndices.Add(i);
-        }
+            if (IsCategoryVisibleInMode(jewelryManager.categories[i].type))
+                _visibleCatIndices.Add(i);
     }
 
     // ═════════════════════════════════════════════════════════════════
     //  POPUP TOGGLE
     // ═════════════════════════════════════════════════════════════════
+
     void TogglePopup() { if (_popupOpen) ClosePopup(); else OpenPopup(); }
 
     void OpenPopup()
@@ -354,8 +471,9 @@ public class SharedJewelryUI : MonoBehaviour
     }
 
     // ═════════════════════════════════════════════════════════════════
-    //  CATEGORY SELECTED
+    //  CATEGORY TAPPED
     // ═════════════════════════════════════════════════════════════════
+
     void OnCategoryTapped(int catIdx)
     {
         if (jewelryManager == null) return;
@@ -364,23 +482,17 @@ public class SharedJewelryUI : MonoBehaviour
         _activeCat = catIdx;
         var cat = jewelryManager.categories[catIdx];
 
-        // Camera switch (TryOn only — JewelryManager handles it)
-        if (sceneMode == Mode.TryOn)
+        if (sceneMode == Mode.TryOn || sceneMode == Mode.PlaceOnRoom)
             jewelryManager.OnCategorySelected(catIdx);
 
-        // Update label
         if (_catLabel != null) _catLabel.text = cat.categoryName.ToUpper();
 
-        // Highlight rows
-        // Row index differs from catIdx because 360 skips some categories.
-        // Match by rebuilding row highlight based on _visibleCatIndices.
         int rowIdx = _visibleCatIndices.IndexOf(catIdx);
         for (int r = 0; r < _rowBgs.Count; r++)
         {
             bool on = (r == rowIdx);
             if (_rowBgs[r]) _rowBgs[r].color = on ? C_ROW_ON : C_ROW_OFF;
-            if (_rowTxts[r]) _rowTxts[r].color = on
-                ? new Color(0.05f, 0.05f, 0.05f) : Color.white;
+            if (_rowTxts[r]) _rowTxts[r].color = on ? new Color(0.05f, 0.05f, 0.05f) : Color.white;
         }
 
         ClosePopup();
@@ -388,26 +500,25 @@ public class SharedJewelryUI : MonoBehaviour
     }
 
     // ═════════════════════════════════════════════════════════════════
-    //  SPAWN ITEM CARDS
+    //  ITEM CARDS
     // ═════════════════════════════════════════════════════════════════
+
     IEnumerator SpawnCards(JewelryCategory cat)
     {
         foreach (var c in _cards) if (c) Destroy(c);
         _cards.Clear();
         _stripContent.sizeDelta = new Vector2(0, CARD_H);
-
         yield return null;
 
         if (cat.items == null || cat.items.Length == 0)
         {
-            Debug.LogWarning($"[SharedJewelryUI] No items in '{cat.categoryName}'");
+            Debug.LogWarning("[SharedJewelryUI] No items in '" + cat.categoryName + "'");
             yield break;
         }
 
         int count = cat.items.Length;
         float totalW = count * CARD_W + (count + 1) * CARD_GAP;
         _stripContent.sizeDelta = new Vector2(totalW, CARD_H);
-
         yield return null;
 
         for (int i = 0; i < cat.items.Length; i++)
@@ -422,7 +533,6 @@ public class SharedJewelryUI : MonoBehaviour
                 new Vector2(0, 0.5f), new Vector2(0, 0.5f), new Vector2(0, 0.5f),
                 new Vector2(CARD_W, CARD_H), new Vector2(xP, 0));
 
-            // Thumbnail
             var thumb = MkPanel("Thumb", Rt(card), C_CARD_BG,
                 Vector2.zero, Vector2.one, new Vector2(0.5f, 0.5f),
                 Vector2.zero, Vector2.zero);
@@ -437,14 +547,11 @@ public class SharedJewelryUI : MonoBehaviour
                 img.preserveAspect = true;
             }
 
-            // Name strip
             var ns = MkPanel("NameStrip", Rt(card), new Color(0, 0, 0, 0.88f),
                 new Vector2(0, 0), new Vector2(1, 0), new Vector2(0.5f, 0),
                 new Vector2(0, 48), Vector2.zero);
-            MkText(ns, item.itemName, 19, FontStyle.Bold,
-                   Color.white, TextAnchor.MiddleCenter);
+            MkText(ns, item.itemName, 19, FontStyle.Bold, Color.white, TextAnchor.MiddleCenter);
 
-            // Click → equip
             Image cardImg = card.GetComponent<Image>();
             MkBtn(card, () =>
             {
@@ -457,7 +564,7 @@ public class SharedJewelryUI : MonoBehaviour
                     if (jewelryManager != null)
                         jewelryManager.EquipJewelryByIndex(_activeCat, ci);
                 }
-                else // 360 View
+                else
                 {
                     On360ItemSelected(_activeCat, ci);
                 }
@@ -466,47 +573,31 @@ public class SharedJewelryUI : MonoBehaviour
             _cards.Add(card);
         }
 
-        Debug.Log($"[SharedJewelryUI] {_cards.Count} cards for '{cat.categoryName}'");
+        Debug.Log("[SharedJewelryUI] " + _cards.Count + " cards for '" + cat.categoryName + "'");
     }
 
     // ═════════════════════════════════════════════════════════════════
-    //  360 VIEW — item selection hook
-    //  Override or expand this for your 3D rotation viewer logic.
+    //  360 VIEW HANDLER
     // ═════════════════════════════════════════════════════════════════
+
     protected virtual void On360ItemSelected(int catIdx, int itemIdx)
     {
         if (jewelryManager == null) return;
-        // In 360 mode, show the 3D prefab in the rotation viewer.
-        // Find your Jewelry3DViewer component and call its display method.
         var viewer = FindObjectOfType<Jewelry3DViewer>();
         if (viewer != null)
-        {
-            var item = jewelryManager.categories[catIdx].items[itemIdx];
-            viewer.DisplayItem(item);
-        }
+            viewer.DisplayItem(jewelryManager.categories[catIdx].items[itemIdx]);
         else
-        {
             Debug.LogWarning("[SharedJewelryUI] Jewelry3DViewer not found in scene.");
-        }
     }
 
     // ═════════════════════════════════════════════════════════════════
-    //  BACK → MAIN MENU
-    //
-    //  UPDATED: Resets and stops the AR session before loading the main
-    //  menu so the next AR scene always starts with a clean camera state.
-    //  Without this, back-camera state from JewelryARScene would bleed
-    //  into FaceTryOn (and vice-versa).
+    //  BACK BUTTON
     // ═════════════════════════════════════════════════════════════════
+
     void GoToMainMenu()
     {
-        // 1. Clean up all active jewelry / pending coroutines.
-        if (jewelryManager != null)
-            jewelryManager.RemoveAll();
+        if (jewelryManager != null) jewelryManager.RemoveAll();
 
-        // 2. Reset & stop the AR session BEFORE loading the new scene.
-        //    Priority: use ARSessionResetter if present (recommended),
-        //    otherwise fall back to direct ARSession manipulation.
         var resetter = FindObjectOfType<ARSessionResetter>();
         if (resetter != null)
         {
@@ -514,40 +605,32 @@ public class SharedJewelryUI : MonoBehaviour
         }
         else
         {
-            // Fallback path — works even without ARSessionResetter attached.
             var arSession = FindObjectOfType<ARSession>();
             if (arSession != null)
             {
                 arSession.Reset();
                 arSession.enabled = false;
-                Debug.Log("[SharedJewelryUI] ARSession reset on Back (fallback path).");
             }
         }
 
-        // 3. Load the main menu.
         SceneManager.LoadScene(mainMenuSceneName);
     }
 
     // ═════════════════════════════════════════════════════════════════
     //  SCREENSHOT
     // ═════════════════════════════════════════════════════════════════
+
     void TakeScreenshot()
     {
-        string fileName = $"SDS_Jewelry_{System.DateTime.Now:yyyyMMdd_HHmmss}.png";
-
-#if UNITY_ANDROID || UNITY_IOS
-        string path = System.IO.Path.Combine(Application.persistentDataPath, fileName);
+        string fileName = "SDS_Jewelry_" + System.DateTime.Now.ToString("yyyyMMdd_HHmmss") + ".png";
         ScreenCapture.CaptureScreenshot(fileName);
-        Debug.Log($"[SharedJewelryUI] Screenshot saved: {fileName}");
-#else
-        ScreenCapture.CaptureScreenshot(fileName);
-        Debug.Log($"[SharedJewelryUI] Screenshot: {fileName}");
-#endif
+        Debug.Log("[SharedJewelryUI] Screenshot saved: " + fileName);
     }
 
     // ═════════════════════════════════════════════════════════════════
-    //  HELPERS
+    //  UI BUILDER HELPERS
     // ═════════════════════════════════════════════════════════════════
+
     RectTransform Rt(GameObject go) => go.GetComponent<RectTransform>();
 
     GameObject MkPanel(string name, RectTransform parent, Color color,
@@ -571,8 +654,9 @@ public class SharedJewelryUI : MonoBehaviour
         rt.anchorMin = Vector2.zero; rt.anchorMax = Vector2.one;
         rt.offsetMin = new Vector2(pad, 2f); rt.offsetMax = new Vector2(-4f, -2f);
         var t = go.AddComponent<Text>();
-        t.text = text; t.font = _font; t.fontSize = size; t.fontStyle = style;
-        t.color = color; t.alignment = align; t.raycastTarget = false;
+        t.text = text; t.font = _font; t.fontSize = size;
+        t.fontStyle = style; t.color = color; t.alignment = align;
+        t.raycastTarget = false;
         t.horizontalOverflow = HorizontalWrapMode.Overflow;
         t.verticalOverflow = VerticalWrapMode.Truncate;
         return t;
@@ -591,13 +675,12 @@ public class SharedJewelryUI : MonoBehaviour
     }
 }
 
-/// <summary>
-/// Stub interface for your 360 View scene's 3D item display component.
-/// Replace with your actual implementation in Jewelry3DScene.
-/// </summary>
+// ═════════════════════════════════════════════════════════════════════
+//  Jewelry3DViewer — 360 View scene model display stub.
+// ═════════════════════════════════════════════════════════════════════
 public class Jewelry3DViewer : MonoBehaviour
 {
-    [Tooltip("Root transform where the 3D jewelry model is placed for rotation preview")]
+    [Tooltip("Root transform where the 3D model is placed for the rotation preview")]
     public Transform displayMount;
 
     private GameObject _current;
@@ -606,9 +689,10 @@ public class Jewelry3DViewer : MonoBehaviour
     {
         if (_current != null) Destroy(_current);
         if (item?.jewelryPrefab == null) return;
+
         _current = Instantiate(item.jewelryPrefab, displayMount);
         _current.transform.localPosition = Vector3.zero;
         _current.transform.localRotation = Quaternion.identity;
-        Debug.Log($"[Jewelry3DViewer] Showing: {item.itemName}");
+        Debug.Log("[Jewelry3DViewer] Displaying: " + item.itemName);
     }
 }

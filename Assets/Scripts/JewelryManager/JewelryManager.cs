@@ -3,93 +3,112 @@ using System.Collections;
 using UnityEngine.XR.ARFoundation;
 
 /// <summary>
-/// JewelryManager — handles face jewelry (Earrings, Necklace)
-/// and hand jewelry (Bangle, Ring) with automatic camera switching.
+/// JewelryManager — central controller used by SharedJewelryUI across all three scenes.
 ///
-/// Face jewelry (Earrings/Necklace) → front/face AR camera
-/// Hand jewelry (Bangle/Ring)       → back camera
+/// Scene routing:
+///   TryOn      scene → Earrings/Necklace (face anchors) + Bangle/Ring (body placers)
+///   PlaceOnRoom scene → PlaceOnRoom type  (delegates to PlacementManager)
+///   360 View   scene → no equip calls; SharedJewelryUI routes to Jewelry3DViewer directly
 ///
-/// FIX v2:
-///  - Camera switches on CATEGORY selection (not per-item click).
-///  - RemoveAll() no longer forces front camera — it stays on whatever
-///    camera mode was last used by the active category.
-///  - _currentCameraIsBack tracks actual camera state so repeated
-///    same-direction switches are no-ops.
+/// FIX v3 changes:
+///   • Added JewelryType.PlaceOnRoom case in EquipJewelryByIndex — routes to PlacementManager.
+///   • OnCategorySelected now switches to back camera for PlaceOnRoom categories too.
+///   • RemoveAll now also calls PlacementManager.RemoveAll if assigned.
+///   • PlacementManager reference is optional — null-safe throughout.
 /// </summary>
 public class JewelryManager : MonoBehaviour
 {
     [Header("Jewelry Data")]
     public JewelryCategory[] categories;
 
-    [Header("Face AR Anchors (filled at runtime)")]
+    // ── Face AR (TryOn scene) ─────────────────────────────────────────
+    [Header("Face AR Anchors (TryOn scene — filled at runtime by face tracker)")]
     public Transform leftEarAnchor;
     public Transform rightEarAnchor;
     public Transform necklaceAnchor;
 
-    [Header("Hand Jewelry")]
+    // ── Hand/body AR (TryOn scene) ────────────────────────────────────
+    [Header("Hand Jewelry (TryOn scene)")]
     [Tooltip("BanglePlacer component on BangleAnchor GameObject")]
     public BanglePlacer banglePlacer;
 
     [Tooltip("RingPlacer component on RingAnchor GameObject")]
     public RingPlacer ringPlacer;
 
+    // ── PlaceOnRoom scene ─────────────────────────────────────────────
+    [Header("Place on Room scene")]
+    [Tooltip("PlacementManager in the JewelryARScene — assign only in that scene")]
+    public PlacementManager placementManager;
+
+    // ── Camera switching ──────────────────────────────────────────────
     [Header("Camera Switching")]
-    [Tooltip("ARCameraManager on the Main Camera — used to switch facing direction")]
+    [Tooltip("ARCameraManager on the Main Camera — switches facing direction")]
     public ARCameraManager arCameraManager;
 
-    // ── Face jewelry state ────────────────────────────────────────────
-    private GameObject activeLeftEarring;
-    private GameObject activeRightEarring;
-    private GameObject activeNecklace;
-    private GameObject pendingEarPrefab;
-    private GameObject pendingNecklacePrefab;
+    // ── Internal face AR state ────────────────────────────────────────
+    private GameObject _activeLeftEarring;
+    private GameObject _activeRightEarring;
+    private GameObject _activeNecklace;
+    private GameObject _pendingEarPrefab;
+    private JewelryItem _pendingNecklaceItem;   // stores full item so SpawnNecklace gets offsets
 
-    // ── Current camera mode ───────────────────────────────────────────
-    // Starts as front camera (face AR default).
+    // Tracks actual camera state to prevent redundant switches
     private bool _currentCameraIsBack = false;
 
-    // ── Anchor registration ───────────────────────────────────────────
+    // ═════════════════════════════════════════════════════════════════
+    //  ANCHOR REGISTRATION (called by face-tracking components at runtime)
+    // ═════════════════════════════════════════════════════════════════
 
     public void RegisterEarAnchors(Transform left, Transform right)
     {
         leftEarAnchor = left;
         rightEarAnchor = right;
-        if (pendingEarPrefab != null) { SpawnEarrings(pendingEarPrefab); pendingEarPrefab = null; }
+        if (_pendingEarPrefab != null)
+        {
+            SpawnEarrings(_pendingEarPrefab);
+            _pendingEarPrefab = null;
+        }
     }
 
     public void RegisterNecklaceAnchor(Transform anchor)
     {
         necklaceAnchor = anchor;
-        if (pendingNecklacePrefab != null) { SpawnNecklace(pendingNecklacePrefab); pendingNecklacePrefab = null; }
+        if (_pendingNecklaceItem != null)
+        {
+            SpawnNecklace(_pendingNecklaceItem);
+            _pendingNecklaceItem = null;
+        }
     }
 
-    // ── Called by JewelryUI when user taps a CATEGORY tab ────────────
-    /// <summary>
-    /// Switch camera based on category type.
-    /// Call this from JewelryUI.OnCategoryTapped BEFORE spawning items.
-    /// </summary>
+    // ═════════════════════════════════════════════════════════════════
+    //  CATEGORY SELECTED  (called by SharedJewelryUI before showing items)
+    //  Switches camera to the correct facing direction for this category.
+    // ═════════════════════════════════════════════════════════════════
+
     public void OnCategorySelected(int catIdx)
     {
         if (categories == null || catIdx < 0 || catIdx >= categories.Length) return;
-        JewelryCategory cat = categories[catIdx];
+        JewelryType type = categories[catIdx].type;
 
-        bool needsBack = (cat.type == JewelryType.Bangle || cat.type == JewelryType.Ring);
-        if (needsBack)
-            SwitchToBackCamera();
-        else
-            SwitchToFaceCamera();
+        bool needsBack = type == JewelryType.Bangle
+                      || type == JewelryType.Ring
+                      || type == JewelryType.PlaceOnRoom;
+
+        if (needsBack) SwitchToBackCamera();
+        else SwitchToFaceCamera();
     }
 
-    // ── Main entry point from JewelryUI (item click) ─────────────────
-    /// <summary>
-    /// Equip the selected item. Camera is already correct from OnCategorySelected.
-    /// This method no longer switches cameras.
-    /// </summary>
+    // ═════════════════════════════════════════════════════════════════
+    //  EQUIP ITEM  (called by SharedJewelryUI when user taps an item card)
+    // ═════════════════════════════════════════════════════════════════
+
     public void EquipJewelryByIndex(int catIdx, int itemIdx)
     {
         if (categories == null || catIdx < 0 || catIdx >= categories.Length) return;
+
         JewelryCategory cat = categories[catIdx];
         if (cat.items == null || itemIdx < 0 || itemIdx >= cat.items.Length) return;
+
         JewelryItem item = cat.items[itemIdx];
         if (item == null || item.jewelryPrefab == null)
         {
@@ -103,28 +122,194 @@ public class JewelryManager : MonoBehaviour
             case JewelryType.Necklace: EquipNecklace(item); break;
             case JewelryType.Bangle: EquipBangle(item); break;
             case JewelryType.Ring: EquipRing(item); break;
+            case JewelryType.PlaceOnRoom: EquipPlaceOnRoom(item); break;
         }
     }
 
-    // ── Camera switching ──────────────────────────────────────────────
+    // ═════════════════════════════════════════════════════════════════
+    //  EQUIP METHODS
+    // ═════════════════════════════════════════════════════════════════
 
-    private void SwitchToBackCamera()
+    // ── PlaceOnRoom — delegates entirely to PlacementManager ─────────
+    void EquipPlaceOnRoom(JewelryItem item)
     {
-        if (_currentCameraIsBack) return;           // already back — no-op
+        if (placementManager == null)
+        {
+            Debug.LogError("[JewelryManager] placementManager not assigned — cannot place on room. " +
+                           "Assign it in the JewelryARScene Inspector.");
+            return;
+        }
+        // Apply optional per-item scale before handing off
+        placementManager.SetActivePrefab(
+            item.jewelryPrefab,
+            item.itemName,
+            item.thumbnailImage,
+            item.placeOnRoomDefaultScale);
+        Debug.Log("[JewelryManager] PlaceOnRoom mode armed with: " + item.itemName);
+    }
+
+    // ── Bangle (back camera, body tracking) ──────────────────────────
+    void EquipBangle(JewelryItem item)
+    {
+        if (banglePlacer == null) { Debug.LogError("[JewelryManager] banglePlacer not assigned!"); return; }
+        banglePlacer.SetBanglePrefab(item.jewelryPrefab);
+    }
+
+    // ── Ring (back camera, body tracking) ────────────────────────────
+    void EquipRing(JewelryItem item)
+    {
+        if (ringPlacer == null) { Debug.LogError("[JewelryManager] ringPlacer not assigned!"); return; }
+        ringPlacer.SetRingPrefab(item.jewelryPrefab);
+    }
+
+    // ── Earrings (face camera) ────────────────────────────────────────
+    void EquipEarrings(JewelryItem item)
+    {
+        if (leftEarAnchor == null || rightEarAnchor == null)
+        {
+            _pendingEarPrefab = item.jewelryPrefab;
+            StartCoroutine(WaitAndSpawnEarrings(item.jewelryPrefab));
+        }
+        else
+        {
+            SpawnEarrings(item.jewelryPrefab);
+        }
+    }
+
+    // ── Necklace (face camera) ────────────────────────────────────────
+    void EquipNecklace(JewelryItem item)
+    {
+        if (necklaceAnchor == null)
+        {
+            _pendingNecklaceItem = item;
+            StartCoroutine(WaitAndSpawnNecklace(item));
+        }
+        else
+        {
+            SpawnNecklace(item);
+        }
+    }
+
+    // ═════════════════════════════════════════════════════════════════
+    //  WAIT COROUTINES  (face anchors arrive async from tracker)
+    // ═════════════════════════════════════════════════════════════════
+
+    IEnumerator WaitAndSpawnEarrings(GameObject prefab)
+    {
+        float t = 0f;
+        while ((leftEarAnchor == null || rightEarAnchor == null) && t < 30f)
+        { t += Time.deltaTime; yield return null; }
+
+        if (leftEarAnchor != null && rightEarAnchor != null && _pendingEarPrefab == prefab)
+        { SpawnEarrings(prefab); _pendingEarPrefab = null; }
+    }
+
+    IEnumerator WaitAndSpawnNecklace(JewelryItem item)
+    {
+        float t = 0f;
+        while (necklaceAnchor == null && t < 30f)
+        { t += Time.deltaTime; yield return null; }
+
+        if (necklaceAnchor != null && _pendingNecklaceItem == item)
+        { SpawnNecklace(item); _pendingNecklaceItem = null; }
+    }
+
+    // ═════════════════════════════════════════════════════════════════
+    //  SPAWN
+    // ═════════════════════════════════════════════════════════════════
+
+    void SpawnEarrings(GameObject prefab)
+    {
+        RemoveEarrings();
+        _activeLeftEarring = Instantiate(prefab, leftEarAnchor);
+        _activeLeftEarring.transform.localPosition = Vector3.zero;
+        _activeLeftEarring.transform.localRotation = Quaternion.Euler(0f, 180f, 0f);
+
+        _activeRightEarring = Instantiate(prefab, rightEarAnchor);
+        _activeRightEarring.transform.localPosition = Vector3.zero;
+        _activeRightEarring.transform.localRotation = Quaternion.Euler(0f, 180f, 0f);
+
+        Debug.Log("[JewelryManager] Earrings spawned: " + prefab.name);
+    }
+
+    void SpawnNecklace(JewelryItem item)
+    {
+        RemoveNecklace();
+        _activeNecklace = Instantiate(item.jewelryPrefab, necklaceAnchor);
+        _activeNecklace.transform.localPosition = item.necklaceLocalPositionOffset;
+        _activeNecklace.transform.localRotation = Quaternion.Euler(item.necklaceLocalRotationOffsetEuler);
+        _activeNecklace.transform.localScale = Vector3.Scale(
+            _activeNecklace.transform.localScale,
+            item.necklaceLocalScaleMultiplier);
+
+        // Optional helper components (only used if present on the prefab)
+        RuntimeNecklaceFixer.Apply(_activeNecklace);
+        NecklaceFitProfile fit = _activeNecklace.GetComponent<NecklaceFitProfile>();
+        if (fit != null) fit.Apply();
+
+        Debug.Log("[JewelryManager] Necklace spawned: " + item.itemName);
+    }
+
+    // ═════════════════════════════════════════════════════════════════
+    //  REMOVE
+    // ═════════════════════════════════════════════════════════════════
+
+    void RemoveEarrings()
+    {
+        if (_activeLeftEarring != null) Destroy(_activeLeftEarring);
+        if (_activeRightEarring != null) Destroy(_activeRightEarring);
+        _activeLeftEarring = _activeRightEarring = null;
+    }
+
+    void RemoveNecklace()
+    {
+        if (_activeNecklace != null) Destroy(_activeNecklace);
+        _activeNecklace = null;
+    }
+
+    /// <summary>
+    /// Removes all active jewelry across all modes.
+    /// Does NOT switch camera — stays on whatever mode the last category needed.
+    /// </summary>
+    public void RemoveAll()
+    {
+        // Face AR
+        RemoveEarrings();
+        RemoveNecklace();
+        _pendingEarPrefab = null;
+        _pendingNecklaceItem = null;
+
+        // Body tracking
+        if (banglePlacer != null) banglePlacer.ClearBangle();
+        if (ringPlacer != null) ringPlacer.ClearRing();
+
+        // PlaceOnRoom — remove all placed objects
+        if (placementManager != null) placementManager.RemoveAll();
+
+        Debug.Log("[JewelryManager] All jewelry removed. Camera unchanged.");
+    }
+
+    // ═════════════════════════════════════════════════════════════════
+    //  CAMERA SWITCHING
+    // ═════════════════════════════════════════════════════════════════
+
+    void SwitchToBackCamera()
+    {
+        if (_currentCameraIsBack) return;   // already back — no-op
         _currentCameraIsBack = true;
         SetCameraFacing(CameraFacingDirection.World);
         Debug.Log("[JewelryManager] Switched to BACK camera.");
     }
 
-    private void SwitchToFaceCamera()
+    void SwitchToFaceCamera()
     {
-        if (!_currentCameraIsBack) return;          // already front — no-op
+        if (!_currentCameraIsBack) return;  // already front — no-op
         _currentCameraIsBack = false;
         SetCameraFacing(CameraFacingDirection.User);
         Debug.Log("[JewelryManager] Switched to FACE camera.");
     }
 
-    private void SetCameraFacing(CameraFacingDirection direction)
+    void SetCameraFacing(CameraFacingDirection direction)
     {
         if (arCameraManager == null)
         {
@@ -134,120 +319,9 @@ public class JewelryManager : MonoBehaviour
         arCameraManager.requestedFacingDirection = direction;
     }
 
-    // ── Equip methods ─────────────────────────────────────────────────
-
-    void EquipBangle(JewelryItem item)
-    {
-        if (banglePlacer == null) { Debug.LogError("[JewelryManager] banglePlacer not assigned!"); return; }
-        banglePlacer.SetBanglePrefab(item.jewelryPrefab);
-    }
-
-    void EquipRing(JewelryItem item)
-    {
-        if (ringPlacer == null) { Debug.LogError("[JewelryManager] ringPlacer not assigned!"); return; }
-        ringPlacer.SetRingPrefab(item.jewelryPrefab);
-    }
-
-    void EquipEarrings(JewelryItem item)
-    {
-        if (leftEarAnchor == null || rightEarAnchor == null)
-        {
-            pendingEarPrefab = item.jewelryPrefab;
-            StartCoroutine(WaitAndSpawnEarrings(item.jewelryPrefab));
-        }
-        else SpawnEarrings(item.jewelryPrefab);
-    }
-
-    void EquipNecklace(JewelryItem item)
-    {
-        if (necklaceAnchor == null)
-        {
-            pendingNecklacePrefab = item.jewelryPrefab;
-            StartCoroutine(WaitAndSpawnNecklace(item.jewelryPrefab));
-        }
-        else SpawnNecklace(item.jewelryPrefab);
-    }
-
-    // ── Wait coroutines ───────────────────────────────────────────────
-
-    IEnumerator WaitAndSpawnEarrings(GameObject prefab)
-    {
-        float t = 0f;
-        while ((leftEarAnchor == null || rightEarAnchor == null) && t < 30f)
-        { t += Time.deltaTime; yield return null; }
-        if (leftEarAnchor != null && rightEarAnchor != null && pendingEarPrefab == prefab)
-        { SpawnEarrings(prefab); pendingEarPrefab = null; }
-    }
-
-    IEnumerator WaitAndSpawnNecklace(GameObject prefab)
-    {
-        float t = 0f;
-        while (necklaceAnchor == null && t < 30f)
-        { t += Time.deltaTime; yield return null; }
-        if (necklaceAnchor != null && pendingNecklacePrefab == prefab)
-        { SpawnNecklace(prefab); pendingNecklacePrefab = null; }
-    }
-
-    // ── Spawn ─────────────────────────────────────────────────────────
-
-    void SpawnEarrings(GameObject prefab)
-    {
-        RemoveEarrings();
-        activeLeftEarring = Instantiate(prefab, leftEarAnchor);
-        activeLeftEarring.transform.localPosition = Vector3.zero;
-        activeLeftEarring.transform.localRotation = Quaternion.Euler(0f, 180f, 0f);
-        activeRightEarring = Instantiate(prefab, rightEarAnchor);
-        activeRightEarring.transform.localPosition = Vector3.zero;
-        activeRightEarring.transform.localRotation = Quaternion.Euler(0f, 180f, 0f);
-        Debug.Log("[JewelryManager] Earrings spawned: " + prefab.name);
-    }
-
-    void SpawnNecklace(GameObject prefab)
-    {
-        RemoveNecklace();
-        activeNecklace = Instantiate(prefab, necklaceAnchor);
-        activeNecklace.transform.localPosition = Vector3.zero;
-        activeNecklace.transform.localRotation = Quaternion.identity;
-        RuntimeNecklaceFixer.Apply(activeNecklace);
-        NecklaceFitProfile fit = activeNecklace.GetComponent<NecklaceFitProfile>();
-        if (fit != null) fit.Apply();
-        Debug.Log("[JewelryManager] Necklace spawned: " + prefab.name);
-    }
-
-    // ── Remove ────────────────────────────────────────────────────────
-
-    void RemoveEarrings()
-    {
-        if (activeLeftEarring != null) Destroy(activeLeftEarring);
-        if (activeRightEarring != null) Destroy(activeRightEarring);
-        activeLeftEarring = activeRightEarring = null;
-    }
-
-    void RemoveNecklace()
-    {
-        if (activeNecklace != null) Destroy(activeNecklace);
-        activeNecklace = null;
-    }
-
-    /// <summary>
-    /// Removes all active jewelry.
-    /// Camera is NOT switched — it stays on whatever the active category needed.
-    /// If no hand jewelry was active, it was already on front camera anyway.
-    /// </summary>
-    public void RemoveAll()
-    {
-        RemoveEarrings();
-        RemoveNecklace();
-        if (banglePlacer != null) banglePlacer.ClearBangle();
-        if (ringPlacer != null) ringPlacer.ClearRing();
-        pendingEarPrefab = null;
-        pendingNecklacePrefab = null;
-        // ── NO camera switch here ──────────────────────────────────────
-        // The camera stays on whatever mode the last selected category needed.
-        // This prevents unwanted flipping to front camera when user taps
-        // "Remove All" while in Bangle/Ring (back-camera) mode.
-        Debug.Log("[JewelryManager] All jewelry removed. Camera unchanged.");
-    }
+    // ═════════════════════════════════════════════════════════════════
+    //  HELPERS
+    // ═════════════════════════════════════════════════════════════════
 
     public int CategoryCount => categories != null ? categories.Length : 0;
 }

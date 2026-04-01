@@ -1050,6 +1050,9 @@
           {
             "name": "BoxCollider",
             "scenes": [
+              "Assets/Scenes/FaceTryOn.unity",
+              "Assets/Scenes/Jewelry3DScene.unity",
+              "Assets/Scenes/JewelryARScene.unity",
               "Assets/Scenes/MainMenuScene.unity"
             ],
             "dependencyType": 0,
@@ -1076,6 +1079,8 @@
           {
             "name": "MeshCollider",
             "scenes": [
+              "Assets/Scenes/FaceTryOn.unity",
+              "Assets/Scenes/Jewelry3DScene.unity",
               "Assets/Scenes/JewelryARScene.unity"
             ],
             "dependencyType": 0,
