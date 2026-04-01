@@ -116,6 +116,16 @@ public class JewelryManager : MonoBehaviour
             return;
         }
 
+        // ── FIX: In JewelryARScene, PlacementManager is assigned.
+        // Route ALL category types to PlacementManager regardless of JewelryType,
+        // so Earrings / Necklace / Bangle / Ring all get placed on the AR plane.
+        // The switch below only runs in TryOn / 360 scenes where placementManager is null.
+        if (placementManager != null)
+        {
+            EquipPlaceOnRoom(item);
+            return;
+        }
+
         switch (cat.type)
         {
             case JewelryType.Earrings: EquipEarrings(item); break;
