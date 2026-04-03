@@ -6,15 +6,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 /// <summary>
-/// PlacementManager — fully fixed version.
-///
-/// FIXES:
-///   1. Jewelry placed ON the plane (not sinking) — Y lifted by bounds bottom offset.
-///   2. Any placed item selectable by tap — closest-hit raycast across all items.
-///   3. Rotate works correctly for every item — angle measured from ITEM screen centre.
-///   4. Pinch zoom works on whichever item is selected.
-///   5. Plane glows gold when detected — visible soft fill + gold outline.
-///   6. ARRaycastManager / ARPlaneManager found scene-wide if not on same GameObject.
+/// PlacementManager — plane glow removed.
 /// </summary>
 public class PlacementManager : MonoBehaviour
 {
@@ -54,22 +46,12 @@ public class PlacementManager : MonoBehaviour
     private GameObject _ring;
     private static readonly Color RING_COL = new Color(0.95f, 0.80f, 0.25f, 0.85f);
 
-    // ── Plane glow ─────────────────────────────────────────────────────
-    private Material _planeMat;
-    private static readonly Color PLANE_FILL_COL = new Color(0.95f, 0.80f, 0.20f, 0.18f);
-    private static readonly Color PLANE_LINE_COL = new Color(0.95f, 0.80f, 0.20f, 0.80f);
-
     // ── Inspector ──────────────────────────────────────────────────────
     [Header("Interaction")]
     public float longPressDuration = 1.5f;
     public float dragThresholdPx = 14f;
     public float minScaleFactor = 0.2f;
     public float maxScaleFactor = 5.0f;
-
-    [Header("Plane Glow")]
-    [Tooltip("Opacity of the gold fill on detected planes (0=off, 0.25=soft glow)")]
-    [Range(0f, 0.5f)]
-    public float planeFillAlpha = 0.18f;
 
     // ── Events ─────────────────────────────────────────────────────────
     public System.Action<PlacedItem> OnItemSelected;
@@ -90,7 +72,6 @@ public class PlacementManager : MonoBehaviour
     // ══════════════════════════════════════════════════════════════════
     void Awake()
     {
-        // Same-GameObject first; scene-wide fallback so any hierarchy works.
         _raycastManager = GetComponent<ARRaycastManager>()
                        ?? FindObjectOfType<ARRaycastManager>();
         _planeManager = GetComponent<ARPlaneManager>()
@@ -99,23 +80,12 @@ public class PlacementManager : MonoBehaviour
         if (_raycastManager == null)
             Debug.LogError("[PlacementManager] ARRaycastManager not found! Add it to XR Origin.");
 
-        _planeMat = MakePlaneMaterial();
         BuildRing();
     }
 
     void Start()
     {
-        if (_planeManager != null)
-            _planeManager.planesChanged += OnPlanesChanged;
-
-        ApplyPlaneVisuals();
         StartCoroutine(CanvasCleanupLoop());
-    }
-
-    void OnDestroy()
-    {
-        if (_planeManager != null)
-            _planeManager.planesChanged -= OnPlanesChanged;
     }
 
     // ══════════════════════════════════════════════════════════════════
@@ -154,7 +124,6 @@ public class PlacementManager : MonoBehaviour
             if (hit != null)
             {
                 DoSelect(hit);
-                // Measure rotation angle from the ITEM's screen-space centre.
                 _rotateStartAngle = TouchAngleAroundItem(t.position, hit);
                 _itemStartYRot = hit.go.transform.eulerAngles.y;
             }
@@ -169,8 +138,6 @@ public class PlacementManager : MonoBehaviour
                 _longPressArmed = false;
             }
 
-            // FIX: rotate the selected item based on angle delta from its
-            // own projected screen centre — works correctly for every item.
             if (_isDragging && _selectedItem != null && _selectedItem.go != null)
             {
                 float currentAngle = TouchAngleAroundItem(t.position, _selectedItem);
@@ -213,10 +180,8 @@ public class PlacementManager : MonoBehaviour
                 return;
             }
 
-            // Tapped empty space: deselect; next tap places
             if (_selectedItem != null) { DoDeselect(); return; }
 
-            // Place new item on plane
             if (_activePrefab == null)
             {
                 Debug.Log("[PlacementManager] No prefab armed — tap a jewelry card first.");
@@ -226,7 +191,7 @@ public class PlacementManager : MonoBehaviour
             if (_raycastManager.Raycast(t.position, _hits, TrackableType.PlaneWithinPolygon))
                 DoSpawn(_hits[0].pose.position, _hits[0].pose.rotation);
             else
-                Debug.Log("[PlacementManager] No plane hit — aim at the gold outline and tap.");
+                Debug.Log("[PlacementManager] No plane hit — aim at the detected surface and tap.");
         }
     }
 
@@ -262,16 +227,20 @@ public class PlacementManager : MonoBehaviour
     // ══════════════════════════════════════════════════════════════════
     void DoSpawn(Vector3 planePosition, Quaternion planeRotation)
     {
-        var go = Instantiate(_activePrefab, planePosition, planeRotation);
+        // Spawn at world origin temporarily so bounds are not offset by
+        // planePosition — this is what caused the "mid-air" bug.
+        var go = Instantiate(_activePrefab, Vector3.zero, planeRotation);
 
         if (!Mathf.Approximately(_activeDefaultScale, 1f))
             go.transform.localScale *= _activeDefaultScale;
 
-        // FIX: lift the object so its bottom mesh surface sits ON the plane.
-        // Without this the pivot (usually at mesh centre) lands on the plane
-        // and the bottom half sinks below it.
-        float yOffset = GetBottomOffset(go);
-        go.transform.position = planePosition + new Vector3(0f, yOffset, 0f);
+        // With the object at Y=0 we can measure how far its bottom mesh
+        // surface is below the pivot cleanly.
+        float bottomOffset = GetBottomOffset(go);
+
+        // Place on plane: pivot goes to planePosition, then lift by bottomOffset
+        // so the bottom surface lands exactly on the plane surface.
+        go.transform.position = planePosition + new Vector3(0f, bottomOffset, 0f);
 
         AddColliders(go);
 
@@ -286,12 +255,13 @@ public class PlacementManager : MonoBehaviour
         DoSelect(placed);
         OnItemPlaced?.Invoke();
         Debug.Log("[PlacementManager] Placed: " + _activePrefab.name +
-                  " at " + go.transform.position + "  yOffset=" + yOffset.ToString("F4"));
+                  " at " + go.transform.position + "  bottomOffset=" + bottomOffset.ToString("F4"));
     }
 
     /// <summary>
-    /// Returns the Y distance from the spawn position to the bottom of the
-    /// mesh bounds, so the object sits fully above the plane.
+    /// Returns the distance from the pivot (assumed at Y=0) down to the
+    /// lowest point of all mesh renderers. Spawning at Vector3.zero first
+    /// ensures world-space bounds.min.y directly equals the gap below pivot.
     /// </summary>
     float GetBottomOffset(GameObject go)
     {
@@ -302,8 +272,8 @@ public class PlacementManager : MonoBehaviour
         foreach (var r in renderers)
             minY = Mathf.Min(minY, r.bounds.min.y);
 
-        // gap = how far the bottom of the mesh is below the pivot
-        return go.transform.position.y - minY;
+        // minY is negative (below pivot) — negate it to get a positive lift amount.
+        return -minY;
     }
 
     // ══════════════════════════════════════════════════════════════════
@@ -428,62 +398,6 @@ public class PlacementManager : MonoBehaviour
     }
 
     // ══════════════════════════════════════════════════════════════════
-    //  PLANE VISUALS — gold glow on detected planes
-    // ══════════════════════════════════════════════════════════════════
-    void OnPlanesChanged(ARPlanesChangedEventArgs args)
-    {
-        foreach (var p in args.added) ApplyPlaneGlow(p);
-        foreach (var p in args.updated) ApplyPlaneGlow(p);
-    }
-
-    void ApplyPlaneVisuals()
-    {
-        if (_planeManager == null) return;
-        foreach (var p in _planeManager.trackables) ApplyPlaneGlow(p);
-    }
-
-    void ApplyPlaneGlow(ARPlane plane)
-    {
-        if (plane == null) return;
-
-        // FIX: show a soft gold transparent fill so the user can see
-        // the detected surface area clearly.
-        foreach (var mr in plane.GetComponentsInChildren<MeshRenderer>(true))
-        {
-            mr.enabled = true;
-            if (_planeMat != null) mr.material = _planeMat;
-        }
-
-        // Gold outline
-        foreach (var lr in plane.GetComponentsInChildren<LineRenderer>(true))
-        {
-            lr.enabled = true;
-            lr.startColor = PLANE_LINE_COL;
-            lr.endColor = PLANE_LINE_COL;
-        }
-    }
-
-    Material MakePlaneMaterial()
-    {
-        var shader = Shader.Find("Universal Render Pipeline/Lit")
-                  ?? Shader.Find("Standard");
-        if (shader == null) return null;
-
-        Color fill = new Color(PLANE_FILL_COL.r, PLANE_FILL_COL.g,
-                               PLANE_FILL_COL.b, planeFillAlpha);
-        var m = new Material(shader) { color = fill };
-        m.SetFloat("_Surface", 1);
-        m.SetInt("_SrcBlend", (int)UnityEngine.Rendering.BlendMode.SrcAlpha);
-        m.SetInt("_DstBlend", (int)UnityEngine.Rendering.BlendMode.OneMinusSrcAlpha);
-        m.SetInt("_ZWrite", 0);
-        m.SetFloat("_Mode", 3);
-        m.renderQueue = 3000;
-        m.SetOverrideTag("RenderType", "Transparent");
-        m.EnableKeyword("_ALPHABLEND_ON");
-        return m;
-    }
-
-    // ══════════════════════════════════════════════════════════════════
     //  CANVAS CLEANUP
     // ══════════════════════════════════════════════════════════════════
     IEnumerator CanvasCleanupLoop()
@@ -517,13 +431,6 @@ public class PlacementManager : MonoBehaviour
     // ══════════════════════════════════════════════════════════════════
     //  HELPERS
     // ══════════════════════════════════════════════════════════════════
-
-    /// <summary>
-    /// Iterate every collider on every placed item and return the closest one
-    /// hit by the screen-space ray.  Checks colliders directly instead of
-    /// relying on Physics.Raycast + IsChildOf, so root-level and multi-mesh
-    /// prefabs are both handled correctly.
-    /// </summary>
     PlacedItem RaycastItems(Vector2 screenPos)
     {
         if (Camera.main == null) return null;
@@ -546,11 +453,6 @@ public class PlacementManager : MonoBehaviour
         return bestItem;
     }
 
-    /// <summary>
-    /// Angle from the item's projected screen-space position to the touch.
-    /// Using item centre (not screen centre) makes rotation feel natural
-    /// for every item regardless of where it sits on screen.
-    /// </summary>
     float TouchAngleAroundItem(Vector2 touchPos, PlacedItem item)
     {
         if (item?.go == null || Camera.main == null) return 0f;
