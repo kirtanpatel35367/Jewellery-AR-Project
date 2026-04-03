@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3084179898063070190}
   - component: {fileID: 5533407948075427524}
   - component: {fileID: 2938702476943550326}
+  - component: {fileID: 5063582480810374173}
   m_Layer: 0
   m_Name: necklace_gold
   m_TagString: Untagged
@@ -78,6 +79,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fe3d05a666ee4a1895c89a21b0806b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RuntimeNecklaceFixer
+--- !u!65 &5063582480810374173
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5898075654446669484}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &4343104294124576904
 PrefabInstance:
   m_ObjectHideFlags: 0

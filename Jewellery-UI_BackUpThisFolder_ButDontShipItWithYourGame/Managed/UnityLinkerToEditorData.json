@@ -1079,8 +1079,6 @@
           {
             "name": "MeshCollider",
             "scenes": [
-              "Assets/Scenes/FaceTryOn.unity",
-              "Assets/Scenes/Jewelry3DScene.unity",
               "Assets/Scenes/JewelryARScene.unity"
             ],
             "dependencyType": 0,

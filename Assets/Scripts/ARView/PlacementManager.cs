@@ -6,7 +6,20 @@ using System.Collections;
 using System.Collections.Generic;
 
 /// <summary>
-/// PlacementManager — plane glow removed.
+/// PlacementManager — one instance per jewelry prefab rule.
+///
+/// KEY BEHAVIOUR:
+///   • Each jewelry item can only be placed ONCE in the scene.
+///     Tapping the plane a second time with the same item selected
+///     MOVES the existing instance instead of creating a new one.
+///   • Selecting a different jewelry card arms a different prefab,
+///     which can then be placed independently (also only once).
+///   • Tap a placed item  → select it (gold ring appears)
+///   • Drag selected item → rotate 360° Y
+///   • Pinch selected     → zoom in / out
+///   • Long-press 1.5 s   → remove that item
+///   • Double-tap         → deselect
+///   • REMOVE ALL         → clears everything
 /// </summary>
 public class PlacementManager : MonoBehaviour
 {
@@ -30,15 +43,9 @@ public class PlacementManager : MonoBehaviour
     private bool _longPressArmed = false;
     private float _touchDownTime = 0f;
     private Vector2 _touchStartPos;
-
-    // Rotation — measured from item's screen-space centre, not screen centre
     private float _rotateStartAngle = 0f;
     private float _itemStartYRot = 0f;
-
-    // Pinch zoom
     private float _lastPinchDist = 0f;
-
-    // Double-tap deselect
     private float _lastTapTime = 0f;
     private const float DOUBLE_TAP = 0.35f;
 
@@ -65,6 +72,7 @@ public class PlacementManager : MonoBehaviour
         public Vector3 originalScale;
         public string itemName;
         public Sprite thumbnail;
+        public GameObject sourcePrefab;   // ← tracks which prefab this came from
     }
 
     // ══════════════════════════════════════════════════════════════════
@@ -102,7 +110,6 @@ public class PlacementManager : MonoBehaviour
 
         if (IsOverUI(Input.GetTouch(0).position)) return;
 
-        // ── Two-finger pinch zoom ───────────────────────────────────────
         if (Input.touchCount == 2)
         {
             DoPinchZoom();
@@ -133,15 +140,11 @@ public class PlacementManager : MonoBehaviour
         if (t.phase == TouchPhase.Moved)
         {
             if ((t.position - _touchStartPos).magnitude > dragThresholdPx)
-            {
-                _isDragging = true;
-                _longPressArmed = false;
-            }
+            { _isDragging = true; _longPressArmed = false; }
 
             if (_isDragging && _selectedItem != null && _selectedItem.go != null)
             {
-                float currentAngle = TouchAngleAroundItem(t.position, _selectedItem);
-                float delta = currentAngle - _rotateStartAngle;
+                float delta = TouchAngleAroundItem(t.position, _selectedItem) - _rotateStartAngle;
                 Vector3 e = _selectedItem.go.transform.eulerAngles;
                 _selectedItem.go.transform.eulerAngles =
                     new Vector3(e.x, _itemStartYRot - delta, e.z);
@@ -162,14 +165,12 @@ public class PlacementManager : MonoBehaviour
         // ── Ended ────────────────────────────────────────────────────────
         if (t.phase == TouchPhase.Ended && !_isDragging)
         {
+            // Did the user tap a placed item?
             PlacedItem tapped = RaycastItems(t.position);
-
             if (tapped != null)
             {
                 if (Time.time - _lastTapTime < DOUBLE_TAP && _selectedItem == tapped)
-                {
                     DoDeselect();
-                }
                 else
                 {
                     DoSelect(tapped);
@@ -180,24 +181,48 @@ public class PlacementManager : MonoBehaviour
                 return;
             }
 
+            // Tap on empty space while something is selected → deselect
             if (_selectedItem != null) { DoDeselect(); return; }
 
+            // No prefab armed
             if (_activePrefab == null)
             {
-                Debug.Log("[PlacementManager] No prefab armed — tap a jewelry card first.");
+                Debug.Log("[PlacementManager] No prefab armed — open the menu and tap a jewelry card.");
                 return;
             }
 
-            if (_raycastManager.Raycast(t.position, _hits, TrackableType.PlaneWithinPolygon))
-                DoSpawn(_hits[0].pose.position, _hits[0].pose.rotation);
+            // Raycast to AR plane
+            if (!_raycastManager.Raycast(t.position, _hits, TrackableType.PlaneWithinPolygon))
+            {
+                Debug.Log("[PlacementManager] No plane hit — aim camera at the detected surface and tap.");
+                return;
+            }
+
+            Pose pose = _hits[0].pose;
+
+            // ── ONE-INSTANCE RULE ─────────────────────────────────────
+            // Check if this exact prefab is already placed in the scene.
+            PlacedItem existing = FindPlacedByPrefab(_activePrefab);
+            if (existing != null)
+            {
+                // Move the existing instance to the new tap position instead
+                // of spawning a duplicate.
+                MoveItem(existing, pose.position, pose.rotation);
+                DoSelect(existing);
+                Debug.Log("[PlacementManager] Moved existing: " + existing.itemName);
+            }
             else
-                Debug.Log("[PlacementManager] No plane hit — aim at the detected surface and tap.");
+            {
+                // First time placing this prefab — spawn it.
+                DoSpawn(pose.position, pose.rotation);
+            }
         }
     }
 
     // ══════════════════════════════════════════════════════════════════
     //  PUBLIC API
     // ══════════════════════════════════════════════════════════════════
+
     public void SetActivePrefab(GameObject prefab, string itemName = "",
                                 Sprite thumbnail = null, float defaultScale = 1f)
     {
@@ -205,7 +230,20 @@ public class PlacementManager : MonoBehaviour
         _activeDefaultScale = defaultScale;
         _activeItemName = itemName;
         _activeThumb = thumbnail;
-        Debug.Log("[PlacementManager] Armed: " + (prefab != null ? prefab.name : "NULL"));
+
+        // Auto-select the existing instance of this prefab (if already placed)
+        // so the user can immediately manage it without tapping it first.
+        PlacedItem existing = FindPlacedByPrefab(prefab);
+        if (existing != null)
+        {
+            DoSelect(existing);
+            Debug.Log("[PlacementManager] Re-selected existing: " + itemName);
+        }
+        else
+        {
+            Debug.Log("[PlacementManager] Armed: " + (prefab != null ? prefab.name : "NULL") +
+                      " — tap the surface to place.");
+        }
     }
 
     public void RemoveItem(PlacedItem item) => DoRemove(item);
@@ -223,23 +261,35 @@ public class PlacementManager : MonoBehaviour
     public IReadOnlyList<PlacedItem> GetPlacedItems() => _placedItems;
 
     // ══════════════════════════════════════════════════════════════════
-    //  SPAWN
+    //  ONE-INSTANCE RULE HELPER
     // ══════════════════════════════════════════════════════════════════
+
+    /// <summary>
+    /// Returns the already-placed instance that came from the given prefab,
+    /// or null if this prefab hasn't been placed yet.
+    /// Comparison uses the prefab reference (not name) for accuracy.
+    /// </summary>
+    PlacedItem FindPlacedByPrefab(GameObject prefab)
+    {
+        if (prefab == null) return null;
+        foreach (var item in _placedItems)
+            if (item.sourcePrefab == prefab && item.go != null)
+                return item;
+        return null;
+    }
+
+    // ══════════════════════════════════════════════════════════════════
+    //  SPAWN & MOVE
+    // ══════════════════════════════════════════════════════════════════
+
     void DoSpawn(Vector3 planePosition, Quaternion planeRotation)
     {
-        // Spawn at world origin temporarily so bounds are not offset by
-        // planePosition — this is what caused the "mid-air" bug.
         var go = Instantiate(_activePrefab, Vector3.zero, planeRotation);
 
         if (!Mathf.Approximately(_activeDefaultScale, 1f))
             go.transform.localScale *= _activeDefaultScale;
 
-        // With the object at Y=0 we can measure how far its bottom mesh
-        // surface is below the pivot cleanly.
         float bottomOffset = GetBottomOffset(go);
-
-        // Place on plane: pivot goes to planePosition, then lift by bottomOffset
-        // so the bottom surface lands exactly on the plane surface.
         go.transform.position = planePosition + new Vector3(0f, bottomOffset, 0f);
 
         AddColliders(go);
@@ -249,36 +299,46 @@ public class PlacementManager : MonoBehaviour
             go = go,
             originalScale = go.transform.localScale,
             itemName = _activeItemName,
-            thumbnail = _activeThumb
+            thumbnail = _activeThumb,
+            sourcePrefab = _activePrefab        // ← store which prefab this is
         };
         _placedItems.Add(placed);
         DoSelect(placed);
         OnItemPlaced?.Invoke();
-        Debug.Log("[PlacementManager] Placed: " + _activePrefab.name +
-                  " at " + go.transform.position + "  bottomOffset=" + bottomOffset.ToString("F4"));
+        Debug.Log("[PlacementManager] Spawned: " + _activePrefab.name + " at " + go.transform.position);
     }
 
     /// <summary>
-    /// Returns the distance from the pivot (assumed at Y=0) down to the
-    /// lowest point of all mesh renderers. Spawning at Vector3.zero first
-    /// ensures world-space bounds.min.y directly equals the gap below pivot.
+    /// Moves an already-placed item to a new plane position.
+    /// Keeps its current scale and rotation.
     /// </summary>
+    void MoveItem(PlacedItem item, Vector3 planePosition, Quaternion planeRotation)
+    {
+        if (item?.go == null) return;
+        float bottomOffset = GetBottomOffset(item.go);
+        item.go.transform.position = planePosition + new Vector3(0f, bottomOffset, 0f);
+        // Keep existing Y rotation (user may have rotated it)
+        // but snap X/Z to plane rotation
+        Vector3 euler = item.go.transform.eulerAngles;
+        item.go.transform.rotation = Quaternion.Euler(planeRotation.eulerAngles.x,
+                                                       euler.y,
+                                                       planeRotation.eulerAngles.z);
+        ShowRing(item);
+    }
+
     float GetBottomOffset(GameObject go)
     {
         var renderers = go.GetComponentsInChildren<Renderer>(true);
         if (renderers.Length == 0) return 0f;
-
         float minY = float.MaxValue;
-        foreach (var r in renderers)
-            minY = Mathf.Min(minY, r.bounds.min.y);
-
-        // minY is negative (below pivot) — negate it to get a positive lift amount.
+        foreach (var r in renderers) minY = Mathf.Min(minY, r.bounds.min.y);
         return -minY;
     }
 
     // ══════════════════════════════════════════════════════════════════
     //  SELECT / DESELECT / REMOVE
     // ══════════════════════════════════════════════════════════════════
+
     void DoSelect(PlacedItem item)
     {
         _selectedItem = item;
@@ -304,6 +364,7 @@ public class PlacementManager : MonoBehaviour
     // ══════════════════════════════════════════════════════════════════
     //  COLLIDERS
     // ══════════════════════════════════════════════════════════════════
+
     void AddColliders(GameObject root)
     {
         if (root.GetComponentsInChildren<Collider>(true).Length > 0) return;
@@ -318,10 +379,7 @@ public class PlacementManager : MonoBehaviour
                 mc.sharedMesh = mf.sharedMesh;
                 mc.convex = true;
             }
-            else
-            {
-                r.gameObject.AddComponent<BoxCollider>();
-            }
+            else r.gameObject.AddComponent<BoxCollider>();
         }
 
         if (root.GetComponentsInChildren<Collider>(true).Length == 0)
@@ -331,6 +389,7 @@ public class PlacementManager : MonoBehaviour
     // ══════════════════════════════════════════════════════════════════
     //  SELECTION RING
     // ══════════════════════════════════════════════════════════════════
+
     void BuildRing()
     {
         _ring = GameObject.CreatePrimitive(PrimitiveType.Cylinder);
@@ -338,7 +397,7 @@ public class PlacementManager : MonoBehaviour
         Destroy(_ring.GetComponent<Collider>());
 
         var shader = Shader.Find("Universal Render Pipeline/Lit") ?? Shader.Find("Standard");
-        if (shader == null) { Debug.LogWarning("[PlacementManager] Shader not found for ring."); return; }
+        if (shader == null) { Debug.LogWarning("[PlacementManager] Ring shader not found."); return; }
 
         var mat = new Material(shader) { color = RING_COL };
         mat.SetFloat("_Surface", 1);
@@ -361,10 +420,8 @@ public class PlacementManager : MonoBehaviour
         if (_ring == null || item?.go == null) return;
         var renderers = item.go.GetComponentsInChildren<Renderer>();
         if (renderers.Length == 0) return;
-
         Bounds b = renderers[0].bounds;
         foreach (var r in renderers) b.Encapsulate(r.bounds);
-
         float radius = Mathf.Max(b.extents.x, b.extents.z) * 1.4f;
         _ring.transform.position = new Vector3(b.center.x, b.min.y + 0.003f, b.center.z);
         _ring.transform.localScale = new Vector3(radius * 2f, 0.005f, radius * 2f);
@@ -376,6 +433,7 @@ public class PlacementManager : MonoBehaviour
     // ══════════════════════════════════════════════════════════════════
     //  PINCH ZOOM
     // ══════════════════════════════════════════════════════════════════
+
     void DoPinchZoom()
     {
         if (_selectedItem == null || _selectedItem.go == null) return;
@@ -390,16 +448,18 @@ public class PlacementManager : MonoBehaviour
         _lastPinchDist = dist;
 
         Vector3 orig = _selectedItem.originalScale;
-        float curFactor = _selectedItem.go.transform.localScale.x / orig.x;
-        float newFactor = Mathf.Clamp(curFactor + delta * 0.001f, minScaleFactor, maxScaleFactor);
+        float factor = Mathf.Clamp(
+            (_selectedItem.go.transform.localScale.x / orig.x) + delta * 0.001f,
+            minScaleFactor, maxScaleFactor);
 
-        _selectedItem.go.transform.localScale = orig * newFactor;
+        _selectedItem.go.transform.localScale = orig * factor;
         ShowRing(_selectedItem);
     }
 
     // ══════════════════════════════════════════════════════════════════
-    //  CANVAS CLEANUP
+    //  CANVAS CLEANUP — removes empty GraphicRaycaster blockers
     // ══════════════════════════════════════════════════════════════════
+
     IEnumerator CanvasCleanupLoop()
     {
         yield return new WaitForSeconds(0.5f);
@@ -431,26 +491,24 @@ public class PlacementManager : MonoBehaviour
     // ══════════════════════════════════════════════════════════════════
     //  HELPERS
     // ══════════════════════════════════════════════════════════════════
+
     PlacedItem RaycastItems(Vector2 screenPos)
     {
         if (Camera.main == null) return null;
         Ray ray = Camera.main.ScreenPointToRay(screenPos);
-        float bestDist = float.MaxValue;
-        PlacedItem bestItem = null;
+        float bestD = float.MaxValue;
+        PlacedItem best = null;
 
         foreach (var item in _placedItems)
         {
             if (item.go == null) continue;
             foreach (var col in item.go.GetComponentsInChildren<Collider>(true))
             {
-                if (col.Raycast(ray, out RaycastHit h, 100f) && h.distance < bestDist)
-                {
-                    bestDist = h.distance;
-                    bestItem = item;
-                }
+                if (col.Raycast(ray, out RaycastHit h, 100f) && h.distance < bestD)
+                { bestD = h.distance; best = item; }
             }
         }
-        return bestItem;
+        return best;
     }
 
     float TouchAngleAroundItem(Vector2 touchPos, PlacedItem item)
@@ -467,7 +525,6 @@ public class PlacementManager : MonoBehaviour
         var ped = new PointerEventData(EventSystem.current) { position = screenPos };
         var results = new List<RaycastResult>();
         EventSystem.current.RaycastAll(ped, results);
-
         foreach (var r in results)
         {
             var go = r.gameObject;
