@@ -6914,7 +6914,7 @@ struct LayerNames_t50D56C5ABB065BFEAF6404AA783F6899BBB60568  : public RuntimeObj
 struct RaycastHitComparer_t8EF6567C19BE9FB575E01A10941FBF7DE3D3DDF1  : public RuntimeObject
 {
 };
-struct U3CCanvasCleanupLoopU3Ed__50_t3D62EAD23B14F60B0AD42AD871C6704884AD70E7  : public RuntimeObject
+struct U3CCanvasCleanupLoopU3Ed__57_t45C570CDBF4E2BB767D4783E6803B52E81AC40C4  : public RuntimeObject
 {
 	int32_t ___U3CU3E1__state;
 	RuntimeObject* ___U3CU3E2__current;
@@ -42974,15 +42974,20 @@ struct PlacementManager_tDC817585D405EDA5E954DCA154E5ADB32CA664CD  : public Mono
 	bool ____longPressArmed;
 	float ____touchDownTime;
 	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ____touchStartPos;
-	float ____rotateStartAngle;
-	float ____itemStartYRot;
-	float ____lastPinchDist;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ____lastTouchPos;
 	float ____lastTapTime;
+	float ____lastPinchDist;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ____ring;
 	float ___longPressDuration;
 	float ___dragThresholdPx;
 	float ___minScaleFactor;
 	float ___maxScaleFactor;
+	float ___rotationSensitivity;
+	float ___targetSizeNecklace;
+	float ___targetSizeRing;
+	float ___targetSizeBangle;
+	float ___targetSizeEarring;
+	float ___targetSizeGeneric;
 	Action_1_t6A72FE3E50421A701646410985542ED8E2A39775* ___OnItemSelected;
 	Action_1_t6A72FE3E50421A701646410985542ED8E2A39775* ___OnItemRemoved;
 	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___OnItemPlaced;
@@ -60726,7 +60731,7 @@ const Il2CppTypeDefinitionSizes g_typeDefinitionSize9530 = { sizeof(JewelleryIte
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize9531;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize9531 = { sizeof(PlacedItem_tAEC703C56198CB73722EAECE0D839413D0BFF21A), -1, 0, 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize9532;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize9532 = { sizeof(U3CCanvasCleanupLoopU3Ed__50_t3D62EAD23B14F60B0AD42AD871C6704884AD70E7), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize9532 = { sizeof(U3CCanvasCleanupLoopU3Ed__57_t45C570CDBF4E2BB767D4783E6803B52E81AC40C4), -1, 0, 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize9533;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize9533 = { sizeof(PlacementManager_tDC817585D405EDA5E954DCA154E5ADB32CA664CD), -1, sizeof(PlacementManager_tDC817585D405EDA5E954DCA154E5ADB32CA664CD_StaticFields), 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize9534;

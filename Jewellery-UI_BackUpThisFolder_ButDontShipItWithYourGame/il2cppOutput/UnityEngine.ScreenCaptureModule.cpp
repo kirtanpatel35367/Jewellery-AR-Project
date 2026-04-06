@@ -164,7 +164,7 @@ inline void ReadOnlySpan_1__ctor_m0152E50B40750679B83FF9F30CA539FFBB98EEE8_inlin
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 100015
+// Method Definition Index: 100017
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScreenCapture_CaptureScreenshot_m897B0264A202824D377CCD9A5221B164DE2CF9DE (String_t* ___0_filename, const RuntimeMethod* method) 
 {
 	{
@@ -173,7 +173,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScreenCapture_CaptureScreenshot_m897B026
 		return;
 	}
 }
-// Method Definition Index: 100016
+// Method Definition Index: 100018
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScreenCapture_CaptureScreenshot_m35F14D593665968FE8F449104B66CE35EB22344D (String_t* ___0_filename, int32_t ___1_superSize, int32_t ___2_CaptureMode, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -242,7 +242,7 @@ IL_0039:
 		return;
 	}
 }
-// Method Definition Index: 100017
+// Method Definition Index: 100019
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScreenCapture_CaptureScreenshot_Injected_m3E20317C5BEC5A7B4D7999B677345256C5B28A4F (ManagedSpanWrapper_tE7FC4BBB631B130757F8DEB15853D98FD3D5DC0E* ___0_filename, int32_t ___1_superSize, int32_t ___2_CaptureMode, const RuntimeMethod* method) 
 {
 	typedef void (*ScreenCapture_CaptureScreenshot_Injected_m3E20317C5BEC5A7B4D7999B677345256C5B28A4F_ftn) (ManagedSpanWrapper_tE7FC4BBB631B130757F8DEB15853D98FD3D5DC0E*, int32_t, int32_t);
@@ -262,7 +262,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScreenCapture_CaptureScreenshot_Injected
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-// Method Definition Index: 68869
+// Method Definition Index: 68870
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool StringMarshaller_TryMarshalEmptyOrNullString_m615203C511071D59295D889AB136575DFFEA90A6_inline (String_t* ___0_s, ManagedSpanWrapper_tE7FC4BBB631B130757F8DEB15853D98FD3D5DC0E* ___1_managedSpanWrapper, const RuntimeMethod* method) 
 {
 	bool V_0 = false;

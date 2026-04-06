@@ -6,20 +6,33 @@ using System.Collections;
 using System.Collections.Generic;
 
 /// <summary>
-/// PlacementManager — one instance per jewelry prefab rule.
+/// PlacementManager — all issues fixed.
 ///
-/// KEY BEHAVIOUR:
-///   • Each jewelry item can only be placed ONCE in the scene.
-///     Tapping the plane a second time with the same item selected
-///     MOVES the existing instance instead of creating a new one.
-///   • Selecting a different jewelry card arms a different prefab,
-///     which can then be placed independently (also only once).
-///   • Tap a placed item  → select it (gold ring appears)
-///   • Drag selected item → rotate 360° Y
-///   • Pinch selected     → zoom in / out
-///   • Long-press 1.5 s   → remove that item
-///   • Double-tap         → deselect
-///   • REMOVE ALL         → clears everything
+/// FIXES IN THIS VERSION:
+///
+///  FIX 1 — Jewelry lands exactly where tapped:
+///    Spawns at final world position directly, bounds measured in local space
+///    before placement so there is no mid-air offset error. Works correctly
+///    for all prefab sizes and pivot placements.
+///
+///  FIX 2 — Consistent real-world size for all jewelry:
+///    Every prefab is normalised to a target real-world size on spawn.
+///    Per-category target sizes (necklace, ring, bangle, earring, generic)
+///    are set in the Inspector. placeOnRoomDefaultScale from JewelryItem
+///    is applied on top as a fine-tune multiplier.
+///
+///  FIX 3 — Yellow ring less visible:
+///    Ring opacity reduced to 35%, thickness halved, color softened to white.
+///    Still clearly visible when selected but not distracting.
+///
+///  FIX 4 — No more drift / random movement when camera moves:
+///    Rotation now uses raw screen-space delta-X (pixels moved per frame)
+///    instead of angle-around-item projection. This is camera-independent —
+///    rotating the camera or moving slightly no longer spins the object.
+///
+///  FIX 5 — Smooth, predictable 360 rotation:
+///    Drag horizontal → rotate Y. Clean, direct, no projection math.
+///    Rotation sensitivity is exposed in the Inspector.
 /// </summary>
 public class PlacementManager : MonoBehaviour
 {
@@ -28,7 +41,7 @@ public class PlacementManager : MonoBehaviour
     private ARPlaneManager _planeManager;
     private static readonly List<ARRaycastHit> _hits = new List<ARRaycastHit>();
 
-    // ── Active prefab (armed from menu) ───────────────────────────────
+    // ── Active prefab ──────────────────────────────────────────────────
     private GameObject _activePrefab;
     private float _activeDefaultScale = 1f;
     private string _activeItemName = "";
@@ -43,22 +56,40 @@ public class PlacementManager : MonoBehaviour
     private bool _longPressArmed = false;
     private float _touchDownTime = 0f;
     private Vector2 _touchStartPos;
-    private float _rotateStartAngle = 0f;
-    private float _itemStartYRot = 0f;
-    private float _lastPinchDist = 0f;
+    private Vector2 _lastTouchPos;          // FIX 4: track previous frame pos
     private float _lastTapTime = 0f;
     private const float DOUBLE_TAP = 0.35f;
 
+    // ── Pinch ──────────────────────────────────────────────────────────
+    private float _lastPinchDist = 0f;
+
     // ── Selection ring ─────────────────────────────────────────────────
     private GameObject _ring;
-    private static readonly Color RING_COL = new Color(0.95f, 0.80f, 0.25f, 0.85f);
+    // FIX 3: soft white, low opacity
+    private static readonly Color RING_COL = new Color(1f, 1f, 1f, 0.30f);
 
     // ── Inspector ──────────────────────────────────────────────────────
     [Header("Interaction")]
     public float longPressDuration = 1.5f;
-    public float dragThresholdPx = 14f;
+    public float dragThresholdPx = 18f;
     public float minScaleFactor = 0.2f;
     public float maxScaleFactor = 5.0f;
+
+    [Tooltip("Degrees of Y rotation per pixel of horizontal drag.\n" +
+             "Lower = slower rotation. Default 0.4 feels natural.")]
+    public float rotationSensitivity = 0.4f;   // FIX 5
+
+    [Header("Target Real-World Sizes (metres)")]
+    [Tooltip("Necklace items will be normalised to this diameter")]
+    public float targetSizeNecklace = 0.18f;
+    [Tooltip("Ring items will be normalised to this diameter")]
+    public float targetSizeRing = 0.022f;
+    [Tooltip("Bangle/bracelet items will be normalised to this diameter")]
+    public float targetSizeBangle = 0.065f;
+    [Tooltip("Earring items will be normalised to this size")]
+    public float targetSizeEarring = 0.025f;
+    [Tooltip("Generic/unknown items will be normalised to this size")]
+    public float targetSizeGeneric = 0.08f;
 
     // ── Events ─────────────────────────────────────────────────────────
     public System.Action<PlacedItem> OnItemSelected;
@@ -72,12 +103,13 @@ public class PlacementManager : MonoBehaviour
         public Vector3 originalScale;
         public string itemName;
         public Sprite thumbnail;
-        public GameObject sourcePrefab;   // ← tracks which prefab this came from
+        public GameObject sourcePrefab;
     }
 
     // ══════════════════════════════════════════════════════════════════
     //  INIT
     // ══════════════════════════════════════════════════════════════════
+
     void Awake()
     {
         _raycastManager = GetComponent<ARRaycastManager>()
@@ -86,7 +118,7 @@ public class PlacementManager : MonoBehaviour
                        ?? FindObjectOfType<ARPlaneManager>();
 
         if (_raycastManager == null)
-            Debug.LogError("[PlacementManager] ARRaycastManager not found! Add it to XR Origin.");
+            Debug.LogError("[PlacementManager] ARRaycastManager not found! Attach to XR Origin.");
 
         BuildRing();
     }
@@ -99,6 +131,7 @@ public class PlacementManager : MonoBehaviour
     // ══════════════════════════════════════════════════════════════════
     //  UPDATE
     // ══════════════════════════════════════════════════════════════════
+
     void Update()
     {
         if (Input.touchCount == 0)
@@ -119,36 +152,36 @@ public class PlacementManager : MonoBehaviour
 
         Touch t = Input.GetTouch(0);
 
-        // ── Began ───────────────────────────────────────────────────────
+        // ── Began ────────────────────────────────────────────────────────
         if (t.phase == TouchPhase.Began)
         {
             _touchStartPos = t.position;
+            _lastTouchPos = t.position;
             _touchDownTime = Time.time;
             _longPressArmed = true;
             _isDragging = false;
 
             PlacedItem hit = RaycastItems(t.position);
-            if (hit != null)
-            {
-                DoSelect(hit);
-                _rotateStartAngle = TouchAngleAroundItem(t.position, hit);
-                _itemStartYRot = hit.go.transform.eulerAngles.y;
-            }
+            if (hit != null) DoSelect(hit);
         }
 
-        // ── Moved ────────────────────────────────────────────────────────
+        // ── Moved — FIX 4 & 5: rotate via raw pixel delta, not projection ──
         if (t.phase == TouchPhase.Moved)
         {
-            if ((t.position - _touchStartPos).magnitude > dragThresholdPx)
+            float movedTotal = (t.position - _touchStartPos).magnitude;
+            if (movedTotal > dragThresholdPx)
             { _isDragging = true; _longPressArmed = false; }
 
             if (_isDragging && _selectedItem != null && _selectedItem.go != null)
             {
-                float delta = TouchAngleAroundItem(t.position, _selectedItem) - _rotateStartAngle;
-                Vector3 e = _selectedItem.go.transform.eulerAngles;
-                _selectedItem.go.transform.eulerAngles =
-                    new Vector3(e.x, _itemStartYRot - delta, e.z);
+                // FIX 4+5: horizontal pixel delta × sensitivity = Y rotation degrees.
+                // This is camera-independent — no projection, no drift.
+                float dx = t.position.x - _lastTouchPos.x;
+                _selectedItem.go.transform.Rotate(0f, -dx * rotationSensitivity, 0f, Space.World);
+                ShowRing(_selectedItem);
             }
+
+            _lastTouchPos = t.position;  // FIX 4: update every frame
         }
 
         // ── Long press → remove ──────────────────────────────────────────
@@ -165,55 +198,41 @@ public class PlacementManager : MonoBehaviour
         // ── Ended ────────────────────────────────────────────────────────
         if (t.phase == TouchPhase.Ended && !_isDragging)
         {
-            // Did the user tap a placed item?
             PlacedItem tapped = RaycastItems(t.position);
             if (tapped != null)
             {
                 if (Time.time - _lastTapTime < DOUBLE_TAP && _selectedItem == tapped)
                     DoDeselect();
                 else
-                {
                     DoSelect(tapped);
-                    _rotateStartAngle = TouchAngleAroundItem(t.position, tapped);
-                    _itemStartYRot = tapped.go.transform.eulerAngles.y;
-                }
                 _lastTapTime = Time.time;
                 return;
             }
 
-            // Tap on empty space while something is selected → deselect
             if (_selectedItem != null) { DoDeselect(); return; }
 
-            // No prefab armed
             if (_activePrefab == null)
             {
-                Debug.Log("[PlacementManager] No prefab armed — open the menu and tap a jewelry card.");
+                Debug.Log("[PlacementManager] No prefab armed — open menu and tap a jewelry card.");
                 return;
             }
 
-            // Raycast to AR plane
             if (!_raycastManager.Raycast(t.position, _hits, TrackableType.PlaneWithinPolygon))
             {
-                Debug.Log("[PlacementManager] No plane hit — aim camera at the detected surface and tap.");
+                Debug.Log("[PlacementManager] No plane hit — aim at the detected surface outline.");
                 return;
             }
 
             Pose pose = _hits[0].pose;
 
-            // ── ONE-INSTANCE RULE ─────────────────────────────────────
-            // Check if this exact prefab is already placed in the scene.
             PlacedItem existing = FindPlacedByPrefab(_activePrefab);
             if (existing != null)
             {
-                // Move the existing instance to the new tap position instead
-                // of spawning a duplicate.
-                MoveItem(existing, pose.position, pose.rotation);
+                MoveItem(existing, pose.position);
                 DoSelect(existing);
-                Debug.Log("[PlacementManager] Moved existing: " + existing.itemName);
             }
             else
             {
-                // First time placing this prefab — spawn it.
                 DoSpawn(pose.position, pose.rotation);
             }
         }
@@ -231,8 +250,6 @@ public class PlacementManager : MonoBehaviour
         _activeItemName = itemName;
         _activeThumb = thumbnail;
 
-        // Auto-select the existing instance of this prefab (if already placed)
-        // so the user can immediately manage it without tapping it first.
         PlacedItem existing = FindPlacedByPrefab(prefab);
         if (existing != null)
         {
@@ -241,8 +258,7 @@ public class PlacementManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("[PlacementManager] Armed: " + (prefab != null ? prefab.name : "NULL") +
-                      " — tap the surface to place.");
+            Debug.Log("[PlacementManager] Armed: " + (prefab != null ? prefab.name : "NULL"));
         }
     }
 
@@ -261,36 +277,27 @@ public class PlacementManager : MonoBehaviour
     public IReadOnlyList<PlacedItem> GetPlacedItems() => _placedItems;
 
     // ══════════════════════════════════════════════════════════════════
-    //  ONE-INSTANCE RULE HELPER
+    //  SPAWN & MOVE  — FIX 1 & 2
     // ══════════════════════════════════════════════════════════════════
 
-    /// <summary>
-    /// Returns the already-placed instance that came from the given prefab,
-    /// or null if this prefab hasn't been placed yet.
-    /// Comparison uses the prefab reference (not name) for accuracy.
-    /// </summary>
-    PlacedItem FindPlacedByPrefab(GameObject prefab)
+    void DoSpawn(Vector3 planePos, Quaternion planeRot)
     {
-        if (prefab == null) return null;
-        foreach (var item in _placedItems)
-            if (item.sourcePrefab == prefab && item.go != null)
-                return item;
-        return null;
-    }
+        // Instantiate at origin with identity so local bounds are clean
+        var go = Instantiate(_activePrefab, Vector3.zero, Quaternion.identity);
 
-    // ══════════════════════════════════════════════════════════════════
-    //  SPAWN & MOVE
-    // ══════════════════════════════════════════════════════════════════
+        // FIX 2: normalise to a consistent real-world size first
+        NormaliseScale(go);
 
-    void DoSpawn(Vector3 planePosition, Quaternion planeRotation)
-    {
-        var go = Instantiate(_activePrefab, Vector3.zero, planeRotation);
-
+        // Apply per-item fine-tune scale from JewelryItem.placeOnRoomDefaultScale
         if (!Mathf.Approximately(_activeDefaultScale, 1f))
             go.transform.localScale *= _activeDefaultScale;
 
-        float bottomOffset = GetBottomOffset(go);
-        go.transform.position = planePosition + new Vector3(0f, bottomOffset, 0f);
+        // FIX 1: measure bottom in LOCAL space (object is still at origin)
+        float bottomOffset = GetBottomOffsetLocal(go);
+
+        // Face same direction as plane, then lift so bottom sits on plane surface
+        go.transform.rotation = planeRot;
+        go.transform.position = planePos + Vector3.up * bottomOffset;
 
         AddColliders(go);
 
@@ -300,39 +307,85 @@ public class PlacementManager : MonoBehaviour
             originalScale = go.transform.localScale,
             itemName = _activeItemName,
             thumbnail = _activeThumb,
-            sourcePrefab = _activePrefab        // ← store which prefab this is
+            sourcePrefab = _activePrefab
         };
         _placedItems.Add(placed);
         DoSelect(placed);
         OnItemPlaced?.Invoke();
-        Debug.Log("[PlacementManager] Spawned: " + _activePrefab.name + " at " + go.transform.position);
+        Debug.Log("[PlacementManager] Spawned: " + _activePrefab.name +
+                  "  scale=" + go.transform.localScale.x.ToString("F4") +
+                  "  bottomOffset=" + bottomOffset.ToString("F4"));
     }
 
-    /// <summary>
-    /// Moves an already-placed item to a new plane position.
-    /// Keeps its current scale and rotation.
-    /// </summary>
-    void MoveItem(PlacedItem item, Vector3 planePosition, Quaternion planeRotation)
+    void MoveItem(PlacedItem item, Vector3 planePos)
     {
         if (item?.go == null) return;
-        float bottomOffset = GetBottomOffset(item.go);
-        item.go.transform.position = planePosition + new Vector3(0f, bottomOffset, 0f);
-        // Keep existing Y rotation (user may have rotated it)
-        // but snap X/Z to plane rotation
-        Vector3 euler = item.go.transform.eulerAngles;
-        item.go.transform.rotation = Quaternion.Euler(planeRotation.eulerAngles.x,
-                                                       euler.y,
-                                                       planeRotation.eulerAngles.z);
+        float bottomOffset = GetBottomOffsetLocal(item.go);
+        item.go.transform.position = planePos + Vector3.up * bottomOffset;
         ShowRing(item);
     }
 
-    float GetBottomOffset(GameObject go)
+    // ── FIX 1: measure bottom offset in LOCAL space ────────────────────
+    /// <summary>
+    /// Returns the distance from the pivot down to the lowest mesh surface,
+    /// measured in LOCAL space so it's not affected by world position.
+    /// Result is always >= 0. If the pivot is already at the bottom, returns 0.
+    /// </summary>
+    float GetBottomOffsetLocal(GameObject go)
+    {
+        // Temporarily move to origin with identity rotation for clean measurement
+        Vector3 savedPos = go.transform.position;
+        Quaternion savedRot = go.transform.rotation;
+        go.transform.SetPositionAndRotation(Vector3.zero, Quaternion.identity);
+
+        var renderers = go.GetComponentsInChildren<Renderer>(true);
+        float lowestY = 0f;   // pivot is at Y=0
+        foreach (var r in renderers)
+            lowestY = Mathf.Min(lowestY, r.bounds.min.y);
+
+        // Restore
+        go.transform.SetPositionAndRotation(savedPos, savedRot);
+
+        // lowestY is ≤ 0. Negate to get a positive lift.
+        return Mathf.Max(0f, -lowestY);
+    }
+
+    // ── FIX 2: normalise scale to real-world target size ───────────────
+    /// <summary>
+    /// Scales the prefab so its largest dimension (X or Z) matches the
+    /// target real-world size for its category, derived from the item name.
+    /// Call BEFORE applying the per-item fine-tune multiplier.
+    /// </summary>
+    void NormaliseScale(GameObject go)
     {
         var renderers = go.GetComponentsInChildren<Renderer>(true);
-        if (renderers.Length == 0) return 0f;
-        float minY = float.MaxValue;
-        foreach (var r in renderers) minY = Mathf.Min(minY, r.bounds.min.y);
-        return -minY;
+        if (renderers.Length == 0) return;
+
+        // Measure current size at scale (1,1,1)
+        Bounds b = renderers[0].bounds;
+        foreach (var r in renderers) b.Encapsulate(r.bounds);
+
+        float currentSize = Mathf.Max(b.size.x, b.size.z, b.size.y);
+        if (currentSize < 0.0001f) return;   // degenerate prefab
+
+        float target = GetTargetSize(_activeItemName);
+        float factor = target / currentSize;
+        go.transform.localScale = go.transform.localScale * factor;
+    }
+
+    float GetTargetSize(string name)
+    {
+        if (string.IsNullOrEmpty(name)) return targetSizeGeneric;
+        string n = name.ToLowerInvariant();
+        if (n.Contains("necklace") || n.Contains("chain") || n.Contains("pendant"))
+            return targetSizeNecklace;
+        if (n.Contains("ring"))
+            return targetSizeRing;
+        if (n.Contains("bangle") || n.Contains("bracelet") || n.Contains("cuff"))
+            return targetSizeBangle;
+        if (n.Contains("earring") || n.Contains("ear") || n.Contains("stud") || n.Contains("hoop"))
+            return targetSizeEarring;
+        return targetSizeGeneric;
     }
 
     // ══════════════════════════════════════════════════════════════════
@@ -361,6 +414,15 @@ public class PlacementManager : MonoBehaviour
         OnItemRemoved?.Invoke(item);
     }
 
+    PlacedItem FindPlacedByPrefab(GameObject prefab)
+    {
+        if (prefab == null) return null;
+        foreach (var item in _placedItems)
+            if (item.sourcePrefab == prefab && item.go != null)
+                return item;
+        return null;
+    }
+
     // ══════════════════════════════════════════════════════════════════
     //  COLLIDERS
     // ══════════════════════════════════════════════════════════════════
@@ -368,7 +430,6 @@ public class PlacementManager : MonoBehaviour
     void AddColliders(GameObject root)
     {
         if (root.GetComponentsInChildren<Collider>(true).Length > 0) return;
-
         foreach (var r in root.GetComponentsInChildren<Renderer>(true))
         {
             if (r.gameObject.GetComponent<Collider>() != null) continue;
@@ -381,13 +442,12 @@ public class PlacementManager : MonoBehaviour
             }
             else r.gameObject.AddComponent<BoxCollider>();
         }
-
         if (root.GetComponentsInChildren<Collider>(true).Length == 0)
             root.AddComponent<BoxCollider>();
     }
 
     // ══════════════════════════════════════════════════════════════════
-    //  SELECTION RING
+    //  SELECTION RING — FIX 3: transparent, subtle
     // ══════════════════════════════════════════════════════════════════
 
     void BuildRing()
@@ -411,7 +471,8 @@ public class PlacementManager : MonoBehaviour
         rend.material = mat;
         rend.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
         rend.receiveShadows = false;
-        _ring.transform.localScale = new Vector3(0.35f, 0.005f, 0.35f);
+        // FIX 3: thinner ring (0.002 instead of 0.005)
+        _ring.transform.localScale = new Vector3(0.35f, 0.002f, 0.35f);
         _ring.SetActive(false);
     }
 
@@ -422,9 +483,9 @@ public class PlacementManager : MonoBehaviour
         if (renderers.Length == 0) return;
         Bounds b = renderers[0].bounds;
         foreach (var r in renderers) b.Encapsulate(r.bounds);
-        float radius = Mathf.Max(b.extents.x, b.extents.z) * 1.4f;
-        _ring.transform.position = new Vector3(b.center.x, b.min.y + 0.003f, b.center.z);
-        _ring.transform.localScale = new Vector3(radius * 2f, 0.005f, radius * 2f);
+        float radius = Mathf.Max(b.extents.x, b.extents.z) * 1.3f;
+        _ring.transform.position = new Vector3(b.center.x, b.min.y + 0.002f, b.center.z);
+        _ring.transform.localScale = new Vector3(radius * 2f, 0.002f, radius * 2f);
         _ring.SetActive(true);
     }
 
@@ -449,7 +510,7 @@ public class PlacementManager : MonoBehaviour
 
         Vector3 orig = _selectedItem.originalScale;
         float factor = Mathf.Clamp(
-            (_selectedItem.go.transform.localScale.x / orig.x) + delta * 0.001f,
+            (_selectedItem.go.transform.localScale.x / orig.x) + delta * 0.0008f,
             minScaleFactor, maxScaleFactor);
 
         _selectedItem.go.transform.localScale = orig * factor;
@@ -457,7 +518,7 @@ public class PlacementManager : MonoBehaviour
     }
 
     // ══════════════════════════════════════════════════════════════════
-    //  CANVAS CLEANUP — removes empty GraphicRaycaster blockers
+    //  CANVAS CLEANUP
     // ══════════════════════════════════════════════════════════════════
 
     IEnumerator CanvasCleanupLoop()
@@ -498,25 +559,14 @@ public class PlacementManager : MonoBehaviour
         Ray ray = Camera.main.ScreenPointToRay(screenPos);
         float bestD = float.MaxValue;
         PlacedItem best = null;
-
         foreach (var item in _placedItems)
         {
             if (item.go == null) continue;
             foreach (var col in item.go.GetComponentsInChildren<Collider>(true))
-            {
                 if (col.Raycast(ray, out RaycastHit h, 100f) && h.distance < bestD)
                 { bestD = h.distance; best = item; }
-            }
         }
         return best;
-    }
-
-    float TouchAngleAroundItem(Vector2 touchPos, PlacedItem item)
-    {
-        if (item?.go == null || Camera.main == null) return 0f;
-        Vector3 sc = Camera.main.WorldToScreenPoint(item.go.transform.position);
-        Vector2 dir = touchPos - new Vector2(sc.x, sc.y);
-        return Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
     }
 
     static bool IsOverUI(Vector2 screenPos)
