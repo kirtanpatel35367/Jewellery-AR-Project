@@ -818,24 +818,28 @@ MonoBehaviour:
       necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
       necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
       necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
+      placeOnRoomDefaultScale: 1
     - itemName: Golden Earring
       thumbnailImage: {fileID: 21300000, guid: 979cc76c3b67ed84a9e2f04b157dbb2b, type: 3}
       jewelryPrefab: {fileID: 712837861599813127, guid: f38eebe72a3997f47b44eba6d794a6a9, type: 3}
       necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
       necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
       necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
+      placeOnRoomDefaultScale: 1
     - itemName: Gold Diamond
       thumbnailImage: {fileID: 21300000, guid: 735e31131b6cfd64387a568dc48dbfb0, type: 3}
       jewelryPrefab: {fileID: 7332016342655490150, guid: fa53e6dccb600544097f79ed09297bc9, type: 3}
       necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
       necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
       necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
+      placeOnRoomDefaultScale: 1
     - itemName: Hanging Diamond
       thumbnailImage: {fileID: 21300000, guid: 803e1442f7d2a564d9ad5e2f682c6a07, type: 3}
       jewelryPrefab: {fileID: 4668715478663497472, guid: 770ac04128b475344be5589736d7e5e3, type: 3}
       necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
       necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
       necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
+      placeOnRoomDefaultScale: 1
   - categoryName: Necklace
     type: 1
     items:
@@ -845,30 +849,35 @@ MonoBehaviour:
       necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
       necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
       necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
+      placeOnRoomDefaultScale: 1
     - itemName: Necklace Pack
       thumbnailImage: {fileID: 21300000, guid: afd4db220a8a343819f1da7077854c68, type: 3}
       jewelryPrefab: {fileID: 8269905544744269240, guid: 444e13b0c7a2747ea85abbef6e3a0749, type: 3}
       necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
       necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
       necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
+      placeOnRoomDefaultScale: 1
     - itemName: Necklace Set
       thumbnailImage: {fileID: 21300000, guid: 0cfbe5a7764484bd0b23caaafbef6f4a, type: 3}
       jewelryPrefab: {fileID: 4867846982337360968, guid: ce76fddc1bbab4ebe9c7d31dc55d6278, type: 3}
       necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
       necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
       necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
+      placeOnRoomDefaultScale: 1
     - itemName: Necklace
       thumbnailImage: {fileID: 21300000, guid: 760360fddb3e54945bdc46bfc35169de, type: 3}
       jewelryPrefab: {fileID: 804426986579811739, guid: 0cc442a5c1b83a94b9aeb7983e1c69b4, type: 3}
       necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
       necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
       necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
+      placeOnRoomDefaultScale: 1
     - itemName: Gold Necklace
       thumbnailImage: {fileID: 21300000, guid: 3aa24c5102c2c6d48ae15675da44a97f, type: 3}
       jewelryPrefab: {fileID: 5898075654446669484, guid: 31d21521e8a164267a2dfe0f6116c2c1, type: 3}
       necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
       necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
       necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
+      placeOnRoomDefaultScale: 1
   - categoryName: Braclet
     type: 2
     items:
@@ -878,26 +887,30 @@ MonoBehaviour:
       necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
       necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
       necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
+      placeOnRoomDefaultScale: 1
     - itemName: Braclet Gold
-      thumbnailImage: {fileID: 0}
+      thumbnailImage: {fileID: 21300000, guid: c8639af6a75717f47b93ce995e0f9b50, type: 3}
       jewelryPrefab: {fileID: 3368076468150510327, guid: 77ac802b7b7008d42a3df87a0a44e203, type: 3}
       necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
       necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
       necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
+      placeOnRoomDefaultScale: 1
   - categoryName: Ring
     type: 3
     items:
     - itemName: Ring
-      thumbnailImage: {fileID: 0}
+      thumbnailImage: {fileID: 21300000, guid: efd1f880adaf9d84f8f4af59a19888bb, type: 3}
       jewelryPrefab: {fileID: 8306998610349388954, guid: d5bc89730c0643140a0bb33950b13362, type: 3}
       necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
       necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
       necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
+      placeOnRoomDefaultScale: 1
   leftEarAnchor: {fileID: 0}
   rightEarAnchor: {fileID: 0}
   necklaceAnchor: {fileID: 0}
   banglePlacer: {fileID: 964915048}
   ringPlacer: {fileID: 1284825134}
+  placementManager: {fileID: 0}
   arCameraManager: {fileID: 77988580}
 --- !u!4 &954362370
 Transform:
@@ -1411,6 +1424,7 @@ MonoBehaviour:
   jewelryManager: {fileID: 954362369}
   mainMenuSceneName: MainMenuScene
   captureCamera: {fileID: 77988582}
+  restrictARSceneToPlaceOnRoomType: 0
 --- !u!4 &1900725528
 Transform:
   m_ObjectHideFlags: 0

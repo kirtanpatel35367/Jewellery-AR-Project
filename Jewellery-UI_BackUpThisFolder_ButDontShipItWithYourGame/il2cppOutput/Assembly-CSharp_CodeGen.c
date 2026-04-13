@@ -49,17 +49,19 @@ extern void PlacementManager_RemoveAll_m3211871F72F369F6A83B63C99099B81755D50AE2
 extern void PlacementManager_get_HasActivePrefab_m84093413F279C60994A0CDB360F9101364EEF554 (void);
 extern void PlacementManager_GetPlacedItems_m34B52DAD8C6EC0487118DF369B7481BC886F23B9 (void);
 extern void PlacementManager_DoSpawn_mAEE8A671DA2A4B154637957E5FA3CE8B0160C81E (void);
-extern void PlacementManager_MoveItem_mE89735891AAEFCD2B99E7863099FA223A4F963DB (void);
-extern void PlacementManager_GetBottomOffsetLocal_m057CCB983B37B40644DF3F31FB49E097E1EDF85B (void);
-extern void PlacementManager_NormaliseScale_m62D215F61EE4AAB73061C9C2F72B58D974C28B95 (void);
+extern void PlacementManager_MoveItemToPlane_m0B981A659A775C61B26741A5A1A789FD03A022FA (void);
+extern void PlacementManager_GetCombinedBounds_mEF4801AF43057ED69D8A066101707FF1DCCBDCEE (void);
+extern void PlacementManager_ApplyTargetScale_m4B0C1B894125496CF07679542684549A518CB27B (void);
+extern void PlacementManager_IsNecklace_m3AE7B7445077FF0E7AFB4844E43E2384C6ED1A9C (void);
 extern void PlacementManager_GetTargetSize_mA944B57029AB4D3928DDB79F5CD7ED131188D02B (void);
 extern void PlacementManager_DoSelect_mA46FA7A893CD01D097FE25D76C36B7BD393CD2AE (void);
 extern void PlacementManager_DoDeselect_mFFB6A0B4F2A7B4DA5B601E5EF887FEE8F74B80C9 (void);
 extern void PlacementManager_DoRemove_mF73018EC748EC80C241C4F9B808FD9098FA3F920 (void);
 extern void PlacementManager_FindPlacedByPrefab_m5919AF9BC995D88FD55934BF2E3C5261963D43DA (void);
 extern void PlacementManager_AddColliders_m09F2495D7B7CB21A83C0B3170B23A3ED23946C26 (void);
-extern void PlacementManager_BuildRing_m2E59473B0DC0DD9B8371FA81CC9BEBE9D7605BF4 (void);
+extern void PlacementManager_BuildSelectionRing_m0D57DE6B17DB42CB5DBCDFF99C2358D5A312C5EB (void);
 extern void PlacementManager_ShowRing_mABE03130AE61DF8631577F890FE64A36B881456F (void);
+extern void PlacementManager_UpdateRingPosition_m706B4A29FA0B285A2975E8D9A7FDAF1C4FFD1555 (void);
 extern void PlacementManager_HideRing_m0F1E296842BEDBABC9C52CD46A5A8ED64C90C342 (void);
 extern void PlacementManager_DoPinchZoom_m4D105FA2DAA17308DE453C3092C5191C2739045A (void);
 extern void PlacementManager_CanvasCleanupLoop_m56503D4CDFD0FB24F1D4C6407CC4410989A2C2D9 (void);
@@ -69,12 +71,12 @@ extern void PlacementManager_IsOverUI_mC29004C3EC2143435B9956F1F6F4E7AD8B9D291D 
 extern void PlacementManager__ctor_mD9CB28CCE5FC117220871AE96FB05439A48912C1 (void);
 extern void PlacementManager__cctor_m9305665FE201FF8497E145FBD61C2DB3A931E829 (void);
 extern void PlacedItem__ctor_mE8E7471EC36DD11F6CB37F2FFD5B6056855B3CF1 (void);
-extern void U3CCanvasCleanupLoopU3Ed__57__ctor_m964D8A8C7DDBCCED692E4B748AA193701731AE5B (void);
-extern void U3CCanvasCleanupLoopU3Ed__57_System_IDisposable_Dispose_m9A2E8DACAA09B45D3708DA952B5FAB757DCC0BF9 (void);
-extern void U3CCanvasCleanupLoopU3Ed__57_MoveNext_mF97CA0854D3E4B3E3F30109447646725AA15FE3C (void);
-extern void U3CCanvasCleanupLoopU3Ed__57_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m5B3D48FFF9B543A4E10FF6AA282AC2BE4D8B9F5B (void);
-extern void U3CCanvasCleanupLoopU3Ed__57_System_Collections_IEnumerator_Reset_mE82D14BE467D0D47DA9BD60E5A3A2ABE27F2209F (void);
-extern void U3CCanvasCleanupLoopU3Ed__57_System_Collections_IEnumerator_get_Current_mF4DE4735C07CC437CFBC5924CFB75464A4E313A9 (void);
+extern void U3CCanvasCleanupLoopU3Ed__61__ctor_m64125B5695FC90CE46301F2D05D5427508183D7C (void);
+extern void U3CCanvasCleanupLoopU3Ed__61_System_IDisposable_Dispose_m01D48D4BC9355B258AA14733B7201276A2B3FB51 (void);
+extern void U3CCanvasCleanupLoopU3Ed__61_MoveNext_mF78E2121F8250859E8D4FB2A8209E45E85F0D884 (void);
+extern void U3CCanvasCleanupLoopU3Ed__61_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mBA5F357BCECADD2857088320297095FE583E7FB0 (void);
+extern void U3CCanvasCleanupLoopU3Ed__61_System_Collections_IEnumerator_Reset_mEE6BA39674AE20EDDC532DB4259AAA5D86015D19 (void);
+extern void U3CCanvasCleanupLoopU3Ed__61_System_Collections_IEnumerator_get_Current_m467D1918AA1641AB4CDAFEE3F10406866558B15E (void);
 extern void EarAttachARCore_Awake_m842DC88802947AAF96B7FFE98D57831065B78AFF (void);
 extern void EarAttachARCore_RegisterWithManager_mC3944C18ECD677A70D49781EDB6A70E69F303090 (void);
 extern void EarAttachARCore_Update_mBB70E19B1437DDDED7F7D6EC6ABEF540FC171AD2 (void);
@@ -1357,7 +1359,7 @@ extern void FaceDetectionConfigWindow_U3CInitializeRunningModeU3Eb__22_0_mA92B45
 extern void FaceDetectionConfigWindow_U3CInitializeMinDetectionConfidenceU3Eb__23_0_m31E2C78577D731BD83E7BFAF90983D334C3B417E (void);
 extern void FaceDetectionConfigWindow_U3CInitializeMinSuppressionThresholdU3Eb__24_0_m64F24E9C1B82A7EE96A82CBA76531ABD028F8B6A (void);
 extern void FaceDetectionConfigWindow_U3CInitializeNumFacesU3Eb__25_0_m4622CA4893D10D647FC146F141377B2D8F516F82 (void);
-static Il2CppMethodPointer s_methodPointers[1420] = 
+static Il2CppMethodPointer s_methodPointers[1422] = 
 {
 	UnicodeInlineText_OnPopulateMesh_m494236F236211061859A497C7A1091C5A2C5BD6D,
 	UnicodeInlineText_Decode_m3D8FBEDB0EA494CD7D1E0AF967D3BA6A545DDB1B,
@@ -1401,17 +1403,19 @@ static Il2CppMethodPointer s_methodPointers[1420] =
 	PlacementManager_get_HasActivePrefab_m84093413F279C60994A0CDB360F9101364EEF554,
 	PlacementManager_GetPlacedItems_m34B52DAD8C6EC0487118DF369B7481BC886F23B9,
 	PlacementManager_DoSpawn_mAEE8A671DA2A4B154637957E5FA3CE8B0160C81E,
-	PlacementManager_MoveItem_mE89735891AAEFCD2B99E7863099FA223A4F963DB,
-	PlacementManager_GetBottomOffsetLocal_m057CCB983B37B40644DF3F31FB49E097E1EDF85B,
-	PlacementManager_NormaliseScale_m62D215F61EE4AAB73061C9C2F72B58D974C28B95,
+	PlacementManager_MoveItemToPlane_m0B981A659A775C61B26741A5A1A789FD03A022FA,
+	PlacementManager_GetCombinedBounds_mEF4801AF43057ED69D8A066101707FF1DCCBDCEE,
+	PlacementManager_ApplyTargetScale_m4B0C1B894125496CF07679542684549A518CB27B,
+	PlacementManager_IsNecklace_m3AE7B7445077FF0E7AFB4844E43E2384C6ED1A9C,
 	PlacementManager_GetTargetSize_mA944B57029AB4D3928DDB79F5CD7ED131188D02B,
 	PlacementManager_DoSelect_mA46FA7A893CD01D097FE25D76C36B7BD393CD2AE,
 	PlacementManager_DoDeselect_mFFB6A0B4F2A7B4DA5B601E5EF887FEE8F74B80C9,
 	PlacementManager_DoRemove_mF73018EC748EC80C241C4F9B808FD9098FA3F920,
 	PlacementManager_FindPlacedByPrefab_m5919AF9BC995D88FD55934BF2E3C5261963D43DA,
 	PlacementManager_AddColliders_m09F2495D7B7CB21A83C0B3170B23A3ED23946C26,
-	PlacementManager_BuildRing_m2E59473B0DC0DD9B8371FA81CC9BEBE9D7605BF4,
+	PlacementManager_BuildSelectionRing_m0D57DE6B17DB42CB5DBCDFF99C2358D5A312C5EB,
 	PlacementManager_ShowRing_mABE03130AE61DF8631577F890FE64A36B881456F,
+	PlacementManager_UpdateRingPosition_m706B4A29FA0B285A2975E8D9A7FDAF1C4FFD1555,
 	PlacementManager_HideRing_m0F1E296842BEDBABC9C52CD46A5A8ED64C90C342,
 	PlacementManager_DoPinchZoom_m4D105FA2DAA17308DE453C3092C5191C2739045A,
 	PlacementManager_CanvasCleanupLoop_m56503D4CDFD0FB24F1D4C6407CC4410989A2C2D9,
@@ -1421,12 +1425,12 @@ static Il2CppMethodPointer s_methodPointers[1420] =
 	PlacementManager__ctor_mD9CB28CCE5FC117220871AE96FB05439A48912C1,
 	PlacementManager__cctor_m9305665FE201FF8497E145FBD61C2DB3A931E829,
 	PlacedItem__ctor_mE8E7471EC36DD11F6CB37F2FFD5B6056855B3CF1,
-	U3CCanvasCleanupLoopU3Ed__57__ctor_m964D8A8C7DDBCCED692E4B748AA193701731AE5B,
-	U3CCanvasCleanupLoopU3Ed__57_System_IDisposable_Dispose_m9A2E8DACAA09B45D3708DA952B5FAB757DCC0BF9,
-	U3CCanvasCleanupLoopU3Ed__57_MoveNext_mF97CA0854D3E4B3E3F30109447646725AA15FE3C,
-	U3CCanvasCleanupLoopU3Ed__57_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m5B3D48FFF9B543A4E10FF6AA282AC2BE4D8B9F5B,
-	U3CCanvasCleanupLoopU3Ed__57_System_Collections_IEnumerator_Reset_mE82D14BE467D0D47DA9BD60E5A3A2ABE27F2209F,
-	U3CCanvasCleanupLoopU3Ed__57_System_Collections_IEnumerator_get_Current_mF4DE4735C07CC437CFBC5924CFB75464A4E313A9,
+	U3CCanvasCleanupLoopU3Ed__61__ctor_m64125B5695FC90CE46301F2D05D5427508183D7C,
+	U3CCanvasCleanupLoopU3Ed__61_System_IDisposable_Dispose_m01D48D4BC9355B258AA14733B7201276A2B3FB51,
+	U3CCanvasCleanupLoopU3Ed__61_MoveNext_mF78E2121F8250859E8D4FB2A8209E45E85F0D884,
+	U3CCanvasCleanupLoopU3Ed__61_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mBA5F357BCECADD2857088320297095FE583E7FB0,
+	U3CCanvasCleanupLoopU3Ed__61_System_Collections_IEnumerator_Reset_mEE6BA39674AE20EDDC532DB4259AAA5D86015D19,
+	U3CCanvasCleanupLoopU3Ed__61_System_Collections_IEnumerator_get_Current_m467D1918AA1641AB4CDAFEE3F10406866558B15E,
 	EarAttachARCore_Awake_m842DC88802947AAF96B7FFE98D57831065B78AFF,
 	EarAttachARCore_RegisterWithManager_mC3944C18ECD677A70D49781EDB6A70E69F303090,
 	EarAttachARCore_Update_mBB70E19B1437DDDED7F7D6EC6ABEF540FC171AD2,
@@ -2791,17 +2795,17 @@ extern void U3CWaitNextAsyncU3Ed__58_MoveNext_mF1A0A4EA9DAB41F1835BB33B8C9DBDD74
 extern void U3CWaitNextAsyncU3Ed__58_SetStateMachine_m35F545E125DBD2A10337A5A8DE39562F787E0969_AdjustorThunk (void);
 static Il2CppTokenAdjustorThunkPair s_adjustorThunks[9] = 
 {
-	{ 0x060001E1, ResolutionStruct__ctor_mE369C9144160B88E2BF577642F69F4516CEAC3D6_AdjustorThunk },
-	{ 0x060001E2, ResolutionStruct__ctor_m813873DE8AFC6A291335D52E0FE801A0A4F3ED3F_AdjustorThunk },
-	{ 0x060001E3, ResolutionStruct_ToResolution_m7D3150BCB50AC715F5576C7EA1D08626D9F4B8BE_AdjustorThunk },
-	{ 0x060001E4, ResolutionStruct_ToString_m7EF2314E11C11102CA4AAE2DC684F913AEBD75AE_AdjustorThunk },
-	{ 0x06000412, U3CWaitNextAsyncU3Ed__12_MoveNext_mAE2EC29E66A3F81D91DE3FF015124D75EDE7EFB7_AdjustorThunk },
-	{ 0x06000413, U3CWaitNextAsyncU3Ed__12_SetStateMachine_mDE3328A73B7222B8EF6F818BDD130C171E62E313_AdjustorThunk },
-	{ 0x06000430, HolisticTrackingResult__ctor_m3FC6BB8336C944A3752E0DB01D9D526A08645B20_AdjustorThunk },
-	{ 0x0600045B, U3CWaitNextAsyncU3Ed__58_MoveNext_mF1A0A4EA9DAB41F1835BB33B8C9DBDD7473F9F9E_AdjustorThunk },
-	{ 0x0600045C, U3CWaitNextAsyncU3Ed__58_SetStateMachine_m35F545E125DBD2A10337A5A8DE39562F787E0969_AdjustorThunk },
+	{ 0x060001E3, ResolutionStruct__ctor_mE369C9144160B88E2BF577642F69F4516CEAC3D6_AdjustorThunk },
+	{ 0x060001E4, ResolutionStruct__ctor_m813873DE8AFC6A291335D52E0FE801A0A4F3ED3F_AdjustorThunk },
+	{ 0x060001E5, ResolutionStruct_ToResolution_m7D3150BCB50AC715F5576C7EA1D08626D9F4B8BE_AdjustorThunk },
+	{ 0x060001E6, ResolutionStruct_ToString_m7EF2314E11C11102CA4AAE2DC684F913AEBD75AE_AdjustorThunk },
+	{ 0x06000414, U3CWaitNextAsyncU3Ed__12_MoveNext_mAE2EC29E66A3F81D91DE3FF015124D75EDE7EFB7_AdjustorThunk },
+	{ 0x06000415, U3CWaitNextAsyncU3Ed__12_SetStateMachine_mDE3328A73B7222B8EF6F818BDD130C171E62E313_AdjustorThunk },
+	{ 0x06000432, HolisticTrackingResult__ctor_m3FC6BB8336C944A3752E0DB01D9D526A08645B20_AdjustorThunk },
+	{ 0x0600045D, U3CWaitNextAsyncU3Ed__58_MoveNext_mF1A0A4EA9DAB41F1835BB33B8C9DBDD7473F9F9E_AdjustorThunk },
+	{ 0x0600045E, U3CWaitNextAsyncU3Ed__58_SetStateMachine_m35F545E125DBD2A10337A5A8DE39562F787E0969_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[1420] = 
+static const int32_t s_InvokerIndices[1422] = 
 {
 	10260,
 	8818,
@@ -2846,8 +2850,9 @@ static const int32_t s_InvokerIndices[1420] =
 	12767,
 	5407,
 	5296,
-	8974,
-	10260,
+	19019,
+	5211,
+	7213,
 	8974,
 	10260,
 	12934,
@@ -2855,6 +2860,7 @@ static const int32_t s_InvokerIndices[1420] =
 	8818,
 	10260,
 	12934,
+	10260,
 	10260,
 	12934,
 	12934,
@@ -4238,26 +4244,26 @@ static const Il2CppTokenRangePair s_rgctxIndices[32] =
 	{ 0x0200008A, { 363, 3 } },
 	{ 0x02000094, { 381, 4 } },
 	{ 0x02000095, { 385, 1 } },
-	{ 0x060002F3, { 3, 2 } },
-	{ 0x060002F5, { 5, 5 } },
-	{ 0x060002F6, { 10, 1 } },
-	{ 0x060002F7, { 11, 5 } },
-	{ 0x060002F8, { 16, 7 } },
-	{ 0x060002F9, { 23, 9 } },
-	{ 0x060002FA, { 32, 11 } },
-	{ 0x060002FB, { 43, 13 } },
-	{ 0x060002FC, { 56, 15 } },
-	{ 0x060002FD, { 71, 18 } },
-	{ 0x060002FE, { 89, 10 } },
-	{ 0x060002FF, { 99, 11 } },
-	{ 0x06000300, { 110, 12 } },
-	{ 0x06000301, { 122, 13 } },
-	{ 0x06000302, { 135, 14 } },
-	{ 0x06000303, { 149, 15 } },
-	{ 0x06000304, { 164, 16 } },
-	{ 0x06000337, { 360, 3 } },
-	{ 0x0600034F, { 366, 3 } },
-	{ 0x06000373, { 369, 12 } },
+	{ 0x060002F5, { 3, 2 } },
+	{ 0x060002F7, { 5, 5 } },
+	{ 0x060002F8, { 10, 1 } },
+	{ 0x060002F9, { 11, 5 } },
+	{ 0x060002FA, { 16, 7 } },
+	{ 0x060002FB, { 23, 9 } },
+	{ 0x060002FC, { 32, 11 } },
+	{ 0x060002FD, { 43, 13 } },
+	{ 0x060002FE, { 56, 15 } },
+	{ 0x060002FF, { 71, 18 } },
+	{ 0x06000300, { 89, 10 } },
+	{ 0x06000301, { 99, 11 } },
+	{ 0x06000302, { 110, 12 } },
+	{ 0x06000303, { 122, 13 } },
+	{ 0x06000304, { 135, 14 } },
+	{ 0x06000305, { 149, 15 } },
+	{ 0x06000306, { 164, 16 } },
+	{ 0x06000339, { 360, 3 } },
+	{ 0x06000351, { 366, 3 } },
+	{ 0x06000375, { 369, 12 } },
 };
 extern const uint32_t g_rgctx_WaitForResult_1_t23BC6C1D71B6134FA44D619601A58861228B8C7C;
 extern const uint32_t g_rgctx_T_t7BF18128D0A7F7BA6FA6114E05C6482DA4D0F6B7;
@@ -5038,7 +5044,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	1420,
+	1422,
 	s_methodPointers,
 	9,
 	s_adjustorThunks,
