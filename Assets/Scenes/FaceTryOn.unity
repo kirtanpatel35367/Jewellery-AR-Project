@@ -840,39 +840,46 @@ MonoBehaviour:
       necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
       necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
       placeOnRoomDefaultScale: 1
+    - itemName: Model_Maa
+      thumbnailImage: {fileID: 21300000, guid: 45ef9aed2cd26c94c9fa2ab82e64f998, type: 3}
+      jewelryPrefab: {fileID: 31644430142146737, guid: f3ab54975233231458c28f308f415207, type: 3}
+      necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
+      necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
+      necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
+      placeOnRoomDefaultScale: 1
   - categoryName: Necklace
     type: 1
     items:
     - itemName: Necklace Gold
-      thumbnailImage: {fileID: 21300000, guid: 0748d2e5b29fc42959e476513df6c86f, type: 3}
+      thumbnailImage: {fileID: 21300000, guid: 3110c65e2d60a0045950bce71e8038cd, type: 3}
       jewelryPrefab: {fileID: 98793999804689636, guid: 9a13fcc790d174fc0a07debb89f8402f, type: 3}
       necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
       necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
       necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
       placeOnRoomDefaultScale: 1
     - itemName: Necklace Pack
-      thumbnailImage: {fileID: 21300000, guid: afd4db220a8a343819f1da7077854c68, type: 3}
+      thumbnailImage: {fileID: 21300000, guid: 79f3938d582641449a2924db9c5ca8b9, type: 3}
       jewelryPrefab: {fileID: 8269905544744269240, guid: 444e13b0c7a2747ea85abbef6e3a0749, type: 3}
       necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
       necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
       necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
       placeOnRoomDefaultScale: 1
     - itemName: Necklace Set
-      thumbnailImage: {fileID: 21300000, guid: 0cfbe5a7764484bd0b23caaafbef6f4a, type: 3}
+      thumbnailImage: {fileID: 21300000, guid: 052b8c1463fc90e42aa299fdc3576db8, type: 3}
       jewelryPrefab: {fileID: 4867846982337360968, guid: ce76fddc1bbab4ebe9c7d31dc55d6278, type: 3}
       necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
       necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
       necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
       placeOnRoomDefaultScale: 1
     - itemName: Necklace
-      thumbnailImage: {fileID: 21300000, guid: 760360fddb3e54945bdc46bfc35169de, type: 3}
+      thumbnailImage: {fileID: 21300000, guid: d35f58f980d26da4fafb08e856034956, type: 3}
       jewelryPrefab: {fileID: 804426986579811739, guid: 0cc442a5c1b83a94b9aeb7983e1c69b4, type: 3}
       necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
       necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
       necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
       placeOnRoomDefaultScale: 1
     - itemName: Gold Necklace
-      thumbnailImage: {fileID: 21300000, guid: 3aa24c5102c2c6d48ae15675da44a97f, type: 3}
+      thumbnailImage: {fileID: 21300000, guid: bedf12ab7e4c3224bafbddabf1bad9fd, type: 3}
       jewelryPrefab: {fileID: 5898075654446669484, guid: 31d21521e8a164267a2dfe0f6116c2c1, type: 3}
       necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
       necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
@@ -898,9 +905,16 @@ MonoBehaviour:
   - categoryName: Ring
     type: 3
     items:
-    - itemName: Ring
+    - itemName: Dimond Ring
       thumbnailImage: {fileID: 21300000, guid: efd1f880adaf9d84f8f4af59a19888bb, type: 3}
       jewelryPrefab: {fileID: 8306998610349388954, guid: d5bc89730c0643140a0bb33950b13362, type: 3}
+      necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
+      necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
+      necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
+      placeOnRoomDefaultScale: 1
+    - itemName: Silver Ring
+      thumbnailImage: {fileID: 0}
+      jewelryPrefab: {fileID: 2141496513478381896, guid: e0b2fa63a9b8f94488eccc9c3a8e8e9e, type: 3}
       necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
       necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
       necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
