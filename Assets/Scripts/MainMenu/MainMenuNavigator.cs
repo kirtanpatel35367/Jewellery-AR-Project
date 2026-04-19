@@ -104,7 +104,6 @@ public class MainMenuNavigator : MonoBehaviour
         if (font == null) { Debug.LogError("[MainMenu] Font not found!"); yield break; }
 
         var cgo = new GameObject("MainMenuCanvas");
-        DontDestroyOnLoad(cgo); // keep canvas if you use additive loading
         var cvs = cgo.AddComponent<Canvas>();
         cvs.renderMode = RenderMode.ScreenSpaceOverlay;
         cvs.sortingOrder = 30000;

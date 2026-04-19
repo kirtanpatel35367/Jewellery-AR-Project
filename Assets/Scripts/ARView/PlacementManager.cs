@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 using UnityEngine.EventSystems;
@@ -218,7 +218,7 @@ public class PlacementManager : MonoBehaviour
                 return;
             }
 
-            if (!_raycastManager.Raycast(t.position, _hits, TrackableType.PlaneWithinPolygon))
+            if (!_raycastManager.Raycast(t.position, _hits, TrackableType.PlaneWithinPolygon | TrackableType.PlaneWithinBounds))
             {
                 Debug.Log("[PlacementManager] No plane hit — aim at detected surface.");
                 return;
@@ -245,6 +245,12 @@ public class PlacementManager : MonoBehaviour
     public void SetActivePrefab(GameObject prefab, string itemName = "",
                                 Sprite thumbnail = null, float defaultScale = 1f)
     {
+        // Clear selection if arming a new prefab, so the very next tap spawns immediately
+        if (_activePrefab != prefab && _selectedItem != null)
+        {
+            DoDeselect();
+        }
+
         _activePrefab = prefab;
         _activeDefaultScale = defaultScale;
         _activeItemName = itemName;
@@ -276,25 +282,58 @@ public class PlacementManager : MonoBehaviour
 
     void DoSpawn(Vector3 planePos, Quaternion planeRot)
     {
+        StartCoroutine(SpawnRoutine(planePos, planeRot));
+    }
+
+    IEnumerator SpawnRoutine(Vector3 planePos, Quaternion planeRot)
+    {
         bool isNecklace = IsNecklace(_activeItemName);
 
-        // Step 1: Instantiate at world origin, identity rotation.
-        var go = Instantiate(_activePrefab, Vector3.zero, Quaternion.identity);
+        // Step 1: Instantiate at plane position (NOT zero) to prevent frustum culling bugs with skinned meshes!
+        var go = Instantiate(_activePrefab, planePos, Quaternion.identity);
+        
+        // Strip off destructive Face Try-On specific override scripts!
+        // Prefabs built for Face Try-On have scripts like "NecklaceStableFix" that run in LateUpdate 
+        // to aggressively pin the transform to 0,0,0 (relative to the neck anchor).
+        // Since we are placing it freely in a room, these scripts must be eradicated immediately.
+        foreach (var comp in go.GetComponentsInChildren<MonoBehaviour>())
+        {
+            string tName = comp.GetType().Name;
+            if (tName == "NecklaceStableFix" || tName == "NecklaceMotion" || tName == "NecklaceFitProfile")
+            {
+                Destroy(comp);
+            }
+        }
+
+        // Safety lock offscreen culling which breaks bounding boxes
+        foreach (var skm in go.GetComponentsInChildren<SkinnedMeshRenderer>(true))
+            skm.updateWhenOffscreen = true;
 
         // Step 2: Scale to real-world size (measured cleanly at identity).
         ApplyTargetScale(go, isNecklace);
 
         // Step 3: Fine-tune scale multiplier.
         if (!Mathf.Approximately(_activeDefaultScale, 1f))
+        {
             go.transform.localScale *= _activeDefaultScale;
+        }
 
-        // Step 4: Apply final rotation (still at origin).
+        // Step 4: Apply final rotation
         if (isNecklace)
+        {
             go.transform.rotation = Quaternion.Euler(90f, planeRot.eulerAngles.y, 0f);
+        }
         else
+        {
             go.transform.rotation = planeRot;
+        }
 
-        // Step 5: Place at tap position with correct Y lift.
+        // CRITICAL DEFERRAL: SkinnedMeshRenderers do NOT immediately update their world Bounds property 
+        // in the exact same frame you rotate them. If we calculate bounds right now, we get the standing-up bounds.
+        // We MUST yield 1 frame to let Unity recalculate the bones so the necklace doesn't fly out of the plane!
+        yield return null;
+
+        // Step 5: Place at tap position with correct Y lift AND cleanly updated bounds!
         MoveItemToPlane(go, planePos);
 
         AddColliders(go);
@@ -339,25 +378,23 @@ public class PlacementManager : MonoBehaviour
     /// </summary>
     void MoveItemToPlane(GameObject go, Vector3 planePos)
     {
-        // Put root at origin so bounds.min.y = pure mesh-bottom offset from pivot
-        go.transform.position = Vector3.zero;
+        // Place temporarily at planePos (if not already) to ensure it's in view
+        // and bounds calculate properly (fixes SkinnedMeshRenderer off-screen culling bugs).
+        go.transform.position = planePos;
 
         Bounds b = GetCombinedBounds(go);
 
-        float lift = (b.size == Vector3.zero) ? 0f : -b.min.y;
+        // Distance from object root pivot to its bounding box characteristics
+        float lift = (b.size == Vector3.zero) ? 0f : -(b.min.y - go.transform.position.y);
+        float offsetX = b.center.x - go.transform.position.x;
+        float offsetZ = b.center.z - go.transform.position.z;
 
-        // X and Z: root pivot goes exactly to tap point — NO bounds offset
-        // Y: lifted so the mesh bottom lands exactly on the plane surface
+        // Correct centering: Offset the tap coordinates so the visual mesh lands perfectly on tap
         go.transform.position = new Vector3(
-            planePos.x,
+            planePos.x - offsetX,
             planePos.y + lift,
-            planePos.z
+            planePos.z - offsetZ
         );
-
-        Debug.Log($"[PlacementManager] MoveItemToPlane:" +
-                  $"  planePos={planePos}" +
-                  $"  bounds.min.y={b.min.y:F4}  lift={lift:F4}" +
-                  $"  finalPos={go.transform.position}");
     }
 
     // ══════════════════════════════════════════════════════════════════
@@ -366,11 +403,31 @@ public class PlacementManager : MonoBehaviour
 
     static Bounds GetCombinedBounds(GameObject go)
     {
-        var renderers = go.GetComponentsInChildren<Renderer>(true);
-        if (renderers.Length == 0) return new Bounds(Vector3.zero, Vector3.zero);
-        Bounds b = renderers[0].bounds;
-        for (int i = 1; i < renderers.Length; i++)
-            b.Encapsulate(renderers[i].bounds);
+        var renderers = go.GetComponentsInChildren<Renderer>(false);
+        bool initialized = false;
+        Bounds b = new Bounds(go.transform.position, Vector3.zero);
+
+        foreach (var r in renderers)
+        {
+            if (r is ParticleSystemRenderer) continue;
+            if (r.bounds.size == Vector3.zero) continue;
+
+            if (!initialized)
+            {
+                b = r.bounds;
+                initialized = true;
+            }
+            else
+            {
+                b.Encapsulate(r.bounds);
+            }
+        }
+        
+        if (!initialized) 
+        {
+            return new Bounds(go.transform.position, Vector3.zero);
+        }
+        
         return b;
     }
 
@@ -383,19 +440,15 @@ public class PlacementManager : MonoBehaviour
         Bounds b = GetCombinedBounds(go);
         if (b.size == Vector3.zero) return;
 
-        // For necklace laid flat (90° X rotation):
-        //   diameter when flat = max of X and Z at identity pose
-        float currentSize = isNecklace
-            ? Mathf.Max(b.size.x, b.size.z)
-            : Mathf.Max(b.size.x, b.size.y, b.size.z);
+        // Simply pick the absolute longest dimension of the mesh to use as the footprint size.
+        // This removes the dependency on how the 3D artist natively modeled it (standing up vs flat)
+        float currentSize = Mathf.Max(b.size.x, b.size.y, b.size.z);
 
         if (currentSize < 0.0001f) return;
 
         float target = GetTargetSize(_activeItemName);
         float factor = target / currentSize;
         go.transform.localScale *= factor;
-
-        Debug.Log($"[PlacementManager] Scale: raw={currentSize:F4} target={target:F4} factor={factor:F4}");
     }
 
     bool IsNecklace(string name)
