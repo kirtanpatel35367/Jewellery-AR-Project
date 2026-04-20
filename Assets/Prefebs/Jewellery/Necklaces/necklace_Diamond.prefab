@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5925673442859535746}
   - component: {fileID: -2765091924114973501}
   - component: {fileID: -9178438759828753144}
+  - component: {fileID: -8823194524836094181}
   m_Layer: 0
   m_Name: necklace_Diamond
   m_TagString: Untagged
@@ -87,6 +88,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-8823194524836094181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804426986579811739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fe3d05a666ee4a1895c89a21b0806b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RuntimeNecklaceFixer
 --- !u!1001 &8819195803982476802
 PrefabInstance:
   m_ObjectHideFlags: 0
