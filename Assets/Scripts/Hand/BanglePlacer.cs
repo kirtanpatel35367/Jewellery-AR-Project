@@ -1,70 +1,45 @@
-// BanglePlacer.cs — v55
-// Base: v35 (stable, correct colour, no shader)
+// BanglePlacer.cs — v59 (Two-Copy Classic — Definitive)
 //
-// ══════════════════════════════════════════════════════════════════════
-// BUG IN v54 — Why front/back split still didn't work:
+// ══════════════════════════════════════════════════════════════════════════
+// WHY ALL OCCLUDER APPROACHES FAILED
+// ──────────────────────────────────────────────────────────────────────────
+// The bangle prefab materials almost certainly have ZTest=Always or
+// are set as transparent (ZWrite Off).  No depth-buffer occluder can
+// affect objects that ignore the depth test.
 //
-//   v54 used this to set front/back positions:
-//     _front.transform.localPosition =
-//         _root.transform.InverseTransformPoint(_smoothPos + frontOffset);
+// The ONLY approach guaranteed to work with ANY material is to control
+// GameObject.SetActive() — no dependency on the GPU pipeline at all.
 //
-//   THIS IS WRONG. Here's why:
-//   - _root is placed at _smoothPos via SetPositionAndRotation
-//   - So _root.position == _smoothPos
-//   - InverseTransformPoint(_smoothPos + offset) converts world-pos to
-//     local-space of _root. Since _root is AT _smoothPos, this gives
-//     the LOCAL translation of `offset` which is correct in theory...
-//     BUT the _root is also ROTATED to match the bracelet orientation.
-//   - InverseTransformPoint applies the inverse rotation, so the local
-//     offset is in rotated space — but `frontOffset = camDir * sep`
-//     is in WORLD space. This gives wrong offset direction.
+// ══════════════════════════════════════════════════════════════════════════
+// HOW THIS WORKS
+// ──────────────────────────────────────────────────────────────────────────
+// We spawn TWO instances of the bangle prefab:
+//   _front  — offset slightly toward the palm    (+palmNormal × wrapOffset)
+//   _back   — offset slightly toward the dorsal  (-palmNormal × wrapOffset)
 //
-//   The correct fix: express the offset IN THE ROOT'S LOCAL SPACE.
-//   camDir in world space → transform to root local space using
-//   Quaternion.Inverse(_smoothRot) * camDir.
-//   Then _front.localPosition = localCamDir * wrapSeparation
+// Every frame we compute:
+//   smoothedPalmNormal = _smoothRot * Vector3.up  (Local Y of root frame)
+//   camDir             = (camera.position - bangCenter).normalized
+//   viewDot            = Dot(smoothedPalmNormal, camDir)
 //
-// ALSO FIXED in v55:
-//   The front/back switch logic uses the FINAL smoothed viewDot.
-//   Previous versions sometimes flickered because viewDot was computed
-//   before the smoothed rotation converged. Now computed from _smoothRot.
+//   viewDot > 0  → camera sees the PALM side  → show FRONT, hide BACK
+//   viewDot < 0  → camera sees the DORSAL side → show BACK,  hide FRONT
+//   |viewDot| near 0 → side-on view → show both for smooth crossover
 //
-// HOW THE WRAP ILLUSION WORKS:
+// FIXED BUG — palmNormal was INVERTED for right hand:
+//   Old: Cross(armAxis, across) → gives (0,0,-1) when palm faces camera.
+//   New: Cross(across, armAxis) → gives (0,0,+1) when palm faces camera. ✓
+//   The IsLeftHand flip is kept as-is for left-hand correction.
 //
-//   _root sits at wrist centre, oriented to match the wrist.
-//   In the root's local space:
-//     Local Y = palmNormal direction (toward palm)
-//     Local Z = armAxis (along forearm)
-//     Local X = across wrist
-//
-//   frontOffset = +localY * wrapSeparation
-//     → front instance is shifted toward palm (+Y in local space)
-//     → in world: front is on the palm side of the wrist centre
-//
-//   backOffset  = -localY * wrapSeparation
-//     → back instance is shifted toward back of hand (-Y in local)
-//     → in world: back is on the dorsal side of the wrist centre
-//
-//   When palm faces camera:
-//     Front (palm-side) is nearer to camera → renderQueue 2999 → on top
-//     Back (dorsal-side) is farther → renderer.enabled=false → hidden
-//     Visible: FRONT ARC only ✓
-//
-//   When back of hand faces camera:
-//     Back (dorsal-side) is nearer to camera
-//     Front (palm-side) is farther → renderer.enabled=false → hidden
-//     Visible: BACK ARC only ✓
-//
-//   X-scale foreshortening: bracelet width compresses as wrist tilts,
-//   giving the illusion of curving around the wrist cylinder.
-//
-// ══════════════════════════════════════════════════════════════════════
+// ══════════════════════════════════════════════════════════════════════════
 
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 
 public class BanglePlacer : MonoBehaviour
 {
+    // ── Inspector ─────────────────────────────────────────────────────────
+
     [Header("References")]
     public JewelleryLandmarkReader landmarkReader;
     public Camera arCamera;
@@ -76,43 +51,41 @@ public class BanglePlacer : MonoBehaviour
     [Range(0.2f, 1.5f)] public float baseDepth = 0.5f;
 
     [Header("Bracelet Size")]
-    [Tooltip("Outer diameter in metres. Increase if too small on wrist.")]
-    [Range(0.040f, 0.140f)] public float targetDiameterM = 0.090f;
+    [Range(0.040f, 0.180f)] public float targetDiameterM = 0.090f;
 
     [Header("Wrist Position")]
-    [Tooltip("0=wrist bone, 0.15=wrist crease")]
-    [Range(-0.1f, 0.4f)] public float wristOffsetFactor = 0.15f;
+    [Range(-0.1f, 0.5f)] public float wristOffsetFactor = 0.15f;
+
+    [Header("Orientation Tuning")]
+    [Tooltip("Rotate the bangle model to sit horizontal on the wrist.\n" +
+             "X=90 lays the ring flat across the wrist (fixes vertical standing bangle).\n" +
+             "If still wrong, try (90,0,0), (0,90,0), or (90,90,0) until flat.")]
+    public Vector3 meshRotationOffset = new Vector3(90f, 0f, 0f);
+
+    [Header("Front / Back Split")]
+    [Tooltip("Small offset separating the two copies along palmNormal.\n" +
+             "Keeps them from z-fighting each other. 0.005 m = 5 mm.")]
+    [Range(0.001f, 0.020f)] public float wrapOffset = 0.005f;
+
+    [Tooltip("viewDot threshold for switching copies.\n" +
+             "0.05 means both copies are visible when side-on (viewDot ∈ [-0.05, 0.05]).\n" +
+             "Increase for a wider blend zone.")]
+    [Range(0f, 0.3f)] public float blendZone = 0.05f;
+
+    [Tooltip("Controls which copy shows when the palm faces the camera.\n" +
+             "UNTICKED (false) = correct for most phones (back-facing camera).\n" +
+             "If the back of the bracelet shows when palm faces you, TICK this ON.")]
+    public bool frontIsPalmSide = false;
 
     [Header("Landmark Y Correction")]
     [Range(0f, 0.15f)] public float bboxYCorrection = 0.02f;
 
-    [Header("Wrap Illusion")]
-    [Tooltip("Separates front/back instances along palmNormal (metres).\n" +
-             "Front shifts toward palm. Back shifts toward back-of-hand.\n" +
-             "8-12mm recommended. Creates the 'going through the wrist' depth.")]
-    [Range(0.003f, 0.030f)] public float wrapSeparation = 0.010f;
-
-    [Tooltip("How much bracelet width compresses at side view.\n" +
-             "1.0 = full cylinder foreshortening (most realistic).\n" +
-             "0.0 = no compression (flat sticker).")]
-    [Range(0f, 1f)] public float edgeCurvature = 0.80f;
-
-    [Tooltip("Curve sharpness. 0.6=gentle. 1.0=linear. 1.5=sharp edges.")]
-    [Range(0.3f, 2f)] public float curvePow = 0.65f;
-
-    [Tooltip("Hysteresis dead-band at front/back transition. Prevents flicker.")]
-    [Range(0f, 0.20f)] public float switchHysteresis = 0.10f;
-
     [Header("Adaptive Scale")]
     public bool enableAdaptiveScale = true;
-
-    [Tooltip("Pixel dist wrist→mid-knuckle at your normal filming distance.\n" +
-             "Check Console log 'pixelDist=XXX' and set this value.")]
     [Range(50f, 400f)] public float referencePixelDist = 180f;
-
     [Range(2f, 20f)] public float scaleSmooth = 8f;
-    [Range(0.3f, 1f)] public float minScaleMult = 0.5f;
-    [Range(1f, 3.5f)] public float maxScaleMult = 3.0f;
+    [Range(0.3f, 1.5f)] public float minScaleMult = 0.5f;
+    [Range(1f, 4f)] public float maxScaleMult = 3.0f;
 
     [Header("Smoothing")]
     [Range(1f, 40f)] public float posSmooth = 22f;
@@ -122,46 +95,58 @@ public class BanglePlacer : MonoBehaviour
     [Range(0, 40)] public int hideDelayFrames = 20;
     [Range(0, 5)] public int minDetectionFrames = 2;
 
-    // ── private ──────────────────────────────────────────────────────
+    // ── Private ───────────────────────────────────────────────────────────
+
     private GameObject _root;
-    private GameObject _front;          // offset +Y (toward palm)
-    private GameObject _back;           // offset -Y (toward back-of-hand)
-    private Renderer[] _frontRends;
-    private Renderer[] _backRends;
-    private Vector3 _calibratedScale;
+    private GameObject _front;   // palm-facing copy
+    private GameObject _back;    // dorsal-facing copy
+
+    private Vector3 _calibratedScale = Vector3.one;
     private float _smoothScaleMult = 1f;
-    private bool _showingFront = true;
 
     private Vector3 _smoothPos;
     private Quaternion _smoothRot = Quaternion.identity;
     private Vector3 _posVelocity;
-    private Vector3 _smoothPalmNormal = Vector3.forward;
     private bool _firstFrame = true;
     private bool _ready;
     private int _detFrames, _lostFrames;
-    private float _logT;
+    private float _logTimer;
+
     private int _rawTexW, _rawTexH, _texW, _texH;
 
-    // ─────────────────────────────────────────────────────────────────
+    // ── Lifecycle ─────────────────────────────────────────────────────────
+
     void Start()
     {
         if (!landmarkReader)
-        { Debug.LogError("[BanglePlacer v55] landmarkReader not assigned!"); return; }
+        { Debug.LogError("[BanglePlacer v59] landmarkReader not assigned!"); return; }
         if (!arCamera) arCamera = Camera.main;
+
         if (banglePrefab) SpawnBangle(banglePrefab);
         _ready = true;
     }
 
+    void OnDestroy()
+    {
+        if (_root) Destroy(_root);
+    }
+
+    // ── Public API ────────────────────────────────────────────────────────
+
     public void SetBanglePrefab(GameObject p)
-    { if (p) { banglePrefab = p; SpawnBangle(p); } else ClearBangle(); }
+    {
+        if (p) { banglePrefab = p; SpawnBangle(p); }
+        else ClearBangle();
+    }
 
     public void ClearBangle()
     {
         if (_root) { Destroy(_root); _root = null; }
-        _front = null; _back = null;
-        _frontRends = null; _backRends = null;
+        _front = _back = null;
         _firstFrame = true; _detFrames = 0; _lostFrames = 0; banglePrefab = null;
     }
+
+    // ── Spawn ─────────────────────────────────────────────────────────────
 
     void SpawnBangle(GameObject prefab)
     {
@@ -170,67 +155,37 @@ public class BanglePlacer : MonoBehaviour
         _root = new GameObject("BangleRoot");
         _root.transform.SetParent(transform, false);
 
-        // Front: local +Y = toward palm side
+        // Front copy — will be offset toward palm at runtime
         _front = Instantiate(prefab, _root.transform);
-        _front.name = "BangleFront";
-        _front.transform.localRotation = Quaternion.identity;
+        _front.name = "Bangle_Front";
+        _front.transform.localRotation = Quaternion.Euler(meshRotationOffset);
         _front.transform.localScale = Vector3.one;
 
-        // Back: local -Y = toward back-of-hand side
+        // Back copy — will be offset away from palm at runtime
         _back = Instantiate(prefab, _root.transform);
-        _back.name = "BangleBack";
-        _back.transform.localRotation = Quaternion.identity;
+        _back.name = "Bangle_Back";
+        _back.transform.localRotation = Quaternion.Euler(meshRotationOffset);
         _back.transform.localScale = Vector3.one;
 
-        _frontRends = _front.GetComponentsInChildren<Renderer>();
-        _backRends = _back.GetComponentsInChildren<Renderer>();
-
-        // Front draws on top of back
-        SetRenderQueue(_frontRends, 2999);
-        SetRenderQueue(_backRends, 2998);
-
-        // Initial state: front visible
-        SetEnabled(_frontRends, true);
-        SetEnabled(_backRends, false);
-        _showingFront = true;
-
-        // Scale calibration
+        // Calibrate scale from prefab bounds
         float measured = MeasureDiameter(_front);
+        _calibratedScale = measured > 0.0001f
+            ? Vector3.one * (targetDiameterM / measured)
+            : Vector3.one;
+
         if (measured > 0.0001f)
-        {
-            float sf = targetDiameterM / measured;
-            _calibratedScale = Vector3.one * sf;
-            Debug.Log($"[BanglePlacer v55] measured={measured * 100:F1}cm " +
-                      $"target={targetDiameterM * 100:F1}cm sf={sf:F3}");
-        }
+            Debug.Log($"[BanglePlacer v59] measured={measured * 100f:F1}cm " +
+                      $"target={targetDiameterM * 100f:F1}cm sf={targetDiameterM / measured:F3}");
         else
-        {
-            _calibratedScale = Vector3.one;
-            Debug.LogWarning("[BanglePlacer v55] No renderer found.");
-        }
+            Debug.LogWarning("[BanglePlacer v59] No renderer found on prefab.");
 
         _smoothScaleMult = 1f;
         _root.SetActive(false);
         _firstFrame = true; _detFrames = 0; _lostFrames = 0;
     }
 
-    void SetRenderQueue(Renderer[] rends, int q)
-    { foreach (var r in rends) if (r?.material != null) r.material.renderQueue = q; }
+    // ── Per-frame ─────────────────────────────────────────────────────────
 
-    void SetEnabled(Renderer[] rends, bool val)
-    { if (rends != null) foreach (var r in rends) if (r) r.enabled = val; }
-
-    static float MeasureDiameter(GameObject go)
-    {
-        var r = go.GetComponentsInChildren<Renderer>();
-        if (r.Length == 0) return 0f;
-        Bounds b = r[0].bounds;
-        for (int i = 1; i < r.Length; i++) b.Encapsulate(r[i].bounds);
-        float dxz = Mathf.Max(b.size.x, b.size.z);
-        return dxz > 0.0001f ? dxz : b.size.y;
-    }
-
-    // ─────────────────────────────────────────────────────────────────
     void LateUpdate()
     {
         if (!_ready || !_root) return;
@@ -241,9 +196,13 @@ public class BanglePlacer : MonoBehaviour
         {
             _detFrames = 0;
             if (++_lostFrames > hideDelayFrames)
-            { _root.SetActive(false); _firstFrame = true; }
+            {
+                _root.SetActive(false);
+                _firstFrame = true;
+            }
             return;
         }
+
         _lostFrames = 0;
         if (++_detFrames < minDetectionFrames) { _root.SetActive(false); return; }
 
@@ -252,39 +211,30 @@ public class BanglePlacer : MonoBehaviour
         // ── Landmarks ─────────────────────────────────────────────────
         Vector3 wristW = C(0);
         Vector3 indexW = C(5), midW = C(9), ringW = C(13), pinkyW = C(17);
+
         Vector3 knuckle = (indexW + midW + ringW + pinkyW) * 0.25f;
         Vector3 armAxis = (knuckle - wristW).normalized;
         if (armAxis.sqrMagnitude < 0.001f) return;
 
-        // ── Palm normal ────────────────────────────────────────────────
+        float armLen = Vector3.Distance(wristW, knuckle);
+
+        // ── Palm normal (FIXED) ────────────────────────────────────────
+        // Cross(armAxis, across) was wrong — gave (0,0,-1) for right hand.
+        // Cross(across, armAxis) gives (0,0,+1) pointing toward camera. ✓
         Vector3 across = (pinkyW - indexW).normalized;
-        Vector3 rawPN = Vector3.Cross(armAxis, across).normalized;
-        if (landmarkReader.IsLeftHand) rawPN = -rawPN;
-
-        if (_firstFrame)
-            _smoothPalmNormal = rawPN;
-        else
-            _smoothPalmNormal = Vector3.Slerp(_smoothPalmNormal, rawPN,
-                Mathf.Clamp01(rotSmooth * 0.25f * dt)).normalized;
-
-        Vector3 palmNormal = _smoothPalmNormal
-            - Vector3.Dot(_smoothPalmNormal, armAxis) * armAxis;
-        if (palmNormal.sqrMagnitude < 0.01f)
-            palmNormal = Vector3.Cross(armAxis, Vector3.up);
-        palmNormal = palmNormal.normalized;
+        Vector3 palmNormal = Vector3.Cross(across, armAxis).normalized;
+        if (landmarkReader.IsLeftHand) palmNormal = -palmNormal;
 
         // ── Bracelet centre ────────────────────────────────────────────
-        float armLen = Vector3.Distance(wristW, knuckle);
         Vector3 centre = wristW + armAxis * (armLen * wristOffsetFactor);
 
-        // ── Rotation ───────────────────────────────────────────────────
-        // Local Y = palmNormal (palm direction = +Y in bracelet local space)
-        // Local Z = armAxis   (along forearm)
-        // Local X = crossAxis (across wrist)
+        // ── Root rotation ──────────────────────────────────────────────
+        // Local X = crossAxis    (across wrist)
+        // Local Y = orthoPalm    (toward palm — now correct)
+        // Local Z = armAxis      (along forearm toward fingers)
         Vector3 crossAxis = Vector3.Cross(palmNormal, armAxis).normalized;
         if (crossAxis.sqrMagnitude < 0.001f)
             crossAxis = Vector3.Cross(armAxis, Vector3.up).normalized;
-        // Recalculate palmNormal to be exactly orthogonal to both
         Vector3 orthoPalm = Vector3.Cross(armAxis, crossAxis).normalized;
 
         Matrix4x4 mat = Matrix4x4.identity;
@@ -306,94 +256,80 @@ public class BanglePlacer : MonoBehaviour
             _smoothRot = Quaternion.Slerp(_smoothRot, targetRot, rotSmooth * dt);
         }
 
-        // Place root at wrist centre with correct rotation
         _root.transform.SetPositionAndRotation(_smoothPos, _smoothRot);
         _root.SetActive(true);
 
-        // ── ADAPTIVE SCALE ─────────────────────────────────────────────
+        // ── Adaptive scale ─────────────────────────────────────────────
         float scaleMult = 1f;
         if (enableAdaptiveScale && _texW > 0)
         {
             Vector3 lm0 = landmarkReader.GetLandmark(0);
             Vector3 lm9 = landmarkReader.GetLandmark(9);
-            float px = (lm9.x - lm0.x) * _texW;
-            float py = (lm9.y - lm0.y) * _texH;
-            float pxDist = Mathf.Sqrt(px * px + py * py);
-            if (pxDist > 10f)
+            float dist = Mathf.Sqrt(
+                Mathf.Pow((lm9.x - lm0.x) * _texW, 2f) +
+                Mathf.Pow((lm9.y - lm0.y) * _texH, 2f));
+            if (dist > 10f)
             {
-                float raw = Mathf.Clamp(pxDist / referencePixelDist, minScaleMult, maxScaleMult);
-                _smoothScaleMult = Mathf.Lerp(_smoothScaleMult, raw,
-                    Mathf.Clamp01(scaleSmooth * dt));
+                float raw = Mathf.Clamp(dist / referencePixelDist, minScaleMult, maxScaleMult);
+                _smoothScaleMult = Mathf.Lerp(_smoothScaleMult, raw, Mathf.Clamp01(scaleSmooth * dt));
             }
             scaleMult = _smoothScaleMult;
         }
 
-        // ── VIEW DOT — how much palm faces camera ──────────────────────
-        // Use smoothed palmNormal (from _smoothRot's Y axis) for stability
-        Vector3 smoothedPalmNormal = _smoothRot * Vector3.up;  // local Y = palm direction
+        Vector3 finalScale = _calibratedScale * scaleMult;
+
+        // ── Front / Back copy positioning ──────────────────────────────
+        // Front: offset in +Local Y (toward palm).
+        // Back:  offset in -Local Y (toward dorsal).
+        // These are tiny offsets — just enough to separate the copies.
+        _front.transform.localPosition = new Vector3(0f, wrapOffset, 0f);
+        _back.transform.localPosition = new Vector3(0f, -wrapOffset, 0f);
+        _front.transform.localScale = finalScale;
+        _back.transform.localScale = finalScale;
+
+        // ── View-dot copy visibility ───────────────────────────────────
+        // smoothedPalmNormal = Local Y of root in world space.
+        // viewDot > 0 : palm side toward camera → show FRONT copy.
+        // viewDot < 0 : dorsal side toward camera → show BACK copy.
+        // Both active inside the blendZone for a smooth crossover.
+        Vector3 smoothedPN = _smoothRot * Vector3.up;   // Local Y = orthoPalm
         Vector3 camDir = (arCamera.transform.position - _smoothPos).normalized;
-        float viewDot = Vector3.Dot(smoothedPalmNormal, camDir);
+        float viewDot = Vector3.Dot(smoothedPN, camDir);
 
-        // ── FRONT/BACK SWITCH ──────────────────────────────────────────
-        // viewDot > 0: palm toward cam → show front
-        // viewDot < 0: back toward cam → show back
-        bool shouldFront;
-        if (_showingFront)
-            shouldFront = viewDot > -switchHysteresis;
-        else
-            shouldFront = viewDot > switchHysteresis;
+        // frontIsPalmSide toggle: flip logic if wrong side shows
+        float signedDot = frontIsPalmSide ? viewDot : -viewDot;
 
-        if (shouldFront != _showingFront)
+        bool showFront = signedDot >= -blendZone;
+        bool showBack = signedDot <= blendZone;
+
+        _front.SetActive(showFront);
+        _back.SetActive(showBack);
+
+        // ── Log ───────────────────────────────────────────────────────
+        _logTimer += dt;
+        if (_logTimer >= 2f)
         {
-            _showingFront = shouldFront;
-            SetEnabled(_frontRends, _showingFront);
-            SetEnabled(_backRends, !_showingFront);
-        }
-
-        // ── X-SCALE FORESHORTENING ─────────────────────────────────────
-        // Compress bracelet width as wrist rotates toward side view.
-        // |viewDot|: 1=face-on (full width), 0=side-on (compressed)
-        float absViewDot = Mathf.Abs(viewDot);
-        float compress = Mathf.Pow(absViewDot, curvePow);
-        float xScale = Mathf.Lerp(1f, compress, edgeCurvature);
-        xScale = Mathf.Max(xScale, 0.08f);
-
-        Vector3 baseScale = _calibratedScale * scaleMult;
-        Vector3 arcScale = new Vector3(baseScale.x * xScale, baseScale.y, baseScale.z);
-
-        // ── DEPTH SEPARATION — THE KEY FIX ────────────────────────────
-        // Front/back are offset in LOCAL Y (palm normal direction).
-        // Since the root is rotated so local Y = palmNormal:
-        //   localPos (0, +wrapSeparation, 0) = toward palm in world
-        //   localPos (0, -wrapSeparation, 0) = toward back-of-hand in world
-        //
-        // This is the CORRECT way — no world→local conversion needed.
-        // Simply set the local position directly.
-        _front.transform.localPosition = new Vector3(0f, wrapSeparation, 0f);
-        _front.transform.localScale = arcScale;
-
-        _back.transform.localPosition = new Vector3(0f, -wrapSeparation, 0f);
-        _back.transform.localScale = arcScale;
-
-        // ── LOG ────────────────────────────────────────────────────────
-        _logT += dt;
-        if (_logT >= 2f)
-        {
-            _logT = 0f;
-            Vector3 l0 = landmarkReader.GetLandmark(0);
-            Vector3 l9 = landmarkReader.GetLandmark(9);
-            float pd = Mathf.Sqrt(
-                Mathf.Pow((l9.x - l0.x) * _texW, 2f) +
-                Mathf.Pow((l9.y - l0.y) * _texH, 2f));
-            Debug.Log($"[BanglePlacer v55] viewDot={viewDot:F2} " +
-                      $"front={_showingFront} xScale={xScale:F2} " +
-                      $"scaleMult={_smoothScaleMult:F2} pixelDist={pd:F0}");
+            _logTimer = 0f;
+            Debug.Log($"[BanglePlacer v59] viewDot={viewDot:F2} " +
+                      $"front={showFront} back={showBack} scale={scaleMult:F2}");
         }
     }
+
+    // ── Helpers ───────────────────────────────────────────────────────────
 
     Vector3 C(int i) => LandmarkToWorld_Hand.Convert(
         landmarkReader.GetLandmark(i), arCamera,
         _texW, _texH, baseDepth, false, bboxYCorrection);
+
+    static float MeasureDiameter(GameObject go)
+    {
+        var rs = go.GetComponentsInChildren<Renderer>();
+        if (rs.Length == 0) return 0f;
+        Bounds b = rs[0].bounds;
+        for (int i = 1; i < rs.Length; i++) b.Encapsulate(rs[i].bounds);
+        float dxz = Mathf.Max(b.size.x, b.size.z);
+        return dxz > 0.0001f ? dxz : b.size.y;
+    }
 
     void UpdateTex()
     {
@@ -407,7 +343,4 @@ public class BanglePlacer : MonoBehaviour
         if (!got && _rawTexW == 0) { _rawTexW = 720; _rawTexH = 1280; }
         _texW = _rawTexW; _texH = _rawTexH;
     }
-
-    void OnDestroy()
-    { if (_root) Destroy(_root); }
 }

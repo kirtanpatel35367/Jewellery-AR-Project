@@ -570,7 +570,6 @@ MonoBehaviour:
   lockPitch: 1
   lockRoll: 1
   yawFollow: 0.15
-  faceMovementDamp: 0.85
 --- !u!114 &838395358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -631,6 +630,13 @@ MonoBehaviour:
   - categoryName: Necklace
     type: 1
     items:
+    - itemName: Diamond Necklace
+      thumbnailImage: {fileID: 0}
+      jewelryPrefab: {fileID: 7035949958800157175, guid: 0b567f7c2d7196948948d6b813f12a49, type: 3}
+      necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
+      necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
+      necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
+      placeOnRoomDefaultScale: 1
     - itemName: Necklace Gold
       thumbnailImage: {fileID: 21300000, guid: 3110c65e2d60a0045950bce71e8038cd, type: 3}
       jewelryPrefab: {fileID: 98793999804689636, guid: 9a13fcc790d174fc0a07debb89f8402f, type: 3}
@@ -669,6 +675,13 @@ MonoBehaviour:
   - categoryName: Braclet
     type: 2
     items:
+    - itemName: Dimond Braclet
+      thumbnailImage: {fileID: 0}
+      jewelryPrefab: {fileID: 731061499923550731, guid: 0bdacabb6b2fb4d48a82de4821dbeb87, type: 3}
+      necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
+      necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
+      necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
+      placeOnRoomDefaultScale: 1
     - itemName: Chain Braclet
       thumbnailImage: {fileID: 21300000, guid: 40659e01121558b4e836a482a08ecf39, type: 3}
       jewelryPrefab: {fileID: 3398772309847563501, guid: 42dee20d43a81f744920db81eec3fcfb, type: 3}
@@ -687,6 +700,13 @@ MonoBehaviour:
     type: 3
     items:
     - itemName: Dimond Ring
+      thumbnailImage: {fileID: 0}
+      jewelryPrefab: {fileID: 7078632839747143759, guid: 24400a57afdc4b0439556366bd72b25b, type: 3}
+      necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
+      necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
+      necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
+      placeOnRoomDefaultScale: 1
+    - itemName: Ring
       thumbnailImage: {fileID: 21300000, guid: efd1f880adaf9d84f8f4af59a19888bb, type: 3}
       jewelryPrefab: {fileID: 8306998610349388954, guid: d5bc89730c0643140a0bb33950b13362, type: 3}
       necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}

@@ -1,38 +1,28 @@
-// RingPlacer.cs  (v4 – ring-visible fix + proper occlusion)
+// RingPlacer.cs — v7 (Two-Copy Classic — Definitive)
 //
-// ROOT CAUSE of "ring not visible" in v3:
-//   The fallback occluder code (when no occluderMaterial was assigned) created
-//   an opaque black Material at render queue 1999 which drew a solid capsule
-//   directly OVER the ring.  Fix: occluder is only constructed when you have
-//   explicitly assigned occluderMaterial.  Without it the ring renders normally.
+// ══════════════════════════════════════════════════════════════════════════
+// APPROACH: Same guaranteed two-copy method as BanglePlacer v59.
 //
-// OCCLUSION / WRAP-AROUND (optional but recommended):
-//   Assign a ZWrite-only material to occluderMaterial.  A capsule mesh is then
-//   placed from MCP to PIP.  Because it writes depth (ColorMask 0, ZWrite On,
-//   Queue=Geometry-1) the ring at Queue=Geometry correctly clips:
-//     Palm toward camera  → front arc visible, back arc hidden  ✓
-//     Back of hand        → back arc visible, front arc hidden  ✓
+//   _front — offset slightly toward palm  (+palmNormal × wrapOffset)
+//   _back  — offset slightly toward dorsal(-palmNormal × wrapOffset)
 //
-// REQUIRED SHADER (create once, name "Custom/FingerOccluder"):
-//   Shader "Custom/FingerOccluder" {
-//     SubShader {
-//       Tags { "Queue"="Geometry-1" "RenderType"="Opaque" }
-//       ColorMask 0   ZWrite On   Cull Off
-//       Pass { }
-//     }
-//   }
+//   viewDot = Dot(smoothedPalmNormal, camDir)
+//   viewDot > 0  → palm side toward camera → show FRONT, hide BACK
+//   viewDot < 0  → dorsal side toward camera → show BACK,  hide FRONT
+//   |viewDot| ≤ blendZone → side view → show BOTH (smooth crossover)
 //
-// MediaPipe landmark indices:
-//   Index:  5(MCP) 6(PIP) 7(DIP) 8(TIP)
-//   Middle: 9(MCP) 10(PIP)11(DIP)12(TIP)
-//   Ring:  13(MCP)14(PIP)15(DIP)16(TIP)
-//   Pinky: 17(MCP)18(PIP)19(DIP)20(TIP)
+// FIXED: palmNormal = Cross(toCamera, fingerAxis) — was Cross(fingerAxis, toCamera).
+//
+// No depth-buffer dependency → works with ANY ring material settings.
+// ══════════════════════════════════════════════════════════════════════════
 
 using UnityEngine;
 
 public class RingPlacer : MonoBehaviour
 {
     public enum FingerTarget { Index, Middle, Ring, Pinky }
+
+    // ── Inspector ─────────────────────────────────────────────────────────
 
     [Header("References")]
     public JewelleryLandmarkReader landmarkReader;
@@ -44,71 +34,80 @@ public class RingPlacer : MonoBehaviour
     public FingerTarget finger = FingerTarget.Ring;
 
     [Header("Placement")]
-    [Tooltip("0 = knuckle (MCP), 1 = first joint (PIP).  0.3 = typical ring seat.")]
+    [Tooltip("0 = knuckle (MCP), 1 = first joint (PIP). 0.3 = typical ring seat.")]
     [Range(0f, 1f)] public float fingerBias = 0.30f;
 
     [Header("Depth")]
-    [Range(0.3f, 1.5f)] public float baseDepth = 0.65f;
-    [Range(0f, 0.3f)] public float depthZScale = 0.12f;
+    [Range(0.3f, 1.5f)] public float baseDepth  = 0.65f;
+    [Range(0f,  0.3f)]  public float depthZScale = 0.12f;
 
     [Header("Ring Size")]
-    [Tooltip("Diameter relative to gap between adjacent MCPs.  1.1 = slightly loose.")]
+    [Tooltip("Diameter relative to gap between adjacent MCPs. 1.1 = slightly loose.")]
     [Range(0.5f, 2.5f)] public float sizeMultiplier = 1.1f;
 
+    [Header("Orientation Tuning")]
+    [Tooltip("Rotate the ring model to sit correctly on the finger.\n" +
+             "Most models need (0, 0, 90).")]
+    public Vector3 meshRotationOffset = new Vector3(0f, 0f, 90f);
+
+    [Header("Front / Back Split")]
+    [Tooltip("Small offset separating the two copies along palmNormal (metres).")]
+    [Range(0.001f, 0.015f)] public float wrapOffset = 0.003f;
+
+    [Tooltip("viewDot range where both copies are visible (smooth crossover).")]
+    [Range(0f, 0.3f)] public float blendZone = 0.05f;
+
+    [Tooltip("Untick if the wrong face of the ring shows toward the palm.")]
+    public bool frontIsPalmSide = true;
+
     [Header("Smoothing")]
-    [Range(1f, 40f)] public float posSmooth = 22f;
-    [Range(1f, 40f)] public float rotSmooth = 16f;
+    [Range(1f, 40f)] public float posSmooth   = 22f;
+    [Range(1f, 40f)] public float rotSmooth   = 16f;
     [Range(1f, 20f)] public float scaleSmooth = 8f;
 
     [Header("Stability")]
     [Range(0, 10)] public int minDetectionFrames = 3;
 
-    [Header("Occlusion (optional – assign ZWrite-only material for wrap effect)")]
-    [Tooltip("Material: ColorMask 0, ZWrite On, Queue=Geometry-1.\nLeave EMPTY → ring still renders, just no wrap-around occlusion.")]
-    public Material occluderMaterial;
+    // ── Private ───────────────────────────────────────────────────────────
 
-    [Range(0.2f, 0.8f)]
-    public float occluderRadiusFraction = 0.40f;
+    private GameObject _front;
+    private GameObject _back;
 
-    // ── private ───────────────────────────────────────────────────────
-
-    private GameObject _ring;
-    private GameObject _occluder;
-    private MeshFilter _occMF;
-
-    private Vector3 _smoothPos;
-    private Quaternion _smoothRot = Quaternion.identity;
-    private float _smoothScale = -1f;
-    private Vector3 _posVelocity = Vector3.zero;
-    private bool _firstFrame = true;
-    private bool _ready;
-    private int _texW = 0, _texH = 0;
-    private int _detectionFrames = 0;
-    private float _lastOccR = -1f;
-    private float _lastOccHH = -1f;
+    private Vector3    _smoothPos;
+    private Quaternion _smoothRot   = Quaternion.identity;
+    private float      _smoothScale = -1f;
+    private Vector3    _posVelocity = Vector3.zero;
+    private bool       _firstFrame  = true;
+    private bool       _ready;
+    private int        _texW = 0, _texH = 0;
+    private int        _detectionFrames = 0;
 
     private static readonly int[,] FingerLandmarks =
     {
-        {  5,  6,  7,  8 },
-        {  9, 10, 11, 12 },
-        { 13, 14, 15, 16 },
-        { 17, 18, 19, 20 },
+        {  5,  6,  7,  8 },   // Index
+        {  9, 10, 11, 12 },   // Middle
+        { 13, 14, 15, 16 },   // Ring
+        { 17, 18, 19, 20 },   // Pinky
     };
 
-    // ── lifecycle ─────────────────────────────────────────────────────
+    // ── Lifecycle ─────────────────────────────────────────────────────────
 
     void Start()
     {
-        if (!landmarkReader) { Debug.LogError("[RingPlacer] landmarkReader missing!"); return; }
+        if (!landmarkReader)
+        { Debug.LogError("[RingPlacer v7] landmarkReader missing!"); return; }
         if (!arCamera) arCamera = Camera.main;
-        if (occluderMaterial != null) BuildOccluder();
         if (ringPrefab != null) SpawnRing(ringPrefab);
         _ready = true;
     }
 
-    void OnDestroy() { if (_occluder) Destroy(_occluder); }
+    void OnDestroy()
+    {
+        if (_front) Destroy(_front);
+        if (_back)  Destroy(_back);
+    }
 
-    // ── public API ────────────────────────────────────────────────────
+    // ── Public API ────────────────────────────────────────────────────────
 
     public void SetRingPrefab(GameObject prefab)
     {
@@ -119,46 +118,44 @@ public class RingPlacer : MonoBehaviour
 
     public void ClearRing()
     {
-        if (_ring) { Destroy(_ring); _ring = null; }
-        if (_occluder) _occluder.SetActive(false);
+        if (_front) { Destroy(_front); _front = null; }
+        if (_back)  { Destroy(_back);  _back  = null; }
         _firstFrame = true; _detectionFrames = 0; ringPrefab = null;
     }
 
-    // ── spawn ─────────────────────────────────────────────────────────
+    // ── Spawn ─────────────────────────────────────────────────────────────
 
     private void SpawnRing(GameObject prefab)
     {
-        if (_ring) Destroy(_ring);
-        _ring = Instantiate(prefab, transform);
-        _ring.SetActive(false);
+        if (_front) Destroy(_front);
+        if (_back)  Destroy(_back);
+
+        _front      = Instantiate(prefab, transform);
+        _front.name = "Ring_Front";
+        _front.transform.localRotation = Quaternion.Euler(meshRotationOffset);
+        _front.SetActive(false);
+
+        _back       = Instantiate(prefab, transform);
+        _back.name  = "Ring_Back";
+        _back.transform.localRotation = Quaternion.Euler(meshRotationOffset);
+        _back.SetActive(false);
+
         _firstFrame = true; _smoothScale = -1f; _detectionFrames = 0;
-        Debug.Log("[RingPlacer] Spawned: " + prefab.name + " on " + finger);
+        Debug.Log("[RingPlacer v7] Spawned: " + prefab.name + " on " + finger);
     }
 
-    private void BuildOccluder()
-    {
-        _occluder = new GameObject("[FingerOccluder]");
-        _occluder.transform.SetParent(transform, false);
-        _occMF = _occluder.AddComponent<MeshFilter>();
-        var mr = _occluder.AddComponent<MeshRenderer>();
-        mr.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
-        mr.receiveShadows = false;
-        mr.material = occluderMaterial;
-        _occluder.SetActive(false);
-    }
-
-    // ── tracking ──────────────────────────────────────────────────────
+    // ── Tracking ──────────────────────────────────────────────────────────
 
     void LateUpdate()
     {
-        if (!_ready || _ring == null) return;
+        if (!_ready || _front == null) return;
         UpdateTextureDimensions();
 
         if (!landmarkReader.HandDetected || landmarkReader.LandmarkCount < 21)
         {
             _detectionFrames = 0;
-            _ring.SetActive(false);
-            if (_occluder) _occluder.SetActive(false);
+            _front.SetActive(false);
+            _back.SetActive(false);
             _firstFrame = true;
             return;
         }
@@ -166,22 +163,22 @@ public class RingPlacer : MonoBehaviour
         _detectionFrames++;
         if (_detectionFrames < minDetectionFrames)
         {
-            _ring.SetActive(false);
-            if (_occluder) _occluder.SetActive(false);
+            _front.SetActive(false);
+            _back.SetActive(false);
             return;
         }
 
-        int fi = (int)finger;
+        int fi     = (int)finger;
         int mcpIdx = FingerLandmarks[fi, 0];
         int pipIdx = FingerLandmarks[fi, 1];
         int adjIdx = (fi == 0) ? FingerLandmarks[1, 0] : FingerLandmarks[fi - 1, 0];
 
-        Vector3 mcpN = landmarkReader.GetLandmark(mcpIdx);
-        Vector3 pipN = landmarkReader.GetLandmark(pipIdx);
-        Vector3 adjN = landmarkReader.GetLandmark(adjIdx);
+        Vector3 mcpN   = landmarkReader.GetLandmark(mcpIdx);
+        Vector3 pipN   = landmarkReader.GetLandmark(pipIdx);
+        Vector3 adjN   = landmarkReader.GetLandmark(adjIdx);
         Vector3 wristN = landmarkReader.GetLandmark(0);
 
-        float depth = Mathf.Clamp(baseDepth + wristN.z * depthZScale, 0.25f, 1.5f);
+        float   depth = Mathf.Clamp(baseDepth + wristN.z * depthZScale, 0.25f, 1.5f);
 
         Vector3 mcpW = ConvertAt(mcpN, depth);
         Vector3 pipW = ConvertAt(pipN, depth);
@@ -190,140 +187,89 @@ public class RingPlacer : MonoBehaviour
         Vector3 fingerAxis = (pipW - mcpW).normalized;
         if (fingerAxis.sqrMagnitude < 0.001f)
         {
-            _ring.SetActive(false);
-            if (_occluder) _occluder.SetActive(false);
-            return;
+            _front.SetActive(false); _back.SetActive(false); return;
         }
 
-        Vector3 targetPos = Vector3.Lerp(mcpW, pipW, fingerBias);
-        float fingerWidth = Vector3.Distance(mcpW, adjW);
-        float targetScale = fingerWidth * sizeMultiplier;
+        Vector3 targetPos   = Vector3.Lerp(mcpW, pipW, fingerBias);
+        float   fingerWidth = Vector3.Distance(mcpW, adjW);
+        float   targetScale = fingerWidth * sizeMultiplier;
 
         if (targetScale < 0.0005f || float.IsNaN(targetScale))
         {
-            _ring.SetActive(false);
-            if (_occluder) _occluder.SetActive(false);
-            return;
+            _front.SetActive(false); _back.SetActive(false); return;
         }
 
-        Vector3 toCamera = (arCamera.transform.position - mcpW).normalized;
-        Vector3 palmNormal = Vector3.Cross(fingerAxis, toCamera).normalized;
+        // ── Ring rotation ──────────────────────────────────────────────
+        // Build orthonormal frame:
+        //   Local Z = fingerAxis   (hole axis, along finger)
+        //   Local Y = palmNormal   (toward palm)
+        //   Local X = crossAxis    (across finger)
+        //
+        // FIXED: Cross(toCamera, fingerAxis) — was Cross(fingerAxis, toCamera).
+        Vector3 toCamera   = (arCamera.transform.position - mcpW).normalized;
+        Vector3 palmNormal = Vector3.Cross(toCamera, fingerAxis).normalized;
         if (landmarkReader.IsLeftHand) palmNormal = -palmNormal;
         if (palmNormal.sqrMagnitude < 0.001f) palmNormal = arCamera.transform.up;
 
-        Quaternion targetRot = Quaternion.LookRotation(fingerAxis, palmNormal);
+        Vector3 crossAxis = Vector3.Cross(palmNormal, fingerAxis).normalized;
+        if (crossAxis.sqrMagnitude < 0.001f)
+            crossAxis = Vector3.Cross(fingerAxis, Vector3.up).normalized;
+        Vector3 orthoUp = Vector3.Cross(fingerAxis, crossAxis).normalized;
+
+        Matrix4x4 mat = Matrix4x4.identity;
+        mat.SetColumn(0, new Vector4(crossAxis.x,  crossAxis.y,  crossAxis.z,  0f));
+        mat.SetColumn(1, new Vector4(orthoUp.x,    orthoUp.y,    orthoUp.z,    0f));
+        mat.SetColumn(2, new Vector4(fingerAxis.x, fingerAxis.y, fingerAxis.z, 0f));
+        Quaternion targetRot = mat.rotation * Quaternion.Euler(meshRotationOffset);
 
         float dt = Time.deltaTime;
         if (_firstFrame || _smoothScale < 0f)
         {
-            _smoothPos = targetPos; _smoothRot = targetRot;
-            _smoothScale = targetScale; _posVelocity = Vector3.zero;
-            _firstFrame = false;
+            _smoothPos   = targetPos;
+            _smoothRot   = targetRot;
+            _smoothScale = targetScale;
+            _posVelocity = Vector3.zero;
+            _firstFrame  = false;
         }
         else
         {
-            _smoothPos = Vector3.SmoothDamp(_smoothPos, targetPos,
+            _smoothPos   = Vector3.SmoothDamp(_smoothPos, targetPos,
                                ref _posVelocity, 1f / posSmooth, Mathf.Infinity, dt);
-            _smoothRot = Quaternion.Slerp(_smoothRot, targetRot, rotSmooth * dt);
+            _smoothRot   = Quaternion.Slerp(_smoothRot, targetRot, rotSmooth * dt);
             _smoothScale = Mathf.Lerp(_smoothScale, targetScale, scaleSmooth * dt);
         }
 
-        _ring.transform.position = _smoothPos;
-        _ring.transform.rotation = _smoothRot;
-        _ring.transform.localScale = Vector3.one * _smoothScale;  // uniform – never collapses
-        _ring.SetActive(true);
+        // ── Position both copies ───────────────────────────────────────
+        // palmNormalWorld = Local Y of the smoothed root rotation  
+        Vector3 palmNW = _smoothRot * Vector3.up;
 
-        if (_occluder != null && occluderMaterial != null)
-            UpdateOccluder(mcpW, pipW, fingerAxis, fingerWidth);
+        Vector3 frontPos = _smoothPos + palmNW *  wrapOffset;
+        Vector3 backPos  = _smoothPos + palmNW * -wrapOffset;
+
+        _front.transform.position   = frontPos;
+        _front.transform.rotation   = _smoothRot;
+        _front.transform.localScale = Vector3.one * _smoothScale;
+
+        _back.transform.position   = backPos;
+        _back.transform.rotation   = _smoothRot;
+        _back.transform.localScale = Vector3.one * _smoothScale;
+
+        // ── Front / Back visibility ────────────────────────────────────
+        Vector3 camDir    = (arCamera.transform.position - _smoothPos).normalized;
+        float   viewDot   = Vector3.Dot(palmNW, camDir);
+        float   signedDot = frontIsPalmSide ? viewDot : -viewDot;
+
+        _front.SetActive(signedDot >= -blendZone);
+        _back.SetActive(signedDot <=  blendZone);
     }
 
-    // ── occluder ─────────────────────────────────────────────────────
-
-    private void UpdateOccluder(Vector3 mcpW, Vector3 pipW,
-                                Vector3 fingerAxis, float fingerWidth)
-    {
-        float halfH = Vector3.Distance(mcpW, pipW) * 0.5f;
-        float capR = fingerWidth * occluderRadiusFraction;
-
-        if (Mathf.Abs(capR - _lastOccR) > 0.001f || Mathf.Abs(halfH - _lastOccHH) > 0.002f)
-        {
-            var old = _occMF.sharedMesh;
-            _occMF.mesh = MakeCapsule(capR, halfH);
-            _lastOccR = capR; _lastOccHH = halfH;
-            if (old != null && old.name == "OccluderCapsule") Destroy(old);
-        }
-
-        _occluder.transform.position = (mcpW + pipW) * 0.5f;
-        _occluder.transform.rotation = Quaternion.FromToRotation(Vector3.up, fingerAxis);
-        _occluder.SetActive(true);
-    }
-
-    // Y-axis capsule, radius r, half-height hh
-    private static Mesh MakeCapsule(float r, float hh, int seg = 12)
-    {
-        int hSteps = 5;
-        var verts = new System.Collections.Generic.List<Vector3>();
-        var layers = new System.Collections.Generic.List<int[]>();
-
-        void AddRingLayer(float y, float xzR)
-        {
-            var layer = new int[seg]; int start = verts.Count;
-            for (int i = 0; i < seg; i++)
-            {
-                float a = 2f * Mathf.PI * i / seg;
-                verts.Add(new Vector3(Mathf.Cos(a) * xzR, y, Mathf.Sin(a) * xzR));
-                layer[i] = start + i;
-            }
-            layers.Add(layer);
-        }
-
-        layers.Add(new[] { verts.Count }); verts.Add(new Vector3(0, hh + r, 0));
-        for (int s = 1; s <= hSteps; s++)
-        {
-            float phi = Mathf.PI * 0.5f * s / hSteps;
-            AddRingLayer(hh + Mathf.Cos(phi) * r, Mathf.Sin(phi) * r);
-        }
-        AddRingLayer(hh, r);
-        AddRingLayer(-hh, r);
-        for (int s = hSteps - 1; s >= 1; s--)
-        {
-            float phi = Mathf.PI * 0.5f * s / hSteps;
-            AddRingLayer(-(hh + Mathf.Cos(phi) * r), Mathf.Sin(phi) * r);
-        }
-        layers.Add(new[] { verts.Count }); verts.Add(new Vector3(0, -(hh + r), 0));
-
-        var tris = new System.Collections.Generic.List<int>();
-        for (int L = 0; L < layers.Count - 1; L++)
-        {
-            var top = layers[L]; var bot = layers[L + 1];
-            if (top.Length == 1)
-            { for (int i = 0; i < seg; i++) { tris.Add(top[0]); tris.Add(bot[i]); tris.Add(bot[(i + 1) % seg]); } }
-            else if (bot.Length == 1)
-            { for (int i = 0; i < seg; i++) { tris.Add(top[i]); tris.Add(bot[0]); tris.Add(top[(i + 1) % seg]); } }
-            else
-            {
-                for (int i = 0; i < seg; i++)
-                {
-                    int n = (i + 1) % seg;
-                    tris.Add(top[i]); tris.Add(bot[i]); tris.Add(top[n]);
-                    tris.Add(top[n]); tris.Add(bot[i]); tris.Add(bot[n]);
-                }
-            }
-        }
-
-        var mesh = new Mesh { name = "OccluderCapsule" };
-        mesh.SetVertices(verts); mesh.SetTriangles(tris, 0);
-        mesh.RecalculateNormals(); mesh.RecalculateBounds();
-        return mesh;
-    }
-
-    // ── coordinate conversion (identical to original v1 that worked) ──
+    // ── Coordinate Conversion ─────────────────────────────────────────────
 
     private Vector3 ConvertAt(Vector3 norm, float depth)
     {
-        Vector3 flat = new Vector3(norm.x, norm.y, 0f);
+        Vector3 flat  = new Vector3(norm.x, norm.y, 0f);
         Vector3 world = LandmarkToWorld_Hand.Convert(flat, arCamera, _texW, _texH, 0f);
-        Ray ray = arCamera.ScreenPointToRay(arCamera.WorldToScreenPoint(world));
+        Ray     ray   = arCamera.ScreenPointToRay(arCamera.WorldToScreenPoint(world));
         return ray.origin + ray.direction * depth;
     }
 

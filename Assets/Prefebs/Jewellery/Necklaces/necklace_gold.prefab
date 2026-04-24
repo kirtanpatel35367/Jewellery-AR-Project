@@ -9,10 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1892678883540596560}
-  - component: {fileID: 3084179898063070190}
   - component: {fileID: 5533407948075427524}
   - component: {fileID: 2938702476943550326}
   - component: {fileID: 5063582480810374173}
+  - component: {fileID: 4243953729127827105}
   m_Layer: 0
   m_Name: necklace_gold
   m_TagString: Untagged
@@ -36,23 +36,6 @@ Transform:
   - {fileID: 1929173329996838776}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3084179898063070190
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5898075654446669484}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e44a993fa0a884797bf4d786a975c8e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Necklace3Fix
-  finalLocalPosition: {x: 0, y: -0.04, z: -0.01}
-  finalLocalRotationEuler: {x: 12, y: 0, z: 0}
-  finalUniformScale: 0.4
-  applyContinuously: 1
-  applyForSeconds: 1
 --- !u!114 &5533407948075427524
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60,7 +43,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5898075654446669484}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5095a24a755b14db0be24ecf6366b181, type: 3}
   m_Name: 
@@ -74,7 +57,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5898075654446669484}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7fe3d05a666ee4a1895c89a21b0806b5, type: 3}
   m_Name: 
@@ -100,6 +83,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4243953729127827105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5898075654446669484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 463f8128104e1d74e8e22f10d862f692, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NecklaceAutoFit
+  manualOffset: {x: 0, y: 0, z: 0}
+  scaleMultiplier: 1
+  rotationOffset: {x: 0, y: 0, z: 0}
+  showBoundsGizmo: 1
 --- !u!1001 &4343104294124576904
 PrefabInstance:
   m_ObjectHideFlags: 0

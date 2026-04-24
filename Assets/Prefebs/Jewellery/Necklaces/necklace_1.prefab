@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 650410028432402663}
-  - component: {fileID: 3010936942829678590}
   - component: {fileID: 2191866474400257082}
   - component: {fileID: -5846164528873017950}
+  - component: {fileID: 8424228927421496852}
   m_Layer: 0
   m_Name: necklace_1
   m_TagString: Untagged
@@ -35,23 +35,6 @@ Transform:
   - {fileID: 2769967086151195368}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3010936942829678590
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 98793999804689636}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e44a993fa0a884797bf4d786a975c8e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Necklace3Fix
-  finalLocalPosition: {x: 0, y: 0.025, z: -0.015}
-  finalLocalRotationEuler: {x: 0, y: 0, z: 0}
-  finalUniformScale: 1.23
-  applyContinuously: 1
-  applyForSeconds: 1
 --- !u!114 &2191866474400257082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59,7 +42,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 98793999804689636}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5095a24a755b14db0be24ecf6366b181, type: 3}
   m_Name: 
@@ -87,6 +70,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8424228927421496852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 98793999804689636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 463f8128104e1d74e8e22f10d862f692, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NecklaceAutoFit
+  manualOffset: {x: 0, y: 0, z: 0}
+  scaleMultiplier: 1
+  rotationOffset: {x: 0, y: 0, z: 0}
+  showBoundsGizmo: 1
 --- !u!1001 &2448373933895695619
 PrefabInstance:
   m_ObjectHideFlags: 0
