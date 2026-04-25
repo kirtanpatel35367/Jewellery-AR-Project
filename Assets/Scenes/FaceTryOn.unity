@@ -843,6 +843,13 @@ MonoBehaviour:
   - categoryName: Necklace
     type: 1
     items:
+    - itemName: Dimond Necklace
+      thumbnailImage: {fileID: 21300000, guid: 93724a3abe5d0f84494a6aab9dea310c, type: 3}
+      jewelryPrefab: {fileID: 3657736329566295246, guid: 0b567f7c2d7196948948d6b813f12a49, type: 3}
+      necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
+      necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
+      necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
+      placeOnRoomDefaultScale: 1
     - itemName: Necklace Gold
       thumbnailImage: {fileID: 21300000, guid: 3110c65e2d60a0045950bce71e8038cd, type: 3}
       jewelryPrefab: {fileID: 98793999804689636, guid: 9a13fcc790d174fc0a07debb89f8402f, type: 3}
@@ -895,10 +902,17 @@ MonoBehaviour:
       necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
       necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
       placeOnRoomDefaultScale: 1
+    - itemName: Maa Braclet
+      thumbnailImage: {fileID: 21300000, guid: c058e158a49268045840c8540d03800a, type: 3}
+      jewelryPrefab: {fileID: 6360285349205610318, guid: 0bdacabb6b2fb4d48a82de4821dbeb87, type: 3}
+      necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
+      necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
+      necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
+      placeOnRoomDefaultScale: 1
   - categoryName: Ring
     type: 3
     items:
-    - itemName: Dimond Ring
+    - itemName: Ring
       thumbnailImage: {fileID: 21300000, guid: efd1f880adaf9d84f8f4af59a19888bb, type: 3}
       jewelryPrefab: {fileID: 8306998610349388954, guid: d5bc89730c0643140a0bb33950b13362, type: 3}
       necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
@@ -908,6 +922,13 @@ MonoBehaviour:
     - itemName: Silver Ring
       thumbnailImage: {fileID: 21300000, guid: 936628b62c4ab554ba2255f43ab7680a, type: 3}
       jewelryPrefab: {fileID: 2141496513478381896, guid: e0b2fa63a9b8f94488eccc9c3a8e8e9e, type: 3}
+      necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
+      necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
+      necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
+      placeOnRoomDefaultScale: 1
+    - itemName: Dimond Ring
+      thumbnailImage: {fileID: 21300000, guid: 51a594469b3dc2e429bf15988f46f2c6, type: 3}
+      jewelryPrefab: {fileID: 4526287610204060512, guid: 24400a57afdc4b0439556366bd72b25b, type: 3}
       necklaceLocalPositionOffset: {x: 0, y: 0, z: 0}
       necklaceLocalRotationOffsetEuler: {x: 0, y: 0, z: 0}
       necklaceLocalScaleMultiplier: {x: 1, y: 1, z: 1}
