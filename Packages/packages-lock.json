@@ -18,6 +18,72 @@
         "com.unity.test-framework": "1.0.0"
       }
     },
+    "com.google.android.appbundle": {
+      "version": "https://github.com/google/play-appbundle-unity.git?path=com.google.android.appbundle#v1.10.0",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "06a233e513b7ee6c9d4b07658b79adaddbad8f79"
+    },
+    "com.google.external-dependency-manager": {
+      "version": "https://github.com/googlesamples/unity-jar-resolver.git?path=upm#v1.2.185",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "8cf54b63e37dceaf1630135f9abddf08167500a1"
+    },
+    "com.google.play.assetdelivery": {
+      "version": "https://github.com/google/play-asset-delivery-unity.git?path=com.google.play.assetdelivery#v1.9.5",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.google.android.appbundle": "1.10.0",
+        "com.google.play.common": "1.9.2",
+        "com.google.play.core": "1.8.6"
+      },
+      "hash": "3b37ac3dcab6ea165012ccfeebc47b2fd453c6bd"
+    },
+    "com.google.play.common": {
+      "version": "https://github.com/google/play-common-unity.git?path=com.google.play.common#v1.9.2",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "c4e57b5a2f9da756c5578176139421a7ece16abe"
+    },
+    "com.google.play.core": {
+      "version": "https://github.com/google/play-core-unity.git?path=com.google.play.core#v1.8.6",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.google.external-dependency-manager": "1.2.185"
+      },
+      "hash": "78af64bf236a9ae7cd08c50b78957705147bff12"
+    },
+    "com.unity.addressables": {
+      "version": "2.7.6",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.profiling.core": "1.0.2",
+        "com.unity.test-framework": "1.4.5",
+        "com.unity.modules.assetbundle": "1.0.0",
+        "com.unity.modules.jsonserialize": "1.0.0",
+        "com.unity.modules.imageconversion": "1.0.0",
+        "com.unity.modules.unitywebrequest": "1.0.0",
+        "com.unity.scriptablebuildpipeline": "2.5.0",
+        "com.unity.modules.unitywebrequestassetbundle": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.addressables.android": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.addressables": "1.21.17"
+      },
+      "url": "https://packages.unity.com"
+    },
     "com.unity.bindings.openimageio": {
       "version": "1.0.2",
       "depth": 1,
@@ -166,6 +232,13 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
+    "com.unity.profiling.core": {
+      "version": "1.0.3",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
     "com.unity.recorder": {
       "version": "5.1.5",
       "depth": 0,
@@ -174,6 +247,16 @@
         "com.unity.timeline": "1.8.7",
         "com.unity.collections": "1.2.4",
         "com.unity.bindings.openimageio": "1.0.2"
+      },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.scriptablebuildpipeline": {
+      "version": "2.5.0",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.test-framework": "1.4.5",
+        "com.unity.modules.assetbundle": "1.0.0"
       },
       "url": "https://packages.unity.com"
     },

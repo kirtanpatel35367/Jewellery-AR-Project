@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: ARAssets
+  m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
+  m_GroupName: ARAssets
+  m_GUID: 458bb89878b5e4740863c5520602d678
+  m_SerializeEntries:
+  - m_GUID: 0cc442a5c1b83a94b9aeb7983e1c69b4
+    m_Address: Assets/Prefebs/Jewellery/Necklaces/necklace_Diamond.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2cafc4769699b46bba35589f63a3d7a1
+    m_Address: Assets/Prefebs/Jewellery/Necklaces/egyptian_necklace.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 31d21521e8a164267a2dfe0f6116c2c1
+    m_Address: Assets/Prefebs/Jewellery/Necklaces/necklace_gold.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 444e13b0c7a2747ea85abbef6e3a0749
+    m_Address: Assets/Prefebs/Jewellery/Necklaces/necklace_2.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9a13fcc790d174fc0a07debb89f8402f
+    m_Address: Assets/Prefebs/Jewellery/Necklaces/necklace_1.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ce76fddc1bbab4ebe9c7d31dc55d6278
+    m_Address: Assets/Prefebs/Jewellery/Necklaces/necklace_3.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 14af3fd7710fc9e41b315aa2ef861056, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 9211233e91381744091777a93b150cfe, type: 2}
+    - {fileID: 11400000, guid: 81e4bbf3a849ba9459d8daf979b5f81b, type: 2}
+    - {fileID: 11400000, guid: f04381d4f8dfb1e489689858cfadeb4b, type: 2}

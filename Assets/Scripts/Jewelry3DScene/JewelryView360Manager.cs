@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.AddressableAssets;
+using UnityEngine.ResourceManagement.AsyncOperations;
 
 /// <summary>
 /// JEWELRY 360 VIEW MANAGER
@@ -71,21 +73,37 @@ public class JewelryView360Manager : MonoBehaviour
         if (spawnedModel != null) Destroy(spawnedModel);
 
         JewelryItem item = JewelrySelectionBridge.SelectedItem;
-        if (item == null || item.jewelryPrefab == null)
+        
+        if (item == null)
         {
-            Debug.LogWarning("[360View] No item selected or prefab is null.");
+            Debug.LogWarning("[360View] Bridge.SelectedItem is NULL. Did you start from the Main Menu?");
             return;
         }
 
-        spawnedModel = Instantiate(item.jewelryPrefab, displayPivot);
-        spawnedModel.transform.localPosition = Vector3.zero;
-        spawnedModel.transform.localRotation = Quaternion.identity;
-        spawnedModel.transform.localScale = Vector3.one;
+        if (item.jewelryReference == null || !item.jewelryReference.RuntimeKeyIsValid())
+        {
+            Debug.LogWarning("[360View] Item '" + item.itemName + "' has a NULL or INVALID Addressable reference. Check the Inspector!");
+            return;
+        }
 
-        // Centre the model at the pivot using its bounds
-        CentreModel(spawnedModel);
+        Debug.Log("[360View] Attempting to spawn: " + item.itemName);
+        item.jewelryReference.InstantiateAsync(displayPivot).Completed += (op) => 
+        {
+            if (op.Status == AsyncOperationStatus.Succeeded)
+            {
+                spawnedModel = op.Result;
+                spawnedModel.transform.localPosition = Vector3.zero;
+                spawnedModel.transform.localRotation = Quaternion.identity;
+                spawnedModel.transform.localScale = Vector3.one;
 
-        Debug.Log($"[360View] Spawned: {item.itemName}");
+                // Centre the model at the pivot using its bounds
+                CentreModel(spawnedModel);
+
+                Debug.Log($"[360View] Spawned via Addressables: {item.itemName}");
+            }
+        };
+
+        Debug.Log($"[360View] Spawned load started: {item.itemName}");
     }
 
     void CentreModel(GameObject go)
@@ -177,7 +195,6 @@ public class JewelryView360Manager : MonoBehaviour
             }
         }
         // ── Editor/mouse fallback ─────────────────────────────────
-#if UNITY_EDITOR
         else if (Input.GetMouseButton(0))
         {
             idleTimer = 0f;
@@ -198,13 +215,6 @@ public class JewelryView360Manager : MonoBehaviour
             }
             AutoSpin();
         }
-#else
-        else
-        {
-            isDragging = false;
-            AutoSpin();
-        }
-#endif
     }
 
     void AutoSpin()

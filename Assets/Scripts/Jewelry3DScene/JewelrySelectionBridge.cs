@@ -5,14 +5,6 @@ using UnityEngine;
 ///
 /// Static data holder — survives scene loads without DontDestroyOnLoad.
 /// The Main Menu writes to this, and each view scene reads from it.
-///
-/// Usage (Main Menu):
-///     JewelrySelectionBridge.SelectedItem     = myItem;
-///     JewelrySelectionBridge.SelectedCategory = myCategory;
-///     SceneManager.LoadScene("360View");
-///
-/// Usage (360 / AR / TryOn scenes):
-///     JewelryItem item = JewelrySelectionBridge.SelectedItem;
 /// </summary>
 public static class JewelrySelectionBridge
 {
@@ -28,7 +20,7 @@ public static class JewelrySelectionBridge
     /// <summary>Which view the user came from (used for back-navigation).</summary>
     public static string ReturnScene { get; set; } = "MainMenu";
 
-    /// <summary>Helper: returns true if a valid item with a prefab is selected.</summary>
+    /// <summary>Helper: returns true if a valid item with a reference is selected.</summary>
     public static bool HasValidItem =>
-        SelectedItem != null && SelectedItem.jewelryPrefab != null;
+        SelectedItem != null && SelectedItem.jewelryReference != null && SelectedItem.jewelryReference.RuntimeKeyIsValid();
 }

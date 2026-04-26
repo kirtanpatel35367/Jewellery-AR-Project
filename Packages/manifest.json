@@ -1,6 +1,13 @@
 {
   "dependencies": {
+    "com.google.external-dependency-manager": "https://github.com/googlesamples/unity-jar-resolver.git?path=upm#v1.2.185",
+    "com.google.android.appbundle": "https://github.com/google/play-appbundle-unity.git?path=com.google.android.appbundle#v1.10.0",
+    "com.google.play.common": "https://github.com/google/play-common-unity.git?path=com.google.play.common#v1.9.2",
+    "com.google.play.core": "https://github.com/google/play-core-unity.git?path=com.google.play.core#v1.8.6",
+    "com.google.play.assetdelivery": "https://github.com/google/play-asset-delivery-unity.git?path=com.google.play.assetdelivery#v1.9.5",
     "com.coplaydev.unity-mcp": "https://github.com/CoplayDev/unity-mcp.git?path=/MCPForUnity#main",
+    "com.unity.addressables": "2.7.6",
+    "com.unity.addressables.android": "1.0.0",
     "com.unity.cloud.gltfast": "6.16.0",
     "com.unity.collab-proxy": "2.10.2",
     "com.unity.feature.development": "1.0.2",

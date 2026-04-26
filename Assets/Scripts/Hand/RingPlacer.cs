@@ -29,6 +29,8 @@
 //   Pinky: 17(MCP)18(PIP)19(DIP)20(TIP)
 
 using UnityEngine;
+using UnityEngine.AddressableAssets;
+using UnityEngine.ResourceManagement.AsyncOperations;
 
 public class RingPlacer : MonoBehaviour
 {
@@ -37,7 +39,7 @@ public class RingPlacer : MonoBehaviour
     [Header("References")]
     public JewelleryLandmarkReader landmarkReader;
     public Camera arCamera;
-    public GameObject ringPrefab;
+    public AssetReferenceGameObject ringReference;
     public ARCameraImageSourceBehaviour imageSourceBehaviour;
 
     [Header("Finger")]
@@ -102,7 +104,7 @@ public class RingPlacer : MonoBehaviour
         if (!landmarkReader) { Debug.LogError("[RingPlacer] landmarkReader missing!"); return; }
         if (!arCamera) arCamera = Camera.main;
         if (occluderMaterial != null) BuildOccluder();
-        if (ringPrefab != null) SpawnRing(ringPrefab);
+        if (ringReference != null && ringReference.RuntimeKeyIsValid()) LoadAndSpawnRing();
         _ready = true;
     }
 
@@ -110,29 +112,44 @@ public class RingPlacer : MonoBehaviour
 
     // ── public API ────────────────────────────────────────────────────
 
-    public void SetRingPrefab(GameObject prefab)
+    public void SetRing(AssetReferenceGameObject reference)
     {
-        if (prefab == null) { ClearRing(); return; }
-        ringPrefab = prefab;
-        SpawnRing(prefab);
+        if (reference == null || !reference.RuntimeKeyIsValid()) { ClearRing(); return; }
+        ringReference = reference;
+        LoadAndSpawnRing();
     }
+
+    public void Clear() => ClearRing();
 
     public void ClearRing()
     {
         if (_ring) { Destroy(_ring); _ring = null; }
         if (_occluder) _occluder.SetActive(false);
-        _firstFrame = true; _detectionFrames = 0; ringPrefab = null;
+        _firstFrame = true; _detectionFrames = 0; ringReference = null;
     }
 
     // ── spawn ─────────────────────────────────────────────────────────
 
-    private void SpawnRing(GameObject prefab)
+    private void LoadAndSpawnRing()
     {
         if (_ring) Destroy(_ring);
-        _ring = Instantiate(prefab, transform);
-        _ring.SetActive(false);
-        _firstFrame = true; _smoothScale = -1f; _detectionFrames = 0;
-        Debug.Log("[RingPlacer] Spawned: " + prefab.name + " on " + finger);
+        
+        ringReference.InstantiateAsync(transform).Completed += (op) => 
+        {
+            if (op.Status == AsyncOperationStatus.Succeeded)
+            {
+                _ring = op.Result;
+                _ring.SetActive(false);
+                _firstFrame = true; 
+                _smoothScale = -1f; 
+                _detectionFrames = 0;
+                Debug.Log("[RingPlacer] Addressable Spawned: " + ringReference.RuntimeKey + " on " + finger);
+            }
+            else
+            {
+                Debug.LogError("[RingPlacer] Failed to load addressable ring!");
+            }
+        };
     }
 
     private void BuildOccluder()

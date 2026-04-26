@@ -4,6 +4,8 @@ using UnityEngine.SceneManagement;
 using UnityEngine.XR.ARFoundation;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.AddressableAssets;
+using UnityEngine.ResourceManagement.AsyncOperations;
 
 /// <summary>
 /// SharedJewelryUI — single UI script that works across all three scenes.
@@ -688,11 +690,17 @@ public class Jewelry3DViewer : MonoBehaviour
     public void DisplayItem(JewelryItem item)
     {
         if (_current != null) Destroy(_current);
-        if (item?.jewelryPrefab == null) return;
+        if (item == null || item.jewelryReference == null || !item.jewelryReference.RuntimeKeyIsValid()) return;
 
-        _current = Instantiate(item.jewelryPrefab, displayMount);
-        _current.transform.localPosition = Vector3.zero;
-        _current.transform.localRotation = Quaternion.identity;
-        Debug.Log("[Jewelry3DViewer] Displaying: " + item.itemName);
+        item.jewelryReference.InstantiateAsync(displayMount).Completed += (op) => 
+        {
+            if (op.Status == AsyncOperationStatus.Succeeded)
+            {
+                _current = op.Result;
+                _current.transform.localPosition = Vector3.zero;
+                _current.transform.localRotation = Quaternion.identity;
+                Debug.Log("[Jewelry3DViewer] Displaying via Addressables: " + item.itemName);
+            }
+        };
     }
 }
