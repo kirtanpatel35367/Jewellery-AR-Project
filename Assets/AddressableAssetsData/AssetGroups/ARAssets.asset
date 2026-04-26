@@ -20,6 +20,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 28adc13054d87a04ab99aae5a91f1b27
+    m_Address: Assets/Prefebs/Jewellery/Earrings/dimond_earring.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 2cafc4769699b46bba35589f63a3d7a1
     m_Address: Assets/Prefebs/Jewellery/Necklaces/egyptian_necklace.prefab
     m_ReadOnly: 0
@@ -35,6 +40,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 770ac04128b475344be5589736d7e5e3
+    m_Address: Assets/Prefebs/Jewellery/Earrings/Hanging Diamond.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 9a13fcc790d174fc0a07debb89f8402f
     m_Address: Assets/Prefebs/Jewellery/Necklaces/necklace_1.prefab
     m_ReadOnly: 0
@@ -42,6 +52,31 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: ce76fddc1bbab4ebe9c7d31dc55d6278
     m_Address: Assets/Prefebs/Jewellery/Necklaces/necklace_3.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d5bc89730c0643140a0bb33950b13362
+    m_Address: Assets/Prefebs/Jewellery/Ring/Ring.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e0b2fa63a9b8f94488eccc9c3a8e8e9e
+    m_Address: Assets/Prefebs/Jewellery/Ring/GHHV.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f38eebe72a3997f47b44eba6d794a6a9
+    m_Address: Assets/Prefebs/Jewellery/Earrings/golden_ear_ring.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f3ab54975233231458c28f308f415207
+    m_Address: Assets/Prefebs/Jewellery/Earrings/model_maa.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fa53e6dccb600544097f79ed09297bc9
+    m_Address: Assets/Prefebs/Jewellery/Earrings/earrings_1.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

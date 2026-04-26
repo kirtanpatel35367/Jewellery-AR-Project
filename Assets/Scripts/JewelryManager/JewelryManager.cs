@@ -41,11 +41,12 @@ public class JewelryManager : MonoBehaviour
 
     public void EquipJewelryByIndex(int catIdx, int itemIdx)
     {
-        var item = categories[catIdx].items[itemIdx];
-        EquipItem(item);
+        var category = categories[catIdx];
+        var item = category.items[itemIdx];
+        EquipItem(item, category.categoryName.ToLower());
     }
 
-    public void EquipItem(JewelryItem item)
+    public void EquipItem(JewelryItem item, string categoryType = "")
     {
         if (item == null) { Debug.LogError("[JewelryManager] Item is NULL!"); return; }
         if (item.jewelryReference == null || !item.jewelryReference.RuntimeKeyIsValid()) { 
@@ -53,44 +54,37 @@ public class JewelryManager : MonoBehaviour
             return; 
         }
 
-        Debug.Log("[JewelryManager] Attempting to equip: " + item.itemName);
-        string typeName = item.itemName.ToLower();
+        Debug.Log("[JewelryManager] Attempting to equip: " + item.itemName + " (Category: " + categoryType + ")");
+        
+        // Use the passed categoryType, or fall back to item name if empty
+        string routingType = string.IsNullOrEmpty(categoryType) ? item.itemName.ToLower() : categoryType;
 
-        // 1. Placement AR
+        // 1. Placement AR (Always try this)
         if (placementManager != null)
         {
-            Debug.Log("[JewelryManager] Routing to PlacementManager");
             placementManager.SetActivePrefab(item.jewelryReference, item.itemName, item.thumbnailImage);
         }
 
         // 2. Hand AR
-        if (typeName.Contains("ring") && ringPlacer != null) 
-        {
-            Debug.Log("[JewelryManager] Routing to RingPlacer");
-            ringPlacer.SetRing(item.jewelryReference);
-        }
-        if (typeName.Contains("bangle") && banglePlacer != null) 
-        {
-            Debug.Log("[JewelryManager] Routing to BanglePlacer");
-            banglePlacer.SetBangle(item.jewelryReference);
-        }
+        if (routingType.Contains("ring") && ringPlacer != null) ringPlacer.SetRing(item.jewelryReference);
+        if (routingType.Contains("bangle") && banglePlacer != null) banglePlacer.SetBangle(item.jewelryReference);
 
         // 3. Face AR (Necklace)
-        if (typeName.Contains("necklace"))
+        if (routingType.Contains("necklace"))
         {
             Debug.Log("[JewelryManager] Routing to NecklaceAnchor");
             _pendingNeckReference = item.jewelryReference;
             if (necklaceAnchor != null) SpawnNecklace();
-            else Debug.LogWarning("[JewelryManager] No necklaceAnchor found in scene!");
+            else Debug.LogWarning("[JewelryManager] No necklaceAnchor found! Waiting for AR Tracking...");
         }
 
         // 4. Face AR (Earrings)
-        if (typeName.Contains("earring"))
+        if (routingType.Contains("earring"))
         {
             Debug.Log("[JewelryManager] Routing to EarringAnchors");
             _pendingEarReference = item.jewelryReference;
             if (leftEarAnchor != null && rightEarAnchor != null) SpawnEarrings();
-            else Debug.LogWarning("[JewelryManager] No EarAnchors found in scene!");
+            else Debug.LogWarning("[JewelryManager] No EarAnchors found! Waiting for AR Tracking...");
         }
     }
 
@@ -115,7 +109,9 @@ public class JewelryManager : MonoBehaviour
         {
             if (op.Status == AsyncOperationStatus.Succeeded) {
                 _currentNecklace = op.Result;
-                Debug.Log("[JewelryManager] Necklace SPAWNED SUCCESSFULLY");
+                _currentNecklace.transform.localPosition = Vector3.zero;
+                _currentNecklace.transform.localRotation = Quaternion.identity;
+                Debug.Log("[JewelryManager] Necklace SPAWNED. Scale: " + _currentNecklace.transform.localScale + " Pos: " + _currentNecklace.transform.localPosition);
             } else {
                 Debug.LogError("[JewelryManager] Necklace SPAWN FAILED: " + op.OperationException);
             }
@@ -132,7 +128,9 @@ public class JewelryManager : MonoBehaviour
         {
             if (op.Status == AsyncOperationStatus.Succeeded) {
                 _currentLeftEar = op.Result;
-                Debug.Log("[JewelryManager] Left Earring SPAWNED");
+                _currentLeftEar.transform.localPosition = Vector3.zero;
+                _currentLeftEar.transform.localRotation = Quaternion.identity;
+                Debug.Log("[JewelryManager] Left Earring SPAWNED. Scale: " + _currentLeftEar.transform.localScale);
             } else {
                 Debug.LogError("[JewelryManager] Left Earring FAILED: " + op.OperationException);
             }
@@ -141,7 +139,9 @@ public class JewelryManager : MonoBehaviour
         {
             if (op.Status == AsyncOperationStatus.Succeeded) {
                 _currentRightEar = op.Result;
-                Debug.Log("[JewelryManager] Right Earring SPAWNED");
+                _currentRightEar.transform.localPosition = Vector3.zero;
+                _currentRightEar.transform.localRotation = Quaternion.identity;
+                Debug.Log("[JewelryManager] Right Earring SPAWNED. Scale: " + _currentRightEar.transform.localScale);
             } else {
                 Debug.LogError("[JewelryManager] Right Earring FAILED: " + op.OperationException);
             }

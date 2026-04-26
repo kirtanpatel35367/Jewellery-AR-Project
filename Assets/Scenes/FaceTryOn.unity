@@ -815,7 +815,7 @@ MonoBehaviour:
     - itemName: Dimond Earring
       thumbnailImage: {fileID: 21300000, guid: db30e93db48329e46ab9402fc845b838, type: 3}
       jewelryReference:
-        m_AssetGUID: 
+        m_AssetGUID: 28adc13054d87a04ab99aae5a91f1b27
         m_SubObjectName: 
         m_SubObjectType: 
         m_SubObjectGUID: 
@@ -824,29 +824,29 @@ MonoBehaviour:
     - itemName: Gold Diamond
       thumbnailImage: {fileID: 21300000, guid: 0d970087ffa12ac43ae41836aa13ffa4, type: 3}
       jewelryReference:
-        m_AssetGUID: 
+        m_AssetGUID: fa53e6dccb600544097f79ed09297bc9
         m_SubObjectName: 
         m_SubObjectType: 
         m_SubObjectGUID: 
-        m_EditorAssetChanged: 0
+        m_EditorAssetChanged: 1
       defaultScale: 1
     - itemName: Hanging Diamond
       thumbnailImage: {fileID: 21300000, guid: 8cc149929ab712f44a10c07fa232a6b0, type: 3}
       jewelryReference:
-        m_AssetGUID: 
+        m_AssetGUID: 770ac04128b475344be5589736d7e5e3
         m_SubObjectName: 
         m_SubObjectType: 
         m_SubObjectGUID: 
-        m_EditorAssetChanged: 0
+        m_EditorAssetChanged: 1
       defaultScale: 1
     - itemName: Model_Maa
       thumbnailImage: {fileID: 21300000, guid: 45ef9aed2cd26c94c9fa2ab82e64f998, type: 3}
       jewelryReference:
-        m_AssetGUID: 
+        m_AssetGUID: f3ab54975233231458c28f308f415207
         m_SubObjectName: 
         m_SubObjectType: 
         m_SubObjectGUID: 
-        m_EditorAssetChanged: 0
+        m_EditorAssetChanged: 1
       defaultScale: 1
   - categoryName: Necklace
     type: 1
